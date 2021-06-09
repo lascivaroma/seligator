@@ -1,0 +1,16 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0123a.stoa002.digilibLT-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0123a.stoa002.digilibLT-lat1:I.7-I.7">
+        <w  rend="chapter" n="I.7" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
+                <w  rend="chapter" n="I.7" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
+                <w  rend="chapter" n="I.7" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
+                <w  rend="chapter" n="I.7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="integer">integer</w>
+                <w  rend="chapter" n="I.7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="incolumis">incolumisque</w>
+                <w  rend="chapter" n="I.7" pos="CON" msd="MORPH=empty" lemma="que">{incolumisque}</w>
+                <w  rend="chapter" n="I.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="narro">narrabat</w>
+                <w  rend="chapter" n="I.7" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,25 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0690.phi003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0690.phi003.perseus-lat2:10.280-10.282">
+        <w  rend="line" n="10.280" pos="ADV" msd="Deg=Pos" lemma="nunc">Nunc</w>
+                <w  rend="line" n="10.280" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="coniux">coniugis</w>
+                <w  rend="line" n="10.280" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=3" lemma="sum1">esto</w>
+                <w  rend="line" n="10.281" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quisque2">quisque</w>
+                <w  rend="line" n="10.281" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="suus">suae</w>
+                <w  rend="line" n="10.281" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="tectum">tectique</w>
+                <w  rend="line" n="10.281" pos="CON" msd="MORPH=empty" lemma="que">{tectique}</w>
+                <w  rend="line" n="10.281" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="memor">memor</w>
+                <w  rend="line" n="10.281" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="10.281" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="line" n="10.281" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="magnus">magna</w>
+                <w  rend="line" n="10.281" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=3" lemma="refertus">referto</w>
+                <w  rend="line" n="10.282" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="factum">facta</w>
+                <w  rend="line" n="10.282" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="10.282" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="pater">patrum</w>
+                <w  rend="line" n="10.282" pos="NOMcom" msd="Numb=Plur" lemma="laus">laudes</w>
+                <w  rend="line" n="10.282" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

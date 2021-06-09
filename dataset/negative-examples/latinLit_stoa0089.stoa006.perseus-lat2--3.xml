@@ -1,0 +1,28 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa006.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa006.perseus-lat2:1.119-1.121">
+        <w  rend="line" n="1.119" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="scio">scis</w>
+                <w  rend="line" n="1.119" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Maria">Mariam</w>
+                <w  rend="line" n="1.119" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pater">patremque</w>
+                <w  rend="line" n="1.119" pos="CON" msd="MORPH=empty" lemma="que">{patremque}</w>
+                <w  rend="line" n="1.119" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dux">ducem</w>
+                <w  rend="line" n="1.119" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.119" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="1.119" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cuspis">cuspide</w>
+                <w  rend="line" n="1.119" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Galli">Gallos</w>
+                <w  rend="line" n="1.120" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Italia">Italiamque</w>
+                <w  rend="line" n="1.120" pos="CON" msd="MORPH=empty" lemma="que">{Italiamque}</w>
+                <w  rend="line" n="1.120" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="foueo">fovet</w>
+                <w  rend="line" n="1.120" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.120" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="1.120" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="1.120" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="praeclarus">praeclara</w>
+                <w  rend="line" n="1.120" pos="NOMpro" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="serenus">Serenae</w>
+                <w  rend="line" n="1.121" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fama">fama</w>
+                <w  rend="line" n="1.121" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="lateo">latet</w>
+                <w  rend="line" n="1.121" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

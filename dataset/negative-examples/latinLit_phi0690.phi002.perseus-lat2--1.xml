@@ -1,0 +1,19 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0690.phi002.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0690.phi002.perseus-lat2:3.81-3.83">
+        <w  rend="line" n="3.81" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="honestum">Honesti</w>
+                <w  rend="line" n="3.82" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="spadix">spadices</w>
+                <w  rend="line" n="3.82" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="glaucus">glaucique</w>
+                <w  rend="line" n="3.82" pos="CON" msd="MORPH=empty" lemma="que">{glaucique}</w>
+                <w  rend="line" n="3.82" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.82" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="color">color</w>
+                <w  rend="line" n="3.82" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="deterior">deterrimus</w>
+                <w  rend="line" n="3.82" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="albus">albis</w>
+                <w  rend="line" n="3.83" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="3.83" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="giluus">gilvo</w>
+                <w  rend="line" n="3.83" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

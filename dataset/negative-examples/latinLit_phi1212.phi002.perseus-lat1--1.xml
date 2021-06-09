@@ -1,0 +1,18 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1212.phi002.perseus-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1212.phi002.perseus-lat1:11.30-11.30">
+        <w  rend="chapter" n="11.30" pos="CONcoo" msd="MORPH=empty" lemma="nec2">Nec</w>
+                <w  rend="chapter" n="11.30" pos="INJ" msd="Numb=Sing" lemma="Hercules">Hercule</w>
+                <w  rend="chapter" n="11.30" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="labor1">laborum</w>
+                <w  rend="chapter" n="11.30" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="chapter" n="11.30" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="sumptus">sumptuumque</w>
+                <w  rend="chapter" n="11.30" pos="CON" msd="MORPH=empty" lemma="que">{sumptuumque}</w>
+                <w  rend="chapter" n="11.30" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quisquam">quicquam</w>
+                <w  rend="chapter" n="11.30" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="chapter" n="11.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="paeniteo">paenituit</w>
+                <w  rend="chapter" n="11.30" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

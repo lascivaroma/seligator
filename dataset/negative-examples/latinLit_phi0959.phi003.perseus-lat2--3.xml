@@ -1,0 +1,21 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0959.phi003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0959.phi003.perseus-lat2:99-100">
+        <w  rend="line" n="99" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="uideo">Vidi</w>
+                <w  rend="line" n="99" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="99" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Neut|Deg=Pos" lemma="gelidus">gelida</w>
+                <w  rend="line" n="99" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="madefacio">madefacta</w>
+                <w  rend="line" n="99" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="papauer">papavera</w>
+                <w  rend="line" n="99" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lympha">lympha</w>
+                <w  rend="line" n="100" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="contero">Contereret</w>
+                <w  rend="line" n="100" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="100" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="tener">teneris</w>
+                <w  rend="line" n="100" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="illino">illineretque</w>
+                <w  rend="line" n="100" pos="CON" msd="MORPH=empty" lemma="que">{illineretque}</w>
+                <w  rend="line" n="100" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="gena">genis</w>
+                <w  rend="line" n="100" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,23 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0959.phi005.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0959.phi005.perseus-lat2:293-294">
+        <w  rend="line" n="293" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="bonus">Optimus</w>
+                <w  rend="line" n="293" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="line" n="293" pos="PROref" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="suus">sui</w>
+                <w  rend="line" n="293" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uindex">vindex</w>
+                <w  rend="line" n="293" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="293" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="laedo">laedentia</w>
+                <w  rend="line" n="293" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pectus">pectus</w>
+                <w  rend="line" n="294" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uinculum">Vincula</w>
+                <w  rend="line" n="294" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="294" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="rumpo">rupit</w>
+                <w  rend="line" n="294" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="294" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dedoleo">dedoluitque</w>
+                <w  rend="line" n="294" pos="CON" msd="MORPH=empty" lemma="que">{dedoluitque}</w>
+                <w  rend="line" n="294" pos="ADJadv.mul" msd="MORPH=empty" lemma="semel">semel</w>
+                <w  rend="line" n="294" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

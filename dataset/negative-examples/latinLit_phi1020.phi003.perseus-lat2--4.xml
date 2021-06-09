@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi003.perseus-lat2:1.787-1.788">
+        <w  rend="line" n="1.787" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="omnis">omne</w>
+                <w  rend="line" n="1.787" pos="ADV" msd="Deg=Pos" lemma="simul1">simul</w>
+                <w  rend="line" n="1.787" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="robur">roburque</w>
+                <w  rend="line" n="1.787" pos="CON" msd="MORPH=empty" lemma="que">{roburque}</w>
+                <w  rend="line" n="1.787" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="decus">decusque</w>
+                <w  rend="line" n="1.787" pos="CON" msd="MORPH=empty" lemma="que">{decusque}</w>
+                <w  rend="line" n="1.787" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="potens">potentis</w>
+                <w  rend="line" n="1.788" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Europa">Europae</w>
+                <w  rend="line" n="1.788" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="mereor">meritos</w>
+                <w  rend="line" n="1.788" pos="ADV" msd="Deg=Pos" lemma="ultro">ultro</w>
+                <w  rend="line" n="1.788" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="iuro">iuravit</w>
+                <w  rend="line" n="1.788" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="1.788" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ensis">enses</w>
+                <w  rend="line" n="1.788" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0276.stoa006.opp-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa006.opp-lat1:12-13">
+        <w  rend="line" n="12" pos="CONsub" msd="MORPH=empty" lemma="ni2">ni</w>
+                <w  rend="line" n="12" pos="ADJadv.ord" msd="Deg=Comp" lemma="prius">prius</w>
+                <w  rend="line" n="12" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="admoneo">admoneat</w>
+                <w  rend="line" n="12" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="duro">durataque</w>
+                <w  rend="line" n="12" pos="CON" msd="MORPH=empty" lemma="que">{durataque}</w>
+                <w  rend="line" n="12" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="pectus">pectora</w>
+                <w  rend="line" n="12" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="pulso">pulset</w>
+                <w  rend="line" n="12" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="13" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="praesagus">praesagos</w>
+                <w  rend="line" n="13" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="agito">agitans</w>
+                <w  rend="line" n="13" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="augustus">augusta</w>
+                <w  rend="line" n="13" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mens">mente</w>
+                <w  rend="line" n="13" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="propheta">prophetas</w>
+                <w  rend="line" n="13" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>
