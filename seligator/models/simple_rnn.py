@@ -1,4 +1,4 @@
-from typing import Dict, Tuple, Optional
+from typing import Dict, List, Optional
 
 import torch.nn.functional
 from allennlp.data import Vocabulary, TextFieldTensors
@@ -6,25 +6,29 @@ from allennlp.models import Model
 from allennlp.modules import TextFieldEmbedder, Seq2VecEncoder
 from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
 from allennlp.modules.token_embedders import Embedding
-from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder, CnnEncoder
+from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
 from allennlp.nn import util
 
 from seligator.models.base import BaseModel
 from seligator.common.constants import EMBEDDING_DIMENSIONS
 
 
-class FeatureEmbeddingClassifier(BaseModel):
+class MultiFeatureSimpleClassifier(BaseModel):
+    USES = ("token", "lemma", "tense", )
+
     def __init__(self,
                  vocab: Vocabulary,
-                 input_feature_names: Tuple[str, ...],
                  embedder: TextFieldEmbedder,
                  encoder: Seq2VecEncoder,
                  **kwargs):
-        super().__init__(vocab, input_feature_names=input_feature_names)
+        super().__init__(vocab)
 
         self.embedder = embedder
         self.encoder = encoder
-        self.classifier = torch.nn.Linear(encoder.get_output_dim(), self.num_labels)
+        self.classifier = torch.nn.Linear(
+            encoder.get_output_dim(),
+            self.num_labels
+        )
 
     def forward(self,
                 token: TextFieldTensors,
@@ -33,7 +37,7 @@ class FeatureEmbeddingClassifier(BaseModel):
 
         token = {
             cat: token[cat]
-            for cat in self.input_feature_names
+            for cat in self.USES
         }
 
         # Shape: (batch_size, num_tokens, embedding_dim)
@@ -56,37 +60,23 @@ class FeatureEmbeddingClassifier(BaseModel):
         return output
 
 
-def build_model(vocab: Vocabulary, emb_dims: Dict[str, int] = None, use_only: Tuple[str, ...] = ("token", )) -> Model:
+def build_model(vocab: Vocabulary, emb_dims: Dict[str, int] = None, us) -> Model:
     emb_dims = emb_dims or EMBEDDING_DIMENSIONS
-    print("Building the model")
+
     embedder = BasicTextFieldEmbedder(
         {
             cat: Embedding(embedding_dim=emb_dims[cat], num_embeddings=vocab.get_vocab_size(cat))
-            for cat in use_only
+            for cat in MultiFeatureSimpleClassifier.USES
         }
+
     )
-    encoder = BagOfEmbeddingsEncoder(embedding_dim=sum([emb_dims[cat] for cat in use_only]))
-    return FeatureEmbeddingClassifier(vocab, embedder=embedder, encoder=encoder, input_feature_names=use_only)
+    encoder = BagOfEmbeddingsEncoder(embedding_dim=sum([emb_dims[cat] for cat in MultiFeatureSimpleClassifier.USES]))
+
+    return MultiFeatureSimpleClassifier(vocab, embedder, encoder)
 
 
-def build_model_cnn(
-        vocab: Vocabulary,
-        emb_dims: Dict[str, int] = None,
-        use_only: Tuple[str, ...] = ("token", )
-) -> Model:
-    """ Builds a variation of FeatureEmbeddingClassifier with some clever CNN because why not !
-
-    """
-    emb_dims = emb_dims or EMBEDDING_DIMENSIONS
-    print("Building the model")
-    embedder = BasicTextFieldEmbedder(
-        {
-            cat: Embedding(embedding_dim=emb_dims[cat], num_embeddings=vocab.get_vocab_size(cat))
-            for cat in use_only
-        }
-    )
-    encoder = CnnEncoder(
-        embedding_dim=sum([emb_dims[cat] for cat in use_only]),
-        num_filters=10
-    )
-    return FeatureEmbeddingClassifier(vocab, embedder=embedder, encoder=encoder, input_feature_names=use_only)
+if __name__ == "__main__":
+    from seligator.training.trainer import run_training_loop
+    model, dataset_reader = run_training_loop(
+        build_model=build_model, cuda_device=-1,
+                                              use_only=MultiFeatureSimpleClassifier.USES)

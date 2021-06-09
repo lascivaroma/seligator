@@ -7,7 +7,7 @@ EMBEDDING_DIMENSIONS: Dict[str, int] = {
     "token_character": 100,
     "pos": 10,
     **{
-        cat: 10
+        cat.lower(): 10
         for cat in CATS
     }
 }

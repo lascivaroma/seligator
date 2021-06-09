@@ -62,7 +62,7 @@ def build_trainer(
 
 
 def run_training_loop(
-    build_model: Callable[[Vocabulary], Model],
+    build_model: Callable[[Vocabulary, Tuple[str, ...]], Model],
     cuda_device: Union[List[int], int] = -1,
     use_only: Tuple[str, ...] = None,
     patience: int = 2,
@@ -72,7 +72,7 @@ def run_training_loop(
     train_data, dev_data = read_data(dataset_reader)
 
     vocab = build_vocab(train_data + dev_data)
-    model = build_model(vocab)
+    model = build_model(vocab=vocab, use_only=use_only)
 
     if cuda_device != -1:
         model = model.cuda()
@@ -101,5 +101,9 @@ def run_training_loop(
 
 if __name__ == "__main__":
     from seligator.models import baseline
-    model, dataset_reader = run_training_loop(build_model=baseline.build_model, cuda_device=-1)
+    model, dataset_reader = run_training_loop(
+        build_model=baseline.build_model,
+        cuda_device=-1,
+        use_only=("token", )
+    )
 

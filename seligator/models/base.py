@@ -7,12 +7,14 @@ from allennlp.training.metrics import CategoricalAccuracy, FBetaMeasure
 
 
 class BaseModel(Model):
-    USES: Tuple[str, ...] = ("token", )
 
     def __init__(self,
                  vocab: Vocabulary,
+                 input_feature_names: Tuple[str, ...],
                  **kwargs):
         super().__init__(vocab)
+
+        self.input_feature_names: Tuple[str, ...] = input_feature_names
 
         self.num_labels = vocab.get_vocab_size("labels")
         self.labels = vocab.get_index_to_token_vocabulary("labels")

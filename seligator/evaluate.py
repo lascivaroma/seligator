@@ -1,6 +1,6 @@
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import csv
-from typing import Dict, List, Union, Optional
+from typing import Dict, List, Union, Optional, Tuple
 from numpy import ndarray
 
 from allennlp.data.data_loaders import SimpleDataLoader
@@ -10,7 +10,7 @@ from allennlp.data import (
     Instance
 )
 
-from seligator.models.baseline import SimpleClassifier
+from seligator.models.base import BaseModel
 
 
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
@@ -34,15 +34,14 @@ def simple_batcher(lst: List, n: int) -> List:
         yield lst[i:i + n]
 
 
-def run_tests(test_file: str, dataset_reader: DatasetReader, model: SimpleClassifier,
-              dump: Optional[str] = None):
+def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
+              dump: Optional[str] = None) -> Tuple[Dict[str, float], ConfusionMatrixDisplay]:
     print("Evaluating")
     test_data = list(dataset_reader.read(test_file))
     data_loader = SimpleDataLoader(test_data, batch_size=8, shuffle=False)
     data_loader.index_with(model.vocab)
 
     results = evaluate(model, data_loader, cuda_device=0)
-    print(results)
 
     print("Evaluating: Predicting")
     output_test = []
@@ -75,12 +74,12 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: SimpleClassi
     disp.figure_.show()
 
     del test_data  # Avoid stuff remaining
-    return disp
+    return results, disp
 
 
 if __name__ == "__main__":
     from seligator.training.trainer import run_training_loop
     from seligator.models.baseline import build_model
 
-    model, reader = run_training_loop(build_model=build_model, cuda_device=0)
+    model, reader = run_training_loop(build_model=build_model, cuda_device=0, use_only=("token", ))
     run_tests("dataset/split/test.txt", dataset_reader=reader, model=model)
