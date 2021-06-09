@@ -19,9 +19,15 @@ class FeatureEmbeddingClassifier(BaseModel):
                  input_feature_names: Tuple[str, ...],
                  embedder: TextFieldEmbedder,
                  encoder: Seq2VecEncoder,
+                 emb_dropout: float = 0.3,
                  **kwargs):
         super().__init__(vocab, input_feature_names=input_feature_names)
 
+        if emb_dropout:
+            self._emb_dropout = torch.nn.Dropout(emb_dropout)
+        else:
+            self._emb_dropout = None
+            #
         self.embedder = embedder
         self.encoder = encoder
         self.classifier = torch.nn.Linear(encoder.get_output_dim(), self.num_labels)
@@ -38,6 +44,11 @@ class FeatureEmbeddingClassifier(BaseModel):
 
         # Shape: (batch_size, num_tokens, embedding_dim)
         embedded_text = self.embedder(token)
+
+        if self._emb_dropout is not None:
+            # Shape: (batch_size, num_tokens, embedding_dim)
+            embedded_text = self._emb_dropout(embedded_text)
+
         # Shape: (batch_size, num_tokens)
         mask = util.get_text_field_mask(token)
         # Shape: (batch_size, encoding_dim)
@@ -49,10 +60,7 @@ class FeatureEmbeddingClassifier(BaseModel):
         # Shape: (1,)
         output = {"probs": probs}
         if label is not None:
-            self.accuracy(logits, label)
-            self.measure(logits, label)
-            # Shape: (1,)
-            output['loss'] = torch.nn.functional.cross_entropy(logits, label)
+            self._compute_metrics(logits, label, output)
         return output
 
 
