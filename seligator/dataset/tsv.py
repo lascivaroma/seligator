@@ -11,7 +11,7 @@ def build_token_indexers(cats: Iterable[str] = CATS) -> Dict[str, TokenIndexer]:
     return {
         "token": SingleIdTokenIndexer(namespace="token"),
         "lemma": SingleIdTokenIndexer(namespace="lemma"),
-        "tokchar": TokenCharactersIndexer(namespace="token_character"),
+        "token_char": TokenCharactersIndexer(namespace="token_char"),
         "pos": SingleIdTokenIndexer(namespace="pos"),
         **{
             task.lower(): SingleIdTokenIndexer(namespace=f"{task.lower()}")
@@ -53,9 +53,14 @@ class ClassificationTsvReader(DatasetReader):
             for cat, value in token_repr.items():
                 if cat in fields:
                     fields[cat].append(Token(value))
+                if cat == "token" and "token_char" in self.categories:
+                    fields[cat].append(Token(value))
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
+
+        if "token_char" in self.categories:
+            fields["token_char"] = [] + fields["token"]
 
         fields: Dict[str, Field] = {
             cat.lower(): TextField(fields[cat], token_indexers=self.token_indexers)

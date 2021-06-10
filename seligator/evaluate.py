@@ -11,6 +11,8 @@ from allennlp.data import (
 )
 
 from seligator.models.base import BaseModel
+from allennlp.interpret.saliency_interpreters import SimpleGradient
+from allennlp.predictors import Predictor
 
 
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
