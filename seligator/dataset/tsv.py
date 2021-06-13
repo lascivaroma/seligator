@@ -1,22 +1,36 @@
 from allennlp.data import DatasetReader, Instance
 from allennlp.data.fields import TextField, LabelField, Field
-from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer
+from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer, \
+    PretrainedTransformerIndexer
 from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
-from seligator.common.constants import CATS
-from typing import Dict, Iterable, Tuple, List
+from seligator.common.constants import CATS, BERT_DIR
+from seligator.dataset.indexer import SubwordTokenIndexer
+from typing import Dict, Iterable, Tuple, List, Optional
+
+import os
 
 
-def build_token_indexers(cats: Iterable[str] = CATS) -> Dict[str, TokenIndexer]:
+def build_token_indexers(cats: Iterable[str] = CATS, bert_dir: Optional[str] = None) -> Dict[str, TokenIndexer]:
+    berts = {}
+    if bert_dir:
+        berts = {
+            "token_subword": SubwordTokenIndexer(
+                vocab_path=f"{BERT_DIR}/latin_bert/vocab.txt",
+                namespace="token_subword"
+            )
+        }
     return {
         "token": SingleIdTokenIndexer(namespace="token"),
         "lemma": SingleIdTokenIndexer(namespace="lemma"),
         "token_char": TokenCharactersIndexer(namespace="token_char"),
+
         "pos": SingleIdTokenIndexer(namespace="pos"),
         **{
             task.lower(): SingleIdTokenIndexer(namespace=f"{task.lower()}")
             for task in cats
-        }
+        },
+        **berts
     }
 
 
@@ -54,7 +68,9 @@ class ClassificationTsvReader(DatasetReader):
                 if cat in fields:
                     fields[cat].append(Token(value))
                 if cat == "token" and "token_char" in self.categories:
-                    fields[cat].append(Token(value))
+                    fields["token_char"].append(Token(value))
+                if cat == "token" and "token_subword" in self.categories:
+                    fields["token_subword"].extend(self.token_indexers["token_subword"].tokenizer.tokenize(value))
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}

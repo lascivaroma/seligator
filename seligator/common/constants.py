@@ -1,4 +1,10 @@
 from typing import Dict
+import os
+
+BERT_DIR = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "../../bert"
+)
 CATS = ("Case", "Numb", "Gend", "Mood", "Tense", "Voice", "Person", "Deg")
 
 EMBEDDING_DIMENSIONS: Dict[str, int] = {
