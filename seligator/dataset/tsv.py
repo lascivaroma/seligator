@@ -78,11 +78,11 @@ class ClassificationTsvReader(DatasetReader):
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
 
-        if "token_char" in self.categories:
-            fields["token_char"] = [] + fields["token"]
+        #if "token_char" in self.categories:
+        #    fields["token_char"] = [] + fields["token"]
 
         fields: Dict[str, Field] = {
-            cat.lower(): TextField(fields[cat], token_indexers=self.token_indexers)
+            cat.lower(): TextField(fields[cat], token_indexers={cat: self.token_indexers[cat]})
             for cat in fields
         }
 

@@ -87,7 +87,7 @@ def run_training_loop(
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]
 
     vocab = build_vocab(train_data)
-    if bert_dir:
+    if "token_subword" in use_only:
         model = build_model(
             vocab=vocab, use_only=use_only,
             bert_dir=bert_dir, bert_tokenizer=dataset_reader.token_indexers["token_subword"].tokenizer)

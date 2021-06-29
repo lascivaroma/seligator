@@ -8,7 +8,7 @@ from allennlp.models import Model
 from allennlp.modules import TextFieldEmbedder
 from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
 from allennlp.modules.token_embedders import Embedding
-from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder
+from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
 from allennlp.nn import util
 
 from seligator.models.base import BaseModel
@@ -21,47 +21,69 @@ class SimpleRNNClassifier(BaseModel):
     def __init__(self,
                  vocab: Vocabulary,
                  input_feature_names: Tuple[str, ...],
-                 embedder: TextFieldEmbedder,
-                 encoder: LstmSeq2VecEncoder,
+                 bert_encoder: LatinPretrainedTransformer,
+                 bert_pooler: BertPooler,
+                 embedder: Optional[TextFieldEmbedder] = None,
+                 encoder: Optional[BertPooler] = None,
                  emb_dropout: float = 0.3,
                  **kwargs):
         super().__init__(vocab, input_feature_names=input_feature_names)
 
-        self.embedder = embedder
-        self.encoder = encoder
-        self.classifier = torch.nn.Linear(
-            encoder.get_output_dim(),
-            self.num_labels
-        )
-        if emb_dropout:
-            self._emb_dropout = torch.nn.Dropout(emb_dropout)
-        else:
-            self._emb_dropout = None
+        self.bert_embedder = bert_encoder
+        self.bert_pooler = bert_pooler
+
+        self.embedder: Optional[TextFieldEmbedder] = embedder
+        self.encoder: Optional[BertPooler] = encoder
+
+        classifier_in_dim = bert_pooler.get_output_dim()
+
+        # If we merge multiple information
+        self.additional_input: bool = False
+
+        if self.encoder is not None and self.embedder is not None:
+            self.additional_input = True
+            classifier_in_dim += encoder.get_output_dim()
+
+            if emb_dropout:
+                self._emb_dropout = torch.nn.Dropout(emb_dropout)
+            else:
+                self._emb_dropout = None
+
+        self.classifier = torch.nn.Linear(classifier_in_dim, self.num_labels)
 
     def forward(self,
-                token: Dict[str, Dict[str, torch.Tensor]],
                 label: Optional[torch.Tensor] = None,
-                **tasks) -> Dict[str, torch.Tensor]:
+                **inputs) -> Dict[str, torch.Tensor]:
 
-        token: Dict[str, Dict[str, torch.Tensor]] = {
-            cat: token[cat]
-            for cat in self.input_feature_names
-        }
+        subw_inpt = inputs["token_subword"]
+        subw_mask = util.get_text_field_mask(subw_inpt)
 
-        # Shape: (batch_size, num_tokens, embedding_dim)
-        embedded_text = self.embedder(token)
+        embedded = self.bert_embedder(subw_inpt["token_subword"]["token_ids"], mask=subw_mask)
+        encoded = self.bert_pooler(embedded, mask=subw_mask)
 
-        if self._emb_dropout is not None:
-            embedded_text = self._emb_dropout(embedded_text)
+        if self.additional_input:
+            token: Dict[str, Dict[str, torch.Tensor]] = {
+                cat: inputs[cat][cat]
+                for cat in self.input_feature_names
+                if cat != "token_subwords"
+            }
 
-        # Shape: (batch_size, num_tokens)
-        mask = util.get_text_field_mask(token)
+            # Shape: (batch_size, num_tokens, embedding_dim)
+            embedded_text = self.embedder(text_field_input=token)
 
-        # Shape: (batch_size, encoding_dim)
-        encoded_text = self.encoder(embedded_text, mask)
+            if self._emb_dropout is not None:
+                embedded_text = self._emb_dropout(embedded_text)
+
+            # Shape: (batch_size, num_tokens)
+            mask = util.get_text_field_mask(token)
+
+            # Shape: (batch_size, encoding_dim)
+            encoded_text = self.encoder(embedded_text, mask)
+
+            encoded = torch.cat((encoded, encoded_text), dim=-1)
 
         # Shape: (batch_size, num_labels)
-        logits = self.classifier(encoded_text)
+        logits = self.classifier(encoded)
 
         # Shape: (batch_size, num_labels)
         probs = torch.nn.functional.softmax(logits)
@@ -82,6 +104,9 @@ def build_model(
         bert_tokenizer: Optional[SubwordTextEncoderTokenizer] = None
 ) -> Model:
     emb_dims = emb_dims or EMBEDDING_DIMENSIONS
+
+    if use_only != ("token_subword", ):
+        raise Exception("Currently, it's impossible to use something else than token subword")
 
     embedder = BasicTextFieldEmbedder(
         {
@@ -110,25 +135,17 @@ def build_model(
                 for cat in use_only
                 if cat.endswith("_char")
             },
-            **{
-                cat: LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer)
-                for cat in use_only
-                if cat.endswith("_subword")
-            },
         }
     )
-    encoder = LstmSeq2VecEncoder(
-        input_size=embedder.get_output_dim(),
-        hidden_size=300,
-        num_layers=2,
-        bidirectional=True,
-        dropout=0.7
-    )
+    bert = LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer)
+    bert_pooler = BertPooler(bert_dir)
 
     return SimpleRNNClassifier(
         vocab=vocab,
-        embedder=embedder,
-        encoder=encoder,
+        #classic_embedder=embedder,
+        bert_encoder=bert,
+        bert_pooler=bert_pooler,
+        #encoder=encoder,
         input_feature_names=use_only
     )
 
@@ -141,5 +158,5 @@ if __name__ == "__main__":
         build_model=build_model,
         cuda_device=-1,
         bert_dir="bert/latin_bert",
-        use_only=("token", "token_subword")
+        use_only=("token_subword", )
     )

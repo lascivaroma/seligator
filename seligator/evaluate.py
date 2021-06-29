@@ -18,8 +18,13 @@ from allennlp.predictors import Predictor
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
               ) -> Dict[str, Union[str, float]]:
     pred = labels[prediction["probs"].argmax()]
+    sentence = "Unable to provide"
+    if "token" in instance.fields:
+        sentence = " ".join([tok.text for tok in instance.fields["token"].tokens])
+    elif "token_subword" in instance.fields:
+        sentence = " ".join([tok.text for tok in instance.fields["token_subword"].tokens])
     return {
-        "sentence": " ".join([tok.text for tok in instance.fields["token"].tokens]),
+        "sentence": sentence,
         "label": instance.fields["label"].label,
         "prediction": pred,
         "ok": str(pred == instance.fields["label"].label),

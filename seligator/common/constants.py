@@ -3,7 +3,7 @@ import os
 
 BERT_DIR = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
-        "../../bert"
+        "../../bert/latin_bert"
 )
 CATS = ("Case", "Numb", "Gend", "Mood", "Tense", "Voice", "Person", "Deg")
 

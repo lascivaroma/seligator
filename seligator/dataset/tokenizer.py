@@ -43,7 +43,9 @@ class SubwordTextEncoderTokenizer(Tokenizer):
         self._special_tokens = special_tokens or {"[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"}
 
         self.single_sequence_start_tokens = ["[CLS]"]
+        self.single_sequence_start_tokens_ids = [self._tokenizer._subtoken_string_to_id["[CLS]"]]
         self.single_sequence_end_tokens = ["[SEP]"]
+        self.single_sequence_end_tokens_ids = [self._tokenizer._subtoken_string_to_id["[SEP]"]]
 
     @property
     def tokenizer(self):
@@ -85,13 +87,15 @@ class SubwordTextEncoderTokenizer(Tokenizer):
             max_length += self.num_special_tokens_for_sequence()
 
         text = latin_bert_normalization(text)
-        if self._add_special_tokens and False:
-            text = " ".join([*self.single_sequence_start_tokens, text, *self.single_sequence_end_tokens])
-            logger.debug(f"New text: {text}")
 
         token_ids = self._tokenizer.encode(text)
-
         token_texts = self._tokenizer.decode_list(token_ids)
+
+        if self._add_special_tokens:
+            token_texts = [*self.single_sequence_start_tokens, *token_texts, *self.single_sequence_end_tokens]
+            token_ids = [*self.single_sequence_start_tokens_ids, *token_ids, *self.single_sequence_end_tokens_ids]
+            logger.debug(f"New text: {text}")
+
         special_tokens_mask = [1 if tok in self._special_tokens else 0 for tok in token_texts]
 
         tokens = []

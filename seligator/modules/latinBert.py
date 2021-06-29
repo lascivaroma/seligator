@@ -7,15 +7,19 @@ from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
 from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
 
 from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
+from allennlp.common.cached_transformers import _model_cache
 
 logger = logging.getLogger(__name__)
 
 
 def get(model_name: str, make_copy: bool, **kwargs,) -> BertModel:
+    global _model_cache
     transformer = BertModel.from_pretrained(
         model_name,
         **kwargs,
     )
+
+    _model_cache[model_name] = transformer
 
     if make_copy:
         import copy
