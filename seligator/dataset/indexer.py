@@ -56,18 +56,20 @@ class SubwordTokenIndexer(TokenIndexer):
         tokenizer_kwargs: Optional[Dict[str, Any]] = None,
         **kwargs,
     ) -> None:
+        super(SubwordTokenIndexer, self).__init__()
         super().__init__(**kwargs)
         self._namespace = namespace
 
+        logger.info(f"Loading SubwordTextEncoderTokenizer at {vocab_path}/vocab.txt")
         self._tokenizer: SubwordTextEncoderTokenizer = SubwordTextEncoderTokenizer(
-            vocab=vocab_path,
+            vocab=f"{vocab_path}/vocab.txt",
             **(tokenizer_kwargs or {})
         )
 
         self._added_to_vocabulary = False
 
-        #self._num_added_start_tokens = len(self._tokenizer.single_sequence_start_tokens)
-        #self._num_added_end_tokens = len(self._tokenizer.single_sequence_end_tokens)
+        self._num_added_start_tokens = len(self._tokenizer.single_sequence_start_tokens)
+        self._num_added_end_tokens = len(self._tokenizer.single_sequence_end_tokens)
 
         self._max_length = max_length
         if self._max_length is not None:
@@ -103,7 +105,6 @@ class SubwordTokenIndexer(TokenIndexer):
     @overrides
     def tokens_to_indices(self, tokens: List[Token], vocabulary: Vocabulary) -> IndexedTokenList:
         self._add_encoding_to_vocabulary_if_needed(vocabulary)
-        print(tokens)
         indices, type_ids = self._extract_token_and_type_ids(tokens)
         # The mask has 1 for real tokens and 0 for padding tokens. Only real tokens are attended to.
         output: IndexedTokenList = {

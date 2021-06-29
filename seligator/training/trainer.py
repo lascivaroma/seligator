@@ -74,16 +74,25 @@ def run_training_loop(
     num_epochs: int = 5,
     ratio_train: float = 1.0,
     batch_size: int = 16,
-    batches_per_epoch: Optional[int] = None
+    batches_per_epoch: Optional[int] = None,
+    bert_dir: Optional[str] = None
 ):
-    dataset_reader = build_dataset_reader(use_only=use_only)
+    dataset_reader = build_dataset_reader(
+        use_only=use_only,
+        bert_dir=bert_dir
+    )
     train_data, dev_data = read_data(dataset_reader)
 
     if ratio_train != 1.0:
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]
 
     vocab = build_vocab(train_data)
-    model = build_model(vocab=vocab, use_only=use_only)
+    if bert_dir:
+        model = build_model(
+            vocab=vocab, use_only=use_only,
+            bert_dir=bert_dir, bert_tokenizer=dataset_reader.token_indexers["token_subword"].tokenizer)
+    else:
+        model = build_model(vocab=vocab, use_only=use_only)
 
     if cuda_device != -1:
         model = model.cuda()

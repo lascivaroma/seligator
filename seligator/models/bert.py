@@ -13,6 +13,8 @@ from allennlp.nn import util
 
 from seligator.models.base import BaseModel
 from seligator.common.constants import EMBEDDING_DIMENSIONS
+from seligator.modules.latinBert import LatinPretrainedTransformer
+from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
 
 
 class SimpleRNNClassifier(BaseModel):
@@ -75,7 +77,9 @@ class SimpleRNNClassifier(BaseModel):
 def build_model(
         vocab: Vocabulary,
         emb_dims: Dict[str, int] = None,
-        use_only: Tuple[str, ...] = ("token", )
+        use_only: Tuple[str, ...] = ("token", "token_subword", ),
+        bert_dir: str = None,
+        bert_tokenizer: Optional[SubwordTextEncoderTokenizer] = None
 ) -> Model:
     emb_dims = emb_dims or EMBEDDING_DIMENSIONS
 
@@ -85,7 +89,7 @@ def build_model(
             **{
             cat: Embedding(embedding_dim=emb_dims[cat], num_embeddings=vocab.get_vocab_size(cat))
                 for cat in use_only
-                if not cat.endswith("_char")
+                if not cat.endswith("_char") and not cat.endswith("_subword")
             },
             # Weirder tokens
             **{
@@ -105,7 +109,12 @@ def build_model(
                 )
                 for cat in use_only
                 if cat.endswith("_char")
-            }
+            },
+            **{
+                cat: LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer)
+                for cat in use_only
+                if cat.endswith("_subword")
+            },
         }
     )
     encoder = LstmSeq2VecEncoder(
@@ -126,8 +135,11 @@ def build_model(
 
 if __name__ == "__main__":
     from seligator.training.trainer import run_training_loop
+    import logging
+    logging.getLogger().setLevel(logging.INFO)
     model, dataset_reader = run_training_loop(
         build_model=build_model,
         cuda_device=-1,
-        use_only=("token", "token_bert")
+        bert_dir="bert/latin_bert",
+        use_only=("token", "token_subword")
     )

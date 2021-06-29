@@ -8,29 +8,25 @@ from seligator.common.constants import CATS, BERT_DIR
 from seligator.dataset.indexer import SubwordTokenIndexer
 from typing import Dict, Iterable, Tuple, List, Optional
 
+import logging
 import os
 
 
-def build_token_indexers(cats: Iterable[str] = CATS, bert_dir: Optional[str] = None) -> Dict[str, TokenIndexer]:
-    berts = {}
-    if bert_dir:
-        berts = {
-            "token_subword": SubwordTokenIndexer(
-                vocab_path=f"{BERT_DIR}/latin_bert/vocab.txt",
-                namespace="token_subword"
-            )
-        }
-    return {
-        "token": SingleIdTokenIndexer(namespace="token"),
-        "lemma": SingleIdTokenIndexer(namespace="lemma"),
-        "token_char": TokenCharactersIndexer(namespace="token_char"),
+def build_token_indexers(cats: Iterable[str] = None, bert_dir: Optional[str] = None) -> Dict[str, TokenIndexer]:
+    if not cats:
+        cats = CATS
 
-        "pos": SingleIdTokenIndexer(namespace="pos"),
-        **{
-            task.lower(): SingleIdTokenIndexer(namespace=f"{task.lower()}")
-            for task in cats
-        },
-        **berts
+    def get_indexer(category: str) -> TokenIndexer:
+        if category.endswith("_char"):
+            return TokenCharactersIndexer(namespace=category)
+        elif category.endswith("_subword"):
+            return SubwordTokenIndexer(namespace=category, vocab_path=bert_dir)
+        else:
+            return SingleIdTokenIndexer(namespace=category)
+
+    return {
+        task.lower(): get_indexer(task.lower())
+        for task in cats
     }
 
 
@@ -43,6 +39,7 @@ class ClassificationTsvReader(DatasetReader):
             max_tokens: int = None,
             cats: Tuple[str, ...] = CATS,
             use_only: Tuple[str, ...] = None,
+            bert_dir: Optional[str] = None,
             **kwargs
     ):
         super().__init__(**kwargs)
@@ -53,8 +50,10 @@ class ClassificationTsvReader(DatasetReader):
         if use_only:
             self.categories = use_only
 
+        logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
         self.tokenizer = tokenizer or WhitespaceTokenizer()
-        self.token_indexers = token_indexers or build_token_indexers(cats=cats)
+        self.token_indexers = token_indexers or build_token_indexers(cats=self.categories, bert_dir=bert_dir)
+        logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
         self.max_tokens = max_tokens
 
     def text_to_instance(self, content: List[Dict[str, str]], label: str = None) -> Instance:
@@ -62,15 +61,19 @@ class ClassificationTsvReader(DatasetReader):
 
         """
         fields: Dict[str, List[Token]] = {cat: [] for cat in self.categories}
-
+        if "token_subword" in fields:
+            normalized = " ".join([tok["token"] for tok in content])
+            try:
+                fields["token_subword"].extend(self.token_indexers["token_subword"].tokenizer.tokenize(normalized))
+            except AssertionError:
+                logging.error(f"Error on {normalized}")
+                raise
         for token_repr in content:
             for cat, value in token_repr.items():
                 if cat in fields:
                     fields[cat].append(Token(value))
                 if cat == "token" and "token_char" in self.categories:
                     fields["token_char"].append(Token(value))
-                if cat == "token" and "token_subword" in self.categories:
-                    fields["token_subword"].extend(self.token_indexers["token_subword"].tokenizer.tokenize(value))
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
@@ -145,8 +148,9 @@ class ClassificationTsvReader(DatasetReader):
                     content.append(dict(zip(header, line.split("\t"))))
 
 
-def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...] = None) -> DatasetReader:
-    return ClassificationTsvReader(cats=cats, use_only=use_only)
+def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...] = None,
+                         bert_dir: Optional[str] = None) -> DatasetReader:
+    return ClassificationTsvReader(cats=cats, use_only=use_only, bert_dir=bert_dir)
 
 
 if __name__ == "__main__":
