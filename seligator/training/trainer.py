@@ -82,7 +82,7 @@ def run_training_loop(
     dataset_reader = build_dataset_reader(
         use_only=use_only,
         bert_dir=bert_dir,
-        siamese=True
+        siamese=siamese
     )
     train_data, dev_data = read_data(dataset_reader)
 

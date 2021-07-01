@@ -36,14 +36,11 @@ class SimpleRNNClassifier(BaseModel):
             self._emb_dropout = None
 
     def forward(self,
-                token: TextFieldTensors,
                 label: Optional[torch.Tensor] = None,
-                **tasks) -> Dict[str, torch.Tensor]:
+                **inputs) -> Dict[str, torch.Tensor]:
 
-        token = {
-            cat: token[cat]
-            for cat in self.input_feature_names
-        }
+        token = self._rebuild_input(inputs)
+
         # Shape: (batch_size, num_tokens, embedding_dim)
         embedded_text = self.embedder(token)
 

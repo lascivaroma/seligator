@@ -142,7 +142,7 @@ class ClassificationTsvReader(DatasetReader):
                 if idx == 0:
                     if not line.startswith("[header]"):
                         raise ValueError(f"File {file_path} does not start with a header")
-                    _, *header = line.strip().split("\t")
+                    _, *header = line.strip().lower().split("\t")
                     continue
                 # If a line is empty, we are jumping to another sample.
                 #   Multiple empty lines can follow each other, hence checking content
@@ -167,16 +167,16 @@ class ClassificationTsvReader(DatasetReader):
                 else:
                     content.append(dict(zip(header, line.split("\t"))))
 
-        keys = list(label_pool.keys())
-        for sentence in sentences:
-            pooled = "positive" if random.random() < self.siamese_probability else "negative"
-            right = sentences[random.choice(label_pool[pooled])]
-            yield Instance(
-                {
-                    **{f"left_{key}": value for key, value in sentence.items()},
-                    **{f"right_{key}": value for key, value in right.items()}
-                }
-            )
+        if self.siamese:
+            for sentence in sentences:
+                pooled = "positive" if random.random() < self.siamese_probability else "negative"
+                right = sentences[random.choice(label_pool[pooled])]
+                yield Instance(
+                    {
+                        **{f"left_{key}": value for key, value in sentence.items()},
+                        **{f"right_{key}": value for key, value in right.items()}
+                    }
+                )
 
 
 def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...] = None,
@@ -188,7 +188,7 @@ def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...]
 
 if __name__ == "__main__":
     # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(cats=CATS, use_only=("token_subword", ), siamese=True,
+    reader = ClassificationTsvReader(cats=CATS, use_only=("token", "lemma", "pos", "tense"),# siamese=True,
                                      bert_dir="./bert/latin_bert")
     dataset = list(reader.read("dataset/split/train.txt"))
 

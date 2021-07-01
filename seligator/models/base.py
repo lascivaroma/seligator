@@ -56,6 +56,12 @@ class BaseModel(Model):
                 for key, score in metric_out.items()
             }
 
+    def _rebuild_input(self, inputs: Dict[str, Dict[str, torch.Tensor]]):
+        return {
+                cat: inputs[cat][cat]
+                for cat in self.input_feature_names
+        }
+
     def forward(self,
                 token: TextFieldTensors,
                 label: Optional[torch.Tensor] = None,
