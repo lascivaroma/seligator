@@ -44,8 +44,8 @@ class SubwordTextEncoderTokenizer(Tokenizer):
 
         self.single_sequence_start_tokens = ["[CLS]"]
         self.single_sequence_start_tokens_ids = [self._tokenizer._subtoken_string_to_id["[CLS]"]]
-        self.single_sequence_end_tokens = ["[SEP]"]
-        self.single_sequence_end_tokens_ids = [self._tokenizer._subtoken_string_to_id["[SEP]"]]
+        self.single_sequence_end_tokens = []#["[SEP]"]
+        self.single_sequence_end_tokens_ids = []#[self._tokenizer._subtoken_string_to_id["[SEP]"]]
 
     @property
     def tokenizer(self):

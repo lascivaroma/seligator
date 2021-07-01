@@ -47,7 +47,8 @@ def build_trainer(
     dev_loader: DataLoader,
     cuda_device: Union[int, List[int]],
     patience: int = 2,
-    num_epochs: int = 5
+    num_epochs: int = 5,
+    siamese: bool = False
 ) -> Trainer:
     parameters = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
     optimizer = AdamOptimizer(parameters)  # type: ignore
@@ -56,7 +57,7 @@ def build_trainer(
         model=model,
         serialization_dir=serialization_dir,
         data_loader=train_loader,
-        validation_metric="+fscore",
+        validation_metric="+fscore" if siamese is False else "+sim-accuracy",
         validation_data_loader=dev_loader,
         num_epochs=num_epochs,
         patience=patience,
@@ -75,11 +76,13 @@ def run_training_loop(
     ratio_train: float = 1.0,
     batch_size: int = 16,
     batches_per_epoch: Optional[int] = None,
-    bert_dir: Optional[str] = None
+    bert_dir: Optional[str] = None,
+    siamese: bool = False
 ):
     dataset_reader = build_dataset_reader(
         use_only=use_only,
-        bert_dir=bert_dir
+        bert_dir=bert_dir,
+        siamese=True
     )
     train_data, dev_data = read_data(dataset_reader)
 
@@ -115,7 +118,8 @@ def run_training_loop(
             train_loader, dev_loader,
             cuda_device=cuda_device,
             num_epochs=num_epochs,
-            patience=patience
+            patience=patience,
+            siamese=siamese
         )
         print("Starting training")
         trainer.train()

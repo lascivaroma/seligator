@@ -137,7 +137,7 @@ def build_model(
             },
         }
     )
-    bert = LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer)
+    bert = LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer, train_parameters=False)
     bert_pooler = BertPooler(bert_dir)
 
     return SimpleRNNClassifier(

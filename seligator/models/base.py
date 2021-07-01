@@ -46,6 +46,16 @@ class BaseModel(Model):
             }
         }
 
+    def _get_metrics(self, name, metric, reset: bool = False) -> Dict[str, float]:
+        metric_out = metric.get_metric(reset)
+        if isinstance(metric_out, float):
+            return {name: metric_out}
+        else:
+            return {
+                key: score
+                for key, score in metric_out.items()
+            }
+
     def forward(self,
                 token: TextFieldTensors,
                 label: Optional[torch.Tensor] = None,

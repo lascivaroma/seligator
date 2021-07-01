@@ -11,6 +11,9 @@ from typing import Dict, Iterable, Tuple, List, Optional
 import logging
 import os
 
+from collections import defaultdict
+import random
+
 
 def build_token_indexers(cats: Iterable[str] = None, bert_dir: Optional[str] = None) -> Dict[str, TokenIndexer]:
     if not cats:
@@ -36,10 +39,12 @@ class ClassificationTsvReader(DatasetReader):
             self,
             tokenizer: Tokenizer = None,
             token_indexers: Dict[str, TokenIndexer] = None,
-            max_tokens: int = None,
+            max_tokens: int = 256,
             cats: Tuple[str, ...] = CATS,
             use_only: Tuple[str, ...] = None,
             bert_dir: Optional[str] = None,
+            siamese: bool = False,
+            siamese_probability: float = 0.7,
             **kwargs
     ):
         super().__init__(**kwargs)
@@ -56,13 +61,20 @@ class ClassificationTsvReader(DatasetReader):
         logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
         self.max_tokens = max_tokens
 
+        # If Siamese is true, the first sentence that is positive will be set as the example
+        #   The second one as well
+        self.siamese: bool = siamese
+        #self.positive: Optional[Instance] = None
+        #self.negative: Optional[Instance] = None
+        self.siamese_probability: float = siamese_probability
+
     def text_to_instance(self, content: List[Dict[str, str]], label: str = None) -> Instance:
         """ Parse the output of content into
 
         """
         fields: Dict[str, List[Token]] = {cat: [] for cat in self.categories}
         if "token_subword" in fields:
-            normalized = " ".join([tok["token"] for tok in content])
+            normalized = " ".join([tok["token"] for tok in content if tok["token"][0] != "{"])
             try:
                 fields["token_subword"].extend(self.token_indexers["token_subword"].tokenizer.tokenize(normalized))
             except AssertionError:
@@ -77,9 +89,6 @@ class ClassificationTsvReader(DatasetReader):
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
-
-        #if "token_char" in self.categories:
-        #    fields["token_char"] = [] + fields["token"]
 
         fields: Dict[str, Field] = {
             cat.lower(): TextField(fields[cat], token_indexers={cat: self.token_indexers[cat]})
@@ -119,6 +128,9 @@ class ClassificationTsvReader(DatasetReader):
         ```
 
         """
+        label_pool: Dict[LabelField, List[int]] = defaultdict(list)
+        sentences: List[Instance] = []
+
         with open(file_path, "r") as lines:
             header = []
             content = []
@@ -138,25 +150,47 @@ class ClassificationTsvReader(DatasetReader):
                     if content:
                         if not label:
                             raise ValueError("A label was not found")
-                        yield self.text_to_instance(content, label)
+
+                        # If we are not in siamese, yield
+                        if not self.siamese:
+                            yield self.text_to_instance(content, label)
+                        else:
+                            # We check that positive and negative has been set
+                            s = self.text_to_instance(content, label)
+                            sentences.append(s)
+                            label_pool[label].append(len(sentences) - 1)
                         content = []
                         label = None
                     continue
                 elif line.startswith("#[TAG]"):
-                    label = line.replace("#[TAG]", "")
+                    label = line.replace("#[TAG]", "").strip()
                 else:
                     content.append(dict(zip(header, line.split("\t"))))
 
+        keys = list(label_pool.keys())
+        for sentence in sentences:
+            pooled = "positive" if random.random() < self.siamese_probability else "negative"
+            right = sentences[random.choice(label_pool[pooled])]
+            yield Instance(
+                {
+                    **{f"left_{key}": value for key, value in sentence.items()},
+                    **{f"right_{key}": value for key, value in right.items()}
+                }
+            )
+
 
 def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...] = None,
-                         bert_dir: Optional[str] = None) -> DatasetReader:
-    return ClassificationTsvReader(cats=cats, use_only=use_only, bert_dir=bert_dir)
+                         bert_dir: Optional[str] = None,
+                         siamese: bool = False, siamese_probability: float = 0.5) -> DatasetReader:
+    return ClassificationTsvReader(cats=cats, use_only=use_only, bert_dir=bert_dir,
+                                   siamese=siamese, siamese_probability=siamese_probability)#, is_train=True)
 
 
 if __name__ == "__main__":
     # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(cats=CATS)
-    dataset = list(reader.read("dataset/split/test.txt"))
+    reader = ClassificationTsvReader(cats=CATS, use_only=("token_subword", ), siamese=True,
+                                     bert_dir="./bert/latin_bert")
+    dataset = list(reader.read("dataset/split/train.txt"))
 
     print("type of its first element: ", type(dataset[0]))
     print("size of dataset: ", len(dataset))
