@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 from seligator.models.base import BaseModel
 from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
 from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
-from allennlp.modules.seq2vec_encoders import BertPooler
+from allennlp.modules.seq2vec_encoders import BertPooler, BagOfEmbeddingsEncoder
 
 
 _Fields = Dict[str, torch.LongTensor]
@@ -63,7 +63,7 @@ class SiameseBert(BaseModel):
                  left_encoder: Seq2VecEncoder,
                  right_encoder: Seq2VecEncoder = None,
                  loss_margin: float = 1.0,
-                 prediction_threshold: float = 0.8,
+                 prediction_threshold: float = 0.6,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
                  **kwargs):
@@ -74,7 +74,7 @@ class SiameseBert(BaseModel):
         self.bert_embedder: LatinPretrainedTransformer = bert_embedder
 
         self.left_encoder: Seq2VecEncoder = left_encoder
-        self.right_encoder: Seq2VecEncoder = left_encoder# or deepcopy(left_encoder)
+        self.right_encoder: Seq2VecEncoder = right_encoder or deepcopy(left_encoder)
 
         if bert_embedder.get_output_dim() != self.left_encoder.get_input_dim():
             raise ConfigurationError("The output dimension of the text_field_embedder must match the "
@@ -178,6 +178,26 @@ class SiameseBert(BaseModel):
     #    return {metric_name: metric.get_metric(reset) for metric_name, metric in self.metrics.items()}
 
 
+class SumAndLinear(Seq2VecEncoder):  # Does not improve the output
+    def __init__(self, input_dim):
+        super(SumAndLinear, self).__init__()
+        self.embedding = BagOfEmbeddingsEncoder(input_dim)
+        self.linear = nn.Linear(input_dim, input_dim)
+        self._input_dim = input_dim
+        self._output_dim = input_dim
+
+    def get_input_dim(self) -> int:
+        return self._input_dim
+
+    def get_output_dim(self) -> int:
+        return self._output_dim
+
+    def forward(self, tokens, mask=None):
+        summed = self.embedding(tokens, mask=mask)
+        masked = self.linear(summed)
+        return masked
+
+
 def build_model(
         vocab: Vocabulary,
         *,
@@ -191,7 +211,8 @@ def build_model(
         raise Exception("Currently, it's impossible to use something else than token subword")
 
     bert = LatinPretrainedTransformer(bert_dir, tokenizer=bert_tokenizer, train_parameters=False)
-    bert_pooler = BertPooler(bert_dir)
+    # bert_pooler = BertPooler(bert_dir)
+    bert_pooler = SumAndLinear(bert.get_output_dim())
 
     return SiameseBert(
         vocab=vocab,
@@ -208,7 +229,7 @@ if __name__ == "__main__":
     model, dataset_reader = run_training_loop(
         build_model=build_model,
         cuda_device=0,
-        batch_size=4,
+        batch_size=6,
         bert_dir="bert/latin_bert",
         use_only=("token_subword", ),
         siamese=True

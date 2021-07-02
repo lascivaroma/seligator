@@ -1,0 +1,74 @@
+[header]	token	lemma	pos	Case	Numb	Gend	Mood	Tense	Voice	Person	Deg
+
+#[TAG]positive
+puellae	puella	NOMcom	Gen	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+'	'	PUNC	-	-	-	-	-	-	-	-
+heus	heus	INJ	-	-	-	-	-	-	-	-
+'	'	PUNC	-	-	-	-	-	-	-	-
+inquit	inquio	VER	-	Sing	-	Ind	Pres	Act	3	-
+'	'	PUNC	-	-	-	-	-	-	-	-
+tibi	tu	PROper	Dat	Sing	-	-	-	-	-	-
+dicimus	dico2	VER	-	Plur	-	Ind	Pres	Act	1	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+cinaede	cinaedus2	ADJqua	Voc	Sing	Masc	-	-	-	-	Pos
+,	,	PUNC	-	-	-	-	-	-	-	-
+uras	uro	VER	-	Sing	-	Sub	Pres	Act	2	-
+te	tu	PROper	Acc	Sing	-	-	-	-	-	-
+licet	licet1	VER	-	Sing	-	Ind	Pres	Act	3	-
+usque	usque	ADV	-	-	-	-	-	-	-	Pos
+torqueasque	torqueo	VER	-	Sing	-	Sub	Pres	Act	2	-
+{torqueasque}	que	CON	-	-	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+num	num	ADVint	-	-	-	-	-	-	-	-
+tandem	tandem	ADV	-	-	-	-	-	-	-	Pos
+prior	prior	ADJord	Nom	Sing	MascFem	-	-	-	-	Comp
+es	sum1	VER	-	Sing	-	Ind	Pres	Act	2	-
+puella	puella	NOMcom	Voc	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+quaeso	quaeso	VER	-	Sing	-	Ind	Pres	Act	1	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+quod	quod2	CONsub	-	-	-	-	-	-	-	-
+sunt	sum1	VER	-	Plur	-	Ind	Pres	Act	3	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+mentula	mentula	NOMcom	Nom	Plur	-	-	-	-	-	-
+quos	qui1	PROrel	Acc	Plur	Masc	-	-	-	-	-
+habet	habeo	VER	-	Sing	-	Ind	Pres	Act	3	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+capilli	capillus	NOMcom	Nom	Plur	-	-	-	-	-	-
+?	?	PUNC	-	-	-	-	-	-	-	-
+
+
+#[TAG]negative
+praebuit	praebeo	VER	-	Sing	-	Ind	Perf	Act	3	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+ut	ut1	ADVrel	-	-	-	-	-	-	-	-
+taurus	taurus	NOMcom	Nom	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+Tyriae	Tyrius	ADJqua	Gen	Sing	Fem	-	-	-	-	Pos
+sua	suus	PROpos.ref	Acc	Plur	Neut	-	-	-	-	-
+terga	tergum	NOMcom	Acc	Plur	-	-	-	-	-	-
+puellae	puella	NOMcom	Dat	Sing	-	-	-	-	-	-
+Iuppiter	Iuppiter	NOMpro	Nom	Sing	-	-	-	-	-	-
+et	et2	CONcoo	-	-	-	-	-	-	-	-
+falsa	falsus	ADJqua	Abl	Sing	Neut	-	-	-	-	Pos
+cornua	cornu	NOMcom	Acc	Plur	-	-	-	-	-	-
+fronte	frons1	NOMcom	Abl	Sing	-	-	-	-	-	-
+tulit	fero	VER	-	Sing	-	Ind	Perf	Act	3	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+illa	ille	PROdem	Nom	Sing	Fem	-	-	-	-	-
+iubam	iuba	NOMcom	Acc	Sing	-	-	-	-	-	-
+dextra	dextera	NOMcom	Abl	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+laeva	laeua1	NOMcom	Nom	Sing	Fem	-	-	-	-	-
+retinebat	retineo	VER	-	Sing	-	Ind	Impa	Act	3	-
+amictus	amictus	NOMcom	Nom	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+et	et2	CONcoo	-	-	-	-	-	-	-	-
+timor	timor	NOMcom	Nom	Sing	-	-	-	-	-	-
+ipse	ipse	PROdem	Nom	Sing	Masc	-	-	-	-	-
+novi	nouus	ADJqua	Gen	Sing	MascNeut	-	-	-	-	Pos
+causa	causa	NOMcom	Nom	Sing	-	-	-	-	-	-
+decoris	decus	NOMcom	Gen	Sing	-	-	-	-	-	-
+erat	sum1	VER	-	Sing	-	Ind	Impa	Act	3	-
+.	.	PUNC	-	-	-	-	-	-	-	-

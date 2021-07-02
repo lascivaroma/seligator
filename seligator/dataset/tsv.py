@@ -6,7 +6,7 @@ from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
 from seligator.common.constants import CATS, BERT_DIR
 from seligator.dataset.indexer import SubwordTokenIndexer
-from typing import Dict, Iterable, Tuple, List, Optional
+from typing import Dict, Iterable, Tuple, List, Optional, Any
 
 import logging
 import os
@@ -41,10 +41,11 @@ class ClassificationTsvReader(DatasetReader):
             token_indexers: Dict[str, TokenIndexer] = None,
             max_tokens: int = 256,
             cats: Tuple[str, ...] = CATS,
-            use_only: Tuple[str, ...] = None,
+            input_features: Tuple[str, ...] = None,
             bert_dir: Optional[str] = None,
             siamese: bool = False,
             siamese_probability: float = 0.7,
+            siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
             **kwargs
     ):
         super().__init__(**kwargs)
@@ -52,8 +53,8 @@ class ClassificationTsvReader(DatasetReader):
         self.features: Tuple[str, ...] = cats
         self.categories: Tuple[str, ...] = ("token", "lemma", "token_char", "pos", *self.features)
 
-        if use_only:
-            self.categories = use_only
+        if input_features:
+            self.categories = input_features
 
         logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
         self.tokenizer = tokenizer or WhitespaceTokenizer()
@@ -64,9 +65,11 @@ class ClassificationTsvReader(DatasetReader):
         # If Siamese is true, the first sentence that is positive will be set as the example
         #   The second one as well
         self.siamese: bool = siamese
-        #self.positive: Optional[Instance] = None
-        #self.negative: Optional[Instance] = None
         self.siamese_probability: float = siamese_probability
+        self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
+        if self.siamese:
+            logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
+            logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
 
     def text_to_instance(self, content: List[Dict[str, str]], label: str = None) -> Instance:
         """ Parse the output of content into
@@ -128,7 +131,6 @@ class ClassificationTsvReader(DatasetReader):
         ```
 
         """
-        label_pool: Dict[LabelField, List[int]] = defaultdict(list)
         sentences: List[Instance] = []
 
         with open(file_path, "r") as lines:
@@ -158,7 +160,6 @@ class ClassificationTsvReader(DatasetReader):
                             # We check that positive and negative has been set
                             s = self.text_to_instance(content, label)
                             sentences.append(s)
-                            label_pool[label].append(len(sentences) - 1)
                         content = []
                         label = None
                     continue
@@ -167,10 +168,20 @@ class ClassificationTsvReader(DatasetReader):
                 else:
                     content.append(dict(zip(header, line.split("\t"))))
 
+        if content:
+            if self.siamese:
+                s = self.text_to_instance(content, label)
+                sentences.append(s)
+            else:
+                yield self.text_to_instance(content, label)
+
         if self.siamese:
             for sentence in sentences:
-                pooled = "positive" if random.random() < self.siamese_probability else "negative"
-                right = sentences[random.choice(label_pool[pooled])]
+                if len(self.siamese_samples["negative"]) > 0:
+                    pooled_label: str = "positive" if random.random() < self.siamese_probability else "negative"
+                else:
+                    pooled_label = "positive"
+                right = random.choice(self.siamese_samples[pooled_label])
                 yield Instance(
                     {
                         **{f"left_{key}": value for key, value in sentence.items()},
@@ -179,16 +190,21 @@ class ClassificationTsvReader(DatasetReader):
                 )
 
 
-def build_dataset_reader(cats: Tuple[str, ...] = CATS, use_only: Tuple[str, ...] = None,
-                         bert_dir: Optional[str] = None,
-                         siamese: bool = False, siamese_probability: float = 0.5) -> DatasetReader:
-    return ClassificationTsvReader(cats=cats, use_only=use_only, bert_dir=bert_dir,
-                                   siamese=siamese, siamese_probability=siamese_probability)#, is_train=True)
+def get_siamese_samples(
+        reader: ClassificationTsvReader, siamese_filepath: str = "dataset/split/siamese.txt"
+                        ) -> Dict[str, List[Dict[str, Any]]]:
+    logging.info("Reading Siamese Samples")
+    siamese_data = {"positive": [], "negative": []}
+
+    for instance in reader.read(siamese_filepath):
+        siamese_data[instance.human_readable_dict()["label"]].append(instance.fields)
+
+    return siamese_data
 
 
 if __name__ == "__main__":
     # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(cats=CATS, use_only=("token", "lemma", "pos", "tense"),# siamese=True,
+    reader = ClassificationTsvReader(cats=CATS, input_features=("token", "lemma", "pos", "tense"),# siamese=True,
                                      bert_dir="./bert/latin_bert")
     dataset = list(reader.read("dataset/split/train.txt"))
 

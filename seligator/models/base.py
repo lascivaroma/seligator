@@ -9,13 +9,16 @@ from allennlp.training.metrics import CategoricalAccuracy, FBetaMeasure
 
 class BaseModel(Model):
 
+    BERT_COMPATIBLE: bool = False
+    IS_SIAMESE: bool = False
+
     def __init__(self,
                  vocab: Vocabulary,
-                 input_feature_names: Tuple[str, ...],
+                 input_features: Tuple[str, ...],
                  **kwargs):
         super().__init__(vocab)
 
-        self.input_feature_names: Tuple[str, ...] = input_feature_names
+        self.input_features: Tuple[str, ...] = input_features
 
         self.num_labels = vocab.get_vocab_size("labels")
         self.labels = vocab.get_index_to_token_vocabulary("labels")
@@ -56,14 +59,13 @@ class BaseModel(Model):
                 for key, score in metric_out.items()
             }
 
-    def _rebuild_input(self, inputs: Dict[str, Dict[str, torch.Tensor]]):
+    def _rebuild_input(self, inputs: Dict[str, Dict[str, torch.Tensor]]) -> Dict[str, TextFieldTensors]:
         return {
                 cat: inputs[cat][cat]
-                for cat in self.input_feature_names
+                for cat in self.input_features
         }
 
     def forward(self,
-                token: TextFieldTensors,
                 label: Optional[torch.Tensor] = None,
                 **tasks) -> Dict[str, torch.Tensor]:
         raise NotImplementedError

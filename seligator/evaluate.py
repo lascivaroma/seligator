@@ -86,7 +86,7 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
 if __name__ == "__main__":
     from seligator.training.trainer import run_training_loop
-    from seligator.models.baseline import build_model
+    from seligator.models.classifier import build_model
 
     model, reader = run_training_loop(build_model=build_model, cuda_device=0, use_only=("token", ))
     run_tests("dataset/split/test.txt", dataset_reader=reader, model=model)
