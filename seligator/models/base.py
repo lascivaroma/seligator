@@ -63,6 +63,7 @@ class BaseModel(Model):
         return {
                 cat: inputs[cat][cat]
                 for cat in self.input_features
+                if not cat.endswith("_subword")
         }
 
     def forward(self,
