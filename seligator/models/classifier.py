@@ -53,6 +53,13 @@ class FeatureEmbeddingClassifier(BaseModel):
             if mixer == "concat":
                 self.mixer = lambda inp1, inp2: torch.cat([inp1, inp2], -1)
                 out_dim = self.features_encoder.get_output_dim() + self.bert_pooler.get_output_dim()
+            elif mixer.startswith("Linear:"):
+                out_dim = int(mixer.split(":")[-1])
+                self._mixer = torch.nn.Linear(
+                    self.features_encoder.get_output_dim() + self.bert_pooler.get_output_dim(),
+                    out_dim
+                )
+                self.mixer = lambda inp1, inp2: self._mixer(torch.cat([inp1, inp2], -1))
         elif use_features:
             out_dim = self.features_encoder.get_output_dim()
         elif use_bert:
