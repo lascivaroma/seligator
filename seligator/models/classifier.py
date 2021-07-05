@@ -4,14 +4,11 @@ import torch.nn.functional
 from allennlp.data import Vocabulary, TextFieldTensors
 from allennlp.models import Model
 from allennlp.modules import TextFieldEmbedder, Seq2VecEncoder
-from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
-from allennlp.modules.token_embedders import Embedding, TokenCharactersEncoder
 from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
 from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
 from allennlp.nn import util
 
 from seligator.models.base import BaseModel
-from seligator.common.constants import EMBEDDING_DIMENSIONS
 
 
 class FeatureEmbeddingClassifier(BaseModel):
@@ -109,34 +106,6 @@ class FeatureEmbeddingClassifier(BaseModel):
 
         return output
 
-    @staticmethod
-    def build_embeddings(
-            vocabulary: Vocabulary,
-            input_features: Tuple[str, ...],
-            emb_dims: Dict[str, int] = None,
-            char_encoders: Dict[str, Seq2VecEncoder] = None
-    ) -> BasicTextFieldEmbedder:
-        emb_dims = emb_dims or EMBEDDING_DIMENSIONS
-        emb = {
-            cat: Embedding(embedding_dim=emb_dims[cat], num_embeddings=vocabulary.get_vocab_size(cat))
-            for cat in input_features
-            if "_subword" not in cat and "_char" not in cat
-        }
-        if char_encoders:
-            emb.update({
-                cat: TokenCharactersEncoder(
-                    embedding=Embedding(
-                        embedding_dim=emb_dims[cat],
-                        num_embeddings=vocabulary.get_vocab_size(cat)
-                    ),
-                    encoder=char_encoders[cat],
-                    dropout=0.3
-                )
-                for cat in input_features
-                if "_char" in cat
-            })
-        return BasicTextFieldEmbedder(emb)
-
     @classmethod
     def build_model(
             cls,
@@ -166,6 +135,7 @@ if __name__ == "__main__":
     from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder
     from seligator.training.trainer import generate_all_data, train_model
     from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
+    from seligator.common.constants import EMBEDDING_DIMENSIONS
 
     # For test, just change the input feature here
     INPUT_FEATURES = ("token", "lemma", "token_char", "token_subword")
