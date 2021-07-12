@@ -5,7 +5,8 @@ from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, Tok
 from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
 from seligator.common.constants import CATS, BERT_DIR
-from seligator.dataset.indexer import SubwordTokenIndexer
+from seligator.dataset.indexer import LatinSubwordTokenIndexer
+from seligator.common.bert_utils import GetMeBert
 from typing import Dict, Iterable, Tuple, List, Optional, Any
 
 import logging
@@ -15,7 +16,10 @@ from collections import defaultdict
 import random
 
 
-def build_token_indexers(cats: Iterable[str] = None, bert_dir: Optional[str] = None) -> Dict[str, TokenIndexer]:
+def build_token_indexers(
+        cats: Iterable[str] = None,
+        get_me_bert: Optional[GetMeBert] = None
+) -> Dict[str, TokenIndexer]:
     if not cats:
         cats = CATS
 
@@ -23,7 +27,9 @@ def build_token_indexers(cats: Iterable[str] = None, bert_dir: Optional[str] = N
         if category.endswith("_char"):
             return TokenCharactersIndexer(namespace=category)
         elif category.endswith("_subword"):
-            return SubwordTokenIndexer(namespace=category, vocab_path=bert_dir)
+            if get_me_bert and get_me_bert.use_bert:
+                return get_me_bert.indexer
+            raise Exception("GetMeBert was not set !")
         else:
             return SingleIdTokenIndexer(namespace=category)
 
@@ -42,7 +48,7 @@ class ClassificationTsvReader(DatasetReader):
             max_tokens: int = 256,
             cats: Tuple[str, ...] = CATS,
             input_features: Tuple[str, ...] = None,
-            bert_dir: Optional[str] = None,
+            get_me_bert: Optional[GetMeBert] = GetMeBert(),
             siamese: bool = False,
             siamese_probability: float = 0.7,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
@@ -58,7 +64,8 @@ class ClassificationTsvReader(DatasetReader):
 
         logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
         self.tokenizer = tokenizer or WhitespaceTokenizer()
-        self.token_indexers = token_indexers or build_token_indexers(cats=self.categories, bert_dir=bert_dir)
+        self.token_indexers = token_indexers or build_token_indexers(cats=self.categories, get_me_bert=get_me_bert)
+        self.bert_tokenizer = get_me_bert.tokenizer
         logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
         self.max_tokens = max_tokens
 
@@ -79,7 +86,7 @@ class ClassificationTsvReader(DatasetReader):
         if "token_subword" in fields:
             normalized = " ".join([tok["token"] for tok in content if tok["token"][0] != "{"])
             try:
-                fields["token_subword"].extend(self.token_indexers["token_subword"].tokenizer.tokenize(normalized))
+                fields["token_subword"].extend(self.bert_tokenizer.tokenize(normalized))
             except AssertionError:
                 logging.error(f"Error on {normalized}")
                 raise

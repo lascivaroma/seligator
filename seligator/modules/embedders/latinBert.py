@@ -6,7 +6,7 @@ from allennlp.modules.scalar_mix import ScalarMix
 from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
 from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
 
-from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
+from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
 from allennlp.common.cached_transformers import _model_cache
 
 logger = logging.getLogger(__name__)
@@ -89,7 +89,7 @@ class LatinPretrainedTransformer(PretrainedTransformerEmbedder):
     def __init__(
             self,
             model_name: str,
-            tokenizer: SubwordTextEncoderTokenizer,
+            tokenizer: LatinSubwordTextEncoderTokenizer,
             *,
             max_length: int = None,
             sub_module: str = None,

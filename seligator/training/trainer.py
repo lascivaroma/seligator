@@ -17,6 +17,7 @@ from allennlp.training.optimizers import AdamOptimizer
 
 from seligator.dataset.tsv import ClassificationTsvReader, get_siamese_samples
 from seligator.models.base import BaseModel
+from seligator.common.bert_utils import GetMeBert
 
 
 def read_data(reader: DatasetReader, use_siamese: bool = True) -> Tuple[List[Instance], List[Instance]]:
@@ -92,20 +93,21 @@ def generate_all_data(
     ratio_train: float = 1.0,
     batch_size: int = 16,
     batches_per_epoch: Optional[int] = None,
-    bert_dir: Optional[str] = None,
+    get_me_bert: GetMeBert = GetMeBert(),
     is_siamese: bool = False
 ) -> Tuple[DataLoader, DataLoader, Vocabulary, ClassificationTsvReader]:
+
     # Expects a siamese.txt file in the same directory as train.txt
     if is_siamese:
         # Samples are not siamese loaded. Siamese affects the other datasets
         siamese_reader = ClassificationTsvReader(
-            input_features=input_features, bert_dir=bert_dir, siamese=False
+            input_features=input_features, get_me_bert=get_me_bert, siamese=False
         )
         siamese_samples = get_siamese_samples(siamese_reader)
 
         # Then we create the normal one
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, bert_dir=bert_dir,
+            input_features=input_features, get_me_bert=get_me_bert,
             siamese=True, siamese_samples=siamese_samples,
             token_indexers=siamese_reader.token_indexers,
             tokenizer=siamese_reader.tokenizer
@@ -114,7 +116,7 @@ def generate_all_data(
         train_data, dev_data = read_data(dataset_reader, use_siamese=False)
     else:
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, bert_dir=bert_dir, siamese=False
+            input_features=input_features, get_me_bert=get_me_bert, siamese=False
         )
         train_data, dev_data = read_data(dataset_reader, use_siamese=True)
 
@@ -131,20 +133,6 @@ def generate_all_data(
     dev_loader.index_with(vocab)
 
     return train_loader, dev_loader, vocab, dataset_reader
-
-"""
-
-
-    if "token_subword" in use_only:
-        model = build_model(
-            vocab=vocab, use_only=use_only,
-            bert_dir=bert_dir, bert_tokenizer=dataset_reader.token_indexers["token_subword"].tokenizer)
-    else:
-        model = build_model(vocab=vocab, input_f=use_only)
-
-    if cuda_device != -1:
-        model = model.cuda()
-        """
 
 
 def train_model(
@@ -176,14 +164,6 @@ def train_model(
 
 if __name__ == "__main__":
     from seligator.models import classifier
-    #model, dataset_reader = run_training_loop(
-    #    build_model=baseline.build_model,
-    #    cuda_device=-1,
-    #    use_only=("token", ),
-    #    num_epochs=100,
-    #    batch_size=16,
-    #    patience=None
-    #)
     import logging
     logging.getLogger().setLevel(logging.INFO)
     use_only = ("token_subword", )

@@ -12,13 +12,13 @@ from allennlp.data.tokenizers import Token, PretrainedTransformerTokenizer
 from allennlp.data.token_indexers.token_indexer import TokenIndexer, IndexedTokenList
 
 
-from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
+from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
 
 logger = logging.getLogger(__name__)
 
 
-@TokenIndexer.register("pretrained_subwordencoder")
-class SubwordTokenIndexer(TokenIndexer):
+@TokenIndexer.register("pretrained_subwordencoder_latin")
+class LatinSubwordTokenIndexer(TokenIndexer):
     """
     This `TokenIndexer` assumes that Tokens already have their indexes in them (see `text_id` field).
     We still require `model_name` because we want to form allennlp vocabulary from pretrained one.
@@ -56,12 +56,11 @@ class SubwordTokenIndexer(TokenIndexer):
         tokenizer_kwargs: Optional[Dict[str, Any]] = None,
         **kwargs,
     ) -> None:
-        super(SubwordTokenIndexer, self).__init__()
         super().__init__(**kwargs)
         self._namespace = namespace
 
         logger.info(f"Loading SubwordTextEncoderTokenizer at {vocab_path}/vocab.txt")
-        self._tokenizer: SubwordTextEncoderTokenizer = SubwordTextEncoderTokenizer(
+        self._tokenizer: LatinSubwordTextEncoderTokenizer = LatinSubwordTextEncoderTokenizer(
             vocab=f"{vocab_path}/vocab.txt",
             **(tokenizer_kwargs or {})
         )
@@ -83,7 +82,7 @@ class SubwordTokenIndexer(TokenIndexer):
                 )
 
     @property
-    def tokenizer(self) -> SubwordTextEncoderTokenizer:
+    def tokenizer(self) -> LatinSubwordTextEncoderTokenizer:
         return self._tokenizer
 
     def _add_encoding_to_vocabulary_if_needed(self, vocab: Vocabulary) -> None:
@@ -142,8 +141,8 @@ class SubwordTokenIndexer(TokenIndexer):
         type_ids: List[int] = []
         for token in tokens:
             indices.append(
-                token.text_id
-                if token.text_id is not None
+                token.idx
+                if token.idx is not None
                 else self._tokenizer.convert_tokens_to_ids(token.text)
             )
             type_ids.append(token.type_id if token.type_id is not None else 0)
@@ -270,7 +269,7 @@ class SubwordTokenIndexer(TokenIndexer):
 if __name__ == "__main__":
     from seligator.common.constants import BERT_DIR
 
-    indexer = SubwordTokenIndexer(f"{BERT_DIR}/latin_bert/vocab.txt")
+    indexer = LatinSubwordTokenIndexer(f"{BERT_DIR}/latin_bert/vocab.txt")
     vocab = Vocabulary()
     print(indexer.tokens_to_indices(
         [Token("id"), Token("est"), Token("pulchrum"), Token("lascivumque.")],

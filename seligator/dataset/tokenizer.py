@@ -22,7 +22,7 @@ def latin_bert_normalization(string: str) -> str:
     return SPACES.sub(" ", APOSTROPHES.sub("", string.replace("\\", "").replace(";", "")).strip().lower())
 
 
-class SubwordTextEncoderTokenizer(Tokenizer):
+class LatinSubwordTextEncoderTokenizer(Tokenizer):
     # https://github.com/tensorflow/tensor2tensor/blob/78ba8019847426e988294fd58f8953d7990a8db7/tensor2tensor/data_generators/text_encoder.py#L448
     def __init__(self,
                  vocab: str,
@@ -42,8 +42,8 @@ class SubwordTextEncoderTokenizer(Tokenizer):
 
         self._special_tokens = special_tokens or {"[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"}
 
-        self.single_sequence_start_tokens = []#["[CLS]"]
-        self.single_sequence_start_tokens_ids = []#[self._tokenizer._subtoken_string_to_id["[CLS]"]]
+        self.single_sequence_start_tokens = ["[CLS]"]
+        self.single_sequence_start_tokens_ids = [self._tokenizer._subtoken_string_to_id["[CLS]"]]
         self.single_sequence_end_tokens = []#["[SEP]"]
         self.single_sequence_end_tokens_ids = []#[self._tokenizer._subtoken_string_to_id["[SEP]"]]
 
@@ -96,7 +96,7 @@ class SubwordTextEncoderTokenizer(Tokenizer):
             token_ids = [*self.single_sequence_start_tokens_ids, *token_ids, *self.single_sequence_end_tokens_ids]
             logger.debug(f"New text: {text}")
 
-        special_tokens_mask = [1 if tok in self._special_tokens else 0 for tok in token_texts]
+        special_tokens_mask = [1 if tok in self._special_tokens and tok != "[CLS]" else 0 for tok in token_texts]
 
         tokens = []
         for token_id, token_text, special_token_mask in zip(
@@ -109,8 +109,8 @@ class SubwordTextEncoderTokenizer(Tokenizer):
                 Token(
                     text=token_text,
                     text_id=token_id,
-                    type_id=None,
-                    idx=None,
+                    type_id=0,
+                    idx=token_id,
                     idx_end=None,
                 )
             )
@@ -119,11 +119,11 @@ class SubwordTextEncoderTokenizer(Tokenizer):
 
 
 if __name__ == "__main__":
-    tokenizer = SubwordTextEncoderTokenizer(f"{BERT_DIR}/latin_bert/vocab.txt")
+    tokenizer = LatinSubwordTextEncoderTokenizer(f"{BERT_DIR}/vocab.txt")
     logger.setLevel(logging.DEBUG)
     z = tokenizer.tokenize("Nunc denique intellegimus quae desideranda in prioribus fuerint, postquam ea quae operta in ceteris veriti sumus in te reserata veneramur.")
     print(z)
-    print(tokenizer.tokenize("lascivumque"))
+    print(tokenizer.convert_tokens_to_ids(tokenizer.tokenize("lascivumque")))
     """
     from .tsv import ClassificationTsvReader
     from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer, \

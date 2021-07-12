@@ -136,20 +136,23 @@ if __name__ == "__main__":
     from seligator.training.trainer import generate_all_data, train_model
     from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
     from seligator.common.constants import EMBEDDING_DIMENSIONS
+    from seligator.common.bert_utils import what_type_of_bert
 
     # For test, just change the input feature here
     INPUT_FEATURES = ("token", "lemma", "token_char", "token_subword")
     USE_BERT = True
     BERT_DIR = "./bert/latin_bert"
 
-    train, dev, vocab, reader = generate_all_data(input_features=INPUT_FEATURES, bert_dir=BERT_DIR)
-    bert, bert_pooler = None, None
     if USE_BERT:
-        bert = LatinPretrainedTransformer(
-            BERT_DIR,
-            tokenizer=reader.token_indexers["token_subword"].tokenizer,
-            train_parameters=False
-        )
+        get_me_bert = what_type_of_bert(BERT_DIR, trainable=False, hugginface=False)
+    else:
+        get_me_bert = what_type_of_bert()
+
+    train, dev, vocab, reader = generate_all_data(input_features=INPUT_FEATURES, get_me_bert=get_me_bert)
+
+    if USE_BERT:
+        bert, bert_pooler = None, None
+        bert = get_me_bert.embedder
         bert_pooler = BertPooler(BERT_DIR)
 
     embedding_encoders = {

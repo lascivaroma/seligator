@@ -1,10 +1,8 @@
 # https://github.com/PonteIneptique/jdnlp
 
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 import random
-import numpy
 
 from typing import Dict, Optional, Tuple, List, Callable, Union
 from overrides import overrides
@@ -21,7 +19,6 @@ from allennlp.training.metrics import CategoricalAccuracy, BooleanAccuracy
 
 from seligator.models.base import BaseModel
 from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
-from seligator.dataset.tokenizer import SubwordTextEncoderTokenizer
 from seligator.modules.loss_functions.constrastiveLoss import ContrastiveLoss
 
 logger = logging.getLogger(__name__)
@@ -81,6 +78,7 @@ class SiameseClassifier(BaseModel):
                  prediction_threshold: float = 0.6,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
+                 loss: str = "contrastive",
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
 
@@ -90,7 +88,7 @@ class SiameseClassifier(BaseModel):
             self._emb_dropout = None
 
         self.prediction_threshold = prediction_threshold
-        self.regularizer: Optional[RegularizerApplicator] = RegularizerApplicator
+        self.regularizer: Optional[RegularizerApplicator] = regularizer
 
         self.use_features: bool = use_features
         self.features_embedder = features_embedder
@@ -165,7 +163,10 @@ class SiameseClassifier(BaseModel):
             "accuracy": CategoricalAccuracy(),
             #"f1": FBetaMeasure()
         }
-        self.loss = ContrastiveLoss(loss_margin)
+        if loss.lower() == "contrastive":
+            self._loss = ContrastiveLoss(loss_margin)
+        else:
+            raise ValueError(f"Unknown loss type `{loss}`")
         initializer(self)
 
     @classmethod
@@ -246,11 +247,11 @@ class SiameseClassifier(BaseModel):
         else:
             raise ValueError("No features or bert used.")
 
-        loss = self.loss(v_l, v_r, label)
+        loss = self._loss(v_l, v_r, label)
         sim = F.cosine_similarity(v_l, v_r)
         sim_bool = sim > self.prediction_threshold
 
-        output_dict = {'loss': loss}
+        output_dict = {'loss': loss, "sim": sim}
 
         sim_bool = sim_bool.long()
         label = label.long()
@@ -297,52 +298,53 @@ class SiameseClassifier(BaseModel):
         return out
 
 
-class SumAndLinear(Seq2VecEncoder):  # Does not improve the output
-    def __init__(self, input_dim):
-        super(SumAndLinear, self).__init__()
-        self.embedding = BagOfEmbeddingsEncoder(input_dim)
-        self.linear = nn.Linear(input_dim, input_dim)
-        self._input_dim = input_dim
-        self._output_dim = input_dim
-
-    def get_input_dim(self) -> int:
-        return self._input_dim
-
-    def get_output_dim(self) -> int:
-        return self._output_dim
-
-    def forward(self, tokens, mask=None):
-        summed = self.embedding(tokens, mask=mask)
-        masked = self.linear(summed)
-        return masked
-
+# Check Attention Pooling at https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
 
 if __name__ == "__main__":
     import logging
     logging.getLogger().setLevel(logging.INFO)
-    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder
+    from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
+    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, CnnEncoder
     from seligator.training.trainer import generate_all_data, train_model
-    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
+    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler, CnnHighwayEncoder
     from seligator.common.constants import EMBEDDING_DIMENSIONS
+    from seligator.common.bert_utils import what_type_of_bert
 
     # For test, just change the input feature here
     # INPUT_FEATURES = ("token", "lemma", "token_char",)
     INPUT_FEATURES = ("token_subword", )
     USE_BERT = True
     BERT_DIR = "./bert/latin_bert"
+    HUGGIN = True
+
+    if USE_BERT:
+        if HUGGIN:
+            get_me_bert = what_type_of_bert("ponteineptique/latin-classical-small", trainable=False, hugginface=True)
+            print("Using hugginface !")
+        else:
+            get_me_bert = what_type_of_bert(BERT_DIR, trainable=False, hugginface=False)
+    else:
+        get_me_bert = what_type_of_bert()
 
     train, dev, vocab, reader = generate_all_data(
-        input_features=INPUT_FEATURES, bert_dir=BERT_DIR,
+        input_features=INPUT_FEATURES, get_me_bert=get_me_bert,
         is_siamese=True
     )
     bert, bert_pooler = None, None
     if USE_BERT:
-        bert = LatinPretrainedTransformer(
-            BERT_DIR,
-            tokenizer=reader.token_indexers["token_subword"].tokenizer,
-            train_parameters=False
+        bert = get_me_bert.embedder
+        #bert = PretrainedTransformerEmbedder("ponteineptique/latin-classical-small")
+
+        # bert_pooler = BertPooler(BERT_DIR, dropout=0.3)
+        # Max Pooler
+        bert_pooler = CnnEncoder(
+            embedding_dim=bert.get_output_dim(),
+            num_filters=128,
         )
-        bert_pooler = BertPooler(BERT_DIR)
+        #bert_pooler = CnnHighwayEncoder(
+        #    embedding_dim=bert.get_output_dim(),
+        #    num_filters=128,
+        #)
 
     embedding_encoders = {
         cat: LstmSeq2VecEncoder(
@@ -374,7 +376,7 @@ if __name__ == "__main__":
     )
 
     model.cuda()
-
+    print(model)
     train_model(
         model=model,
         train_loader=train,
