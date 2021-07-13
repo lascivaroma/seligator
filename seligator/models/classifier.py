@@ -1,134 +1,41 @@
-from typing import Dict, Tuple, Optional, Callable
+from typing import Dict, Tuple, Optional
 
-import torch.nn.functional
-from allennlp.data import Vocabulary, TextFieldTensors
-from allennlp.models import Model
-from allennlp.modules import TextFieldEmbedder, Seq2VecEncoder
-from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
-from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
-from allennlp.nn import util
+from torch import Tensor, nn
+import torch.nn.functional as F
+from allennlp.data import Vocabulary
 
 from seligator.models.base import BaseModel
+from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 
 
 class FeatureEmbeddingClassifier(BaseModel):
     def __init__(self,
                  vocab: Vocabulary,
                  input_features: Tuple[str, ...],
-
-                 # Normal input
-                 use_features: bool = True,
-                 features_embedder: Optional[TextFieldEmbedder] = None,
-                 features_encoder: Optional[Seq2VecEncoder] = None,
-
-                 # Bert Input
-                 use_bert: bool = False,
-                 bert_embedder: Optional[LatinPretrainedTransformer] = None,
-                 bert_pooler: Optional[Seq2VecEncoder] = None,
-
-                 mixer: str = "concat",
-
-                 emb_dropout: float = 0.3,
+                 mixed_encoder: MixedEmbeddingEncoder,
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
 
-        if emb_dropout:
-            self._emb_dropout = torch.nn.Dropout(emb_dropout)
-        else:
-            self._emb_dropout = None
-
-        self.use_features: bool = use_features
-        self.features_embedder = features_embedder
-        self.features_encoder = features_encoder
-
-        self.use_bert = use_bert
-        self.bert_embedder: LatinPretrainedTransformer = bert_embedder
-        self.bert_pooler: Seq2VecEncoder = bert_pooler
-
-        out_dim = 0
-        if use_features and use_bert:
-            if mixer == "concat":
-                self.mixer = lambda inp1, inp2: torch.cat([inp1, inp2], -1)
-                out_dim = self.features_encoder.get_output_dim() + self.bert_pooler.get_output_dim()
-            elif mixer.startswith("Linear:"):
-                out_dim = int(mixer.split(":")[-1])
-                self._mixer = torch.nn.Linear(
-                    self.features_encoder.get_output_dim() + self.bert_pooler.get_output_dim(),
-                    out_dim
-                )
-                self.mixer = lambda inp1, inp2: self._mixer(torch.cat([inp1, inp2], -1))
-        elif use_features:
-            out_dim = self.features_encoder.get_output_dim()
-        elif use_bert:
-            out_dim = self.bert_pooler.get_output_dim()
-        else:
-            raise ValueError("Neither Bert or Features are used")
-
-        self.classifier = torch.nn.Linear(out_dim, self.num_labels)
+        self.mixed_encoder: MixedEmbeddingEncoder = mixed_encoder
+        self.classifier = nn.Linear(self.mixed_encoder.get_output_dim(), self.num_labels)
 
     def forward(self,
-                label: Optional[torch.Tensor] = None,
-                **inputs) -> Dict[str, torch.Tensor]:
-
-        if self.use_bert:
-            subw_inpt = inputs["token_subword"]["token_subword"]
-            subw_embedded = self.bert_embedder(subw_inpt["token_ids"], mask=subw_inpt["mask"])
-            subw_encoded = self.bert_pooler(subw_embedded, mask=subw_inpt["mask"])
-
-        if self.use_features:
-            token = self._rebuild_input(inputs)
-
-            # Shape: (batch_size, num_tokens, embedding_dim)
-            embedded_text = self.features_embedder(token)
-            if self._emb_dropout is not None:
-                # Shape: (batch_size, num_tokens, embedding_dim)
-                embedded_text = self._emb_dropout(embedded_text)
-            # Shape: (batch_size, num_tokens)
-            mask = util.get_text_field_mask(token)
-            # Shape: (batch_size, encoding_dim)
-            encoded_text = self.features_encoder(embedded_text, mask)
-
-        if self.use_bert and self.use_features:
-            encoded_text = self.mixer(encoded_text, subw_encoded)
-        elif self.use_bert:
-            encoded_text = subw_encoded
+                label: Optional[Tensor] = None,
+                **mixed_features) -> Dict[str, Tensor]:
+        encoded_text, additional_out = self.mixed_encoder(mixed_features)
 
         # Shape: (batch_size, num_labels)
         logits = self.classifier(encoded_text)
 
         # Shape: (batch_size, num_labels)
-        probs = torch.nn.functional.softmax(logits)
+        probs = F.softmax(logits)
 
         # Shape: (1,)
-        output = {"probs": probs}
+        output = {"probs": probs, **(additional_out or {})}
         if label is not None:
             self._compute_metrics(logits, label, output)
 
         return output
-
-    @classmethod
-    def build_model(
-            cls,
-            vocabulary: Vocabulary,
-            emb_dims: Dict[str, int] = None,
-            input_features: Tuple[str, ...] = ("token",),
-            features_encoder: Callable[[int], Seq2VecEncoder] = BagOfEmbeddingsEncoder,
-            char_encoders: Dict[str, Seq2VecEncoder] = None,
-            **kwargs
-    ) -> Model:
-        emb = cls.build_embeddings(
-            vocabulary=vocabulary,
-            input_features=input_features,
-            emb_dims=emb_dims,
-            char_encoders=char_encoders
-        )
-        return cls(
-            vocab=vocabulary,
-            input_features=input_features,
-            features_embedder=emb,
-            features_encoder=features_encoder(emb.get_output_dim()),
-            **kwargs
-        )
 
 
 if __name__ == "__main__":
@@ -150,8 +57,8 @@ if __name__ == "__main__":
 
     train, dev, vocab, reader = generate_all_data(input_features=INPUT_FEATURES, get_me_bert=get_me_bert)
 
+    bert, bert_pooler = None, None
     if USE_BERT:
-        bert, bert_pooler = None, None
         bert = get_me_bert.embedder
         bert_pooler = BertPooler(BERT_DIR)
 
@@ -166,22 +73,26 @@ if __name__ == "__main__":
         for cat in {"token_char", "lemma_char"}
     }
 
-    model = FeatureEmbeddingClassifier.build_model(
-        vocabulary=vocab,
-        emb_dims=EMBEDDING_DIMENSIONS,
+    model = FeatureEmbeddingClassifier(
+        vocab=vocab,
         input_features=INPUT_FEATURES,
-        features_encoder=lambda input_dim: LstmSeq2VecEncoder(
-            input_size=input_dim,
-            hidden_size=128,
-            dropout=0.3,
-            bidirectional=True,
-            num_layers=2
-        ),
-        char_encoders=embedding_encoders,
+        mixed_encoder=MixedEmbeddingEncoder.build(
+            vocabulary=vocab,
+            emb_dims=EMBEDDING_DIMENSIONS,
+            input_features=INPUT_FEATURES,
+            features_encoder=lambda input_dim: LstmSeq2VecEncoder(
+                input_size=input_dim,
+                hidden_size=128,
+                dropout=0.3,
+                bidirectional=True,
+                num_layers=2
+            ),
+            char_encoders=embedding_encoders,
 
-        use_bert=USE_BERT,
-        bert_embedder=bert,
-        bert_pooler=bert_pooler
+            use_bert=USE_BERT,
+            bert_embedder=bert,
+            bert_pooler=bert_pooler
+        )
     )
 
     model.cuda()

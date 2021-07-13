@@ -50,7 +50,8 @@ class ClassificationTsvReader(DatasetReader):
             input_features: Tuple[str, ...] = None,
             get_me_bert: Optional[GetMeBert] = GetMeBert(),
             siamese: bool = False,
-            siamese_probability: float = 0.7,
+            triplet: bool = False,
+            siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
             **kwargs
     ):
@@ -72,6 +73,7 @@ class ClassificationTsvReader(DatasetReader):
         # If Siamese is true, the first sentence that is positive will be set as the example
         #   The second one as well
         self.siamese: bool = siamese
+        self.triplet: bool = triplet
         self.siamese_probability: float = siamese_probability
         self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
         if self.siamese:
@@ -182,7 +184,18 @@ class ClassificationTsvReader(DatasetReader):
             else:
                 yield self.text_to_instance(content, label)
 
-        if self.siamese:
+        if self.triplet and self.siamese:
+            for sentence in sentences:
+                pos, neg = random.choice(self.siamese_samples["positive"]), \
+                           random.choice(self.siamese_samples["negative"])
+                yield Instance(
+                    {
+                        **{f"left_{key}": value for key, value in sentence.items()},
+                        **{f"positive_{key}": value for key, value in pos.items()},
+                        **{f"negative_{key}": value for key, value in neg.items()}
+                    }
+                )
+        elif self.siamese:
             for sentence in sentences:
                 if len(self.siamese_samples["negative"]) > 0:
                     pooled_label: str = "positive" if random.random() < self.siamese_probability else "negative"
