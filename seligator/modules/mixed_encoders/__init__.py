@@ -191,7 +191,7 @@ class MixedEmbeddingEncoder(nn.Module):
             emb_dropout=emb_dropout
         )
 
-    def copy_for_siamese(self, copy: bool = False) -> "MixedEmbeddingEncoder":
+    def copy_for_siamese(self, copy: bool = True) -> "MixedEmbeddingEncoder":
         return type(self)(
             input_features=self.input_features,
 
@@ -207,7 +207,7 @@ class MixedEmbeddingEncoder(nn.Module):
         )
 
     @classmethod
-    def build_for_siamese(cls, copy: bool = False, **build_kwargs) -> Tuple["MixedEmbeddingEncoder", ...]:
+    def build_for_siamese(cls, copy: bool = True, **build_kwargs) -> Tuple["MixedEmbeddingEncoder", ...]:
         left = cls.build(*build_kwargs)
         right = left.copy_for_siamese(copy=copy)
         return left, right

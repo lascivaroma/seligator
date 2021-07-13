@@ -1,11 +1,12 @@
 # https://github.com/PonteIneptique/jdnlp
 
 import torch.nn.functional as F
-from torch import Tensor
+from torch import Tensor, cat
 
 from typing import Dict, Optional, Tuple, List, Callable, Union
 import logging
 from overrides import overrides
+from pytorch_metric_learning import losses, miners
 
 from seligator.models.siamese import SiameseClassifier
 from seligator.modules.loss_functions.tripletLoss import TripletLoss
@@ -20,7 +21,11 @@ class TripletClassifier(SiameseClassifier):
 
     def __init__(self, *args, **kwargs):
         super(TripletClassifier, self).__init__(*args, **kwargs)
-        self._loss = TripletLoss(kwargs.get("loss_margin", 1.0))
+        #self._loss = TripletLoss(kwargs.get("loss_margin", 1.0))
+        self._loss = losses.TripletMarginLoss(
+            margin=kwargs.get("loss_margin", 1.0),
+            triplets_per_anchor="all",
+        )
 
     @overrides
     def forward(
@@ -29,6 +34,8 @@ class TripletClassifier(SiameseClassifier):
     ) -> Dict[str, Tensor]:
 
         example = self.filter_input_dict(inputs, "left_")
+        # ToDo: Right now, positiv and negative are single examples. Should we check that its all the same
+        #       and reduce the size of the matrix for computation ?
         positiv = self.filter_input_dict(inputs, "positive_")
         negativ = self.filter_input_dict(inputs, "negative_")
 
@@ -45,27 +52,34 @@ class TripletClassifier(SiameseClassifier):
             "pos_similarity": F.cosine_similarity(exm, pos),
         }
         if negativ:
-            out["neg_similarity"] = F.cosine_similarity(exm, pos)
-            out["class"] = out["neg_similarity"] > out["pos_similarity"]
-
-        if label is not None:
-            out["loss"] = self._loss(exm, pos, neg)
+            out["neg_similarity"] = F.cosine_similarity(exm, neg)
 
         positiv_sim_bool = out["pos_similarity"] > self.prediction_threshold
 
-        sim_bool = positiv_sim_bool.long()
+        if label is not None:
+            sim_bool = positiv_sim_bool.long()
+            if isinstance(self._loss, losses.BaseMetricLossFunction):
+                # print(exm["label"], pos["label"])
+                encoded = cat([exm, pos[:1, :], neg[:1, :]], dim=0) # We only keep the first, hack for ToDo
+                out["loss"] = self._loss(
+                    encoded,
+                    cat([example["label"], positiv["label"][:1], negativ["label"][:1]], dim=0)
+                ) or (encoded * 0).sum()
+            else:
+                out["loss"] = self._loss(exm, pos, neg)
 
-        self._compute_metrics(
-            categorical_predictions=self._to_categorical(example, positiv, sim_bool),
-            categorical_label=example["label"].long(),
-            similarity_boolean=sim_bool,
-            similarity_labels=label
-        )
+            self._compute_metrics(
+                categorical_predictions=self._to_categorical(example, positiv, sim_bool),
+                categorical_label=example["label"].long(),
+                similarity_boolean=sim_bool,
+                similarity_labels=label
+            )
 
         return out
 
 
-# Check Attention Pooling at https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
+# Check Attention Pooling at
+#    https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
 
 if __name__ == "__main__":
     import logging
@@ -79,7 +93,7 @@ if __name__ == "__main__":
     from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 
     # For test, just change the input feature here
-    # INPUT_FEATURES = ("token", "lemma", "token_char",)
+    #INPUT_FEATURES = ("token", "lemma", "token_char",)
     INPUT_FEATURES = ("token_subword", )
     USE_BERT = True
     BERT_DIR = "./bert/latin_bert"
@@ -151,6 +165,7 @@ if __name__ == "__main__":
 
     model.cuda()
     print(model)
+
     train_model(
         model=model,
         train_loader=train,
