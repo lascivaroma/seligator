@@ -41,6 +41,7 @@ def build_token_indexers(
 
 @DatasetReader.register("classification-tsv")
 class ClassificationTsvReader(DatasetReader):
+    INSTANCE_TYPES = {"default", "siamese", "triplet"}
     def __init__(
             self,
             tokenizer: Tokenizer = None,
@@ -49,8 +50,7 @@ class ClassificationTsvReader(DatasetReader):
             cats: Tuple[str, ...] = CATS,
             input_features: Tuple[str, ...] = None,
             get_me_bert: Optional[GetMeBert] = GetMeBert(),
-            siamese: bool = False,
-            triplet: bool = False,
+            instance_type: str = "default",
             siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
             **kwargs
@@ -72,11 +72,14 @@ class ClassificationTsvReader(DatasetReader):
 
         # If Siamese is true, the first sentence that is positive will be set as the example
         #   The second one as well
-        self.siamese: bool = siamese
-        self.triplet: bool = triplet
+
+        if instance_type.lower() not in {"default", "siamese", "triplet"}:
+            raise ValueError("`instance_type` must be one of " + str({"default", "siamese", "triplet"}))
+
+        self.instance_type: str = instance_type.lower()
         self.siamese_probability: float = siamese_probability
         self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
-        if self.siamese:
+        if self.instance_type in {"siamese", "triplet"}:
             logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
             logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
 
@@ -163,7 +166,7 @@ class ClassificationTsvReader(DatasetReader):
                             raise ValueError("A label was not found")
 
                         # If we are not in siamese, yield
-                        if not self.siamese:
+                        if self.instance_type == "default":
                             yield self.text_to_instance(content, label)
                         else:
                             # We check that positive and negative has been set
@@ -178,13 +181,13 @@ class ClassificationTsvReader(DatasetReader):
                     content.append(dict(zip(header, line.split("\t"))))
 
         if content:
-            if self.siamese:
+            if self.instance_type == "default":
+                yield self.text_to_instance(content, label)
+            else:
                 s = self.text_to_instance(content, label)
                 sentences.append(s)
-            else:
-                yield self.text_to_instance(content, label)
 
-        if self.triplet and self.siamese:
+        if self.instance_type == "triplet":
             for sentence in sentences:
                 pos, neg = random.choice(self.siamese_samples["positive"]), \
                            random.choice(self.siamese_samples["negative"])
@@ -195,7 +198,7 @@ class ClassificationTsvReader(DatasetReader):
                         **{f"negative_{key}": value for key, value in neg.items()}
                     }
                 )
-        elif self.siamese:
+        elif self.instance_type == "siamese":
             for sentence in sentences:
                 if len(self.siamese_samples["negative"]) > 0:
                     pooled_label: str = "positive" if random.random() < self.siamese_probability else "negative"

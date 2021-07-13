@@ -32,12 +32,14 @@ class TripletClassifier(SiameseClassifier):
         positiv = self.filter_input_dict(inputs, "positive_")
         negativ = self.filter_input_dict(inputs, "negative_")
 
-        label = example.get("label")
+        label = None
+        if example.get("label", None) is not None:
+            label = (example["label"] == positiv["label"]).long()
 
         # Need to take care of label ?
         exm, example_additional_output = self.left_encoder(example)
-        pos, positiv_additional_output = self.left_encoder(positiv)
-        neg, negativ_additional_output = self.left_encoder(negativ)
+        pos, positiv_additional_output = self.right_encoder(positiv)
+        neg, negativ_additional_output = self.right_encoder(negativ)
 
         out = {
             "pos_similarity": F.cosine_similarity(exm, pos),
@@ -46,8 +48,19 @@ class TripletClassifier(SiameseClassifier):
             out["neg_similarity"] = F.cosine_similarity(exm, pos)
             out["class"] = out["neg_similarity"] > out["pos_similarity"]
 
-        if label:
+        if label is not None:
             out["loss"] = self._loss(exm, pos, neg)
+
+        positiv_sim_bool = out["pos_similarity"] > self.prediction_threshold
+
+        sim_bool = positiv_sim_bool.long()
+
+        self._compute_metrics(
+            categorical_predictions=self._to_categorical(example, positiv, sim_bool),
+            categorical_label=example["label"].long(),
+            similarity_boolean=sim_bool,
+            similarity_labels=label
+        )
 
         return out
 
@@ -83,8 +96,9 @@ if __name__ == "__main__":
 
     train, dev, vocab, reader = generate_all_data(
         input_features=INPUT_FEATURES, get_me_bert=get_me_bert,
-        is_siamese=True
+        instance_type="triplet"
     )
+
     bert, bert_pooler = None, None
     if USE_BERT:
         bert = get_me_bert.embedder

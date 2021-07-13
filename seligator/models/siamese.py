@@ -66,6 +66,25 @@ class SiameseClassifier(BaseModel):
             raise ValueError(f"Unknown loss type `{loss}`")
         initializer(self)
 
+    def _to_categorical(self, example, compared_with, sim_bool) -> torch.Tensor:
+        # Compute output class
+        correct = []
+        #example = example["label"].tolist()
+        #compared_with = compared_with["label"]
+        nb_classes = 2
+        for lt, rt, pred in zip(
+                example["label"].tolist(),
+                compared_with["label"].tolist(),
+                sim_bool.tolist()
+        ):
+            row = [0] * nb_classes  # Categorical expect two classes
+            if pred == 1:  # If the pred is 1, the example is predicted to be = to compared_with
+                row[rt] += 1
+            else:  # Otherwise, it's predicted to != right
+                row[int(not rt)] += 1
+            correct.append(row)
+        return torch.tensor(correct, device=example["label"].device)
+
     @overrides
     def forward(self,
                 **inputs) -> Dict[str, torch.Tensor]:
@@ -98,32 +117,33 @@ class SiameseClassifier(BaseModel):
         sim_bool = sim_bool.long()
         label = label.long()
 
-        # Compute output class
-        correct = []
-        for lt, rt, pred in zip(
-                left["label"].tolist(),
-                right["label"].tolist(),
-                sim_bool.tolist()
-        ):
-            row = [0, 0]  # Categorical expect two classes
-            if pred == 1:  # If the pred is 1, left is predicted to be right
-                row[rt] += 1
-            else:  # Otherwise, it's predicted to not be right
-                row[int(not rt)] += 1
-            correct.append(row)
-        correct = torch.tensor(correct, device=left["label"].device)
-
-        self._measure(predictions=correct, gold_labels=left["label"])
-        for mname, metric in self.metrics.items():
-            if mname.startswith("sim"):
-                metric(sim_bool, label)
-            else:
-                metric(
-                    predictions=correct,
-                    gold_labels=left["label"].long()
-                )
+        self._compute_metrics(
+            categorical_predictions=self._to_categorical(left, right, sim_bool),
+            categorical_label=left["label"].long(),
+            similarity_boolean=sim,
+            similarity_labels=label
+        )
 
         return output_dict
+
+    @overrides
+    def _compute_metrics(
+            self,
+            categorical_predictions: torch.Tensor,
+            categorical_label: torch.Tensor,
+            similarity_boolean: torch.Tensor,
+            similarity_labels: torch.Tensor
+    ):
+
+        self._measure(predictions=categorical_predictions, gold_labels=categorical_label)
+        for mname, metric in self.metrics.items():
+            if mname.startswith("sim"):
+                metric(similarity_boolean, similarity_labels)
+            else:
+                metric(
+                    predictions=categorical_predictions,
+                    gold_labels=categorical_label
+                )
 
     @overrides
     def get_metrics(self, reset: bool = False) -> Dict[str, float]:
@@ -170,7 +190,7 @@ if __name__ == "__main__":
 
     train, dev, vocab, reader = generate_all_data(
         input_features=INPUT_FEATURES, get_me_bert=get_me_bert,
-        is_siamese=True
+        instance_type="siamese"
     )
     bert, bert_pooler = None, None
     if USE_BERT:

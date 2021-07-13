@@ -20,7 +20,7 @@ class TripletLoss(nn.Module):
                 anchor: torch.Tensor,
                 positive: torch.Tensor,
                 negative: torch.Tensor,
-                size_average: bool =True
+                size_average: bool = True
                 )\
             -> torch.Tensor:
         distance_positive = (anchor - positive).pow(2).sum(1)  # .pow(.5)

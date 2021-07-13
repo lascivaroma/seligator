@@ -20,15 +20,15 @@ from seligator.models.base import BaseModel
 from seligator.common.bert_utils import GetMeBert
 
 
-def read_data(reader: DatasetReader, use_siamese: bool = True) -> Tuple[List[Instance], List[Instance]]:
+def read_data(reader: DatasetReader, use_siamese_set: bool = True) -> Tuple[List[Instance], List[Instance]]:
     """ Generates datasets
 
     :param reader: Dataset reader to parse the file
-    :param use_siamese: Use the siamese data and merge it into train.txt
+    :param use_siamese_set: Use the siamese data and merge it into train.txt
     """
     logging.info("Reading data")
     training_data = list(reader.read("dataset/split/train.txt"))
-    if use_siamese:
+    if use_siamese_set:
         training_data.extend(list(reader.read("dataset/split/siamese.txt")))
     validation_data = list(reader.read("dataset/split/dev.txt"))
 
@@ -94,31 +94,35 @@ def generate_all_data(
     batch_size: int = 16,
     batches_per_epoch: Optional[int] = None,
     get_me_bert: GetMeBert = GetMeBert(),
-    is_siamese: bool = False
+    instance_type: str = "default"
 ) -> Tuple[DataLoader, DataLoader, Vocabulary, ClassificationTsvReader]:
 
+    instance_type = instance_type.lower()
+    if instance_type not in {"default", "siamese", "triplet"}:
+        raise ValueError("`instance_type` must be one of "+str({"default", "siamese", "triplet"}))
+
     # Expects a siamese.txt file in the same directory as train.txt
-    if is_siamese:
+    if instance_type in {"siamese", "triplet"}:
         # Samples are not siamese loaded. Siamese affects the other datasets
         siamese_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, siamese=False
+            input_features=input_features, get_me_bert=get_me_bert, instance_type="default"
         )
         siamese_samples = get_siamese_samples(siamese_reader)
 
         # Then we create the normal one
         dataset_reader = ClassificationTsvReader(
             input_features=input_features, get_me_bert=get_me_bert,
-            siamese=True, siamese_samples=siamese_samples,
+            instance_type=instance_type, siamese_samples=siamese_samples,
             token_indexers=siamese_reader.token_indexers,
             tokenizer=siamese_reader.tokenizer
         )
         # And parse the original data
-        train_data, dev_data = read_data(dataset_reader, use_siamese=False)
+        train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
     else:
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, siamese=False
+            input_features=input_features, get_me_bert=get_me_bert, instance_type=instance_type
         )
-        train_data, dev_data = read_data(dataset_reader, use_siamese=True)
+        train_data, dev_data = read_data(dataset_reader, use_siamese_set=True)
 
     if ratio_train != 1.0:
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]
@@ -181,7 +185,7 @@ if __name__ == "__main__":
         token_indexers=siamese_reader.token_indexers,
         tokenizer=siamese_reader.tokenizer
     )
-    train_data, dev_data = read_data(dataset_reader, use_siamese=False)
+    train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
 
     model, dataset_reader = run_training_loop(
         build_model=lambda *a, **w: None,
