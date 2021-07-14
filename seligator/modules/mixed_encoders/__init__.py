@@ -92,7 +92,7 @@ class MixedEmbeddingEncoder(nn.Module):
         embedded = self.bert_embedder(token["token_ids"], mask=token["mask"])
         return self.bert_pooler(embedded, mask=token["mask"])
 
-    def _forward_features(self, token):
+    def _forward_features(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         token = self._rebuild_input(token)
 
         # Shape: (batch_size, num_tokens, embedding_dim)
@@ -102,8 +102,12 @@ class MixedEmbeddingEncoder(nn.Module):
             embedded_text = self._emb_dropout(embedded_text)
         # Shape: (batch_size, num_tokens)
         mask = util.get_text_field_mask(token)
+
         # Shape: (batch_size, encoding_dim)
-        return self.features_encoder(embedded_text, mask)
+        if getattr(self.features_encoder, "with_attention", False):
+            return self.features_encoder(embedded_text, mask)
+        else:
+            return self.features_encoder(embedded_text, mask), None
 
     def forward(self, data) -> Tuple[torch.Tensor, Dict[str, Any]]:
         """
@@ -115,12 +119,12 @@ class MixedEmbeddingEncoder(nn.Module):
         # Deal with Bert (key: token_subword)
         if self.use_bert and self.use_features:
             _bert = self._forward_bert(data["token_subword"]["token_subword"])
-            _features = self._forward_features(data)
+            _features, attention = self._forward_features(data)
             v = self.mixer(_bert, _features)
         elif self.use_bert:
             v = self._forward_bert(data["token_subword"]["token_subword"])
         elif self.use_features:
-            v = self._forward_features(data)
+            v, attention = self._forward_features(data)
         else:
             raise ValueError("No features or bert used.")
         return v, {}
@@ -211,3 +215,4 @@ class MixedEmbeddingEncoder(nn.Module):
         left = cls.build(*build_kwargs)
         right = left.copy_for_siamese(copy=copy)
         return left, right
+
