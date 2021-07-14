@@ -99,7 +99,9 @@ if __name__ == "__main__":
         input_features=INPUT_FEATURES,
         mixed_encoder=MixedEmbeddingEncoder.build(
             vocabulary=vocab,
-            emb_dims=EMBEDDING_DIMENSIONS,
+            emb_dims=MixedEmbeddingEncoder.merge_default_embeddings({"token": 100}),
+            pretrained_embeddings={"token": "~/Downloads/latin.embeddings"},
+            trainable_embeddings={"token": False},
             input_features=INPUT_FEATURES,
             features_encoder=features_encoder,
             char_encoders=embedding_encoders,

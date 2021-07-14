@@ -130,18 +130,41 @@ class MixedEmbeddingEncoder(nn.Module):
         return v, {}
 
     @staticmethod
+    def merge_default_embeddings(additional):
+        return {
+            **EMBEDDING_DIMENSIONS,
+            **additional
+        }
+
+    @staticmethod
     def build_embeddings(
             vocabulary: Vocabulary,
             input_features: Tuple[str, ...],
+            pretrained_embeddings: Optional[Dict[str, str]] = None,
+            trainable_embeddings: Optional[Dict[str, str]] = None,
             emb_dims: Dict[str, int] = None,
             char_encoders: Dict[str, Seq2VecEncoder] = None
     ) -> BasicTextFieldEmbedder:
         emb_dims = emb_dims or EMBEDDING_DIMENSIONS
+
+        def get_data(cat, dico: Optional[Dict[str, str]], default=None):
+            if dico and cat in dico:
+                return dico[cat]
+            return default
+
         emb = {
-            cat: Embedding(embedding_dim=emb_dims[cat], num_embeddings=vocabulary.get_vocab_size(cat))
+            cat: Embedding(
+                embedding_dim=emb_dims[cat],
+                num_embeddings=vocabulary.get_vocab_size(cat),
+                pretrained_file=get_data(cat, pretrained_embeddings),
+                trainable=get_data(cat, trainable_embeddings, default=True),
+                vocab=vocabulary,
+                vocab_namespace=cat
+            )
             for cat in input_features
             if "_subword" not in cat and "_char" not in cat
         }
+
         if char_encoders:
             emb.update({
                 cat: TokenCharactersEncoder(
@@ -164,6 +187,9 @@ class MixedEmbeddingEncoder(nn.Module):
 
             emb_dims: Dict[str, int] = None,
             input_features: Tuple[str, ...] = ("token",),
+            pretrained_embeddings: Optional[Dict[str, str]] = None,
+            trainable_embeddings: Optional[Dict[str, str]] = None,
+
             features_encoder: Callable[[int], Seq2VecEncoder] = BagOfEmbeddingsEncoder,
             char_encoders: Dict[str, Seq2VecEncoder] = None,
 
@@ -178,7 +204,9 @@ class MixedEmbeddingEncoder(nn.Module):
             vocabulary,
             input_features=input_features,
             emb_dims=emb_dims or EMBEDDING_DIMENSIONS,
-            char_encoders=char_encoders
+            char_encoders=char_encoders,
+            pretrained_embeddings=pretrained_embeddings,
+            trainable_embeddings=trainable_embeddings
         )
         return cls(
             input_features=input_features,
