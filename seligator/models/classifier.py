@@ -45,10 +45,31 @@ if __name__ == "__main__":
     from seligator.common.constants import EMBEDDING_DIMENSIONS
     from seligator.common.bert_utils import what_type_of_bert
 
+    import logging
+    logging.getLogger().setLevel(logging.INFO)
+
     # For test, just change the input feature here
-    INPUT_FEATURES = ("token", "lemma", "token_char", "token_subword")
-    USE_BERT = True
+    INPUT_FEATURES = ("token", "lemma", "token_char")#, "token_subword")
+    USE_BERT = "token_subword" in INPUT_FEATURES
     BERT_DIR = "./bert/latin_bert"
+    HAN = False
+    if HAN:
+        from seligator.modules.seq2vec.han import HierarchicalAttentionalEncoder
+
+        def features_encoder(input_dim):
+            return HierarchicalAttentionalEncoder(
+                input_dim=input_dim,
+                hidden_size=128
+            )
+    else:
+        def features_encoder(input_dim):
+            return LstmSeq2VecEncoder(
+                input_size=input_dim,
+                hidden_size=128,
+                dropout=0.3,
+                bidirectional=True,
+                num_layers=2
+            )
 
     if USE_BERT:
         get_me_bert = what_type_of_bert(BERT_DIR, trainable=False, hugginface=False)
@@ -80,13 +101,7 @@ if __name__ == "__main__":
             vocabulary=vocab,
             emb_dims=EMBEDDING_DIMENSIONS,
             input_features=INPUT_FEATURES,
-            features_encoder=lambda input_dim: LstmSeq2VecEncoder(
-                input_size=input_dim,
-                hidden_size=128,
-                dropout=0.3,
-                bidirectional=True,
-                num_layers=2
-            ),
+            features_encoder=features_encoder,
             char_encoders=embedding_encoders,
 
             use_bert=USE_BERT,
