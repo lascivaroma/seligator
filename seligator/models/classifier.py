@@ -22,6 +22,7 @@ class FeatureEmbeddingClassifier(BaseModel):
     def forward(self,
                 label: Optional[Tensor] = None,
                 **mixed_features) -> Dict[str, Tensor]:
+
         encoded_text, additional_out = self.mixed_encoder(mixed_features)
 
         # Shape: (batch_size, num_labels)
@@ -36,6 +37,7 @@ class FeatureEmbeddingClassifier(BaseModel):
             self._compute_metrics(logits, label, output)
 
         return output
+
 
 
 if __name__ == "__main__":

@@ -95,12 +95,15 @@ class ClassificationTsvReader(DatasetReader):
             except AssertionError:
                 logging.error(f"Error on {normalized}")
                 raise
+
         for token_repr in content:
             for cat, value in token_repr.items():
                 if cat in fields:
                     fields[cat].append(Token(value))
                 if cat == "token" and "token_char" in self.categories:
                     fields["token_char"].append(Token(value))
+                if cat == "lemma" and "lemma_char" in self.categories:
+                    fields["lemma_char"].append(Token(value))
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}

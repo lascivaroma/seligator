@@ -145,7 +145,8 @@ def train_model(
     dev_loader: DataLoader,
     cuda_device: Union[List[int], int] = -1,
     patience: int = 2,
-    num_epochs: int = 5
+    num_epochs: int = 5,
+    lr: float = 1e-4
 ) :
     # You obviously won't want to create a temporary file for your training
     # results, but for execution in binder for this guide, we need to do this.
@@ -158,7 +159,8 @@ def train_model(
             train_loader, dev_loader,
             cuda_device=cuda_device,
             num_epochs=num_epochs,
-            patience=patience
+            patience=patience,
+            lr=lr
         )
         logging.info("Starting training")
         trainer.train()

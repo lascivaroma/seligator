@@ -35,7 +35,8 @@ class MixedEmbeddingEncoder(nn.Module):
                  bert_pooler: Optional[Seq2VecEncoder] = None,
 
                  mixer: Union[str, Callable] = "concat",
-                 emb_dropout: Union[float, nn.Dropout] = 0.3
+                 emb_dropout: Union[float, nn.Dropout] = 0.3,
+                 return_bert: bool = False
                  ):
         super().__init__()
         self.input_features = input_features
@@ -77,6 +78,7 @@ class MixedEmbeddingEncoder(nn.Module):
         else:
             raise ValueError("Neither Bert or Features are used")
         self._out_dim = out_dim
+        self.return_bert: bool = return_bert
 
     def get_output_dim(self) -> int:
         return self._out_dim
@@ -88,9 +90,11 @@ class MixedEmbeddingEncoder(nn.Module):
                 if not cat.endswith("_subword")
         }
 
-    def _forward_bert(self, token):
+    def _forward_bert(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         embedded = self.bert_embedder(token["token_ids"], mask=token["mask"])
-        return self.bert_pooler(embedded, mask=token["mask"])
+        if self.return_bert:
+            return self.bert_pooler(embedded, mask=token["mask"]), embedded.cpu()
+        return self.bert_pooler(embedded, mask=token["mask"]), None
 
     def _forward_features(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         token = self._rebuild_input(token)
@@ -105,7 +109,7 @@ class MixedEmbeddingEncoder(nn.Module):
 
         # Shape: (batch_size, encoding_dim)
         if getattr(self.features_encoder, "with_attention", False):
-            return self.features_encoder(embedded_text, mask)
+            return self.features_encoder(embedded_text, mask)  # ToDo: Attention returned !
         else:
             return self.features_encoder(embedded_text, mask), None
 
@@ -117,17 +121,23 @@ class MixedEmbeddingEncoder(nn.Module):
 
         """
         # Deal with Bert (key: token_subword)
+        attention = None
+        additional_output = {}
         if self.use_bert and self.use_features:
-            _bert = self._forward_bert(data["token_subword"]["token_subword"])
+            _bert, embedded = self._forward_bert(data["token_subword"]["token_subword"])
+            if embedded is not None:
+                additional_output["bert_projection"] = embedded
             _features, attention = self._forward_features(data)
             v = self.mixer(_bert, _features)
         elif self.use_bert:
-            v = self._forward_bert(data["token_subword"]["token_subword"])
+            v, embedded = self._forward_bert(data["token_subword"]["token_subword"])
+            if embedded is not None:
+                additional_output["bert_projection"] = embedded
         elif self.use_features:
             v, attention = self._forward_features(data)
         else:
             raise ValueError("No features or bert used.")
-        return v, {}
+        return v, {"attention": attention.tolist() if attention is not None else [], **additional_output}
 
     @staticmethod
     def merge_default_embeddings(additional):
@@ -141,7 +151,7 @@ class MixedEmbeddingEncoder(nn.Module):
             vocabulary: Vocabulary,
             input_features: Tuple[str, ...],
             pretrained_embeddings: Optional[Dict[str, str]] = None,
-            trainable_embeddings: Optional[Dict[str, str]] = None,
+            trainable_embeddings: Optional[Dict[str, bool]] = None,
             emb_dims: Dict[str, int] = None,
             char_encoders: Dict[str, Seq2VecEncoder] = None
     ) -> BasicTextFieldEmbedder:
@@ -188,7 +198,7 @@ class MixedEmbeddingEncoder(nn.Module):
             emb_dims: Dict[str, int] = None,
             input_features: Tuple[str, ...] = ("token",),
             pretrained_embeddings: Optional[Dict[str, str]] = None,
-            trainable_embeddings: Optional[Dict[str, str]] = None,
+            trainable_embeddings: Optional[Dict[str, bool]] = None,
 
             features_encoder: Callable[[int], Seq2VecEncoder] = BagOfEmbeddingsEncoder,
             char_encoders: Dict[str, Seq2VecEncoder] = None,

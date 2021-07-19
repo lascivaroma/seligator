@@ -22,6 +22,14 @@ def latin_bert_normalization(string: str) -> str:
     return SPACES.sub(" ", APOSTROPHES.sub("", string.replace("\\", "").replace(";", "")).strip().lower())
 
 
+class ReworkedSTE(SubwordTextEncoder):
+    def __init__(self, vocab):
+        super(ReworkedSTE, self).__init__(vocab)
+
+    def _token_to_subtoken_ids(self, token):
+        return super(ReworkedSTE, self)._token_to_subtoken_ids(token.strip())
+
+
 class LatinSubwordTextEncoderTokenizer(Tokenizer):
     # https://github.com/tensorflow/tensor2tensor/blob/78ba8019847426e988294fd58f8953d7990a8db7/tensor2tensor/data_generators/text_encoder.py#L448
     def __init__(self,
@@ -31,7 +39,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
                  special_tokens: Set[str] = None
                  ):
         self.vocab = vocab
-        self._tokenizer = SubwordTextEncoder(vocab)
+        self._tokenizer = ReworkedSTE(vocab)
         # StartFix AttributeError: 'SubwordTextEncoder' object has no attribute '_cache_size'
         # ToDo: Find a way to avoid STE from tensor2tensor
         #self._tokenizer._cache_size = 2 ** 20
@@ -44,8 +52,8 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
 
         self.single_sequence_start_tokens = ["[CLS]"]
         self.single_sequence_start_tokens_ids = [self._tokenizer._subtoken_string_to_id["[CLS]"]]
-        self.single_sequence_end_tokens = []#["[SEP]"]
-        self.single_sequence_end_tokens_ids = []#[self._tokenizer._subtoken_string_to_id["[SEP]"]]
+        self.single_sequence_end_tokens = ["[SEP]"]
+        self.single_sequence_end_tokens_ids = [self._tokenizer._subtoken_string_to_id["[SEP]"]]
 
     @property
     def tokenizer(self):
@@ -87,6 +95,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
             max_length += self.num_special_tokens_for_sequence()
 
         text = latin_bert_normalization(text)
+        logging.info(text)
 
         token_ids = self._tokenizer.encode(text)
         token_texts = self._tokenizer.decode_list(token_ids)
@@ -114,7 +123,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
                     idx_end=None,
                 )
             )
-
+        logger.info(str(tokens))
         return tokens
 
 

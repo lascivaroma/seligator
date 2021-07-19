@@ -26,13 +26,14 @@ _Fields = Dict[str, torch.LongTensor]
 class SiameseClassifier(BaseModel):
     BERT_COMPATIBLE: bool = True
     IS_SIAMESE: bool = True
+    INSTANCE_TYPE: str = "siamese"
 
     def __init__(self,
                  vocab: Vocabulary,
                  input_features: Tuple[str, ...],
                  mixed_encoder: Union[MixedEmbeddingEncoder, Tuple[MixedEmbeddingEncoder, MixedEmbeddingEncoder]],
 
-                 loss_margin: float = 1.0,
+                 loss_margin: float = 0.5,
                  prediction_threshold: float = 0.6,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
@@ -85,6 +86,23 @@ class SiameseClassifier(BaseModel):
             correct.append(row)
         return torch.tensor(correct, device=example["label"].device)
 
+    def _to_categorical_probs(self, example, compared_with, sim) -> torch.Tensor:
+        # Compute output class
+        correct = []
+        #example = example["label"].tolist()
+        #compared_with = compared_with["label"]
+        nb_classes = 2
+        for lt, rt, pred in zip(
+                example["label"].tolist(),
+                compared_with["label"].tolist(),
+                sim.tolist()
+        ):
+            row = [.0, .0]
+            row[int(not rt)] = abs(1 - pred)
+            row[rt] = pred
+            correct.append(row)
+        return torch.tensor(correct, device=example["label"].device)
+
     @overrides
     def forward(self,
                 **inputs) -> Dict[str, torch.Tensor]:
@@ -112,7 +130,7 @@ class SiameseClassifier(BaseModel):
         sim = F.cosine_similarity(v_l, v_r)
         sim_bool = sim > self.prediction_threshold
 
-        output_dict = {'loss': loss, "sim": sim}
+        output_dict = {'loss': loss, "sim": sim, "probs": self._to_categorical_probs(left, right, sim)}
 
         sim_bool = sim_bool.long()
         label = label.long()
@@ -171,13 +189,14 @@ if __name__ == "__main__":
     from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler, CnnHighwayEncoder
     from seligator.common.constants import EMBEDDING_DIMENSIONS
     from seligator.common.bert_utils import what_type_of_bert
+    from seligator.modules.seq2vec.bert_poolers import PoolerHighway
 
     # For test, just change the input feature here
-    INPUT_FEATURES = ("token", "lemma", "token_char",)
-    # INPUT_FEATURES = ("token_subword", )
-    USE_BERT = False
+    #INPUT_FEATURES = ("token", "lemma", "token_char",)
+    INPUT_FEATURES = ("token_subword", )
+    USE_BERT = "token_subword" in INPUT_FEATURES
     BERT_DIR = "./bert/latin_bert"
-    HUGGIN = True
+    HUGGIN = False
 
     if USE_BERT:
         if HUGGIN:
@@ -190,19 +209,24 @@ if __name__ == "__main__":
 
     train, dev, vocab, reader = generate_all_data(
         input_features=INPUT_FEATURES, get_me_bert=get_me_bert,
-        instance_type="siamese"
+        instance_type="siamese", batches_per_epoch=20, batch_size=64
     )
     bert, bert_pooler = None, None
     if USE_BERT:
         bert = get_me_bert.embedder
         #bert = PretrainedTransformerEmbedder("ponteineptique/latin-classical-small")
+        #bert_pooler = BertPooler(BERT_DIR)
+        #bert_pooler = PoolerHighway(CnnEncoder(
+        #    embedding_dim=bert.get_output_dim(),
+        #    num_filters=374,
+        #), 128)
+        bert_pooler = PoolerHighway(BertPooler(BERT_DIR), 128)
 
-        # bert_pooler = BertPooler(BERT_DIR, dropout=0.3)
         # Max Pooler
-        bert_pooler = CnnEncoder(
-            embedding_dim=bert.get_output_dim(),
-            num_filters=128,
-        )
+        #bert_pooler = CnnEncoder(
+        #    embedding_dim=bert.get_output_dim(),
+        #    num_filters=128,
+        #)
         #bert_pooler = CnnHighwayEncoder(
         #    embedding_dim=bert.get_output_dim(),
         #    num_filters=128,
@@ -248,5 +272,7 @@ if __name__ == "__main__":
         model=model,
         train_loader=train,
         dev_loader=dev,
-        cuda_device=0
+        cuda_device=0,
+        num_epochs=200,
+        lr=3e-5
     )

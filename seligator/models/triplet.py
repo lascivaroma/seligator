@@ -18,6 +18,7 @@ class TripletClassifier(SiameseClassifier):
     BERT_COMPATIBLE: bool = True
     IS_SIAMESE: bool = True
     TRIPLET: bool = True
+    INSTANCE_TYPE: str = "triplet"
 
     def __init__(self, *args, **kwargs):
         super(TripletClassifier, self).__init__(*args, **kwargs)

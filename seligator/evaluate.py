@@ -17,17 +17,24 @@ from allennlp.predictors import Predictor
 
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
               ) -> Dict[str, Union[str, float]]:
-    pred = labels[prediction["probs"].argmax()]
+    pred = labels[prediction["probs"].argmax()]  # ToDo: does not work with current Siamese network
     sentence = "Unable to provide"
-    if "token" in instance.fields:
-        sentence = " ".join([tok.text for tok in instance.fields["token"].tokens])
-    elif "token_subword" in instance.fields:
-        sentence = " ".join([tok.text for tok in instance.fields["token_subword"].tokens])
+
+    prefix = ""
+    if "left_label" in instance.fields:
+        prefix = "left_"
+
+    if prefix+"token" in instance.fields:
+        sentence = " ".join([tok.text for tok in instance.fields[prefix+"token"].tokens])
+    elif prefix+"token_subword" in instance.fields:
+        sentence = " ".join([tok.text for tok in instance.fields[prefix+"token_subword"].tokens])
+
+
     return {
         "sentence": sentence,
-        "label": instance.fields["label"].label,
+        "label": instance.fields[prefix+"label"].label,
         "prediction": pred,
-        "ok": str(pred == instance.fields["label"].label),
+        "ok": str(pred == instance.fields[prefix+"label"].label),
         **{
             f"score-{labels[idx]}": element
             for idx, element in enumerate(prediction["probs"].tolist())
@@ -59,7 +66,7 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
     labels = model.labels
 
     if dump:
-        f = open("preds.csv", "w")
+        f = open(dump, "w")
         writer = csv.DictWriter(f, fieldnames=["sentence", "label", "prediction", "ok"] + [
             f"score-{labels[idx]}" for idx in labels
         ])
@@ -85,8 +92,15 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
 
 if __name__ == "__main__":
-    from seligator.training.trainer import run_training_loop
-    from seligator.models.classifier import build_model
+    from seligator.simple_demo import prepare_model, train_and_get
+    from seligator.models.siamese import SiameseClassifier
+    model, reader, train, dev = prepare_model(
+        input_features=("token", "lemma_char", "lemma"),
+        use_han=True,
+        # model_class=SiameseClassifier,
+        use_bert_higway=True
+    )
+    model = train_and_get(model, train, dev,
+        lr=1e-3)
 
-    model, reader = run_training_loop(build_model=build_model, cuda_device=0, use_only=("token", ))
-    run_tests("dataset/split/test.txt", dataset_reader=reader, model=model)
+    run_tests("dataset/split/test.txt", dataset_reader=reader, model=model, dump="classifier_lemma_char.csv")

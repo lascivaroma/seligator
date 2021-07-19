@@ -14,6 +14,7 @@ class BaseModel(Model):
     BERT_COMPATIBLE: bool = False
     IS_SIAMESE: bool = False
     TRIPLET: bool = False
+    INSTANCE_TYPE: str = "default"
 
     def __init__(self,
                  vocab: Vocabulary,
