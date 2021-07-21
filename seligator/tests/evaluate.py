@@ -13,6 +13,14 @@ from allennlp.data import (
 from seligator.models.base import BaseModel
 from allennlp.interpret.saliency_interpreters import SimpleGradient
 from allennlp.predictors import Predictor
+from allennlp.data.vocabulary import DEFAULT_OOV_TOKEN
+
+def get_unknown_and_sentence(instance: Instance, field: str):
+    field = instance.fields[field]
+
+    sentence = " ".join([tok.text for tok in field.tokens])
+    #unknown = [0 if id == ]
+    return sentence
 
 
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
@@ -25,10 +33,11 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
         prefix = "left_"
 
     if prefix+"token" in instance.fields:
-        sentence = " ".join([tok.text for tok in instance.fields[prefix+"token"].tokens])
+        sentence = get_unknown_and_sentence(instance, prefix+"token")
     elif prefix+"token_subword" in instance.fields:
-        sentence = " ".join([tok.text for tok in instance.fields[prefix+"token_subword"].tokens])
-
+        sentence = get_unknown_and_sentence(instance, prefix+"token_subword")
+    elif prefix+"lemma" in instance.fields:
+        sentence = get_unknown_and_sentence(instance, prefix+"lemma")
 
     return {
         "sentence": sentence,
@@ -38,7 +47,16 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
         **{
             f"score-{labels[idx]}": element
             for idx, element in enumerate(prediction["probs"].tolist())
-        }
+        },
+        **{
+            additional_output: prediction[additional_output]
+            for additional_output in ("bert_projection", "attention", )
+            if additional_output in prediction
+        },
+        #**{
+        #    task: instance.fields[prefix+task]
+        #    for task in
+        #}
     }
 
 
@@ -67,7 +85,7 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
     if dump:
         f = open(dump, "w")
-        writer = csv.DictWriter(f, fieldnames=["sentence", "label", "prediction", "ok"] + [
+        writer = csv.DictWriter(f, fieldnames=["sentence", "label", "prediction", "ok", "bert_projection", "attention"] + [
             f"score-{labels[idx]}" for idx in labels
         ])
         writer.writeheader()
@@ -95,12 +113,39 @@ if __name__ == "__main__":
     from seligator.simple_demo import prepare_model, train_and_get
     from seligator.models.siamese import SiameseClassifier
     model, reader, train, dev = prepare_model(
-        input_features=("token", "lemma_char", "lemma"),
+        input_features=("lemma", "token"),
         use_han=True,
+        reader_kwargs={"batch_size": 4},
+        model_embedding_kwargs=dict(
+            keep_all_vocab=True,
+            pretrained_embeddings={
+                # "token": "~/Downloads/latin.embeddings",
+                "token": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.token.word2vec.kv",
+                "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
+            },
+            trainable_embeddings={"token": False, "lemma": False},
+            pretrained_emb_dims={"token": 200, "lemma": 200}
+        ),
+        #batches_per_epoch=100,
         # model_class=SiameseClassifier,
         use_bert_higway=True
     )
-    model = train_and_get(model, train, dev,
-        lr=1e-3)
-
-    run_tests("dataset/split/test.txt", dataset_reader=reader, model=model, dump="classifier_lemma_char.csv")
+    model = train_and_get(
+        model, train, dev,
+        patience=2,
+        num_epochs=5,
+        lr=1e-3
+    )
+    print(model)
+    data = run_tests(
+        "dataset/split/test.txt",
+        dataset_reader=reader, model=model, dump="classifier_lemma_char_test.csv"
+    )
+    data2 = run_tests(
+        "dataset/split/train.txt",
+        dataset_reader=reader, model=model, dump="classifier_lemma_char_train.csv"
+    )
+    data2 = run_tests(
+        "dataset/split/dev.txt",
+        dataset_reader=reader, model=model, dump="classifier_lemma_char_dev.csv"
+    )

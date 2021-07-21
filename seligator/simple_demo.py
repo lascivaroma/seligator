@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Tuple, Optional, Dict, Any
 
 from allennlp.data import DataLoader, DatasetReader
 from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
@@ -21,7 +21,10 @@ def prepare_model(
     bert_dir: str = "./bert/latin_bert",
     use_han: bool = False,
     model_class = FeatureEmbeddingClassifier,
-    use_bert_higway: bool = False
+    batches_per_epoch: Optional[int] = None,
+    reader_kwargs = None,
+    use_bert_higway: bool = False,
+    model_embedding_kwargs: Optional[Dict[str, Any]] = None
 ) -> Tuple[FeatureEmbeddingClassifier, DatasetReader, DataLoader, DataLoader]:
 
     use_bert = "token_subword" in input_features
@@ -32,7 +35,7 @@ def prepare_model(
         def features_encoder(input_dim):
             return HierarchicalAttentionalEncoder(
                 input_dim=input_dim,
-                hidden_size=128
+                hidden_size=64
             )
     else:
         def features_encoder(input_dim):
@@ -52,7 +55,9 @@ def prepare_model(
     train, dev, vocab, reader = generate_all_data(
         input_features=input_features,
         get_me_bert=get_me_bert,
-        instance_type=model_class.INSTANCE_TYPE
+        instance_type=model_class.INSTANCE_TYPE,
+        batches_per_epoch=batches_per_epoch,
+        **(reader_kwargs or {})
     )
 
     bert, bert_pooler = None, None
@@ -79,22 +84,22 @@ def prepare_model(
         input_features=input_features,
         mixed_encoder=MixedEmbeddingEncoder.build(
             vocabulary=vocab,
-            emb_dims=MixedEmbeddingEncoder.merge_default_embeddings({"token": 100}),
-            pretrained_embeddings={"token": "~/Downloads/latin.embeddings"},
-            trainable_embeddings={"token": False},
+            emb_dims=MixedEmbeddingEncoder.merge_default_embeddings(
+                model_embedding_kwargs.pop("pretrained_emb_dims")
+            ),
             input_features=input_features,
             features_encoder=features_encoder,
             char_encoders=embedding_encoders,
-
             use_bert=use_bert,
             bert_embedder=bert,
-            bert_pooler=bert_pooler
+            bert_pooler=bert_pooler,
+            model_embedding_kwargs=model_embedding_kwargs
         )
     )
     return model, reader, train, dev
 
 
-def train_and_get(model, train, dev, lr:float = 1e-4) -> FeatureEmbeddingClassifier:
+def train_and_get(model, train, dev, lr: float = 1e-4, **train_kwargs) -> FeatureEmbeddingClassifier:
     model.cuda()
 
     train_model(
@@ -102,6 +107,7 @@ def train_and_get(model, train, dev, lr:float = 1e-4) -> FeatureEmbeddingClassif
         train_loader=train,
         dev_loader=dev,
         cuda_device=0,
-        lr=lr
+        lr=lr,
+        **train_kwargs
     )
     return model

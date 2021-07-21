@@ -13,7 +13,7 @@ from allennlp.nn import util
 
 from seligator.modules.embedders.latinBert import PretrainedTransformerEmbedder
 from seligator.common.constants import EMBEDDING_DIMENSIONS
-
+from seligator.dataset.dataloader import get_vocabulary_from_pretrained_embedding
 
 class MixedEmbeddingEncoder(nn.Module):
     """ Embbeds and encodes mixed input with multi-layer information (token, lemma, pos, etc.)
@@ -93,7 +93,7 @@ class MixedEmbeddingEncoder(nn.Module):
     def _forward_bert(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         embedded = self.bert_embedder(token["token_ids"], mask=token["mask"])
         if self.return_bert:
-            return self.bert_pooler(embedded, mask=token["mask"]), embedded.cpu()
+            return self.bert_pooler(embedded, mask=token["mask"]), embedded.tolist()
         return self.bert_pooler(embedded, mask=token["mask"]), None
 
     def _forward_features(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
@@ -153,7 +153,8 @@ class MixedEmbeddingEncoder(nn.Module):
             pretrained_embeddings: Optional[Dict[str, str]] = None,
             trainable_embeddings: Optional[Dict[str, bool]] = None,
             emb_dims: Dict[str, int] = None,
-            char_encoders: Dict[str, Seq2VecEncoder] = None
+            char_encoders: Dict[str, Seq2VecEncoder] = None,
+            keep_all_vocab: bool = True
     ) -> BasicTextFieldEmbedder:
         emb_dims = emb_dims or EMBEDDING_DIMENSIONS
 
@@ -161,6 +162,12 @@ class MixedEmbeddingEncoder(nn.Module):
             if dico and cat in dico:
                 return dico[cat]
             return default
+
+        # get_vocabulary_from_pretrained_embedding
+        if keep_all_vocab:
+            for cat in pretrained_embeddings:
+                tokens = list(get_vocabulary_from_pretrained_embedding(pretrained_embeddings[cat]))
+                vocabulary.add_tokens_to_namespace(tokens, cat)
 
         emb = {
             cat: Embedding(
@@ -197,8 +204,6 @@ class MixedEmbeddingEncoder(nn.Module):
 
             emb_dims: Dict[str, int] = None,
             input_features: Tuple[str, ...] = ("token",),
-            pretrained_embeddings: Optional[Dict[str, str]] = None,
-            trainable_embeddings: Optional[Dict[str, bool]] = None,
 
             features_encoder: Callable[[int], Seq2VecEncoder] = BagOfEmbeddingsEncoder,
             char_encoders: Dict[str, Seq2VecEncoder] = None,
@@ -208,15 +213,15 @@ class MixedEmbeddingEncoder(nn.Module):
             bert_pooler: Optional[Seq2VecEncoder] = None,
 
             mixer: str = "concat",
-            emb_dropout: float = 0.3
+            emb_dropout: float = 0.3,
+            model_embedding_kwargs = None
     ) -> "MixedEmbeddingEncoder":
         emb = cls.build_embeddings(
             vocabulary,
             input_features=input_features,
             emb_dims=emb_dims or EMBEDDING_DIMENSIONS,
             char_encoders=char_encoders,
-            pretrained_embeddings=pretrained_embeddings,
-            trainable_embeddings=trainable_embeddings
+            **(model_embedding_kwargs or {})
         )
         return cls(
             input_features=input_features,

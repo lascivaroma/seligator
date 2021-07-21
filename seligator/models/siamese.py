@@ -130,7 +130,9 @@ class SiameseClassifier(BaseModel):
         sim = F.cosine_similarity(v_l, v_r)
         sim_bool = sim > self.prediction_threshold
 
-        output_dict = {'loss': loss, "sim": sim, "probs": self._to_categorical_probs(left, right, sim)}
+        output_dict = {
+            'loss': loss, "sim": sim, "probs": self._to_categorical_probs(left, right, sim),
+            **left_additional_output}
 
         sim_bool = sim_bool.long()
         label = label.long()

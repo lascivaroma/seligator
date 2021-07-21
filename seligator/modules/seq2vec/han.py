@@ -1,28 +1,28 @@
 from typing import Tuple, Optional
-from torch.nn import GRU, Parameter, functional as F, Linear
-from torch import Tensor, mm, tanh, cat, sum
+from torch.nn import GRU, Parameter, functional as F, Linear, Dropout, LSTM
+import torch
 
 from allennlp.modules.seq2vec_encoders import Seq2VecEncoder
 
 
-def matrix_mul(inputs: Tensor, weight: Tensor, bias: Optional[Parameter] = None) -> Tensor:
+def matrix_mul(inputs: torch.Tensor, weight: torch.Tensor, bias: Optional[Parameter] = None) -> torch.Tensor:
     feature_list = []
     for feature in inputs:
-        feature = mm(feature, weight)
+        feature = torch.mm(feature, weight)
         if isinstance(bias, Parameter):
             feature = feature + bias.expand(feature.size()[0], bias.size()[1])
-        feature = tanh(feature).unsqueeze(0)
+        feature = torch.tanh(feature).unsqueeze(0)
         feature_list.append(feature)
-    return cat(feature_list, 0).squeeze(dim=2)
+    return torch.cat(feature_list, 0).squeeze(dim=2)
 
 
-def element_wise_mul(input1: Tensor, input2: Tensor) -> Tensor:
+def element_wise_mul(input1: torch.Tensor, input2: torch.Tensor) -> torch.Tensor:
     feature_list = []
     for feature_1, feature_2 in zip(input1, input2):
         feature_2 = feature_2.unsqueeze(1).expand_as(feature_1)
         feature = feature_1 * feature_2
         feature_list.append(feature.unsqueeze(0))
-    output = cat(feature_list, 0)
+    output = torch.cat(feature_list, 0)
     return sum(output, 0).unsqueeze(0)
 
 
@@ -36,16 +36,16 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
 
         # From https://github.com/uvipen/Hierarchical-attention-networks-pytorch/blob/master/src/word_att_model.py
 
-        self.context_weight = Parameter(Tensor(2 * hidden_size, 1))
-
-        self.gru = GRU(input_dim, hidden_size, bidirectional=True)
+        self.gru = GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True)
+        self.context = Parameter(torch.Tensor(2 * hidden_size, 1), requires_grad=True)
         self.dense = Linear(2*hidden_size, 2*hidden_size)
+        self.dropout = Dropout(0.3)
         self._create_weights(mean=0.0, std=0.05)
 
         self._output_dim: int = 2 * hidden_size
 
     def _create_weights(self, mean=0.0, std=0.05):
-        self.context_weight.data.normal_(mean, std)
+        self.context.data.normal_(mean, std)
 
     def get_input_dim(self) -> int:
         return self._input_dim
@@ -53,17 +53,32 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
     def get_output_dim(self) -> int:
         return self._output_dim
 
-    def forward(self, inputs, *args, **kwargs) -> Tuple[Tensor, Tensor]:
-        # f_output (n_words, batch_size, dimension * hidden)
-        # h_output (dimensions * n_layers, n_words, hidden_size)
-        f_output, h_output = self.gru(inputs.transpose(1, 0))
-        attention = self.dense(f_output)
-        attention = matrix_mul(attention, self.context_weight).permute(1, 0)
-        # (batch_size, n_words)
-        attention = F.softmax(attention)
+    def forward(self, inputs: torch.Tensor, mask: Optional[torch.Tensor] = None,
+                **kwargs) -> Tuple[torch.Tensor, torch.Tensor]:
+        # Inputs: (batch, seq_len, embedding_len)
+        # mask (initial): (batch, seq_len)
+        # mask (after): (batch, seq_len, 1)
+        if mask is not None:
+            mask = mask.long().unsqueeze(dim=-1)
+        else:
+            mask = torch.ones(inputs.shape[:2]).bool().unsqueeze(dim=-1)
+        # word_output: (batch_size , sentence_len, nb_dir*gru_size*nb_layer)
+        word_output, word_hidden = self.gru(inputs)
+        word_output = self.dropout(word_output)
+        # attention: (batch_size, sentence_len, 2*gru_size)
+        word_attention = torch.tanh(self.dense(word_output))
+        # weights: batch_size, sentence_len, 1
+        weights = torch.matmul(word_attention, self.context)
+        # weights : (batch_size, sentence_len, 1)
+        weights = F.softmax(weights, dim=1)
 
-        # (batch_size, output_dim)
-        output = element_wise_mul(f_output, attention.permute(1, 0)).transpose(0, 1).squeeze(dim=1)
+        # weights : (batch_size, sentence_len, 1)
+        weights = torch.where(mask != 0, weights, torch.full_like(mask, 0, dtype=torch.float, device=weights.device))
 
-        return output, attention
+        # weights : (batch_size, sentence_len, 1)
+        weights = weights / (torch.sum(weights, dim=1).unsqueeze(1) + 1e-4)
+
+        output = torch.sum((weights * word_output), dim=1)
+
+        return output, weights.squeeze(2)
 

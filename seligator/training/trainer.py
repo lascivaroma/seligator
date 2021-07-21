@@ -12,7 +12,7 @@ from allennlp.data.data_loaders import SimpleDataLoader
 from allennlp.models import Model
 from allennlp.training.trainer import Trainer
 from allennlp.training.gradient_descent_trainer import GradientDescentTrainer
-from allennlp.training.optimizers import AdamOptimizer
+from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer
 
 
 from seligator.dataset.tsv import ClassificationTsvReader, get_siamese_samples
@@ -70,7 +70,8 @@ def build_trainer(
     lr: float = 0.001
 ) -> Trainer:
     parameters = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
-    optimizer = AdamOptimizer(parameters, lr=lr)  # type: ignore
+    optimizer = AdamWOptimizer(parameters, lr=lr)  # type: ignore
+    #optimizer = AdamOptimizer(parameters)
     logging.info(f"Num epochs: {num_epochs}")
 
     trainer = GradientDescentTrainer(

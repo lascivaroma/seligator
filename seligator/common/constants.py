@@ -14,9 +14,9 @@ EMBEDDING_DIMENSIONS: Dict[str, int] = {
     "token_char_encoded": 150,
     "lemma_char": 100,
     "lemma_char_encoded": 150,
-    "pos": 10,
+    "pos": 3,
     **{
-        cat.lower(): 10
+        cat.lower(): 3
         for cat in CATS
     }
 }
