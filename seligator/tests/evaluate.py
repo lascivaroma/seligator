@@ -15,10 +15,13 @@ from allennlp.interpret.saliency_interpreters import SimpleGradient
 from allennlp.predictors import Predictor
 from allennlp.data.vocabulary import DEFAULT_OOV_TOKEN
 
-def get_unknown_and_sentence(instance: Instance, field: str):
+
+def get_unknown_and_sentence(instance: Instance, field: str, mode: Optional[str] = None):
     field = instance.fields[field]
 
     sentence = " ".join([tok.text for tok in field.tokens])
+    if mode == "subword":
+        return sentence.replace(" ", "").replace("_", " ")
     #unknown = [0 if id == ]
     return sentence
 
@@ -35,7 +38,7 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
     if prefix+"token" in instance.fields:
         sentence = get_unknown_and_sentence(instance, prefix+"token")
     elif prefix+"token_subword" in instance.fields:
-        sentence = get_unknown_and_sentence(instance, prefix+"token_subword")
+        sentence = get_unknown_and_sentence(instance, prefix+"token_subword", mode="subword")
     elif prefix+"lemma" in instance.fields:
         sentence = get_unknown_and_sentence(instance, prefix+"lemma")
 
@@ -50,7 +53,7 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
         },
         **{
             additional_output: prediction[additional_output]
-            for additional_output in ("bert_projection", "attention", )
+            for additional_output in ("bert_projection", "attention", "doc-vectors")
             if additional_output in prediction
         },
         #**{
@@ -85,7 +88,8 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
     if dump:
         f = open(dump, "w")
-        writer = csv.DictWriter(f, fieldnames=["sentence", "label", "prediction", "ok", "bert_projection", "attention"] + [
+        writer = csv.DictWriter(f, fieldnames=["sentence", "label", "prediction", "ok",
+                                               "bert_projection", "attention", "doc-vectors"] + [
             f"score-{labels[idx]}" for idx in labels
         ])
         writer.writeheader()
@@ -113,7 +117,7 @@ if __name__ == "__main__":
     from seligator.simple_demo import prepare_model, train_and_get
     from seligator.models.siamese import SiameseClassifier
     model, reader, train, dev = prepare_model(
-        input_features=("lemma", "token"),
+        input_features=("token_subword", ),# ("lemma", "token"),
         use_han=True,
         reader_kwargs={"batch_size": 4},
         model_embedding_kwargs=dict(

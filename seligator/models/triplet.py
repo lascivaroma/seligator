@@ -51,6 +51,7 @@ class TripletClassifier(SiameseClassifier):
 
         out = {
             "pos_similarity": F.cosine_similarity(exm, pos),
+            "doc-vectors": exm.tolist()
         }
         if negativ:
             out["neg_similarity"] = F.cosine_similarity(exm, neg)

@@ -32,7 +32,7 @@ class FeatureEmbeddingClassifier(BaseModel):
         probs = F.softmax(logits)
 
         # Shape: (1,)
-        output = {"probs": probs, **(additional_out or {})}
+        output = {"probs": probs, **(additional_out or {}), "doc-vectors": encoded_text.tolist()}
         if label is not None:
             self._compute_metrics(logits, label, output)
 

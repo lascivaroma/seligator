@@ -132,6 +132,7 @@ class SiameseClassifier(BaseModel):
 
         output_dict = {
             'loss': loss, "sim": sim, "probs": self._to_categorical_probs(left, right, sim),
+            "doc-vectors": v_l.tolist()
             **left_additional_output}
 
         sim_bool = sim_bool.long()
