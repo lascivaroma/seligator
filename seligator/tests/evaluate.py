@@ -117,9 +117,10 @@ if __name__ == "__main__":
     from seligator.simple_demo import prepare_model, train_and_get
     from seligator.models.siamese import SiameseClassifier
     model, reader, train, dev = prepare_model(
-        input_features=("token_subword", ),# ("lemma", "token"),
+        input_features=("lemma", "token", "pos", "gend", "tense", "case"),
         use_han=True,
-        reader_kwargs={"batch_size": 4},
+        agglomerate_msd=True,
+        reader_kwargs={"batch_size": 4, },
         model_embedding_kwargs=dict(
             keep_all_vocab=True,
             pretrained_embeddings={
@@ -132,13 +133,13 @@ if __name__ == "__main__":
         ),
         #batches_per_epoch=100,
         # model_class=SiameseClassifier,
-        use_bert_higway=True
+        use_bert_higway=True,
     )
     model = train_and_get(
         model, train, dev,
-        patience=2,
-        num_epochs=5,
-        lr=1e-3
+        patience=10,
+        num_epochs=20,
+        lr=5e-4
     )
     print(model)
     data = run_tests(

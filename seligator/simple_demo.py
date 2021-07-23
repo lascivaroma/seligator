@@ -23,8 +23,9 @@ def prepare_model(
     model_class = FeatureEmbeddingClassifier,
     batches_per_epoch: Optional[int] = None,
     reader_kwargs = None,
+    agglomerate_msd: bool = False,
     use_bert_higway: bool = False,
-    model_embedding_kwargs: Optional[Dict[str, Any]] = None
+    model_embedding_kwargs: Optional[Dict[str, Any]] = None,
 ) -> Tuple[FeatureEmbeddingClassifier, DatasetReader, DataLoader, DataLoader]:
 
     use_bert = "token_subword" in input_features
@@ -57,7 +58,7 @@ def prepare_model(
         get_me_bert=get_me_bert,
         instance_type=model_class.INSTANCE_TYPE,
         batches_per_epoch=batches_per_epoch,
-        **(reader_kwargs or {})
+        **{**(reader_kwargs or {}), "agglomerate_msd": agglomerate_msd}
     )
 
     bert, bert_pooler = None, None
@@ -77,7 +78,11 @@ def prepare_model(
             dropout=.3
         )
         for cat in {"token_char", "lemma_char"}
+        if cat in input_features
     }
+
+    if input_features != reader.categories:  # eg. Might have been changed by agglomeration
+        input_features = reader.categories
 
     model = model_class(
         vocab=vocab,

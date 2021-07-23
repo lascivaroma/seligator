@@ -12,8 +12,10 @@ from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder, Seq2VecEnc
 from allennlp.nn import util
 
 from seligator.modules.embedders.latinBert import PretrainedTransformerEmbedder
-from seligator.common.constants import EMBEDDING_DIMENSIONS
+from seligator.modules.embedders.mixed import FeatureAndTextEmbedder
+from seligator.common.constants import EMBEDDING_DIMENSIONS, MSD_CAT_NAME
 from seligator.dataset.dataloader import get_vocabulary_from_pretrained_embedding
+
 
 class MixedEmbeddingEncoder(nn.Module):
     """ Embbeds and encodes mixed input with multi-layer information (token, lemma, pos, etc.)
@@ -26,7 +28,7 @@ class MixedEmbeddingEncoder(nn.Module):
 
                  # Normal input
                  use_features: bool = True,
-                 features_embedder: Optional[TextFieldEmbedder] = None,
+                 features_embedder: Optional[Union[TextFieldEmbedder, FeatureAndTextEmbedder]] = None,
                  features_encoder: Optional[Seq2VecEncoder] = None,
 
                  # Bert Input
@@ -35,7 +37,7 @@ class MixedEmbeddingEncoder(nn.Module):
                  bert_pooler: Optional[Seq2VecEncoder] = None,
 
                  mixer: Union[str, Callable] = "concat",
-                 emb_dropout: Union[float, nn.Dropout] = 0.3,
+                 emb_dropout: Union[float, nn.Dropout] = 0.5,
                  return_bert: bool = False
                  ):
         super().__init__()
@@ -85,7 +87,7 @@ class MixedEmbeddingEncoder(nn.Module):
 
     def _rebuild_input(self, inputs: Dict[str, Dict[str, torch.Tensor]]) -> Dict[str, TextFieldTensors]:
         return {
-                cat: inputs[cat][cat]
+                cat: inputs[cat] if cat == MSD_CAT_NAME else inputs[cat][cat]
                 for cat in self.input_features
                 if not cat.endswith("_subword")
         }
@@ -105,7 +107,11 @@ class MixedEmbeddingEncoder(nn.Module):
             # Shape: (batch_size, num_tokens, embedding_dim)
             embedded_text = self._emb_dropout(embedded_text)
         # Shape: (batch_size, num_tokens)
-        mask = util.get_text_field_mask(token)
+        mask = util.get_text_field_mask({
+            tok_cat: token[tok_cat]
+            for tok_cat in token
+            if tok_cat != MSD_CAT_NAME
+        })
 
         # Shape: (batch_size, encoding_dim)
         if getattr(self.features_encoder, "with_attention", False):
@@ -154,8 +160,9 @@ class MixedEmbeddingEncoder(nn.Module):
             trainable_embeddings: Optional[Dict[str, bool]] = None,
             emb_dims: Dict[str, int] = None,
             char_encoders: Dict[str, Seq2VecEncoder] = None,
-            keep_all_vocab: bool = True
-    ) -> BasicTextFieldEmbedder:
+            keep_all_vocab: bool = True,
+
+    ) -> Union[BasicTextFieldEmbedder, FeatureAndTextEmbedder]:
         emb_dims = emb_dims or EMBEDDING_DIMENSIONS
 
         def get_data(cat, dico: Optional[Dict[str, str]], default=None):
@@ -169,6 +176,7 @@ class MixedEmbeddingEncoder(nn.Module):
                 tokens = list(get_vocabulary_from_pretrained_embedding(pretrained_embeddings[cat]))
                 vocabulary.add_tokens_to_namespace(tokens, cat)
 
+        # input_features
         emb = {
             cat: Embedding(
                 embedding_dim=emb_dims[cat],
@@ -179,7 +187,7 @@ class MixedEmbeddingEncoder(nn.Module):
                 vocab_namespace=cat
             )
             for cat in input_features
-            if "_subword" not in cat and "_char" not in cat
+            if "_subword" not in cat and "_char" not in cat and cat != MSD_CAT_NAME
         }
 
         if char_encoders:
@@ -195,6 +203,13 @@ class MixedEmbeddingEncoder(nn.Module):
                 for cat in input_features
                 if "_char" in cat
             })
+
+        if MSD_CAT_NAME in input_features:
+            return FeatureAndTextEmbedder(
+                text_embedder=BasicTextFieldEmbedder(emb),
+                feature_embedder_in=vocabulary.get_vocab_size(MSD_CAT_NAME),
+                feature_embedder_out=emb_dims[MSD_CAT_NAME]
+            )
         return BasicTextFieldEmbedder(emb)
 
     @classmethod

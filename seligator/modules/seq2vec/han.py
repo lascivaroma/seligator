@@ -39,7 +39,7 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
         self.gru = GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True)
         self.context = Parameter(torch.Tensor(2 * hidden_size, 1), requires_grad=True)
         self.dense = Linear(2*hidden_size, 2*hidden_size)
-        self.dropout = Dropout(0.3)
+        self.dropout = Dropout(0.5)
         self._create_weights(mean=0.0, std=0.05)
 
         self._output_dim: int = 2 * hidden_size
@@ -79,6 +79,6 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
         weights = weights / (torch.sum(weights, dim=1).unsqueeze(1) + 1e-4)
 
         output = torch.sum((weights * word_output), dim=1)
-
+        output = self.dropout(output)
         return output, weights.squeeze(2)
 

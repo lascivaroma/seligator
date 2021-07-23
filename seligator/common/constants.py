@@ -7,6 +7,8 @@ BERT_DIR = os.path.join(
 )
 CATS = ("Case", "Numb", "Gend", "Mood", "Tense", "Voice", "Person", "Deg")
 
+MSD_CAT_NAME = "[msd]"
+
 EMBEDDING_DIMENSIONS: Dict[str, int] = {
     "token": 100,
     "lemma": 100,
@@ -15,6 +17,7 @@ EMBEDDING_DIMENSIONS: Dict[str, int] = {
     "lemma_char": 100,
     "lemma_char_encoded": 150,
     "pos": 3,
+    MSD_CAT_NAME: 20,
     **{
         cat.lower(): 3
         for cat in CATS

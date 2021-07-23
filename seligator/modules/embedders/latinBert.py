@@ -1,13 +1,12 @@
 import logging
-from typing import Optional, Dict, Any
+from typing import Optional
 
 from transformers import BertModel
 from allennlp.modules.scalar_mix import ScalarMix
-from allennlp.modules.token_embedders.token_embedder import TokenEmbedder
+from allennlp.modules.token_embedders import TokenEmbedder
 from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
 
 from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
-from allennlp.common.cached_transformers import _model_cache
 
 logger = logging.getLogger(__name__)
 

@@ -1,14 +1,15 @@
 from seligator.common.constants import CATS, BERT_DIR
-from typing import List, Optional, Set, Dict
+from typing import List, Optional, Set, Dict, Union
 import logging
 
 import regex as re
 
 from tensor2tensor.data_generators.text_encoder import SubwordTextEncoder
 from allennlp.data.tokenizers.token_class import Token
-from allennlp.data.tokenizers import Tokenizer
+from allennlp.data.tokenizers import Tokenizer, CharacterTokenizer
 
 from overrides import overrides
+from operator import attrgetter
 
 logger = logging.getLogger(__name__)
 
@@ -127,26 +128,67 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
         return tokens
 
 
+class MultiTagFeatureTokenizer(CharacterTokenizer):
+    def __init__(self,
+                 features: Optional[List[str]] = None,
+                 default_value: Optional[str] = "_",
+                 start_tokens: List[Union[str, int]] = None,
+                 end_tokens: List[Union[str, int]] = None):
+
+        super(MultiTagFeatureTokenizer, self).__init__(
+            byte_encoding=None,
+            lowercase_characters=False,
+            start_tokens=start_tokens,
+            end_tokens=end_tokens)
+        self._features = features or []
+        self._default_value: str = default_value
+
+    @property
+    def default_token(self) -> Dict[str, str]:
+        return {
+            cat: self._default_value
+            for cat in self._features
+        }
+
+    @overrides
+    def tokenize(self, text: Dict[str, str]) -> List[Token]:
+        tokens = sorted([
+            Token(f"{cat}={feat}")
+                for cat, feat in {
+                    **self.default_token,
+                    **text
+                }.items()
+            ],
+            key=attrgetter("text")
+        )
+        for start_token in self._start_tokens:
+            if isinstance(start_token, int):
+                token = Token(text_id=start_token, idx=0)
+            else:
+                token = Token(text=start_token, idx=0)
+            tokens.insert(0, token)
+        for end_token in self._end_tokens:
+            if isinstance(end_token, int):
+                token = Token(text_id=end_token, idx=0)
+            else:
+                token = Token(text=end_token, idx=0)
+            tokens.append(token)
+        return tokens
+
+
 if __name__ == "__main__":
-    tokenizer = LatinSubwordTextEncoderTokenizer(f"{BERT_DIR}/vocab.txt")
+    TEST_BERT = False
+    TEST_Feature = True
     logger.setLevel(logging.DEBUG)
-    z = tokenizer.tokenize("Nunc denique intellegimus quae desideranda in prioribus fuerint, postquam ea quae operta in ceteris veriti sumus in te reserata veneramur.")
-    print(z)
-    print(tokenizer.convert_tokens_to_ids(tokenizer.tokenize("lascivumque")))
-    """
-    from .tsv import ClassificationTsvReader
-    from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer, \
-        PretrainedTransformerIndexer
-    from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
-    # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(cats=("token", "token_subword"), token_indexers={
-        "token": SingleIdTokenIndexer(namespace="token"),
-        "token_subword": SingleIdTokenIndexer(namespace="token_subword")
-    })
-    dataset = list(reader.read("dataset/split/test.txt"))
+    if TEST_BERT:
+        tokenizer = LatinSubwordTextEncoderTokenizer(f"{BERT_DIR}/vocab.txt")
+        z = tokenizer.tokenize("Nunc denique intellegimus quae desideranda in prioribus fuerint, postquam ea quae operta in ceteris veriti sumus in te reserata veneramur.")
+        print(z)
+        print(tokenizer.convert_tokens_to_ids(tokenizer.tokenize("lascivumque")))
 
-    print("type of its first element: ", type(dataset[0]))
-    print("size of dataset: ", len(dataset))
-    print(dataset[0])
-    """
+    if TEST_Feature:
+        tokenizer = MultiTagFeatureTokenizer(["pos", "tense", "gend"])
+        print(tokenizer.tokenize({"gend": "MascFem"}))
+
+

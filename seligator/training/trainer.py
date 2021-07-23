@@ -78,7 +78,7 @@ def build_trainer(
         model=model,
         serialization_dir=serialization_dir,
         data_loader=train_loader,
-        validation_metric="+sim-accuracy" if model.IS_SIAMESE else "+fscore",
+        validation_metric="+sim-accuracy" if model.IS_SIAMESE else "-loss",
         validation_data_loader=dev_loader,
         num_epochs=num_epochs,
         patience=patience,
@@ -95,7 +95,8 @@ def generate_all_data(
     batch_size: int = 16,
     batches_per_epoch: Optional[int] = None,
     get_me_bert: GetMeBert = GetMeBert(),
-    instance_type: str = "default"
+    instance_type: str = "default",
+    **tsv_reader_kwargs
 ) -> Tuple[DataLoader, DataLoader, Vocabulary, ClassificationTsvReader]:
 
     instance_type = instance_type.lower()
@@ -106,7 +107,8 @@ def generate_all_data(
     if instance_type in {"siamese", "triplet"}:
         # Samples are not siamese loaded. Siamese affects the other datasets
         siamese_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, instance_type="default"
+            input_features=input_features, get_me_bert=get_me_bert, instance_type="default",
+            **tsv_reader_kwargs
         )
         siamese_samples = get_siamese_samples(siamese_reader)
 
@@ -115,13 +117,15 @@ def generate_all_data(
             input_features=input_features, get_me_bert=get_me_bert,
             instance_type=instance_type, siamese_samples=siamese_samples,
             token_indexers=siamese_reader.token_indexers,
-            tokenizer=siamese_reader.tokenizer
+            tokenizer=siamese_reader.tokenizer,
+            **tsv_reader_kwargs
         )
         # And parse the original data
         train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
     else:
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, instance_type=instance_type
+            input_features=input_features, get_me_bert=get_me_bert, instance_type=instance_type,
+            **tsv_reader_kwargs
         )
         train_data, dev_data = read_data(dataset_reader, use_siamese_set=True)
 

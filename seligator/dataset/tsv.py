@@ -1,27 +1,32 @@
+import logging
+import random
+from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
+
 from allennlp.data import DatasetReader, Instance
-from allennlp.data.fields import TextField, LabelField, Field
-from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer, \
-    PretrainedTransformerIndexer
+from allennlp.data.fields import TextField, LabelField, Field, MultiLabelField, ListField
+from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer
 from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
-from seligator.common.constants import CATS, BERT_DIR
-from seligator.dataset.indexer import LatinSubwordTokenIndexer
+from seligator.common.constants import CATS, MSD_CAT_NAME
+# from seligator.dataset.indexer import LatinSubwordTokenIndexer, MultipleFeatureVectorIndexer
 from seligator.common.bert_utils import GetMeBert
-from typing import Dict, Iterable, Tuple, List, Optional, Any
 
-import logging
-import os
 
-from collections import defaultdict
-import random
+# ToDo: Add MetadataField to keep the sentence for example, the author and other stuff
+
+
+def what_kind_of_field(category: str, values: List, token_indexer: Optional[TokenIndexer]) -> ClassVar["Field"]:
+    if category == MSD_CAT_NAME:
+        return ListField(values)
+    return TextField(values, token_indexers={category: token_indexer})
 
 
 def build_token_indexers(
         cats: Iterable[str] = None,
-        get_me_bert: Optional[GetMeBert] = None
+        get_me_bert: Optional[GetMeBert] = None,
+        msd: Optional[Set[str]] = None
 ) -> Dict[str, TokenIndexer]:
-    if not cats:
-        cats = CATS
+    cats = cats or CATS
 
     def get_indexer(category: str) -> TokenIndexer:
         if category.endswith("_char"):
@@ -33,6 +38,18 @@ def build_token_indexers(
         else:
             return SingleIdTokenIndexer(namespace=category)
 
+    if msd:
+        return {
+            #MSD_CAT_NAME: MultipleFeatureVectorIndexer(
+            #    namespace=MSD_CAT_NAME,
+            #    msd=msd or []
+            #),
+            **build_token_indexers(
+                [cat for cat in cats if cat not in msd],
+                get_me_bert=get_me_bert
+            )
+        }
+
     return {
         task.lower(): get_indexer(task.lower())
         for task in cats
@@ -42,6 +59,7 @@ def build_token_indexers(
 @DatasetReader.register("classification-tsv")
 class ClassificationTsvReader(DatasetReader):
     INSTANCE_TYPES = {"default", "siamese", "triplet"}
+
     def __init__(
             self,
             tokenizer: Tokenizer = None,
@@ -49,12 +67,27 @@ class ClassificationTsvReader(DatasetReader):
             max_tokens: int = 256,
             cats: Tuple[str, ...] = CATS,
             input_features: Tuple[str, ...] = None,
+            agglomerate_msd: bool = False,
             get_me_bert: Optional[GetMeBert] = GetMeBert(),
             instance_type: str = "default",
             siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
             **kwargs
     ):
+        """
+
+        :param tokenizer: Tokenizer to use
+        :param token_indexers: Dict of input_key -> indexers
+        :param max_tokens: Maximum amount of tokens per "sentence"
+        :param cats: List of known token-features
+        :param input_features: List of token-features to user
+        :param agglomerate_msd: Instead of encoding each feature in its own namespace, all morpho-syntactical
+        features (!= lemma, token, *_char, *_subword) are registered in a single namespace and agglutinated.
+        :param get_me_bert: Information about bert usage
+        :param instance_type: Type of instance to use ("default", "siamese", "triplet")
+        :param siamese_probability: Probability to train against a positive example of siamese
+        :param siamese_samples: Samples to train against for "siamese" and "triple" instance types.
+        """
         super().__init__(**kwargs)
 
         self.features: Tuple[str, ...] = cats
@@ -63,9 +96,29 @@ class ClassificationTsvReader(DatasetReader):
         if input_features:
             self.categories = input_features
 
+        self._msd: Set[str] = {
+            feat
+            for feat in self.categories
+            if "token" not in feat and "lemma" not in feat
+        }
+        self.agglomerate_msd: bool = agglomerate_msd
+        if self.agglomerate_msd:
+            self.categories = (
+                MSD_CAT_NAME,
+                *(
+                   cat
+                   for cat in self.categories
+                   if cat not in self._msd
+                )
+            )
+
         logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
         self.tokenizer = tokenizer or WhitespaceTokenizer()
-        self.token_indexers = token_indexers or build_token_indexers(cats=self.categories, get_me_bert=get_me_bert)
+        self.token_indexers = token_indexers or build_token_indexers(
+            cats=self.categories,
+            get_me_bert=get_me_bert,
+            msd=self._msd
+        )
         self.bert_tokenizer = get_me_bert.tokenizer
         logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
         self.max_tokens = max_tokens
@@ -73,8 +126,8 @@ class ClassificationTsvReader(DatasetReader):
         # If Siamese is true, the first sentence that is positive will be set as the example
         #   The second one as well
 
-        if instance_type.lower() not in {"default", "siamese", "triplet"}:
-            raise ValueError("`instance_type` must be one of " + str({"default", "siamese", "triplet"}))
+        if instance_type.lower() not in self.INSTANCE_TYPES:
+            raise ValueError("`instance_type` must be one of " + str(self.INSTANCE_TYPES))
 
         self.instance_type: str = instance_type.lower()
         self.siamese_probability: float = siamese_probability
@@ -87,29 +140,41 @@ class ClassificationTsvReader(DatasetReader):
         """ Parse the output of content into
 
         """
-        fields: Dict[str, List[Token]] = {cat: [] for cat in self.categories}
+        fields: Dict[str, List[Union[Token, MultiLabelField]]] = {cat: [] for cat in self.categories}
         if "token_subword" in fields:
-            normalized = " ".join([tok["token"] for tok in content if tok["token"][0] != "{"])
+            normalized = " ".join([
+                tok["token"]
+                for tok in content if tok["token"][0] != "{"
+            ])
             try:
                 fields["token_subword"].extend(self.bert_tokenizer.tokenize(normalized))
             except AssertionError:
                 logging.error(f"Error on {normalized}")
                 raise
 
+        # For each token in a sentence
         for token_repr in content:
+            msd = {}
             for cat, value in token_repr.items():
                 if cat in fields:
                     fields[cat].append(Token(value))
-                if cat == "token" and "token_char" in self.categories:
-                    fields["token_char"].append(Token(value))
-                if cat == "lemma" and "lemma_char" in self.categories:
-                    fields["lemma_char"].append(Token(value))
+                if cat+"_char" in self.categories:
+                    fields[cat+"_char"].append(Token(value))
+                if self.agglomerate_msd and cat in self._msd:
+                    msd[cat] = value
+            if self.agglomerate_msd:
+                fields[MSD_CAT_NAME].append(
+                    MultiLabelField(
+                        [f"{cat}:{val}" for cat, val in msd.items()],
+                        label_namespace=MSD_CAT_NAME
+                    )
+                )
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
 
         fields: Dict[str, Field] = {
-            cat.lower(): TextField(fields[cat], token_indexers={cat: self.token_indexers[cat]})
+            cat.lower(): what_kind_of_field(cat, fields[cat], token_indexer=self.token_indexers.get(cat))
             for cat in fields
         }
 
@@ -218,7 +283,7 @@ class ClassificationTsvReader(DatasetReader):
 
 def get_siamese_samples(
         reader: ClassificationTsvReader, siamese_filepath: str = "dataset/split/siamese.txt"
-                        ) -> Dict[str, List[Dict[str, Any]]]:
+) -> Dict[str, List[Dict[str, Any]]]:
     logging.info("Reading Siamese Samples")
     siamese_data = {"positive": [], "negative": []}
 
@@ -230,9 +295,13 @@ def get_siamese_samples(
 
 if __name__ == "__main__":
     # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(cats=CATS, input_features=("token", "lemma", "pos", "tense"),# siamese=True,
-                                     bert_dir="./bert/latin_bert")
-    dataset = list(reader.read("dataset/split/train.txt"))
+    reader = ClassificationTsvReader(
+        cats=CATS,
+        input_features=("token", "lemma", "pos", "tense"),  # siamese=True,
+        # bert_dir="./bert/latin_bert",
+        agglomerate_msd=True
+    )
+    dataset = list(reader.read("dataset/split/test.txt"))
 
     print("type of its first element: ", type(dataset[0]))
     print("size of dataset: ", len(dataset))
