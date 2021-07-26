@@ -35,12 +35,13 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
     if "left_label" in instance.fields:
         prefix = "left_"
 
-    if prefix+"token" in instance.fields:
-        sentence = get_unknown_and_sentence(instance, prefix+"token")
-    elif prefix+"token_subword" in instance.fields:
-        sentence = get_unknown_and_sentence(instance, prefix+"token_subword", mode="subword")
-    elif prefix+"lemma" in instance.fields:
-        sentence = get_unknown_and_sentence(instance, prefix+"lemma")
+    sentence = " ".join(instance.fields["metadata"]["sentence"])
+    #if prefix+"token" in instance.fields:
+    #    sentence = get_unknown_and_sentence(instance, prefix+"token")
+    #elif prefix+"token_subword" in instance.fields:
+    #    sentence = get_unknown_and_sentence(instance, prefix+"token_subword", mode="subword")
+    #elif prefix+"lemma" in instance.fields:
+    #    sentence = get_unknown_and_sentence(instance, prefix+"lemma")
 
     return {
         "sentence": sentence,
@@ -117,7 +118,7 @@ if __name__ == "__main__":
     from seligator.simple_demo import prepare_model, train_and_get
     from seligator.models.siamese import SiameseClassifier
     model, reader, train, dev = prepare_model(
-        input_features=("lemma", "token", "pos", "gend", "tense", "case"),
+        input_features=("lemma_char", "lemma", "case", "numb", "gend", "mood", "tense", "voice", "person", "deg"),
         use_han=True,
         agglomerate_msd=True,
         reader_kwargs={"batch_size": 4, },
@@ -138,7 +139,7 @@ if __name__ == "__main__":
     model = train_and_get(
         model, train, dev,
         patience=10,
-        num_epochs=20,
+        num_epochs=1,
         lr=5e-4
     )
     print(model)

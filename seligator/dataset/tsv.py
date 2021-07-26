@@ -3,7 +3,7 @@ import random
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
 
 from allennlp.data import DatasetReader, Instance
-from allennlp.data.fields import TextField, LabelField, Field, MultiLabelField, ListField
+from allennlp.data.fields import TextField, LabelField, Field, MultiLabelField, ListField, MetadataField
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer
 from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 
@@ -140,6 +140,7 @@ class ClassificationTsvReader(DatasetReader):
         """ Parse the output of content into
 
         """
+        sentence = []
         fields: Dict[str, List[Union[Token, MultiLabelField]]] = {cat: [] for cat in self.categories}
         if "token_subword" in fields:
             normalized = " ".join([
@@ -152,6 +153,8 @@ class ClassificationTsvReader(DatasetReader):
                 logging.error(f"Error on {normalized}")
                 raise
 
+        sentence = []
+
         # For each token in a sentence
         for token_repr in content:
             msd = {}
@@ -162,6 +165,8 @@ class ClassificationTsvReader(DatasetReader):
                     fields[cat+"_char"].append(Token(value))
                 if self.agglomerate_msd and cat in self._msd:
                     msd[cat] = value
+                if cat == "token":
+                    sentence.append(value)
             if self.agglomerate_msd:
                 fields[MSD_CAT_NAME].append(
                     MultiLabelField(
@@ -180,6 +185,10 @@ class ClassificationTsvReader(DatasetReader):
 
         if label:
             fields["label"] = LabelField(label)
+
+        fields["metadata"] = MetadataField({
+            "sentence": sentence
+        })
 
         return Instance(fields)
 

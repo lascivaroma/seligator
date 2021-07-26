@@ -78,7 +78,7 @@ def build_trainer(
         model=model,
         serialization_dir=serialization_dir,
         data_loader=train_loader,
-        validation_metric="+sim-accuracy" if model.IS_SIAMESE else "-loss",
+        validation_metric="-loss" if model.IS_SIAMESE else "-loss",
         validation_data_loader=dev_loader,
         num_epochs=num_epochs,
         patience=patience,
