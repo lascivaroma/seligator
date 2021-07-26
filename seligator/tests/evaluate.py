@@ -121,15 +121,15 @@ if __name__ == "__main__":
         input_features=("lemma_char", "lemma", "case", "numb", "gend", "mood", "tense", "voice", "person", "deg"),
         use_han=True,
         agglomerate_msd=True,
-        reader_kwargs={"batch_size": 4, },
+        reader_kwargs={"batch_size": 4, "metadata_token_as_lemma_and_token": False},
         model_embedding_kwargs=dict(
             keep_all_vocab=True,
             pretrained_embeddings={
                 # "token": "~/Downloads/latin.embeddings",
-                "token": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.token.word2vec.kv",
-                "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
+            #    "token": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.token.word2vec.kv",
+            #    "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
             },
-            trainable_embeddings={"token": False, "lemma": False},
+            trainable_embeddings={"token": False, "lemma": True},
             pretrained_emb_dims={"token": 200, "lemma": 200}
         ),
         #batches_per_epoch=100,
@@ -139,19 +139,19 @@ if __name__ == "__main__":
     model = train_and_get(
         model, train, dev,
         patience=10,
-        num_epochs=1,
+        num_epochs=20,
         lr=5e-4
     )
     print(model)
     data = run_tests(
         "dataset/split/test.txt",
-        dataset_reader=reader, model=model, dump="classifier_lemma_char_test.csv"
+        dataset_reader=reader, model=model, dump="classifier_lemma_char_test-notoken.csv"
     )
-    data2 = run_tests(
-        "dataset/split/train.txt",
-        dataset_reader=reader, model=model, dump="classifier_lemma_char_train.csv"
-    )
-    data2 = run_tests(
-        "dataset/split/dev.txt",
-        dataset_reader=reader, model=model, dump="classifier_lemma_char_dev.csv"
-    )
+    #data2 = run_tests(
+    #    "dataset/split/train.txt",
+    #    dataset_reader=reader, model=model, dump="classifier_lemma_char_train.csv"
+    #)
+    #data2 = run_tests(
+    #    "dataset/split/dev.txt",
+    #    dataset_reader=reader, model=model, dump="classifier_lemma_char_dev.csv"
+    #)

@@ -72,6 +72,7 @@ class ClassificationTsvReader(DatasetReader):
             instance_type: str = "default",
             siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
+            metadata_token_as_lemma_and_token: bool = False,
             **kwargs
     ):
         """
@@ -136,7 +137,15 @@ class ClassificationTsvReader(DatasetReader):
             logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
             logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
 
-    def text_to_instance(self, content: List[Dict[str, str]], label: str = None) -> Instance:
+        self.metadata_token_as_lemma_and_token: bool = metadata_token_as_lemma_and_token
+        print("metadata_token_as_lemma_and_token", metadata_token_as_lemma_and_token)
+
+    def text_to_instance(self,
+                         content: List[Dict[str, str]],
+                         label: str = None,
+                         metadata_tokens: List[str] = None,
+                         metadata_generic: Dict[str, str] = None
+                         ) -> Instance:
         """ Parse the output of content into
 
         """
@@ -175,6 +184,19 @@ class ClassificationTsvReader(DatasetReader):
                     )
                 )
 
+        if self.metadata_token_as_lemma_and_token:
+            for cat in fields:
+                if cat in {"token", "lemma"}:
+                    fields[cat] = [Token(met) for met in sorted(metadata_tokens or [])] + fields[cat]
+                elif cat == MSD_CAT_NAME:
+                    fields[cat] = [
+                                      MultiLabelField([], label_namespace=MSD_CAT_NAME) for _ in metadata_tokens or []
+                                  ] + fields[cat]
+                else:
+                    fields[cat] = [
+                                      Token("") for _ in metadata_tokens or []
+                                  ] + fields[cat]
+
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
 
@@ -187,7 +209,8 @@ class ClassificationTsvReader(DatasetReader):
             fields["label"] = LabelField(label)
 
         fields["metadata"] = MetadataField({
-            "sentence": sentence
+            "sentence": (metadata_tokens or []) + sentence if self.metadata_token_as_lemma_and_token else sentence,
+             **(metadata_generic or {})
         })
 
         return Instance(fields)
@@ -222,10 +245,13 @@ class ClassificationTsvReader(DatasetReader):
         """
         sentences: List[Instance] = []
 
+        content = []
+        label = None
+        metadatas = {}
+        token_metadatas = []
+
         with open(file_path, "r") as lines:
             header = []
-            content = []
-            label = None
             for idx, line in enumerate(lines):
                 line = line.strip()
                 # First line is the header in our files
@@ -244,16 +270,30 @@ class ClassificationTsvReader(DatasetReader):
 
                         # If we are not in siamese, yield
                         if self.instance_type == "default":
-                            yield self.text_to_instance(content, label)
+                            yield self.text_to_instance(
+                                content, label,
+                                metadata_generic=metadatas, metadata_tokens=token_metadatas
+                            )
                         else:
                             # We check that positive and negative has been set
-                            s = self.text_to_instance(content, label)
+                            s = self.text_to_instance(
+                                content, label,
+                                metadata_generic=metadatas, metadata_tokens=token_metadatas
+                            )
                             sentences.append(s)
                         content = []
                         label = None
+                        metadatas = {}
+                        token_metadatas = []
                     continue
                 elif line.startswith("#[TAG]"):
                     label = line.replace("#[TAG]", "").strip()
+                elif line.startswith("[GENERIC-METADATA"):
+                    _, key, val = line.replace("[GENERIC-METADATA", "").replace("]", "").strip().split("---")
+                    metadatas[key] = val
+                elif line.startswith("[TOKEN-METADATA]"):
+                    tok = line.replace("[TOKEN-METADATA]", "").strip()
+                    token_metadatas.append(tok)
                 else:
                     content.append(dict(zip(header, line.split("\t"))))
 
