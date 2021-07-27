@@ -1,5 +1,7 @@
 import logging
+import statistics
 import random
+from collections import defaultdict
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
 
 from allennlp.data import DatasetReader, Instance
@@ -10,9 +12,7 @@ from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 from seligator.common.constants import CATS, MSD_CAT_NAME
 # from seligator.dataset.indexer import LatinSubwordTokenIndexer, MultipleFeatureVectorIndexer
 from seligator.common.bert_utils import GetMeBert
-
-
-# ToDo: Add MetadataField to keep the sentence for example, the author and other stuff
+from seligator.common.params import MetadataEncoding
 
 
 def what_kind_of_field(category: str, values: List, token_indexer: Optional[TokenIndexer]) -> ClassVar["Field"]:
@@ -72,7 +72,8 @@ class ClassificationTsvReader(DatasetReader):
             instance_type: str = "default",
             siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
-            metadata_token_as_lemma_and_token: bool = False,
+            metadata_encoding: MetadataEncoding = MetadataEncoding.IGNORE,
+            metadata_tokens_categories: Tuple[str, ...] = None,
             **kwargs
     ):
         """
@@ -137,8 +138,16 @@ class ClassificationTsvReader(DatasetReader):
             logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
             logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
 
-        self.metadata_token_as_lemma_and_token: bool = metadata_token_as_lemma_and_token
-        print("metadata_token_as_lemma_and_token", metadata_token_as_lemma_and_token)
+        self.metadata_encoding: MetadataEncoding = metadata_encoding
+        self.metadata_tokens_categories: Tuple[str, ...] = metadata_tokens_categories
+        logging.info("TSV READER uses following metadata encoding %s " % metadata_encoding)
+
+        if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL and not self.metadata_tokens_categories:
+            raise ValueError("You are using AS_CATEGORICAL for encoding metadata but are not declaring categories. "
+                             "You need to pass `metadata_tokens_categories` parameter the name of each category")
+        elif self.metadata_encoding == MetadataEncoding.AS_TOKEN and self.metadata_tokens_categories:
+            logging.info("TSV READER uses keeps only following metadata as inputs " + \
+                         ";".join(metadata_tokens_categories))
 
     def text_to_instance(self,
                          content: List[Dict[str, str]],
@@ -149,7 +158,6 @@ class ClassificationTsvReader(DatasetReader):
         """ Parse the output of content into
 
         """
-        sentence = []
         fields: Dict[str, List[Union[Token, MultiLabelField]]] = {cat: [] for cat in self.categories}
         if "token_subword" in fields:
             normalized = " ".join([
@@ -170,12 +178,20 @@ class ClassificationTsvReader(DatasetReader):
             for cat, value in token_repr.items():
                 if cat in fields:
                     fields[cat].append(Token(value))
+                # If the categories is known as a category with character encoding, we duplicate the value
+                #   in the right field
                 if cat+"_char" in self.categories:
                     fields[cat+"_char"].append(Token(value))
+                # If we use agglomerated MSD and the MS category is a feature we use
+                #   We store the information
                 if self.agglomerate_msd and cat in self._msd:
                     msd[cat] = value
+                # We keep a "simple" version of the sentence for debugging later
                 if cat == "token":
                     sentence.append(value)
+
+            # If we use agglomerated MSD, we create the field once all data of each token has been seen
+            #   And agglomerate that in a single field
             if self.agglomerate_msd:
                 fields[MSD_CAT_NAME].append(
                     MultiLabelField(
@@ -184,18 +200,61 @@ class ClassificationTsvReader(DatasetReader):
                     )
                 )
 
-        if self.metadata_token_as_lemma_and_token:
+        # If we use metadata information as tokens, we basically insert them in the sentence, at the beginning.
+        # 1. We add lemma and token value = to the tokens, ignoring the other situations
+        # 2. To keep sentence of similar lengths, we fill each other category with "_"
+        # 3. This might create some issue with BERT (not checked)
+        if self.metadata_encoding == MetadataEncoding.AS_TOKEN:
+            metadata_tokens: List[str] = metadata_tokens or []
+            if self.metadata_tokens_categories:
+                metadata_tokens = [
+                    tok
+                    for tok in metadata_tokens
+                    if tok.split("=")[0] in self.metadata_tokens_categories
+                ]
             for cat in fields:
                 if cat in {"token", "lemma"}:
-                    fields[cat] = [Token(met) for met in sorted(metadata_tokens or [])] + fields[cat]
+                    fields[cat] = [Token(met) for met in sorted(metadata_tokens)] + fields[cat]
                 elif cat == MSD_CAT_NAME:
                     fields[cat] = [
-                                      MultiLabelField([], label_namespace=MSD_CAT_NAME) for _ in metadata_tokens or []
+                                      MultiLabelField([], label_namespace=MSD_CAT_NAME) for _ in metadata_tokens
                                   ] + fields[cat]
                 else:
                     fields[cat] = [
-                                      Token("") for _ in metadata_tokens or []
+                                      Token("") for _ in metadata_tokens
                                   ] + fields[cat]
+            sentence = (metadata_tokens or []) + sentence
+        # If we use them as categorical, most likely for using Basis Vector, must iterate over them !
+        elif self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL:
+            _mtdt = defaultdict(list)
+            for tok in metadata_tokens:
+                cat, val = tok.split("=")
+                _mtdt[cat].append(val)
+            # Categorical Basis only accepts "one" value
+            # We develop mergers based on the input or name
+            metadata_tokens: Dict[str, LabelField] = {cat: LabelField("<UNK>") for cat in self.metadata_categories}
+            for cat, vals in _mtdt.items():
+                field_name = f"metadata_categoricals_{cat}"
+                if len(vals) == 1:
+                    metadata_tokens[field_name] = LabelField(vals[0], label_namespace=field_name)
+                else:
+                    # For some values, like dates, take the median or the max. Completely arbitrary.
+                    #   I'd go for the max.
+                    if cat == "Century":
+                        # median = f"{statistics.median(vals):.1f}"
+                        metadata_tokens[field_name] = LabelField(
+                            f"{max([int(val) for val in vals])}",
+                            label_namespace=field_name
+                        )
+                    elif cat == "CitationTypes":
+                        metadata_tokens[field_name] = LabelField(
+                            ",".join(sorted(vals)),
+                            label_namespace=field_name
+                        )
+                    else:
+                        raise ValueError(f"Found multiple possible value for category {cat}: {str(vals)}")
+                fields["metadata_tokens"] = metadata_tokens
+            # If all data are numerics
 
         if self.max_tokens:
             fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
@@ -209,7 +268,7 @@ class ClassificationTsvReader(DatasetReader):
             fields["label"] = LabelField(label)
 
         fields["metadata"] = MetadataField({
-            "sentence": (metadata_tokens or []) + sentence if self.metadata_token_as_lemma_and_token else sentence,
+            "sentence": sentence,
              **(metadata_generic or {})
         })
 
