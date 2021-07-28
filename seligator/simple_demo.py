@@ -21,8 +21,9 @@ def prepare_model(
     bert_dir: str = "./bert/latin_bert",
     use_han: bool = False,
     model_class = FeatureEmbeddingClassifier,
+    additional_model_kwargs: Dict[str, Any] = None,
     batches_per_epoch: Optional[int] = None,
-    reader_kwargs = None,
+    reader_kwargs: Dict[str, Any] = None,
     agglomerate_msd: bool = False,
     use_bert_higway: bool = False,
     model_embedding_kwargs: Optional[Dict[str, Any]] = None,
@@ -36,7 +37,7 @@ def prepare_model(
         def features_encoder(input_dim):
             return HierarchicalAttentionalEncoder(
                 input_dim=input_dim,
-                hidden_size=64
+                hidden_size=128
             )
     else:
         def features_encoder(input_dim):
@@ -99,19 +100,21 @@ def prepare_model(
             bert_embedder=bert,
             bert_pooler=bert_pooler,
             model_embedding_kwargs=model_embedding_kwargs
-        )
+        ),
+        **(additional_model_kwargs or {})
     )
     return model, reader, train, dev
 
 
-def train_and_get(model, train, dev, lr: float = 1e-4, **train_kwargs) -> FeatureEmbeddingClassifier:
-    model.cuda()
+def train_and_get(model, train, dev, lr: float = 1e-4, use_cpu: bool = False,  **train_kwargs) -> FeatureEmbeddingClassifier:
+    if not use_cpu:
+        model.cuda()
 
     train_model(
         model=model,
         train_loader=train,
         dev_loader=dev,
-        cuda_device=0,
+        cuda_device=0 if not use_cpu else -1,
         lr=lr,
         **train_kwargs
     )

@@ -38,7 +38,7 @@ class MixedEmbeddingEncoder(nn.Module):
 
                  mixer: Union[str, Callable] = "concat",
                  emb_dropout: Union[float, nn.Dropout] = 0.5,
-                 return_bert: bool = False
+                 return_bert: bool = False,
                  ):
         super().__init__()
         self.input_features = input_features
@@ -229,7 +229,7 @@ class MixedEmbeddingEncoder(nn.Module):
 
             mixer: str = "concat",
             emb_dropout: float = 0.3,
-            model_embedding_kwargs = None
+            model_embedding_kwargs=None
     ) -> "MixedEmbeddingEncoder":
         emb = cls.build_embeddings(
             vocabulary,

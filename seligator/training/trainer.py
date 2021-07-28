@@ -12,7 +12,7 @@ from allennlp.data.data_loaders import SimpleDataLoader
 from allennlp.models import Model
 from allennlp.training.trainer import Trainer
 from allennlp.training.gradient_descent_trainer import GradientDescentTrainer
-from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer
+from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer, AdadeltaOptimizer
 
 
 from seligator.dataset.tsv import ClassificationTsvReader, get_siamese_samples
@@ -67,11 +67,19 @@ def build_trainer(
     cuda_device: Union[int, List[int]],
     patience: int = 2,
     num_epochs: int = 5,
-    lr: float = 0.001
+    lr: float = 0.001,
+    optimizer: str = "AdamW",
+    optimizer_params: Dict[str, Any] = None
 ) -> Trainer:
     parameters = [(n, p) for n, p in model.named_parameters() if p.requires_grad]
-    optimizer = AdamWOptimizer(parameters, lr=lr)  # type: ignore
-    #optimizer = AdamOptimizer(parameters)
+    opt = AdamWOptimizer
+    if optimizer == "Adam":
+        opt = AdamOptimizer
+    elif optimizer == "AdaDelta":
+        opt = AdadeltaOptimizer#  (parameters, lr=1.0, rho=0.9, eps=1e-6)
+    optimizer = opt(parameters, lr=lr, **(optimizer_params or {}))  # type: ignore
+    logging.info("Current Optimizer: %s " % optimizer)
+
     logging.info(f"Num epochs: {num_epochs}")
 
     trainer = GradientDescentTrainer(
@@ -84,7 +92,7 @@ def build_trainer(
         patience=patience,
         optimizer=optimizer,
         cuda_device=cuda_device,
-        use_amp=True
+        use_amp=True if cuda_device >= 0 else False
     )
     return trainer
 
@@ -151,7 +159,9 @@ def train_model(
     cuda_device: Union[List[int], int] = -1,
     patience: int = 2,
     num_epochs: int = 5,
-    lr: float = 1e-4
+    lr: float = 1e-4,
+    optimizer: str = "AdamW",
+    optimizer_params: Dict[str, Any] = None
 ) :
     # You obviously won't want to create a temporary file for your training
     # results, but for execution in binder for this guide, we need to do this.
@@ -165,42 +175,11 @@ def train_model(
             cuda_device=cuda_device,
             num_epochs=num_epochs,
             patience=patience,
-            lr=lr
+            lr=lr,
+            optimizer=optimizer,
+            optimizer_params=optimizer_params
         )
         logging.info("Starting training")
         trainer.train()
         logging.info("Finished training")
     return
-
-
-if __name__ == "__main__":
-    from seligator.models import classifier
-    import logging
-    logging.getLogger().setLevel(logging.INFO)
-    use_only = ("token_subword", )
-    bert_dir = "./bert/latin_bert"
-
-    siamese_reader = ClassificationTsvReader(
-        use_only=use_only, bert_dir=bert_dir,
-        siamese=False
-    )
-    siamese_samples = get_siamese_samples(siamese_reader)
-    # Then we create the normal one
-    dataset_reader = ClassificationTsvReader(
-        use_only=use_only, bert_dir=bert_dir,
-        siamese=True, siamese_samples=siamese_samples,
-        token_indexers=siamese_reader.token_indexers,
-        tokenizer=siamese_reader.tokenizer
-    )
-    train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
-
-    model, dataset_reader = run_training_loop(
-        build_model=lambda *a, **w: None,
-        cuda_device=0,
-        batch_size=4,
-        batches_per_epoch=80,
-        ratio_train=1,
-        bert_dir="bert/latin_bert",
-        use_only=("token_subword",),
-        siamese=True
-    )

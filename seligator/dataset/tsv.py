@@ -8,11 +8,12 @@ from allennlp.data import DatasetReader, Instance
 from allennlp.data.fields import TextField, LabelField, Field, MultiLabelField, ListField, MetadataField
 from allennlp.data.token_indexers import TokenIndexer, SingleIdTokenIndexer, TokenCharactersIndexer
 from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
+from allennlp.data.vocabulary import DEFAULT_OOV_TOKEN
 
 from seligator.common.constants import CATS, MSD_CAT_NAME
 # from seligator.dataset.indexer import LatinSubwordTokenIndexer, MultipleFeatureVectorIndexer
 from seligator.common.bert_utils import GetMeBert
-from seligator.common.params import MetadataEncoding
+from seligator.common.params import MetadataEncoding, get_metadata_field_name, get_metadata_namespace
 
 
 def what_kind_of_field(category: str, values: List, token_indexer: Optional[TokenIndexer]) -> ClassVar["Field"]:
@@ -224,40 +225,12 @@ class ClassificationTsvReader(DatasetReader):
                                       Token("") for _ in metadata_tokens
                                   ] + fields[cat]
             sentence = (metadata_tokens or []) + sentence
-        # If we use them as categorical, most likely for using Basis Vector, must iterate over them !
-        elif self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL:
-            _mtdt = defaultdict(list)
-            for tok in metadata_tokens:
-                cat, val = tok.split("=")
-                _mtdt[cat].append(val)
-            # Categorical Basis only accepts "one" value
-            # We develop mergers based on the input or name
-            metadata_tokens: Dict[str, LabelField] = {cat: LabelField("<UNK>") for cat in self.metadata_categories}
-            for cat, vals in _mtdt.items():
-                field_name = f"metadata_categoricals_{cat}"
-                if len(vals) == 1:
-                    metadata_tokens[field_name] = LabelField(vals[0], label_namespace=field_name)
-                else:
-                    # For some values, like dates, take the median or the max. Completely arbitrary.
-                    #   I'd go for the max.
-                    if cat == "Century":
-                        # median = f"{statistics.median(vals):.1f}"
-                        metadata_tokens[field_name] = LabelField(
-                            f"{max([int(val) for val in vals])}",
-                            label_namespace=field_name
-                        )
-                    elif cat == "CitationTypes":
-                        metadata_tokens[field_name] = LabelField(
-                            ",".join(sorted(vals)),
-                            label_namespace=field_name
-                        )
-                    else:
-                        raise ValueError(f"Found multiple possible value for category {cat}: {str(vals)}")
-                fields["metadata_tokens"] = metadata_tokens
-            # If all data are numerics
 
         if self.max_tokens:
-            fields = {cat: fields[cat][:self.max_tokens] for cat in fields}
+            fields = {
+                cat: fields[cat][:self.max_tokens]  if isinstance(fields[cat], list) else fields[cat]
+                for cat in fields
+            }
 
         fields: Dict[str, Field] = {
             cat.lower(): what_kind_of_field(cat, fields[cat], token_indexer=self.token_indexers.get(cat))
@@ -271,6 +244,45 @@ class ClassificationTsvReader(DatasetReader):
             "sentence": sentence,
              **(metadata_generic or {})
         })
+
+        # We are running this part here because it happens after transforming the token space into fields
+        # If we use them as categorical, most likely for using Basis Vector, must iterate over them !
+        if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL:
+            _mtdt = defaultdict(list)
+            metadata_tokens = metadata_tokens or []
+            for tok in metadata_tokens:
+                cat, val = tok.split("=")
+                _mtdt[cat].append(val)
+            # Categorical Basis only accepts "one" value
+            # We develop mergers based on the input or name
+            fields.update({
+                get_metadata_field_name(cat): LabelField(
+                    DEFAULT_OOV_TOKEN,
+                    label_namespace=get_metadata_namespace(cat)
+                )
+                for cat in self.metadata_tokens_categories
+            })
+            for cat, vals in _mtdt.items():
+                field_name = get_metadata_field_name(cat)
+                ns = get_metadata_namespace(cat)
+                if len(vals) == 1:
+                    fields[field_name] = LabelField(vals[0], label_namespace=ns)
+                else:
+                    # For some values, like dates, take the median or the max. Completely arbitrary.
+                    #   I'd go for the max.
+                    if cat == "Century":
+                        # median = f"{statistics.median(vals):.1f}"
+                        fields[field_name] = LabelField(
+                            f"{max([int(val) for val in vals])}",
+                            label_namespace=ns
+                        )
+                    elif cat == "CitationTypes":
+                        fields[field_name] = LabelField(
+                            ",".join(sorted(vals)),
+                            label_namespace=ns
+                        )
+                    else:
+                        raise ValueError(f"Found multiple possible value for category {cat}: {str(vals)}")
 
         return Instance(fields)
 

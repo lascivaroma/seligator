@@ -12,11 +12,11 @@ class MetadataEnrichedLinear(nn.Module):
     def __init__(self,
                  input_dim: int,
                  output_dim: int,
+                 metadata_categories: Dict[str, int],
                  metadata_param_manager: Optional[MetaParamManager] = None,
                  metadata_emb_dim: int = 64,
                  num_bases: int = 3,
                  key_query_size: int = 64,
-                 meta_units: Tuple[str, ...] = None
                  ):
         super(MetadataEnrichedLinear, self).__init__()
         self.linear = BasisCustLinear(
@@ -26,7 +26,7 @@ class MetadataEnrichedLinear(nn.Module):
             metadata_emb_dim=metadata_emb_dim,
             num_bases=num_bases,
             key_query_size=key_query_size,
-            meta_units=meta_units
+            metadata_categories=metadata_categories
         )
         self.bias = BasicBias(output_dim=output_dim)
         self._output_dim: int = output_dim
@@ -38,5 +38,5 @@ class MetadataEnrichedLinear(nn.Module):
         return self._output_dim
 
     def forward(self, inputs, metadata_vectors: Dict[str, torch.Tensor]):
-        x = self.linear(inputs)
+        x = self.linear(inputs, metadata_vectors)
         return x + self.bias(metadata_vectors)

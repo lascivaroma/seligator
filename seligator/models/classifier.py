@@ -1,4 +1,5 @@
-from typing import Dict, Tuple, Optional
+from typing import Dict, Tuple, Optional, Any
+import logging
 
 from torch import Tensor, nn
 import torch.nn.functional as F
@@ -6,6 +7,8 @@ from allennlp.data import Vocabulary
 
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
+from seligator.modules.basis_customizer import MetadataEnrichedLinear
+from seligator.common.params import get_metadata_field_name, get_metadata_namespace
 
 
 class FeatureEmbeddingClassifier(BaseModel):
@@ -13,20 +16,49 @@ class FeatureEmbeddingClassifier(BaseModel):
                  vocab: Vocabulary,
                  input_features: Tuple[str, ...],
                  mixed_encoder: MixedEmbeddingEncoder,
+
+                 metadata_linear: bool = False,
+                 metadata_categories: Tuple[str, ...] = None,
+                 metadata_linear_kwargs: Dict[str, Any] = None,
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
 
         self.mixed_encoder: MixedEmbeddingEncoder = mixed_encoder
-        self.classifier = nn.Linear(self.mixed_encoder.get_output_dim(), self.num_labels)
+        self.metadata_linear: bool = metadata_linear
+        self.metadata_categories: Tuple[str, ...] = metadata_categories or ()
+        if metadata_linear:
+            logging.info("Classifier is using MetadataEnrichedLinear")
+            if not metadata_categories:
+                raise ValueError("When you are using MetadataEnrichedLinear, you must feed the `metadata_categories`"
+                                 "property to the classifier.")
+            self.classifier = MetadataEnrichedLinear(
+                input_dim=self.mixed_encoder.get_output_dim(),
+                output_dim=self.num_labels,
+                metadata_categories={
+                    cat: vocab.get_vocab_size(get_metadata_namespace(cat))
+                    for cat in metadata_categories
+                },
+                **(metadata_linear_kwargs or {})
+            )
+        else:
+            self.classifier = nn.Linear(self.mixed_encoder.get_output_dim(), self.num_labels)
 
     def forward(self,
                 label: Optional[Tensor] = None,
                 **mixed_features) -> Dict[str, Tensor]:
-
+        metadata_vector = {}
+        if self.metadata_linear:
+            metadata_vector = {
+                cat: mixed_features.pop(get_metadata_field_name(cat))
+                for cat in self.metadata_categories
+            }
         encoded_text, additional_out = self.mixed_encoder(mixed_features)
 
         # Shape: (batch_size, num_labels)
-        logits = self.classifier(encoded_text)
+        if self.metadata_linear:
+            logits = self.classifier(encoded_text, metadata_vector)
+        else:
+            logits = self.classifier(encoded_text)
 
         # Shape: (batch_size, num_labels)
         probs = F.softmax(logits)
@@ -37,7 +69,6 @@ class FeatureEmbeddingClassifier(BaseModel):
             self._compute_metrics(logits, label, output)
 
         return output
-
 
 
 if __name__ == "__main__":

@@ -29,13 +29,13 @@ class AttentionWithoutQuery(nn.Module):
 
 
 class LinearAttentionWithoutQuery(AttentionWithoutQuery):
-    def __init__(self, encoder_dim, device=torch.device('cpu')):
-        super().__init__(encoder_dim, device)
+    def __init__(self, encoder_dim):
+        super().__init__(encoder_dim)
         self.z = nn.Linear(self.encoder_dim, 1, bias=False)
 
     def forward(self, encoded_vecs, mask=None):
         logits = self.z(encoded_vecs).squeeze(dim=2)
-        if (mask is not None):
+        if mask is not None:
             # batch_size, max_length
             attention = masked_softmax(logits=logits, mask=mask, dim=1)
         else:
@@ -105,7 +105,7 @@ class LinearAttentionWithQuery(AttentionWithQuery):
 
     def forward(self, encoded_vecs, query, mask=None):
         logits = (encoded_vecs * query).sum(dim=2)
-        if (mask is not None):
+        if mask is not None:
             # batch_size, max_length
             attention = masked_softmax(logits=logits, mask=mask, dim=1)
         else:
