@@ -50,6 +50,8 @@ class MixedEmbeddingEncoder(nn.Module):
         else:
             self._emb_dropout = None
 
+        self.use_metadata_vector = getattr(features_encoder, "use_metadata_vector", False)
+
         self.use_features: bool = use_features
         self.features_embedder = features_embedder
         self.features_encoder = features_encoder

@@ -46,14 +46,15 @@ def prepare_model(
             )
     elif seq2vec_encoder_type in {
         Seq2VecEncoderType.AttentionPooling,
-        Seq2VecEncoderType.MetadataAttentionPooling
+        Seq2VecEncoderType.MetadataAttentionPooling,
+        Seq2VecEncoderType.MetadataLSTM
     }:
         def features_encoder(input_dim):
             return MetadataEnrichedAttentionalLSTM(
                 input_dim=input_dim,
                 hidden_size=encoder_hidden_size,
                 use_metadata_attention=seq2vec_encoder_type == Seq2VecEncoderType.MetadataAttentionPooling,
-                use_metadata_lstm=False,
+                use_metadata_lstm=seq2vec_encoder_type == Seq2VecEncoderType.MetadataLSTM,
                 basis_vector_configuration=basis_vector_configuration
             )
     else:

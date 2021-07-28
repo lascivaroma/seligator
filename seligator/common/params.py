@@ -23,6 +23,7 @@ class Seq2VecEncoderType(enum.Enum):
     HAN = 1
     AttentionPooling = 2
     MetadataAttentionPooling = 3
+    MetadataLSTM = 4
 
 
 class MetaParamManager:

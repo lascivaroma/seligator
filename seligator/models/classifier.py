@@ -42,7 +42,7 @@ class FeatureEmbeddingClassifier(BaseModel):
                 label: Optional[Tensor] = None,
                 **mixed_features) -> Dict[str, Tensor]:
         metadata_vector = {}
-        if self.metadata_linear:
+        if self.metadata_linear or self.mixed_encoder.use_metadata_vector:
             metadata_vector = {
                 cat: mixed_features.pop(get_metadata_field_name(cat))
                 for cat in self.metadata_categories

@@ -4,7 +4,7 @@ import logging
 import torch
 import torch.nn as nn
 from ...common.params import BasisVectorConfiguration, MetaParamManager
-from .models import BasisCustLinear, BasicBias, BasicAttention, BasisCustAttention
+from .models import BasisCustLinear, BasicBias, BasicAttention, BasisCustAttention, BasisCustBiLSTM
 from ..seq2vec.wrapper import ModifiedPytorchSeq2VecWrapper
 
 logger = logging.getLogger(__name__)
@@ -52,14 +52,21 @@ class MetadataEnrichedAttentionalLSTM(nn.Module):
         self._input_dim: int = input_dim
         self._hidden_dim: int = hidden_size
 
-        self.lstm = ModifiedPytorchSeq2VecWrapper(
-            module=nn.LSTM(
-                input_size=input_dim,
+        if use_metadata_lstm:
+            self.lstm = BasisCustBiLSTM(
+                input_dim=input_dim,
                 hidden_size=hidden_size,
-                bidirectional=True,
-                batch_first=True
+                basis_vector_configuration=basis_vector_configuration
             )
-        )
+        else:
+            self.lstm = ModifiedPytorchSeq2VecWrapper(
+                module=nn.LSTM(
+                    input_size=input_dim,
+                    hidden_size=hidden_size,
+                    bidirectional=True,
+                    batch_first=True
+                )
+            )
 
         if use_metadata_attention:
             self.attention = BasisCustAttention(
@@ -81,7 +88,10 @@ class MetadataEnrichedAttentionalLSTM(nn.Module):
             mask=torch.Tensor,
             metadata_vector: Dict[str, torch.Tensor] = None
     ):
-        x = self.lstm(inputs, mask=mask)
+        if isinstance(self.lstm, BasisCustBiLSTM):
+            x = self.lstm(inputs, mask=mask, metadata_vector=metadata_vector)
+        else:
+            x = self.lstm(inputs, mask=mask)
         # pass
         x, attention = self.attention(x, mask=mask.float(), metadata_vector=metadata_vector)
         return x, attention
