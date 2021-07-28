@@ -4,7 +4,7 @@ from torch.autograd import Variable
 
 def masked_softmax(logits, mask, dim=1, epsilon=1e-5):
     """ logits, mask has same size """
-    masked_logits = logits.masked_fill(mask == 0, -1e9)
+    masked_logits = logits.masked_fill(mask == 0, -1e-4 if logits.dtype == torch.float16 else -1e-9)
     max_logits = torch.max(masked_logits, dim=dim, keepdim=True)[0]
     exps = torch.exp(masked_logits - max_logits)
     masked_exps = exps * mask.float()

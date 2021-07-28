@@ -7,7 +7,10 @@ from seligator.models.classifier import FeatureEmbeddingClassifier
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 from seligator.training.trainer import generate_all_data, train_model
 from seligator.common.constants import EMBEDDING_DIMENSIONS
+from seligator.common.params import Seq2VecEncoderType, BasisVectorConfiguration, MetadataEncoding
 from seligator.common.bert_utils import what_type_of_bert
+
+from seligator.modules.basis_customizer import MetadataEnrichedAttentionalLSTM
 from seligator.modules.seq2vec.han import HierarchicalAttentionalEncoder
 from seligator.modules.seq2vec.bert_poolers import PoolerHighway, SumAndLinear
 
@@ -19,31 +22,45 @@ logging.getLogger().setLevel(logging.INFO)
 def prepare_model(
     input_features: Tuple[str, ...] = ("token_subword",),
     bert_dir: str = "./bert/latin_bert",
-    use_han: bool = False,
+    seq2vec_encoder_type: Seq2VecEncoderType = Seq2VecEncoderType.LSTM,
     model_class = FeatureEmbeddingClassifier,
     additional_model_kwargs: Dict[str, Any] = None,
     batches_per_epoch: Optional[int] = None,
     reader_kwargs: Dict[str, Any] = None,
+    encoder_hidden_size: int = 64,
     agglomerate_msd: bool = False,
     use_bert_higway: bool = False,
     model_embedding_kwargs: Optional[Dict[str, Any]] = None,
+    basis_vector_configuration: BasisVectorConfiguration = None,
 ) -> Tuple[FeatureEmbeddingClassifier, DatasetReader, DataLoader, DataLoader]:
 
     use_bert = "token_subword" in input_features
     # For test, just change the input feature here
     # INPUT_FEATURES = ("token", "lemma", "token_char")  # , "token_subword")
 
-    if use_han:
+    if seq2vec_encoder_type == Seq2VecEncoderType.HAN:
         def features_encoder(input_dim):
             return HierarchicalAttentionalEncoder(
                 input_dim=input_dim,
-                hidden_size=128
+                hidden_size=encoder_hidden_size
+            )
+    elif seq2vec_encoder_type in {
+        Seq2VecEncoderType.AttentionPooling,
+        Seq2VecEncoderType.MetadataAttentionPooling
+    }:
+        def features_encoder(input_dim):
+            return MetadataEnrichedAttentionalLSTM(
+                input_dim=input_dim,
+                hidden_size=encoder_hidden_size,
+                use_metadata_attention=seq2vec_encoder_type == Seq2VecEncoderType.MetadataAttentionPooling,
+                use_metadata_lstm=False,
+                basis_vector_configuration=basis_vector_configuration
             )
     else:
         def features_encoder(input_dim):
             return LstmSeq2VecEncoder(
                 input_size=input_dim,
-                hidden_size=128,
+                hidden_size=encoder_hidden_size,
                 dropout=0.3,
                 bidirectional=True,
                 num_layers=2
@@ -61,6 +78,10 @@ def prepare_model(
         batches_per_epoch=batches_per_epoch,
         **{**(reader_kwargs or {}), "agglomerate_msd": agglomerate_msd}
     )
+
+    if basis_vector_configuration:
+        logging.info("Fitting the BasisVectorConfiguration")
+        basis_vector_configuration.set_metadata_categories_dims(vocab)
 
     bert, bert_pooler = None, None
     if use_bert:
@@ -101,6 +122,7 @@ def prepare_model(
             bert_pooler=bert_pooler,
             model_embedding_kwargs=model_embedding_kwargs
         ),
+        basis_vector_configuration=basis_vector_configuration,
         **(additional_model_kwargs or {})
     )
     return model, reader, train, dev

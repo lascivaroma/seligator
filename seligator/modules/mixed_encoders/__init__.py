@@ -98,7 +98,8 @@ class MixedEmbeddingEncoder(nn.Module):
             return self.bert_pooler(embedded, mask=token["mask"]), embedded.tolist()
         return self.bert_pooler(embedded, mask=token["mask"]), None
 
-    def _forward_features(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
+    def _forward_features(self, token, metadata_vector: Dict[str, torch.Tensor]
+                          ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         token = self._rebuild_input(token)
 
         # Shape: (batch_size, num_tokens, embedding_dim)
@@ -113,13 +114,15 @@ class MixedEmbeddingEncoder(nn.Module):
             if tok_cat != MSD_CAT_NAME
         })
 
-        # Shape: (batch_size, encoding_dim)
-        if getattr(self.features_encoder, "with_attention", False):
-            return self.features_encoder(embedded_text, mask)  # ToDo: Attention returned !
+        if hasattr(self.features_encoder, "use_metadata_vector"):
+            out = self.features_encoder(embedded_text, mask=mask, metadata_vector=metadata_vector)
         else:
-            return self.features_encoder(embedded_text, mask), None
+            out = self.features_encoder(embedded_text, mask)
+        if isinstance(out, tuple):
+            return out
+        return out, None
 
-    def forward(self, data) -> Tuple[torch.Tensor, Dict[str, Any]]:
+    def forward(self, data, metadata_vector: Dict[str, torch.Tensor] = None) -> Tuple[torch.Tensor, Dict[str, Any]]:
         """
 
         :param data: Input (TextFieldEmbedders)
@@ -133,14 +136,14 @@ class MixedEmbeddingEncoder(nn.Module):
             _bert, embedded = self._forward_bert(data["token_subword"]["token_subword"])
             if embedded is not None:
                 additional_output["bert_projection"] = embedded
-            _features, attention = self._forward_features(data)
+            _features, attention = self._forward_features(data, metadata_vector=metadata_vector)
             v = self.mixer(_bert, _features)
         elif self.use_bert:
             v, embedded = self._forward_bert(data["token_subword"]["token_subword"])
             if embedded is not None:
                 additional_output["bert_projection"] = embedded
         elif self.use_features:
-            v, attention = self._forward_features(data)
+            v, attention = self._forward_features(data, metadata_vector=metadata_vector)
         else:
             raise ValueError("No features or bert used.")
         return v, {"attention": attention.tolist() if attention is not None else [], **additional_output}

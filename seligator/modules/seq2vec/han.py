@@ -1,6 +1,7 @@
 from typing import Tuple, Optional
 from torch.nn import GRU, Parameter, functional as F, Linear, Dropout, LSTM
 import torch
+from .wrapper import ModifiedPytorchSeq2VecWrapper
 
 from allennlp.modules.seq2vec_encoders import Seq2VecEncoder
 
@@ -36,7 +37,9 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
 
         # From https://github.com/uvipen/Hierarchical-attention-networks-pytorch/blob/master/src/word_att_model.py
 
-        self.gru = GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True)
+        self.gru = ModifiedPytorchSeq2VecWrapper(
+            module=GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True)
+        )
         self.context = Parameter(torch.Tensor(2 * hidden_size, 1), requires_grad=True)
         self.dense = Linear(2*hidden_size, 2*hidden_size)
         self.dropout = Dropout(0.5)
@@ -57,13 +60,8 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
                 **kwargs) -> Tuple[torch.Tensor, torch.Tensor]:
         # Inputs: (batch, seq_len, embedding_len)
         # mask (initial): (batch, seq_len)
-        # mask (after): (batch, seq_len, 1)
-        if mask is not None:
-            mask = mask.long().unsqueeze(dim=-1)
-        else:
-            mask = torch.ones(inputs.shape[:2]).bool().unsqueeze(dim=-1)
         # word_output: (batch_size , sentence_len, nb_dir*gru_size*nb_layer)
-        word_output, word_hidden = self.gru(inputs)
+        word_output = self.gru(inputs, mask=mask)
         word_output = self.dropout(word_output)
         # attention: (batch_size, sentence_len, 2*gru_size)
         word_attention = torch.tanh(self.dense(word_output))
@@ -71,6 +69,12 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
         weights = torch.matmul(word_attention, self.context)
         # weights : (batch_size, sentence_len, 1)
         weights = F.softmax(weights, dim=1)
+
+        # mask (after): (batch, seq_len, 1)
+        if mask is not None:
+            mask = mask.long().unsqueeze(dim=-1)
+        else:
+            mask = torch.ones(inputs.shape[:2]).bool().unsqueeze(dim=-1)
 
         # weights : (batch_size, sentence_len, 1)
         weights = torch.where(mask != 0, weights, torch.full_like(mask, 0, dtype=torch.float, device=weights.device))

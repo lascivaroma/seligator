@@ -8,7 +8,7 @@ from allennlp.data import Vocabulary
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 from seligator.modules.basis_customizer import MetadataEnrichedLinear
-from seligator.common.params import get_metadata_field_name, get_metadata_namespace
+from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 
 class FeatureEmbeddingClassifier(BaseModel):
@@ -18,27 +18,22 @@ class FeatureEmbeddingClassifier(BaseModel):
                  mixed_encoder: MixedEmbeddingEncoder,
 
                  metadata_linear: bool = False,
-                 metadata_categories: Tuple[str, ...] = None,
-                 metadata_linear_kwargs: Dict[str, Any] = None,
+                 basis_vector_configuration: BasisVectorConfiguration = None,
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
 
         self.mixed_encoder: MixedEmbeddingEncoder = mixed_encoder
         self.metadata_linear: bool = metadata_linear
-        self.metadata_categories: Tuple[str, ...] = metadata_categories or ()
+        self.metadata_categories: Tuple[str, ...] = basis_vector_configuration.categories_tuple
         if metadata_linear:
             logging.info("Classifier is using MetadataEnrichedLinear")
-            if not metadata_categories:
-                raise ValueError("When you are using MetadataEnrichedLinear, you must feed the `metadata_categories`"
-                                 "property to the classifier.")
+            if not self.metadata_categories:
+                raise ValueError("When you are using MetadataEnrichedLinear, you must feed the `categories`"
+                                 "of your BasisVectorConfiguration")
             self.classifier = MetadataEnrichedLinear(
                 input_dim=self.mixed_encoder.get_output_dim(),
                 output_dim=self.num_labels,
-                metadata_categories={
-                    cat: vocab.get_vocab_size(get_metadata_namespace(cat))
-                    for cat in metadata_categories
-                },
-                **(metadata_linear_kwargs or {})
+                basis_vector_configuration=basis_vector_configuration
             )
         else:
             self.classifier = nn.Linear(self.mixed_encoder.get_output_dim(), self.num_labels)
@@ -52,7 +47,7 @@ class FeatureEmbeddingClassifier(BaseModel):
                 cat: mixed_features.pop(get_metadata_field_name(cat))
                 for cat in self.metadata_categories
             }
-        encoded_text, additional_out = self.mixed_encoder(mixed_features)
+        encoded_text, additional_out = self.mixed_encoder(mixed_features, metadata_vector)
 
         # Shape: (batch_size, num_labels)
         if self.metadata_linear:
