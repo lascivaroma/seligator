@@ -35,7 +35,7 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
     if "left_label" in instance.fields:
         prefix = "left_"
 
-    sentence = " ".join(instance.fields["metadata"]["sentence"])
+    sentence = " ".join(instance.fields[prefix+"metadata"]["sentence"])
     #if prefix+"token" in instance.fields:
     #    sentence = get_unknown_and_sentence(instance, prefix+"token")
     #elif prefix+"token_subword" in instance.fields:
@@ -134,7 +134,7 @@ if __name__ == "__main__":
         ),
         #batches_per_epoch=100,
         # model_class=SiameseClassifier,
-        use_bert_higway=True,
+        use_bert_highway=True,
     )
     model = train_and_get(
         model, train, dev,

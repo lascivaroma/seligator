@@ -11,6 +11,9 @@ from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
 logger = logging.getLogger(__name__)
 
 
+_model_cache = {}
+
+
 def get(model_name: str, make_copy: bool, **kwargs,) -> BertModel:
     global _model_cache
     transformer = BertModel.from_pretrained(

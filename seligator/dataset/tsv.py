@@ -104,7 +104,7 @@ class ClassificationTsvReader(DatasetReader):
             for feat in self.categories
             if "token" not in feat and "lemma" not in feat
         }
-        self.agglomerate_msd: bool = agglomerate_msd
+        self.agglomerate_msd: bool = agglomerate_msd and self._msd
         if self.agglomerate_msd:
             self.categories = (
                 MSD_CAT_NAME,
@@ -120,7 +120,7 @@ class ClassificationTsvReader(DatasetReader):
         self.token_indexers = token_indexers or build_token_indexers(
             cats=self.categories,
             get_me_bert=get_me_bert,
-            msd=self._msd
+            msd=self._msd if self.agglomerate_msd else None
         )
         self.bert_tokenizer = get_me_bert.tokenizer
         logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")

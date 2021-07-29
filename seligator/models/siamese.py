@@ -16,6 +16,7 @@ from allennlp.training.metrics import CategoricalAccuracy, BooleanAccuracy
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 from seligator.modules.loss_functions.constrastiveLoss import ContrastiveLoss
+from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +38,7 @@ class SiameseClassifier(BaseModel):
                  prediction_threshold: float = 0.6,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
+                 basis_vector_configuration: BasisVectorConfiguration = None,
                  loss: str = "contrastive",
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
@@ -46,6 +48,8 @@ class SiameseClassifier(BaseModel):
 
         self.left_encoder: Optional[Seq2VecEncoder] = None
         self.right_encoder: Optional[Seq2VecEncoder] = None
+
+        self.metadata_categories: Tuple[str, ...] = basis_vector_configuration.categories_tuple
 
         if isinstance(mixed_encoder, MixedEmbeddingEncoder):
             self.left_encoder = mixed_encoder
@@ -123,17 +127,26 @@ class SiameseClassifier(BaseModel):
         right = {key.replace("right_", ""): value for key, value in inputs.items() if key.startswith("right_")}
         label = left["label"] == right["label"]
 
-        v_l, left_additional_output = self.left_encoder(left)
-        v_r, right_additional_output = self.right_encoder(right)
+        metadata_vector = {}
+        if self.left_encoder.use_metadata_vector:
+            metadata_vector = {
+                cat: inputs.pop("left_"+get_metadata_field_name(cat))
+                for cat in self.metadata_categories
+            }
+
+        v_l, left_additional_output = self.left_encoder(left, metadata_vector=metadata_vector)
+        v_r, right_additional_output = self.right_encoder(right, metadata_vector=metadata_vector)
 
         loss = self._loss(v_l, v_r, label)
         sim = F.cosine_similarity(v_l, v_r)
         sim_bool = sim > self.prediction_threshold
 
         output_dict = {
-            'loss': loss, "sim": sim, "probs": self._to_categorical_probs(left, right, sim),
-            "doc-vectors": v_l.tolist()
-            **left_additional_output}
+            'loss': loss,
+            "sim": sim,
+            "probs": self._to_categorical_probs(left, right, sim),
+            **left_additional_output
+        }
 
         sim_bool = sim_bool.long()
         label = label.long()

@@ -148,7 +148,11 @@ class MixedEmbeddingEncoder(nn.Module):
             v, attention = self._forward_features(data, metadata_vector=metadata_vector)
         else:
             raise ValueError("No features or bert used.")
-        return v, {"attention": attention.tolist() if attention is not None else [], **additional_output}
+        return v, {
+            "attention": attention.tolist() if attention is not None else [],
+            "doc-vectors": v.tolist(),
+            **additional_output
+        }
 
     @staticmethod
     def merge_default_embeddings(additional):

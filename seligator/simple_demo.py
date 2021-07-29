@@ -29,7 +29,7 @@ def prepare_model(
     reader_kwargs: Dict[str, Any] = None,
     encoder_hidden_size: int = 64,
     agglomerate_msd: bool = False,
-    use_bert_higway: bool = False,
+    use_bert_highway: bool = False,
     model_embedding_kwargs: Optional[Dict[str, Any]] = None,
     basis_vector_configuration: BasisVectorConfiguration = None,
 ) -> Tuple[FeatureEmbeddingClassifier, DatasetReader, DataLoader, DataLoader]:
@@ -87,7 +87,7 @@ def prepare_model(
     bert, bert_pooler = None, None
     if use_bert:
         bert = get_me_bert.embedder
-        if use_bert_higway:
+        if use_bert_highway:
             bert_pooler = PoolerHighway(BertPooler(bert_dir), 128)
         else:
             bert_pooler = BertPooler(bert_dir)

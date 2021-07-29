@@ -96,7 +96,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
             max_length += self.num_special_tokens_for_sequence()
 
         text = latin_bert_normalization(text)
-        logging.info(text)
+        # logging.info(text)
 
         token_ids = self._tokenizer.encode(text)
         token_texts = self._tokenizer.decode_list(token_ids)
@@ -104,7 +104,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
         if self._add_special_tokens:
             token_texts = [*self.single_sequence_start_tokens, *token_texts, *self.single_sequence_end_tokens]
             token_ids = [*self.single_sequence_start_tokens_ids, *token_ids, *self.single_sequence_end_tokens_ids]
-            logger.debug(f"New text: {text}")
+            # logger.debug(f"New text: {text}")
 
         special_tokens_mask = [1 if tok in self._special_tokens and tok != "[CLS]" else 0 for tok in token_texts]
 
@@ -124,7 +124,7 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
                     idx_end=None,
                 )
             )
-        logger.info(str(tokens))
+        # logger.info(str(tokens))
         return tokens
 
 
