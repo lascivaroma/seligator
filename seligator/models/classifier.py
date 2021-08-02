@@ -7,7 +7,7 @@ from allennlp.data import Vocabulary
 
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
-from seligator.modules.basis_customizer import MetadataEnrichedLinear
+from seligator.modules.linear import MetadataEnrichedLinear
 from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 

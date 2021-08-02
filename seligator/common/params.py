@@ -53,6 +53,25 @@ class BasisVectorConfiguration:
         self.key_query_size: int = key_query_size
         self._categories = None
 
+    def __repr__(self):
+        return f"<BasisVectorConfiguration cats='{','.join(self.categories_tuple)}' />"
+
+    def to_dict(self):
+        return {
+            "categories": self.categories_tuple,
+            "categories_dim": self.categories if self._categories else None,
+            "emb_dim": self.emb_dim,
+            "num_bases": self.num_bases,
+            "key_query_size": self.key_query_size
+        }
+
+    @classmethod
+    def from_dict(cls, params):
+        vocab_count = params.pop("categories_dim", None)
+        x = cls(**params)
+        x._categories = vocab_count
+        return x
+
     @property
     def categories(self) -> Dict[str, int]:
         if self._categories:

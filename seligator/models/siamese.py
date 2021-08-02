@@ -34,8 +34,8 @@ class SiameseClassifier(BaseModel):
                  input_features: Tuple[str, ...],
                  mixed_encoder: Union[MixedEmbeddingEncoder, Tuple[MixedEmbeddingEncoder, MixedEmbeddingEncoder]],
 
-                 loss_margin: float = 0.5,
-                 prediction_threshold: float = 0.6,
+                 loss_margin: float = 0.3,
+                 prediction_threshold: float = 0.7,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
                  basis_vector_configuration: BasisVectorConfiguration = None,

@@ -115,7 +115,7 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
 
 if __name__ == "__main__":
-    from seligator.simple_demo import prepare_model, train_and_get
+    from seligator.main import prepare_model, train_and_get
     from seligator.models.siamese import SiameseClassifier
     model, reader, train, dev = prepare_model(
         input_features=("lemma_char", "lemma", "case", "numb", "gend", "mood", "tense", "voice", "person", "deg"),

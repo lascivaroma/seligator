@@ -180,7 +180,7 @@ class MixedEmbeddingEncoder(nn.Module):
             return default
 
         # get_vocabulary_from_pretrained_embedding
-        if keep_all_vocab:
+        if keep_all_vocab and pretrained_embeddings:
             for cat in pretrained_embeddings:
                 tokens = list(get_vocabulary_from_pretrained_embedding(pretrained_embeddings[cat]))
                 vocabulary.add_tokens_to_namespace(tokens, cat)

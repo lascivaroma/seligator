@@ -1,0 +1,65 @@
+{
+  "input_features": [
+    "lemma_char",
+    "lemma",
+    "case",
+    "numb",
+    "gend",
+    "mood",
+    "tense",
+    "voice",
+    "person",
+    "deg"
+  ],
+  "seq2vec_encoder_type": {
+    "__enum__": "Seq2VecEncoderType.HAN"
+  },
+  "basis_vector_configuration": {
+    "__basis_vector_configuration__": {
+      "categories": [
+        "Century",
+        "Textgroup",
+        "WrittenType",
+        "CitationTypes"
+      ],
+      "categories_dim": null,
+      "emb_dim": 64,
+      "num_bases": 3,
+      "key_query_size": 64
+    }
+  },
+  "agglomerate_msd": true,
+  "reader_kwargs": {
+    "batch_size": 4,
+    "metadata_encoding": {
+      "__enum__": "MetadataEncoding.AS_CATEGORICAL"
+    },
+    "metadata_tokens_categories": [
+      "Century",
+      "Textgroup",
+      "WrittenType",
+      "CitationTypes"
+    ]
+  },
+  "model_embedding_kwargs": {
+    "keep_all_vocab": true,
+    "pretrained_embeddings": {
+      "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
+    },
+    "trainable_embeddings": {
+      "token": false,
+      "lemma": false
+    },
+    "emb_dims": {
+      "token": 200,
+      "lemma": 200
+    }
+  },
+  "model_class": {
+    "__type__": "FeatureEmbeddingClassifier"
+  },
+  "use_bert_highway": false,
+  "additional_model_kwargs": {
+    "metadata_linear": true
+  }
+}
