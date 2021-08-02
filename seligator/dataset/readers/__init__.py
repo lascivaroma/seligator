@@ -1,7 +1,10 @@
 import logging
 import random
+import os
 from collections import defaultdict
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
+
+import lxml.etree as et
 
 from allennlp.data import DatasetReader, Instance
 from allennlp.data.fields import TextField, LabelField, Field, MultiLabelField, ListField, MetadataField
@@ -40,10 +43,10 @@ def build_token_indexers(
 
     if msd:
         return {
-            #MSD_CAT_NAME: MultipleFeatureVectorIndexer(
+            # MSD_CAT_NAME: MultipleFeatureVectorIndexer(
             #    namespace=MSD_CAT_NAME,
             #    msd=msd or []
-            #),
+            # ),
             **build_token_indexers(
                 [cat for cat in cats if cat not in msd],
                 get_me_bert=get_me_bert
@@ -162,8 +165,8 @@ class ClassificationTsvReader(DatasetReader):
                     fields[cat].append(Token(value))
                 # If the categories is known as a category with character encoding, we duplicate the value
                 #   in the right field
-                if cat+"_char" in self.categories:
-                    fields[cat+"_char"].append(Token(value))
+                if cat + "_char" in self.categories:
+                    fields[cat + "_char"].append(Token(value))
                 # If we use agglomerated MSD and the MS category is a feature we use
                 #   We store the information
                 if self.agglomerate_msd and cat in self._msd_features:
@@ -209,7 +212,7 @@ class ClassificationTsvReader(DatasetReader):
 
         if self.max_tokens:
             fields = {
-                cat: fields[cat][:self.max_tokens]  if isinstance(fields[cat], list) else fields[cat]
+                cat: fields[cat][:self.max_tokens] if isinstance(fields[cat], list) else fields[cat]
                 for cat in fields
             }
 
@@ -223,7 +226,7 @@ class ClassificationTsvReader(DatasetReader):
 
         fields["metadata"] = MetadataField({
             "sentence": sentence,
-             **(metadata_generic or {})
+            **(metadata_generic or {})
         })
 
         # We are running this part here because it happens after transforming the token space into fields
@@ -264,7 +267,6 @@ class ClassificationTsvReader(DatasetReader):
                         )
                     else:
                         raise ValueError(f"Found multiple possible value for category {cat}: {str(vals)}")
-
         return Instance(fields)
 
     def _read(self, file_path: str) -> Iterable[Instance]:
@@ -320,18 +322,13 @@ class ClassificationTsvReader(DatasetReader):
                         if not label:
                             raise ValueError("A label was not found")
 
-                        # If we are not in siamese, yield
+                        s = self.text_to_instance(
+                            content, label,
+                            metadata_generic=metadatas, metadata_tokens=token_metadatas
+                        )
                         if self.instance_type == "default":
-                            yield self.text_to_instance(
-                                content, label,
-                                metadata_generic=metadatas, metadata_tokens=token_metadatas
-                            )
+                            yield s
                         else:
-                            # We check that positive and negative has been set
-                            s = self.text_to_instance(
-                                content, label,
-                                metadata_generic=metadatas, metadata_tokens=token_metadatas
-                            )
                             sentences.append(s)
                         content = []
                         label = None
@@ -350,12 +347,19 @@ class ClassificationTsvReader(DatasetReader):
                     content.append(dict(zip(header, line.split("\t"))))
 
         if content:
+            s = self.text_to_instance(
+                content, label,
+                metadata_generic=metadatas, metadata_tokens=token_metadatas
+            )
             if self.instance_type == "default":
-                yield self.text_to_instance(content, label)
+                yield s
             else:
-                s = self.text_to_instance(content, label)
                 sentences.append(s)
 
+        if self.instance_type != "default":
+            yield from self._send_non_defaults(sentences)
+
+    def _send_non_defaults(self, sentences: List[Instance]):
         if self.instance_type == "triplet":
             for sentence in sentences:
                 pos, neg = random.choice(self.siamese_samples["positive"]), \
@@ -381,6 +385,144 @@ class ClassificationTsvReader(DatasetReader):
                     }
                 )
 
+
+class XMLDatasetReader(ClassificationTsvReader):
+    def __init__(self,
+                 tokenizer: Tokenizer = None,
+                 token_indexers: Dict[str, TokenIndexer] = None,
+                 max_tokens: int = 256,
+                 token_features: Tuple[str, ...] = None,
+                 msd_features: Tuple[str, ...] = None,
+                 agglomerate_msd: bool = False,
+                 get_me_bert: Optional[GetMeBert] = GetMeBert(),
+                 instance_type: str = "default",
+                 siamese_probability: float = 1.0,
+                 siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
+                 metadata_encoding: MetadataEncoding = MetadataEncoding.IGNORE,
+                 metadata_tokens_categories: Tuple[str, ...] = None,
+                 namespace: Dict[str, Any] = None,
+                 **kwargs
+                 ):
+        """
+
+        :param tokenizer: Tokenizer to use
+        :param token_indexers: Dict of input_key -> indexers
+        :param max_tokens: Maximum amount of tokens per "sentence"
+        :param cats: List of known token-features
+        :param input_features: List of token-features to user
+        :param agglomerate_msd: Instead of encoding each feature in its own namespace, all morpho-syntactical
+        features (!= lemma, token, *_char, *_subword) are registered in a single namespace and agglutinated.
+        :param get_me_bert: Information about bert usage
+        :param instance_type: Type of instance to use ("default", "siamese", "triplet")
+        :param siamese_probability: Probability to train against a positive example of siamese
+        :param siamese_samples: Samples to train against for "siamese" and "triple" instance types.
+        """
+        super().__init__(
+            tokenizer=tokenizer,
+            token_indexers=token_indexers,
+            max_tokens=max_tokens,
+            token_features=token_features,
+            msd_features=msd_features,
+            agglomerate_msd=agglomerate_msd,
+            get_me_bert=get_me_bert,
+            instance_type=instance_type,
+            siamese_probability=siamese_probability,
+            siamese_samples=siamese_samples,
+            metadata_encoding=metadata_encoding,
+            metadata_tokens_categories=metadata_tokens_categories,
+            **kwargs
+        )
+
+        self._token_features = token_features
+        self._msd_features = msd_features
+        self.categories, self.agglomerate_msd = get_fields(token_features, msd_features, agglomerate_msd)
+        self._ns = namespace or {"t": "http://www.tei-c.org/ns/1.0"}
+
+        logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
+        self.tokenizer = tokenizer or WhitespaceTokenizer()
+        self.token_indexers = token_indexers or build_token_indexers(
+            cats=self.categories,
+            get_me_bert=get_me_bert,
+            msd=self._msd_features if self.agglomerate_msd else None
+        )
+        self.bert_tokenizer = get_me_bert.tokenizer
+        logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
+        self.max_tokens = max_tokens
+
+        # If Siamese is true, the first sentence that is positive will be set as the example
+        #   The second one as well
+
+        if instance_type.lower() not in self.INSTANCE_TYPES:
+            raise ValueError("`instance_type` must be one of " + str(self.INSTANCE_TYPES))
+
+        self.instance_type: str = instance_type.lower()
+        self.siamese_probability: float = siamese_probability
+        self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
+        if self.instance_type in {"siamese", "triplet"}:
+            logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
+            logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
+
+        self.metadata_encoding: MetadataEncoding = metadata_encoding
+        self.metadata_tokens_categories: Tuple[str, ...] = metadata_tokens_categories
+        logging.info("TSV READER uses following metadata encoding %s " % metadata_encoding)
+
+        if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL and not self.metadata_tokens_categories:
+            raise ValueError("You are using AS_CATEGORICAL for encoding metadata but are not declaring categories. "
+                             "You need to pass `metadata_tokens_categories` parameter the name of each category")
+        elif self.metadata_encoding == MetadataEncoding.AS_TOKEN and self.metadata_tokens_categories:
+            logging.info("TSV READER uses keeps only following metadata as inputs " + \
+                         ";".join(metadata_tokens_categories))
+
+    def _yield_limit_nodes(self, xml: et.ElementBase, base_path: str = "//t:body") -> Iterable[et.ElementBase]:
+        yield from xml.xpath(base_path, namespaces=self._ns)
+
+    def _tei_msd_to_dict(self, msd: str) -> Iterable[Tuple[str, str]]:
+        for couple in msd.split("|"):
+            for key, val in couple.split("="):
+                yield key, val
+
+    def _read(self, file_path: str, base_path: str = "//t:body") -> Iterable[Instance]:
+        if os.path.exists(file_path):
+            xml = et.parse(file_path)
+        else:
+            xml = et.fromstring(file_path)
+
+        sentences: List[Instance] = []
+        for base_node in self._yield_limit_nodes(xml, base_path=base_path):
+            content = []
+            for word in base_node.xpath(".//t:w", namespaces=self._ns):
+                content.append({
+                    "token": word.text,
+                    "lemma": word.attrib.get("lemma"),
+                    "pos": word.attrib.get("pos"),
+                    **dict(self._tei_msd_to_dict(word.attrib.get("msd", "")))
+                })
+
+                if self._stop_regex.match(word.attrib[self._stop_attrib]):
+                    s = self.text_to_instance(
+                        content=content,
+                        label=None,
+                        metadata_tokens=None,  # These should be list of `Category=Val` strings
+                        metadata_generic=None  # Metadata that are passed to the output without any processing
+                    )
+                    if self.instance_type == "default":
+                        yield s
+                    else:
+                        sentences.append(s)
+                    content = []
+
+            if content:
+                s = self.text_to_instance(
+                    content, label=None,
+                    metadata_tokens=None
+                )
+                if self.instance_type == "default":
+                    yield s
+                else:
+                    sentences.append(s)
+
+        if self.instance_type != "default":
+            yield from self._send_non_defaults(sentences)
 
 def get_siamese_samples(
         reader: ClassificationTsvReader, siamese_filepath: str = "dataset/split/siamese.txt"
