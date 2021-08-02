@@ -74,3 +74,8 @@ class BaseModel(Model):
                 label: Optional[torch.Tensor] = None,
                 **tasks) -> Dict[str, torch.Tensor]:
         raise NotImplementedError
+
+    def save_to_file(self, path):
+        with open(path, 'wb') as f:
+            torch.save(self.state_dict(), f)
+        return

@@ -15,7 +15,7 @@ from allennlp.training.gradient_descent_trainer import GradientDescentTrainer
 from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer, AdadeltaOptimizer
 
 
-from seligator.dataset.tsv import ClassificationTsvReader, get_siamese_samples
+from seligator.dataset.readers import ClassificationTsvReader, get_siamese_samples
 from seligator.models.base import BaseModel
 from seligator.common.bert_utils import GetMeBert
 
@@ -98,7 +98,8 @@ def build_trainer(
 
 
 def generate_all_data(
-    input_features: Tuple[str, ...] = None,
+    token_features: Tuple[str, ...] = None,
+    msd_features: Tuple[str, ...] = None,
     ratio_train: float = 1.0,
     batch_size: int = 16,
     batches_per_epoch: Optional[int] = None,
@@ -115,14 +116,16 @@ def generate_all_data(
     if instance_type in {"siamese", "triplet"}:
         # Samples are not siamese loaded. Siamese affects the other datasets
         siamese_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, instance_type="default",
+            token_features=token_features, msd_features=msd_features,
+            get_me_bert=get_me_bert, instance_type="default",
             **tsv_reader_kwargs
         )
         siamese_samples = get_siamese_samples(siamese_reader)
 
         # Then we create the normal one
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert,
+            token_features=token_features, msd_features=msd_features,
+            get_me_bert=get_me_bert,
             instance_type=instance_type, siamese_samples=siamese_samples,
             token_indexers=siamese_reader.token_indexers,
             tokenizer=siamese_reader.tokenizer,
@@ -132,7 +135,8 @@ def generate_all_data(
         train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
     else:
         dataset_reader = ClassificationTsvReader(
-            input_features=input_features, get_me_bert=get_me_bert, instance_type=instance_type,
+            token_features=token_features, msd_features=msd_features,
+            get_me_bert=get_me_bert, instance_type=instance_type,
             **tsv_reader_kwargs
         )
         train_data, dev_data = read_data(dataset_reader, use_siamese_set=True)

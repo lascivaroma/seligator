@@ -1,7 +1,9 @@
 {
-  "input_features": [
+  "token_features": [
     "lemma_char",
-    "lemma",
+    "lemma"
+  ],
+  "msd_features": [
     "case",
     "numb",
     "gend",

@@ -1,5 +1,4 @@
 import logging
-import statistics
 import random
 from collections import defaultdict
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
@@ -11,9 +10,9 @@ from allennlp.data.tokenizers import Token, Tokenizer, WhitespaceTokenizer
 from allennlp.data.vocabulary import DEFAULT_OOV_TOKEN
 
 from seligator.common.constants import CATS, MSD_CAT_NAME
-# from seligator.dataset.indexer import LatinSubwordTokenIndexer, MultipleFeatureVectorIndexer
 from seligator.common.bert_utils import GetMeBert
 from seligator.common.params import MetadataEncoding, get_metadata_field_name, get_metadata_namespace
+from seligator.dataset.utils import get_fields
 
 
 def what_kind_of_field(category: str, values: List, token_indexer: Optional[TokenIndexer]) -> ClassVar["Field"]:
@@ -66,8 +65,8 @@ class ClassificationTsvReader(DatasetReader):
             tokenizer: Tokenizer = None,
             token_indexers: Dict[str, TokenIndexer] = None,
             max_tokens: int = 256,
-            cats: Tuple[str, ...] = CATS,
-            input_features: Tuple[str, ...] = None,
+            token_features: Tuple[str, ...] = None,
+            msd_features: Tuple[str, ...] = None,
             agglomerate_msd: bool = False,
             get_me_bert: Optional[GetMeBert] = GetMeBert(),
             instance_type: str = "default",
@@ -93,34 +92,16 @@ class ClassificationTsvReader(DatasetReader):
         """
         super().__init__(**kwargs)
 
-        self.features: Tuple[str, ...] = cats
-        self.categories: Tuple[str, ...] = ("token", "lemma", "token_char", "pos", *self.features)
-
-        if input_features:
-            self.categories = input_features
-
-        self._msd: Set[str] = {
-            feat
-            for feat in self.categories
-            if "token" not in feat and "lemma" not in feat
-        }
-        self.agglomerate_msd: bool = agglomerate_msd and self._msd
-        if self.agglomerate_msd:
-            self.categories = (
-                MSD_CAT_NAME,
-                *(
-                   cat
-                   for cat in self.categories
-                   if cat not in self._msd
-                )
-            )
+        self._token_features = token_features
+        self._msd_features = msd_features
+        self.categories, self.agglomerate_msd = get_fields(token_features, msd_features, agglomerate_msd)
 
         logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
         self.tokenizer = tokenizer or WhitespaceTokenizer()
         self.token_indexers = token_indexers or build_token_indexers(
             cats=self.categories,
             get_me_bert=get_me_bert,
-            msd=self._msd if self.agglomerate_msd else None
+            msd=self._msd_features if self.agglomerate_msd else None
         )
         self.bert_tokenizer = get_me_bert.tokenizer
         logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
@@ -185,7 +166,7 @@ class ClassificationTsvReader(DatasetReader):
                     fields[cat+"_char"].append(Token(value))
                 # If we use agglomerated MSD and the MS category is a feature we use
                 #   We store the information
-                if self.agglomerate_msd and cat in self._msd:
+                if self.agglomerate_msd and cat in self._msd_features:
                     msd[cat] = value
                 # We keep a "simple" version of the sentence for debugging later
                 if cat == "token":

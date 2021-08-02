@@ -1,14 +1,21 @@
-from typing import Tuple, Optional, Dict, Any, Callable
+from typing import Tuple, Optional, Dict, Any, Callable, Union
+import copy
+import json
+import os
 
-from torch import nn
+import torch
+import torch.nn as nn
 
-from allennlp.data import DataLoader, DatasetReader
+from allennlp.data import DataLoader, DatasetReader, Vocabulary
 from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
 
-from seligator.common.load_save import load, merge
+from seligator.common.load_save import load, merge, CustomEncoder
 from seligator.common.constants import EMBEDDING_DIMENSIONS
 from seligator.common.params import Seq2VecEncoderType, BasisVectorConfiguration, MetadataEncoding
 from seligator.common.bert_utils import what_type_of_bert, GetMeBert
+
+from seligator.dataset.utils import get_fields
+from seligator.dataset.readers import ClassificationTsvReader
 
 from seligator.models.classifier import FeatureEmbeddingClassifier
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
@@ -22,14 +29,14 @@ logging.getLogger().setLevel(logging.INFO)
 
 
 class Seligator:
-    def __init__(self, model):
+    def __init__(self, model, init_params: Dict[str, Any]):
         self.model: FeatureEmbeddingClassifier = model
-        self.vocabulary = self.model.vocab
+        self.vocabulary: Vocabulary = self.model.vocab
+        self._init_params = init_params
 
     @staticmethod
     def get_defaults():
         return load("best.json")
-
 
     @staticmethod
     def _get_seq2vec_encoder(
@@ -98,8 +105,9 @@ class Seligator:
         }
 
     @staticmethod
-    def init_for_training_with_params(
-        input_features: Tuple[str, ...] = ("token_subword",),
+    def init_from_params(
+        token_features: Tuple[str, ...] = ("token_subword",),
+        msd_features: Tuple[str, ...] = (),
         bert_dir: str = "./bert/latin_bert",
         seq2vec_encoder_type: Seq2VecEncoderType = Seq2VecEncoderType.LSTM,
         model_class=FeatureEmbeddingClassifier,
@@ -111,8 +119,27 @@ class Seligator:
         use_bert_highway: bool = False,
         model_embedding_kwargs: Optional[Dict[str, Any]] = None,
         basis_vector_configuration: BasisVectorConfiguration = None,
-    ) -> Tuple["Seligator", DatasetReader, DataLoader, DataLoader]:
+        training: bool = True,  # If set to true, return reader ands loader
+        vocabulary_path: str = None  # When training is False, requires vocabulary path
 
+    ) -> Union["Seligator", Tuple["Seligator", DatasetReader, DataLoader, DataLoader]]:
+        init_params = copy.deepcopy({
+            "token_features": token_features,
+            "msd_features": msd_features,
+            "bert_dir": bert_dir,
+            "seq2vec_encoder_type": seq2vec_encoder_type,
+            "model_class": model_class,
+            "additional_model_kwargs": additional_model_kwargs,
+            "batches_per_epoch": batches_per_epoch,
+            "reader_kwargs": reader_kwargs,
+            "encoder_hidden_size": encoder_hidden_size,
+            "agglomerate_msd": agglomerate_msd,
+            "use_bert_highway": use_bert_highway,
+            "model_embedding_kwargs": model_embedding_kwargs,
+            "basis_vector_configuration": basis_vector_configuration
+         })
+        if not training and not vocabulary_path:
+            raise ValueError("When not training, the `vocabulary_path` is required for initiating Seligator")
         # For test, just change the input feature here
         # INPUT_FEATURES = ("token", "lemma", "token_char")  # , "token_subword")
         features_encoder = Seligator._get_seq2vec_encoder(
@@ -120,7 +147,7 @@ class Seligator:
             encoder_hidden_size=encoder_hidden_size,
             basis_vector_configuration=basis_vector_configuration
         )
-        use_bert = "token_subword" in input_features
+        use_bert = "token_subword" in token_features
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
             use_bert,
             highway=use_bert_highway,
@@ -132,24 +159,26 @@ class Seligator:
             {k: v for k, v in EMBEDDING_DIMENSIONS.items()}
         )
 
-        train, dev, vocab, reader = generate_all_data(
-            input_features=input_features,
-            get_me_bert=get_me_bert,
-            instance_type=model_class.INSTANCE_TYPE,
-            batches_per_epoch=batches_per_epoch,
-            **{**(reader_kwargs or {}), "agglomerate_msd": agglomerate_msd}
-        )
-
+        if training:
+            train, dev, vocab, reader = generate_all_data(
+                token_features=token_features,
+                msd_features=msd_features,
+                get_me_bert=get_me_bert,
+                instance_type=model_class.INSTANCE_TYPE,
+                batches_per_epoch=batches_per_epoch,
+                **{**(reader_kwargs or {}), "agglomerate_msd": agglomerate_msd}
+            )
+            input_features = reader.categories
+        else:
+            vocab = Vocabulary.from_files(vocabulary_path)
+            input_features, agglomerate_msd = get_fields(token_features, msd_features, agglomerate_msd)
+            model_embedding_kwargs.pop("pretrained_embeddings")
         if basis_vector_configuration:
             logging.info("Fitting the BasisVectorConfiguration")
             basis_vector_configuration.set_metadata_categories_dims(vocab)
 
-        if input_features != reader.categories:  # eg. Might have been changed by agglomeration
-            input_features = reader.categories
-
         embedding_encoders = Seligator._get_me_char_embeddings(embeddings, input_features=input_features)
-        model = Seligator._initiate_model(
-            model_class=model_class,
+        model = model_class(
             vocab=vocab,
             input_features=input_features,
             mixed_encoder=MixedEmbeddingEncoder.build(
@@ -166,15 +195,49 @@ class Seligator:
             basis_vector_configuration=basis_vector_configuration,
             **(additional_model_kwargs or {})
         )
-        return Seligator(model), reader, train, dev
+        if training:
+            return Seligator(model, init_params=init_params), reader, train, dev
+        else:
+            return Seligator(model, init_params=init_params)
 
-    @staticmethod
-    def _initiate_model(model_class, **model_kwargs):
-        return model_class(**model_kwargs)
+    def save_model(self, path: str = "./saved_model/"):
+        self.model.vocab.save_to_files(os.path.join(path, "vocabulary"))
+        self.model.save_to_file(os.path.join(path, "model.pth"))
+        with open(os.path.join(path, "params.json"), "w") as j:
+            json.dump(self._init_params, j, cls=CustomEncoder)
 
     @classmethod
-    def init_from_params(cls):
-        return None
+    def load_model(cls, path: str):
+        sel = cls.init_from_params(
+            vocabulary_path=os.path.join(path, "vocabulary"),
+            training=False,
+            **load(os.path.join(path, "params.json"))
+        )
+        sel.model.load_state_dict(torch.load(os.path.join(path, "model.pth")))
+        return sel
+
+    def get_reader(self, cls=ClassificationTsvReader) -> ClassificationTsvReader:
+        get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
+            self._init_params.get("use_bert"),
+            highway=self._init_params.get("use_bert_highway"),
+            bert_dir=self._init_params.get("bert_dir")
+        )
+        reader = cls(
+            token_features=self._init_params.get("token_features"),
+            msd_features=self._init_params.get("msd_features"),
+            get_me_bert=get_me_bert,
+            instance_type=self.model.INSTANCE_TYPE,
+            **{
+                **{
+                    key: val
+                    for key, val in self._init_params.get("reader_kwargs", {}).items()
+                    if key not in {"ratio_train", "batch_size"}
+                },
+                "agglomerate_msd": self._init_params.get("agglomerate_msd")
+            }
+
+        )
+        return reader
 
 
 def train_and_get(model, train, dev, lr: float = 1e-4, use_cpu: bool = False,

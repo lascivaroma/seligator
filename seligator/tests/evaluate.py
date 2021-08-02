@@ -11,9 +11,6 @@ from allennlp.data import (
 )
 
 from seligator.models.base import BaseModel
-from allennlp.interpret.saliency_interpreters import SimpleGradient
-from allennlp.predictors import Predictor
-from allennlp.data.vocabulary import DEFAULT_OOV_TOKEN
 
 
 def get_unknown_and_sentence(instance: Instance, field: str, mode: Optional[str] = None):
@@ -22,26 +19,18 @@ def get_unknown_and_sentence(instance: Instance, field: str, mode: Optional[str]
     sentence = " ".join([tok.text for tok in field.tokens])
     if mode == "subword":
         return sentence.replace(" ", "").replace("_", " ")
-    #unknown = [0 if id == ]
     return sentence
 
 
 def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[int, str]
               ) -> Dict[str, Union[str, float]]:
     pred = labels[prediction["probs"].argmax()]  # ToDo: does not work with current Siamese network
-    sentence = "Unable to provide"
 
     prefix = ""
     if "left_label" in instance.fields:
         prefix = "left_"
 
     sentence = " ".join(instance.fields[prefix+"metadata"]["sentence"])
-    #if prefix+"token" in instance.fields:
-    #    sentence = get_unknown_and_sentence(instance, prefix+"token")
-    #elif prefix+"token_subword" in instance.fields:
-    #    sentence = get_unknown_and_sentence(instance, prefix+"token_subword", mode="subword")
-    #elif prefix+"lemma" in instance.fields:
-    #    sentence = get_unknown_and_sentence(instance, prefix+"lemma")
 
     return {
         "sentence": sentence,
@@ -56,11 +45,8 @@ def represent(instance: Instance, prediction: Dict[str, ndarray], labels: Dict[i
             additional_output: prediction[additional_output]
             for additional_output in ("bert_projection", "attention", "doc-vectors")
             if additional_output in prediction
-        },
-        #**{
-        #    task: instance.fields[prefix+task]
-        #    for task in
-        #}
+        }
+        # ToDo: Display unknown values ?
     }
 
 
@@ -112,46 +98,3 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
 
     del test_data  # Avoid stuff remaining
     return results, disp
-
-
-if __name__ == "__main__":
-    from seligator.main import prepare_model, train_and_get
-    from seligator.models.siamese import SiameseClassifier
-    model, reader, train, dev = prepare_model(
-        input_features=("lemma_char", "lemma", "case", "numb", "gend", "mood", "tense", "voice", "person", "deg"),
-        use_han=True,
-        agglomerate_msd=True,
-        reader_kwargs={"batch_size": 4, "metadata_token_as_lemma_and_token": False},
-        model_embedding_kwargs=dict(
-            keep_all_vocab=True,
-            pretrained_embeddings={
-                # "token": "~/Downloads/latin.embeddings",
-            #    "token": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.token.word2vec.kv",
-            #    "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
-            },
-            trainable_embeddings={"token": False, "lemma": True},
-            pretrained_emb_dims={"token": 200, "lemma": 200}
-        ),
-        #batches_per_epoch=100,
-        # model_class=SiameseClassifier,
-        use_bert_highway=True,
-    )
-    model = train_and_get(
-        model, train, dev,
-        patience=10,
-        num_epochs=20,
-        lr=5e-4
-    )
-    print(model)
-    data = run_tests(
-        "dataset/split/test.txt",
-        dataset_reader=reader, model=model, dump="classifier_lemma_char_test-notoken.csv"
-    )
-    #data2 = run_tests(
-    #    "dataset/split/train.txt",
-    #    dataset_reader=reader, model=model, dump="classifier_lemma_char_train.csv"
-    #)
-    #data2 = run_tests(
-    #    "dataset/split/dev.txt",
-    #    dataset_reader=reader, model=model, dump="classifier_lemma_char_dev.csv"
-    #)
