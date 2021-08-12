@@ -339,8 +339,10 @@ class ClassificationTsvReader(DatasetReader):
                 elif line.startswith("#[TAG]"):
                     label = line.replace("#[TAG]", "").strip()
                 elif line.startswith("[GENERIC-METADATA"):
-                    _, key, val = line.replace("[GENERIC-METADATA", "").replace("]", "").strip().split("---")
+                    key, val = line.replace("[GENERIC-METADATA]", "").strip().split("=")
                     metadatas[key] = val
+                elif line.startswith("[TAGS-METADATA"):
+                    continue
                 elif line.startswith("[TOKEN-METADATA]"):
                     tok = line.replace("[TOKEN-METADATA]", "").strip()
                     token_metadatas.append(tok)

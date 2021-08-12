@@ -21,7 +21,6 @@ def what_type_of_bert(
         hugginface: bool = False,
         trainable: bool = False
 ) -> GetMeBert:
-
     if not directory:
         return GetMeBert(False)
 
@@ -32,7 +31,6 @@ def what_type_of_bert(
 
     from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
     from seligator.dataset.indexer import LatinSubwordTokenIndexer
-    # from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
     indexer = LatinSubwordTokenIndexer(vocab_path=directory, namespace="token_subword")
     tokenizer = indexer.tokenizer
 

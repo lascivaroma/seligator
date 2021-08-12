@@ -28,12 +28,16 @@ def run_tests(test_file: str, dataset_reader: DatasetReader, model: BaseModel,
     labels = model.labels
 
     if dump:
+        other_headers = represent(test_data[0], output_test[0], label_vocabulary=labels)
         f = open(dump, "w")
         fields = ["sentence", "label", "prediction", "ok",
                                                "bert_projection", "attention", "doc-vectors"] + [
             f"score-{labels[idx]}" for idx in labels
         ]
-        fields  # ToDo : as missing fields from instance.fields[prefix+"metadata"]
+        for key in other_headers:
+            if key not in fields:
+                fields.append(key)
+        # fields  # ToDo : as missing fields from instance.fields[prefix+"metadata"]
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
 

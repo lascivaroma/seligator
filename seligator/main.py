@@ -77,17 +77,17 @@ class Seligator:
         return features_encoder
 
     @staticmethod
-    def _get_me_bert(use: bool, highway: bool, bert_dir:str = None) ->Tuple[GetMeBert, nn.Module, nn.Module]:
+    def _get_me_bert(use: bool, highway: bool, bert_dir: str = None) -> Tuple[GetMeBert, nn.Module, nn.Module]:
         bert, bert_pooler = None, None
         if use:
-            get_me_bert = what_type_of_bert(bert_dir, trainable=False, hugginface=False)
+            get_me_bert = what_type_of_bert(directory=bert_dir, trainable=False, hugginface=False)
             if use:
                 bert = get_me_bert.embedder
                 if highway:
                     bert_pooler = PoolerHighway(BertPooler(bert_dir), 256)
                 else:
                     bert_pooler = BertPooler(bert_dir)
-
+            return get_me_bert, bert, bert_pooler
         return what_type_of_bert(), bert, bert_pooler
 
     @staticmethod
@@ -150,11 +150,13 @@ class Seligator:
             basis_vector_configuration=basis_vector_configuration
         )
         use_bert = "token_subword" in token_features
+        print(use_bert, token_features)
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
-            use_bert,
+            use=use_bert,
             highway=use_bert_highway,
             bert_dir=bert_dir
         )
+        print(get_me_bert)
         model_embedding_kwargs = model_embedding_kwargs or {}
         embeddings = merge(
             model_embedding_kwargs.pop("emb_dims", {}),
