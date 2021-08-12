@@ -1,6 +1,7 @@
 import logging
 import random
 import os
+import regex as re
 from collections import defaultdict
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
 
@@ -433,83 +434,79 @@ class XMLDatasetReader(ClassificationTsvReader):
             **kwargs
         )
 
-        self._token_features = token_features
-        self._msd_features = msd_features
-        self.categories, self.agglomerate_msd = get_fields(token_features, msd_features, agglomerate_msd)
+        self._stop_regex = re.compile(r"[\.!\?\(\)]+")
+        self._stop_attrib: str = "lemma"
         self._ns = namespace or {"t": "http://www.tei-c.org/ns/1.0"}
-
-        logging.info(f"Dataset reader set with following categories: {', '.join(self.categories)}")
-        self.tokenizer = tokenizer or WhitespaceTokenizer()
-        self.token_indexers = token_indexers or build_token_indexers(
-            cats=self.categories,
-            get_me_bert=get_me_bert,
-            msd=self._msd_features if self.agglomerate_msd else None
-        )
-        self.bert_tokenizer = get_me_bert.tokenizer
-        logging.info(f"Indexer set for following categories: {', '.join(self.token_indexers.keys())}")
-        self.max_tokens = max_tokens
-
-        # If Siamese is true, the first sentence that is positive will be set as the example
-        #   The second one as well
-
-        if instance_type.lower() not in self.INSTANCE_TYPES:
-            raise ValueError("`instance_type` must be one of " + str(self.INSTANCE_TYPES))
-
-        self.instance_type: str = instance_type.lower()
-        self.siamese_probability: float = siamese_probability
-        self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
-        if self.instance_type in {"siamese", "triplet"}:
-            logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
-            logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
-
-        self.metadata_encoding: MetadataEncoding = metadata_encoding
-        self.metadata_tokens_categories: Tuple[str, ...] = metadata_tokens_categories
-        logging.info("TSV READER uses following metadata encoding %s " % metadata_encoding)
-
-        if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL and not self.metadata_tokens_categories:
-            raise ValueError("You are using AS_CATEGORICAL for encoding metadata but are not declaring categories. "
-                             "You need to pass `metadata_tokens_categories` parameter the name of each category")
-        elif self.metadata_encoding == MetadataEncoding.AS_TOKEN and self.metadata_tokens_categories:
-            logging.info("TSV READER uses keeps only following metadata as inputs " + \
-                         ";".join(metadata_tokens_categories))
 
     def _yield_limit_nodes(self, xml: et.ElementBase, base_path: str = "//t:body") -> Iterable[et.ElementBase]:
         yield from xml.xpath(base_path, namespaces=self._ns)
 
-    def _tei_msd_to_dict(self, msd: str) -> Iterable[Tuple[str, str]]:
-        for couple in msd.split("|"):
-            for key, val in couple.split("="):
-                yield key, val
+    def _tei_msd_to_dict(self, msd: str, with_defaults: bool = False) -> Iterable[Tuple[str, str]]:
+        if with_defaults:
+            no_defaults = dict(self._tei_msd_to_dict(msd, with_defaults=False))
+            no_defaults.update({
+                key: "-"
+                for key in self._msd_features
+                if key.lower() not in no_defaults and key != "pos"  # pos is not in MSD
+            })
+            yield from [
+                (cat, val)
+                for cat, val in no_defaults.items()
+                if cat in self._msd_features
+            ]
+        else:
+            for couple in msd.split("|"):
+                if "=" in couple:
+                    cat, val = couple.split("=")
+                    yield cat.lower(), val
 
-    def _read(self, file_path: str, base_path: str = "//t:body") -> Iterable[Instance]:
+    def read_with_default_value(
+            self,
+            file_path: str, base_path: str = "//t:body",
+            default_metadata_tokens: List[str] = None
+    ):
+        default_metadata_tokens = default_metadata_tokens or []
+        yield from self._read(file_path=file_path, base_path=base_path,
+                              default_metadata_tokens=default_metadata_tokens)
+
+    def _read(self, file_path: str, base_path: str = "//t:body",
+            default_metadata_tokens: List[str] = None) -> Iterable[Instance]:
         if os.path.exists(file_path):
             xml = et.parse(file_path)
         else:
             xml = et.fromstring(file_path)
 
+        default_metadata_tokens = default_metadata_tokens or []
+
         sentences: List[Instance] = []
         for base_node in self._yield_limit_nodes(xml, base_path=base_path):
             content = []
+            start_attribute = ""
             for word in base_node.xpath(".//t:w", namespaces=self._ns):
                 content.append({
                     "token": word.text,
                     "lemma": word.attrib.get("lemma"),
                     "pos": word.attrib.get("pos"),
-                    **dict(self._tei_msd_to_dict(word.attrib.get("msd", "")))
+                    **dict(self._tei_msd_to_dict(word.attrib.get("msd", ""), with_defaults=True))
                 })
-
+                if not start_attribute:
+                    start_attribute = word.attrib.get("n", "")
                 if self._stop_regex.match(word.attrib[self._stop_attrib]):
                     s = self.text_to_instance(
                         content=content,
                         label=None,
-                        metadata_tokens=None,  # These should be list of `Category=Val` strings
-                        metadata_generic=None  # Metadata that are passed to the output without any processing
+                        metadata_tokens=default_metadata_tokens,  # These should be list of `Category=Val` strings
+                        metadata_generic={
+                            "start": start_attribute,
+                            "end": word.attrib.get("n", "")
+                        }  # Metadata that are passed to the output without any processing
                     )
                     if self.instance_type == "default":
                         yield s
                     else:
                         sentences.append(s)
                     content = []
+                    start_attribute = ""
 
             if content:
                 s = self.text_to_instance(
@@ -523,6 +520,7 @@ class XMLDatasetReader(ClassificationTsvReader):
 
         if self.instance_type != "default":
             yield from self._send_non_defaults(sentences)
+
 
 def get_siamese_samples(
         reader: ClassificationTsvReader, siamese_filepath: str = "dataset/split/siamese.txt"
@@ -538,13 +536,18 @@ def get_siamese_samples(
 
 if __name__ == "__main__":
     # Instantiate and use the dataset reader to read a file containing the data
-    reader = ClassificationTsvReader(
-        cats=CATS,
-        input_features=("token", "lemma", "pos", "tense"),  # siamese=True,
+    reader = XMLDatasetReader(
+        token_features=("lemma", "lemma_char"),
+        msd_features=("pos", "tense", "case"),  # siamese=True,
         # bert_dir="./bert/latin_bert",
-        agglomerate_msd=True
+        agglomerate_msd=True,
+        metadata_encoding=MetadataEncoding.AS_CATEGORICAL,
+        metadata_tokens_categories=["Century", "WrittenType"]
     )
-    dataset = list(reader.read("dataset/split/test.txt"))
+    dataset = list(reader.read_with_default_value(
+        "/home/thibault/dev/latin-lemmatized-texts/lemmatized/xml/urn:cts:latinLit:stoa0045.stoa003.perseus-lat2.xml",
+        default_metadata_tokens=["Century=4", "WrittenType=prose"]
+    ))
 
     print("type of its first element: ", type(dataset[0]))
     print("size of dataset: ", len(dataset))

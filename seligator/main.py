@@ -1,4 +1,4 @@
-from typing import Tuple, Optional, Dict, Any, Callable, Union
+from typing import Tuple, Optional, Dict, Any, Callable, Union, List
 import copy
 import json
 import os
@@ -6,7 +6,7 @@ import os
 import torch
 import torch.nn as nn
 
-from allennlp.data import DataLoader, DatasetReader, Vocabulary
+from allennlp.data import DataLoader, DatasetReader, Vocabulary, Instance
 from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
 
 from seligator.common.load_save import load, merge, CustomEncoder
@@ -15,7 +15,8 @@ from seligator.common.params import Seq2VecEncoderType, BasisVectorConfiguration
 from seligator.common.bert_utils import what_type_of_bert, GetMeBert
 
 from seligator.dataset.utils import get_fields
-from seligator.dataset.readers import ClassificationTsvReader
+from seligator.dataset.readers import ClassificationTsvReader, XMLDatasetReader
+from seligator.prediction import represent, simple_batcher
 
 from seligator.models.classifier import FeatureEmbeddingClassifier
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
@@ -120,7 +121,8 @@ class Seligator:
         model_embedding_kwargs: Optional[Dict[str, Any]] = None,
         basis_vector_configuration: BasisVectorConfiguration = None,
         training: bool = True,  # If set to true, return reader ands loader
-        vocabulary_path: str = None  # When training is False, requires vocabulary path
+        vocabulary_path: str = None,  # When training is False, requires vocabulary path
+        folder: str = "dataset/main"
 
     ) -> Union["Seligator", Tuple["Seligator", DatasetReader, DataLoader, DataLoader]]:
         init_params = copy.deepcopy({
@@ -166,6 +168,7 @@ class Seligator:
                 get_me_bert=get_me_bert,
                 instance_type=model_class.INSTANCE_TYPE,
                 batches_per_epoch=batches_per_epoch,
+                folder=folder,
                 **{**(reader_kwargs or {}), "agglomerate_msd": agglomerate_msd}
             )
             input_features = reader.categories
@@ -216,7 +219,7 @@ class Seligator:
         sel.model.load_state_dict(torch.load(os.path.join(path, "model.pth")))
         return sel
 
-    def get_reader(self, cls=ClassificationTsvReader) -> ClassificationTsvReader:
+    def get_reader(self, cls=ClassificationTsvReader) -> Union[XMLDatasetReader, ClassificationTsvReader]:
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
             self._init_params.get("use_bert"),
             highway=self._init_params.get("use_bert_highway"),
@@ -238,6 +241,27 @@ class Seligator:
 
         )
         return reader
+
+    def get_xml_loader(self, xml_file, metadata: Dict[str, Any] = None) -> List[Instance]:
+        reader = self.get_reader(XMLDatasetReader)
+        instances = list(reader.read_with_default_value(xml_file, default_metadata_tokens=[
+            f"{k}={v}" for k, v in metadata.items()
+        ]))
+        return instances
+
+    def predict_on_xml(self, xml_file, batch_size: int = 8, metadata: Dict[str, Any] = None) -> List[Dict[str, Any]]:
+        instances = self.get_xml_loader(xml_file, metadata=metadata or {})
+        batcher = simple_batcher(list(instances), n=batch_size)
+
+        predictions = []
+        for batch in batcher:
+            predictions.extend(self.model.forward_on_instances(batch))
+
+        output = []
+        for inst, pred in zip(instances, predictions):
+            output.append(represent(instance=inst, prediction=pred, label_vocabulary=self.model.labels, is_gt=False))
+
+        return output
 
 
 def train_and_get(model, train, dev, lr: float = 1e-4, use_cpu: bool = False,

@@ -20,17 +20,18 @@ from seligator.models.base import BaseModel
 from seligator.common.bert_utils import GetMeBert
 
 
-def read_data(reader: DatasetReader, use_siamese_set: bool = True) -> Tuple[List[Instance], List[Instance]]:
+def read_data(reader: DatasetReader, use_siamese_set: bool = True,
+              folder: str = "dataset/main") -> Tuple[List[Instance], List[Instance]]:
     """ Generates datasets
 
     :param reader: Dataset reader to parse the file
     :param use_siamese_set: Use the siamese data and merge it into train.txt
     """
     logging.info("Reading data")
-    training_data = list(reader.read("dataset/split/train.txt"))
+    training_data = list(reader.read(f"{folder}/train.txt"))
     if use_siamese_set:
-        training_data.extend(list(reader.read("dataset/split/siamese.txt")))
-    validation_data = list(reader.read("dataset/split/dev.txt"))
+        training_data.extend(list(reader.read(f"{folder}/siamese.txt")))
+    validation_data = list(reader.read(f"{folder}/dev.txt"))
 
     return training_data, validation_data
 
@@ -105,6 +106,7 @@ def generate_all_data(
     batches_per_epoch: Optional[int] = None,
     get_me_bert: GetMeBert = GetMeBert(),
     instance_type: str = "default",
+    folder: str = "dataset/main",
     **tsv_reader_kwargs
 ) -> Tuple[DataLoader, DataLoader, Vocabulary, ClassificationTsvReader]:
 
@@ -120,7 +122,7 @@ def generate_all_data(
             get_me_bert=get_me_bert, instance_type="default",
             **tsv_reader_kwargs
         )
-        siamese_samples = get_siamese_samples(siamese_reader)
+        siamese_samples = get_siamese_samples(siamese_reader, siamese_filepath=f"{folder}/siamese.txt")
 
         # Then we create the normal one
         dataset_reader = ClassificationTsvReader(
@@ -132,14 +134,14 @@ def generate_all_data(
             **tsv_reader_kwargs
         )
         # And parse the original data
-        train_data, dev_data = read_data(dataset_reader, use_siamese_set=False)
+        train_data, dev_data = read_data(dataset_reader, use_siamese_set=False, folder=folder)
     else:
         dataset_reader = ClassificationTsvReader(
             token_features=token_features, msd_features=msd_features,
             get_me_bert=get_me_bert, instance_type=instance_type,
             **tsv_reader_kwargs
         )
-        train_data, dev_data = read_data(dataset_reader, use_siamese_set=True)
+        train_data, dev_data = read_data(dataset_reader, use_siamese_set=True, folder=folder)
 
     if ratio_train != 1.0:
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]
