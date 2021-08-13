@@ -2,31 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0031.tlg014.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg014.obi-lat1:2.2-2.2">
-        <w  rend="verse" n="2.2" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="verse" n="2.2" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="verse" n="2.2" pos="ADV" msd="Deg=Pos" lemma="cito2">cito</w>
-                <w  rend="verse" n="2.2" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=2" lemma="moueo">moveamini</w>
-                <w  rend="verse" n="2.2" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sensus">sensu</w>
-                <w  rend="verse" n="2.2" pos="ADVneg" msd="MORPH=empty" lemma="neque">neque</w>
-                <w  rend="verse" n="2.2" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=2" lemma="terreo">terreamini</w>
-                <w  rend="verse" n="2.2" pos="ADVneg" msd="MORPH=empty" lemma="neque">neque</w>
-                <w  rend="verse" n="2.2" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="spiritus">spiritum</w>
-                <w  rend="verse" n="2.2" pos="ADVneg" msd="MORPH=empty" lemma="neque">neque</w>
-                <w  rend="verse" n="2.2" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sermo">sermonem</w>
-                <w  rend="verse" n="2.2" pos="ADVneg" msd="MORPH=empty" lemma="neque">neque</w>
-                <w  rend="verse" n="2.2" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="epistola">epistulam</w>
-                <w  rend="verse" n="2.2" pos="ADVrel" msd="MORPH=empty" lemma="tamquam1">tamquam</w>
-                <w  rend="verse" n="2.2" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="verse" n="2.2" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="nos">nos</w>
-                <w  rend="verse" n="2.2" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
-                <w  rend="verse" n="2.2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="insto">instet</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dies">dies</w>
-                <w  rend="verse" n="2.2" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="dominus">Domini</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg014.obi-lat1:2.1">
+        <w  rend="verse" n="2.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="rogo">rogamus</w>
+                <w  rend="verse" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="verse" n="2.1" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="uos">vos</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Voc|Numb=Plur" lemma="frater">fratres</w>
+                <w  rend="verse" n="2.1" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aduentus">adventum</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="dominus">Domini</w>
+                <w  rend="verse" n="2.1" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=Masc" lemma="noster">nostri</w>
+                <w  rend="verse" n="2.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Iesus">Iesu</w>
+                <w  rend="verse" n="2.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Christus">Christi</w>
+                <w  rend="verse" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="2.1" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="noster">nostrae</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="congregatio">congregationis</w>
+                <w  rend="verse" n="2.1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="verse" n="2.1" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ipse">ipsum</w>
                 
     </quote>
  </div>

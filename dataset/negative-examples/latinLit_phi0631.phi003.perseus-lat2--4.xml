@@ -2,21 +2,32 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0631.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Mithr.22-Mithr.22">
-        <w  rend="section" n="Mithr.22" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">teque</w>
-                <w  rend="section" n="Mithr.22" pos="CON" msd="MORPH=empty" lemma="que">{teque}</w>
-                <w  rend="section" n="Mithr.22" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
-                <w  rend="section" n="Mithr.22" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fama">fama</w>
-                <w  rend="section" n="Mithr.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=3" lemma="sequor">sequetur</w>
-                <w  rend="section" n="Mithr.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="Mithr.22" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="auxilium">auxilio</w>
-                <w  rend="section" n="Mithr.22" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Dep" lemma="proficiscor">profectum</w>
-                <w  rend="section" n="Mithr.22" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="magnus">magnis</w>
-                <w  rend="section" n="Mithr.22" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="rex">regibus</w>
-                <w  rend="section" n="Mithr.22" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="latro1">latrones</w>
-                <w  rend="section" n="Mithr.22" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="gens">gentium</w>
-                <w  rend="section" n="Mithr.22" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="opprimo">oppressisse</w>
-                <w  rend="section" n="Mithr.22" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Phil.7">
+        <w  rend="section" n="Phil.7" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="hic1">hi</w>
+                <w  rend="section" n="Phil.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="tumultus">tumultum</w>
+                <w  rend="section" n="Phil.7" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="section" n="Phil.7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tumultus">tumultu</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Phil.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="bellum">bellum</w>
+                <w  rend="section" n="Phil.7" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="section" n="Phil.7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="bellum">bello</w>
+                <w  rend="section" n="Phil.7" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sero3">serunt</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Phil.7" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Saturninus">Saturnini</w>
+                <w  rend="section" n="Phil.7" pos="ADV" msd="Deg=Pos" lemma="olim">olim</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Phil.7" pos="ADV" msd="Deg=Pos" lemma="post1">post</w>
+                <w  rend="section" n="Phil.7" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Sulpicius">Sulpici</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Phil.7" pos="ADV" msd="Deg=Pos" lemma="deinde">dein</w>
+                <w  rend="section" n="Phil.7" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Marius">Mari</w>
+                <w  rend="section" n="Phil.7" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Damasippus">Damasippique</w>
+                <w  rend="section" n="Phil.7" pos="CON" msd="MORPH=empty" lemma="que">{Damasippique}</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Phil.7" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="section" n="Phil.7" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Lepidus">Lepidi</w>
+                <w  rend="section" n="Phil.7" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="satelles">satellites</w>
+                <w  rend="section" n="Phil.7" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

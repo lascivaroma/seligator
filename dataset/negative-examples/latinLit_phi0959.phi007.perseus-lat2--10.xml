@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0959.phi007.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0959.phi007.perseus-lat2:1.301-1.302">
+        <w  rend="line" n="1.301" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="1.301" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uenus">Venus</w>
+                <w  rend="line" n="1.301" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="1.301" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uinum">vinum</w>
+                <w  rend="line" n="1.301" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="sublimis">sublimia</w>
+                <w  rend="line" n="1.301" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="pectus">pectora</w>
+                <w  rend="line" n="1.301" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="frango">fregit</w>
+                <w  rend="line" n="1.302" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="officium">officiumque</w>
+                <w  rend="line" n="1.302" pos="CON" msd="MORPH=empty" lemma="que">{officiumque}</w>
+                <w  rend="line" n="1.302" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="forum1">fori</w>
+                <w  rend="line" n="1.302" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="militia">militiaeve</w>
+                <w  rend="line" n="1.302" pos="CON" msd="MORPH=empty" lemma="ue">{militiaeve}</w>
+                <w  rend="line" n="1.302" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="labor1">labor</w>
+                <w  rend="line" n="1.302" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

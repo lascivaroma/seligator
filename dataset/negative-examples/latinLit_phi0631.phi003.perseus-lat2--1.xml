@@ -2,27 +2,26 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0631.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Phil.21-Phil.21">
-        <w  rend="section" n="Phil.21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="assum1">adest</w>
-                <w  rend="section" n="Phil.21" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="nouus">novos</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="exercitus1">exercitus</w>
-                <w  rend="section" n="Phil.21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="Phil.21" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="section" n="Phil.21" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="colonia">coloniae</w>
-                <w  rend="section" n="Phil.21" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Com|Deg=Pos" lemma="uetus">veterum</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="miles">militum</w>
-                <w  rend="section" n="Phil.21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="nobilitas">nobilitas</w>
-                <w  rend="section" n="Phil.21" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="omnis">omnis</w>
-                <w  rend="section" n="Phil.21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="dux">duces</w>
-                <w  rend="section" n="Phil.21" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Masc|Deg=Sup" lemma="bonus">optumi</w>
-                <w  rend="section" n="Phil.21" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="Phil.21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fortuna">fortuna</w>
-                <w  rend="section" n="Phil.21" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="bonus">meliores</w>
-                <w  rend="section" n="Phil.21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="sequor">sequitur</w>
-                <w  rend="section" n="Phil.21" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Mithr.9">
+        <w  rend="section" n="Mithr.9" pos="ADV" msd="Deg=Sup" lemma="posterius">postremo</w>
+                <w  rend="section" n="Mithr.9" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Bithynia">Bithyniam</w>
+                <w  rend="section" n="Mithr.9" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Nicomedes">Nicomede</w>
+                <w  rend="section" n="Mithr.9" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Dep" lemma="morior">mortuo</w>
+                <w  rend="section" n="Mithr.9" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="diripio">diripuere</w>
+                <w  rend="section" n="Mithr.9" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Mithr.9" pos="CONsub" msd="MORPH=empty" lemma="cum3">quom</w>
+                <w  rend="section" n="Mithr.9" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="filius">filius</w>
+                <w  rend="section" n="Mithr.9" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Nysa">Nysa</w>
+                <w  rend="section" n="Mithr.9" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Mithr.9" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="qui1">quam</w>
+                <w  rend="section" n="Mithr.9" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="regina">reginam</w>
+                <w  rend="section" n="Mithr.9" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="appello1">appellaverat</w>
+                <w  rend="section" n="Mithr.9" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Mithr.9" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="gigno">genitus</w>
+                <w  rend="section" n="Mithr.9" pos="ADVneg" msd="MORPH=empty" lemma="haud">haud</w>
+                <w  rend="section" n="Mithr.9" pos="ADV" msd="Deg=Pos" lemma="dubie">dubie</w>
+                <w  rend="section" n="Mithr.9" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
+                <w  rend="section" n="Mithr.9" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

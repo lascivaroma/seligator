@@ -2,28 +2,34 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi2003.phi001.opp-lat3</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi2003.phi001.opp-lat3:1.21.1-1.21.1">
-        <w  rend="section" n="1.21.1" pos="ADJqua" msd="Case=Acc|Numb=Sing" lemma="moretarius">Moretaria</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="menta">mentam</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ruta">rutam</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="coriandrum">coriandrum</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="feniculum">feniculum</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
-                <w  rend="section" n="1.21.1" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="uiride1">viridia</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="ligusticus">ligusticum</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="piper">piper</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mel">mel</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.21.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="liquamen">liquamen</w>
-                <w  rend="section" n="1.21.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi2003.phi001.opp-lat3:1.3.1">
+        <w  rend="section" n="1.3.1" pos="PRE" msd="MORPH=empty" lemma="post2">post</w>
+                <w  rend="section" n="1.3.1" pos="ADJcar" msd="Case=Ind" lemma="septem">septem</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="dies">dies</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="rosa">rosam</w>
+                <w  rend="section" n="1.3.1" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uinum">vino</w>
+                <w  rend="section" n="1.3.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="tollo">tollis</w>
+                <w  rend="section" n="1.3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.3.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="1.3.1" pos="PROind" msd="MORPH=empty" lemma="alius">alias</w>
+                <w  rend="section" n="1.3.1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="sutilis">sutiles</w>
+                <w  rend="section" n="1.3.1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="recens1">recentes</w>
+                <w  rend="section" n="1.3.1" pos="ADV" msd="Deg=Pos" lemma="similiter">similiter</w>
+                <w  rend="section" n="1.3.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="mitto">mittis</w>
+                <w  rend="section" n="1.3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.3.1" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="section" n="1.3.1" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="dies">dies</w>
+                <w  rend="section" n="1.3.1" pos="ADJcar" msd="Case=Ind" lemma="septem">septem</w>
+                <w  rend="section" n="1.3.1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uinum">vino</w>
+                <w  rend="section" n="1.3.1" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="requiesco">requiescant</w>
+                <w  rend="section" n="1.3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.3.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="1.3.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="rosa">rosam</w>
+                <w  rend="section" n="1.3.1" pos="ADJqua" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="eximo">eximis</w>
+                <w  rend="section" n="1.3.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

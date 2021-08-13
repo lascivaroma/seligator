@@ -1,0 +1,16 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0588.abo024.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0588.abo024.perseus-lat2:1.2">
+        <w  rend="section" n="1.2" pos="ADJord" msd="Gend=MascNeut|Deg=Sup" lemma="primum">primum</w>
+                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="stipendium">stipendium</w>
+                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="mereo">meruit</w>
+                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="annus">annorum</w>
+                <w  rend="section" n="1.2" pos="ADJcar" msd="Case=Ind" lemma="decem">decem</w>
+                <w  rend="section" n="1.2" pos="ADJcar" msd="Case=Ind" lemma="septem">septemque</w>
+                <w  rend="section" n="1.2" pos="CON" msd="MORPH=empty" lemma="que">{septemque}</w>
+                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

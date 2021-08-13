@@ -2,19 +2,51 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1:II.131-II.131">
-        <w  rend="part" n="II.131" pos="ADV" msd="Deg=Pos" lemma="postea">postea</w>
-                <w  rend="part" n="II.131" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="mitto">mittes</w>
-                <w  rend="part" n="II.131" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ponfoligo">ponfoligon</w>
-                <w  rend="part" n="II.131" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="part" n="II.131" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="soluo">solves</w>
-                <w  rend="part" n="II.131" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="cera">ceram</w>
-                <w  rend="part" n="II.131" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="part" n="II.131" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="oleum">oleum</w>
-                <w  rend="part" n="II.131" pos="ADJqua" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="liliacium">liliacium</w>
-                <w  rend="part" n="II.131" pos="PUNC" msd="MORPH=empty" lemma="&#xF7;">÷</w>
-                <w  rend="part" n="II.131" pos="ADJcar" msd="MORPH=empty" lemma="1">I</w>
-                <w  rend="part" n="II.131" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1:II.107">
+        <w  rend="part" n="II.107" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uniuersus">universo</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="resumo">resumto</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="corpus">corpore</w>
+                <w  rend="part" n="II.107" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.107" pos="ADV" msd="Deg=Pos" lemma="facile">facile</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="possum1">poterit</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ulcus">ulcus</w>
+                <w  rend="part" n="II.107" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="cicatrix">cicatricem</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="uenio">venire</w>
+                <w  rend="part" n="II.107" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.107" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tempus1">tempore</w>
+                <w  rend="part" n="II.107" pos="ADV" msd="Deg=Pos" lemma="bene">bene</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="utor">utimur</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="iniectio">iniectione</w>
+                <w  rend="part" n="II.107" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uinum">vini</w>
+                <w  rend="part" n="II.107" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="part" n="II.107" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="decoquo">decocta</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="folium">folia</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ros">rose</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="malus3">mala</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="citonia">citonia</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mespila">mespila</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sorbus">sorba</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lenticula">lenticula</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="palmolus">palmole</w>
+                <w  rend="part" n="II.107" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.107" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="II.107" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="part" n="II.107" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">hiis</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="res">rebus</w>
+                <w  rend="part" n="II.107" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="encatisma">encatisma</w>
+                <w  rend="part" n="II.107" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="utor">utimur</w>
+                <w  rend="part" n="II.107" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

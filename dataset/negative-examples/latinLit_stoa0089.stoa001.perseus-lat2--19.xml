@@ -1,0 +1,24 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa001.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa001.perseus-lat2:42.1-42.2">
+        <w  rend="line" n="42.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="toruus">Torvus</w>
+                <w  rend="line" n="42.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aper">aper</w>
+                <w  rend="line" n="42.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="fuluus">fulvusque</w>
+                <w  rend="line" n="42.1" pos="CON" msd="MORPH=empty" lemma="que">{fulvusque}</w>
+                <w  rend="line" n="42.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="leo">leo</w>
+                <w  rend="line" n="42.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="coeo1">coiere</w>
+                <w  rend="line" n="42.1" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="superbus2">superbis</w>
+                <w  rend="line" n="42.2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uis">viribus</w>
+                <w  rend="line" n="42.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="42.2" pos="ADV" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="hic2">hic</w>
+                <w  rend="line" n="42.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="saeta">saeta</w>
+                <w  rend="line" n="42.2" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="saeuus">saevior</w>
+                <w  rend="line" n="42.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="42.2" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="line" n="42.2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="iuba">iuba</w>
+                <w  rend="line" n="42.2" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

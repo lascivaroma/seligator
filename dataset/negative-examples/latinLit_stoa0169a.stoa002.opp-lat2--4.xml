@@ -2,21 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0169a.stoa002.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0169a.stoa002.opp-lat2:1.479-1.481">
-        <w  rend="line" n="1.479" pos="PROper" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="uester">Vestrum</w>
-                <w  rend="line" n="1.479" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
-                <w  rend="line" n="1.479" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="lumen">lumen</w>
-                <w  rend="line" n="1.479" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="line" n="1.479" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
-                <w  rend="line" n="1.480" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="peruenio">Perueniat</w>
-                <w  rend="line" n="1.480" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerumque</w>
-                <w  rend="line" n="1.480" pos="CON" msd="MORPH=empty" lemma="que">{rerumque}</w>
-                <w  rend="line" n="1.480" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="decus">decus</w>
-                <w  rend="line" n="1.480" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
-                <w  rend="line" n="1.480" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lux">luce</w>
-                <w  rend="line" n="1.480" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="serenus">serena</w>
-                <w  rend="line" n="1.481" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="pono">Ponatur</w>
-                <w  rend="line" n="1.481" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0169a.stoa002.opp-lat2:3.221-3.222">
+        <w  rend="line" n="3.221" pos="INJ" msd="MORPH=empty" lemma="ecce">Ecce</w>
+                <w  rend="line" n="3.221" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="Pharisaeus">Pharisaei</w>
+                <w  rend="line" n="3.221" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="Sadducaei">Sadducaeique</w>
+                <w  rend="line" n="3.221" pos="CON" msd="MORPH=empty" lemma="que">{Sadducaeique}</w>
+                <w  rend="line" n="3.221" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="dolosus">dolosi</w>
+                <w  rend="line" n="3.222" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="posco">Poscere</w>
+                <w  rend="line" n="3.222" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="tento">temptantes</w>
+                <w  rend="line" n="3.222" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="insto">instant</w>
+                <w  rend="line" n="3.222" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="caelestis">caelestia</w>
+                <w  rend="line" n="3.222" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="signum">signa</w>
+                <w  rend="line" n="3.222" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

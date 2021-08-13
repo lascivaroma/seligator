@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0044.stoa002.digilibLT-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0044.stoa002.digilibLT-lat1:13">
+        <w  rend="chapter" n="13" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">Illa</w>
+                <w  rend="chapter" n="13" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uirgo">virgines</w>
+                <w  rend="chapter" n="13" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="puer">puerosque</w>
+                <w  rend="chapter" n="13" pos="CON" msd="MORPH=empty" lemma="que">{puerosque}</w>
+                <w  rend="chapter" n="13" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="eligo3">elegit</w>
+                <w  rend="chapter" n="13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="13" pos="PROrel" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="qui1">quorum</w>
+                <w  rend="chapter" n="13" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aetas">aetatem</w>
+                <w  rend="chapter" n="13" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="iniuria">iniuriae</w>
+                <w  rend="chapter" n="13" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="obnoxius">obnoxiam</w>
+                <w  rend="chapter" n="13" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="scio">sciebat</w>
+                <w  rend="chapter" n="13" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

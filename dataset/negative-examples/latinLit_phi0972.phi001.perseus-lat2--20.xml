@@ -1,0 +1,23 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0972.phi001.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0972.phi001.perseus-lat2:123">
+        <w  rend="section" n="123" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">Prima</w>
+                <w  rend="section" n="123" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="section" n="123" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="glacies">glacies</w>
+                <w  rend="section" n="123" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="123" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="canus">cana</w>
+                <w  rend="section" n="123" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="uincio">vincta</w>
+                <w  rend="section" n="123" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pruina">pruina</w>
+                <w  rend="section" n="123" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="123" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="pugno">pugnavit</w>
+                <w  rend="section" n="123" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="humus">humus</w>
+                <w  rend="section" n="123" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="mitis">mitique</w>
+                <w  rend="section" n="123" pos="CON" msd="MORPH=empty" lemma="que">{mitique}</w>
+                <w  rend="section" n="123" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="horror">horrore</w>
+                <w  rend="section" n="123" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="quiesco">quievit</w>
+                <w  rend="section" n="123" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

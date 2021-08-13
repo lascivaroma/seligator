@@ -2,19 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0121g.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121g.stoa001.opp-lat1:1.3-1.3">
-        <w  rend="chapter" n="1.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=3" lemma="remuneror">remunerabitur</w>
-                <w  rend="chapter" n="1.3" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
-                <w  rend="chapter" n="1.3" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="fides2">fidei</w>
-                <w  rend="chapter" n="1.3" pos="ADV" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="meritum">merito</w>
-                <w  rend="chapter" n="1.3" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="assumo">adsumptus</w>
-                <w  rend="chapter" n="1.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="1.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Pass|Person=3" lemma="damno">damnabitur</w>
-                <w  rend="chapter" n="1.3" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
-                <w  rend="chapter" n="1.3" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="proprius">proprio</w>
-                <w  rend="chapter" n="1.3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="crimen">crimine</w>
-                <w  rend="chapter" n="1.3" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="derelinquo">derelictus</w>
-                <w  rend="chapter" n="1.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121g.stoa001.opp-lat1:pr">
+        <w  rend="book" n="pr" pos="PROind" msd="Case=Ind|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="tertius">XIIII.</w>
+                <w  rend="book" n="pr" pos="UNK" msd="MORPH=empty" lemma="decimus">{XIIII.}</w>
+                <w  rend="book" n="pr" pos="PRE" msd="Deg=Pos" lemma="contra2">Contra</w>
+                <w  rend="book" n="pr" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dico2">dicunt</w>
+                <w  rend="book" n="pr" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="is">eos</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="book" n="pr" pos="PRE" msd="MORPH=empty" lemma="post2">post</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="baptismum">baptismum</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pereo1">pereunt</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="baptismum">baptismum</w>
+                <w  rend="book" n="pr" pos="ADV" msd="Deg=Pos" lemma="penitus2">penitus</w>
+                <w  rend="book" n="pr" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="book" n="pr" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="credo">credidisse</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

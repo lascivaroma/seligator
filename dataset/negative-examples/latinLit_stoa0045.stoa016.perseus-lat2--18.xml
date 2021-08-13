@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa016.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa016.perseus-lat2:po.33-po.34">
+        <w  rend="line" n="po.33" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
+                <w  rend="line" n="po.33" pos="ADV" msd="Deg=Pos" lemma="olim">olim</w>
+                <w  rend="line" n="po.33" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genitor">genitorque</w>
+                <w  rend="line" n="po.33" pos="CON" msd="MORPH=empty" lemma="que">{genitorque}</w>
+                <w  rend="line" n="po.33" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="tuus">tuus</w>
+                <w  rend="line" n="po.33" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genetrix">genetrixque</w>
+                <w  rend="line" n="po.33" pos="CON" msd="MORPH=empty" lemma="que">{genetrixque}</w>
+                <w  rend="line" n="po.33" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="sequor">secuti</w>
+                <w  rend="line" n="po.34" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="securus">securam</w>
+                <w  rend="line" n="po.34" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="placidus">placido</w>
+                <w  rend="line" n="po.34" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="line" n="po.34" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="permulceo">permulsere</w>
+                <w  rend="line" n="po.34" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="senecta">senectam</w>
+                <w  rend="line" n="po.34" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

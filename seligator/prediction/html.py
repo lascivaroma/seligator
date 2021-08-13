@@ -37,7 +37,7 @@ def predictions_to_html(
     html_template = """<div class="row">
     <div class="col-2">{start_end}</div>
     <div class="col-10"><ul class="list-unstyled">{sentences}</ul></div>
-    </div>"""
+</div>"""
 
     css = "\n".join([
         "." + cls + " {" + st + "}"
@@ -57,7 +57,7 @@ def predictions_to_html(
             start = cur_start
         end = cur_end
 
-        sentences.append((sentence["prediction"], sentence["sentence"]))
+        sentences.append((sentence["prediction"], sentence["score-prediction"], sentence["sentence"]))
         # print(f'{sentence["prediction"]} -> {sentence["sentence"]}')
 
     if sentences:
@@ -66,20 +66,20 @@ def predictions_to_html(
             key = start
         ordered_dict[key] = sentences
 
-    def _format_sentence(cls: str, sent: str) -> str:
+    def _format_sentence(cls: str, sent: str, score: float) -> str:
         if repl_word:
             sent = _replace_words(sent)
         if show_class:
-            return f"<li class=\"{cls}\"><em>{cls}</em> {sent}</li>"
+            return f"<li class=\"{cls}\"><em>{cls}</em><small>{score:.2f}</small> {sent}</li>"
         else:
-            return f"<li class=\"{cls}\">{sent}</li>"
+            return f"<li class=\"{cls}\"><small>{score:.2f}</small> {sent}</li>"
 
     return add_bootstrap("\n".join([
         html_template.format(
             start_end=start_end,
             sentences=" ".join([
-                _format_sentence(cls, sentence)
-                for cls, sentence in sentences
+                _format_sentence(cls, sentence, probs)
+                for cls, probs, sentence in sentences
             ])
         )
         for start_end, sentences in ordered_dict.items()

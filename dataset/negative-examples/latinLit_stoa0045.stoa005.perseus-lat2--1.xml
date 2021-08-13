@@ -2,26 +2,41 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa005.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa005.perseus-lat2:56-58">
-        <w  rend="line" n="56" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="eligo3">eligitur</w>
-                <w  rend="line" n="56" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="maestus">maesto</w>
-                <w  rend="line" n="56" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="myrtus">myrtus</w>
-                <w  rend="line" n="56" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Sup" lemma="notus2">notissima</w>
-                <w  rend="line" n="56" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lucus">luco</w>
-                <w  rend="line" n="56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="57" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="inuidiosus">invidiosa</w>
-                <w  rend="line" n="57" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="deus">deum</w>
-                <w  rend="line" n="57" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="poena">poenis</w>
-                <w  rend="line" n="57" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="57" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="crucio">cruciaverat</w>
-                <w  rend="line" n="57" pos="ADV" msd="Deg=Pos" lemma="illic2">illic</w>
-                <w  rend="line" n="58" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="sperno">spreta</w>
-                <w  rend="line" n="58" pos="ADV" msd="Deg=Pos" lemma="olim">olim</w>
-                <w  rend="line" n="58" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem" lemma="memor">memorem</w>
-                <w  rend="line" n="58" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Uenus">Veneris</w>
-                <w  rend="line" n="58" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Proserpina">Proserpina</w>
-                <w  rend="line" n="58" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Adonis">Adonin</w>
-                <w  rend="line" n="58" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa005.perseus-lat2:21-25">
+        <w  rend="line" n="21" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uulnus">vulnera</w>
+                <w  rend="line" n="21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sicco">siccat</w>
+                <w  rend="line" n="21" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
+                <w  rend="line" n="21" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Procris">Procris</w>
+                <w  rend="line" n="21" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Cephalus">Cephalique</w>
+                <w  rend="line" n="21" pos="CON" msd="MORPH=empty" lemma="que">{Cephalique}</w>
+                <w  rend="line" n="21" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="eruditus">eruditam</w>
+                <w  rend="line" n="22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="diligo3">diligit</w>
+                <w  rend="line" n="22" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="22" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="percutio">percussa</w>
+                <w  rend="line" n="22" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="manus1">manum</w>
+                <w  rend="line" n="22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fero">fert</w>
+                <w  rend="line" n="22" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="fumidus">fumida</w>
+                <w  rend="line" n="22" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="testa">testae</w>
+                <w  rend="line" n="23" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="lumen">lumina</w>
+                <w  rend="line" n="23" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Sestiacus">Sestiaca</w>
+                <w  rend="line" n="23" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="praeceps2">praeceps</w>
+                <w  rend="line" n="23" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="line" n="23" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="turris">turre</w>
+                <w  rend="line" n="23" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="puella">puella</w>
+                <w  rend="line" n="23" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="24" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="24" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="line" n="24" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="nimbosus">nimboso</w>
+                <w  rend="line" n="24" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="saltus2">saltum</w>
+                <w  rend="line" n="24" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Leucate">Leucate</w>
+                <w  rend="line" n="24" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="minor">minatur</w>
+                <w  rend="line" n="25" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="masculus">mascula</w>
+                <w  rend="line" n="25" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="Lesbiacus">Lesbiacis</w>
+                <w  rend="line" n="25" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Sappho">Sappho</w>
+                <w  rend="line" n="25" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Fut|Voice=Act" lemma="pereo1">peritura</w>
+                <w  rend="line" n="25" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="sagitta">sagittis</w>
+                <w  rend="line" n="25" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

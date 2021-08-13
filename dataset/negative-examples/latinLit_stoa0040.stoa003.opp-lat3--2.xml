@@ -2,41 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa003.opp-lat3</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa003.opp-lat3:1-1">
-        <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="rex">Rex</w>
-                <w  rend="book" n="1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="book" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="conditor1">conditor</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ciuitas">ciuitatis</w>
-                <w  rend="book" n="1" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="hic1">huius</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="1" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="book" n="1" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qui1">qua</w>
-                <w  rend="book" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="loquor">loqui</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="instituo">instituimus</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="scriptura">scriptura</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="populus1">populi</w>
-                <w  rend="book" n="1" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="suus">sui</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sententia">sententiam</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="diuinus2">diuinae</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="lex">legis</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="aperio">aperuit</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="1" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qui1">qua</w>
-                <w  rend="book" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Mood=Par|Tense=Perf|Voice=Pass" lemma="dico2">dictum</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">Deus</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="superbus2">superbis</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="resisto">resistit</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="humilis">humilibus</w>
-                <w  rend="book" n="1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="do">dat</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="gratia">gratiam</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa003.opp-lat3:8.24">
+        <w  rend="chapter" n="8.24" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="8.24" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="nescio">Nescio</w>
+                <w  rend="chapter" n="8.24" pos="ADVint" msd="MORPH=empty" lemma="utrum">utrum</w>
+                <w  rend="chapter" n="8.24" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
+                <w  rend="chapter" n="8.24" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Dep|Person=3" lemma="confiteor">confiterentur</w>
+                <w  rend="chapter" n="8.24" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="ipse">ipsi</w>
+                <w  rend="chapter" n="8.24" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="daemon">daemones</w>
+                <w  rend="chapter" n="8.24" pos="VER" msd="Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="adiuro">adiurati</w>
+                <w  rend="chapter" n="8.24" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="8.24" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="quis1">quo</w>
+                <w  rend="chapter" n="8.24" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="modus">modo</w>
+                <w  rend="chapter" n="8.24" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="iste">iste</w>
+                <w  rend="chapter" n="8.24" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="confiteor">confessus</w>
+                <w  rend="chapter" n="8.24" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="8.24" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -1,0 +1,18 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi007.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi007.perseus-lat2:560-561">
+        <w  rend="line" n="560" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aestuo">aestuat</w>
+                <w  rend="line" n="560" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="scopulus">scopulis</w>
+                <w  rend="line" n="560" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fretum">fretum</w>
+                <w  rend="line" n="561" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ferueo">fervetque</w>
+                <w  rend="line" n="561" pos="CON" msd="MORPH=empty" lemma="que">{fervetque}</w>
+                <w  rend="line" n="561" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
+                <w  rend="line" n="561" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fluctus">fluctus</w>
+                <w  rend="line" n="561" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="alternus">alterna</w>
+                <w  rend="line" n="561" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uicis">vice</w>
+                <w  rend="line" n="561" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa004.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa004.perseus-lat2:1.102-1.103">
+        <w  rend="line" n="1.102" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="turma">turmas</w>
+                <w  rend="line" n="1.102" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="eques">equitum</w>
+                <w  rend="line" n="1.102" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="pedes">peditumque</w>
+                <w  rend="line" n="1.102" pos="CON" msd="MORPH=empty" lemma="que">{peditumque}</w>
+                <w  rend="line" n="1.102" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="caterua">catervas</w>
+                <w  rend="line" n="1.103" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="hostilis">hostilesque</w>
+                <w  rend="line" n="1.103" pos="CON" msd="MORPH=empty" lemma="que">{hostilesque}</w>
+                <w  rend="line" n="1.103" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="globus">globos</w>
+                <w  rend="line" n="1.103" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tumulus">tumulo</w>
+                <w  rend="line" n="1.103" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="prosterno">prosternis</w>
+                <w  rend="line" n="1.103" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="amicus1">amici</w>
+                <w  rend="line" n="1.103" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

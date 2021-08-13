@@ -1,0 +1,25 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:lasc0001.lasc001.musisquedeoque-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:lasc0001.lasc001.musisquedeoque-lat1:45.1-45.2">
+        <w  rend="line" n="45.1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">Illa</w>
+                <w  rend="line" n="45.1" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
+                <w  rend="line" n="45.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="sum1">sum</w>
+                <w  rend="line" n="45.1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Dido">Dido</w>
+                <w  rend="line" n="45.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uultus">uultu</w>
+                <w  rend="line" n="45.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="45.1" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="quam1">quam</w>
+                <w  rend="line" n="45.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="conspicio">conspicis</w>
+                <w  rend="line" n="45.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="45.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="hospes">hospes</w>
+                <w  rend="line" n="45.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="45.2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="assimulo">Assimulata</w>
+                <w  rend="line" n="45.2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="modus">modis</w>
+                <w  rend="line" n="45.2" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="pulcher">pulchraque</w>
+                <w  rend="line" n="45.2" pos="CON" msd="MORPH=empty" lemma="que">{pulchraque}</w>
+                <w  rend="line" n="45.2" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="mirificus">mirificis</w>
+                <w  rend="line" n="45.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

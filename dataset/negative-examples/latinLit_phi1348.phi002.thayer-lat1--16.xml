@@ -1,0 +1,26 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1348.phi002.thayer-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.phi002.thayer-lat1:persius">
+        <w  rend="chapter" n="persius" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
+                <w  rend="chapter" n="persius" pos="ADV" msd="Deg=Pos" lemma="mox">mox</w>
+                <w  rend="chapter" n="persius" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="chapter" n="persius" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="schola">schola</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="magister">magistrisque</w>
+                <w  rend="chapter" n="persius" pos="CON" msd="MORPH=empty" lemma="que">{magistrisque}</w>
+                <w  rend="chapter" n="persius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="deuerto">devertit</w>
+                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="persius" pos="VER" msd="Case=Abl|Numb=Sing" lemma="lego1">lecto</w>
+                <w  rend="chapter" n="persius" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Lucilius">Lucili</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="liber1">libro</w>
+                <w  rend="chapter" n="persius" pos="ADJord" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="decimus">decimo</w>
+                <w  rend="chapter" n="persius" pos="ADV" msd="Deg=Pos" lemma="uehementer">vehementer</w>
+                <w  rend="chapter" n="persius" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="satur">saturas</w>
+                <w  rend="chapter" n="persius" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="compono">componere</w>
+                <w  rend="chapter" n="persius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="studeo">studuit</w>
+                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

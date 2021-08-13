@@ -15,6 +15,7 @@ from allennlp.training.gradient_descent_trainer import GradientDescentTrainer
 from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer, AdadeltaOptimizer
 
 
+from seligator.common.params import MetadataEncoding, get_metadata_namespace
 from seligator.dataset.readers import ClassificationTsvReader, get_siamese_samples
 from seligator.models.base import BaseModel
 from seligator.common.bert_utils import GetMeBert
@@ -36,9 +37,14 @@ def read_data(reader: DatasetReader, use_siamese_set: bool = True,
     return training_data, validation_data
 
 
-def build_vocab(instances: Iterable[Instance]) -> Vocabulary:
+def build_vocab(instances: Iterable[Instance], add_unknown: Iterable[str] = None) -> Vocabulary:
     logging.info("Building the vocabulary")
-    return Vocabulary.from_instances(instances)
+    voc = Vocabulary.from_instances(instances)
+
+    logging.warning(f"Adding OOV to following fields: {', '.join(add_unknown)}")
+    for field in (add_unknown or []):
+        voc.add_token_to_namespace(voc._oov_token, field)
+    return voc
 
 
 def build_data_loaders(
@@ -109,7 +115,6 @@ def generate_all_data(
     folder: str = "dataset/main",
     **tsv_reader_kwargs
 ) -> Tuple[DataLoader, DataLoader, Vocabulary, ClassificationTsvReader]:
-
     instance_type = instance_type.lower()
     if instance_type not in {"default", "siamese", "triplet"}:
         raise ValueError("`instance_type` must be one of "+str({"default", "siamese", "triplet"}))
@@ -146,7 +151,10 @@ def generate_all_data(
     if ratio_train != 1.0:
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]
 
-    vocab = build_vocab(train_data)
+    vocab = build_vocab(
+        train_data,
+        list(map(get_metadata_namespace, dataset_reader.metadata_tokens_categories)) \
+            if dataset_reader.metadata_encoding == MetadataEncoding.AS_CATEGORICAL else [])
 
     train_loader, dev_loader = build_data_loaders(
         train_data, dev_data,

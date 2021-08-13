@@ -2,27 +2,45 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0224.stoa004.alim-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:6.aliesis-6.aliesis">
-        <w  rend="entry" n="6.aliesis" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dies">dies</w>
-                <w  rend="entry" n="6.aliesis" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Pass|Person=3" lemma="dico2">dicebatur</w>
-                <w  rend="entry" n="6.aliesis" pos="PRE" msd="MORPH=empty" lemma="apud">apud</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Romani">Romanos</w>
-                <w  rend="entry" n="6.aliesis" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="obscenus">obscenissimi</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="omen">ominis</w>
-                <w  rend="entry" n="6.aliesis" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="entry" n="6.aliesis" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Allia">Allia</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="fluuius">fluvio</w>
-                <w  rend="entry" n="6.aliesis" pos="ADV" msd="Deg=Pos" lemma="scilicet">scilicet</w>
-                <w  rend="entry" n="6.aliesis" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="entry" n="6.aliesis" pos="ADVrel" msd="MORPH=empty" lemma="ubi1">ubi</w>
-                <w  rend="entry" n="6.aliesis" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Romanus">Romanus</w>
-                <w  rend="entry" n="6.aliesis" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="fundo2">fusus</w>
-                <w  rend="entry" n="6.aliesis" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Galli">Gallis</w>
-                <w  rend="entry" n="6.aliesis" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="exercitus1">exercitus</w>
-                <w  rend="entry" n="6.aliesis" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="entry" n="6.aliesis" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:47.centumviralia_iudicia">
+        <w  rend="entry" n="47.centumviralia_iudicia" pos="CONcoo" msd="MORPH=empty" lemma="nam">Nam</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">essent</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="NOMpro" msd="Case=Loc|Numb=Sing" lemma="Roma">Romae</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJcar" msd="Case=Ind" lemma="triginta">triginta</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJcar" msd="Case=Ind" lemma="quinque">quinque</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJcar" msd="Case=Nom|Numb=Plur" lemma="tres">tribus</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PROrel" msd="Case=Abl" lemma="qui1">qua</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="curia">curiae</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="dico2">dictae</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJdis" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="ternus">terni</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJdis" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="singulus">singulis</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="tribus">tribubus</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="eligo3">electi</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Case=Acc|Numb=Sing|Mood=Ger|Voice=Act" lemma="iudico">iudicandum</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="centumuir">centumviri</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="appello1">appellati</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Person=3" lemma="licet1">licet</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJcar" msd="Case=Ind" lemma="quinque">quinque</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADV" msd="Deg=Comp" lemma="ample">amplius</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="ADJcar" msd="Case=Ind" lemma="centum">centum</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuerint</w>
+                <w  rend="entry" n="47.centumviralia_iudicia" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

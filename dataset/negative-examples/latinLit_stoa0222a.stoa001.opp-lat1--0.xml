@@ -2,16 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0222a.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:pr-pr">
-        <w  rend="poem" n="pr" pos="ADJcar" msd="MORPH=empty" lemma="3">18</w>
-                <w  rend="poem" n="pr" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Sarmatae">Sarmatarum</w>
-                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="nomen">nomine</w>
-                <w  rend="poem" n="pr" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="significo">significare</w>
-                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="uolo3">uoluerit</w>
-                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="poem" n="pr" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="obscurus">obscurum</w>
-                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:pr">
+        <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fluuius">fluuium</w>
+                <w  rend="poem" n="pr" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="poem" n="pr" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="sordo">Sordonum</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="terra">terram</w>
+                <w  rend="poem" n="pr" pos="ADV" msd="Deg=Pos" lemma="ibi">ibique</w>
+                <w  rend="poem" n="pr" pos="CON" msd="MORPH=empty" lemma="que">{ibique}</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domicilium">domicilium</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="colloco">collocauerat</w>
+                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

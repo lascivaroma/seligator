@@ -2,15 +2,41 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi004.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi004.perseus-lat2:44-44">
-        <w  rend="section" n="44" pos="ADJqua" msd="Numb=Sing|Person=1" lemma="nosco">novi</w>
-                <w  rend="section" n="44" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="omnis">omnis</w>
-                <w  rend="section" n="44" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="homo">hominis</w>
-                <w  rend="section" n="44" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="petitio">petitiones</w>
-                <w  rend="section" n="44" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ratio">rationesque</w>
-                <w  rend="section" n="44" pos="CON" msd="MORPH=empty" lemma="que">{rationesque}</w>
-                <w  rend="section" n="44" pos="VER" msd="Case=Gen|Numb=Sing|Mood=Ger|Voice=Act" lemma="dico2">dicendi</w>
-                <w  rend="section" n="44" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi004.perseus-lat2:29">
+        <w  rend="section" n="29" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Marcus">M.</w>
+                <w  rend="section" n="29" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Caecilius">Caecilium</w>
+                <w  rend="section" n="29" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="29" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="frater">fratrem</w>
+                <w  rend="section" n="29" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="tuus">tuum</w>
+                <w  rend="section" n="29" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="29" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="lectus3">lectissimum</w>
+                <w  rend="section" n="29" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="section" n="29" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="ornatus2">ornatissimum</w>
+                <w  rend="section" n="29" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="adolescens1">adulescentem</w>
+                <w  rend="section" n="29" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="29" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="29" pos="ADV" msd="Deg=Pos" lemma="modo1">modo</w>
+                <w  rend="section" n="29" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="29" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="assum1">adesse</w>
+                <w  rend="section" n="29" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="section" n="29" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">tecum</w>
+                <w  rend="section" n="29" pos="CON" msd="MORPH=empty" lemma="cum3">{tecum}</w>
+                <w  rend="section" n="29" pos="PROpos" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="tuus">tuas</w>
+                <w  rend="section" n="29" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="iniuria">iniurias</w>
+                <w  rend="section" n="29" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="persequor">persequi</w>
+                <w  rend="section" n="29" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="29" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="section" n="29" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="section" n="29" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="section" n="29" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Uerres">Verre</w>
+                <w  rend="section" n="29" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="29" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="section" n="29" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="ille">illo</w>
+                <w  rend="section" n="29" pos="ADV" msd="Deg=Sup" lemma="familiariter">familiarissime</w>
+                <w  rend="section" n="29" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="section" n="29" pos="ADV" msd="Deg=Sup" lemma="amice">amicissime</w>
+                <w  rend="section" n="29" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="uiuo">vivere</w>
+                <w  rend="section" n="29" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

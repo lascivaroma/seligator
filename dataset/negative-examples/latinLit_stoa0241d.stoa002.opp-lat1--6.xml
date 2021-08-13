@@ -1,0 +1,18 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0241d.stoa002.opp-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0241d.stoa002.opp-lat1:1">
+        <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="monumentum">Monimenta</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="recordatio">recordationes</w>
+                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="monumentum">monimentum</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="memoria">memoria</w>
+                <w  rend="book" n="1" pos="ADV" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Ind|Tense=Pres|Voice=Act" lemma="eo3">eo</w>
+                <w  rend="book" n="1" pos="CONsub" msd="Case=Nom" lemma="quis2">quod</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mens">mentem</w>
+                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="moneo">moneat</w>
+                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,17 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa009.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa009.perseus-lat2:1.1.21-1.1.22">
+        <w  rend="line" n="1.1.21" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="1.1.21" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="1.1.21" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="line" n="1.1.21" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="culmen">culmina</w>
+                <w  rend="line" n="1.1.21" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerum</w>
+                <w  rend="line" n="1.1.22" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="iniustus">iniustos</w>
+                <w  rend="line" n="1.1.22" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="cresco">crevisse</w>
+                <w  rend="line" n="1.1.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="queror">queror</w>
+                <w  rend="line" n="1.1.22" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

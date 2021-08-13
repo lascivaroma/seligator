@@ -2,14 +2,17 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi010.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi010.perseus-lat2:83-84">
-        <w  rend="line" n="83" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="do">Dabit</w>
-                <w  rend="line" n="83" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="afflictus2">afflictae</w>
-                <w  rend="line" n="83" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Comp" lemma="bonus">meliora</w>
-                <w  rend="line" n="83" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
-                <w  rend="line" n="84" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="tempus1">tempora</w>
-                <w  rend="line" n="84" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="mitis">mitis</w>
-                <w  rend="line" n="84" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi010.perseus-lat2:965-967">
+        <w  rend="line" n="965" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Tartarus">Tartara</w>
+                <w  rend="line" n="965" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="testor">testor</w>
+                <w  rend="line" n="966" pos="ADJqua" msd="Case=Gen|Numb=Sing" lemma="Erebus">Erebique</w>
+                <w  rend="line" n="966" pos="CON" msd="MORPH=empty" lemma="que">{Erebique}</w>
+                <w  rend="line" n="966" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="dea">deas</w>
+                <w  rend="line" n="966" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="scelus">scelerum</w>
+                <w  rend="line" n="966" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ultrix">ultrices</w>
+                <w  rend="line" n="967" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="967" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="967" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

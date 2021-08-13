@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa010.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa010.perseus-lat2:pr.1-pr.2">
+        <w  rend="line" n="pr.1" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="paruus2">Parvos</w>
+                <w  rend="line" n="pr.1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="pr.1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="aquila">aquilis</w>
+                <w  rend="line" n="pr.1" pos="NOMcom" msd="Case=Ind" lemma="fas">fas</w>
+                <w  rend="line" n="pr.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="pr.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="educo2">educere</w>
+                <w  rend="line" n="pr.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="fetus1">fetus</w>
+                <w  rend="line" n="pr.2" pos="PRE" msd="MORPH=empty" lemma="ante2">ante</w>
+                <w  rend="line" n="pr.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fides2">fidem</w>
+                <w  rend="line" n="pr.2" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="soi">soils</w>
+                <w  rend="line" n="pr.2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="iudicium">iudiciumque</w>
+                <w  rend="line" n="pr.2" pos="CON" msd="MORPH=empty" lemma="que">{iudiciumque}</w>
+                <w  rend="line" n="pr.2" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="polus">poli</w>
+                <w  rend="line" n="pr.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

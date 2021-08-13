@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:anthoLat.phi1017.musisquedeoque-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:anthoLat.phi1017.musisquedeoque-lat1:052a.17-052a.18">
+        <w  rend="line" n="052a.17" pos="PUNC" msd="MORPH=empty" lemma="'">'</w>
+                <w  rend="line" n="052a.17" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">Dixit</w>
+                <w  rend="line" n="052a.17" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="052a.17" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="gladius">gladioque</w>
+                <w  rend="line" n="052a.17" pos="CON" msd="MORPH=empty" lemma="que">{gladioque}</w>
+                <w  rend="line" n="052a.17" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="cruentus">cruento</w>
+                <w  rend="line" n="052a.18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="incumbo">Incubuit</w>
+                <w  rend="line" n="052a.18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="052a.18" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="iungo">iungens</w>
+                <w  rend="line" n="052a.18" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="frater">fratris</w>
+                <w  rend="line" n="052a.18" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="line" n="052a.18" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="os1">ora</w>
+                <w  rend="line" n="052a.18" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="suus">sua</w>
+                <w  rend="line" n="052a.18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

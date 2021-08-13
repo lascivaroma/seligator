@@ -2,12 +2,28 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0329c.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0329c.stoa001.opp-lat1:1-1">
-        <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ipse">Ipsa</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ciuitas">ciuitas</w>
-                <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mons">monte</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="pono">posita</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0329c.stoa001.opp-lat1:1">
+        <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="in">In</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="circuitus">circuitu</w>
+                <w  rend="paragraph" n="1" pos="ADJcar" msd="Case=Ind" lemma="duodecim">duodecim</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="columna">columnae</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="marmoreus">marmoreae</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma="[">[</w>
+                <w  rend="paragraph" n="1" pos="ADV" msd="Deg=Pos" lemma="omnino">omnino</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="incredibilis">incredibile</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma="]">]</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="super2">super</w>
+                <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="ipse">ipsas</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="columna">columnas</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="hydria">hydriae</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="argenteus2">argenteae</w>
+                <w  rend="paragraph" n="1" pos="ADJcar" msd="Case=Ind" lemma="duodecim">duodecim</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="1" pos="CONsub" msd="MORPH=empty" lemma="ubi3">ubi</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sigillo">sigillauit</w>
+                <w  rend="paragraph" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Salomon">Salomon</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="daemon">daemones</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

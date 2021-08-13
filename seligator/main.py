@@ -81,12 +81,11 @@ class Seligator:
         bert, bert_pooler = None, None
         if use:
             get_me_bert = what_type_of_bert(directory=bert_dir, trainable=False, hugginface=False)
-            if use:
-                bert = get_me_bert.embedder
-                if highway:
-                    bert_pooler = PoolerHighway(BertPooler(bert_dir), 256)
-                else:
-                    bert_pooler = BertPooler(bert_dir)
+            bert = get_me_bert.embedder
+            if highway:
+                bert_pooler = PoolerHighway(BertPooler(bert_dir), 256)
+            else:
+                bert_pooler = BertPooler(bert_dir)
             return get_me_bert, bert, bert_pooler
         return what_type_of_bert(), bert, bert_pooler
 
@@ -150,13 +149,11 @@ class Seligator:
             basis_vector_configuration=basis_vector_configuration
         )
         use_bert = "token_subword" in token_features
-        print(use_bert, token_features)
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
             use=use_bert,
             highway=use_bert_highway,
             bert_dir=bert_dir
         )
-        print(get_me_bert)
         model_embedding_kwargs = model_embedding_kwargs or {}
         embeddings = merge(
             model_embedding_kwargs.pop("emb_dims", {}),
@@ -223,7 +220,7 @@ class Seligator:
 
     def get_reader(self, cls=ClassificationTsvReader) -> Union[XMLDatasetReader, ClassificationTsvReader]:
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
-            self._init_params.get("use_bert"),
+            use="token_subword" in self._init_params.get("token_features", []),
             highway=self._init_params.get("use_bert_highway"),
             bert_dir=self._init_params.get("bert_dir")
         )

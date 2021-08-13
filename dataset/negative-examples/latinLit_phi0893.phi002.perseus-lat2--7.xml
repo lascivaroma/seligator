@@ -1,0 +1,19 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0893.phi002.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0893.phi002.perseus-lat2:33-34">
+        <w  rend="line" n="33" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass|Person=2" lemma="condo">Condito</w>
+                <w  rend="line" n="33" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="mitis">mitis</w>
+                <w  rend="line" n="33" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="placidus">placidusque</w>
+                <w  rend="line" n="33" pos="CON" msd="MORPH=empty" lemma="que">{placidusque}</w>
+                <w  rend="line" n="33" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="telum">telo</w>
+                <w  rend="line" n="34" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="supplex2">Supplices</w>
+                <w  rend="line" n="34" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="audio">audi</w>
+                <w  rend="line" n="34" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="puer">pueros</w>
+                <w  rend="line" n="34" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="34" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Apollo">Apollo</w>
+                <w  rend="line" n="34" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

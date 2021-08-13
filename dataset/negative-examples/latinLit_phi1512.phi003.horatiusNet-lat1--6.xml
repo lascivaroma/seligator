@@ -1,0 +1,14 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1512.phi003.horatiusNet-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1512.phi003.horatiusNet-lat1:53">
+        <w  rend="comment" n="53" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Adj|Voice=Pass" lemma="subaudior">Subaudiendum</w>
+                <w  rend="comment" n="53" pos="ADV" msd="Deg=Pos" lemma="ut">utique</w>
+                <w  rend="comment" n="53" pos="CON" msd="MORPH=empty" lemma="que">{utique}</w>
+                <w  rend="comment" n="53" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="comment" n="53" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Romani">Romanorum</w>
+                <w  rend="comment" n="53" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

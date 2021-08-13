@@ -1,0 +1,24 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi003.perseus-lat2:1.789-1.790">
+        <w  rend="line" n="1.789" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="rus">rura</w>
+                <w  rend="line" n="1.789" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="urbs">urbesque</w>
+                <w  rend="line" n="1.789" pos="CON" msd="MORPH=empty" lemma="que">{urbesque}</w>
+                <w  rend="line" n="1.789" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uaco">vacant</w>
+                <w  rend="line" n="1.789" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.789" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="mons">montes</w>
+                <w  rend="line" n="1.789" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="spolio">spoliavimus</w>
+                <w  rend="line" n="1.789" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="altus">altos</w>
+                <w  rend="line" n="1.789" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.790" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="omnis">omne</w>
+                <w  rend="line" n="1.790" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fretum">fretum</w>
+                <w  rend="line" n="1.790" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="longus">longa</w>
+                <w  rend="line" n="1.790" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="uelum">velorum</w>
+                <w  rend="line" n="1.790" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="obtexo">obtexitur</w>
+                <w  rend="line" n="1.790" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="umbra">umbra</w>
+                <w  rend="line" n="1.790" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

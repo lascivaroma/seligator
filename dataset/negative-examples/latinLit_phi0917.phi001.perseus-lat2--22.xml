@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0917.phi001.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0917.phi001.perseus-lat2:4.306-4.308">
+        <w  rend="line" n="4.306" pos="CONcoo" msd="MORPH=empty" lemma="nec2">Nec</w>
+                <w  rend="line" n="4.306" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="languidus">languida</w>
+                <w  rend="line" n="4.306" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="fessus">fessi</w>
+                <w  rend="line" n="4.307" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="corpus">Corpora</w>
+                <w  rend="line" n="4.307" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sustento">sustentant</w>
+                <w  rend="line" n="4.307" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="epulae">epulis</w>
+                <w  rend="line" n="4.307" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="4.307" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mensa">mensasque</w>
+                <w  rend="line" n="4.307" pos="CON" msd="MORPH=empty" lemma="que">{mensasque}</w>
+                <w  rend="line" n="4.307" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="perosus">perosi</w>
+                <w  rend="line" n="4.308" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="auxilium">Auxilium</w>
+                <w  rend="line" n="4.308" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecere</w>
+                <w  rend="line" n="4.308" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fames">famem</w>
+                <w  rend="line" n="4.308" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,53 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0190a.stoa001.digilibLT-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0190a.stoa001.digilibLT-lat1:book.8.74">
+        <w  rend="part" n="book.8.74" pos="ADJqua" msd="Case=Acc|Numb=Sing" lemma="Calliblepharius">Calliblepharium</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="xerocollyrium">xerocollyrium</w>
+                <w  rend="part" n="book.8.74" pos="ADJord" msd="Deg=Sup" lemma="primum">primum</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="accipio">accipit</w>
+                <w  rend="part" n="book.8.74" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aes">Aes</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Mood=SupU|Voice=Act" lemma="uro">ustum</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="stibium">stibium</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Case=Acc|Numb=Sing" lemma="cadmia">cadmiam</w>
+                <w  rend="part" n="book.8.74" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="aequus">aequis</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pondus">ponderibus</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="misceo">miscebis</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Sing|Gend=Com|Deg=Pos" lemma="teres">teresque</w>
+                <w  rend="part" n="book.8.74" pos="CON" msd="MORPH=empty" lemma="que">{teresque}</w>
+                <w  rend="part" n="book.8.74" pos="ADV" msd="Deg=Pos" lemma="diligenter">diligenter</w>
+                <w  rend="part" n="book.8.74" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="book.8.74" pos="CONsub" msd="MORPH=empty" lemma="donec">donec</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="spuma">spumam</w>
+                <w  rend="part" n="book.8.74" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="facio">faciant</w>
+                <w  rend="part" n="book.8.74" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="cresco">crescant</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="book.8.74" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ignis">ignem</w>
+                <w  rend="part" n="book.8.74" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="lentus">lentum</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="agito">agitabis</w>
+                <w  rend="part" n="book.8.74" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="part" n="book.8.74" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uas2">uaso</w>
+                <w  rend="part" n="book.8.74" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="aereus2">aereo</w>
+                <w  rend="part" n="book.8.74" pos="ADV" msd="Deg=Pos" lemma="ibi">ibique</w>
+                <w  rend="part" n="book.8.74" pos="CON" msd="MORPH=empty" lemma="que">{ibique}</w>
+                <w  rend="part" n="book.8.74" pos="ADV" msd="Deg=Pos" lemma="tamdiu">tamdiu</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=2" lemma="patior">patieris</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="book.8.74" pos="CONsub" msd="MORPH=empty" lemma="donec">donec</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="refrigero">refrigerentur</w>
+                <w  rend="part" n="book.8.74" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="part" n="book.8.74" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="sicco">siccentur</w>
+                <w  rend="part" n="book.8.74" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

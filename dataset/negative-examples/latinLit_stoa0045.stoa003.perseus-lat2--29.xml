@@ -1,0 +1,15 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa003.perseus-lat2:56">
+        <w  rend="line" n="56" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="osculum">oscula</w>
+                <w  rend="line" n="56" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="libo">libavit</w>
+                <w  rend="line" n="56" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dextera">dextramque</w>
+                <w  rend="line" n="56" pos="CON" msd="MORPH=empty" lemma="que">{dextramque}</w>
+                <w  rend="line" n="56" pos="VER" msd="Case=Nom|Numb=Sing|Mood=Par|Tense=Perf|Voice=Dep" lemma="amplector">amplexus</w>
+                <w  rend="line" n="56" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="inhaereo">inhaesit</w>
+                <w  rend="line" n="56" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

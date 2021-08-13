@@ -2,12 +2,41 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0162.stoa007.corpuscorporum-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0162.stoa007.corpuscorporum-lat1:1.29-1.29">
-        <w  rend="section" n="1.29" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sapientia">Sapientia</w>
-                <w  rend="section" n="1.29" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caro1">carnis</w>
-                <w  rend="section" n="1.29" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="section" n="1.29" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="spiritus">spiritus</w>
-                <w  rend="section" n="1.29" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0162.stoa007.corpuscorporum-lat1:1.7">
+        <w  rend="section" n="1.7" pos="ADVint" msd="MORPH=empty" lemma="unde2">Unde</w>
+                <w  rend="section" n="1.7" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
+                <w  rend="section" n="1.7" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="noster">noster</w>
+                <w  rend="section" n="1.7" pos="NOMpro" msd="Case=Ind" lemma="Ioseph">Joseph</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="tango">tangere</w>
+                <w  rend="section" n="1.7" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="uolo3">volebat</w>
+                <w  rend="section" n="1.7" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="Aegyptius">Aegyptia</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="fugio">fugit</w>
+                <w  rend="section" n="1.7" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="section" n="1.7" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="manus1">manibus</w>
+                <w  rend="section" n="1.7" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">ejus</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="1.7" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
+                <w  rend="section" n="1.7" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="section" n="1.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="morsus">morsum</w>
+                <w  rend="section" n="1.7" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Sup" lemma="rabidus">rabidissimae</w>
+                <w  rend="section" n="1.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="canis">canis</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
+                <w  rend="section" n="1.7" pos="ADV" msd="Deg=Pos" lemma="paulatim">paulatim</w>
+                <w  rend="section" n="1.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uirus">virus</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="serpo">serperet</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pallium">pallium</w>
+                <w  rend="section" n="1.7" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="tango">tetigerat</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="abicio">abjecit</w>
+                <w  rend="section" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

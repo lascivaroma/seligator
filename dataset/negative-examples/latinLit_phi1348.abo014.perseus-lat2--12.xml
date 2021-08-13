@@ -1,0 +1,24 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1348.abo014.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo014.perseus-lat2:15">
+        <w  rend="chapter" n="15" pos="ADV" msd="Deg=Pos" lemma="item">item</w>
+                <w  rend="chapter" n="15" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="relatio">relationibus</w>
+                <w  rend="chapter" n="15" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="consul">consulum</w>
+                <w  rend="chapter" n="15" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="chapter" n="15" pos="PUNC" msd="MORPH=empty" lemma="'">'</w>
+                <w  rend="chapter" n="15" pos="PROrel" msd="Case=Nom|Numb=Sing" lemma="quod1">quod</w>
+                <w  rend="chapter" n="15" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="bonus">bonum</w>
+                <w  rend="chapter" n="15" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="felix">felixque</w>
+                <w  rend="chapter" n="15" pos="CON" msd="MORPH=empty" lemma="que">{felixque}</w>
+                <w  rend="chapter" n="15" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
+                <w  rend="chapter" n="15" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Gaius">C.</w>
+                <w  rend="chapter" n="15" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Caesar">Caesari</w>
+                <w  rend="chapter" n="15" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="soror">sororibusque</w>
+                <w  rend="chapter" n="15" pos="CON" msd="MORPH=empty" lemma="que">{sororibusque}</w>
+                <w  rend="chapter" n="15" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="chapter" n="15" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

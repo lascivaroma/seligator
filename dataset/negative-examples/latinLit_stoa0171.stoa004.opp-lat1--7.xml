@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0171.stoa004.opp-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0171.stoa004.opp-lat1:54-55">
+        <w  rend="line" n="54" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Dep|Person=2" lemma="sector2">sectare</w>
+                <w  rend="line" n="54" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="meus">meae</w>
+                <w  rend="line" n="54" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uestigium">uestigia</w>
+                <w  rend="line" n="54" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uita">uitae</w>
+                <w  rend="line" n="55" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="ipse">Ipsaque</w>
+                <w  rend="line" n="55" pos="CON" msd="MORPH=empty" lemma="que">{Ipsaque}</w>
+                <w  rend="line" n="55" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="supplicium">supplicia</w>
+                <w  rend="line" n="55" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="inspicio">inspiciens</w>
+                <w  rend="line" n="55" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mors">mortemque</w>
+                <w  rend="line" n="55" pos="CON" msd="MORPH=empty" lemma="que">{mortemque}</w>
+                <w  rend="line" n="55" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="seuerus">seueram</w>
+                <w  rend="line" n="55" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

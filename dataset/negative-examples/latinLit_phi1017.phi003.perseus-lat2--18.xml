@@ -1,0 +1,17 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi003.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:331-332">
+        <w  rend="line" n="331" pos="PROpos" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="meus">meorum</w>
+                <w  rend="line" n="331" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="facinus">facinorum</w>
+                <w  rend="line" n="331" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="exemplum">exempla</w>
+                <w  rend="line" n="331" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="appeto">appetunt</w>
+                <w  rend="line" n="331" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="332" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="332" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="line" n="332" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="sequor">secuntur</w>
+                <w  rend="line" n="332" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

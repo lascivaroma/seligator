@@ -1,0 +1,21 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa008.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa008.perseus-lat2:2.660-2.661">
+        <w  rend="line" n="2.660" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aula1">Aula</w>
+                <w  rend="line" n="2.660" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="chorus">choris</w>
+                <w  rend="line" n="2.660" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="epulae">epulisque</w>
+                <w  rend="line" n="2.660" pos="CON" msd="MORPH=empty" lemma="que">{epulisque}</w>
+                <w  rend="line" n="2.660" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uaco">vacat</w>
+                <w  rend="line" n="2.660" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="2.660" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="perditus">perdita</w>
+                <w  rend="line" n="2.660" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="curo">curat</w>
+                <w  rend="line" n="2.660" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.661" pos="CONsub" msd="MORPH=empty" lemma="dum2">dum</w>
+                <w  rend="line" n="2.661" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="supersum1">superest</w>
+                <w  rend="line" n="2.661" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="aliquis">aliquid</w>
+                <w  rend="line" n="2.661" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

@@ -1,0 +1,19 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi007.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi007.perseus-lat2:62-63">
+        <w  rend="line" n="62" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="alius">alia</w>
+                <w  rend="line" n="62" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="line" n="62" pos="PROind" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="alius">aliis</w>
+                <w  rend="line" n="62" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cura">cura</w>
+                <w  rend="line" n="62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fatigo">fatigat</w>
+                <w  rend="line" n="63" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uexo">vexatque</w>
+                <w  rend="line" n="63" pos="CON" msd="MORPH=empty" lemma="que">{vexatque}</w>
+                <w  rend="line" n="63" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="animus">animos</w>
+                <w  rend="line" n="63" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="nouus">nova</w>
+                <w  rend="line" n="63" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="tempestas">tempestas</w>
+                <w  rend="line" n="63" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

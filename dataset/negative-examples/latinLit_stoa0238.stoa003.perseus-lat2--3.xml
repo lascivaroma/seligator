@@ -2,23 +2,38 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0238.stoa003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0238.stoa003.perseus-lat2:31-32">
-        <w  rend="line" n="31" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Neut|Mood=Adj|Voice=Pass" lemma="dico2">dicendum</w>
-                <w  rend="line" n="31" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
-                <w  rend="line" n="31" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="31" pos="PUNC" msd="MORPH=empty" lemma="&#x2018;">‘</w>
-                <w  rend="line" n="31" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quisquis1">quisquis</w>
-                <w  rend="line" n="31" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">es</w>
-                <w  rend="line" n="31" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="32" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mundus1">mundum</w>
-                <w  rend="line" n="32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="32" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
-                <w  rend="line" n="32" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="colo2">coluit</w>
-                <w  rend="line" n="32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="32" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mens</w>
-                <w  rend="line" n="32" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="tuus">tua</w>
-                <w  rend="line" n="32" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="perdo">perdidit</w>
-                <w  rend="line" n="32" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0238.stoa003.perseus-lat2:33-38">
+        <w  rend="line" n="33" pos="PUNC" msd="MORPH=empty" lemma="&#x2019;">’</w>
+                <w  rend="line" n="34" pos="CONcoo" msd="MORPH=empty" lemma="atqui">atqui</w>
+                <w  rend="line" n="34" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="finis">fine</w>
+                <w  rend="line" n="34" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
+                <w  rend="line" n="34" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="ultimus">ultimo</w>
+                <w  rend="line" n="35" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="peccatrix">peccatrix</w>
+                <w  rend="line" n="35" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="anima">anima</w>
+                <w  rend="line" n="35" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="stultitia">stultitiam</w>
+                <w  rend="line" n="35" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="exuo">exuat</w>
+                <w  rend="line" n="35" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="36" pos="ADV" msd="Deg=Pos" lemma="saltem">saltem</w>
+                <w  rend="line" n="36" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uox">voce</w>
+                <w  rend="line" n="36" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="deus">Deum</w>
+                <w  rend="line" n="36" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="concelebro">concelebret</w>
+                <w  rend="line" n="36" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="36" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="line" n="36" pos="NOMcom" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="meritum">meritis</w>
+                <w  rend="line" n="36" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="nequeo">nequit</w>
+                <w  rend="line" n="36" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="37" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="hymnus">hymnis</w>
+                <w  rend="line" n="37" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="continuo1">continuet</w>
+                <w  rend="line" n="37" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dies">dies</w>
+                <w  rend="line" n="37" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="38" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="38" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="nox">nox</w>
+                <w  rend="line" n="38" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ullus">ulla</w>
+                <w  rend="line" n="38" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="uaco">vacet</w>
+                <w  rend="line" n="38" pos="CONsub" msd="MORPH=empty" lemma="quin2">quin</w>
+                <w  rend="line" n="38" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">Dominum</w>
+                <w  rend="line" n="38" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="cano">canat</w>
+                <w  rend="line" n="38" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

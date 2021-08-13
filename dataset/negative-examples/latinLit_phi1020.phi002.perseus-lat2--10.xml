@@ -1,0 +1,19 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi002.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:1.1.56-1.1.57">
+        <w  rend="line" n="1.1.56" pos="ADV" msd="Deg=Pos" lemma="uix">vix</w>
+                <w  rend="line" n="1.1.56" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="solus">sola</w>
+                <w  rend="line" n="1.1.56" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sufficio">sufficiunt</w>
+                <w  rend="line" n="1.1.56" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="insideo">insessaque</w>
+                <w  rend="line" n="1.1.56" pos="CON" msd="MORPH=empty" lemma="que">{insessaque}</w>
+                <w  rend="line" n="1.1.56" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pondus">pondere</w>
+                <w  rend="line" n="1.1.56" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="tanto">tanto</w>
+                <w  rend="line" n="1.1.57" pos="PRE" msd="Deg=Pos" lemma="subter2">subter</w>
+                <w  rend="line" n="1.1.57" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="anhelo">anhelat</w>
+                <w  rend="line" n="1.1.57" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="humus">humus</w>
+                <w  rend="line" n="1.1.57" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

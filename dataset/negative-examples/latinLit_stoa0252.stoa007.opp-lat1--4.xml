@@ -2,20 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0252.stoa007.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0252.stoa007.opp-lat1:1-1">
-        <w  rend="paragraph" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="mortuus?">Mortuus</w>
-                <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="tono">tonat</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caelum1">caelum</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="terra">terramque</w>
-                <w  rend="paragraph" n="1" pos="CON" msd="MORPH=empty" lemma="que">{terramque}</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="subigo">subegit</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0252.stoa007.opp-lat1:1">
+        <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uita">Vita</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="beatus">beata</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="nex">necem</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="miser">miseris</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="auerto">auertere</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uenio">uenit</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="paragraph" n="1" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="facio">facient</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="hostis">hostes</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="perfero">Pertulit</w>
+                <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Abl|Numb=Plur|Deg=Pos" lemma="miser">miseris</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uita">uita</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="beatus">beata</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="nex">necem</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

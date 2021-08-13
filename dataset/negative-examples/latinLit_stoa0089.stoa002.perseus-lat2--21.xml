@@ -1,0 +1,18 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa002.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:21-22">
+        <w  rend="line" n="21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uox">vox</w>
+                <w  rend="line" n="21" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="tenuis">tenuis</w>
+                <w  rend="line" n="21" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascNeut|Deg=Pos" lemma="tardus">tardique</w>
+                <w  rend="line" n="21" pos="CON" msd="MORPH=empty" lemma="que">{tardique}</w>
+                <w  rend="line" n="21" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="gradus">gradus</w>
+                <w  rend="line" n="21" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="oculus">oculique</w>
+                <w  rend="line" n="21" pos="CON" msd="MORPH=empty" lemma="que">{oculique}</w>
+                <w  rend="line" n="21" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="iaceo">iacentes</w>
+                <w  rend="line" n="22" pos="ADV" msd="Deg=Comp" lemma="intra1">interius</w>
+                <w  rend="line" n="22" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

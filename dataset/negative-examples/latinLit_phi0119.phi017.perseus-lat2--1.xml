@@ -2,12 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi017.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi017.perseus-lat2:235-235">
-        <w  rend="line" n="235" pos="ADVint" msd="MORPH=empty" lemma="num">num</w>
-                <w  rend="line" n="235" pos="ADJqua" msd="Numb=Sing" lemma="ampeliscor">Ámpelisca</w>
-                <w  rend="line" n="235" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="obsecro">óbsecro</w>
-                <w  rend="line" n="235" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="235" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi017.perseus-lat2:1035">
+        <w  rend="line" n="1035" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="uolo">Vin</w>
+                <w  rend="line" n="1035" pos="ADV" msd="MORPH=empty" lemma="ne2">{Vin}</w>
+                <w  rend="line" n="1035" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="1035" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="1035" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="hic1">hac</w>
+                <w  rend="line" n="1035" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uilla">villa</w>
+                <w  rend="line" n="1035" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="habito">habitat</w>
+                <w  rend="line" n="1035" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1035" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="line" n="1035" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="arbitratus">arbitratu</w>
+                <w  rend="line" n="1035" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="fio">fieri</w>
+                <w  rend="line" n="1035" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

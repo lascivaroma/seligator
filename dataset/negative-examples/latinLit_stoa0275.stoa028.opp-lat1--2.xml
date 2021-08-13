@@ -2,12 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa028.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa028.opp-lat1:6-6">
-        <w  rend="chapter" n="6" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
-                <w  rend="chapter" n="6" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Abl|Numb=Plur|Gend=Masc" lemma="mortuus1">mortuis</w>
-                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="iudico">iudicat</w>
-                <w  rend="chapter" n="6" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa028.opp-lat1:4">
+        <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="misellus">Misellos</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="uoco">vocas</w>
+                <w  rend="chapter" n="4" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="mortuus2">mortuos</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="chapter" n="4" pos="PROpos" msd="Case=Abl|Numb=Sing" lemma="tuum">tuo</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=2" lemma="loquor">loqueris</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="chapter" n="4" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="is">eis</w>
+                <w  rend="chapter" n="4" pos="ADV" msd="Deg=Pos" lemma="longe">longe</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">es</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,16 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:IV-IV">
-        <w  rend="book" n="IV" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="book" n="IV" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="is">eos</w>
-                <w  rend="book" n="IV" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">mé</w>
-                <w  rend="book" n="IV" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="decretum">decretum</w>
-                <w  rend="book" n="IV" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="book" n="IV" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="persequor">pérsequi</w>
-                <w  rend="book" n="IV" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mos">morés</w>
-                <w  rend="book" n="IV" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pater">patris</w>
-                <w  rend="book" n="IV" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:I">
+        <w  rend="book" n="I" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uarro">Varro</w>
+                <w  rend="book" n="I" pos="PRE" msd="MORPH=empty" lemma="de">De</w>
+                <w  rend="book" n="I" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uita">vita</w>
+                <w  rend="book" n="I" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="populus1">populi</w>
+                <w  rend="book" n="I" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="Romanus">Romani</w>
+                <w  rend="book" n="I" pos="NOMcom" msd="Numb=Sing" lemma="liber1">lib</w>
+                <w  rend="book" n="I" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

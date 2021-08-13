@@ -2,13 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi2331.phi024.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi2331.phi024.perseus-lat2:21-21">
-        <w  rend="chapter" n="21" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="hic1">hic</w>
-                <w  rend="chapter" n="21" pos="PROind" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="omnis">omnibus</w>
-                <w  rend="chapter" n="21" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="princeps1">principibus</w>
-                <w  rend="chapter" n="21" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="acceptus">acceptissimus</w>
-                <w  rend="chapter" n="21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
-                <w  rend="chapter" n="21" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi2331.phi024.perseus-lat2:5">
+        <w  rend="chapter" n="5" pos="ADV" msd="Deg=Pos" lemma="deinde">deinde</w>
+                <w  rend="chapter" n="5" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="chapter" n="5" pos="PROpos.ref" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="sui2">suis</w>
+                <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="miles">militibus</w>
+                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="5" pos="CONsub" msd="Gend=Neut" lemma="quod2">quod</w>
+                <w  rend="chapter" n="5" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="labor1">labore</w>
+                <w  rend="chapter" n="5" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="nimius">nimius</w>
+                <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
+                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="5" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="occido2">occisus</w>
+                <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

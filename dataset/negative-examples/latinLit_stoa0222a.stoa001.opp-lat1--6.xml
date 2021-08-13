@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0222a.stoa001.opp-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:pr">
+        <w  rend="poem" n="pr" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Lecioii">LXVIIII</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="statuo">statuit</w>
+                <w  rend="poem" n="pr" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="poem" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="epistola">epistula</w>
+                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="poem" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="poem" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sermo">sermone</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="cogito">cogitandum</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

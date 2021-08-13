@@ -2,24 +2,33 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0114a.stoa004.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0114a.stoa004.opp-lat1:25-25">
-        <w  rend="dictio" n="25" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caelicola">caelicolum</w>
-                <w  rend="dictio" n="25" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="potontia">potontiam</w>
-                <w  rend="dictio" n="25" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="licet1">liceret</w>
-                <w  rend="dictio" n="25" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="posteritas">posteritati</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="confero">conferre</w>
-                <w  rend="dictio" n="25" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="possideo">possidet</w>
-                <w  rend="dictio" n="25" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="dictio" n="25" pos="ADJqua" msd="Case=Abl|Numb=Plur|Deg=Pos" lemma="carus">caris</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Case=Dat|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="decido1">decidentibus</w>
-                <w  rend="dictio" n="25" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
-                <w  rend="dictio" n="25" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="lamentatio">lamentationis</w>
-                <w  rend="dictio" n="25" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="terminus">termino</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="do">daretur</w>
-                <w  rend="dictio" n="25" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="occumbo">occumbere</w>
-                <w  rend="dictio" n="25" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0114a.stoa004.opp-lat1:8">
+        <w  rend="dictio" n="8" pos="ADVneg" msd="MORPH=empty" lemma="numquam">numquam</w>
+                <w  rend="dictio" n="8" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="spumo">spumantia</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="labrum1">labris</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mustum">musta</w>
+                <w  rend="dictio" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="mereo">meruit</w>
+                <w  rend="dictio" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="dictio" n="8" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
+                <w  rend="dictio" n="8" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uitium">uitium</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="luxuries">luxuriem</w>
+                <w  rend="dictio" n="8" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="curuus">curua</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="falx">falce</w>
+                <w  rend="dictio" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="reseco">resecauit</w>
+                <w  rend="dictio" n="8" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="dictio" n="8" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="dictio" n="8" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="diuersus">diuersis</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="cultus1">cultibus</w>
+                <w  rend="dictio" n="8" pos="ADJqua" msd="Case=Acc|Numb=Sing|Deg=Comp" lemma="multum2">plus</w>
+                <w  rend="dictio" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="dictio" n="8" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uinum">uini</w>
+                <w  rend="dictio" n="8" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="accipio">acciperet</w>
+                <w  rend="dictio" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="dictio" n="8" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="liquor1">liquoris</w>
+                <w  rend="dictio" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="effundo2">effudit</w>
+                <w  rend="dictio" n="8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

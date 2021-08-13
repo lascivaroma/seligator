@@ -2,22 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0527.tlg019.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg019.obi-lat1:7.5-7.5">
-        <w  rend="verse" n="7.5" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="respondeo">respondensque</w>
-                <w  rend="verse" n="7.5" pos="CON" msd="MORPH=empty" lemma="que">{respondensque}</w>
-                <w  rend="verse" n="7.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="rex">rex</w>
-                <w  rend="verse" n="7.5" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Asuerus">Asuerus</w>
-                <w  rend="verse" n="7.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aio">ait</w>
-                <w  rend="verse" n="7.5" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">quis</w>
-                <w  rend="verse" n="7.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="verse" n="7.5" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="iste">iste</w>
-                <w  rend="verse" n="7.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="verse" n="7.5" pos="PROrel" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="quis1">cuius</w>
-                <w  rend="verse" n="7.5" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="potentia">potentiae</w>
-                <w  rend="verse" n="7.5" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="verse" n="7.5" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
-                <w  rend="verse" n="7.5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=SemDep|Person=3" lemma="audeo">audeat</w>
-                <w  rend="verse" n="7.5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="facio">facere</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg019.obi-lat1:2.1">
+        <w  rend="verse" n="2.1" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
+                <w  rend="verse" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="itaque">itaque</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="gero">gestis</w>
+                <w  rend="verse" n="2.1" pos="CONsub" msd="MORPH=empty" lemma="postquam">postquam</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="rex">regis</w>
+                <w  rend="verse" n="2.1" pos="NOMpro" msd="Case=Gen|Numb=Sing|Mood=Inf|Tense=Pres|Voice=Dep" lemma="Asuerus">Asueri</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="defero">deferbuerat</w>
+                <w  rend="verse" n="2.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="indignatio">indignatio</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="recordor">recordatus</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="verse" n="2.1" pos="ADJqua" msd="Case=Gen|Numb=Plur" lemma="Uasthi">Vasthi</w>
+                <w  rend="verse" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="2.1" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="facio">fecisset</w>
+                <w  rend="verse" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
+                <w  rend="verse" n="2.1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="quis1">quae</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="patior">passa</w>
+                <w  rend="verse" n="2.1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
                 
     </quote>
  </div>

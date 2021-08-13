@@ -1,0 +1,19 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0058.stoa007.opp-lat3</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0058.stoa007.opp-lat3:4.5">
+        <w  rend="chapter" n="4.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genus1">genus</w>
+                <w  rend="chapter" n="4.5" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="chapter" n="4.5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="dico2">dici</w>
+                <w  rend="chapter" n="4.5" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="4.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="possum1">potest</w>
+                <w  rend="chapter" n="4.5" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Comp" lemma="multus">plus</w>
+                <w  rend="chapter" n="4.5" pos="ADV" msd="Numb=Sing|Gend=Neut|Deg=Comp" lemma="paruus">minusue</w>
+                <w  rend="chapter" n="4.5" pos="CON" msd="MORPH=empty" lemma="ue">{minusue}</w>
+                <w  rend="chapter" n="4.5" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="quilibet">cuilibet</w>
+                <w  rend="chapter" n="4.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genus1">genus</w>
+                <w  rend="chapter" n="4.5" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

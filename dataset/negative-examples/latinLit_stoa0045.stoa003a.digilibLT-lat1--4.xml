@@ -2,39 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa003a.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa003a.digilibLT-lat1:pr-pr">
-        <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">Sunt</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="quadrilater">quadrilatera</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="triquetrus">triquetra</w>
-                <w  rend="fulltext" n="pr" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos|Mood=Par|Tense=Perf|Voice=Pass" lemma="extendo">extentis</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="lineus">lineis</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="fulltext" n="pr" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="idem">eiusdem</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="frons1">frontis</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa003a.digilibLT-lat1:pr">
+        <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
+                <w  rend="fulltext" n="pr" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=2" lemma="patior">pateris</w>
+                <w  rend="fulltext" n="pr" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="doceo">doceam</w>
+                <w  rend="fulltext" n="pr" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Adj|Voice=Pass" lemma="doceo">docendus</w>
+                <w  rend="fulltext" n="pr" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
                 <w  rend="fulltext" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aequicrurius">aequicruria</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="aequilater">aequilatera</w>
-                <w  rend="fulltext" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="rectus">rectis</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="angulus">angulis</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="obliquus">obliquis</w>
-                <w  rend="fulltext" n="pr" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="fulltext" n="pr" pos="ADV" msd="Case=Acc|Numb=Sing" lemma="Isoscele">isoscele</w>
-                <w  rend="fulltext" n="pr" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipsi</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
-                <w  rend="fulltext" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="isopleus">isopleura</w>
-                <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uoco">vocant</w>
-                <w  rend="fulltext" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing|Gend=Neut" lemma="orthogonium">orthogonia</w>
-                <w  rend="fulltext" n="pr" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
-                <w  rend="fulltext" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="fulltext" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="scalena">scalena</w>
+                <w  rend="fulltext" n="pr" pos="ADJcar" msd="Numb=Sing" lemma="cento">cento</w>
+                <w  rend="fulltext" n="pr" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
+                <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
+                <w  rend="fulltext" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="absoluo">absolvam</w>
                 <w  rend="fulltext" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

@@ -1,0 +1,16 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa007.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa007.perseus-lat2:18.5">
+        <w  rend="line" n="18.5" pos="ADJqua" msd="Case=Dat|Numb=Sing|Deg=Pos" lemma="September">Septembri</w>
+                <w  rend="line" n="18.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="18.5" pos="NOMpro" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="October">Octobri</w>
+                <w  rend="line" n="18.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="autumno">autumnat</w>
+                <w  rend="line" n="18.5" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="totus">totoque</w>
+                <w  rend="line" n="18.5" pos="CON" msd="MORPH=empty" lemma="que">{totoque}</w>
+                <w  rend="line" n="18.5" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="Nouember">Novembri</w>
+                <w  rend="line" n="18.5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

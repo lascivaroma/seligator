@@ -2,17 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215c.stoa002.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215c.stoa002.opp-lat1:30.7-30.7">
-        <w  rend="section" n="30.7" pos="ADVint" msd="Case=Acc" lemma="numquid">numquid</w>
-                <w  rend="section" n="30.7" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="section" n="30.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">dixit</w>
-                <w  rend="section" n="30.7" pos="PUNC" msd="MORPH=empty" lemma="\">\</w>
-                <w  rend="section" n="30.7" pos="PUNC" msd="MORPH=empty" lemma="'">'</w>
-                <w  rend="section" n="30.7" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
-                <w  rend="section" n="30.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Pass|Person=2" lemma="uoco">uocaberis</w>
-                <w  rend="section" n="30.7" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Cephas">Cephas</w>
-                <w  rend="section" n="30.7" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
-                <w  rend="section" n="30.7" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215c.stoa002.opp-lat1:9.8">
+        <w  rend="section" n="9.8" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="9.8" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="lego2">legerit</w>
+                <w  rend="section" n="9.8" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="caecus">caecum</w>
+                <w  rend="section" n="9.8" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="9.8" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="natiuitas">natiuitate</w>
+                <w  rend="section" n="9.8" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="idem">eundemque</w>
+                <w  rend="section" n="9.8" pos="CON" msd="MORPH=empty" lemma="que">{eundemque}</w>
+                <w  rend="section" n="9.8" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="section" n="9.8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aetas">aetatem</w>
+                <w  rend="section" n="9.8" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="habeo">habentem</w>
+                <w  rend="section" n="9.8" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
+                <w  rend="section" n="9.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="factum">factis</w>
+                <w  rend="section" n="9.8" pos="ADV" msd="Deg=Pos" lemma="subito">subito</w>
+                <w  rend="section" n="9.8" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
+                <w  rend="section" n="9.8" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="reficio">refectis</w>
+                <w  rend="section" n="9.8" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="uigeo">uiguisse</w>
+                <w  rend="section" n="9.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="lumen">luminibus</w>
+                <w  rend="section" n="9.8" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

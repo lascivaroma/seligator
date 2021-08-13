@@ -1,0 +1,22 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1:24">
+        <w  rend="epistula" n="24" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">Nos</w>
+                <w  rend="epistula" n="24" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="documentum">documenta</w>
+                <w  rend="epistula" n="24" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
+                <w  rend="epistula" n="24" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="felix">felicia</w>
+                <w  rend="epistula" n="24" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="24" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qualis1">qualia</w>
+                <w  rend="epistula" n="24" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="magnus">magnus</w>
+                <w  rend="epistula" n="24" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Scipio">Scipio</w>
+                <w  rend="epistula" n="24" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="longaeuus">longaevique</w>
+                <w  rend="epistula" n="24" pos="CON" msd="MORPH=empty" lemma="que">{longaevique}</w>
+                <w  rend="epistula" n="24" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="do">dedit</w>
+                <w  rend="epistula" n="24" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sapientia">sapientia</w>
+                <w  rend="epistula" n="24" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Laelius">Laeli</w>
+                <w  rend="epistula" n="24" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

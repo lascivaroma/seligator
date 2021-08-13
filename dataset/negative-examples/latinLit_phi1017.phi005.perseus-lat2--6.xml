@@ -1,0 +1,15 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi005.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi005.perseus-lat2:725-726">
+        <w  rend="line" n="725" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="fidus">fida</w>
+                <w  rend="line" n="725" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="famulus1">famulorum</w>
+                <w  rend="line" n="725" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="manus1">manus</w>
+                <w  rend="line" n="725" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="726" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="fero">fer</w>
+                <w  rend="line" n="726" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ops">opem</w>
+                <w  rend="line" n="726" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
+                
+    </quote>
+ </div>

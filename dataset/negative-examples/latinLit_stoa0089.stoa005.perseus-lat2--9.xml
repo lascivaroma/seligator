@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa005.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa005.perseus-lat2:1.1.266-1.1.267">
+        <w  rend="line" n="1.1.266" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="1.1.266" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="1.1.266" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
+                <w  rend="line" n="1.1.266" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="patruus1">patrui</w>
+                <w  rend="line" n="1.1.266" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pingo">pingit</w>
+                <w  rend="line" n="1.1.266" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="sacrarium">sacraria</w>
+                <w  rend="line" n="1.1.266" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Dis">Ditis</w>
+                <w  rend="line" n="1.1.267" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="fatalis">fatalesque</w>
+                <w  rend="line" n="1.1.267" pos="CON" msd="MORPH=empty" lemma="que">{fatalesque}</w>
+                <w  rend="line" n="1.1.267" pos="PROref" msd="Case=Dat|Numb=Sing" lemma="sui1">sibi</w>
+                <w  rend="line" n="1.1.267" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Manes">Manes</w>
+                <w  rend="line" n="1.1.267" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

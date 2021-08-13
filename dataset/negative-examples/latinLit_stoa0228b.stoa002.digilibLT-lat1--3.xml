@@ -2,15 +2,40 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1:I.74b-I.74b">
-        <w  rend="scholia" n="I.74b" pos="PUNC" msd="MORPH=empty" lemma="&#x201B;">‛</w>
-                <w  rend="scholia" n="I.74b" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="laetus2">laetum</w>
-                <w  rend="scholia" n="I.74b" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pecus1">pecus</w>
-                <w  rend="scholia" n="I.74b" pos="PUNC" msd="MORPH=empty" lemma="&#x2019;">’</w>
-                <w  rend="scholia" n="I.74b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="idem">idest</w>
-                <w  rend="scholia" n="I.74b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{idest}</w>
-                <w  rend="scholia" n="I.74b" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="pinguis">pingue</w>
-                <w  rend="scholia" n="I.74b" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1:I.pr">
+        <w  rend="scholia" n="I.pr" pos="CONcoo" msd="MORPH=empty" lemma="at2">At</w>
+                <w  rend="scholia" n="I.pr" pos="ADV" msd="Deg=Pos" lemma="uero3">vero</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Ind|Numb=Sing" lemma="opus1">opus</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="rusticatio">rusticationis</w>
+                <w  rend="scholia" n="I.pr" pos="ADJcar" msd="MORPH=empty" lemma="3">III</w>
+                <w  rend="scholia" n="I.pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="scholia" n="I.pr" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="tertius">IIII</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uolumen">voluminibus</w>
+                <w  rend="scholia" n="I.pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="contineo">continetur</w>
+                <w  rend="scholia" n="I.pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="scholia" n="I.pr" pos="ADVrel" msd="MORPH=empty" lemma="quapropter1">quapropter</w>
+                <w  rend="scholia" n="I.pr" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="tertius">tertius</w>
+                <w  rend="scholia" n="I.pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="longus">longiorem</w>
+                <w  rend="scholia" n="I.pr" pos="ADV" msd="Deg=Pos" lemma="rursus">rursum</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="praefatio">praefationem</w>
+                <w  rend="scholia" n="I.pr" pos="ADVrel" msd="MORPH=empty" lemma="uelut1">velut</w>
+                <w  rend="scholia" n="I.pr" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="nouus">novo</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="principium">principio</w>
+                <w  rend="scholia" n="I.pr" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="scholia" n="I.pr" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primae</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="comparatio1">conparatione</w>
+                <w  rend="scholia" n="I.pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="incipio">incipit</w>
+                <w  rend="scholia" n="I.pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="scholia" n="I.pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="scholia" n="I.pr" pos="PROdem" msd="Case=Dat|Numb=Sing|Deg=Pos" lemma="tertius">IIII</w>
+                <w  rend="scholia" n="I.pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="expeditus">expeditam</w>
+                <w  rend="scholia" n="I.pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="scholia" n="I.pr" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="festino">festinantem</w>
+                <w  rend="scholia" n="I.pr" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="refero">referens</w>
+                <w  rend="scholia" n="I.pr" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="scholia" n="I.pr" pos="ADJord" msd="Case=Abl|Numb=Sing" lemma="secundus2">secundo</w>
+                <w  rend="scholia" n="I.pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="similitudo">similitudinem</w>
+                <w  rend="scholia" n="I.pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

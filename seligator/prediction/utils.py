@@ -33,6 +33,7 @@ def represent(
     out = {
         **metadata,
         "prediction": pred,
+        "score-prediction": prediction["probs"].max(),
         **{
             additional_output: prediction[additional_output]
             for additional_output in ("bert_projection", "attention", "doc-vectors", "probs")

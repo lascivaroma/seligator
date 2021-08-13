@@ -2,24 +2,38 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1:II.36-II.36">
-        <w  rend="part" n="II.36" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Dep" lemma="precedo">Precedente</w>
-                <w  rend="part" n="II.36" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="feruor">fervore</w>
-                <w  rend="part" n="II.36" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="part" n="II.36" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="negligo">neglecto</w>
-                <w  rend="part" n="II.36" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="duritia">duritia</w>
-                <w  rend="part" n="II.36" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="matricus">matricis</w>
-                <w  rend="part" n="II.36" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="efficio">efficitur</w>
-                <w  rend="part" n="II.36" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="part" n="II.36" pos="CONcoo" msd="MORPH=empty" lemma="nam">nam</w>
-                <w  rend="part" n="II.36" pos="ADV" msd="Deg=Pos" lemma="aliquando">aliquando</w>
-                <w  rend="part" n="II.36" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="uniuersus">universa</w>
-                <w  rend="part" n="II.36" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="duresco">durescit</w>
-                <w  rend="part" n="II.36" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="II.36" pos="ADV" msd="Deg=Pos" lemma="aliquando">aliquando</w>
-                <w  rend="part" n="II.36" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pars">pars</w>
-                <w  rend="part" n="II.36" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="aliquis">aliqua</w>
-                <w  rend="part" n="II.36" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa005.digilibLT-lat1:I.16">
+        <w  rend="part" n="I.16" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">Sunt</w>
+                <w  rend="part" n="I.16" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="testiculus">testiculi</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="mulier">mulierum</w>
+                <w  rend="part" n="I.16" pos="PRE" msd="MORPH=empty" lemma="prope2">prope</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ceruix">cervicem</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="matricus">matricis</w>
+                <w  rend="part" n="I.16" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="I.16" pos="ADJdis" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="singulus">singuli</w>
+                <w  rend="part" n="I.16" pos="PRE" msd="MORPH=empty" lemma="secundum2">secundum</w>
+                <w  rend="part" n="I.16" pos="ADJdis" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="singulus">singula</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="latus1">latera</w>
+                <w  rend="part" n="I.16" pos="ADV" msd="Deg=Pos" lemma="extrinsecus">extrinsecus</w>
+                <w  rend="part" n="I.16" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="pono">positi</w>
+                <w  rend="part" n="I.16" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="I.16" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="I.16" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="part" n="I.16" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="rotundus">rotundi</w>
+                <w  rend="part" n="I.16" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="I.16" pos="PROind" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="aliquantulus">aliquantulum</w>
+                <w  rend="part" n="I.16" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="part" n="I.16" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sessio">sessione</w>
+                <w  rend="part" n="I.16" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="latus2">latiores</w>
+                <w  rend="part" n="I.16" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="I.16" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="I.16" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="paruus2">minores</w>
+                <w  rend="part" n="I.16" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="I.16" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="mollis">molliores</w>
+                <w  rend="part" n="I.16" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="part" n="I.16" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="masculus">masculi</w>
+                <w  rend="part" n="I.16" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,12 +2,54 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1:151-151">
-        <w  rend="part" n="151" pos="PRE" msd="MORPH=empty" lemma="ex">Ex</w>
-                <w  rend="part" n="151" pos="PROrel" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
-                <w  rend="part" n="151" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="nephriticus">nephriticum</w>
-                <w  rend="part" n="151" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="apprehendo">adprehendis</w>
-                <w  rend="part" n="151" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1:21">
+        <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="febris">febre</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="acutus">acuta</w>
+                <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="dolor">dolore</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="latus1">lateris</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=Com|Deg=Pos" lemma="uehemens">vehementi</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="iugulum">iugulum</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="part" n="21" pos="ADV" msd="Deg=Pos" lemma="palam1">palam</w>
+                <w  rend="part" n="21" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="suus">suae</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pars">partis</w>
+                <w  rend="part" n="21" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="tendo">tendente</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="respiratio">respirationeque</w>
+                <w  rend="part" n="21" pos="CON" msd="MORPH=empty" lemma="que">{respirationeque}</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="difficilis">difficili</w>
+                <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="tussicula">tussicula</w>
+                <w  rend="part" n="21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="part" n="21" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qua1">qua</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="siue1">sive</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="sanguinolentus">sanguinolenta</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="spumosus">spumosi</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Nom|Numb=Plur|Deg=Pos" lemma="felleus">fellei</w>
+                <w  rend="part" n="21" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
+                <w  rend="part" n="21" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="purulentus">purulenti</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="humor">humores</w>
+                <w  rend="part" n="21" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="excludo">excluduntur</w>
+                <w  rend="part" n="21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="leuiatio">leviatione</w>
+                <w  rend="part" n="21" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="dolor">doloris</w>
+                <w  rend="part" n="21" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Dep" lemma="attestor">adtestante</w>
+                <w  rend="part" n="21" pos="ADVrel" msd="MORPH=empty" lemma="quotiens1">quotiens</w>
+                <w  rend="part" n="21" pos="PRE" msd="MORPH=empty" lemma="super2">super</w>
+                <w  rend="part" n="21" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="is">id</w>
+                <w  rend="part" n="21" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="latus1">latus</w>
+                <w  rend="part" n="21" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="part" n="21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="doleo">dolet</w>
+                <w  rend="part" n="21" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="iaceo">iacuerit</w>
+                <w  rend="part" n="21" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="aegroto">aegrotans</w>
+                <w  rend="part" n="21" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

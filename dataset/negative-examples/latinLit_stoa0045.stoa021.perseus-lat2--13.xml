@@ -1,0 +1,18 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa021.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa021.perseus-lat2:19.12">
+        <w  rend="line" n="19.12" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
+                <w  rend="line" n="19.12" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="memoro">memorem</w>
+                <w  rend="line" n="19.12" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="portus">portusque</w>
+                <w  rend="line" n="19.12" pos="CON" msd="MORPH=empty" lemma="que">{portusque}</w>
+                <w  rend="line" n="19.12" pos="PROpos" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="tuus">tuos</w>
+                <w  rend="line" n="19.12" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mons">montesque</w>
+                <w  rend="line" n="19.12" pos="CON" msd="MORPH=empty" lemma="que">{montesque}</w>
+                <w  rend="line" n="19.12" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="lacus">lacusque</w>
+                <w  rend="line" n="19.12" pos="CON" msd="MORPH=empty" lemma="que">{lacusque}</w>
+                <w  rend="line" n="19.12" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+                
+    </quote>
+ </div>

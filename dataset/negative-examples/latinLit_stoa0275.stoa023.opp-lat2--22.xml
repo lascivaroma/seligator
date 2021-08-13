@@ -1,0 +1,21 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa023.opp-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa023.opp-lat2:3">
+        <w  rend="section" n="3" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="nullus">nullum</w>
+                <w  rend="section" n="3" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="uolo?">uolentem</w>
+                <w  rend="section" n="3" pos="PROref" msd="Case=Dat|Numb=Sing" lemma="sui1">sibi</w>
+                <w  rend="section" n="3" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="adhaereo">adhaerere</w>
+                <w  rend="section" n="3" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="suscipio">suscepit</w>
+                <w  rend="section" n="3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="3" pos="PROind" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="nullus">nullius</w>
+                <w  rend="section" n="3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mensa">mensam</w>
+                <w  rend="section" n="3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="tectum">tectumue</w>
+                <w  rend="section" n="3" pos="CON" msd="MORPH=empty" lemma="ue">{tectumue}</w>
+                <w  rend="section" n="3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="despicio">despexit</w>
+                <w  rend="section" n="3" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

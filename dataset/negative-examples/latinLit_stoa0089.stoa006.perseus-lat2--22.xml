@@ -1,0 +1,21 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa006.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa006.perseus-lat2:1.21-1.22">
+        <w  rend="line" n="1.21" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
+                <w  rend="line" n="1.21" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="iungo">iungere</w>
+                <w  rend="line" n="1.21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="differo">differt</w>
+                <w  rend="line" n="1.21" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.22" pos="ADVrel" msd="Gend=Fem" lemma="qui2">quam</w>
+                <w  rend="line" n="1.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="pango">pepigit</w>
+                <w  rend="line" n="1.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.22" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="castus">castasque</w>
+                <w  rend="line" n="1.22" pos="CON" msd="MORPH=empty" lemma="que">{castasque}</w>
+                <w  rend="line" n="1.22" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="prex">preces</w>
+                <w  rend="line" n="1.22" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="impleo">implere</w>
+                <w  rend="line" n="1.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="recuso">recusat</w>
+                <w  rend="line" n="1.22" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+                
+    </quote>
+ </div>

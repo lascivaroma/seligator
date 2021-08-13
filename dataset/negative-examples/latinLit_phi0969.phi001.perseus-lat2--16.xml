@@ -1,0 +1,20 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi0969.phi001.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0969.phi001.perseus-lat2:2.41-2.42">
+        <w  rend="line" n="2.41" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="posco">Poscis</w>
+                <w  rend="line" n="2.41" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ops">opem</w>
+                <w  rend="line" n="2.41" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="neruus">nervis</w>
+                <w  rend="line" n="2.41" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="corpus">corpusque</w>
+                <w  rend="line" n="2.41" pos="CON" msd="MORPH=empty" lemma="que">{corpusque}</w>
+                <w  rend="line" n="2.41" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="fidelis2">fidele</w>
+                <w  rend="line" n="2.41" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="senecta">senectae</w>
+                <w  rend="line" n="2.41" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.42" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=2" lemma="sum1">esto</w>
+                <w  rend="line" n="2.42" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.42" pos="INJ" msd="MORPH=empty" lemma="age">age</w>
+                <w  rend="line" n="2.42" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

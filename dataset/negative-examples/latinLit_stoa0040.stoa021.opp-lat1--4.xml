@@ -2,13 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa021.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa021.opp-lat1:3.4-3.4">
-        <w  rend="section" n="3.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="mentior">mentiuntur</w>
-                <w  rend="section" n="3.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="3.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="insidior">insidiantur</w>
-                <w  rend="section" n="3.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="3.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="tergiucrus">tergiucrsantur</w>
-                <w  rend="section" n="3.4" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa021.opp-lat1:3.22">
+        <w  rend="section" n="3.22" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="section" n="3.22" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="qui1">quo</w>
+                <w  rend="section" n="3.22" pos="ADJcar" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="unus">uno</w>
+                <w  rend="section" n="3.22" pos="ADV" msd="Deg=Pos" lemma="bene">bene</w>
+                <w  rend="section" n="3.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="intelligo">intellegitur</w>
+                <w  rend="section" n="3.22" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="3.22" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
+                <w  rend="section" n="3.22" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="admoneo">admonuisse</w>
+                <w  rend="section" n="3.22" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Martha">Martham</w>
+                <w  rend="section" n="3.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="3.22" pos="ADVrel" msd="MORPH=empty" lemma="ubi1">ubi</w>
+                <w  rend="section" n="3.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aio">ait</w>
+                <w  rend="section" n="3.22" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="3.22" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Martha">Martha</w>
+                <w  rend="section" n="3.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="3.22" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Martha">Martha</w>
+                <w  rend="section" n="3.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="3.22" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="sollicitus">sollicita</w>
+                <w  rend="section" n="3.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">es</w>
+                <w  rend="section" n="3.22" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="3.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=2" lemma="turbo2">turbaris</w>
+                <w  rend="section" n="3.22" pos="PRE" msd="MORPH=empty" lemma="circa2">circa</w>
+                <w  rend="section" n="3.22" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Sup" lemma="multus">plurima</w>
+                <w  rend="section" n="3.22" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

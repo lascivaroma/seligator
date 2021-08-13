@@ -126,7 +126,8 @@ class ClassificationTsvReader(DatasetReader):
 
         self.metadata_encoding: MetadataEncoding = metadata_encoding
         self.metadata_tokens_categories: Tuple[str, ...] = metadata_tokens_categories
-        logging.info("TSV READER uses following metadata encoding %s " % metadata_encoding)
+        logging.warning("TSV READER uses following metadata encoding %s " % metadata_encoding)
+        logging.warning(f"TSV Reader keeps following metadata {', '.join(self.metadata_tokens_categories)}")
 
         if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL and not self.metadata_tokens_categories:
             raise ValueError("You are using AS_CATEGORICAL for encoding metadata but are not declaring categories. "
@@ -237,7 +238,8 @@ class ClassificationTsvReader(DatasetReader):
             metadata_tokens = metadata_tokens or []
             for tok in metadata_tokens:
                 cat, val = tok.split("=")
-                _mtdt[cat].append(val)
+                if cat in self.metadata_tokens_categories:
+                    _mtdt[cat].append(val)
             # Categorical Basis only accepts "one" value
             # We develop mergers based on the input or name
             fields.update({

@@ -2,18 +2,37 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089a.stoa002.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089a.stoa002.opp-lat1:2-2">
-        <w  rend="letter" n="2" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quod</w>
-                <w  rend="letter" n="2" pos="ADV" msd="Deg=Pos" lemma="equidem">equidem</w>
-                <w  rend="letter" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="bonum">bonum</w>
-                <w  rend="letter" n="2" pos="ADV" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="is">eo</w>
-                <w  rend="letter" n="2" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Comp" lemma="admirabilis">admirabilius</w>
-                <w  rend="letter" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="letter" n="2" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
-                <w  rend="letter" n="2" pos="ADVrel" msd="MORPH=empty" lemma="qui2">quo</w>
-                <w  rend="letter" n="2" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Comp" lemma="desperatus">desperatius</w>
-                <w  rend="letter" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
-                <w  rend="letter" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089a.stoa002.opp-lat1:1">
+        <w  rend="letter" n="1" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="nos">nobis</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="grandis">grandis</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="audacia">audacia</w>
+                <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="1" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="Deg=Pos" lemma="uel2">uel</w>
+                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="apud">apud</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="municipalis">municipales</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="cathedrarius">cathedrarios</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="orator">oratores</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="Person=3" lemma="at2">ant</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="forensis">forenses</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="rabula">rabulas</w>
+                <w  rend="letter" n="1" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="garrio">garriamus</w>
+                <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="1" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="letter" n="1" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="letter" n="1" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="letter" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="peroro">perorant</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="saluus">salua</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pax">pace</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Com|Deg=Comp" lemma="potius">potiorum</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="turba">turba</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="numerosus">numerosior</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Sup" lemma="illitteratus">inliteratissimis</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Numb=Plur" lemma="litus">literis</w>
+                <w  rend="letter" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uaco">uacant</w>
+                <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

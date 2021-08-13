@@ -2,14 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa012.perseus-lat2:1.155-1.155">
-        <w  rend="line" n="1.155" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="exsanguis">exangues</w>
-                <w  rend="line" n="1.155" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.155" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genitor">genitor</w>
-                <w  rend="line" n="1.155" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.155" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=2" lemma="miror">mirabere</w>
-                <w  rend="line" n="1.155" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uultus">vultus</w>
-                <w  rend="line" n="1.155" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa012.perseus-lat2:1.213-1.215">
+        <w  rend="line" n="1.213" pos="ADV" msd="Deg=Pos" lemma="iam">iamque</w>
+                <w  rend="line" n="1.213" pos="CON" msd="MORPH=empty" lemma="que">{iamque}</w>
+                <w  rend="line" n="1.213" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="opportunus">opportunam</w>
+                <w  rend="line" n="1.213" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="motus">motu</w>
+                <w  rend="line" n="1.213" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="strepo">strepuisse</w>
+                <w  rend="line" n="1.213" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="rebellis">rebelli</w>
+                <w  rend="line" n="1.214" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=SemDep|Person=3" lemma="gaudeo">gaudet</w>
+                <w  rend="line" n="1.214" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="perfidia">perfidiam</w>
+                <w  rend="line" n="1.214" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="praebeo">praebensque</w>
+                <w  rend="line" n="1.214" pos="CON" msd="MORPH=empty" lemma="que">{praebensque}</w>
+                <w  rend="line" n="1.214" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="exemplum">exempla</w>
+                <w  rend="line" n="1.214" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="labor1">labori</w>
+                <w  rend="line" n="1.215" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sustineo">sustinet</w>
+                <w  rend="line" n="1.215" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="accendo">accensos</w>
+                <w  rend="line" n="1.215" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="aestiuus">aestivo</w>
+                <w  rend="line" n="1.215" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="puluis">pulvere</w>
+                <w  rend="line" n="1.215" pos="VER" msd="Case=Acc|Numb=Plur" lemma="sol">soles</w>
+                <w  rend="line" n="1.215" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

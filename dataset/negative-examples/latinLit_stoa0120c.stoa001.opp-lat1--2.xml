@@ -2,12 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0120c.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120c.stoa001.opp-lat1:4-4">
-        <w  rend="section" n="4" pos="ADV" msd="Deg=Pos" lemma="scilicet">scilicet</w>
-                <w  rend="section" n="4" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="noster">noster</w>
-                <w  rend="section" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="populus1">populus</w>
-                <w  rend="section" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="intelligo">intellegitur</w>
-                <w  rend="section" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120c.stoa001.opp-lat1:4">
+        <w  rend="section" n="4" pos="ADV" msd="Deg=Pos" lemma="item">item</w>
+                <w  rend="section" n="4" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="psalmus">psalmo</w>
+                <w  rend="section" n="4" pos="ADJcar" msd="MORPH=empty" lemma="46">XLVI</w>
+                <w  rend="section" n="4" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="ascendo">ascendit</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="section" n="4" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="iubilatio">iubilatione</w>
+                <w  rend="section" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
+                <w  rend="section" n="4" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uox">uoce</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="tuba">tubae</w>
+                <w  rend="section" n="4" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

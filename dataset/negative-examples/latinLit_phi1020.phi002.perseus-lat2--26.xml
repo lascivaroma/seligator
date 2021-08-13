@@ -1,0 +1,73 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi002.perseus-lat2</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:4.3.67-4.3.78">
+        <w  rend="line" n="4.3.67" pos="CONcoo" msd="MORPH=empty" lemma="at2">At</w>
+                <w  rend="line" n="4.3.67" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="flauus">flavum</w>
+                <w  rend="line" n="4.3.67" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caput">caput</w>
+                <w  rend="line" n="4.3.67" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="humidus">umidumque</w>
+                <w  rend="line" n="4.3.67" pos="CON" msd="MORPH=empty" lemma="que">{umidumque}</w>
+                <w  rend="line" n="4.3.67" pos="ADV" msd="Deg=Pos" lemma="late">late</w>
+                <w  rend="line" n="4.3.68" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="crinis">crinem</w>
+                <w  rend="line" n="4.3.68" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="mollis">mollibus</w>
+                <w  rend="line" n="4.3.68" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos|Mood=Par|Tense=Perf|Voice=Pass" lemma="impedio">impeditus</w>
+                <w  rend="line" n="4.3.68" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ulua">ulvis</w>
+                <w  rend="line" n="4.3.69" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="Uulturnus">Vulturnus</w>
+                <w  rend="line" n="4.3.69" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="leuo1">levat</w>
+                <w  rend="line" n="4.3.69" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="os1">ora</w>
+                <w  rend="line" n="4.3.69" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="magnus">maximoque</w>
+                <w  rend="line" n="4.3.69" pos="CON" msd="MORPH=empty" lemma="que">{maximoque}</w>
+                <w  rend="line" n="4.3.70" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pons">pontis</w>
+                <w  rend="line" n="4.3.70" pos="NOMpro" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="Caesareus">Caesarei</w>
+                <w  rend="line" n="4.3.70" pos="ADJqua" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="reclinis">reclinus</w>
+                <w  rend="line" n="4.3.70" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="arcus">arcu</w>
+                <w  rend="line" n="4.3.71" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="raucus">raucis</w>
+                <w  rend="line" n="4.3.71" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="talis">talia</w>
+                <w  rend="line" n="4.3.71" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="faux">faucibus</w>
+                <w  rend="line" n="4.3.71" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="redundo">redundat</w>
+                <w  rend="line" n="4.3.71" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="4.3.72" pos="PUNC" msd="MORPH=empty" lemma="&#x2018;">‘</w>
+                <w  rend="line" n="4.3.72" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="campus1">camporum</w>
+                <w  rend="line" n="4.3.72" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="bonus">bone</w>
+                <w  rend="line" n="4.3.72" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="conditor1">conditor</w>
+                <w  rend="line" n="4.3.72" pos="PROpos" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="mei">meorum</w>
+                <w  rend="line" n="4.3.72" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="4.3.73" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="4.3.73" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="4.3.73" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uallis">vallibus</w>
+                <w  rend="line" n="4.3.73" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="auius">aviis</w>
+                <w  rend="line" n="4.3.73" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="refundo2">refusum</w>
+                <w  rend="line" n="4.3.74" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="4.3.74" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ripa">ripas</w>
+                <w  rend="line" n="4.3.74" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="habito">habitare</w>
+                <w  rend="line" n="4.3.74" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="nescio">nescientem</w>
+                <w  rend="line" n="4.3.75" pos="ADJqua" msd="Case=Gen|Numb=Sing|Deg=Pos" lemma="rectum">recti</w>
+                <w  rend="line" n="4.3.75" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="lex">legibus</w>
+                <w  rend="line" n="4.3.75" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="alueus">alvei</w>
+                <w  rend="line" n="4.3.75" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="ligo2">ligasti</w>
+                <w  rend="line" n="4.3.75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="4.3.76" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="4.3.76" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="line" n="4.3.76" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="line" n="4.3.76" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
+                <w  rend="line" n="4.3.76" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="turbidus">turbidus</w>
+                <w  rend="line" n="4.3.76" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="minax">minaxque</w>
+                <w  rend="line" n="4.3.76" pos="CON" msd="MORPH=empty" lemma="que">{minaxque}</w>
+                <w  rend="line" n="4.3.76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="4.3.77" pos="ADV" msd="Deg=Pos" lemma="uix">vix</w>
+                <w  rend="line" n="4.3.77" pos="VER" msd="Numb=Sing|Mood=Par|Tense=Perf|Voice=Dep" lemma="patior">passus</w>
+                <w  rend="line" n="4.3.77" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="dubius">dubias</w>
+                <w  rend="line" n="4.3.77" pos="ADJadv.ord" msd="Deg=Comp" lemma="prius">prius</w>
+                <w  rend="line" n="4.3.77" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="carina">carinas</w>
+                <w  rend="line" n="4.3.77" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="4.3.78" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="4.3.78" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pons">pontem</w>
+                <w  rend="line" n="4.3.78" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="fero">fero</w>
+                <w  rend="line" n="4.3.78" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="peruius">perviusque</w>
+                <w  rend="line" n="4.3.78" pos="CON" msd="MORPH=empty" lemma="que">{perviusque}</w>
+                <w  rend="line" n="4.3.78" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=1" lemma="caleo">caleor</w>
+                <w  rend="line" n="4.3.78" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                
+    </quote>
+ </div>

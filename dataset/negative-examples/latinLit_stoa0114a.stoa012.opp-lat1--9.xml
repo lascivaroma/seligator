@@ -1,0 +1,16 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:stoa0114a.stoa012.opp-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0114a.stoa012.opp-lat1:1">
+        <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="paragraph" n="1" pos="ADV" msd="Deg=Pos" lemma="inde">inde</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="pauci">paucorum</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="telum">telis</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="multitudo">multitudo</w>
+                <w  rend="paragraph" n="1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="subsisto">substitit</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>

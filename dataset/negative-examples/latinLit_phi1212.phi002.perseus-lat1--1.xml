@@ -2,17 +2,49 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1212.phi002.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1212.phi002.perseus-lat1:11.30-11.30">
-        <w  rend="chapter" n="11.30" pos="CONcoo" msd="MORPH=empty" lemma="nec2">Nec</w>
-                <w  rend="chapter" n="11.30" pos="INJ" msd="Numb=Sing" lemma="Hercules">Hercule</w>
-                <w  rend="chapter" n="11.30" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="labor1">laborum</w>
-                <w  rend="chapter" n="11.30" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="chapter" n="11.30" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="sumptus">sumptuumque</w>
-                <w  rend="chapter" n="11.30" pos="CON" msd="MORPH=empty" lemma="que">{sumptuumque}</w>
-                <w  rend="chapter" n="11.30" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quisquam">quicquam</w>
-                <w  rend="chapter" n="11.30" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
-                <w  rend="chapter" n="11.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="paeniteo">paenituit</w>
-                <w  rend="chapter" n="11.30" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1212.phi002.perseus-lat1:9.19">
+        <w  rend="chapter" n="9.19" pos="ADV" msd="Deg=Pos" lemma="ita">Ita</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="gaudium">gaudio</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="perfundo2">perfusus</w>
+                <w  rend="chapter" n="9.19" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="9.19" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="suus">suae</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="fides2">fidei</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="praeceps1">praecipitium</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="praecipito">praecipitat</w>
+                <w  rend="chapter" n="9.19" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Myrmex">Myrmex</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="9.19" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="9.19" pos="ADV" msd="Deg=Pos" lemma="modo1">modo</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="capio2">capere</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="9.19" pos="CONcoo" msd="Case=Acc" lemma="uerum4">verum</w>
+                <w  rend="chapter" n="9.19" pos="ADV" msd="Deg=Pos" lemma="saltem">saltem</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="contingo1">contingere</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="9.19" pos="ADVrel" msd="Gend=Fem" lemma="quam1">quam</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="exitium">exitio</w>
+                <w  rend="chapter" n="9.19" pos="PROpos.ref" msd="Case=Dat|Numb=Sing|Gend=MascNeut" lemma="suus">suo</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="uideo">viderat</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pecunia">pecuniam</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="cupio">cupiens</w>
+                <w  rend="chapter" n="9.19" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="9.19" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="magnus">magnis</w>
+                <w  rend="chapter" n="9.19" pos="PROpos.ref" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="suus">suis</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="labor1">laboribus</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="perficio">perfectum</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="desiderium">desiderium</w>
+                <w  rend="chapter" n="9.19" pos="ADJqua" msd="Case=Dat|Numb=Sing" lemma="philesithero">Philesithero</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="laetitia">laetitia</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="percio">percitus</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="nuntio">nuntiat</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="9.19" pos="ADV" msd="Deg=Pos" lemma="statim">statimque</w>
+                <w  rend="chapter" n="9.19" pos="CON" msd="MORPH=empty" lemma="que">{statimque}</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="destino">destinatum</w>
+                <w  rend="chapter" n="9.19" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="praemium">praemium</w>
+                <w  rend="chapter" n="9.19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="reposco">reposcit</w>
+                <w  rend="chapter" n="9.19" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -1,0 +1,14 @@
+<div type="fragment" ana="#negative-example">
+    <bibl type="source">
+        <idno type="CTS_URN">urn:cts:latinLit:phi1512.phi005.horatiusNet-lat1</idno>
+    </bibl>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1512.phi005.horatiusNet-lat1:1.7.23">
+        <w  rend="comment" n="1.7.23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="laudo">lavdat</w>
+                <w  rend="comment" n="1.7.23" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="Brutus">brvtvm</w>
+                <w  rend="comment" n="1.7.23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="laudo">lavdatqve</w>
+                <w  rend="comment" n="1.7.23" pos="CON" msd="MORPH=empty" lemma="que">{lavdatqve}</w>
+                <w  rend="comment" n="1.7.23" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="cohors">cohortem</w>
+                <w  rend="comment" n="1.7.23" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                
+    </quote>
+ </div>
