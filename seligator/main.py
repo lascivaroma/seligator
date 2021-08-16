@@ -114,7 +114,7 @@ class Seligator:
         additional_model_kwargs: Dict[str, Any] = None,
         batches_per_epoch: Optional[int] = None,
         reader_kwargs: Dict[str, Any] = None,
-        encoder_hidden_size: int = 64,
+        encoder_hidden_size: int = 25,
         agglomerate_msd: bool = False,
         use_bert_highway: bool = False,
         model_embedding_kwargs: Optional[Dict[str, Any]] = None,

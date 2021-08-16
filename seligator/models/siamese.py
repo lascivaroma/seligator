@@ -15,7 +15,8 @@ from allennlp.training.metrics import CategoricalAccuracy, BooleanAccuracy
 
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
-from seligator.modules.loss_functions.constrastiveLoss import ContrastiveLoss
+#from seligator.modules.loss_functions.constrastiveLoss import ContrastiveLoss
+from pytorch_metric_learning.losses.contrastive_loss import ContrastiveLoss
 from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 logger = logging.getLogger(__name__)
@@ -137,6 +138,12 @@ class SiameseClassifier(BaseModel):
         v_l, left_additional_output = self.left_encoder(left, metadata_vector=metadata_vector)
         v_r, right_additional_output = self.right_encoder(right, metadata_vector=metadata_vector)
 
+        # With pytorch_metric_learning, we need to split positive and negative pairs
+        pairs = torch.cat([v_l], dim=-1)
+        print(pairs.shape)
+        pos = pairs[[label == True]]
+        neg = pairs[[label == False]]
+        print(pos, neg)
         loss = self._loss(v_l, v_r, label)
         sim = F.cosine_similarity(v_l, v_r)
         sim_bool = sim > self.prediction_threshold

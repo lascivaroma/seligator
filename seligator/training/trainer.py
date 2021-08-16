@@ -1,5 +1,6 @@
 import tempfile
 import math
+import os
 import logging
 from typing import Tuple, List, Iterable, Callable, Union, Optional, Dict, Any
 from allennlp.data import (
@@ -30,7 +31,8 @@ def read_data(reader: DatasetReader, use_siamese_set: bool = True,
     """
     logging.info("Reading data")
     training_data = list(reader.read(f"{folder}/train.txt"))
-    if use_siamese_set:
+    # ToDo: remove ?
+    if use_siamese_set and os.path.exists(f"{folder}/siamese.txt"):
         training_data.extend(list(reader.read(f"{folder}/siamese.txt")))
     validation_data = list(reader.read(f"{folder}/dev.txt"))
 
@@ -122,33 +124,33 @@ def generate_all_data(
         raise ValueError("`instance_type` must be one of "+str({"default", "siamese", "triplet"}))
 
     # Expects a siamese.txt file in the same directory as train.txt
-    if instance_type in {"siamese", "triplet"}:
-        # Samples are not siamese loaded. Siamese affects the other datasets
-        siamese_reader = ClassificationTsvReader(
-            token_features=token_features, msd_features=msd_features,
-            get_me_bert=get_me_bert, instance_type="default",
-            **tsv_reader_kwargs
-        )
-        siamese_samples = get_siamese_samples(siamese_reader, siamese_filepath=f"{folder}/siamese.txt")
-
-        # Then we create the normal one
-        dataset_reader = ClassificationTsvReader(
-            token_features=token_features, msd_features=msd_features,
-            get_me_bert=get_me_bert,
-            instance_type=instance_type, siamese_samples=siamese_samples,
-            token_indexers=siamese_reader.token_indexers,
-            tokenizer=siamese_reader.tokenizer,
-            **tsv_reader_kwargs
-        )
-        # And parse the original data
-        train_data, dev_data = read_data(dataset_reader, use_siamese_set=False, folder=folder)
-    else:
-        dataset_reader = ClassificationTsvReader(
-            token_features=token_features, msd_features=msd_features,
-            get_me_bert=get_me_bert, instance_type=instance_type,
-            **tsv_reader_kwargs
-        )
-        train_data, dev_data = read_data(dataset_reader, use_siamese_set=True, folder=folder)
+    # if instance_type in {"siamese", "triplet"}:
+    #     # Samples are not siamese loaded. Siamese affects the other datasets
+    #     siamese_reader = ClassificationTsvReader(
+    #         token_features=token_features, msd_features=msd_features,
+    #         get_me_bert=get_me_bert, instance_type="default",
+    #         **tsv_reader_kwargs
+    #     )
+    #     siamese_samples = get_siamese_samples(siamese_reader, siamese_filepath=f"{folder}/siamese.txt")
+    #
+    #     # Then we create the normal one
+    #     dataset_reader = ClassificationTsvReader(
+    #         token_features=token_features, msd_features=msd_features,
+    #         get_me_bert=get_me_bert,
+    #         instance_type=instance_type, siamese_samples=siamese_samples,
+    #         token_indexers=siamese_reader.token_indexers,
+    #         tokenizer=siamese_reader.tokenizer,
+    #         **tsv_reader_kwargs
+    #     )
+    #     # And parse the original data
+    #     train_data, dev_data = read_data(dataset_reader, use_siamese_set=False, folder=folder)
+    # else:
+    dataset_reader = ClassificationTsvReader(
+        token_features=token_features, msd_features=msd_features,
+        get_me_bert=get_me_bert, instance_type=instance_type,
+        **tsv_reader_kwargs
+    )
+    train_data, dev_data = read_data(dataset_reader, use_siamese_set=True, folder=folder)
 
     if ratio_train != 1.0:
         train_data = train_data[:math.ceil(ratio_train*len(train_data))]

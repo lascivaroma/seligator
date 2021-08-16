@@ -1,10 +1,10 @@
 import logging
 import random
 import os
+import json
 import regex as re
 from collections import defaultdict
 from typing import Dict, Iterable, Tuple, List, Optional, Any, Set, Union, ClassVar
-
 import lxml.etree as et
 
 from allennlp.data import DatasetReader, Instance
@@ -74,7 +74,7 @@ class ClassificationTsvReader(DatasetReader):
             agglomerate_msd: bool = False,
             get_me_bert: Optional[GetMeBert] = GetMeBert(),
             instance_type: str = "default",
-            siamese_probability: float = 1.0,
+            #siamese_probability: float = 1.0,
             siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
             metadata_encoding: MetadataEncoding = MetadataEncoding.IGNORE,
             metadata_tokens_categories: Tuple[str, ...] = None,
@@ -118,16 +118,16 @@ class ClassificationTsvReader(DatasetReader):
             raise ValueError("`instance_type` must be one of " + str(self.INSTANCE_TYPES))
 
         self.instance_type: str = instance_type.lower()
-        self.siamese_probability: float = siamese_probability
+        #self.siamese_probability: float = siamese_probability
         self.siamese_samples: Dict[str, Instance] = siamese_samples or {}
-        if self.instance_type in {"siamese", "triplet"}:
-            logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
-            logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
+        #if self.instance_type in {"siamese", "triplet"}:
+        #    logging.info(f"Siamese Models for positive: {len(self.siamese_samples['positive'])}")
+        #    logging.info(f"Siamese Models for negative: {len(self.siamese_samples['negative'])}")
 
         self.metadata_encoding: MetadataEncoding = metadata_encoding
         self.metadata_tokens_categories: Tuple[str, ...] = metadata_tokens_categories
         logging.warning("TSV READER uses following metadata encoding %s " % metadata_encoding)
-        logging.warning(f"TSV Reader keeps following metadata {', '.join(self.metadata_tokens_categories)}")
+        logging.warning(f"TSV Reader keeps following metadata {', '.join(self.metadata_tokens_categories or [])}")
 
         if self.metadata_encoding == MetadataEncoding.AS_CATEGORICAL and not self.metadata_tokens_categories:
             raise ValueError("You are using AS_CATEGORICAL for encoding metadata but are not declaring categories. "
@@ -272,6 +272,96 @@ class ClassificationTsvReader(DatasetReader):
                         raise ValueError(f"Found multiple possible value for category {cat}: {str(vals)}")
         return Instance(fields)
 
+    def _pair_or_triplet_get_filepath(self, dataset_file_path: str):
+        return f"{dataset_file_path}.{self.instance_type}"
+
+    def _pair_or_triplet_read(self, pot_filepath: str):
+        with open(pot_filepath) as f:
+            pair_triplets = json.load(f)
+        return pair_triplets
+
+    def _pair_or_triplet_save(self, pot_filepath: str, pair_triplets: List[Tuple[int, ...]]):
+        with open(pot_filepath, "w") as f:
+            json.dump(pair_triplets, f)
+
+    def _pair_or_triplet_build(self, instances: List[Instance]) -> List[Tuple[int, ...]]:
+        labels = defaultdict(list)
+        indexes = []
+        for index, inst in enumerate(instances):
+            # FieldLabel.label[1] is the string representation
+            labels[inst["label"].label[1]].append(index)
+            indexes.append((index, inst["label"].label[1]))
+
+        keys = list(labels.keys())
+        pair_or_triplets = []
+
+        random.shuffle(indexes)
+
+        while indexes:
+            cur_index, cur_label = indexes.pop()
+
+            if self.instance_type == "siamese":
+                other_label = random.choice(keys)
+                relative_index = None
+                while relative_index is None or labels[relative_index] == cur_index:
+                    relative_index = random.randint(0, len(labels[other_label]) - 1)
+                pair_or_triplets.append((cur_index, labels[other_label][relative_index]))
+            elif self.instance_type == "triplet":
+                other_label = random.choice([label for label in keys if label != cur_label])
+                other_relative_index = random.randint(0, len(labels[other_label]) - 1)
+                # ToDo: Do we do label[other_label].pop(value) ?
+                # We loop over to make sure we are not getting the same sentence back from the pool
+                same_relative_index = None
+                while same_relative_index is None or labels[same_relative_index] == cur_index:
+                    # ToDo: Do we do label[other_label].pop(value) ?
+                    same_relative_index = random.randint(0, len(labels[cur_label]) - 1)
+                pair_or_triplets.append(
+                    (
+                        cur_index,
+                        labels[other_label][other_relative_index],
+                        labels[cur_label][same_relative_index]
+                    ))
+
+        return pair_or_triplets
+
+    def _pair_or_triplet_transform(self, instances: List[Instance], file_path: str) -> Iterable[Instance]:
+        pot_fp = self._pair_or_triplet_get_filepath(file_path)
+        if os.path.exists(pot_fp):
+            logging.info("Triplet/Pairs are loaded from cache")
+            pot_indexes = self._pair_or_triplet_read(pot_fp)
+        else:
+            logging.info("Triplet/Pairs are created")
+            pot_indexes = self._pair_or_triplet_build(instances)
+            self._pair_or_triplet_save(pot_fp, pot_indexes)
+
+        pots = list([
+            self._pair_or_triplet_merge_instances(
+                instances[ind[0]],  # Item to classify
+                *map(instances.__getitem__, ind[1:])  # Other values
+            )
+            for ind in pot_indexes
+        ])
+        return pots
+
+    def _pair_or_triplet_merge_instances(
+            self, normal: Instance, negative: Instance, positive: Optional[Instance] = None) -> Instance:
+        if self.instance_type == "triplet":
+            return Instance(
+                {
+                    **{f"left_{key}": value for key, value in normal.items()},
+                    **{f"positive_{key}": value for key, value in positive.items()},
+                    **{f"negative_{key}": value for key, value in negative.items()}
+                }
+            )
+        elif self.instance_type == "siamese":
+            return Instance(
+                {
+                    **{f"left_{key}": value for key, value in normal.items()},
+                    **{f"right_{key}": value for key, value in negative.items()}
+                }
+            )
+        raise Exception(f"Unknown instance type {self.instance_type}")
+
     def _read(self, file_path: str) -> Iterable[Instance]:
         """ Reads a file into Instances
 
@@ -362,33 +452,7 @@ class ClassificationTsvReader(DatasetReader):
                 sentences.append(s)
 
         if self.instance_type != "default":
-            yield from self._send_non_defaults(sentences)
-
-    def _send_non_defaults(self, sentences: List[Instance]):
-        if self.instance_type == "triplet":
-            for sentence in sentences:
-                pos, neg = random.choice(self.siamese_samples["positive"]), \
-                           random.choice(self.siamese_samples["negative"])
-                yield Instance(
-                    {
-                        **{f"left_{key}": value for key, value in sentence.items()},
-                        **{f"positive_{key}": value for key, value in pos.items()},
-                        **{f"negative_{key}": value for key, value in neg.items()}
-                    }
-                )
-        elif self.instance_type == "siamese":
-            for sentence in sentences:
-                if len(self.siamese_samples["negative"]) > 0:
-                    pooled_label: str = "positive" if random.random() < self.siamese_probability else "negative"
-                else:
-                    pooled_label = "positive"
-                right = random.choice(self.siamese_samples[pooled_label])
-                yield Instance(
-                    {
-                        **{f"left_{key}": value for key, value in sentence.items()},
-                        **{f"right_{key}": value for key, value in right.items()}
-                    }
-                )
+            yield from self._pair_or_triplet_transform(sentences, file_path)
 
 
 class XMLDatasetReader(ClassificationTsvReader):
@@ -401,7 +465,7 @@ class XMLDatasetReader(ClassificationTsvReader):
                  agglomerate_msd: bool = False,
                  get_me_bert: Optional[GetMeBert] = GetMeBert(),
                  instance_type: str = "default",
-                 siamese_probability: float = 1.0,
+                 #siamese_probability: float = 1.0,
                  siamese_samples: Dict[str, List[Dict[str, Any]]] = None,
                  metadata_encoding: MetadataEncoding = MetadataEncoding.IGNORE,
                  metadata_tokens_categories: Tuple[str, ...] = None,
@@ -431,7 +495,7 @@ class XMLDatasetReader(ClassificationTsvReader):
             agglomerate_msd=agglomerate_msd,
             get_me_bert=get_me_bert,
             instance_type=instance_type,
-            siamese_probability=siamese_probability,
+            #siamese_probability=siamese_probability,
             siamese_samples=siamese_samples,
             metadata_encoding=metadata_encoding,
             metadata_tokens_categories=metadata_tokens_categories,

@@ -1,15 +1,14 @@
 # https://github.com/PonteIneptique/jdnlp
 
 import torch.nn.functional as F
-from torch import Tensor, cat
+from torch import Tensor, cat, tensor
+from torch.nn import TripletMarginLoss
 
 from typing import Dict, Optional, Tuple, List, Callable, Union
 import logging
 from overrides import overrides
-from pytorch_metric_learning import losses, miners
 
 from seligator.models.siamese import SiameseClassifier
-from seligator.modules.loss_functions.tripletLoss import TripletLoss
 
 logger = logging.getLogger(__name__)
 
@@ -23,10 +22,32 @@ class TripletClassifier(SiameseClassifier):
     def __init__(self, *args, **kwargs):
         super(TripletClassifier, self).__init__(*args, **kwargs)
         #self._loss = TripletLoss(kwargs.get("loss_margin", 1.0))
-        self._loss = losses.TripletMarginLoss(
+        self._loss = TripletMarginLoss(
             margin=kwargs.get("loss_margin", 1.0),
-            triplets_per_anchor="all",
+            p=kwargs.get("loss_p", 2)
+            #triplets_per_anchor="all",
         )
+
+    @overrides
+    def _to_categorical_probs(self, example, negative, positive, neg_dist, pos_dist) -> Tensor:
+        # Compute output class
+        correct = []
+        for anch, neg, dist1, pos, dist2 in zip(
+                example["label"].tolist(),
+                negative["label"].tolist(),
+                neg_dist.tolist(),
+                positive["label"].tolist(),
+                pos_dist.tolist()
+        ):
+            dist_total = abs(dist1) + abs(dist2)
+            row = [.0, .0]
+            # To make it more like "Fake probabilities", probability to be of positive is
+            # is 1-dist/sum(all dist). We remove it from one because the lowest distance
+            # is supposed to be the closest result (hence lower distance = higher probability)
+            row[neg] = 1 - abs(dist1) / dist_total
+            row[pos] = 1 - abs(dist2) / dist_total
+            correct.append(row)
+        return tensor(correct, device=example["label"].device)
 
     @overrides
     def forward(
@@ -50,28 +71,24 @@ class TripletClassifier(SiameseClassifier):
         neg, negativ_additional_output = self.right_encoder(negativ)
 
         out = {
-            "pos_similarity": F.cosine_similarity(exm, pos),
+            "pos_distance": F.pairwise_distance(exm, pos),  # Euclidian
+            "neg_distance": F.pairwise_distance(exm, neg),  # Euclidian
             "doc-vectors": exm.tolist()
         }
-        if negativ:
-            out["neg_similarity"] = F.cosine_similarity(exm, neg)
-
-        positiv_sim_bool = out["pos_similarity"] > self.prediction_threshold
+        positiv_sim_bool = out["pos_distance"] < out["neg_distance"]
+        out["probs"] = self._to_categorical_probs(
+            example,
+            negative=negativ, positive=positiv,
+            pos_dist=out["pos_distance"],
+            neg_dist=out["neg_distance"]
+        )
 
         if label is not None:
             sim_bool = positiv_sim_bool.long()
-            if isinstance(self._loss, losses.BaseMetricLossFunction):
-                # print(exm["label"], pos["label"])
-                encoded = cat([exm, pos[:1, :], neg[:1, :]], dim=0) # We only keep the first, hack for ToDo
-                out["loss"] = self._loss(
-                    encoded,
-                    cat([example["label"], positiv["label"][:1], negativ["label"][:1]], dim=0)
-                ) or (encoded * 0).sum()
-            else:
-                out["loss"] = self._loss(exm, pos, neg)
+            out["loss"] = self._loss(exm, pos, neg)
 
             self._compute_metrics(
-                categorical_predictions=self._to_categorical(example, positiv, sim_bool),
+                categorical_predictions=out["probs"],
                 categorical_label=example["label"].long(),
                 similarity_boolean=sim_bool,
                 similarity_labels=label
