@@ -2,12 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa064.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa064.opp-lat1:28">
-        <w  rend="chapter" n="28" pos="CONcoo" msd="MORPH=empty" lemma="atqui">atqui</w>
-                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sapientia">sapientiam</w>
-                <w  rend="chapter" n="28" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="stultus">stultus</w>
-                <w  rend="chapter" n="28" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ignoro">ignorat</w>
-                <w  rend="chapter" n="28" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa064.opp-lat1:11">
+        <w  rend="chapter" n="11" pos="ADV" msd="Deg=Sup" lemma="honeste">honestissime</w>
+                <w  rend="chapter" n="11" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="chapter" n="11" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="bonus">bonus</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="credo">creditur</w>
+                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="11" pos="PROrel" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="qui1">cuius</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="littera">litteris</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="genus1">generi</w>
+                <w  rend="chapter" n="11" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="humanus">humano</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="posteritas">posteritatique</w>
+                <w  rend="chapter" n="11" pos="CON" msd="MORPH=empty" lemma="que">{posteritatique}</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="consulo">consultum</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,19 +2,36 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0293b.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0293b.stoa001.digilibLT-lat1:2">
-        <w  rend="p" n="2" pos="NOMcom" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act" lemma="flegma">Flegma</w>
-                <w  rend="p" n="2" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="p" n="2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="p" n="2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caput">capite</w>
-                <w  rend="p" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="p" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="p" n="2" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="alius">alia</w>
-                <w  rend="p" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pars">pars</w>
-                <w  rend="p" n="2" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Masc" lemma="is">eius</w>
-                <w  rend="p" n="2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="p" n="2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uesica">vesica</w>
-                <w  rend="p" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0293b.stoa001.digilibLT-lat1:11">
+        <w  rend="p" n="11" pos="ADV" msd="Deg=Pos" lemma="etiam">Etiam</w>
+                <w  rend="p" n="11" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
+                <w  rend="p" n="11" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="longus">longam</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aegritudo">aegritudinem</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="facio">faciunt</w>
+                <w  rend="p" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="p" n="11" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="p" n="11" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis2">quis</w>
+                <w  rend="p" n="11" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="imperitus">inperitum</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="medicus1">medicum</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="habeo">habuerit</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="p" n="11" pos="ADV" msd="Deg=Pos" lemma="certe">certe</w>
+                <w  rend="p" n="11" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="negligens">neglegentem</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="p" n="11" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="causa">causam</w>
+                <w  rend="p" n="11" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="intelligo">intellexerit</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="uel2">vel</w>
+                <w  rend="p" n="11" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="p" n="11" pos="PROint" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="humor">umore</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aegritudo">aegritudo</w>
+                <w  rend="p" n="11" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="nascor">nata</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuerit</w>
+                <w  rend="p" n="11" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="cognosco">cognoverit</w>
+                <w  rend="p" n="11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

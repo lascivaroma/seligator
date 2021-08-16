@@ -2,12 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:477">
-        <w  rend="line" n="477" pos="ADVint" msd="MORPH=empty" lemma="an">an</w>
-                <w  rend="line" n="477" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="timeo">times</w>
-                <w  rend="line" n="477" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mater">matris</w>
-                <w  rend="line" n="477" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fides2">fidem</w>
-                <w  rend="line" n="477" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:361-362">
+        <w  rend="line" n="361" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
+                <w  rend="line" n="361" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=1" lemma="aucupor">aucupabor</w>
+                <w  rend="line" n="361" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uerbum">verba</w>
+                <w  rend="line" n="361" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="rumor">rumoris</w>
+                <w  rend="line" n="361" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uagus">vagi</w>
+                <w  rend="line" n="362" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="362" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="saeuus">saeva</w>
+                <w  rend="line" n="362" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="frater">fratrum</w>
+                <w  rend="line" n="362" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="362" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="bellum">bella</w>
+                <w  rend="line" n="362" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="362" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="line" n="362" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="possum1">possum</w>
+                <w  rend="line" n="362" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="362" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="audio">audiam</w>
+                <w  rend="line" n="362" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

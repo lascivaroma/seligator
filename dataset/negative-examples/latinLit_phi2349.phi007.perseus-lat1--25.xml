@@ -2,14 +2,12 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi2349.phi007.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi2349.phi007.perseus-lat1:1.34">
-        <w  rend="comment" n="1.34" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tertius">tertiam</w>
-                <w  rend="comment" n="1.34" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="comment" n="1.34" pos="PRE" msd="MORPH=empty" lemma="inter">inter</w>
-                <w  rend="comment" n="1.34" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aquarius1">aquarium</w>
-                <w  rend="comment" n="1.34" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="comment" n="1.34" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="piscis">pisces</w>
-                <w  rend="comment" n="1.34" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi2349.phi007.perseus-lat1:3.126">
+        <w  rend="comment" n="3.126" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="pubens">pubentesque</w>
+                <w  rend="comment" n="3.126" pos="CON" msd="MORPH=empty" lemma="que">{pubentesque}</w>
+                <w  rend="comment" n="3.126" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="seco">secant</w>
+                <w  rend="comment" n="3.126" pos="INJ" msd="Case=Gen" lemma="homo">h</w>
+                <w  rend="comment" n="3.126" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

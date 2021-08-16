@@ -2,21 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa009.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa009.perseus-lat2:2.1.26-2.1.28">
-        <w  rend="line" n="2.1.26" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="alius">alii</w>
-                <w  rend="line" n="2.1.26" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="line" n="2.1.26" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="tergum">terga</w>
-                <w  rend="line" n="2.1.26" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="ferox">ferocis</w>
-                <w  rend="line" n="2.1.27" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Danuuius">Danuvii</w>
-                <w  rend="line" n="2.1.27" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="solido">solidata</w>
-                <w  rend="line" n="2.1.27" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ruo">ruunt</w>
-                <w  rend="line" n="2.1.27" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Dep" lemma="experior">expertaque</w>
-                <w  rend="line" n="2.1.27" pos="CON" msd="MORPH=empty" lemma="que">{expertaque}</w>
-                <w  rend="line" n="2.1.27" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="remus">remos</w>
-                <w  rend="line" n="2.1.28" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="frango">frangunt</w>
-                <w  rend="line" n="2.1.28" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="stagnum1">stagna</w>
-                <w  rend="line" n="2.1.28" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="rota">rotis</w>
-                <w  rend="line" n="2.1.28" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa009.perseus-lat2:2.1.232-2.1.234">
+        <w  rend="line" n="2.1.232" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="2.1.232" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="line" n="2.1.232" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="barbaricus">barbaricos</w>
+                <w  rend="line" n="2.1.232" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="sitio">sitientia</w>
+                <w  rend="line" n="2.1.232" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pilum">pila</w>
+                <w  rend="line" n="2.1.232" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="cruor">cruores</w>
+                <w  rend="line" n="2.1.233" pos="ADV" msd="Case=Abl" lemma="spons">sponte</w>
+                <w  rend="line" n="2.1.233" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uolo2">volant</w>
+                <w  rend="line" n="2.1.233" pos="ADV" msd="Deg=Pos" lemma="ultro">ultroque</w>
+                <w  rend="line" n="2.1.233" pos="CON" msd="MORPH=empty" lemma="que">{ultroque}</w>
+                <w  rend="line" n="2.1.233" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="manus1">manus</w>
+                <w  rend="line" n="2.1.233" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mucro">mucrone</w>
+                <w  rend="line" n="2.1.233" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com" lemma="furo">furenti</w>
+                <w  rend="line" n="2.1.234" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="duco">ducitur</w>
+                <w  rend="line" n="2.1.234" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="2.1.234" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="siccus">siccum</w>
+                <w  rend="line" n="2.1.234" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="gladius">gladium</w>
+                <w  rend="line" n="2.1.234" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uagina">vagina</w>
+                <w  rend="line" n="2.1.234" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="recuso">recusat</w>
+                <w  rend="line" n="2.1.234" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

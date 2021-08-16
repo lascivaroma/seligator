@@ -2,24 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0117.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0117.stoa003.opp-lat1:1.pr">
-        <w  rend="chapter" n="1.pr" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
-                <w  rend="chapter" n="1.pr" pos="CONcoo" msd="MORPH=empty" lemma="igitur">igitur</w>
-                <w  rend="chapter" n="1.pr" pos="PROdem" msd="Case=Ind" lemma="tot">tot</w>
-                <w  rend="chapter" n="1.pr" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
-                <w  rend="chapter" n="1.pr" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="talis">talibus</w>
-                <w  rend="chapter" n="1.pr" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="utor">usus</w>
-                <w  rend="chapter" n="1.pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="magister">magistris</w>
-                <w  rend="chapter" n="1.pr" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
-                <w  rend="chapter" n="1.pr" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">me</w>
-                <w  rend="chapter" n="1.pr" pos="ADV" msd="Numb=Sing|Deg=Pos" lemma="quoque">quoque</w>
-                <w  rend="chapter" n="1.pr" pos="NOMcom" msd="Case=Abl|Numb=Sing|Deg=Sup" lemma="paruus1">minimo</w>
-                <w  rend="chapter" n="1.pr" pos="PROind" msd="Case=Gen|Numb=Plur|Gend=Com" lemma="omnis">omnium</w>
-                <w  rend="chapter" n="1.pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="audio">audies</w>
-                <w  rend="chapter" n="1.pr" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
-                <w  rend="chapter" n="1.pr" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="sciscitor">sciscitatus</w>
-                <w  rend="chapter" n="1.pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">es</w>
-                <w  rend="chapter" n="1.pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0117.stoa003.opp-lat1:1.19.10">
+        <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">Dominus</w>
+                <w  rend="section" n="1.19.10" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Iesus">Iesus</w>
+                <w  rend="section" n="1.19.10" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="section" n="1.19.10" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="uerus">uerus</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="homo">homo</w>
+                <w  rend="section" n="1.19.10" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="section" n="1.19.10" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="uerus">uerus</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="section" n="1.19.10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.19.10" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pater">patre</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="deus">deo</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="section" n="1.19.10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.19.10" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mater">matre</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="homo">homine</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="homo">homo</w>
+                <w  rend="section" n="1.19.10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="1.19.10" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="ille">illud</w>
+                <w  rend="section" n="1.19.10" pos="PRE" msd="MORPH=empty" lemma="secundum2">secundum</w>
+                <w  rend="section" n="1.19.10" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="homo">hominem</w>
+                <w  rend="section" n="1.19.10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

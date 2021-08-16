@@ -2,12 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0096.stoa003.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa003.opp-lat2:2">
-        <w  rend="book" n="2" pos="ADJcar" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="septimus">VII.</w>
-                <w  rend="book" n="2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="fidelis2">Fideles</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="caueo">cauete</w>
-                <w  rend="book" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="malus3">malum</w>
-                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa003.opp-lat2:2.3.6-2.3.7">
+        <w  rend="line" n="2.3.6" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Fut|Voice=Act" lemma="uenio">Venturi</w>
+                <w  rend="line" n="2.3.6" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="line" n="2.3.6" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="ille">illi</w>
+                <w  rend="line" n="2.3.6" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="line" n="2.3.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.3.6" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
+                <w  rend="line" n="2.3.6" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="antechristus">Antechristo</w>
+                <w  rend="line" n="2.3.6" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="2.3.6" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uinco">uincunt</w>
+                <w  rend="line" n="2.3.7" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="robustus">Robusta</w>
+                <w  rend="line" n="2.3.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mare">mar</w>
+                <w  rend="line" n="2.3.7" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
+                <w  rend="line" n="2.3.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="tyr">tyr</w>
+                <w  rend="line" n="2.3.7" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
                 
     </quote>
  </div>

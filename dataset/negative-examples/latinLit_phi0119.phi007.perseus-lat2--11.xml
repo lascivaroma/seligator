@@ -2,18 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi007.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi007.perseus-lat2:243">
-        <w  rend="line" n="243" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="quis1">Quae</w>
-                <w  rend="line" n="243" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
-                <w  rend="line" n="243" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aetas">aetatem</w>
-                <w  rend="line" n="243" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Fut|Voice=Act" lemma="exactura">exactura</w>
-                <w  rend="line" n="243" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">mecum</w>
-                <w  rend="line" n="243" pos="CON" msd="MORPH=empty" lemma="cum3">{mecum}</w>
-                <w  rend="line" n="243" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="line" n="243" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="matrimonium">matrimonio</w>
-                <w  rend="line" n="243" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="243" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="serus">Serv</w>
-                <w  rend="line" n="243" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi007.perseus-lat2:666d-667">
+        <w  rend="line" n="666d" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Lucius">L.</w>
+                <w  rend="line" n="666e" pos="CONsub" msd="MORPH=empty" lemma="si2">Si</w>
+                <w  rend="line" n="666e" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="line" n="667" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="alius">alia</w>
+                <w  rend="line" n="667" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mulier">mulier</w>
+                <w  rend="line" n="667" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="istic1">istoc</w>
+                <w  rend="line" n="667" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pactum">pacto</w>
+                <w  rend="line" n="667" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="dico2">dicat</w>
+                <w  rend="line" n="667" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="667" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="dico2">dicam</w>
+                <w  rend="line" n="667" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="667" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="ebrius">ebriam</w>
+                <w  rend="line" n="667" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

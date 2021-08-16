@@ -3,11 +3,20 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0241d.stoa002.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0241d.stoa002.opp-lat1:1">
-        <w  rend="book" n="1" pos="PRE" msd="MORPH=empty" lemma="in">In</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="albus">albo</w>
-                <w  rend="book" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="caelestis">caelesti</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="liber1">libro</w>
+        <w  rend="book" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Elias">Helias</w>
+                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="interpretor">interpretatur</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mens</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
+                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="1" pos="PROdem" msd="Case=Nom" lemma="hel">hel</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="eo1">i</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mens</w>
+                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="1" pos="INJ" msd="Numb=Sing" lemma="as">as</w>
+                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
                 <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

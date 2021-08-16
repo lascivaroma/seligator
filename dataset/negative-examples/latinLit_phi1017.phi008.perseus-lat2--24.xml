@@ -2,12 +2,17 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi008.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi008.perseus-lat2:266b">
-        <w  rend="line" n="266b" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="facio">Facere</w>
-                <w  rend="line" n="266b" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="266b" pos="ADV" msd="Deg=Pos" lemma="tandem">tandem</w>
-                <w  rend="line" n="266b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="paro2">paras</w>
-                <w  rend="line" n="266b" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi008.perseus-lat2:463-464">
+        <w  rend="line" n="463" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="463" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tus">ture</w>
+                <w  rend="line" n="463" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=1" lemma="colo2">colimur</w>
+                <w  rend="line" n="463" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="463" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="meus">meae</w>
+                <w  rend="line" n="463" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="excludo">excluso</w>
+                <w  rend="line" n="463" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Iuppiter">Iove</w>
+                <w  rend="line" n="464" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="orno">ornantur</w>
+                <w  rend="line" n="464" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="ara">arae</w>
+                <w  rend="line" n="464" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

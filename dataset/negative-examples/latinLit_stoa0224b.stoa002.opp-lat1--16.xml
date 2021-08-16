@@ -2,13 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0224b.stoa002.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224b.stoa002.opp-lat1:16">
-        <w  rend="line" n="16" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="16" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="finio">finitur</w>
-                <w  rend="line" n="16" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="opus1">opus</w>
-                <w  rend="line" n="16" pos="ADVrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui2">quo</w>
-                <w  rend="line" n="16" pos="ADV" msd="Numb=Sing|Deg=Pos" lemma="suscito1">susciter</w>
-                <w  rend="line" n="16" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224b.stoa002.opp-lat1:72-73">
+        <w  rend="line" n="72" pos="PROdem" msd="Case=Nom|Deg=Pos" lemma="hic1">hic</w>
+                <w  rend="line" n="72" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="possideo">possessa</w>
+                <w  rend="line" n="72" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="timeo">timet</w>
+                <w  rend="line" n="72" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="dimitto">dimittere</w>
+                <w  rend="line" n="72" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="72" pos="CONcoo" msd="MORPH=empty" lemma="at2">at</w>
+                <w  rend="line" n="72" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
+                <w  rend="line" n="72" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass|Person=2" lemma="probo">probatis</w>
+                <w  rend="line" n="73" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="line" n="73" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="line" n="73" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="saluo">saluari</w>
+                <w  rend="line" n="73" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="festino">festinat</w>
+                <w  rend="line" n="73" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="credulus">credula</w>
+                <w  rend="line" n="73" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="signum">signis</w>
+                <w  rend="line" n="73" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

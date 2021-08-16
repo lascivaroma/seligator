@@ -2,14 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi008.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi008.perseus-lat2:808b-809">
-        <w  rend="line" n="808b" pos="ADVint" msd="MORPH=empty" lemma="num">num</w>
-                <w  rend="line" n="808b" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="reicio">reiecto</w>
-                <w  rend="line" n="809" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="latus1">latus</w>
-                <w  rend="line" n="809" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="explico">explicuit</w>
-                <w  rend="line" n="809" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mons">monte</w>
-                <w  rend="line" n="809" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Typhoeus">Typhoeus</w>
-                <w  rend="line" n="809" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi008.perseus-lat2:120-121">
+        <w  rend="line" n="120" pos="INJ" msd="MORPH=empty" lemma="en">en</w>
+                <w  rend="line" n="120" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
+                <w  rend="line" n="120" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Titan">Titan</w>
+                <w  rend="line" n="120" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dubito">dubitat</w>
+                <w  rend="line" n="120" pos="ADVint" msd="MORPH=empty" lemma="an">an</w>
+                <w  rend="line" n="120" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="iubeo">iubeat</w>
+                <w  rend="line" n="120" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="sequor">sequi</w>
+                <w  rend="line" n="121" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="cogo">cogatque</w>
+                <w  rend="line" n="121" pos="CON" msd="MORPH=empty" lemma="que">{cogatque}</w>
+                <w  rend="line" n="121" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="habena">habenis</w>
+                <w  rend="line" n="121" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="eo1">ire</w>
+                <w  rend="line" n="121" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Fut|Voice=Act" lemma="pereo1">periturum</w>
+                <w  rend="line" n="121" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="line" n="121" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

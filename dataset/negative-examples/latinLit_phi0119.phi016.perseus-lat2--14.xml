@@ -2,13 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi016.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:170">
-        <w  rend="line" n="170" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="eo1">i</w>
-                <w  rend="line" n="170" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="170" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="puer">púere</w>
-                <w  rend="line" n="170" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="170" pos="INJ" msd="MORPH=empty" lemma="prae2">prae</w>
-                <w  rend="line" n="170" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:720b-721">
+        <w  rend="line" n="720b" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="hic1">Horum</w>
+                <w  rend="line" n="720b" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="causa">causa</w>
+                <w  rend="line" n="720b" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
+                <w  rend="line" n="720b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="ago">agitur</w>
+                <w  rend="line" n="720b" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="spectator">spectatorum</w>
+                <w  rend="line" n="720b" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fabula1">fabula</w>
+                <w  rend="line" n="720b" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="721" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="hic1">hi</w>
+                <w  rend="line" n="721" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="scio">sciunt</w>
+                <w  rend="line" n="721" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="721" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="721" pos="ADV" msd="Deg=Pos" lemma="hic2">hic</w>
+                <w  rend="line" n="721" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="assum1">adfuerunt</w>
+                <w  rend="line" n="721" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

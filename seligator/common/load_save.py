@@ -31,7 +31,8 @@ class CustomEncoder(json.JSONEncoder):
     }
     _PUBLIC_CLASSES = {
         "SiameseClassifier": SiameseClassifier,
-        "FeatureEmbeddingClassifier": FeatureEmbeddingClassifier
+        "FeatureEmbeddingClassifier": FeatureEmbeddingClassifier,
+        "TripletClassifier": TripletClassifier
     }
 
     def default(self, obj):

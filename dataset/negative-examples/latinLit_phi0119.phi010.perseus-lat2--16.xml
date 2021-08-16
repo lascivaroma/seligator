@@ -2,13 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi010.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi010.perseus-lat2:1003b">
-        <w  rend="line" n="1003b" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">Ego</w>
-                <w  rend="line" n="1003b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1003b" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="herus">ere</w>
-                <w  rend="line" n="1003b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1003b" pos="ADV" msd="Case=Voc|Numb=Sing|Deg=Sup" lemma="audax">audacissime</w>
-                <w  rend="line" n="1003b" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi010.perseus-lat2:670-671">
+        <w  rend="line" n="670" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="line" n="670" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="670" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="displiceo">displiceo</w>
+                <w  rend="line" n="670" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="670" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Dep" lemma="patior">patiundum</w>
+                <w  rend="line" n="670" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="670" pos="CONcoo" msd="Deg=Pos" lemma="at2">at</w>
+                <w  rend="line" n="670" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=1" lemma="placeo">placuero</w>
+                <w  rend="line" n="670" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="hic1">huic</w>
+                <w  rend="line" n="670" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Erotion">Erotio</w>
+                <w  rend="line" n="670" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="671" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="671" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="671" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="671" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="excludo">excludet</w>
+                <w  rend="line" n="671" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="line" n="671" pos="PROref" msd="Case=Abl|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="line" n="671" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="671" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="line" n="671" pos="PRE" msd="MORPH=empty" lemma="apud">apud</w>
+                <w  rend="line" n="671" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="line" n="671" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="occludo">occludet</w>
+                <w  rend="line" n="671" pos="NOMcom" msd="Case=Loc|Numb=Sing" lemma="domus">domi</w>
+                <w  rend="line" n="671" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

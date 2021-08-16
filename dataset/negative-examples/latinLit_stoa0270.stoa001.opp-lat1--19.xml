@@ -2,14 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0270.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0270.stoa001.opp-lat1:2.5.3">
-        <w  rend="section" n="2.5.3" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="itaque">itaqueuincti</w>
-                <w  rend="section" n="2.5.3" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="compes">compedibus</w>
-                <w  rend="section" n="2.5.3" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="2.5.3" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="medius">medias</w>
-                <w  rend="section" n="2.5.3" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="flamma">flammas</w>
-                <w  rend="section" n="2.5.3" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="conicio">coniciuntur</w>
-                <w  rend="section" n="2.5.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0270.stoa001.opp-lat1:2.1.4">
+        <w  rend="section" n="2.1.4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fides">fidesque</w>
+                <w  rend="section" n="2.1.4" pos="CON" msd="MORPH=empty" lemma="que">{fidesque}</w>
+                <w  rend="section" n="2.1.4" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="dictum">dictis</w>
+                <w  rend="section" n="2.1.4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="assum1">affuit</w>
+                <w  rend="section" n="2.1.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1.4" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="section" n="2.1.4" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="section" n="2.1.4" pos="ADV" msd="Deg=Sup" lemma="parum2">minime</w>
+                <w  rend="section" n="2.1.4" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="is">eorum</w>
+                <w  rend="section" n="2.1.4" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uultus">uultus</w>
+                <w  rend="section" n="2.1.4" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="comparabilis">comparabiles</w>
+                <w  rend="section" n="2.1.4" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="habeo">haberentur</w>
+                <w  rend="section" n="2.1.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1.4" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="2.1.4" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="imperialis">imperialibus</w>
+                <w  rend="section" n="2.1.4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="impendium">impendiis</w>
+                <w  rend="section" n="2.1.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Pass|Person=3" lemma="procuro">procurabantur</w>
+                <w  rend="section" n="2.1.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

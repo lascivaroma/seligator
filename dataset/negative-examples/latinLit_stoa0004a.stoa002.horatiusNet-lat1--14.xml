@@ -2,15 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1:50">
-        <w  rend="comment" n="50" pos="ADV" msd="Deg=Pos" lemma="ideo">ideoque</w>
-                <w  rend="comment" n="50" pos="CON" msd="MORPH=empty" lemma="que">{ideoque}</w>
-                <w  rend="comment" n="50" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Uenus">Veneri</w>
-                <w  rend="comment" n="50" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="Genitricus">Genitrici</w>
-                <w  rend="comment" n="50" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="templum">templum</w>
-                <w  rend="comment" n="50" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="constituo">constitutum</w>
-                <w  rend="comment" n="50" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="comment" n="50" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1:69">
+        <w  rend="comment" n="69" pos="NOMpro" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="Algidus">Algidus</w>
+                <w  rend="comment" n="69" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mons">mons</w>
+                <w  rend="comment" n="69" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="comment" n="69" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="assiduus">assiduo</w>
+                <w  rend="comment" n="69" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="frigus">frigore</w>
+                <w  rend="comment" n="69" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="appello1">appellatus</w>
+                <w  rend="comment" n="69" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="69" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="comment" n="69" pos="ADV" msd="Deg=Pos" lemma="longe">longe</w>
+                <w  rend="comment" n="69" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="comment" n="69" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="urbs">urbe</w>
+                <w  rend="comment" n="69" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

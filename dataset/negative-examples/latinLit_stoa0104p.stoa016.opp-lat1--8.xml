@@ -3,20 +3,21 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa016.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa016.opp-lat1:4">
-        <w  rend="letter" n="4" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="letter" n="4" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
-                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="orbitas">orbitas</w>
-                <w  rend="letter" n="4" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="inuenio">inueniet</w>
-                <w  rend="letter" n="4" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="penetrabilis">penetrabilem</w>
+        <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="4" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="letter" n="4" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=MascNeut|Deg=Pos" lemma="defunctus">defunctorum</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="obitus">obitus</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="subleuo1">subleuant</w>
                 <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="4" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="letter" n="4" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="alius">alios</w>
-                <w  rend="letter" n="4" pos="PRE" msd="MORPH=empty" lemma="contra2">contra</w>
-                <w  rend="letter" n="4" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="ille">illam</w>
-                <w  rend="letter" n="4" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="cesso">cessetis</w>
-                <w  rend="letter" n="4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="armo">armare</w>
+                <w  rend="letter" n="4" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="tollo">sublatos</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="captiuitas">captiuitati</w>
+                <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="libertas">libertate</w>
+                <w  rend="letter" n="4" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="dono">donatos</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="uolo3">uolumus</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
                 <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

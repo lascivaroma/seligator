@@ -2,14 +2,15 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0134.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi003.perseus-lat2:803">
-        <w  rend="line" n="803" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="803" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="line" n="803" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
-                <w  rend="line" n="803" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="res">rei</w>
-                <w  rend="line" n="803" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="line" n="803" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="803" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi003.perseus-lat2:807-808">
+        <w  rend="line" n="807" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">Tun</w>
+                <w  rend="line" n="807" pos="ADV" msd="MORPH=empty" lemma="ne2">{Tun}</w>
+                <w  rend="line" n="807" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="807" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="prohibeo">prohibeas</w>
+                <w  rend="line" n="808" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="meus">Meam</w>
+                <w  rend="line" n="808" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
+                <w  rend="line" n="808" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="tango">tangam</w>
+                <w  rend="line" n="808" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

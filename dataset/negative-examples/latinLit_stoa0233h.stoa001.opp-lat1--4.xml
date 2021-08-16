@@ -2,13 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0233h.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0233h.stoa001.opp-lat1:126">
-        <w  rend="line" n="126" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
-                <w  rend="line" n="126" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
-                <w  rend="line" n="126" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fero">fert</w>
-                <w  rend="line" n="126" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="line" n="126" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caelum1">caelo</w>
-                <w  rend="line" n="126" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0233h.stoa001.opp-lat1:99-100">
+        <w  rend="line" n="99" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="99" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="torpeo">torpere</w>
+                <w  rend="line" n="99" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="grauis">graui</w>
+                <w  rend="line" n="99" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="patior">passus</w>
+                <w  rend="line" n="99" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="suus">sua</w>
+                <w  rend="line" n="99" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="regnum">regna</w>
+                <w  rend="line" n="99" pos="ADJqua" msd="Case=Abl|Numb=Sing" lemma="ueternus1">ueterno</w>
+                <w  rend="line" n="100" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="moueo">mouit</w>
+                <w  rend="line" n="100" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ager">agros</w>
+                <w  rend="line" n="100" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="cura">curis</w>
+                <w  rend="line" n="100" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

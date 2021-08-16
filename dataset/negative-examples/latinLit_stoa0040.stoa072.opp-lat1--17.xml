@@ -2,17 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa072.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa072.opp-lat1:1.53">
-        <w  rend="line" n="1.53" pos="INJ" msd="MORPH=empty" lemma="ecce">Ecce</w>
-                <w  rend="line" n="1.53" pos="PROrel" msd="MORPH=empty" lemma="quam2">quam</w>
-                <w  rend="line" n="1.53" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="bonus">bonum</w>
-                <w  rend="line" n="1.53" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="1.53" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="iucundus">iocundum</w>
-                <w  rend="line" n="1.53" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="frater">fratres</w>
-                <w  rend="line" n="1.53" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="line" n="1.53" pos="ADJcar" msd="Case=Acc|Numb=Sing" lemma="unus">unum</w>
-                <w  rend="line" n="1.53" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="habito">habitare</w>
-                <w  rend="line" n="1.53" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa072.opp-lat1:1.44-1.45">
+        <w  rend="line" n="1.44" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="line" n="1.44" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Carthago">Carthaginem</w>
+                <w  rend="line" n="1.44" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="uenio">uenissent</w>
+                <w  rend="line" n="1.44" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="episcopus">episcopum</w>
+                <w  rend="line" n="1.44" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="ordino">ordinare</w>
+                <w  rend="line" n="1.44" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.45" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="inuenio">inuenerunt</w>
+                <w  rend="line" n="1.45" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Caecilianus">Caecilianum</w>
+                <w  rend="line" n="1.45" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="1.45" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="ordino">ordinatum</w>
+                <w  rend="line" n="1.45" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="1.45" pos="PROpos.ref" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="suus">sua</w>
+                <w  rend="line" n="1.45" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sedes">sede</w>
+                <w  rend="line" n="1.45" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

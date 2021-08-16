@@ -2,14 +2,39 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1:4.8">
-        <w  rend="comment" n="4.8" pos="ADJcar" msd="Case=Ind" lemma="sex">Sex</w>
-                <w  rend="comment" n="4.8" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="comment" n="4.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ulna">ulnis</w>
-                <w  rend="comment" n="4.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="habeo">habebat</w>
-                <w  rend="comment" n="4.8" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="diffundo2">diffusam</w>
-                <w  rend="comment" n="4.8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="toga">togam</w>
-                <w  rend="comment" n="4.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1:1.1">
+        <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ostendo">Ostendit</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="naumachia">naumachiae</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="idem">idest</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{idest}</w>
+                <w  rend="comment" n="1.1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="naualis">nauali</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="proelium">proelio</w>
+                <w  rend="comment" n="1.1" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="termpor">ternporis</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="intersum1">interesse</w>
+                <w  rend="comment" n="1.1" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Maecenas">Maecenatem</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="1.1" pos="PROrel" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="qui1">cui</w>
+                <w  rend="comment" n="1.1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="praesum1">praeerat</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="dico2">dicens</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ilium">ilium</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="eo1">ire</w>
+                <w  rend="comment" n="1.1" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="comment" n="1.1" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Liburni">Liburnis</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="idem">idest</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{idest}</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="nauicula">nauiculis</w>
+                <w  rend="comment" n="1.1" pos="NOMpro" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="libica">Libicis</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="1.1" pos="PROrel" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
+                <w  rend="comment" n="1.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="utor">utuntur</w>
+                <w  rend="comment" n="1.1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="negotiator">negotiatores</w>
+                <w  rend="comment" n="1.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Libya">Libyae</w>
+                <w  rend="comment" n="1.1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -3,19 +3,36 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0293b.stoa001.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0293b.stoa001.digilibLT-lat1:11">
-        <w  rend="p" n="11" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="hic1">Hi</w>
-                <w  rend="p" n="11" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
-                <w  rend="p" n="11" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="humor">umores</w>
-                <w  rend="p" n="11" pos="ADJdis" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="singulus">singulis</w>
-                <w  rend="p" n="11" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="aetas">aetatibus</w>
-                <w  rend="p" n="11" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aegritudo">aegritudines</w>
-                <w  rend="p" n="11" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="facio">faciunt</w>
-                <w  rend="p" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+        <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
                 <w  rend="p" n="11" pos="ADVrel" msd="MORPH=empty" lemma="quotiens1">quotiens</w>
-                <w  rend="p" n="11" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="quis2">quis</w>
-                <w  rend="p" n="11" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="is">eorum</w>
-                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="augmentum">augmentum</w>
-                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="accipio">acceperit</w>
+                <w  rend="p" n="11" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="aliquis">aliquis</w>
+                <w  rend="p" n="11" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="p" n="11" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="humor">umoribus</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="excresco">excreverit</w>
+                <w  rend="p" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="p" n="11" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
+                <w  rend="p" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="facio">facit</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aegritudo">aegritudinem</w>
+                <w  rend="p" n="11" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="longus">longam</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="p" n="11" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="causa">causas</w>
+                <w  rend="p" n="11" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="uetus">veteres</w>
+                <w  rend="p" n="11" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="p" n="11" pos="PROpos.ref" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="suus">suam</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uoracitas">voracitatem</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="intemperantia">intemperantiam</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="inaequalitas">inaequalitatem</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="p" n="11" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="corpus">corpore</w>
+                <w  rend="p" n="11" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aetas">aetate</w>
+                <w  rend="p" n="11" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="homo">hominum</w>
                 <w  rend="p" n="11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

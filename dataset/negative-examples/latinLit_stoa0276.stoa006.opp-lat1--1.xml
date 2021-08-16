@@ -2,16 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0276.stoa006.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa006.opp-lat1:39-40">
-        <w  rend="line" n="39" pos="ADV" msd="MORPH=empty" lemma="subter1">subter</w>
-                <w  rend="line" n="39" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="concutio">concussa</w>
-                <w  rend="line" n="39" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="39" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="spina">spina</w>
-                <w  rend="line" n="39" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="carina">carinae</w>
-                <w  rend="line" n="39" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="40" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="palpito">palpitat</w>
-                <w  rend="line" n="40" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="antenna">antemna</w>
-                <w  rend="line" n="40" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa006.opp-lat1:21">
+        <w  rend="line" n="21" pos="ADVrel" msd="Case=Abl|Numb=Sing" lemma="qua1">qua</w>
+                <w  rend="line" n="21" pos="PRE" msd="MORPH=empty" lemma="subter2">subter</w>
+                <w  rend="line" n="21" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="totus">totus</w>
+                <w  rend="line" n="21" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="trepido">trepidans</w>
+                <w  rend="line" n="21" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="compesco">conpescitur</w>
+                <w  rend="line" n="21" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="orbis">orbis</w>
+                <w  rend="line" n="21" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

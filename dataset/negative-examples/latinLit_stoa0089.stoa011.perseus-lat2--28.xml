@@ -2,14 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa011.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa011.perseus-lat2:502">
-        <w  rend="line" n="502" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="ipse">ipsa</w>
-                <w  rend="line" n="502" pos="PROpos.ref" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="suus">suo</w>
-                <w  rend="line" n="502" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
-                <w  rend="line" n="502" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pignus">pignore</w>
-                <w  rend="line" n="502" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="castra2">castra</w>
-                <w  rend="line" n="502" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="laboro">laborant</w>
-                <w  rend="line" n="502" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa011.perseus-lat2:265-266">
+        <w  rend="line" n="265" pos="ADV" msd="Deg=Pos" lemma="tum">tum</w>
+                <w  rend="line" n="265" pos="ADV" msd="Deg=Comp" lemma="dure">durius</w>
+                <w  rend="line" n="265" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="ira">irae</w>
+                <w  rend="line" n="266" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="consulo">consulitur</w>
+                <w  rend="line" n="266" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="266" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="line" n="266" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="poena">poena</w>
+                <w  rend="line" n="266" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pateo">patet</w>
+                <w  rend="line" n="266" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

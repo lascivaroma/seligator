@@ -2,17 +2,35 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0527.tlg015.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg015.obi-lat1:26.5">
-        <w  rend="verse" n="26.5" pos="NOMpro" msd="Case=Ind" lemma="Amiel">Amihel</w>
-                <w  rend="verse" n="26.5" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="sextus">sextus</w>
-                <w  rend="verse" n="26.5" pos="NOMpro" msd="Case=Nom" lemma="Isachar">Isachar</w>
-                <w  rend="verse" n="26.5" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="septimus">septimus</w>
-                <w  rend="verse" n="26.5" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Phollathus">Phollathi</w>
-                <w  rend="verse" n="26.5" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="octauus">octavus</w>
-                <w  rend="verse" n="26.5" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
-                <w  rend="verse" n="26.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="benedico2">benedixit</w>
-                <w  rend="verse" n="26.5" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Masc" lemma="ille">illi</w>
-                <w  rend="verse" n="26.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">Dominus</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg015.obi-lat1:21.5">
+        <w  rend="verse" n="21.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="do">deditque</w>
+                <w  rend="verse" n="21.5" pos="CON" msd="MORPH=empty" lemma="que">{deditque}</w>
+                <w  rend="verse" n="21.5" pos="NOMpro" msd="Case=Ind" lemma="Dauid">David</w>
+                <w  rend="verse" n="21.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="numerus">numerum</w>
+                <w  rend="verse" n="21.5" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="is">eorum</w>
+                <w  rend="verse" n="21.5" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="qui1">quos</w>
+                <w  rend="verse" n="21.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="circumeo1">circumierat</w>
+                <w  rend="verse" n="21.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="21.5" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="inuenio">inventus</w>
+                <w  rend="verse" n="21.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="verse" n="21.5" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="omnis">omnis</w>
+                <w  rend="verse" n="21.5" pos="NOMpro" msd="Case=Ind" lemma="Israel">Israhel</w>
+                <w  rend="verse" n="21.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="numerus">numerus</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Ind" lemma="mille">mille</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="mille">milia</w>
+                <w  rend="verse" n="21.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Ind" lemma="centum">centum</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="mille">milia</w>
+                <w  rend="verse" n="21.5" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="uir">virorum</w>
+                <w  rend="verse" n="21.5" pos="VER" msd="Case=Gen|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="educo2">educentium</w>
+                <w  rend="verse" n="21.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="gladius">gladium</w>
+                <w  rend="verse" n="21.5" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="verse" n="21.5" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Iuda">Iuda</w>
+                <w  rend="verse" n="21.5" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="trecenti">trecenta</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Ind" lemma="septuaginta">septuaginta</w>
+                <w  rend="verse" n="21.5" pos="ADJcar" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="mille">milia</w>
+                <w  rend="verse" n="21.5" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="bellator">bellatorum</w>
                 
     </quote>
  </div>

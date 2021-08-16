@@ -2,31 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1348.phi002.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.phi002.thayer-lat1:vergilius">
-        <w  rend="chapter" n="vergilius" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="poetica2">Poeticam</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="puer">puer</w>
-                <w  rend="chapter" n="vergilius" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
-                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="auspicor">auspicatus</w>
-                <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="Ballista">Ballistam</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ludus">ludi</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="magister">magistrum</w>
-                <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="ob">ob</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="infamia">infamiam</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="latrocinium">latrociniorum</w>
-                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="cooperio">coopertum</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="lapis">lapidibus</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="distichon">distichon</w>
-                <w  rend="chapter" n="vergilius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
-                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mons">Monte</w>
-                <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
-                <w  rend="chapter" n="vergilius" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="hic1">hoc</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="lapis">lapidum</w>
-                <w  rend="chapter" n="vergilius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="tego">tegitur</w>
-                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="Ballista">Ballista</w>
-                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="sepelio">sepultus</w>
-                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.phi002.thayer-lat1:persius">
+        <w  rend="chapter" n="persius" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="nascor">Natus</w>
+                <w  rend="chapter" n="persius" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="persius" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Etruria">Etruria</w>
+                <w  rend="chapter" n="persius" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Uolaterrae">Volaterris</w>
+                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="eques">eques</w>
+                <w  rend="chapter" n="persius" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Romanus">Romanus</w>
+                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sanguis">sanguine</w>
+                <w  rend="chapter" n="persius" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="affinitas">affinitate</w>
+                <w  rend="chapter" n="persius" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="primus">primi</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ordo">ordinis</w>
+                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="uir">viris</w>
+                <w  rend="chapter" n="persius" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="coniunctus">coniunctus</w>
+                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

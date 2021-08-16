@@ -3,12 +3,11 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0117.stoa004.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0117.stoa004.opp-lat1:3">
-        <w  rend="section" n="3" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
-                <w  rend="section" n="3" pos="ADV" msd="Deg=Pos" lemma="deinde">deinde</w>
-                <w  rend="section" n="3" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="comperio">conpertis</w>
-                <w  rend="section" n="3" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Maximianus">Maximianus</w>
-                <w  rend="section" n="3" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=Com" lemma="omnis">omni</w>
-                <w  rend="section" n="3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="bellua">belua</w>
+        <w  rend="section" n="3" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="3" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="hic1">hoc</w>
+                <w  rend="section" n="3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="legio">legio</w>
+                <w  rend="section" n="3" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="sanctus">sancta</w>
+                <w  rend="section" n="3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="consido">consederat</w>
                 <w  rend="section" n="3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

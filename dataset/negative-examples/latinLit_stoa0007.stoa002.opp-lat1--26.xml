@@ -3,11 +3,17 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0007.stoa002.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0007.stoa002.opp-lat1:auto-fill-sid">
-        <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADJord" msd="Case=Ind|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="treicio">XXIII.</w>
+        <w  rend="auto-fill-type" n="auto-fill-sid" pos="INJ" msd="Case=Nom|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="tertius">IIII.</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{IIII.}</w>
                 <w  rend="auto-fill-type" n="auto-fill-sid" pos="PRE" msd="MORPH=empty" lemma="de">De</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="locus">loco</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="dominicus">dominicae</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ascensio">ascensionis</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ecclesia">ecclesia</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="sanctus">sanctae</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Maria">Mariae</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=Fem|Deg=Pos" lemma="rotundus">rotundae</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="cohaereo">cohaeret</w>
+                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="ecclesia">ecclesiae</w>
                 <w  rend="auto-fill-type" n="auto-fill-sid" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

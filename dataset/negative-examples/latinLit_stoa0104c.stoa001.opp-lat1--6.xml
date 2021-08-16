@@ -2,19 +2,33 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104c.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104c.stoa001.opp-lat1:gen.1464-gen.1465">
-        <w  rend="line" n="gen.1464" pos="ADV" msd="Deg=Pos" lemma="interea">interea</w>
-                <w  rend="line" n="gen.1464" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="expleo">expletae</w>
-                <w  rend="line" n="gen.1464" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="perpendo">perpendens</w>
-                <w  rend="line" n="gen.1464" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="tempus1">tempora</w>
-                <w  rend="line" n="gen.1464" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uita">uitae</w>
-                <w  rend="line" n="gen.1464" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="gen.1465" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="adiuro">adiurat</w>
-                <w  rend="line" n="gen.1465" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="natus1">natum</w>
-                <w  rend="line" n="gen.1465" pos="ADJqua" msd="Case=Abl|Numb=Sing" lemma="lacobus">lacobus</w>
-                <w  rend="line" n="gen.1465" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Fut|Voice=Act" lemma="uenio">uentura</w>
-                <w  rend="line" n="gen.1465" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="reuoluo">reuoluens</w>
-                <w  rend="line" n="gen.1465" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104c.stoa001.opp-lat1:gen.709-gen.712">
+        <w  rend="line" n="gen.709" pos="ADJord" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="octauus">octauo</w>
+                <w  rend="line" n="gen.709" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="decerpo">decerpens</w>
+                <w  rend="line" n="gen.709" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lumen">lumine</w>
+                <w  rend="line" n="gen.709" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="tegimen">tegmen</w>
+                <w  rend="line" n="gen.710" pos="PRE" msd="MORPH=empty" lemma="ex">e</w>
+                <w  rend="line" n="gen.710" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ueretrum">ueretro</w>
+                <w  rend="line" n="gen.710" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="gen.710" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="stabilis">stabilesque</w>
+                <w  rend="line" n="gen.710" pos="CON" msd="MORPH=empty" lemma="que">{stabilesque}</w>
+                <w  rend="line" n="gen.710" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="uideo">uidens</w>
+                <w  rend="line" n="gen.710" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="gen.710" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="promo">promere</w>
+                <w  rend="line" n="gen.710" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="gressus">gressus</w>
+                <w  rend="line" n="gen.711" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="coniungo">coniunctos</w>
+                <w  rend="line" n="gen.711" pos="PRE" msd="MORPH=empty" lemma="inter">inter</w>
+                <w  rend="line" n="gen.711" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="socius2">socia</w>
+                <w  rend="line" n="gen.711" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="line" n="gen.711" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="stirps">stirpe</w>
+                <w  rend="line" n="gen.711" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="propinqui">propinquos</w>
+                <w  rend="line" n="gen.712" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="uescor">uescitur</w>
+                <w  rend="line" n="gen.712" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="gen.712" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="mensa">mensis</w>
+                <w  rend="line" n="gen.712" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genitor">genitor</w>
+                <w  rend="line" n="gen.712" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="grator">gratatur</w>
+                <w  rend="line" n="gen.712" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="opimus">opimis</w>
+                <w  rend="line" n="gen.712" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

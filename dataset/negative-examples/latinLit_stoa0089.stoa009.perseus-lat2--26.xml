@@ -2,15 +2,32 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa009.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa009.perseus-lat2:2.1.427-2.1.428">
-        <w  rend="line" n="2.1.427" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uacuus">Vacuo</w>
-                <w  rend="line" n="2.1.427" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="plebs">plebs</w>
-                <w  rend="line" n="2.1.427" pos="ADV" msd="Deg=Pos" lemma="undique">undique</w>
-                <w  rend="line" n="2.1.427" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="murus">muro</w>
-                <w  rend="line" n="2.1.428" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
-                <w  rend="line" n="2.1.428" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="securus">secura</w>
-                <w  rend="line" n="2.1.428" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fluo">fluit</w>
-                <w  rend="line" n="2.1.428" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa009.perseus-lat2:2.pr.13-2.pr.16">
+        <w  rend="line" n="2.pr.13" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="immensus">Inmensis</w>
+                <w  rend="line" n="2.pr.13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.pr.13" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="stilichus">Stilicho</w>
+                <w  rend="line" n="2.pr.13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.pr.13" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="succedo1">succedant</w>
+                <w  rend="line" n="2.pr.13" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="otium">otia</w>
+                <w  rend="line" n="2.pr.13" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="cura">curis</w>
+                <w  rend="line" n="2.pr.14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="2.pr.14" pos="PROpos" msd="Case=Dat|Numb=Sing|Gend=Fem" lemma="noster">nostrae</w>
+                <w  rend="line" n="2.pr.14" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="patiens">patiens</w>
+                <w  rend="line" n="2.pr.14" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="cor">corda</w>
+                <w  rend="line" n="2.pr.14" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="remitto">remitte</w>
+                <w  rend="line" n="2.pr.14" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="lyra">lyrae</w>
+                <w  rend="line" n="2.pr.14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="2.pr.15" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="line" n="2.pr.15" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="pudeo">pudeat</w>
+                <w  rend="line" n="2.pr.15" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="longus">longos</w>
+                <w  rend="line" n="2.pr.15" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="interrumpo">interrupisse</w>
+                <w  rend="line" n="2.pr.15" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="labor1">labores</w>
+                <w  rend="line" n="2.pr.16" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="2.pr.16" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="tenuis">tenuem</w>
+                <w  rend="line" n="2.pr.16" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Musa">Musis</w>
+                <w  rend="line" n="2.pr.16" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="constituo">constituisse</w>
+                <w  rend="line" n="2.pr.16" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mora">moram</w>
+                <w  rend="line" n="2.pr.16" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

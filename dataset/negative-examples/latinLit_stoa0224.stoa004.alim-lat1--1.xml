@@ -2,12 +2,15 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0224.stoa004.alim-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:519.ver_sacrum">
-        <w  rend="entry" n="519.ver_sacrum" pos="VER" msd="Case=Gen|Numb=Sing|Mood=Ger|Voice=Act" lemma="uoueo">vovendi</w>
-                <w  rend="entry" n="519.ver_sacrum" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mos">mos</w>
-                <w  rend="entry" n="519.ver_sacrum" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
-                <w  rend="entry" n="519.ver_sacrum" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Italus">Italis</w>
-                <w  rend="entry" n="519.ver_sacrum" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:70.exgregiae">
+        <w  rend="entry" n="70.exgregiae" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Fem|Deg=Pos" lemma="egregius">egregiae</w>
+                <w  rend="entry" n="70.exgregiae" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="70.exgregiae" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="is">id</w>
+                <w  rend="entry" n="70.exgregiae" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="entry" n="70.exgregiae" pos="PRE" msd="MORPH=empty" lemma="ex">e</w>
+                <w  rend="entry" n="70.exgregiae" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="grex">grege</w>
+                <w  rend="entry" n="70.exgregiae" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="lego2">lectae</w>
+                <w  rend="entry" n="70.exgregiae" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -3,14 +3,23 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa028.opp-lat2</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa028.opp-lat2:6">
-        <w  rend="chapter" n="6" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="suspectus2">suspectam</w>
-                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="habeo">habes</w>
-                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="conuenientia">conuenientiam</w>
-                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="prapraedicatio">prapraedicationis</w>
-                <w  rend="chapter" n="6" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="chapter" n="6" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Neut" lemma="tantus">tanta</w>
-                <w  rend="chapter" n="6" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Neut" lemma="disconuenio">disconuenientia</w>
-                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="conuersatio">conuersationis</w>
+        <w  rend="chapter" n="6" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="chapter" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="natura">naturae</w>
+                <w  rend="chapter" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">deo</w>
+                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="credo">credas</w>
+                <w  rend="chapter" n="6" pos="VER" msd="Case=Voc|Numb=Sing" lemma="consultum">c</w>
+                <w  rend="chapter" n="6" pos="PUNC" msd="MORPH=empty" lemma="/">/</w>
+                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="edo1">ede</w>
+                <w  rend="chapter" n="6" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="anima">animae</w>
+                <w  rend="chapter" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="6" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="fio">fiet</w>
+                <w  rend="chapter" n="6" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="chapter" n="6" pos="CONcoo" msd="Deg=Pos" lemma="et2">et</w>
+                <w  rend="chapter" n="6" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="chapter" n="6" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="credo">credas</w>
                 <w  rend="chapter" n="6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

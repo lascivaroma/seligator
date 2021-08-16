@@ -2,45 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0588.abo011.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0588.abo011.perseus-lat2:1.2">
-        <w  rend="section" n="1.2" pos="ADV" msd="Case=Nom|Deg=Pos" lemma="multum2">multum</w>
-                <w  rend="section" n="1.2" pos="CONcoo" msd="Deg=Pos" lemma="uero4">vero</w>
-                <w  rend="section" n="1.2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="bellum">bello</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="uersor">versatus</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="saepe">saepe</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="exercitus1">exercitibus</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="praesum1">praefuit</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.2" pos="ADVneg" msd="MORPH=empty" lemma="nusquam">nusquam</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="culpa">culpa</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="male">male</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="res">rem</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="gero">gessit</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="consilium">consilio</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uinco">vicit</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Gend=MascNeut|Deg=Pos" lemma="tantum">tantumque</w>
-                <w  rend="section" n="1.2" pos="CON" msd="MORPH=empty" lemma="que">{tantumque}</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="eo3">eo</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="ualeo">valuit</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.2" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="section" n="1.2" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="multus">multa</w>
-                <w  rend="section" n="1.2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="1.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="res">re</w>
-                <w  rend="section" n="1.2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="militaris">militari</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="partim">partim</w>
-                <w  rend="section" n="1.2" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="nouus">nova</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="affero">attulerit</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1.2" pos="ADV" msd="Deg=Pos" lemma="partim">partim</w>
-                <w  rend="section" n="1.2" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Comp" lemma="bonus">meliora</w>
-                <w  rend="section" n="1.2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecerit</w>
-                <w  rend="section" n="1.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0588.abo011.perseus-lat2:2.3">
+        <w  rend="section" n="2.3" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="hic1">hoc</w>
+                <w  rend="section" n="2.3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="exercitus1">exercitu</w>
+                <w  rend="section" n="2.3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mora">moram</w>
+                <w  rend="section" n="2.3" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Lacedaemonii">Lacedaemoniorum</w>
+                <w  rend="section" n="2.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="interficio">interfecit</w>
+                <w  rend="section" n="2.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.3" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quod2">quod</w>
+                <w  rend="section" n="2.3" pos="ADV" msd="Deg=Sup" lemma="magis2">maxime</w>
+                <w  rend="section" n="2.3" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="totus">tota</w>
+                <w  rend="section" n="2.3" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="celebro">celebratum</w>
+                <w  rend="section" n="2.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="2.3" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Graecia">Graecia</w>
+                <w  rend="section" n="2.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

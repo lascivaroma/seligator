@@ -2,14 +2,53 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0969.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0969.phi001.perseus-lat2:2.22-2.23">
-        <w  rend="line" n="2.22" pos="INJ" msd="MORPH=empty" lemma="o">o</w>
-                <w  rend="line" n="2.22" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="bonus">bone</w>
-                <w  rend="line" n="2.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="2.22" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="clamo">clamet</w>
-                <w  rend="line" n="2.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="2.23" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Iuppiter">Iuppiter</w>
-                <w  rend="line" n="2.23" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0969.phi001.perseus-lat2:5.41-5.46">
+        <w  rend="line" n="5.41" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">tecum</w>
+                <w  rend="line" n="5.41" pos="CON" msd="MORPH=empty" lemma="cum3">{tecum}</w>
+                <w  rend="line" n="5.41" pos="CONcoo" msd="MORPH=empty" lemma="etenim">etenim</w>
+                <w  rend="line" n="5.41" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="longus">longos</w>
+                <w  rend="line" n="5.41" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="memini">memini</w>
+                <w  rend="line" n="5.41" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="consumo">consumere</w>
+                <w  rend="line" n="5.41" pos="VER" msd="Case=Acc|Numb=Plur" lemma="sol">soles</w>
+                <w  rend="line" n="5.42" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="5.42" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">tecum</w>
+                <w  rend="line" n="5.42" pos="CON" msd="MORPH=empty" lemma="cum3">{tecum}</w>
+                <w  rend="line" n="5.42" pos="ADJord" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Sup" lemma="primus">primas</w>
+                <w  rend="line" n="5.42" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="epulae">epulis</w>
+                <w  rend="line" n="5.42" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="decerpo">decerpere</w>
+                <w  rend="line" n="5.42" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="nox">noctes</w>
+                <w  rend="line" n="5.42" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="5.43" pos="ADJcar" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="unus">unum</w>
+                <w  rend="line" n="5.43" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opus1">opus</w>
+                <w  rend="line" n="5.43" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="5.43" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="5.43" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="requies">requiem</w>
+                <w  rend="line" n="5.43" pos="ADV" msd="Deg=Pos" lemma="pariter">pariter</w>
+                <w  rend="line" n="5.43" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="dispono">disponimus</w>
+                <w  rend="line" n="5.43" pos="ADJcar" msd="Case=Nom|Numb=Plur|Gend=MascNeut" lemma="ambo2">ambo</w>
+                <w  rend="line" n="5.43" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="5.44" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="line" n="5.44" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="uerecundus">verecunda</w>
+                <w  rend="line" n="5.44" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="laxo">laxamus</w>
+                <w  rend="line" n="5.44" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="serius">seria</w>
+                <w  rend="line" n="5.44" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mensa">mensa</w>
+                <w  rend="line" n="5.44" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="5.45" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="5.45" pos="ADV" msd="Deg=Pos" lemma="equidem">equidem</w>
+                <w  rend="line" n="5.45" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="line" n="5.45" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="dubito">dubites</w>
+                <w  rend="line" n="5.45" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="5.45" pos="ADJcar" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="ambo2">amborum</w>
+                <w  rend="line" n="5.45" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="foedus1">foedere</w>
+                <w  rend="line" n="5.45" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="certus">certo</w>
+                <w  rend="line" n="5.46" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="consentio">consentire</w>
+                <w  rend="line" n="5.46" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="dies">dies</w>
+                <w  rend="line" n="5.46" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="5.46" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="line" n="5.46" pos="ADJcar" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="unus">uno</w>
+                <w  rend="line" n="5.46" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sidus">sidere</w>
+                <w  rend="line" n="5.46" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="duco">duci</w>
+                <w  rend="line" n="5.46" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

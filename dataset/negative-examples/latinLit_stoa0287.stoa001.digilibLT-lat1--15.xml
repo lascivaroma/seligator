@@ -2,13 +2,26 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0287.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0287.stoa001.digilibLT-lat1:II.8.9">
-        <w  rend="paragraph" n="II.8.9" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="secundus2">Secunda</w>
-                <w  rend="paragraph" n="II.8.9" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cohors">cohors</w>
-                <w  rend="paragraph" n="II.8.9" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="habeo">habebat</w>
-                <w  rend="paragraph" n="II.8.9" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="centurio1">centuriones</w>
-                <w  rend="paragraph" n="II.8.9" pos="ADJcar" msd="Case=Ind" lemma="quinque">quinque</w>
-                <w  rend="paragraph" n="II.8.9" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0287.stoa001.digilibLT-lat1:II.2.2">
+        <w  rend="paragraph" n="II.2.2" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Galli">Galli</w>
+                <w  rend="paragraph" n="II.2.2" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="paragraph" n="II.2.2" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Celtiberi">Celtiberi</w>
+                <w  rend="paragraph" n="II.2.2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="multus">pluresque</w>
+                <w  rend="paragraph" n="II.2.2" pos="CON" msd="MORPH=empty" lemma="que">{pluresque}</w>
+                <w  rend="paragraph" n="II.2.2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="barbarus2">barbarae</w>
+                <w  rend="paragraph" n="II.2.2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="natio1">nationes</w>
+                <w  rend="paragraph" n="II.2.2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="caterua">catervis</w>
+                <w  rend="paragraph" n="II.2.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Dep|Person=3" lemma="utor">utebantur</w>
+                <w  rend="paragraph" n="II.2.2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="paragraph" n="II.2.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="proelium">proelio</w>
+                <w  rend="paragraph" n="II.2.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="II.2.2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="paragraph" n="II.2.2" pos="PROrel" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
+                <w  rend="paragraph" n="II.2.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erant</w>
+                <w  rend="paragraph" n="II.2.2" pos="ADJdis" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="senus">sena</w>
+                <w  rend="paragraph" n="II.2.2" pos="ADJcar" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="mille">milia</w>
+                <w  rend="paragraph" n="II.2.2" pos="ADJqua" msd="Case=Gen|Numb=Plur" lemma="armati">armatorum</w>
+                <w  rend="paragraph" n="II.2.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

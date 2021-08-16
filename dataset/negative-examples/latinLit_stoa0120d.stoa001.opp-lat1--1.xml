@@ -2,36 +2,26 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0120d.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120d.stoa001.opp-lat1:19">
-        <w  rend="chapter" n="19" pos="PROrel" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="qui1">cui</w>
-                <w  rend="chapter" n="19" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="dico2">dixi</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="chapter" n="19" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="possum1">potuit</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="cogitatio">cogitationes</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="princeps1">principum</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="tenebrae">tenebrarum</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="uideo">uidere</w>
-                <w  rend="chapter" n="19" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
-                <w  rend="chapter" n="19" pos="PROind" msd="Case=Acc|Numb=Sing" lemma="nemo">neminem</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="timeo">timere</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="19" pos="ADVrel" msd="MORPH=empty" lemma="quare2">quare</w>
-                <w  rend="chapter" n="19" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uideo">uidit</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="luctus">luctum</w>
-                <w  rend="chapter" n="19" pos="PROref" msd="Case=Dat|Numb=Sing" lemma="sui1">sibi</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="immineo">inminentem</w>
-                <w  rend="chapter" n="19" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="pars">partis</w>
-                <w  rend="chapter" n="19" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="suus">suae</w>
-                <w  rend="chapter" n="19" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="infelicitas">infelicitate</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="19" pos="PROrel" msd="Case=Acc" lemma="qui1">quam</w>
-                <w  rend="chapter" n="19" pos="ADV" msd="Deg=Pos" lemma="hodie">hodie</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="patior">patitur</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120d.stoa001.opp-lat1:28">
+        <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="princeps1">princeps</w>
+                <w  rend="chapter" n="28" pos="CONcoo" msd="MORPH=empty" lemma="itaque">itaque</w>
+                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="tenebrae">tenebrarum</w>
+                <w  rend="chapter" n="28" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="affigo">adfixus</w>
+                <w  rend="chapter" n="28" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="crux">cruci</w>
+                <w  rend="chapter" n="28" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=MascNeut" lemma="idem">idemque</w>
+                <w  rend="chapter" n="28" pos="CON" msd="MORPH=empty" lemma="que">{idemque}</w>
+                <w  rend="chapter" n="28" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="spineus">spineam</w>
+                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="corona">coronam</w>
+                <w  rend="chapter" n="28" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="porto">portauit</w>
+                <w  rend="chapter" n="28" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="chapter" n="28" pos="PROpos.ref" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="suus">suis</w>
+                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="socius1">sociis</w>
+                <w  rend="chapter" n="28" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="28" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uestis">uestem</w>
+                <w  rend="chapter" n="28" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="coccineus">coccineam</w>
+                <w  rend="chapter" n="28" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="habeo">habuit</w>
+                <w  rend="chapter" n="28" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

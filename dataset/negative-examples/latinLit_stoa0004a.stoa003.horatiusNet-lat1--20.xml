@@ -2,12 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1:11.17">
-        <w  rend="comment" n="11.17" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uulnus">uolnus</w>
-                <w  rend="comment" n="11.17" pos="PROind" msd="Case=Ind" lemma="nihil">nil</w>
-                <w  rend="comment" n="11.17" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="malum3">malum</w>
-                <w  rend="comment" n="11.17" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="leuo1">leuantia</w>
-                <w  rend="comment" n="11.17" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa003.horatiusNet-lat1:4.1">
+        <w  rend="comment" n="4.1" pos="ADV" msd="Numb=Sing|Deg=Pos" lemma="sortito">Sortito</w>
+                <w  rend="comment" n="4.1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aduerbium">aduerbium</w>
+                <w  rend="comment" n="4.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="comment" n="4.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="qualitas">qualitatis</w>
+                <w  rend="comment" n="4.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="4.1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="comment" n="4.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="comment" n="4.1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="comment" n="4.1" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="comment" n="4.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sors">sorte</w>
+                <w  rend="comment" n="4.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="idem">idest</w>
+                <w  rend="comment" n="4.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{idest}</w>
+                <w  rend="comment" n="4.1" pos="ADV" msd="Deg=Pos" lemma="naturaliter">naturaliter</w>
+                <w  rend="comment" n="4.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="euenio">euenit</w>
+                <w  rend="comment" n="4.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,14 +2,12 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi048.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi048.perseus-lat1:5.22">
-        <w  rend="section" n="5.22" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="hic1">hos</w>
-                <w  rend="section" n="5.22" pos="PRE" msd="MORPH=empty" lemma="contra2">contra</w>
-                <w  rend="section" n="5.22" pos="ADJdis" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="singulus">singulos</w>
-                <w  rend="section" n="5.22" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="dico2">dici</w>
-                <w  rend="section" n="5.22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="5.22" pos="ADJqua" msd="Deg=Comp" lemma="bonus">melius</w>
-                <w  rend="section" n="5.22" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi048.perseus-lat1:index">
+        <w  rend="book" n="index" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Cornelius">Cornelius</w>
+                <w  rend="book" n="index" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Sylla">Sulla</w>
+                <w  rend="book" n="index" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Synephebi">Synephebi</w>
+                <w  rend="book" n="index" pos="NOMcom" msd="Numb=Sing" lemma="ualeo">v</w>
+                <w  rend="book" n="index" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,16 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa003.perseus-lat2:1.450">
-        <w  rend="line" n="1.450" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="ipse">Ipso</w>
-                <w  rend="line" n="1.450" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Roma">Roma</w>
-                <w  rend="line" n="1.450" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="dies">die</w>
-                <w  rend="line" n="1.450" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="line" n="1.450" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="line" n="1.450" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
-                <w  rend="line" n="1.450" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="ostendo">ostenditur</w>
-                <w  rend="line" n="1.450" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="auctor">auctor</w>
-                <w  rend="line" n="1.450" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa003.perseus-lat2:1.223-1.224">
+        <w  rend="line" n="1.223" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="fulcio">fultaque</w>
+                <w  rend="line" n="1.223" pos="CON" msd="MORPH=empty" lemma="que">{fultaque}</w>
+                <w  rend="line" n="1.223" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="despicio">despiciens</w>
+                <w  rend="line" n="1.223" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="aurum">auro</w>
+                <w  rend="line" n="1.223" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="laquear">laquearia</w>
+                <w  rend="line" n="1.223" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="diues">dives</w>
+                <w  rend="line" n="1.224" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="tutus">tutior</w>
+                <w  rend="line" n="1.224" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="Aeolius">Aeoliis</w>
+                <w  rend="line" n="1.224" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="malo">mallet</w>
+                <w  rend="line" n="1.224" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="uiuo">vixisse</w>
+                <w  rend="line" n="1.224" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="cauerna">cavernis</w>
+                <w  rend="line" n="1.224" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

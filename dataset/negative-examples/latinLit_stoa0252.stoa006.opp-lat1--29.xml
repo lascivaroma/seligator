@@ -3,50 +3,31 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0252.stoa006.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0252.stoa006.opp-lat1:1">
-        <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="habeo">habes</w>
-                <w  rend="paragraph" n="1" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Laurentium">Laurentium</w>
-                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="difficilis">difficili</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="comparatio1">conparatione</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="presbyter">presbyterum</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="substantia">substantiam</w>
-                <w  rend="paragraph" n="1" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="suus">sui</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="patrimonium">patrimonii</w>
-                <w  rend="paragraph" n="1" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="amo">amauit</w>
+        <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="scriptura">scripturas</w>
+                <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Gen|Numb=Sing" lemma="ecclesiastieus">ecclesiastiei</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="dogma">dogmatis</w>
+                <w  rend="paragraph" n="1" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="sitio">sitiens</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="epoto">epotauit</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
                 <w  rend="paragraph" n="1" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="ecclesia">ecclesiis</w>
+                <w  rend="paragraph" n="1" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sexus">sexus</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="licentia">licentia</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="desum1">defuisset</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="possum1">posset</w>
                 <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="egenus">egenis</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="uniuersus">uniuersa</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="distribuo">distribuens</w>
-                <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="tantus">tanti</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="census">census</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="effusio">effusione</w>
-                <w  rend="paragraph" n="1" pos="PROind" msd="Case=Ind" lemma="nihil">nihil</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="perdo">perderet</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sapientia">sapientia</w>
-                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="peruigil">peruigil</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="doceo">docere</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lenitas">lenitate</w>
-                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="placabilis">placabilis</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
-                <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="serpens">serpentis</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="astutia">astutiam</w>
-                <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lex">lege</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="custodio">custodiat</w>
-                <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="is">ei</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="columba">columbae</w>
-                <w  rend="paragraph" n="1" pos="ADJmul" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="simplex">simplicis</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="animus">animum</w>
-                <w  rend="paragraph" n="1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="amitto">amittat</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Mood=Ind|Tense=Pres|Voice=Act" lemma="licet1">licet</w>
+                <w  rend="paragraph" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="membrum">membris</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="femineus">feminei</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="corpus">corporis</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="animus">animus</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="uirilis">uirilis</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

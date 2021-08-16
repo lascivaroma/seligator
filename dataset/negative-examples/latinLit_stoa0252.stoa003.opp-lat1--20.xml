@@ -2,24 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0252.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0252.stoa003.opp-lat1:44-45">
-        <w  rend="line" n="44" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
-                <w  rend="line" n="44" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="line" n="44" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
-                <w  rend="line" n="44" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erunt</w>
-                <w  rend="line" n="44" pos="ADJcar" msd="MORPH=empty" lemma="1">I</w>
-                <w  rend="line" n="44" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="uates">uatum</w>
-                <w  rend="line" n="44" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="praedico2">praedicta</w>
-                <w  rend="line" n="44" pos="ADJord" msd="Case=Gen|Numb=Plur|Gend=Com|Deg=Comp" lemma="prior">priorum</w>
-                <w  rend="line" n="44" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="45" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="line" n="45" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
-                <w  rend="line" n="45" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
-                <w  rend="line" n="45" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="muto2">mutata</w>
-                <w  rend="line" n="45" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="locus">loco</w>
-                <w  rend="line" n="45" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sententia">sententia</w>
-                <w  rend="line" n="45" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="cedo1">cedit</w>
-                <w  rend="line" n="45" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0252.stoa003.opp-lat1:29-31">
+        <w  rend="line" n="29" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="accipio">accipio</w>
+                <w  rend="line" n="29" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="agnosco">agnoscoque</w>
+                <w  rend="line" n="29" pos="CON" msd="MORPH=empty" lemma="que">{agnoscoque}</w>
+                <w  rend="line" n="29" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="libens">libens</w>
+                <w  rend="line" n="29" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="29" pos="PUNC" msd="MORPH=empty" lemma="]">]</w>
+                <w  rend="line" n="29" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="sequor">sequor</w>
+                <w  rend="line" n="29" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="omen">omina</w>
+                <w  rend="line" n="29" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="tantus">tanta</w>
+                <w  rend="line" n="30" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="promissum">promissisque</w>
+                <w  rend="line" n="30" pos="CON" msd="MORPH=empty" lemma="que">{promissisque}</w>
+                <w  rend="line" n="30" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pater">patris</w>
+                <w  rend="line" n="30" pos="ADJcar" msd="MORPH=empty" lemma="1">I</w>
+                <w  rend="line" n="30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=1" lemma="exsequor">exsequar</w>
+                <w  rend="line" n="30" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="caelestis">caelestia</w>
+                <w  rend="line" n="30" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="donum">dona</w>
+                <w  rend="line" n="30" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="31" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="ammiror">ammiranda</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="deus">dei</w>
+                <w  rend="line" n="31" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Fem" lemma="tantus">tantarum</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="munus">munera</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="laus">laudum</w>
+                <w  rend="line" n="31" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

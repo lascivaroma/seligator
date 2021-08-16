@@ -2,33 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:anthoLat.anthoLat.musisquedeoque-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:anthoLat.anthoLat.musisquedeoque-lat1:855c.1-855c.4">
-        <w  rend="line" n="855c.1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="magnus">Magni</w>
-                <w  rend="line" n="855c.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="animus">animi</w>
-                <w  rend="line" n="855c.1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Caesar">Caesar</w>
-                <w  rend="line" n="855c.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="populus1">populos</w>
-                <w  rend="line" n="855c.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uirtus">uirtute</w>
-                <w  rend="line" n="855c.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="subigo">subegi</w>
-                <w  rend="line" n="855c.2" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Iulius">Iulius</w>
-                <w  rend="line" n="855c.2" pos="NOMpro" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="Arctous">Arctoos</w>
-                <w  rend="line" n="855c.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="855c.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="possum1">potui</w>
-                <w  rend="line" n="855c.2" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="line" n="855c.2" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solus</w>
-                <w  rend="line" n="855c.2" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="honor">honores</w>
-                <w  rend="line" n="855c.3" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="flecto">Flectere</w>
-                <w  rend="line" n="855c.3" pos="NOMpro" msd="Case=Nom|Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act" lemma="Pompeius">Pompeii</w>
-                <w  rend="line" n="855c.3" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="855c.3" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solus</w>
-                <w  rend="line" n="855c.3" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="Romanus">Romana</w>
-                <w  rend="line" n="855c.3" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="teneo">tenere</w>
-                <w  rend="line" n="855c.4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="imperium">Imperia</w>
-                <w  rend="line" n="855c.4" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="line" n="855c.4" pos="ADJcar" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="unus">unum</w>
-                <w  rend="line" n="855c.4" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="mundus1">mundo</w>
-                <w  rend="line" n="855c.4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="praepono">praeponere</w>
-                <w  rend="line" n="855c.4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="rex">regem</w>
-                <w  rend="line" n="855c.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:anthoLat.anthoLat.musisquedeoque-lat1:164.1-164.2">
+        <w  rend="line" n="164.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uertex">Verticis</w>
+                <w  rend="line" n="164.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="164.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="thalamus">thalami</w>
+                <w  rend="line" n="164.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pignus">pignus</w>
+                <w  rend="line" n="164.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="sublimis">sublime</w>
+                <w  rend="line" n="164.1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="Tonans">Tonantis</w>
+                <w  rend="line" n="164.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="exsupero">Exuperat</w>
+                <w  rend="line" n="164.2" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Paris">Paridis</w>
+                <w  rend="line" n="164.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="laus">laude</w>
+                <w  rend="line" n="164.2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="probo">probata</w>
+                <w  rend="line" n="164.2" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uenus">Venus</w>
+                <w  rend="line" n="164.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,35 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:I.1">
-        <w  rend="part" n="I.1" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="part" n="I.1" pos="ADV" msd="Deg=Pos" lemma="rursus">rursum</w>
-                <w  rend="part" n="I.1" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="alius">aliam</w>
-                <w  rend="part" n="I.1" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tertius">tertiam</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pars">partem</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="panis">panis</w>
-                <w  rend="part" n="I.1" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="addo">addentes</w>
-                <w  rend="part" n="I.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="transeo1">transimus</w>
-                <w  rend="part" n="I.1" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
-                <w  rend="part" n="I.1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="medius">mediae</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="qualitas">qualitatis</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="materia">materia</w>
-                <w  rend="part" n="I.1" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="part" n="I.1" pos="VER" msd="Case=Gen|Numb=Plur|Mood=Ger|Voice=Act" lemma="uolans">uolantum</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="qualitas">qualitatem</w>
-                <w  rend="part" n="I.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="I.1" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="part" n="I.1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="part" n="I.1" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="idem">eadem</w>
-                <w  rend="part" n="I.1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="similis">simili</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="dies">dierum</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="numerus">numero</w>
-                <w  rend="part" n="I.1" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="perseuero">perseuerantes</w>
-                <w  rend="part" n="I.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="ultimus">ultimam</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pars">partem</w>
-                <w  rend="part" n="I.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="panis">panis</w>
-                <w  rend="part" n="I.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="addo">addemus</w>
-                <w  rend="part" n="I.1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:pr">
+        <w  rend="book" n="pr" pos="ADV" msd="Deg=Pos" lemma="dehinc">dehinc</w>
+                <w  rend="book" n="pr" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Soranus">Soranus</w>
+                <w  rend="book" n="pr" pos="ADV" msd="Deg=Sup" lemma="plene">plenissime</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Fem|Deg=Pos" lemma="cunctus">cunctarum</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="diligentia">diligentiam</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="trado">tradidit</w>
+                <w  rend="book" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="specialis">speciale</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="corpus">corpus</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="scriptura">scripturae</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="formo">formauit</w>
+                <w  rend="book" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="passio">passione</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caput">capitis</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="initium">initia</w>
+                <w  rend="book" n="pr" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="sumo">sumens</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="CONsub" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui2">quod</w>
+                <w  rend="book" n="pr" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="book" n="pr" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="book" n="pr" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="facio">faciendum</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="assumo">assumimus</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

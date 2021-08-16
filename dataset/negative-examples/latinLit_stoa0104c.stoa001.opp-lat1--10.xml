@@ -2,16 +2,47 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104c.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104c.stoa001.opp-lat1:gen.1091-gen.1092">
-        <w  rend="line" n="gen.1091" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
-                <w  rend="line" n="gen.1091" pos="PRE" msd="MORPH=empty" lemma="inter">inter</w>
-                <w  rend="line" n="gen.1091" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="flumen">flumina</w>
-                <w  rend="line" n="gen.1091" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="gen.1091" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="grauis">graui</w>
-                <w  rend="line" n="gen.1091" pos="VER" msd="Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="conficio">confecta</w>
-                <w  rend="line" n="gen.1091" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="dolor">dolore</w>
-                <w  rend="line" n="gen.1091" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="gen.1092" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104c.stoa001.opp-lat1:exo.286-exo.290">
+        <w  rend="line" n="exo.286" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">His</w>
+                <w  rend="line" n="exo.286" pos="VER" msd="Case=Abl|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass" lemma="ago">actis</w>
+                <w  rend="line" n="exo.286" pos="NOMcom" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="cynomyius">cynomyia</w>
+                <w  rend="line" n="exo.286" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fluo">fluit</w>
+                <w  rend="line" n="exo.286" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.286" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="exo.286" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="musca">musca</w>
+                <w  rend="line" n="exo.286" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="caninus">canina</w>
+                <w  rend="line" n="exo.287" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="dico2">dicitur</w>
+                <w  rend="line" n="exo.287" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.287" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="exo.287" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uates">uatis</w>
+                <w  rend="line" n="exo.287" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="compleo">conpleuit</w>
+                <w  rend="line" n="exo.287" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="nutus">nutibus</w>
+                <w  rend="line" n="exo.287" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
+                <w  rend="line" n="exo.288" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="exspatio">exspatiata</w>
+                <w  rend="line" n="exo.288" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="locus">locos</w>
+                <w  rend="line" n="exo.288" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solique</w>
+                <w  rend="line" n="exo.288" pos="CON" msd="MORPH=empty" lemma="que">{solique}</w>
+                <w  rend="line" n="exo.288" pos="ADVneg" msd="MORPH=empty" lemma="haud">haut</w>
+                <w  rend="line" n="exo.288" pos="VER" msd="Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="cognosco">cognita</w>
+                <w  rend="line" n="exo.288" pos="VER" msd="Case=Dat|Numb=Sing|Gend=Fem" lemma="gero">Gessae</w>
+                <w  rend="line" n="exo.288" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.289" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="exo.289" pos="ADV" msd="Deg=Pos" lemma="tum">tum</w>
+                <w  rend="line" n="exo.289" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="terra">terra</w>
+                <w  rend="line" n="exo.289" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="line" n="exo.289" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Iudaea">Iudaeae</w>
+                <w  rend="line" n="exo.289" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="commodum1">commoda</w>
+                <w  rend="line" n="exo.289" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="gens">genti</w>
+                <w  rend="line" n="exo.289" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.290" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="traho">traxit</w>
+                <w  rend="line" n="exo.290" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="inexhaustus">inexhaustos</w>
+                <w  rend="line" n="exo.290" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.290" pos="ADVrel" msd="Numb=Sing" lemma="quacumque1">quacumque</w>
+                <w  rend="line" n="exo.290" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="exo.290" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ago">acta</w>
+                <w  rend="line" n="exo.290" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="exo.290" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="dolor">dolores</w>
+                <w  rend="line" n="exo.290" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

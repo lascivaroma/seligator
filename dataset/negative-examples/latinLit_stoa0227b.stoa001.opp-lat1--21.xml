@@ -3,24 +3,12 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0227b.stoa001.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0227b.stoa001.opp-lat1:11">
-        <w  rend="section" n="11" pos="ADVneg" msd="MORPH=empty" lemma="non">Non</w>
-                <w  rend="section" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fero">fert</w>
+        <w  rend="section" n="11" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="11" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="medium">medio</w>
                 <w  rend="section" n="11" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="locus">locus</w>
-                <w  rend="section" n="11" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ager">agros</w>
-                <w  rend="section" n="11" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uinea">uineas</w>
-                <w  rend="section" n="11" pos="PROind" msd="Case=Ind" lemma="nihhil">nichilque</w>
-                <w  rend="section" n="11" pos="CON" msd="MORPH=empty" lemma="que">{nichilque}</w>
-                <w  rend="section" n="11" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="alius">aliud</w>
-                <w  rend="section" n="11" pos="ADV" msd="Case=Nom|Deg=Pos" lemma="illic2">illic</w>
+                <w  rend="section" n="11" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="lapideus">lapideum</w>
+                <w  rend="section" n="11" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="altarium">altarium</w>
                 <w  rend="section" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="11" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aqua">aqua</w>
-                <w  rend="section" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="arbor">arbores</w>
-                <w  rend="section" n="11" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="palma">palmarum</w>
                 <w  rend="section" n="11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

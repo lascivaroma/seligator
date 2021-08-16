@@ -2,12 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0134.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi002.perseus-lat2:599">
-        <w  rend="line" n="599" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Sup" lemma="malus3">Pessima</w>
-                <w  rend="line" n="599" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
-                <w  rend="line" n="599" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="599" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="meretrix">meretrix</w>
-                <w  rend="line" n="599" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi002.perseus-lat2:810-811">
+        <w  rend="line" n="810" pos="ADVrel" msd="MORPH=empty" lemma="ut1">Ut</w>
+                <w  rend="line" n="810" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="810" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="line" n="810" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
+                <w  rend="line" n="810" pos="NOMcom" msd="Case=Voc|Numb=Plur" lemma="deus">Dii</w>
+                <w  rend="line" n="810" pos="NOMcom" msd="Case=Voc|Numb=Plur" lemma="dea">Deaeque</w>
+                <w  rend="line" n="810" pos="CON" msd="MORPH=empty" lemma="que">{Deaeque}</w>
+                <w  rend="line" n="810" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="810" pos="PROrel" msd="Case=Nom|Numb=Sing" lemma="quantum1">quantum</w>
+                <w  rend="line" n="810" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="810" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="810" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Syrus">Syre</w>
+                <w  rend="line" n="810" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="811" pos="PRE" msd="MORPH=empty" lemma="cum2">Cum</w>
+                <w  rend="line" n="811" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="tuum">tuo</w>
+                <w  rend="line" n="811" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="istic1">istoc</w>
+                <w  rend="line" n="811" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="inuenio">invento</w>
+                <w  rend="line" n="811" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="811" pos="PRE" msd="MORPH=empty" lemma="cum">cumque</w>
+                <w  rend="line" n="811" pos="CON" msd="MORPH=empty" lemma="que">{cumque}</w>
+                <w  rend="line" n="811" pos="NOMcom" msd="Case=Abl|Numb=Sing|Mood=Par|Tense=Perf|Voice=Pass" lemma="inceptum">incepto</w>
+                <w  rend="line" n="811" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="perdo">perduint</w>
+                <w  rend="line" n="811" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

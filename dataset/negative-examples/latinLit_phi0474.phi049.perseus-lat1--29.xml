@@ -2,17 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi049.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi049.perseus-lat1:5.92">
-        <w  rend="section" n="5.92" pos="PROref" msd="Case=Dat|Numb=Sing" lemma="sui1">sibi</w>
-                <w  rend="section" n="5.92" pos="PROind" msd="Case=Ind" lemma="nihil">nihil</w>
-                <w  rend="section" n="5.92" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="desum1">deesse</w>
-                <w  rend="section" n="5.92" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="5.92" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="ille">illi</w>
-                <w  rend="section" n="5.92" pos="PROind" msd="Case=Ind" lemma="nihil">nihil</w>
-                <w  rend="section" n="5.92" pos="ADJqua" msd="Case=Ind|Deg=Pos" lemma="satis1">satis</w>
-                <w  rend="section" n="5.92" pos="ADV" msd="Deg=Pos" lemma="umquam">umquam</w>
-                <w  rend="section" n="5.92" pos="VER" msd="Mood=Par|Tense=Fut|Voice=Act" lemma="sum1">fore</w>
-                <w  rend="section" n="5.92" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi049.perseus-lat1:praef">
+        <w  rend="chapter" n="praef" pos="ADVneg" msd="MORPH=empty" lemma="ne3">ne</w>
+                <w  rend="chapter" n="praef" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="praef" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caudex">codice</w>
+                <w  rend="chapter" n="praef" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="chapter" n="praef" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="ipse">ipso</w>
+                <w  rend="chapter" n="praef" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="chapter" n="praef" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
+                <w  rend="chapter" n="praef" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="fleo">fleri</w>
+                <w  rend="chapter" n="praef" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="possum1">posse</w>
+                <w  rend="chapter" n="praef" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Stroux">Stroux</w>
+                <w  rend="chapter" n="praef" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="affirmo">affirmat</w>
+                <w  rend="chapter" n="praef" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

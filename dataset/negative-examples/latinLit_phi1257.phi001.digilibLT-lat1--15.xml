@@ -3,20 +3,24 @@
         <idno type="CTS_URN">urn:cts:latinLit:phi1257.phi001.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:phi1257.phi001.digilibLT-lat1:XXXV">
-        <w  rend="book" n="XXXV" pos="ADV" msd="Deg=Pos" lemma="imprimis">Inprimis</w>
-                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="excipio">excepti</w>
-                <w  rend="book" n="XXXV" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Macedones">Macedones</w>
+        <w  rend="book" n="XXXV" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
+                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="copia">copias</w>
+                <w  rend="book" n="XXXV" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Metellus">Metellus</w>
+                <w  rend="book" n="XXXV" pos="PRE" msd="MORPH=empty" lemma="contra2">contra</w>
+                <w  rend="book" n="XXXV" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Cinna">Cinnam</w>
+                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="duco">duxerat</w>
                 <w  rend="book" n="XXXV" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="XXXV" pos="PROrel" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="qui1">quorum</w>
-                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fides2">fides</w>
-                <w  rend="book" n="XXXV" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="insignis">insignis</w>
-                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="sum1">fuerat</w>
-                <w  rend="book" n="XXXV" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="XXXV" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uxor">uxores</w>
-                <w  rend="book" n="XXXV" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="liberi">liberi</w>
-                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="reddo">redderentur</w>
+                <w  rend="book" n="XXXV" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="miles">milites</w>
+                <w  rend="book" n="XXXV" pos="ADV" msd="Deg=Pos" lemma="repente">repente</w>
+                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uexillum">vexillis</w>
+                <w  rend="book" n="XXXV" pos="PROind" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="totus">totis</w>
+                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="clamor">clamore</w>
+                <w  rend="book" n="XXXV" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="exercitus1">exercitum</w>
+                <w  rend="book" n="XXXV" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Cinna">Cinnae</w>
+                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="saluto">salutant</w>
+                <w  rend="book" n="XXXV" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="book" n="XXXV" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="resaluto">resalutantur</w>
                 <w  rend="book" n="XXXV" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

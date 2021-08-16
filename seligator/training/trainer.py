@@ -51,6 +51,7 @@ def build_data_loaders(
     train_data: List[Instance],
     dev_data: List[Instance],
     batch_size: int = 8,
+    dev_batch_size: int = 64,
     batches_per_epoch: Optional[int] = None
 ) -> Tuple[DataLoader, DataLoader]:
 
@@ -59,9 +60,9 @@ def build_data_loaders(
         batches_per_epoch=batches_per_epoch
     )
     dev_loader = SimpleDataLoader(
-        dev_data, batch_size,
+        dev_data, dev_batch_size,
         shuffle=False,
-        batches_per_epoch=batches_per_epoch
+        #batches_per_epoch=batches_per_epoch
     )
     return train_loader, dev_loader
 
@@ -109,6 +110,7 @@ def generate_all_data(
     msd_features: Tuple[str, ...] = None,
     ratio_train: float = 1.0,
     batch_size: int = 16,
+    dev_batch_size: int = 64,
     batches_per_epoch: Optional[int] = None,
     get_me_bert: GetMeBert = GetMeBert(),
     instance_type: str = "default",
@@ -158,7 +160,8 @@ def generate_all_data(
 
     train_loader, dev_loader = build_data_loaders(
         train_data, dev_data,
-        batch_size=batch_size, batches_per_epoch=batches_per_epoch
+        batch_size=batch_size, batches_per_epoch=batches_per_epoch,
+        dev_batch_size=dev_batch_size
     )
     train_loader.index_with(vocab)
     dev_loader.index_with(vocab)

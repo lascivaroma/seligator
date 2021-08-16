@@ -2,26 +2,58 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0120a.stoa003.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120a.stoa003.digilibLT-lat1:18">
-        <w  rend="unknown" n="18" pos="CONcoo" msd="MORPH=empty" lemma="atque1">Atque</w>
-                <w  rend="unknown" n="18" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="ipse">ipsam</w>
-                <w  rend="unknown" n="18" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Britannia">Britanniam</w>
-                <w  rend="unknown" n="18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="18" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
-                <w  rend="unknown" n="18" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sedes">sedem</w>
-                <w  rend="unknown" n="18" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
-                <w  rend="unknown" n="18" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="diuturnus">diuturno</w>
-                <w  rend="unknown" n="18" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="scelus">sceleri</w>
-                <w  rend="unknown" n="18" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="praebeo">praebuisset</w>
-                <w  rend="unknown" n="18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="consto">constat</w>
-                <w  rend="unknown" n="18" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uictoria">victoriam</w>
-                <w  rend="unknown" n="18" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="uester">vestram</w>
-                <w  rend="unknown" n="18" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="solus">sola</w>
-                <w  rend="unknown" n="18" pos="PROpos.ref" msd="Case=Gen|Numb=Sing" lemma="sui2">sui</w>
-                <w  rend="unknown" n="18" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="restitutio">restitutione</w>
-                <w  rend="unknown" n="18" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="sentio">sensisse</w>
-                <w  rend="unknown" n="18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120a.stoa003.digilibLT-lat1:1">
+        <w  rend="unknown" n="1" pos="PROint" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">Quo</w>
+                <w  rend="unknown" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="genus1">genere</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="oratio">orationis</w>
+                <w  rend="unknown" n="1" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="quantus2">quanta</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cura">cura</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="quantus2">quantus</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="labor1">labor</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="ADVint" msd="MORPH=empty" lemma="quam2">quam</w>
+                <w  rend="unknown" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="sollicitus">sollicita</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ueneratio">veneratio</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="sentio">sensi</w>
+                <w  rend="unknown" n="1" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="unknown" n="1" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="unknown" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="unknown" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="cotidianus">cotidiana</w>
+                <w  rend="unknown" n="1" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Pass" lemma="instituo">instituendae</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="iuuentus">iuventutis</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="exercitatio">exercitatione</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Dep|Person=1" lemma="uersor">versarer</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="CONsub" msd="MORPH=empty" lemma="quamuis2">quamvis</w>
+                <w  rend="unknown" n="1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="unknown" n="1" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">prima</w>
+                <w  rend="unknown" n="1" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
+                <w  rend="unknown" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Dep" lemma="renascor">renascentem</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="res">rem</w>
+                <w  rend="unknown" n="1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="publicus2">publicam</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pater">patris</w>
+                <w  rend="unknown" n="1" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="patruus1">patrui</w>
+                <w  rend="unknown" n="1" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="tuus">tui</w>
+                <w  rend="unknown" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="meritum">merita</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="licet1">licet</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="dico2">dicendo</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="aequo">aequare</w>
+                <w  rend="unknown" n="1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=1" lemma="possum1">possem</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=1" lemma="possum1">possem</w>
+                <w  rend="unknown" n="1" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="recenseo">recensere</w>
+                <w  rend="unknown" n="1" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="numero1">numerando</w>
+                <w  rend="unknown" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

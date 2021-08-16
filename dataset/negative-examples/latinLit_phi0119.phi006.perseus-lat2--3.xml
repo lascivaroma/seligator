@@ -2,12 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi006.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi006.perseus-lat2:115">
-        <w  rend="line" n="115" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="scio">Scies</w>
-                <w  rend="line" n="115" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hóc</w>
-                <w  rend="line" n="115" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
-                <w  rend="line" n="115" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="line" n="115" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi006.perseus-lat2:212b-212c">
+        <w  rend="line" n="212b" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Marcus">M.</w>
+                <w  rend="line" n="212c" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="quis1">Quis</w>
+                <w  rend="line" n="212c" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="212c" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="212c" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quém</w>
+                <w  rend="line" n="212c" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="uideo">vides</w>
+                <w  rend="line" n="212c" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

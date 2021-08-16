@@ -2,12 +2,26 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1:10">
-        <w  rend="paragraph" n="10" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">Omnes</w>
-                <w  rend="paragraph" n="10" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
-                <w  rend="paragraph" n="10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="afficio">afficiebant</w>
-                <w  rend="paragraph" n="10" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="opus1">operi</w>
-                <w  rend="paragraph" n="10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1:23">
+        <w  rend="paragraph" n="23" pos="PRE" msd="MORPH=empty" lemma="de">De</w>
+                <w  rend="paragraph" n="23" pos="PROrel" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
+                <w  rend="paragraph" n="23" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ferus1">feris</w>
+                <w  rend="paragraph" n="23" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="paragraph" n="23" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="serpens">serpentibus</w>
+                <w  rend="paragraph" n="23" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="23" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="paragraph" n="23" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="innumerus">innumerae</w>
+                <w  rend="paragraph" n="23" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="paragraph" n="23" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Indicus">Indica</w>
+                <w  rend="paragraph" n="23" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="lingua">lingua</w>
+                <w  rend="paragraph" n="23" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erant</w>
+                <w  rend="paragraph" n="23" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="uocito">vocitatae</w>
+                <w  rend="paragraph" n="23" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="23" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="scibo">scibendum</w>
+                <w  rend="paragraph" n="23" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="paragraph" n="23" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="paragraph" n="23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="puto">putavi</w>
+                <w  rend="paragraph" n="23" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,15 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi009.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi009.perseus-lat2:708">
-        <w  rend="line" n="708" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
-                <w  rend="line" n="708" pos="ADV" msd="Case=Abl|Deg=Sup" lemma="posterius">postremo</w>
-                <w  rend="line" n="708" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="argentum">argento</w>
-                <w  rend="line" n="708" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="facio">factum</w>
-                <w  rend="line" n="708" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="708" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
-                <w  rend="line" n="708" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="do">dedi</w>
-                <w  rend="line" n="708" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi009.perseus-lat2:653">
+        <w  rend="line" n="653" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="653" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="line" n="653" pos="CONsub" msd="Case=Acc|Numb=Sing" lemma="qui1">quod</w>
+                <w  rend="line" n="653" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="amo">ames</w>
+                <w  rend="line" n="653" pos="NOMcom" msd="Case=Loc|Numb=Sing" lemma="domus">domi</w>
+                <w  rend="line" n="653" pos="VER" msd="Deg=Pos" lemma="praesto">praéstost</w>
+                <w  rend="line" n="653" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{praéstost}</w>
+                <w  rend="line" n="653" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="653" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fidicina">fidicina</w>
+                <w  rend="line" n="653" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="653" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="opus1">opera</w>
+                <w  rend="line" n="653" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
+                <w  rend="line" n="653" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

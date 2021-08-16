@@ -2,14 +2,24 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi014.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi014.perseus-lat2:188">
-        <w  rend="line" n="188" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">Egon</w>
-                <w  rend="line" n="188" pos="ADV" msd="MORPH=empty" lemma="ne2">{Egon}</w>
-                <w  rend="line" n="188" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="do">dem</w>
-                <w  rend="line" n="188" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pignus">pignus</w>
-                <w  rend="line" n="188" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">tecum</w>
-                <w  rend="line" n="188" pos="CON" msd="MORPH=empty" lemma="cum3">{tecum}</w>
-                <w  rend="line" n="188" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi014.perseus-lat2:339-340">
+        <w  rend="line" n="339" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="mirus">Mirum</w>
+                <w  rend="line" n="339" pos="CONsub" msd="MORPH=empty" lemma="quin2">quin</w>
+                <w  rend="line" n="339" pos="NOMcom" msd="Case=Gen|Numb=Sing|Person=2" lemma="rex">regis</w>
+                <w  rend="line" n="339" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Philippus">Phílippi</w>
+                <w  rend="line" n="339" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="causa">causa</w>
+                <w  rend="line" n="339" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="line" n="339" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Attalus">Attali</w>
+                <w  rend="line" n="340" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="340" pos="ADV" msd="Deg=Comp" lemma="potius">potius</w>
+                <w  rend="line" n="340" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="uendo">vendam</w>
+                <w  rend="line" n="340" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="line" n="340" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
+                <w  rend="line" n="340" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="340" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quae</w>
+                <w  rend="line" n="340" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="sum1">sis</w>
+                <w  rend="line" n="340" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
+                <w  rend="line" n="340" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

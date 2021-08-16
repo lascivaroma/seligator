@@ -2,13 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi014.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi014.perseus-lat2:671a">
-        <w  rend="line" n="671a" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="line" n="671a" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
-                <w  rend="line" n="671a" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="dignus">dignust</w>
-                <w  rend="line" n="671a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{dignust}</w>
-                <w  rend="line" n="671a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pereo1">perit</w>
-                <w  rend="line" n="671a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi014.perseus-lat2:430">
+        <w  rend="line" n="430" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
+                <w  rend="line" n="430" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="430" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">haec</w>
+                <w  rend="line" n="430" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="defendo">defendet</w>
+                <w  rend="line" n="430" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="430" pos="ADVneg" msd="MORPH=empty" lemma="numquam">numquam</w>
+                <w  rend="line" n="430" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="delingo">delinget</w>
+                <w  rend="line" n="430" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sal">salem</w>
+                <w  rend="line" n="430" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

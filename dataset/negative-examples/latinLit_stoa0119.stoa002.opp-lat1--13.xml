@@ -3,18 +3,20 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0119.stoa002.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119.stoa002.opp-lat1:1">
-        <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="aeger2">aeger</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="offensa">offensa</w>
+        <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="nam">nam</w>
+                <w  rend="paragraph" n="1" pos="ADV" msd="Deg=Pos" lemma="paene">paene</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="ultimus">ultimus</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="numerus">numeri</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="titulus">titulus</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ordo">ordinem</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Pass" lemma="nutrio">nutriendae</w>
                 <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="informo">informari</w>
-                <w  rend="paragraph" n="1" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="tantus">tanta</w>
-                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="doctrina">doctrina</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="cupio">cupiens</w>
-                <w  rend="paragraph" n="1" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="paragraph" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="sano">sanari</w>
-                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="ultimus">ultimus</w>
+                <w  rend="paragraph" n="1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="enutritus">enutritae</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="laus">laudem</w>
+                <w  rend="paragraph" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="contineo">continet</w>
+                <w  rend="paragraph" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caritas">caritatis</w>
+                <w  rend="paragraph" n="1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

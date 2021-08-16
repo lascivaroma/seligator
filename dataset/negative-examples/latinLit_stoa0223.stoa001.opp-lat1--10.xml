@@ -2,14 +2,63 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0223.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0223.stoa001.opp-lat1:7.32">
-        <w  rend="paragraph|line" n="7.32" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opus1">opus</w>
-                <w  rend="paragraph|line" n="7.32" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="paragraph|line" n="7.32" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="omnis">omne</w>
-                <w  rend="paragraph|line" n="7.32" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="curro">curret</w>
-                <w  rend="paragraph|line" n="7.32" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ignis">ignis</w>
-                <w  rend="paragraph|line" n="7.32" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="arbiter">arbiter</w>
-                <w  rend="paragraph|line" n="7.32" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0223.stoa001.opp-lat1:22.149-22.156">
+        <w  rend="paragraph|line" n="22.149" pos="NOMcom" msd="Numb=Sing" lemma="cano">cane</w>
+                <w  rend="paragraph|line" n="22.149" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="grandis">grandia</w>
+                <w  rend="paragraph|line" n="22.149" pos="VER" msd="Case=Acc|Numb=Plur" lemma="coepio">coepta</w>
+                <w  rend="paragraph|line" n="22.149" pos="VER" msd="Case=Acc|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="tono">tonantis</w>
+                <w  rend="paragraph|line" n="22.149" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph|line" n="22.150" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="scribo">scribe</w>
+                <w  rend="paragraph|line" n="22.150" pos="VER" msd="Case=Gen|Numb=Plur|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="creo">creatarum</w>
+                <w  rend="paragraph|line" n="22.150" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uerbum">uerbo</w>
+                <w  rend="paragraph|line" n="22.150" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="primordium">primordia</w>
+                <w  rend="paragraph|line" n="22.150" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerum</w>
+                <w  rend="paragraph|line" n="22.151" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="paragraph|line" n="22.151" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="chaos">chaos</w>
+                <w  rend="paragraph|line" n="22.151" pos="PRE" msd="MORPH=empty" lemma="ante2">ante</w>
+                <w  rend="paragraph|line" n="22.151" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="paragraph|line" n="22.151" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primaeque</w>
+                <w  rend="paragraph|line" n="22.151" pos="CON" msd="MORPH=empty" lemma="que">{primaeque}</w>
+                <w  rend="paragraph|line" n="22.151" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="crepusculum">crepuscula</w>
+                <w  rend="paragraph|line" n="22.151" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="lux">lucis</w>
+                <w  rend="paragraph|line" n="22.151" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph|line" n="22.152" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui">quaeque</w>
+                <w  rend="paragraph|line" n="22.152" pos="CON" msd="MORPH=empty" lemma="que">{quaeque}</w>
+                <w  rend="paragraph|line" n="22.152" pos="ADV" msd="Deg=Pos" lemma="dehinc">dehinc</w>
+                <w  rend="paragraph|line" n="22.152" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="uarius">uariis</w>
+                <w  rend="paragraph|line" n="22.152" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="elementa">elementa</w>
+                <w  rend="paragraph|line" n="22.152" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="paragraph|line" n="22.152" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
+                <w  rend="paragraph|line" n="22.152" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="saeculum">saeclis</w>
+                <w  rend="paragraph|line" n="22.153" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="dictum">dicta</w>
+                <w  rend="paragraph|line" n="22.153" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
+                <w  rend="paragraph|line" n="22.153" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="ago">acta</w>
+                <w  rend="paragraph|line" n="22.153" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">deo</w>
+                <w  rend="paragraph|line" n="22.153" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="paragraph|line" n="22.153" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="sanctus">sancta</w>
+                <w  rend="paragraph|line" n="22.153" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uolumen">uolumina</w>
+                <w  rend="paragraph|line" n="22.153" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="disco">disces</w>
+                <w  rend="paragraph|line" n="22.153" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph|line" n="22.154" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="paragraph|line" n="22.154" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="doceo">docuit</w>
+                <w  rend="paragraph|line" n="22.154" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="tabula">tabulis</w>
+                <w  rend="paragraph|line" n="22.154" pos="NOMcom" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="legalis">legalibus</w>
+                <w  rend="paragraph|line" n="22.154" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="indo">indita</w>
+                <w  rend="paragraph|line" n="22.154" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Moyses">Moyses</w>
+                <w  rend="paragraph|line" n="22.155" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="paragraph|line" n="22.155" pos="ADJqua" msd="Case=Gen|Numb=Sing|Deg=Pos" lemma="euangelicus">euangelici</w>
+                <w  rend="paragraph|line" n="22.155" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="paragraph|line" n="22.155" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="lex">lex</w>
+                <w  rend="paragraph|line" n="22.155" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="nouus">noua</w>
+                <w  rend="paragraph|line" n="22.155" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="testamentum">testamenti</w>
+                <w  rend="paragraph|line" n="22.156" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="signo">signat</w>
+                <w  rend="paragraph|line" n="22.156" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph|line" n="22.156" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos|Mood=Par|Tense=Perf|Voice=Pass" lemma="operio">operta</w>
+                <w  rend="paragraph|line" n="22.156" pos="ADJadv.ord" msd="Deg=Comp" lemma="prius">prius</w>
+                <w  rend="paragraph|line" n="22.156" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="retego">retegens</w>
+                <w  rend="paragraph|line" n="22.156" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mysterium">mysteria</w>
+                <w  rend="paragraph|line" n="22.156" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Christus">Christi</w>
+                <w  rend="paragraph|line" n="22.156" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

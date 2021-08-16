@@ -2,13 +2,15 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0096.stoa004.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa004.opp-lat2:5">
-        <w  rend="line" n="5" pos="ADJqua" msd="Gend=Neut|Deg=Comp" lemma="multus">Plus</w>
-                <w  rend="line" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=1" lemma="sum1">eram</w>
-                <w  rend="line" n="5" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
-                <w  rend="line" n="5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="palea">palea</w>
-                <w  rend="line" n="5" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="leuis1">levior</w>
-                <w  rend="line" n="5" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa004.opp-lat2:309">
+        <w  rend="line" n="309" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="tormentum">Tormentum</w>
+                <w  rend="line" n="309" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="309" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="totus">totum</w>
+                <w  rend="line" n="309" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="309" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="line" n="309" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
+                <w  rend="line" n="309" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="dies">d</w>
+                <w  rend="line" n="309" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
                 
     </quote>
  </div>

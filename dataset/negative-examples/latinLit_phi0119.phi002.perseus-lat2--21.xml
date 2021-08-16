@@ -2,13 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi002.perseus-lat2:733a">
-        <w  rend="line" n="733a" pos="ADVrel" msd="MORPH=empty" lemma="ut1">Vt</w>
-                <w  rend="line" n="733a" pos="NOMcom" msd="Deg=Pos" lemma="tempori">temperi</w>
-                <w  rend="line" n="733a" pos="ADV" msd="Deg=Pos" lemma="opportune">opportuneque</w>
-                <w  rend="line" n="733a" pos="CON" msd="MORPH=empty" lemma="que">{opportuneque}</w>
-                <w  rend="line" n="733a" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="affero">attulistis</w>
-                <w  rend="line" n="733a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi002.perseus-lat2:431b-432">
+        <w  rend="line" n="431b" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Saurea">Saurea</w>
+                <w  rend="line" n="431b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="431b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="oro">oro</w>
+                <w  rend="line" n="431b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="432" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
+                <w  rend="line" n="432" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="causa">causa</w>
+                <w  rend="line" n="432" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="line" n="432" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="mitto">mittás</w>
+                <w  rend="line" n="432" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

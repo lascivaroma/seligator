@@ -2,15 +2,12 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0149p.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0149p.stoa001.opp-lat1:30">
-        <w  rend="line" n="30" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="ostento">ostentetque</w>
-                <w  rend="line" n="30" pos="CON" msd="MORPH=empty" lemma="que">{ostentetque}</w>
-                <w  rend="line" n="30" pos="PROpos" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="tuus">tuas</w>
-                <w  rend="line" n="30" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="cunae">cunas</w>
-                <w  rend="line" n="30" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="risus">risuque</w>
-                <w  rend="line" n="30" pos="CON" msd="MORPH=empty" lemma="que">{risuque}</w>
-                <w  rend="line" n="30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="saluto">salutet</w>
-                <w  rend="line" n="30" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0149p.stoa001.opp-lat1:1">
+        <w  rend="line" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                <w  rend="line" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="decor">decor</w>
+                <w  rend="line" n="1" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
+                <w  rend="line" n="1" pos="ADV" msd="Deg=Pos" lemma="hic2">hic</w>
+                <w  rend="line" n="1" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
                 
     </quote>
  </div>

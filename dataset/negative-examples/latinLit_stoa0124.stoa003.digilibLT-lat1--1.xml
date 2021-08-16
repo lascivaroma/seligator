@@ -2,21 +2,46 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0124.stoa003.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0124.stoa003.digilibLT-lat1:2.1">
-        <w  rend="paragraph" n="2.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="fecundus">Fecundam</w>
-                <w  rend="paragraph" n="2.1" pos="ADV" msd="Deg=Pos" lemma="deinde">deinde</w>
-                <w  rend="paragraph" n="2.1" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Creta">Creten</w>
-                <w  rend="paragraph" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="2.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="patria">patriam</w>
-                <w  rend="paragraph" n="2.1" pos="NOMpro" msd="Case=Gen|Numb=Sing|Gend=MascFem" lemma="Tonans">Tonantis</w>
-                <w  rend="paragraph" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="paragraph" n="2.1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="paragraph" n="2.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="latus1">latere</w>
-                <w  rend="paragraph" n="2.1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="uicinus2">uicinas</w>
-                <w  rend="paragraph" n="2.1" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Cyclades">Cycladas</w>
-                <w  rend="paragraph" n="2.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="saluto">salutaui</w>
-                <w  rend="paragraph" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0124.stoa003.digilibLT-lat1:3.1">
+        <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Numb=Sing|Gend=Masc|Deg=Pos" lemma="bonus">Bone</w>
+                <w  rend="paragraph" n="3.1" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Iuppiter">Iuppiter</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="imperatorius">imperatorium</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="ADVint" msd="MORPH=empty" lemma="quam2">quam</w>
+                <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="regius">regium</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sedeo">sedere</w>
+                <w  rend="paragraph" n="3.1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="suggestus">suggestu</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="praecipio">praecipientem</w>
+                <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="bonus">bonos</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mos">mores</w>
+                <w  rend="paragraph" n="3.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Fem|Deg=Pos" lemma="sacer">sacrarum</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="studium">studia</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="littera">litterarum</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="carmen1">carmina</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="praelego2">praelegentem</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="PROrel" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="os1">ora</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="mens">mentesque</w>
+                <w  rend="paragraph" n="3.1" pos="CON" msd="MORPH=empty" lemma="que">{mentesque}</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="formo">formantur</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="sententia">sententiis</w>
+                <w  rend="paragraph" n="3.1" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="uarius">uariis</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sensus">sensus</w>
+                <w  rend="paragraph" n="3.1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="excito1">excitantem</w>
+                <w  rend="paragraph" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="3.1" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="exemplum">exemplis</w>
+                <w  rend="paragraph" n="3.1" pos="NOMcom" msd="Numb=Sing" lemma="ro">ro</w>
                 
     </quote>
  </div>

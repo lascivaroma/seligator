@@ -2,15 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:I">
-        <w  rend="book" n="I" pos="ADV" msd="Deg=Pos" lemma="deinde">deinde</w>
-                <w  rend="book" n="I" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="accedo1">accedit</w>
-                <w  rend="book" n="I" pos="ADV" msd="Case=Nom|Numb=Sing|Deg=Comp" lemma="prodeus">prodius</w>
-                <w  rend="book" n="I" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="book" n="I" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="introeo1">introit</w>
-                <w  rend="book" n="I" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domus">domum</w>
-                <w  rend="book" n="I" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="I" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:XIX">
+        <w  rend="book" n="XIX" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uarro">Varro</w>
+                <w  rend="book" n="XIX" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Meleager">Meleagris</w>
+                <w  rend="book" n="XIX" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="book" n="XIX" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="book" n="XIX" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="XIX" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ceruus">cervum</w>
+                <w  rend="book" n="XIX" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="book" n="XIX" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=Com|Deg=Pos" lemma="uolabilis">volabili</w>
+                <w  rend="book" n="XIX" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="curro">currens</w>
+                <w  rend="book" n="XIX" pos="NOMcom" msd="Numb=Sing" lemma="sparo">sparo</w>
+                <w  rend="book" n="XIX" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="sequor">secutus</w>
+                <w  rend="book" n="XIX" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tragula">tragulave</w>
+                <w  rend="book" n="XIX" pos="CON" msd="MORPH=empty" lemma="ue">{tragulave}</w>
+                <w  rend="book" n="XIX" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="traicio">traicit</w>
+                <w  rend="book" n="XIX" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

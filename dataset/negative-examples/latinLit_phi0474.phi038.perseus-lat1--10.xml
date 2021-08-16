@@ -2,17 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi038.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi038.perseus-lat1:31">
-        <w  rend="section" n="31" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
-                <w  rend="section" n="31" pos="ADV" msd="Deg=Pos" lemma="partim">partim</w>
-                <w  rend="section" n="31" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
-                <w  rend="section" n="31" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="necessarius2">necessaria</w>
-                <w  rend="section" n="31" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="31" pos="ADV" msd="Deg=Pos" lemma="partim">partim</w>
-                <w  rend="section" n="31" pos="VER" msd="Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="assumo">adsumpta</w>
-                <w  rend="section" n="31" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="section" n="31" pos="VER" msd="Case=Acc|Numb=Sing|Mood=Ger|Voice=Act" lemma="orno">ornandum</w>
-                <w  rend="section" n="31" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi038.perseus-lat1:121">
+        <w  rend="section" n="121" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="defensor">Defensori</w>
+                <w  rend="section" n="121" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="section" n="121" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="praeterita">praeteritis</w>
+                <w  rend="section" n="121" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="section" n="121" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="obscuro">obscuratis</w>
+                <w  rend="section" n="121" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="suspicio1">suspicionum</w>
+                <w  rend="section" n="121" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="argumentum">argumentis</w>
+                <w  rend="section" n="121" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="121" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerum</w>
+                <w  rend="section" n="121" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Fem" lemma="ipse">ipsarum</w>
+                <w  rend="section" n="121" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="euentus">eventus</w>
+                <w  rend="section" n="121" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erunt</w>
+                <w  rend="section" n="121" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="casus">casusque</w>
+                <w  rend="section" n="121" pos="CON" msd="MORPH=empty" lemma="que">{casusque}</w>
+                <w  rend="section" n="121" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Masc|Mood=Adj|Voice=Pass" lemma="narro">narrandi</w>
+                <w  rend="section" n="121" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,20 +2,43 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:IV.2">
-        <w  rend="part" n="IV.2" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="antecedo1">Antecedente</w>
-                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cachexium">cachexia</w>
-                <w  rend="part" n="IV.2" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
-                <w  rend="part" n="IV.2" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
-                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="symptoma">symptoma</w>
-                <w  rend="part" n="IV.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="genero">generatur</w>
-                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="IV.2" pos="PROrel" msd="Case=Acc|Numb=Sing" lemma="qui1">quod</w>
-                <w  rend="part" n="IV.2" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="nos">nos</w>
-                <w  rend="part" n="IV.2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="accidens">accidens</w>
-                <w  rend="part" n="IV.2" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="dico2">dicere</w>
-                <w  rend="part" n="IV.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="possum1">poterimus</w>
-                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:II.13">
+        <w  rend="part" n="II.13" pos="ADV" msd="Deg=Pos" lemma="item">item</w>
+                <w  rend="part" n="II.13" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Antipater">Antipater</w>
+                <w  rend="part" n="II.13" pos="ADJord" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="tertius">tertio</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="liber1">libro</w>
+                <w  rend="part" n="II.13" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Epistolarus">Epistolarum</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aio">ait</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="teneo">teneri</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="materia">materiam</w>
+                <w  rend="part" n="II.13" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ligatio">ligatione</w>
+                <w  rend="part" n="II.13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.13" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="part" n="II.13" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuerit</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="indultus">indulta</w>
+                <w  rend="part" n="II.13" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="relaxo">relaxata</w>
+                <w  rend="part" n="II.13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.13" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="part" n="II.13" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="repentinus">repentinum</w>
+                <w  rend="part" n="II.13" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="part" n="II.13" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="immodicus">immodicum</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fluor">fluorem</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="uenio">uenire</w>
+                <w  rend="part" n="II.13" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="II.13" pos="CONsub" msd="MORPH=empty" lemma="siquidem">siquidem</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="abstinentia">abstinentiae</w>
+                <w  rend="part" n="II.13" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="causa">causa</w>
+                <w  rend="part" n="II.13" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Comp" lemma="altus">altiora</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Ger|Voice=Act" lemma="pendo">pendendo</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Case=Abl|Mood=Inf|Tense=Pres|Voice=Act" lemma="lateo">latere</w>
+                <w  rend="part" n="II.13" pos="ADV" msd="Deg=Comp" lemma="potius">potius</w>
+                <w  rend="part" n="II.13" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="part" n="II.13" pos="ADJqua" msd="Gend=Masc|Mood=Inf|Tense=Pres|Voice=Pass" lemma="teneo">teneri</w>
+                <w  rend="part" n="II.13" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="uideo">uideantur</w>
+                <w  rend="part" n="II.13" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

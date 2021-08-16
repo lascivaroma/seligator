@@ -2,13 +2,42 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1:24">
-        <w  rend="epistula" n="24" pos="PUNC" msd="MORPH=empty" lemma="'">'</w>
-                <w  rend="epistula" n="24" pos="INJ" msd="MORPH=empty" lemma="ecce">Ecce</w>
-                <w  rend="epistula" n="24" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="tuus">tuus</w>
-                <w  rend="epistula" n="24" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Paulinus">Paulinus</w>
-                <w  rend="epistula" n="24" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="assum1">adest</w>
-                <w  rend="epistula" n="24" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1:19a">
+        <w  rend="epistula" n="19a" pos="PRE" msd="MORPH=empty" lemma="de">De</w>
+                <w  rend="epistula" n="19a" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="epistula" n="19a" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="opuscolus">opuscolo</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="19a" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="iubeo">iubes</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="facio">faciam</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="epistula" n="19a" pos="ADV" msd="Deg=Pos" lemma="exquisitim">exquisitim</w>
+                <w  rend="epistula" n="19a" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="uniuersus">universa</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="limo">limabo</w>
+                <w  rend="epistula" n="19a" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="epistula" n="19a" pos="CONsub" msd="MORPH=empty" lemma="quamuis2">quamvis</w>
+                <w  rend="epistula" n="19a" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="epistula" n="19a" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="epistula" n="19a" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="manus1">manus</w>
+                <w  rend="epistula" n="19a" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="summum?">summa</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=3" lemma="contingo1">contigerit</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="19a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caelum1">caelum</w>
+                <w  rend="epistula" n="19a" pos="ADJqua" msd="Case=Gen|Numb=Sing" lemma="superfluus">superfluae</w>
+                <w  rend="epistula" n="19a" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="expolitio">expolitionis</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="adhibeo">adhibebo</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="19a" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
+                <w  rend="epistula" n="19a" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="epistula" n="19a" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="pareo">paream</w>
+                <w  rend="epistula" n="19a" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="epistula" n="19a" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="perfectus2">perfectis</w>
+                <w  rend="epistula" n="19a" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="aliquis">aliquid</w>
+                <w  rend="epistula" n="19a" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="adicio">adiciam</w>
+                <w  rend="epistula" n="19a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

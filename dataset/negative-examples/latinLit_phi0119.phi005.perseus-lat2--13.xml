@@ -2,14 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi005.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi005.perseus-lat2:54">
-        <w  rend="line" n="54" pos="ADV" msd="Deg=Pos" lemma="profecto">profecto</w>
-                <w  rend="line" n="54" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="expedio">expediet</w>
-                <w  rend="line" n="54" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="fabula1">fabulae</w>
-                <w  rend="line" n="54" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="hic1">huic</w>
-                <w  rend="line" n="54" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opera">operam</w>
-                <w  rend="line" n="54" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="do">dare</w>
-                <w  rend="line" n="54" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi005.perseus-lat2:608b-609">
+        <w  rend="line" n="608b" pos="ADV" msd="Deg=Pos" lemma="immo">Immo</w>
+                <w  rend="line" n="608b" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="line" n="608b" pos="CONcoo" msd="MORPH=empty" lemma="uero4">vero</w>
+                <w  rend="line" n="608b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="608b" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Hegion">Hegio</w>
+                <w  rend="line" n="608b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="609" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="istic1">istic</w>
+                <w  rend="line" n="609" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="609" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="609" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uolo3">volt</w>
+                <w  rend="line" n="609" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="609" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="uincio">vinciatur</w>
+                <w  rend="line" n="609" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

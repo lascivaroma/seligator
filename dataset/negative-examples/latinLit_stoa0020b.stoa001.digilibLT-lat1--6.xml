@@ -2,19 +2,42 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1:16">
-        <w  rend="paragraph" n="16" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
-                <w  rend="paragraph" n="16" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="paragraph" n="16" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Dareus">Darium</w>
-                <w  rend="paragraph" n="16" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="nos">nobis</w>
-                <w  rend="paragraph" n="16" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="paragraph" n="16" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Persae">Persas</w>
-                <w  rend="paragraph" n="16" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Indi">Indis</w>
-                <w  rend="paragraph" n="16" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="ullus">ulla</w>
-                <w  rend="paragraph" n="16" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ratio">ratione</w>
-                <w  rend="paragraph" n="16" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Adj|Voice=Pass" lemma="aequipero">aequiperandos</w>
-                <w  rend="paragraph" n="16" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=2" lemma="credo">credideris</w>
-                <w  rend="paragraph" n="16" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0020b.stoa001.digilibLT-lat1:15">
+        <w  rend="paragraph" n="15" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">Qui</w>
+                <w  rend="paragraph" n="15" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="paragraph" n="15" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="incertus">incerta</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="respondeo">responderent</w>
+                <w  rend="paragraph" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="15" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="audio">auditis</w>
+                <w  rend="paragraph" n="15" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="interrogatio">interrogationibus</w>
+                <w  rend="paragraph" n="15" pos="PUNC" msd="MORPH=empty" lemma="-">-</w>
+                <w  rend="paragraph" n="15" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
+                <w  rend="paragraph" n="15" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="paragraph" n="15" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="rex">regi</w>
+                <w  rend="paragraph" n="15" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="magnus">magno</w>
+                <w  rend="paragraph" n="15" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Macedones">Macedonum</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Pass|Person=3" lemma="refero">referebantur</w>
+                <w  rend="paragraph" n="15" pos="PUNC" msd="MORPH=empty" lemma="-">-</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="sumo">sumpto</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="habitus1">habitu</w>
+                <w  rend="paragraph" n="15" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="militaris">militari</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="pono">positoque</w>
+                <w  rend="paragraph" n="15" pos="CON" msd="MORPH=empty" lemma="que">{positoque}</w>
+                <w  rend="paragraph" n="15" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="meus">meo</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cultus1">cultu</w>
+                <w  rend="paragraph" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="peruenio">perveni</w>
+                <w  rend="paragraph" n="15" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="castra2">castra</w>
+                <w  rend="paragraph" n="15" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uinum">vini</w>
+                <w  rend="paragraph" n="15" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caro1">carnis</w>
+                <w  rend="paragraph" n="15" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="quidam">quidam</w>
+                <w  rend="paragraph" n="15" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="emptor">emptor</w>
+                <w  rend="paragraph" n="15" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

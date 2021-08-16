@@ -2,14 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0527.tlg006.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg006.obi-lat1:21.23">
-        <w  rend="verse" n="21.23" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="verse" n="21.23" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tres">tribu</w>
-                <w  rend="verse" n="21.23" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
-                <w  rend="verse" n="21.23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="Dan">Dan</w>
-                <w  rend="verse" n="21.23" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="elchex">Elthece</w>
-                <w  rend="verse" n="21.23" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="verse" n="21.23" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Gebbethon">Gebbethon</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg006.obi-lat1:10.17">
+        <w  rend="verse" n="10.17" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="nuntio">nuntiatumque</w>
+                <w  rend="verse" n="10.17" pos="CON" msd="MORPH=empty" lemma="que">{nuntiatumque}</w>
+                <w  rend="verse" n="10.17" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="verse" n="10.17" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Iusus">Iosue</w>
+                <w  rend="verse" n="10.17" pos="CONsub" msd="Case=Acc|Numb=Sing" lemma="quod2">quod</w>
+                <w  rend="verse" n="10.17" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="inuenio">inventi</w>
+                <w  rend="verse" n="10.17" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">essent</w>
+                <w  rend="verse" n="10.17" pos="ADJcar" msd="Case=Ind" lemma="quinque">quinque</w>
+                <w  rend="verse" n="10.17" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="rex">reges</w>
+                <w  rend="verse" n="10.17" pos="VER" msd="Case=Acc|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="lateo">latentes</w>
+                <w  rend="verse" n="10.17" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="verse" n="10.17" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="spelunca">spelunca</w>
+                <w  rend="verse" n="10.17" pos="ADJqua" msd="Case=Abl|Numb=Sing" lemma="Maceda">Maceda</w>
                 
     </quote>
  </div>

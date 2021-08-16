@@ -2,19 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1:31">
-        <w  rend="comment" n="31" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="saluber">Salubres</w>
-                <w  rend="comment" n="31" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="comment" n="31" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="comment" n="31" pos="ADV" msd="Deg=Pos" lemma="tantum2">tantum</w>
-                <w  rend="comment" n="31" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aqua">aquae</w>
-                <w  rend="comment" n="31" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="31" pos="CONcoo" msd="MORPH=empty" lemma="uerum4">uerum</w>
-                <w  rend="comment" n="31" pos="CONcoo" msd="Deg=Pos" lemma="et2">et</w>
-                <w  rend="comment" n="31" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aura">aurae</w>
-                <w  rend="comment" n="31" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Fem|Mood=Adj|Voice=Pass" lemma="intelligo">intellegendae</w>
-                <w  rend="comment" n="31" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
-                <w  rend="comment" n="31" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0004a.stoa002.horatiusNet-lat1:pr">
+        <w  rend="comment" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="metrum">Metrvm</w>
+                <w  rend="comment" n="pr" pos="ADJcar" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="tres">tres</w>
+                <w  rend="comment" n="pr" pos="NOMpro" msd="Case=Gen|Numb=Sing|Deg=Pos" lemma="Sapphicius">Sapphici</w>
+                <w  rend="comment" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="pr" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="quartus">qvartvs</w>
+                <w  rend="comment" n="pr" pos="NOMcom" msd="Numb=Sing" lemma="dipodia">dipodia</w>
+                <w  rend="comment" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

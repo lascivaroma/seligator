@@ -2,13 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0292b.stoa001.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0292b.stoa001.opp-lat2:pr.22">
-        <w  rend="line" n="pr.22" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
-                <w  rend="line" n="pr.22" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerum</w>
-                <w  rend="line" n="pr.22" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="causa">causa</w>
-                <w  rend="line" n="pr.22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="pr.22" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uigor">vigorq</w>
-                <w  rend="line" n="pr.22" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0292b.stoa001.opp-lat2:1.470-1.471">
+        <w  rend="line" n="1.470" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
+                <w  rend="line" n="1.470" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="line" n="1.470" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="1.470" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="dignus">dignae</w>
+                <w  rend="line" n="1.470" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="placeo">placuit</w>
+                <w  rend="line" n="1.470" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="1.470" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="primus">primus</w>
+                <w  rend="line" n="1.470" pos="CONsub" msd="MORPH=empty" lemma="ut4">vt</w>
+                <w  rend="line" n="1.470" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=2" lemma="sum1">esses</w>
+                <w  rend="line" n="1.471" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="inuentor">Inuentor</w>
+                <w  rend="line" n="1.471" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mors">mortis</w>
+                <w  rend="line" n="1.471" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="1.471" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="poena">poena</w>
+                <w  rend="line" n="1.471" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Dep|Person=2" lemma="morior">moriere</w>
+                <w  rend="line" n="1.471" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="perennis">perenni</w>
+                <w  rend="line" n="1.471" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

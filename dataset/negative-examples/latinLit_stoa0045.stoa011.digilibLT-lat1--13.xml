@@ -2,22 +2,47 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1:15">
-        <w  rend="epistula" n="15" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tertius">Tertia</w>
-                <w  rend="epistula" n="15" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="fissipes">fissipedes</w>
-                <w  rend="epistula" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="renouo">renovavit</w>
-                <w  rend="epistula" n="15" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Luna">Luna</w>
-                <w  rend="epistula" n="15" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="iuuenca">iuvencas</w>
-                <w  rend="epistula" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="epistula" n="15" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="epistula" n="15" pos="VER" msd="Case=Nom|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass|Person=2" lemma="fugito">fugitas</w>
-                <w  rend="epistula" n="15" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="noster">nostram</w>
-                <w  rend="epistula" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="epistula" n="15" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="dulcis">dulcis</w>
-                <w  rend="epistula" n="15" pos="NOMcom" msd="Numb=Sing" lemma="amicus1">amice</w>
-                <w  rend="epistula" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="epistula" n="15" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domus">domum</w>
-                <w  rend="epistula" n="15" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.digilibLT-lat1:5a">
+        <w  rend="epistula" n="5a" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">Ergo</w>
+                <w  rend="epistula" n="5a" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Delirus">Delirus</w>
+                <w  rend="epistula" n="5a" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="tuus">tuus</w>
+                <w  rend="epistula" n="5a" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="res">re</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="tenuis">tenui</w>
+                <w  rend="epistula" n="5a" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="epistula" n="5a" pos="ADV" msd="Deg=Pos" lemma="tenuiter">tenuiter</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="laboro">laboratus</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opusculum">opuscula</w>
+                <w  rend="epistula" n="5a" pos="PROpos" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="meus">mea</w>
+                <w  rend="epistula" n="5a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="5a" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Numb=Sing" lemma="promus">promi</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=2" lemma="studeo">studueras</w>
+                <w  rend="epistula" n="5a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="retardo">retardasset</w>
+                <w  rend="epistula" n="5a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="5a" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="epistula" n="5a" pos="ADV" msd="Deg=Pos" lemma="dudum">dudum</w>
+                <w  rend="epistula" n="5a" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
+                <w  rend="epistula" n="5a" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="palmes">palmes</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="audax">audacior</w>
+                <w  rend="epistula" n="5a" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="hibernus">hibernas</w>
+                <w  rend="epistula" n="5a" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="aura">auras</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="improbus">improbum</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="germen">germen</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=1" lemma="ago">egissem</w>
+                <w  rend="epistula" n="5a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="periculum">periculum</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="iudicium">iudicii</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="grauis">gravis</w>
+                <w  rend="epistula" n="5a" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="inconsultus2">inconsulta</w>
+                <w  rend="epistula" n="5a" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="festinatio">festinatione</w>
+                <w  rend="epistula" n="5a" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Fut|Voice=Act" lemma="subeo1">subiturus</w>
+                <w  rend="epistula" n="5a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

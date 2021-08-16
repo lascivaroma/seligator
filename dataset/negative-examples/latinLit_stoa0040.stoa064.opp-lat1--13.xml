@@ -2,15 +2,37 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa064.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa064.opp-lat1:19">
-        <w  rend="chapter" n="19" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="qui1">quos</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="fulcio">fulcire</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="debeo">debeat</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Adj|Voice=Pass" lemma="fulcio">fulciendus</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="chapter" n="19" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="uideo">uideatur</w>
-                <w  rend="chapter" n="19" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa064.opp-lat1:35">
+        <w  rend="chapter" n="35" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="35" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
+                <w  rend="chapter" n="35" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="solus">solo</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="intellectus">intellectu</w>
+                <w  rend="chapter" n="35" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Adj|Voice=Pass" lemma="ambio">ambiendum</w>
+                <w  rend="chapter" n="35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="35" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="35" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="pauci">pauci</w>
+                <w  rend="chapter" n="35" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Sup" lemma="doctus">doctissimi</w>
+                <w  rend="chapter" n="35" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="disputo">disputant</w>
+                <w  rend="chapter" n="35" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="35" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="chapter" n="35" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="imperitus">inperitum</w>
+                <w  rend="chapter" n="35" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uulgus">uulgus</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mare">marium</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="femina">feminarumque</w>
+                <w  rend="chapter" n="35" pos="CON" msd="MORPH=empty" lemma="que">{feminarumque}</w>
+                <w  rend="chapter" n="35" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="35" pos="ADV" msd="Case=Acc|Deg=Pos" lemma="tam">tam</w>
+                <w  rend="chapter" n="35" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="multus">multis</w>
+                <w  rend="chapter" n="35" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="diuersus">diuersisque</w>
+                <w  rend="chapter" n="35" pos="CON" msd="MORPH=empty" lemma="que">{diuersisque}</w>
+                <w  rend="chapter" n="35" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="genus1">generibus</w>
+                <w  rend="chapter" n="35" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="credo">credit</w>
+                <w  rend="chapter" n="35" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="praedico1">praedicat</w>
+                <w  rend="chapter" n="35" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

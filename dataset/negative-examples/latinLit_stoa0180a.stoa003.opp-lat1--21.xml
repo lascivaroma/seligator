@@ -3,20 +3,33 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0180a.stoa003.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa003.opp-lat1:11">
-        <w  rend="chapter" n="11" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="quis1">quae</w>
-                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="11" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="spes">spes</w>
-                <w  rend="chapter" n="11" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="impius">impiis</w>
-                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="homo">hominibus</w>
-                <w  rend="chapter" n="11" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="chapter" n="11" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
-                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="aditus">aditum</w>
-                <w  rend="chapter" n="11" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="possum1">possunt</w>
-                <w  rend="chapter" n="11" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="habeo">habere</w>
-                <w  rend="chapter" n="11" pos="PRE" msd="MORPH=empty" lemma="apud">apud</w>
-                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">dominum</w>
-                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+        <w  rend="chapter" n="11" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Dep|Person=2" lemma="dignor">dignare</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="accipio">accipere</w>
+                <w  rend="chapter" n="11" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="quis1">quae</w>
+                <w  rend="chapter" n="11" pos="ADV" msd="Deg=Pos" lemma="infra1">infra</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="dico2">dicat</w>
+                <w  rend="chapter" n="11" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="chapter" n="11" pos="PROper" msd="Case=Abl|Numb=Plur" lemma="uos">uobis</w>
+                <w  rend="chapter" n="11" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Masc|Deg=Pos" lemma="impius">impiis</w>
+                <w  rend="chapter" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="cognosco">cognosce</w>
+                <w  rend="chapter" n="11" pos="ADVint" msd="MORPH=empty" lemma="quomodo2">quomodo</w>
+                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="11" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="chapter" n="11" pos="ADV" msd="Deg=Pos" lemma="male">male</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="ago">agatis</w>
+                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="11" pos="ADV" msd="Deg=Pos" lemma="interim">interim</w>
+                <w  rend="chapter" n="11" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="uos">uobis</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="parco">parcatur</w>
+                <w  rend="chapter" n="11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="11" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">temet</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">deo</w>
+                <w  rend="chapter" n="11" pos="VER" msd="Case=Acc|Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act" lemma="repraesentum">repraesenta</w>
+                <w  rend="chapter" n="11" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="chapter" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="paenitentia">paenitentiam</w>
+                <w  rend="chapter" n="11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

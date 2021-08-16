@@ -2,18 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0222a.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:pr">
-        <w  rend="poem" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
-                <w  rend="poem" n="pr" pos="ADVint" msd="MORPH=empty" lemma="quam2">quam</w>
-                <w  rend="poem" n="pr" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="infirmus">infirmo</w>
-                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Dep|Person=3" lemma="nitor2">nitatur</w>
-                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="fundamentum">fundamento</w>
-                <w  rend="poem" n="pr" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
-                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="coniectura">coniectura</w>
-                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="poem" n="pr" pos="ADV" msd="Deg=Pos" lemma="bene">bene</w>
-                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="intelligo">intellego</w>
-                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:1.80-1.82">
+        <w  rend="line" n="1.80" pos="ADJcar" msd="MORPH=empty" lemma="3">80</w>
+                <w  rend="line" n="1.80" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="line" n="1.80" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="hic1">horum</w>
+                <w  rend="line" n="1.80" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.80" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="line" n="1.80" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="causa">causa</w>
+                <w  rend="line" n="1.80" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="sum1">sumus</w>
+                <w  rend="line" n="1.80" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.80" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="line" n="1.80" pos="ADV" msd="Deg=Pos" lemma="turpiter">turpiter</w>
+                <w  rend="line" n="1.80" pos="PROdem" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="iste">istis</w>
+                <w  rend="line" n="1.81" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="nutrimentum">nutrimenta</w>
+                <w  rend="line" n="1.81" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="do">damus</w>
+                <w  rend="line" n="1.81" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="flamma">flammis</w>
+                <w  rend="line" n="1.81" pos="PUNC" msd="MORPH=empty" lemma="&#x2014;">—</w>
+                <w  rend="line" n="1.81" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="culpo">culpetur</w>
+                <w  rend="line" n="1.81" pos="NOMcom" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="honestum">honesti</w>
+                <w  rend="line" n="1.82" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="improbus">inproba</w>
+                <w  rend="line" n="1.82" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="nupta">nupta</w>
+                <w  rend="line" n="1.82" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uir">uiri</w>
+                <w  rend="line" n="1.82" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="numus">nummo</w>
+                <w  rend="line" n="1.82" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="decerpo">decerpere</w>
+                <w  rend="line" n="1.82" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="numus">nummum</w>
+                <w  rend="line" n="1.82" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

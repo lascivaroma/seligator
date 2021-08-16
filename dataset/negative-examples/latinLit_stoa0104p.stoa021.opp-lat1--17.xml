@@ -2,28 +2,24 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa021.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa021.opp-lat1:77-79">
-        <w  rend="section" n="77" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="section" n="77" pos="CONcoo" msd="MORPH=empty" lemma="igitur">igitur</w>
-                <w  rend="section" n="77" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="77" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
-                <w  rend="section" n="77" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="section" n="77" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="consultum">consulta</w>
-                <w  rend="section" n="77" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=3" lemma="reduco">reduxerit</w>
-                <w  rend="section" n="77" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aetas">aetas</w>
-                <w  rend="section" n="77" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="78" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="disco">disce</w>
-                <w  rend="section" n="78" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">deo</w>
-                <w  rend="section" n="78" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="seruo">seruare</w>
-                <w  rend="section" n="78" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fides2">fidem</w>
-                <w  rend="section" n="78" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="78" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
-                <w  rend="section" n="78" pos="ADV" msd="Deg=Pos" lemma="forte">forte</w>
-                <w  rend="section" n="78" pos="ADJadv.mul" msd="MORPH=empty" lemma="bis">bis</w>
-                <w  rend="section" n="78" pos="ADJcar" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="unus">unum</w>
-                <w  rend="section" n="79" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="incurro">incurras</w>
-                <w  rend="section" n="79" pos="VER" msd="Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Dep" lemma="labor2">lapsum</w>
-                <w  rend="section" n="79" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa021.opp-lat1:31-32">
+        <w  rend="section" n="31" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">teque</w>
+                <w  rend="section" n="31" pos="CON" msd="MORPH=empty" lemma="que">{teque}</w>
+                <w  rend="section" n="31" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="domus">domo</w>
+                <w  rend="section" n="31" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="proprius">propria</w>
+                <w  rend="section" n="31" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="pingo">pictum</w>
+                <w  rend="section" n="31" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="section" n="31" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="fascis">fascibus</w>
+                <w  rend="section" n="31" pos="ADV" msd="Deg=Pos" lemma="ante1">ante</w>
+                <w  rend="section" n="31" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="32" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="section" n="32" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="section" n="32" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="section" n="32" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sistrum">sistro</w>
+                <w  rend="section" n="32" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="facies">faciem</w>
+                <w  rend="section" n="32" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="porto">portare</w>
+                <w  rend="section" n="32" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="caninus">caninam</w>
+                <w  rend="section" n="32" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

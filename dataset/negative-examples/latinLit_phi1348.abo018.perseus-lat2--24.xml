@@ -2,19 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1348.abo018.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo018.perseus-lat2:4">
-        <w  rend="chapter" n="4" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
-                <w  rend="chapter" n="4" pos="ADV" msd="Deg=Pos" lemma="tandem">tandem</w>
-                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="occasio">occasio</w>
-                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ultio">ultionis</w>
-                <w  rend="chapter" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="do">data</w>
-                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="conatus">conatibus</w>
-                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Galba">Galbae</w>
-                <w  rend="chapter" n="4" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="primus">primus</w>
-                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="accedo1">accessit</w>
-                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo018.perseus-lat2:8">
+        <w  rend="chapter" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="placeo">placuerat</w>
+                <w  rend="chapter" n="8" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="chapter" n="8" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="classiarii">classiarios</w>
+                <w  rend="chapter" n="8" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="arma">arma</w>
+                <w  rend="chapter" n="8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="transfero">transferri</w>
+                <w  rend="chapter" n="8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="remitto">remittique</w>
+                <w  rend="chapter" n="8" pos="CON" msd="MORPH=empty" lemma="que">{remittique}</w>
+                <w  rend="chapter" n="8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="nauis">nauibus</w>
+                <w  rend="chapter" n="8" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

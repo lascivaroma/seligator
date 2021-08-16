@@ -2,15 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi016.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:520">
-        <w  rend="line" n="520" pos="VER" msd="Numb=Sing" lemma="seruio">Servitum</w>
-                <w  rend="line" n="520" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="line" n="520" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="line" n="520" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=2" lemma="abduco">abducito</w>
-                <w  rend="line" n="520" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="520" pos="CONsub" msd="MORPH=empty" lemma="ni2">ni</w>
-                <w  rend="line" n="520" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=1" lemma="facio">fecero</w>
-                <w  rend="line" n="520" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:995-996">
+        <w  rend="line" n="995" pos="CONcoo" msd="MORPH=empty" lemma="nam">nam</w>
+                <w  rend="line" n="995" pos="ADJqua" msd="Case=Ind|Deg=Pos" lemma="necesse">necessést</w>
+                <w  rend="line" n="995" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{necessést}</w>
+                <w  rend="line" n="995" pos="ADV" msd="Deg=Pos" lemma="hodie">hodie</w>
+                <w  rend="line" n="995" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Sicyon">Sicyoni</w>
+                <w  rend="line" n="995" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="995" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="995" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="line" n="995" pos="ADV" msd="Deg=Pos" lemma="cras2">cras</w>
+                <w  rend="line" n="995" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mors">mortem</w>
+                <w  rend="line" n="995" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="exsequor">exsequi</w>
+                <w  rend="line" n="995" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="996" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="line" n="996" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="herus">erus</w>
+                <w  rend="line" n="996" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="meus">meus</w>
+                <w  rend="line" n="996" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="996" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="imperiosus">imperiosus</w>
+                <w  rend="line" n="996" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

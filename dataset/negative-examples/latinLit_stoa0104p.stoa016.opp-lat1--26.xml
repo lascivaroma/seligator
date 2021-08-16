@@ -3,13 +3,26 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa016.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa016.opp-lat1:4">
-        <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="laetor">laetantur</w>
-                <w  rend="letter" n="4" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="ipse">ipsi</w>
-                <w  rend="letter" n="4" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="exeo1">exeunt</w>
-                <w  rend="letter" n="4" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="uenio">uenientes</w>
-                <w  rend="letter" n="4" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="requies">requiem</w>
+        <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="4" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
+                <w  rend="letter" n="4" pos="PROind" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="omnis">omnibus</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="4" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="communis">communis</w>
+                <w  rend="letter" n="4" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="hic1">hic</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="casus">casus</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="4" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="uanus">uanus</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dolor">dolor</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="4" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="letter" n="4" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="primus">primus</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="uideo">uidetur</w>
+                <w  rend="letter" n="4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="letter" n="4" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solus</w>
                 <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

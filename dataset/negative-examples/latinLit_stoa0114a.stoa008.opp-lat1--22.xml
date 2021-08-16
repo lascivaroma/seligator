@@ -2,24 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0114a.stoa008.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0114a.stoa008.opp-lat1:6.36">
-        <w  rend="letter" n="6.36" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="letter" n="6.36" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="6.36" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Christus">Christo</w>
-                <w  rend="letter" n="6.36" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="ualeo">ualete</w>
-                <w  rend="letter" n="6.36" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="6.36" pos="PROpos" msd="Case=Voc|Numb=Sing|Gend=Masc" lemma="meus">mi</w>
-                <w  rend="letter" n="6.36" pos="NOMcom" msd="Case=Voc|Numb=Plur" lemma="dominus">domini</w>
-                <w  rend="letter" n="6.36" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="6.36" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="letter" n="6.36" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sentio">sentire</w>
-                <w  rend="letter" n="6.36" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="letter" n="6.36" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="deprecatio">deprecationis</w>
-                <w  rend="letter" n="6.36" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="uester">uestrae</w>
-                <w  rend="letter" n="6.36" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="munus">munera</w>
-                <w  rend="letter" n="6.36" pos="ADJqua" msd="Case=Abl|Numb=Plur|Deg=Pos" lemma="prosper">prosperis</w>
-                <w  rend="letter" n="6.36" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="indico1">indicate</w>
-                <w  rend="letter" n="6.36" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0114a.stoa008.opp-lat1:1.7">
+        <w  rend="letter" n="1.7" pos="ADVint" msd="MORPH=empty" lemma="quando2">quando</w>
+                <w  rend="letter" n="1.7" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="homo">hominum</w>
+                <w  rend="letter" n="1.7" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Sup" lemma="obscenus">obscenissima</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="crimen">crimina</w>
+                <w  rend="letter" n="1.7" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="innocens">innocentis</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="officium">officii</w>
+                <w  rend="letter" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="tego">texit</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="umbraculum">umbraculum</w>
+                <w  rend="letter" n="1.7" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="1.7" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quisquis1">quicquid</w>
+                <w  rend="letter" n="1.7" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="mos">morum</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="nubes">nube</w>
+                <w  rend="letter" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="descendo">descendit</w>
+                <w  rend="letter" n="1.7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="caelestis">caelestis</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="militia">militiae</w>
+                <w  rend="letter" n="1.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="serenitas">serenitas</w>
+                <w  rend="letter" n="1.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="excuso">excusauit</w>
+                <w  rend="letter" n="1.7" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

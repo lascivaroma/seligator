@@ -3,10 +3,16 @@
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi011.perseus-lat2</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi011.perseus-lat2:15">
-        <w  rend="section" n="15" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Caesar">Caesar</w>
-                <w  rend="section" n="15" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illum</w>
-                <w  rend="section" n="15" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Aeacus">Aeaco</w>
-                <w  rend="section" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dono">donat</w>
+        <w  rend="section" n="15" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="is">Is</w>
+                <w  rend="section" n="15" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Menander">Menandro</w>
+                <w  rend="section" n="15" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="libertus">liberto</w>
+                <w  rend="section" n="15" pos="PROpos.ref" msd="Case=Dat|Numb=Sing|Gend=MascNeut" lemma="suus">suo</w>
+                <w  rend="section" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="trado">tradidit</w>
+                <w  rend="section" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="15" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="section" n="15" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="15" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="cognitio">cognitionibus</w>
+                <w  rend="section" n="15" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
                 <w  rend="section" n="15" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

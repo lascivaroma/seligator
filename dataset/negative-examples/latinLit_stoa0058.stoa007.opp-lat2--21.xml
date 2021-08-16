@@ -2,19 +2,49 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0058.stoa007.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0058.stoa007.opp-lat2:1.20">
-        <w  rend="chapter" n="1.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="possum1">potest</w>
-                <w  rend="chapter" n="1.20" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="chapter" n="1.20" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="chapter" n="1.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="animal">animal</w>
-                <w  rend="chapter" n="1.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="1.20" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="chapter" n="1.20" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="chapter" n="1.20" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="rationalis2">rationale</w>
-                <w  rend="chapter" n="1.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="1.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="risus">risus</w>
-                <w  rend="chapter" n="1.20" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="capax">capax</w>
-                <w  rend="chapter" n="1.20" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0058.stoa007.opp-lat2:1.8">
+        <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="1.8" pos="CONcoo" msd="MORPH=empty" lemma="itaque">itaque</w>
+                <w  rend="chapter" n="1.8" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="necessarius2">necessaria</w>
+                <w  rend="chapter" n="1.8" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="genus1">generis</w>
+                <w  rend="chapter" n="1.8" pos="ADJqua" msd="Case=Gen|Numb=Sing" lemma="species">specieique</w>
+                <w  rend="chapter" n="1.8" pos="CON" msd="MORPH=empty" lemma="que">{specieique}</w>
+                <w  rend="chapter" n="1.8" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cognitio">cognitio</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="chapter" n="1.8" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="chapter" n="1.8" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Sup" lemma="generalis">generalissima</w>
+                <w  rend="chapter" n="1.8" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sint</w>
+                <w  rend="chapter" n="1.8" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="chapter" n="1.8" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quisque2">quisque</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Fut|Voice=Act" lemma="definio">definiturus</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="chapter" n="1.8" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ges">ge</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma="|">|</w>
+                <w  rend="chapter" n="1.8" pos="NOMcom" msd="Numb=Sing" lemma="nere">nere</w>
+                <w  rend="chapter" n="1.8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="definitio">definitionem</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="traho">trahat</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="chapter" n="1.8" pos="CONcoo" msd="MORPH=empty" lemma="uero4">uero</w>
+                <w  rend="chapter" n="1.8" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Sup" lemma="generalis">generalissima</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sint</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="chapter" n="1.8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="genus1">genus</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="quaero">quaerere</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="inuenio">inueniri</w>
+                <w  rend="chapter" n="1.8" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="possum1">potest</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1.8" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="1.8" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="laboro">laboret</w>
+                <w  rend="chapter" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

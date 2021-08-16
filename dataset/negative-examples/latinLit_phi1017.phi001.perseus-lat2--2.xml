@@ -2,14 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi001.perseus-lat2:760">
-        <w  rend="line" n="760" pos="ADV" msd="Deg=Pos" lemma="nunc">Nunc</w>
-                <w  rend="line" n="760" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="edo1">ede</w>
-                <w  rend="line" n="760" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="natus1">nati</w>
-                <w  rend="line" n="760" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="nobilis2">nobilem</w>
-                <w  rend="line" n="760" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pugna">pugnam</w>
-                <w  rend="line" n="760" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="meus">mei</w>
-                <w  rend="line" n="760" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi001.perseus-lat2:2-4">
+        <w  rend="line" n="2" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
+                <w  rend="line" n="2" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="alienus2">alienum</w>
+                <w  rend="line" n="2" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Iuppiter">Iovem</w>
+                <w  rend="line" n="3" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="line" n="3" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="templum">templa</w>
+                <w  rend="line" n="3" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="superus">summi</w>
+                <w  rend="line" n="3" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="uiduus">vidua</w>
+                <w  rend="line" n="3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="desero2">deserui</w>
+                <w  rend="line" n="3" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="aether">aetheris</w>
+                <w  rend="line" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="locus">locumque</w>
+                <w  rend="line" n="4" pos="CON" msd="MORPH=empty" lemma="que">{locumque}</w>
+                <w  rend="line" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caelum1">caelo</w>
+                <w  rend="line" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="pello">pulsa</w>
+                <w  rend="line" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pellex">paelicibus</w>
+                <w  rend="line" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="do">dedi</w>
+                <w  rend="line" n="4" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

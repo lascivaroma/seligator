@@ -2,20 +2,43 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1348.phi002.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.phi002.thayer-lat1:persius">
-        <w  rend="chapter" n="persius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="relinquo">Reliquit</w>
-                <w  rend="chapter" n="persius" pos="ADV" msd="Deg=Pos" lemma="circa1">circa</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="sestertius1">HS</w>
-                <w  rend="chapter" n="persius" pos="ADJadv.mul" msd="MORPH=empty" lemma="uiciens">viciens</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="mater">matri</w>
-                <w  rend="chapter" n="persius" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="soror">sorori</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="scribo">scriptis</w>
-                <w  rend="chapter" n="persius" pos="PROdem" msd="Deg=Pos" lemma="tantum1">tantum</w>
-                <w  rend="chapter" n="persius" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mater">matrem</w>
-                <w  rend="chapter" n="persius" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="codicillus">codicillis</w>
-                <w  rend="chapter" n="persius" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.phi002.thayer-lat1:vergilius">
+        <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="cum2">Cum</w>
+                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="chapter" n="vergilius" pos="ADJqua" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="Georgicus">Georgica</w>
+                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="scribo">scriberet</w>
+                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="trado">traditur</w>
+                <w  rend="chapter" n="vergilius" pos="ADV" msd="Deg=Pos" lemma="cotidie">cotidie</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="meditor">meditatos</w>
+                <w  rend="chapter" n="vergilius" pos="ADV" msd="Deg=Pos" lemma="mane2">mane</w>
+                <w  rend="chapter" n="vergilius" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Sup" lemma="multus">plurimos</w>
+                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc" lemma="uersus1">versus</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="dicto">dictare</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=SemDep" lemma="soleo">solitus</w>
+                <w  rend="chapter" n="vergilius" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="chapter" n="vergilius" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="totus">totum</w>
+                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Ger|Voice=Act" lemma="retracto">retractando</w>
+                <w  rend="chapter" n="vergilius" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="vergilius" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Sup" lemma="paucus">paucissimos</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="redigo">redigere</w>
+                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="vergilius" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="vergilius" pos="ADV" msd="Deg=Pos" lemma="absurde">absurde</w>
+                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="carmen1">carmen</w>
+                <w  rend="chapter" n="vergilius" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="mos">more</w>
+                <w  rend="chapter" n="vergilius" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ursa">ursae</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="pareo">parere</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="dico2">dicens</w>
+                <w  rend="chapter" n="vergilius" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="lambo">lambendo</w>
+                <w  rend="chapter" n="vergilius" pos="ADV" msd="Deg=Pos" lemma="demum">demum</w>
+                <w  rend="chapter" n="vergilius" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="effingo">effingere</w>
+                <w  rend="chapter" n="vergilius" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

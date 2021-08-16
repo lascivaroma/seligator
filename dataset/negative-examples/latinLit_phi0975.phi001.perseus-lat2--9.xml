@@ -2,13 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0975.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0975.phi001.perseus-lat2:appendix.26.5">
-        <w  rend="line" n="appendix.26.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
-                <w  rend="line" n="appendix.26.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="rusticus1">rusticus</w>
-                <w  rend="line" n="appendix.26.5" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="appendix.26.5" pos="ADVneg" msd="MORPH=empty" lemma="ne3">Ne</w>
-                <w  rend="line" n="appendix.26.5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=2" lemma="timeo">timueris</w>
-                <w  rend="line" n="appendix.26.5" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0975.phi001.perseus-lat2:3.18.3-3.18.4">
+        <w  rend="line" n="3.18.3" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">Illum</w>
+                <w  rend="line" n="3.18.3" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="3.18.3" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="cunctus">cunctis</w>
+                <w  rend="line" n="3.18.3" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="auis">avibus</w>
+                <w  rend="line" n="3.18.3" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="admirabilis">admirabilem</w>
+                <w  rend="line" n="3.18.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.18.4" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">Se</w>
+                <w  rend="line" n="3.18.4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="derideo">derideri</w>
+                <w  rend="line" n="3.18.4" pos="ADV" msd="Deg=Pos" lemma="simul1">simul</w>
+                <w  rend="line" n="3.18.4" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="line" n="3.18.4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uox">vocem</w>
+                <w  rend="line" n="3.18.4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="mitto">miserit</w>
+                <w  rend="line" n="3.18.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

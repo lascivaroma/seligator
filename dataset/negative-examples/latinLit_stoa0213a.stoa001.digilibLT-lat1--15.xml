@@ -2,16 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:I">
-        <w  rend="book" n="I" pos="VER" msd="Case=Nom|Numb=Sing" lemma="Uiritis">VIRITIM</w>
-                <w  rend="book" n="I" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="dico2">dictum</w>
-                <w  rend="book" n="I" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="book" n="I" pos="ADV" msd="Deg=Pos" lemma="separatim">separatim</w>
-                <w  rend="book" n="I" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="I" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="book" n="I" pos="ADJdis" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="singulus">singulos</w>
-                <w  rend="book" n="I" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uir">viros</w>
-                <w  rend="book" n="I" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:VII">
+        <w  rend="book" n="VII" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uarro">Varro</w>
+                <w  rend="book" n="VII" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Manius">Manio</w>
+                <w  rend="book" n="VII" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="book" n="VII" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="maledico2">maledicere</w>
+                <w  rend="book" n="VII" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="VII" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pes">pedem</w>
+                <w  rend="book" n="VII" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="book" n="VII" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="focus">focum</w>
+                <w  rend="book" n="VII" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="book" n="VII" pos="PUNC" msd="MORPH=empty" lemma="|">|</w>
+                <w  rend="book" n="VII" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="impono">inponere</w>
+                <w  rend="book" n="VII" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="VII" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="sacrifico">sacrificari</w>
+                <w  rend="book" n="VII" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

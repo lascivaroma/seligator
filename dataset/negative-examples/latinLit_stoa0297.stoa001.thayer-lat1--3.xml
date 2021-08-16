@@ -2,29 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0297.stoa001.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:68-70">
-        <w  rend="unknown" n="68" pos="ADV" msd="Deg=Pos" lemma="tum">tum</w>
-                <w  rend="unknown" n="68" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pax">pax</w>
-                <w  rend="unknown" n="68" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="unknown" n="68" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="reddo">reddita</w>
-                <w  rend="unknown" n="68" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="mundus1">mundo</w>
-                <w  rend="unknown" n="68" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="69" pos="ADV" msd="Deg=Pos" lemma="tum">tum</w>
-                <w  rend="unknown" n="69" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Liber">Liber</w>
-                <w  rend="unknown" n="69" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="cesso">cessata</w>
-                <w  rend="unknown" n="69" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uenio">venit</w>
-                <w  rend="unknown" n="69" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="unknown" n="69" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="sidus">sidera</w>
-                <w  rend="unknown" n="69" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="unknown" n="69" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="caelum1">caelum</w>
-                <w  rend="unknown" n="70" pos="VER" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="defendo">defensique</w>
-                <w  rend="unknown" n="70" pos="CON" msd="MORPH=empty" lemma="que">{defensique}</w>
-                <w  rend="unknown" n="70" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="decus">decus</w>
-                <w  rend="unknown" n="70" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mundus1">mundi</w>
-                <w  rend="unknown" n="70" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="unknown" n="70" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="reddo">redditur</w>
-                <w  rend="unknown" n="70" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="astrum">astris</w>
-                <w  rend="unknown" n="70" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:505-506">
+        <w  rend="unknown" n="505" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="emico">emicat</w>
+                <w  rend="unknown" n="505" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="examen">examen</w>
+                <w  rend="unknown" n="505" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="plaga1">plagis</w>
+                <w  rend="unknown" n="505" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="505" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos|Mood=Par|Tense=Pres|Voice=Act" lemma="ardeo">ardentia</w>
+                <w  rend="unknown" n="505" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="saxum">saxa</w>
+                <w  rend="unknown" n="506" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
+                <w  rend="unknown" n="506" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="scintilla">scintillas</w>
+                <w  rend="unknown" n="506" pos="ADV" msd="Deg=Pos" lemma="procul">procul</w>
+                <w  rend="unknown" n="506" pos="INJ" msd="MORPH=empty" lemma="ecce">ecce</w>
+                <w  rend="unknown" n="506" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="uideo">vides</w>
+                <w  rend="unknown" n="506" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="506" pos="ADV" msd="Deg=Pos" lemma="procul">procul</w>
+                <w  rend="unknown" n="506" pos="INJ" msd="MORPH=empty" lemma="ecce">ecce</w>
+                <w  rend="unknown" n="506" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="ruo">ruentes</w>
+                <w  rend="unknown" n="506" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
                 
     </quote>
  </div>

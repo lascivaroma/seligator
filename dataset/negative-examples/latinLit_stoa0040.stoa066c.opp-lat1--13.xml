@@ -2,28 +2,17 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa066c.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa066c.opp-lat1:2">
-        <w  rend="section" n="2" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="section" n="2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="absum1">absens</w>
-                <w  rend="section" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=1" lemma="dico2">dicerem</w>
-                <w  rend="section" n="2" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="section" n="2" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="ille">illo</w>
-                <w  rend="section" n="2" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="uos">uobis</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="2" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="section" n="2" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="section" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="conturbo2">conturbat</w>
-                <w  rend="section" n="2" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="uos">uos</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="porto">portabit</w>
-                <w  rend="section" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="iudicium">iudicium</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="2" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="quicumque1">quicumque</w>
-                <w  rend="section" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="2" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa066c.opp-lat1:retractationes">
+        <w  rend="section" n="retractationes" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Gaius">CC.</w>
+                <w  rend="section" n="retractationes" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="consul">consulibus</w>
+                <w  rend="section" n="retractationes" pos="ADJcar" msd="MORPH=empty" lemma="11">XI</w>
+                <w  rend="section" n="retractationes" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="kalendae">Kalendas</w>
+                <w  rend="section" n="retractationes" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="October">Octobris</w>
+                <w  rend="section" n="retractationes" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Caesarea">Caesarea</w>
+                <w  rend="section" n="retractationes" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="retractationes" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ecclesia">ecclesia</w>
+                <w  rend="section" n="retractationes" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Comp" lemma="magnus">maiore</w>
+                <w  rend="section" n="retractationes" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

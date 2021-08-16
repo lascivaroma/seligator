@@ -2,12 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215b.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa003.opp-lat1:49">
-        <w  rend="line" n="49" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="anguis">anguem</w>
-                <w  rend="line" n="49" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="magister">magistrum</w>
-                <w  rend="line" n="49" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="falsitas">falsitatis</w>
-                <w  rend="line" n="49" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="increpo">increpo</w>
-                <w  rend="line" n="49" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa003.opp-lat1:24-25">
+        <w  rend="line" n="24" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="24" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="line" n="24" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="imago">imago</w>
+                <w  rend="line" n="24" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="consono1">consonantis</w>
+                <w  rend="line" n="24" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="canticum">cantici</w>
+                <w  rend="line" n="25" pos="NOMcom" msd="MORPH=empty" lemma="amen">amen</w>
+                <w  rend="line" n="25" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="sono1">sonamus</w>
+                <w  rend="line" n="25" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="25" pos="NOMcom" msd="Numb=Sing" lemma="alleluia">alleluia</w>
+                <w  rend="line" n="25" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="dico2">dicimus</w>
+                <w  rend="line" n="25" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

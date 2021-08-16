@@ -2,19 +2,17 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0224.stoa004.alim-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:281.praedonulos">
-        <w  rend="entry" n="281.praedonulos" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="hypocoristicus">hypocoristicos</w>
-                <w  rend="entry" n="281.praedonulos" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="entry" n="281.praedonulos" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="is">id</w>
-                <w  rend="entry" n="281.praedonulos" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="entry" n="281.praedonulos" pos="VER" msd="Numb=Sing|Gend=Masc|Mood=Ind|Tense=Pres|Voice=Act" lemma="deminutium">deminutive</w>
-                <w  rend="entry" n="281.praedonulos" pos="CON" msd="MORPH=empty" lemma="ue">{deminutive}</w>
-                <w  rend="entry" n="281.praedonulos" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="entry" n="281.praedonulos" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=MascNeut" lemma="idem">idem</w>
-                <w  rend="entry" n="281.praedonulos" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Cato">Cato</w>
-                <w  rend="entry" n="281.praedonulos" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="entry" n="281.praedonulos" pos="PROdem" msd="Case=Nom|Numb=Sing" lemma="sum?">epist</w>
-                <w  rend="entry" n="281.praedonulos" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:100.inlex">
+        <w  rend="entry" n="100.inlex" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="produco">producta</w>
+                <w  rend="entry" n="100.inlex" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="sequens">sequenti</w>
+                <w  rend="entry" n="100.inlex" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="syllaba">syllaba</w>
+                <w  rend="entry" n="100.inlex" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="significo">significat</w>
+                <w  rend="entry" n="100.inlex" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="100.inlex" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="entry" n="100.inlex" pos="NOMcom" msd="Case=Dat" lemma="lego2">legi</w>
+                <w  rend="entry" n="100.inlex" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="entry" n="100.inlex" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="paro2">paret</w>
+                <w  rend="entry" n="100.inlex" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

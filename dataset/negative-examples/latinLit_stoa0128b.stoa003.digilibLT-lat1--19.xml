@@ -3,12 +3,16 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1:1">
-        <w  rend="0" n="1" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">Ergo</w>
-                <w  rend="0" n="1" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="furibundus">furibundae</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mens">mentis</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pernicies">pernicies</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="soror">soror</w>
+        <w  rend="0" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="grex">Grece</w>
+                <w  rend="0" n="1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="0" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Menelaus">Menelaus</w>
+                <w  rend="0" n="1" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="menelaus">menelau</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="is">id</w>
                 <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uirtus">uirtus</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="populus1">populi</w>
                 <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>

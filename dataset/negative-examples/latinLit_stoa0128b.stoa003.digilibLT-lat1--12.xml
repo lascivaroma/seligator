@@ -3,15 +3,22 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1:1">
-        <w  rend="0" n="1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">Haec</w>
-                <w  rend="0" n="1" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
-                <w  rend="0" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="paruus2">parua</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="precatio">precatio</w>
-                <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="credo">credo</w>
-                <w  rend="0" n="1" pos="PROrel" msd="Case=Acc" lemma="quod2">quod</w>
-                <w  rend="0" n="1" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="uirgilianus">Virgilianis</w>
-                <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="satisfacio">satisfecerit</w>
-                <w  rend="0" n="1" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Musa">Musis</w>
+        <w  rend="0" n="1" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
+                <w  rend="0" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uestibulum">uestibulo</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="inferi">inferorum</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="luctus">luctus</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="morbus">morbos</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="bellum">bella</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="discordia">discordiam</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="senectus1">senectutem</w>
+                <w  rend="0" n="1" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="egestas">egestatem</w>
+                <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uideo">uidet</w>
                 <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

@@ -2,17 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215b.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa001.opp-lat1:2">
-        <w  rend="book" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="2" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="book" n="2" pos="ADV" msd="Deg=Pos" lemma="forte">forte</w>
-                <w  rend="book" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="cibus">cibum</w>
-                <w  rend="book" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uox">uox</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="posco">poscit</w>
-                <w  rend="book" n="2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="egenus">egena</w>
-                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="nego">negabis</w>
-                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa001.opp-lat1:1.601-1.602">
+        <w  rend="line" n="1.601" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
+                <w  rend="line" n="1.601" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="cohibeo">cohibet</w>
+                <w  rend="line" n="1.601" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="totus">totum</w>
+                <w  rend="line" n="1.601" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pax">pacis</w>
+                <w  rend="line" n="1.601" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="concordia">concordia</w>
+                <w  rend="line" n="1.601" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mundus1">mundum</w>
+                <w  rend="line" n="1.601" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.602" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="1.602" pos="NOMcom" msd="Case=Dat|Numb=Plur|Deg=Pos" lemma="brutus">brutis</w>
+                <w  rend="line" n="1.602" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="line" n="1.602" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="line" n="1.602" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ratio">ratione</w>
+                <w  rend="line" n="1.602" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="do">datur</w>
+                <w  rend="line" n="1.602" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

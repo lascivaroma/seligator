@@ -3,16 +3,16 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0120c.stoa001.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0120c.stoa001.opp-lat1:1">
-        <w  rend="section" n="1" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+        <w  rend="section" n="1" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="quam1">quam</w>
+                <w  rend="section" n="1" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="section" n="1" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
+                <w  rend="section" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=2" lemma="uolo3">uolueris</w>
+                <w  rend="section" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="cognosco">cognoscere</w>
                 <w  rend="section" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
+                <w  rend="section" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="oportet">oportet</w>
                 <w  rend="section" n="1" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="section" n="1" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="section" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=1" lemma="supero">superauero</w>
-                <w  rend="section" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="facio">faciam</w>
-                <w  rend="section" n="1" pos="NOMpro" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="Nazoraeus">Nazoraeum</w>
-                <w  rend="section" n="1" pos="NOMpro" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="Iudaei">Iudaeum</w>
+                <w  rend="section" n="1" pos="ADJadv.ord" msd="Deg=Sup" lemma="primum">primum</w>
+                <w  rend="section" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="credo">credere</w>
                 <w  rend="section" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

@@ -2,12 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi011.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi011.perseus-lat2:164a">
-        <w  rend="line" n="164a" pos="ADV" msd="Deg=Pos" lemma="immo">Immo</w>
-                <w  rend="line" n="164a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">es</w>
-                <w  rend="line" n="164a" pos="PUNC" msd="MORPH=empty" lemma="&#x2014;">—</w>
-                <w  rend="line" n="164a" pos="NOMpro" msd="MORPH=empty" lemma="Gaius">Ch</w>
-                <w  rend="line" n="164a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi011.perseus-lat2:946-947">
+        <w  rend="line" n="946" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="946" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="sum1">sum</w>
+                <w  rend="line" n="946" pos="NOMcom" msd="Case=Loc|Numb=Sing" lemma="domus">domi</w>
+                <w  rend="line" n="946" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="947" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="947" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="redeo1">redii</w>
+                <w  rend="line" n="947" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="line" n="947" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="exsilium">exilio</w>
+                <w  rend="line" n="947" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

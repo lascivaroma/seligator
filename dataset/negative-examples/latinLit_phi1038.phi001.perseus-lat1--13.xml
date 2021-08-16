@@ -2,28 +2,36 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1038.phi001.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1038.phi001.perseus-lat1:3.2.12">
-        <w  rend="section" n="3.2.12" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uis">ui</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="dolor">doloris</w>
-                <w  rend="section" n="3.2.12" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="accendo">accensus</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="latus1">latus</w>
-                <w  rend="section" n="3.2.12" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Crassus">Crassi</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sica">sica</w>
-                <w  rend="section" n="3.2.12" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="confodio">confodit</w>
-                <w  rend="section" n="3.2.12" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="3.2.12" pos="CONsub" msd="MORPH=empty" lemma="dum">dumque</w>
-                <w  rend="section" n="3.2.12" pos="CON" msd="MORPH=empty" lemma="que">{dumque}</w>
-                <w  rend="section" n="3.2.12" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
-                <w  rend="section" n="3.2.12" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="ulciscor">ulciscitur</w>
-                <w  rend="section" n="3.2.12" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="3.2.12" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="Romanus">Romanum</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="imperator">imperatorem</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="maiestas">maiestatis</w>
-                <w  rend="section" n="3.2.12" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="amitto">amissae</w>
-                <w  rend="section" n="3.2.12" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="turpitudo">turpitudine</w>
-                <w  rend="section" n="3.2.12" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="libero">liberauit</w>
-                <w  rend="section" n="3.2.12" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1038.phi001.perseus-lat1:9.13e.1">
+        <w  rend="section" n="9.13e.1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="9.13e.1" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="species">specie</w>
+                <w  rend="section" n="9.13e.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="alienus2">alienam</w>
+                <w  rend="section" n="9.13e.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="res">re</w>
+                <w  rend="section" n="9.13e.1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="uerus">uera</w>
+                <w  rend="section" n="9.13e.1" pos="PROpos.ref" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="suus">suam</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="condicio">condicionem</w>
+                <w  rend="section" n="9.13e.1" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="deploro">deplorasse</w>
+                <w  rend="section" n="9.13e.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="uideo">uidetur</w>
+                <w  rend="section" n="9.13e.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="ops">opum</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="magnitudo">magnitudine</w>
+                <w  rend="section" n="9.13e.1" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="section" n="9.13e.1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Comp" lemma="altus">altiore</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="animus">animi</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sensus">sensu</w>
+                <w  rend="section" n="9.13e.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="felix">felicior</w>
+                <w  rend="section" n="9.13e.1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="9.13e.1" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">quis</w>
+                <w  rend="section" n="9.13e.1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="section" n="9.13e.1" pos="ADV" msd="Deg=Pos" lemma="mediocriter">mediocriter</w>
+                <w  rend="section" n="9.13e.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="prudens">prudens</w>
+                <w  rend="section" n="9.13e.1" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="mortalis1">mortalem</w>
+                <w  rend="section" n="9.13e.1" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="section" n="9.13e.1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Dep" lemma="nascor">natum</w>
+                <w  rend="section" n="9.13e.1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="fleo">fleuerit</w>
+                <w  rend="section" n="9.13e.1" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

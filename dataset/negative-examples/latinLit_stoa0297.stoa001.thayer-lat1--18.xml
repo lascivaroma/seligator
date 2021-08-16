@@ -2,25 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0297.stoa001.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:402-403">
-        <w  rend="unknown" n="402" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
-                <w  rend="unknown" n="402" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="unknown" n="402" pos="ADV" msd="Deg=Pos" lemma="forte">forte</w>
-                <w  rend="unknown" n="402" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="manus1">manu</w>
-                <w  rend="unknown" n="402" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="teneo">teneas</w>
-                <w  rend="unknown" n="402" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
-                <w  rend="unknown" n="402" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="robur">robore</w>
-                <w  rend="unknown" n="402" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="cerno">cernas</w>
-                <w  rend="unknown" n="402" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="403" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="unknown" n="403" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="ferueo">fervere</w>
-                <w  rend="unknown" n="403" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="puto">putes</w>
-                <w  rend="unknown" n="403" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="403" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ignis">ignem</w>
-                <w  rend="unknown" n="403" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="unknown" n="403" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="spargo2">spargere</w>
-                <w  rend="unknown" n="403" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="possum1">posse</w>
-                <w  rend="unknown" n="403" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:459-461">
+        <w  rend="unknown" n="459" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="unknown" n="459" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="lenio">lenitur</w>
+                <w  rend="unknown" n="459" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="opus1">opus</w>
+                <w  rend="unknown" n="459" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="459" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="res">res</w>
+                <w  rend="unknown" n="459" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sto">stat</w>
+                <w  rend="unknown" n="459" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="unknown" n="459" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
+                <w  rend="unknown" n="459" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="uro">uritur</w>
+                <w  rend="unknown" n="459" pos="ADV" msd="Deg=Pos" lemma="illic2">illic</w>
+                <w  rend="unknown" n="460" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sollicito">sollicitatque</w>
+                <w  rend="unknown" n="460" pos="CON" msd="MORPH=empty" lemma="que">{sollicitatque}</w>
+                <w  rend="unknown" n="460" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
+                <w  rend="unknown" n="460" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="uicinus2">vicina</w>
+                <w  rend="unknown" n="460" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="incendium">incendia</w>
+                <w  rend="unknown" n="460" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="saxum">saxum</w>
+                <w  rend="unknown" n="461" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="certus">certaque</w>
+                <w  rend="unknown" n="461" pos="CON" msd="MORPH=empty" lemma="que">{certaque}</w>
+                <w  rend="unknown" n="461" pos="VER" msd="Case=Dat|Numb=Sing|Gend=Fem|Mood=Par|Tense=Fut|Voice=Act" lemma="uenio">venturae</w>
+                <w  rend="unknown" n="461" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="praemitto">praemittit</w>
+                <w  rend="unknown" n="461" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="pignus">pignora</w>
+                <w  rend="unknown" n="461" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="flamma">flammae</w>
+                <w  rend="unknown" n="461" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

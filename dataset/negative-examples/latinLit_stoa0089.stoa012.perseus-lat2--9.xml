@@ -2,19 +2,46 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa012.perseus-lat2:1.225-1.226">
-        <w  rend="line" n="1.225" pos="ADV" msd="Deg=Pos" lemma="prope1">prope</w>
-                <w  rend="line" n="1.225" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="capio2">captus</w>
-                <w  rend="line" n="1.225" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="anhelus">anhelum</w>
-                <w  rend="line" n="1.226" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uerber">verbere</w>
-                <w  rend="line" n="1.226" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="cogo">cogis</w>
-                <w  rend="line" n="1.226" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="equus">equum</w>
-                <w  rend="line" n="1.226" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.226" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="line" n="1.226" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="line" n="1.226" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="uito">vitasse</w>
-                <w  rend="line" n="1.226" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="doleo">dolemus</w>
-                <w  rend="line" n="1.226" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa012.perseus-lat2:1.578-1.583">
+        <w  rend="line" n="1.578" pos="ADV" msd="Deg=Pos" lemma="tunc">Tunc</w>
+                <w  rend="line" n="1.578" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="1.578" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=MascNeut|Deg=Pos" lemma="magnus">magnorum</w>
+                <w  rend="line" n="1.578" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="merx">mercem</w>
+                <w  rend="line" n="1.578" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Fortuna">Fortuna</w>
+                <w  rend="line" n="1.578" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="labor1">laborum</w>
+                <w  rend="line" n="1.579" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="persoluo">persolvit</w>
+                <w  rend="line" n="1.579" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.579" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Stilichus">Stilicho</w>
+                <w  rend="line" n="1.579" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.579" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="currus">curru</w>
+                <w  rend="line" n="1.579" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="line" n="1.579" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="ueho">vectus</w>
+                <w  rend="line" n="1.579" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="idem">eodem</w>
+                <w  rend="line" n="1.580" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="urbs">urbe</w>
+                <w  rend="line" n="1.580" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="triumpho">triumphantem</w>
+                <w  rend="line" n="1.580" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="gener">generum</w>
+                <w  rend="line" n="1.580" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="floreo">florente</w>
+                <w  rend="line" n="1.580" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="iuuenta">iuventa</w>
+                <w  rend="line" n="1.581" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=2" lemma="conspicio">conspiceres</w>
+                <w  rend="line" n="1.581" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illumque</w>
+                <w  rend="line" n="1.581" pos="CON" msd="MORPH=empty" lemma="que">{illumque}</w>
+                <w  rend="line" n="1.581" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="line" n="1.581" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
+                <w  rend="line" n="1.581" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cor">corde</w>
+                <w  rend="line" n="1.581" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=2" lemma="refero">referres</w>
+                <w  rend="line" n="1.581" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.582" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="line" n="1.582" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="1.582" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="confusus">confusa</w>
+                <w  rend="line" n="1.582" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="dubius">dubiis</w>
+                <w  rend="line" n="1.582" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="formido1">formidine</w>
+                <w  rend="line" n="1.582" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="res">rebus</w>
+                <w  rend="line" n="1.583" pos="ADJqua" msd="Case=Acc|Numb=Sing" lemma="infans2">infantem</w>
+                <w  rend="line" n="1.583" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genitor">genitor</w>
+                <w  rend="line" n="1.583" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Dep" lemma="morior">moriens</w>
+                <w  rend="line" n="1.583" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="committo">commisit</w>
+                <w  rend="line" n="1.583" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="alo">alendum</w>
+                <w  rend="line" n="1.583" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,48 +2,37 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0527.tlg020.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg020.obi-lat1:15.8">
-        <w  rend="verse" n="15.8" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="hic1">hii</w>
-                <w  rend="verse" n="15.8" pos="CONcoo" msd="MORPH=empty" lemma="uero4">vero</w>
-                <w  rend="verse" n="15.8" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="verse" n="15.8" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uictor">victores</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="reuertor">reversi</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="verse" n="15.8" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Bethulia">Bethuliam</w>
-                <w  rend="verse" n="15.8" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
-                <w  rend="verse" n="15.8" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="qui">quaeque</w>
-                <w  rend="verse" n="15.8" pos="CON" msd="MORPH=empty" lemma="que">{quaeque}</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erant</w>
-                <w  rend="verse" n="15.8" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="ille">illorum</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="aufero">abstulerunt</w>
-                <w  rend="verse" n="15.8" pos="PROref" msd="Case=Abl|Numb=Sing" lemma="sui">secum</w>
-                <w  rend="verse" n="15.8" pos="CON" msd="MORPH=empty" lemma="cum3">{secum}</w>
-                <w  rend="verse" n="15.8" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
-                <w  rend="verse" n="15.8" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="verse" n="15.8" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
-                <w  rend="verse" n="15.8" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="numerus">numerus</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="verse" n="15.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pecus1">pecoribus</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="verse" n="15.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="iumentum">iumentis</w>
-                <w  rend="verse" n="15.8" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="verse" n="15.8" pos="ADJqua" msd="Case=Abl|Numb=Plur" lemma="uniuersus">universis</w>
-                <w  rend="verse" n="15.8" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="mobilis">mobilibus</w>
-                <w  rend="verse" n="15.8" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="is">eorum</w>
-                <w  rend="verse" n="15.8" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="verse" n="15.8" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="paruus2">minimo</w>
-                <w  rend="verse" n="15.8" pos="ADV" msd="Deg=Pos" lemma="usque">usque</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="verse" n="15.8" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="magnus">magnum</w>
-                <w  rend="verse" n="15.8" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
-                <w  rend="verse" n="15.8" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="diues">divites</w>
-                <w  rend="verse" n="15.8" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="fio">fierent</w>
-                <w  rend="verse" n="15.8" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="verse" n="15.8" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="praedatio">praedationibus</w>
-                <w  rend="verse" n="15.8" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="is">eorum</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg020.obi-lat1:6.10">
+        <w  rend="verse" n="6.10" pos="ADV" msd="Deg=Pos" lemma="porro">porro</w>
+                <w  rend="verse" n="6.10" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="filius">filii</w>
+                <w  rend="verse" n="6.10" pos="NOMpro" msd="Case=Ind" lemma="Israel">Israhel</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="descendo">descendentes</w>
+                <w  rend="verse" n="6.10" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="verse" n="6.10" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Bethulia">Bethulia</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uenio">venerunt</w>
+                <w  rend="verse" n="6.10" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="verse" n="6.10" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
+                <w  rend="verse" n="6.10" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="soluo">solventes</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="duco">duxerunt</w>
+                <w  rend="verse" n="6.10" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="verse" n="6.10" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Bethulia">Bethuliam</w>
+                <w  rend="verse" n="6.10" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="verse" n="6.10" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="verse" n="6.10" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Neut|Deg=Pos" lemma="medius">medio</w>
+                <w  rend="verse" n="6.10" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="populus1">populi</w>
+                <w  rend="verse" n="6.10" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illum</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="statuo">statuentes</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="percontor">percontati</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="verse" n="6.10" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
+                <w  rend="verse" n="6.10" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="res">rerum</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
+                <w  rend="verse" n="6.10" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
+                <w  rend="verse" n="6.10" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illum</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="uincio">vinctum</w>
+                <w  rend="verse" n="6.10" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Assyrii">Assyrii</w>
+                <w  rend="verse" n="6.10" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="relinquo">reliquissent</w>
                 
     </quote>
  </div>

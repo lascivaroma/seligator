@@ -2,14 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi056.perseus-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi056.perseus-lat1:13.28.1">
-        <w  rend="section" n="13.28.1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="uolo3">velim</w>
-                <w  rend="section" n="13.28.1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="existimo">existimes</w>
-                <w  rend="section" n="13.28.1" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
-                <w  rend="section" n="13.28.1" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="section" n="13.28.1" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="facio">fecisse</w>
-                <w  rend="section" n="13.28.1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="gratus">gratissimum</w>
-                <w  rend="section" n="13.28.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi056.perseus-lat1:7.24.1-7.24.2">
+        <w  rend="section" n="7.24.1" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eumque</w>
+                <w  rend="section" n="7.24.1" pos="CON" msd="MORPH=empty" lemma="que">{eumque}</w>
+                <w  rend="section" n="7.24.1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="addico2">addictum</w>
+                <w  rend="section" n="7.24.1" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="section" n="7.24.1" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="totus">totum</w>
+                <w  rend="section" n="7.24.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="puto">puto</w>
+                <w  rend="section" n="7.24.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="section" n="7.24.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Caluus">Calvi</w>
+                <w  rend="section" n="7.24.2" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Licinius">Licini</w>
+                <w  rend="section" n="7.24.2" pos="NOMpro" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos|Mood=Ind|Tense=Pres|Voice=Act" lemma="Hipponacteus">Hipponacteo</w>
+                <w  rend="section" n="7.24.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="praeconius">praeconio</w>
+                <w  rend="section" n="7.24.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

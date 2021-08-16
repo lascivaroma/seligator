@@ -3,17 +3,20 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa016.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa016.opp-lat1:4">
-        <w  rend="letter" n="4" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Dep|Person=1" lemma="laetor">laetemur</w>
-                <w  rend="letter" n="4" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
-                <w  rend="letter" n="4" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">nos</w>
+        <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="erubesco">erubescat</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="incredulitas">incredulitas</w>
+                <w  rend="letter" n="4" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="noster">nostra</w>
+                <w  rend="letter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
                 <w  rend="letter" n="4" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="letter" n="4" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="ipse">ipsis</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="gentilis1">gentilibus</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
+                <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
                 <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="4" pos="ADV" msd="Deg=Pos" lemma="saltem">saltem</w>
-                <w  rend="letter" n="4" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="computo">computantes</w>
-                <w  rend="letter" n="4" pos="PROpos" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="noster">nostrorum</w>
-                <w  rend="letter" n="4" pos="VER" msd="Case=Gen|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="exeo1">exeuntium</w>
-                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="beatitudo">beatitudinem</w>
+                <w  rend="letter" n="4" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="letter" n="4" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">Deo</w>
+                <w  rend="letter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uolo3">uult</w>
+                <w  rend="letter" n="4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="letter" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="subicio">subiecta</w>
                 <w  rend="letter" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

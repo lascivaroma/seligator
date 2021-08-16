@@ -2,14 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0224.stoa004.alim-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:419.stuprum-419.stura">
-        <w  rend="entry" n="419.stuprum" pos="PUNC" msd="MORPH=empty" lemma="&#x201D;">”</w>
-                <w  rend="entry" n="419.stura" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="flumen">flumen</w>
-                <w  rend="entry" n="419.stura" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="entry" n="419.stura" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ager">agro</w>
-                <w  rend="entry" n="419.stura" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="Laurens">Laurenti</w>
-                <w  rend="entry" n="419.stura" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="entry" n="419.stura" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0224.stoa004.alim-lat1:67.escariae">
+        <w  rend="entry" n="67.escariae" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="Anclabri">Anclabris</w>
+                <w  rend="entry" n="67.escariae" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
+                <w  rend="entry" n="67.escariae" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qui1">qua</w>
+                <w  rend="entry" n="67.escariae" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="entry" n="67.escariae" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="sacrifico">sacrificando</w>
+                <w  rend="entry" n="67.escariae" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="deus">dis</w>
+                <w  rend="entry" n="67.escariae" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="anclatur">anclatur</w>
+                <w  rend="entry" n="67.escariae" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="entry" n="67.escariae" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="entry" n="67.escariae" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="entry" n="67.escariae" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="haurio">hauritur</w>
+                <w  rend="entry" n="67.escariae" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="ministro">ministraturque</w>
+                <w  rend="entry" n="67.escariae" pos="CON" msd="MORPH=empty" lemma="que">{ministraturque}</w>
+                <w  rend="entry" n="67.escariae" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

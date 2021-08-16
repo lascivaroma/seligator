@@ -2,41 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0474.phi020.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi020.perseus-lat2:76">
-        <w  rend="section" n="76" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qui1">qua</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="res">re</w>
-                <w  rend="section" n="76" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="calamitas">calamitas</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="76" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="section" n="76" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
-                <w  rend="section" n="76" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="76" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Pass" lemma="appello1">appellanda</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="76" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="exuro">exussit</w>
-                <w  rend="section" n="76" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="genus1">genus</w>
-                <w  rend="section" n="76" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="totus">totum</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="maledictum">maledicti</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="76" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
-                <w  rend="section" n="76" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quisquam">quisquam</w>
-                <w  rend="section" n="76" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
-                <w  rend="section" n="76" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=SemDep|Person=3" lemma="audeo">audeat</w>
-                <w  rend="section" n="76" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="reprehendo">reprehendere</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="consulatus">consulatum</w>
-                <w  rend="section" n="76" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="meus">meum</w>
-                <w  rend="section" n="76" pos="PROdem" msd="Case=Ind" lemma="tot">tot</w>
-                <w  rend="section" n="76" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="tantus">tantis</w>
-                <w  rend="section" n="76" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
-                <w  rend="section" n="76" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="ornatus2">ornatis</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="iudicium">iudiciis</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="testimonium">testimoniis</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="76" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="auctoritas">auctoritatibus</w>
-                <w  rend="section" n="76" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="comprobo">comprobatum</w>
-                <w  rend="section" n="76" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0474.phi020.perseus-lat2:6">
+        <w  rend="section" n="6" pos="PROrel" msd="Case=Nom|Numb=Sing" lemma="quod1">quod</w>
+                <w  rend="section" n="6" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="section" n="6" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="section" n="6" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="nuntio">nuntiaretur</w>
+                <w  rend="section" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="6" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=2" lemma="scio">scito</w>
+                <w  rend="section" n="6" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="section" n="6" pos="NOMcom" msd="Case=Loc|Numb=Sing" lemma="domus">domi</w>
+                <w  rend="section" n="6" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="maneo">mansisse</w>
+                <w  rend="section" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="6" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="section" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="6" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="gladiator">gladiatoribus</w>
+                <w  rend="section" n="6" pos="PROpos" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="tuus">tuis</w>
+                <w  rend="section" n="6" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Pass" lemma="instauro">instaurandae</w>
+                <w  rend="section" n="6" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caedes">caedis</w>
+                <w  rend="section" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="potestas">potestatem</w>
+                <w  rend="section" n="6" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="6" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="facio">fecisse</w>
+                <w  rend="section" n="6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

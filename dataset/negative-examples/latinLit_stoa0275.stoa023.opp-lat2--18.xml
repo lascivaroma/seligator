@@ -2,14 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa023.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa023.opp-lat2:13">
-        <w  rend="section" n="13" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caro1">carnis</w>
-                <w  rend="section" n="13" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="patientia">patientia</w>
-                <w  rend="section" n="13" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="13" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="persecutio">persecutionibus</w>
-                <w  rend="section" n="13" pos="ADV" msd="Deg=Pos" lemma="denique">denique</w>
-                <w  rend="section" n="13" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="proelior">proeliatur</w>
-                <w  rend="section" n="13" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa023.opp-lat2:10">
+        <w  rend="section" n="10" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">quis</w>
+                <w  rend="section" n="10" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="section" n="10" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="10" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="iudico">iudicabit</w>
+                <w  rend="section" n="10" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="alius">alium</w>
+                <w  rend="section" n="10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="10" pos="CONsub" msd="MORPH=empty" lemma="nisi">nisi</w>
+                <w  rend="section" n="10" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="10" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="patiens">patiens</w>
+                <w  rend="section" n="10" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erit</w>
+                <w  rend="section" n="10" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="10" pos="VER" msd="Case=Gen|Numb=Sing|Mood=Ger|Voice=Act" lemma="defendo">defendendi</w>
+                <w  rend="section" n="10" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

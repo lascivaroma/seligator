@@ -2,14 +2,15 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0149p.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0149p.stoa003.opp-lat1:183-184">
-        <w  rend="line" n="183" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="abdo">abdere</w>
-                <w  rend="line" n="183" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="furtum">furta</w>
-                <w  rend="line" n="183" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="184" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="nullus">nulla</w>
-                <w  rend="line" n="184" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fides2">fides</w>
-                <w  rend="line" n="184" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="populus1">populis</w>
-                <w  rend="line" n="184" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0149p.stoa003.opp-lat1:54">
+        <w  rend="line" n="54" pos="CONsub" msd="MORPH=empty" lemma="ut">utque</w>
+                <w  rend="line" n="54" pos="CON" msd="MORPH=empty" lemma="que">{utque}</w>
+                <w  rend="line" n="54" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="homo">hominum</w>
+                <w  rend="line" n="54" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="sollers">sollers</w>
+                <w  rend="line" n="54" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="possum1">posset</w>
+                <w  rend="line" n="54" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="claresco">clarescere</w>
+                <w  rend="line" n="54" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uita">uita</w>
+                <w  rend="line" n="54" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

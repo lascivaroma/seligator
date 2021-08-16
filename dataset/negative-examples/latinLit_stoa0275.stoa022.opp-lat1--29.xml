@@ -2,12 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa022.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa022.opp-lat1:5">
-        <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="merus">Mera</w>
-                <w  rend="chapter" n="5" pos="ADVneg" msd="MORPH=empty" lemma="nusquam">nusquam</w>
-                <w  rend="chapter" n="5" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="uestio">vestiendo</w>
-                <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="impono">imponitur</w>
-                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa022.opp-lat1:2">
+        <w  rend="chapter" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
+                <w  rend="chapter" n="2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="urbs">urbes</w>
+                <w  rend="chapter" n="2" pos="ADV" msd="Deg=Pos" lemma="retro1">retro</w>
+                <w  rend="chapter" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="2" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="populus1">populi</w>
+                <w  rend="chapter" n="2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="frequens">frequentes</w>
+                <w  rend="chapter" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="2" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solus</w>
+                <w  rend="chapter" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="audio">audiebat</w>
+                <w  rend="chapter" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

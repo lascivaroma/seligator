@@ -3,13 +3,15 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215a.stoa002.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215a.stoa002.opp-lat1:1">
-        <w  rend="chapter" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uictor">Uictor</w>
+        <w  rend="chapter" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Saturninus">Saturninus</w>
                 <w  rend="chapter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">dixit</w>
                 <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="chapter" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="secundus1">secundo</w>
-                <w  rend="chapter" n="1" pos="VER" msd="Numb=Sing|Person=2" lemma="peto">petato</w>
-                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+                <w  rend="chapter" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="casa">casa</w>
+                <w  rend="chapter" n="1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Comp" lemma="magnus">maiore</w>
+                <w  rend="chapter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="chapter" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="includo">inclusus</w>
+                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

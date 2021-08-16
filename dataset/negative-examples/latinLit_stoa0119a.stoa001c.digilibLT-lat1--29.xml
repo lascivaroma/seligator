@@ -2,26 +2,34 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0119a.stoa001c.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001c.digilibLT-lat1:56">
-        <w  rend="comment" n="56" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="persuadeo">persuadet</w>
-                <w  rend="comment" n="56" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="comment" n="56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="56" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="comment" n="56" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Dep|Person=3" lemma="reuertor">reuertatur</w>
-                <w  rend="comment" n="56" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="comment" n="56" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="meretrix">meretricem</w>
-                <w  rend="comment" n="56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="56" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
-                <w  rend="comment" n="56" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="is">eo</w>
-                <w  rend="comment" n="56" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
-                <w  rend="comment" n="56" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="fio">fieri</w>
-                <w  rend="comment" n="56" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="comment" n="56" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="possum1">possit</w>
-                <w  rend="comment" n="56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="56" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="comment" n="56" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="comment" n="56" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="reuertor">reuertatur</w>
-                <w  rend="comment" n="56" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001c.digilibLT-lat1:664">
+        <w  rend="comment" n="664" pos="NOMpro" msd="Case=Nom|Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="Perius">PERII</w>
+                <w  rend="comment" n="664" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Obsecro">OBSECRO</w>
+                <w  rend="comment" n="664" pos="NOMpro" msd="Deg=Pos" lemma="tam">TAM</w>
+                <w  rend="comment" n="664" pos="VER" msd="Case=Voc|Numb=Sing|Deg=Pos" lemma="Infandus">INFANDVM</w>
+                <w  rend="comment" n="664" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="Facinus">FACINVS</w>
+                <w  rend="comment" n="664" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="meus">MEA</w>
+                <w  rend="comment" n="664" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">TV</w>
+                <w  rend="comment" n="664" pos="ADVneg" msd="MORPH=empty" lemma="ne3">NE</w>
+                <w  rend="comment" n="664" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="Audiuius">AVDIVI</w>
+                <w  rend="comment" n="664" pos="VER" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="quidem">QVIDEM</w>
+                <w  rend="comment" n="664" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="comment" n="664" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="comment" n="664" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="comment" n="664" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
+                <w  rend="comment" n="664" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="infandus">infandum</w>
+                <w  rend="comment" n="664" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="facinus">facinus</w>
+                <w  rend="comment" n="664" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="comment" n="664" pos="ADV" msd="Deg=Pos" lemma="solum2">solum</w>
+                <w  rend="comment" n="664" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="gero">gestum</w>
+                <w  rend="comment" n="664" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="comment" n="664" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="uideo">uidi</w>
+                <w  rend="comment" n="664" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="664" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="comment" n="664" pos="ADVneg" msd="MORPH=empty" lemma="ne3">ne</w>
+                <w  rend="comment" n="664" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="audio">audiui</w>
+                <w  rend="comment" n="664" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="comment" n="664" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

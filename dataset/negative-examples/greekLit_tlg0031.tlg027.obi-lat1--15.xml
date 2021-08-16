@@ -2,23 +2,33 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0031.tlg027.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg027.obi-lat1:21.20">
-        <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="quintus">quintus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sardonyx">sardonix</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="sextus">sextus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sardius">sardinus</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="septimus">septimus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="chrysolithus">chrysolitus</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="octauus">octavus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="Beryllus">berillus</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="nonus">nonus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="topazius">topazius</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="decimus">decimus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="chrysoprassus">chrysoprassus</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="undecimus">undecimus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="hyacinthus">hyacinthus</w>
-                <w  rend="verse" n="21.20" pos="ADJord" msd="Numb=Sing|Gend=Masc" lemma="duodecimus">duodecimus</w>
-                <w  rend="verse" n="21.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="amethystos">amethistus</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg027.obi-lat1:19.2">
+        <w  rend="verse" n="19.2" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="verse" n="19.2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Deg=Pos" lemma="uerus">vera</w>
+                <w  rend="verse" n="19.2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="19.2" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="iustus">iusta</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="iudicium">iudicia</w>
+                <w  rend="verse" n="19.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="verse" n="19.2" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Masc" lemma="is">eius</w>
+                <w  rend="verse" n="19.2" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="verse" n="19.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="iudico">iudicavit</w>
+                <w  rend="verse" n="19.2" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="meretrix">meretrice</w>
+                <w  rend="verse" n="19.2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="magnus">magna</w>
+                <w  rend="verse" n="19.2" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="verse" n="19.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="corrumpo">corrupit</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="terra">terram</w>
+                <w  rend="verse" n="19.2" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="prostitutio">prostitutione</w>
+                <w  rend="verse" n="19.2" pos="PROpos.ref" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="suus">sua</w>
+                <w  rend="verse" n="19.2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="19.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uindico">vindicavit</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sanguis">sanguinem</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="seruus1">servorum</w>
+                <w  rend="verse" n="19.2" pos="PROpos.ref" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="suus">suorum</w>
+                <w  rend="verse" n="19.2" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="verse" n="19.2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="manus1">manibus</w>
+                <w  rend="verse" n="19.2" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="is">eius</w>
                 
     </quote>
  </div>

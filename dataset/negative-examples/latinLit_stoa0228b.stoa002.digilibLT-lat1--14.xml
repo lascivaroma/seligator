@@ -2,15 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1:II.193">
-        <w  rend="scholia" n="II.193" pos="PUNC" msd="MORPH=empty" lemma="&#x201B;">‛</w>
-                <w  rend="scholia" n="II.193" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ebur">Ebur</w>
-                <w  rend="scholia" n="II.193" pos="PUNC" msd="MORPH=empty" lemma="&#x2019;">’</w>
-                <w  rend="scholia" n="II.193" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
-                <w  rend="scholia" n="II.193" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
-                <w  rend="scholia" n="II.193" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tibia">tibia</w>
-                <w  rend="scholia" n="II.193" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="pono">posuit</w>
-                <w  rend="scholia" n="II.193" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0228b.stoa002.digilibLT-lat1:II.169">
+        <w  rend="scholia" n="II.169" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="Magnus">MAGNOSQVE</w>
+                <w  rend="scholia" n="II.169" pos="CON" msd="MORPH=empty" lemma="que">{MAGNOSQVE}</w>
+                <w  rend="scholia" n="II.169" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Camillus">CAMILLOS.</w>
+                <w  rend="scholia" n="II.169" pos="NOMpro" msd="Case=Nom" lemma="abusus">Abusive</w>
+                <w  rend="scholia" n="II.169" pos="CON" msd="MORPH=empty" lemma="ue">{Abusive}</w>
+                <w  rend="scholia" n="II.169" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dico2">dicit</w>
+                <w  rend="scholia" n="II.169" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="scholia" n="II.169" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="scholia" n="II.169" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
+                <w  rend="scholia" n="II.169" pos="ADJcar" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="unus">unus</w>
+                <w  rend="scholia" n="II.169" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="scholia" n="II.169" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
                 
     </quote>
  </div>

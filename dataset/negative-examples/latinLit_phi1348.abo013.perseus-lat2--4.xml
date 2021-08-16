@@ -2,38 +2,60 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1348.abo013.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo013.perseus-lat2:65">
-        <w  rend="chapter" n="65" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Seianus">Seianum</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="res">res</w>
-                <w  rend="chapter" n="65" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="nouus">nouas</w>
-                <w  rend="chapter" n="65" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Dep" lemma="molior">molientem</w>
-                <w  rend="chapter" n="65" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="65" pos="CONsub" msd="MORPH=empty" lemma="quamuis2">quamuis</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
-                <w  rend="chapter" n="65" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="natalis1">natalem</w>
-                <w  rend="chapter" n="65" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Pos" lemma="publice">publice</w>
-                <w  rend="chapter" n="65" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="celebro">celebrari</w>
-                <w  rend="chapter" n="65" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="imago">imagines</w>
-                <w  rend="chapter" n="65" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="aureus2">aureas</w>
-                <w  rend="chapter" n="65" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="colo2">coli</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Pos" lemma="passim">passim</w>
-                <w  rend="chapter" n="65" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="uideo">uideret</w>
-                <w  rend="chapter" n="65" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Pos" lemma="uix">uix</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Pos" lemma="tandem">tandem</w>
-                <w  rend="chapter" n="65" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="astus">astu</w>
-                <w  rend="chapter" n="65" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
-                <w  rend="chapter" n="65" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="dolus">dolo</w>
-                <w  rend="chapter" n="65" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
-                <w  rend="chapter" n="65" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="principalis">principali</w>
-                <w  rend="chapter" n="65" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="auctoritas">auctoritate</w>
-                <w  rend="chapter" n="65" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="subuerto">subuertit</w>
-                <w  rend="chapter" n="65" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo013.perseus-lat2:4">
+        <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="praetura">praetura</w>
+                <w  rend="chapter" n="4" pos="ADV" msd="Deg=Pos" lemma="deinde">deinde</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="fungor">functus</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="exitus">exitu</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="annus">anni</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="discordia">discordia</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="inter">inter</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="triumuir">triumuiros</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="orior">orta</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="retineo">retentis</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="ultra2">ultra</w>
+                <w  rend="chapter" n="4" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="iustus">iustum</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="tempus1">tempus</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="insigne">insignibus</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Lucius">L.</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Antonius">Antonium</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="consul">consulem</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Numb=Sing" lemma="triumuir">triumuiri</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="frater">fratrem</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Perusia">Perusiam</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="sequor">secutus</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="deditio">deditione</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ceteri">ceteris</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="facio">facta</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">solus</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="permaneo">permansit</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pars">partibus</w>
+                <w  rend="chapter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="chapter" n="4" pos="ADJadv.ord" msd="Case=Abl|Numb=Sing|Deg=Sup" lemma="primo">primo</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Praeneste">Praeneste</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="4" pos="ADV" msd="Deg=Pos" lemma="inde">inde</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Neapolis">Neapolim</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="euado2">euasit</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="seruus">seruisque</w>
+                <w  rend="chapter" n="4" pos="CON" msd="MORPH=empty" lemma="que">{seruisque}</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="4" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pileus">pilleum</w>
+                <w  rend="chapter" n="4" pos="ADV" msd="Deg=Pos" lemma="frustra">frustra</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="uoco">uocatis</w>
+                <w  rend="chapter" n="4" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Sicilia">Siciliam</w>
+                <w  rend="chapter" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="profugio">profugit</w>
+                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

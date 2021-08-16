@@ -2,19 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104a.stoa005.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104a.stoa005.opp-lat1:pr">
-        <w  rend="section" n="pr" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="destruo">Destructis</w>
-                <w  rend="section" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="idolum">idolis</w>
-                <w  rend="section" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="section" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="elementum">elementorum</w>
-                <w  rend="section" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ratio">ratione</w>
-                <w  rend="section" n="pr" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="monstro">monstrata</w>
-                <w  rend="section" n="pr" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="ostendo">ostendendum</w>
-                <w  rend="section" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="deus">Deum</w>
-                <w  rend="section" n="pr" pos="ADV" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="solus">solum</w>
-                <w  rend="section" n="pr" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="colo2">colendum</w>
-                <w  rend="section" n="pr" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="section" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104a.stoa005.opp-lat1:8">
+        <w  rend="section" n="8" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="8" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="facio">factum</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="inquio">inquit</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="8" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="leuo2">leuabat</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma="*">*</w>
+                <w  rend="section" n="8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="manus1">manus</w>
+                <w  rend="section" n="8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Moyses">Moyses</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="praeualeo">praeualebat</w>
+                <w  rend="section" n="8" pos="NOMpro" msd="Case=Ind" lemma="Israel">Israel</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="8" pos="CONsub" msd="MORPH=empty" lemma="ubi3">ubi</w>
+                <w  rend="section" n="8" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="submitto">submiserat</w>
+                <w  rend="section" n="8" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="manus1">manus</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="inualesco">inualescebat</w>
+                <w  rend="section" n="8" pos="NOMpro" msd="Case=Ind" lemma="Amalech">Amalech</w>
+                <w  rend="section" n="8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

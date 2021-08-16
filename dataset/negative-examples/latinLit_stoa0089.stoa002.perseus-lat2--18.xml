@@ -2,13 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:242">
-        <w  rend="line" n="242" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="dubium">dubio</w>
-                <w  rend="line" n="242" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sto">stabant</w>
-                <w  rend="line" n="242" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Romanus">Romana</w>
-                <w  rend="line" n="242" pos="PRE" msd="MORPH=empty" lemma="sub">sub</w>
-                <w  rend="line" n="242" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ictus">ictu</w>
-                <w  rend="line" n="242" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:428-429">
+        <w  rend="line" n="428" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="line" n="428" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis2">quid</w>
+                <w  rend="line" n="428" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
+                <w  rend="line" n="428" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="428" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="doleo">doluistis</w>
+                <w  rend="line" n="428" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="428" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="428" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="arma">armis</w>
+                <w  rend="line" n="429" pos="VER" msd="Case=Voc|Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="ostento">ostentate</w>
+                <w  rend="line" n="429" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="line" n="429" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

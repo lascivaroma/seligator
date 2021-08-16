@@ -2,14 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0276.stoa006.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa006.opp-lat1:18">
-        <w  rend="line" n="18" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
-                <w  rend="line" n="18" pos="ADJqua" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="uanus">uanum</w>
-                <w  rend="line" n="18" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="cano">caneret</w>
-                <w  rend="line" n="18" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Fut|Voice=Act" lemma="cedo1">cessura</w>
-                <w  rend="line" n="18" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pax">pace</w>
-                <w  rend="line" n="18" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="minae">minarum</w>
-                <w  rend="line" n="18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa006.opp-lat1:30-31">
+        <w  rend="line" n="30" pos="ADV" msd="Deg=Pos" lemma="paulatim">paulatimque</w>
+                <w  rend="line" n="30" pos="CON" msd="MORPH=empty" lemma="que">{paulatimque}</w>
+                <w  rend="line" n="30" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="globus">globus</w>
+                <w  rend="line" n="30" pos="ADV" msd="Deg=Pos" lemma="pariter">pariter</w>
+                <w  rend="line" n="30" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="line" n="30" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sol">sole</w>
+                <w  rend="line" n="30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="cohaereo">cohaesit</w>
+                <w  rend="line" n="31" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="decipio">deceptumque</w>
+                <w  rend="line" n="31" pos="CON" msd="MORPH=empty" lemma="que">{deceptumque}</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caligo1">caliginis</w>
+                <w  rend="line" n="31" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="agmen">agmine</w>
+                <w  rend="line" n="31" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="claudo1">clusit</w>
+                <w  rend="line" n="31" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

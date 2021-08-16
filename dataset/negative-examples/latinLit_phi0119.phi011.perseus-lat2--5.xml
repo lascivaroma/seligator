@@ -2,13 +2,24 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi011.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi011.perseus-lat2:592">
-        <w  rend="line" n="592" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="spes">spem</w>
-                <w  rend="line" n="592" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="teneo">teneo</w>
-                <w  rend="line" n="592" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="592" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="salus">salutem</w>
-                <w  rend="line" n="592" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="amitto">amisi</w>
-                <w  rend="line" n="592" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi011.perseus-lat2:790-791">
+        <w  rend="line" n="790" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="concipio">conceptis</w>
+                <w  rend="line" n="790" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uerbum">verbis</w>
+                <w  rend="line" n="790" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="790" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="iusiurandum">iusiurandum</w>
+                <w  rend="line" n="790" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="do">dabo</w>
+                <w  rend="line" n="790" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="791" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="791" pos="ADVneg" msd="MORPH=empty" lemma="numquam">numquam</w>
+                <w  rend="line" n="791" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quisquam">quicquam</w>
+                <w  rend="line" n="791" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="line" n="791" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
+                <w  rend="line" n="791" pos="PUNC" msd="MORPH=empty" lemma="&#x2014;">—</w>
+                <w  rend="line" n="791" pos="ADV" msd="Deg=Pos" lemma="iam">iamne</w>
+                <w  rend="line" n="791" pos="ADV" msd="MORPH=empty" lemma="ne2">{iamne}</w>
+                <w  rend="line" n="791" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="abeo1">abiit</w>
+                <w  rend="line" n="791" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Syra">Syra</w>
+                <w  rend="line" n="791" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

@@ -2,18 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:533a-534">
-        <w  rend="line" n="533a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="uideo">Vidi</w>
-                <w  rend="line" n="533a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="533a" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="533a" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="ille">illam</w>
-                <w  rend="line" n="533a" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="533a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="hospes">hospitem</w>
-                <w  rend="line" n="533a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="534" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="complector">complexam</w>
-                <w  rend="line" n="534" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="line" n="534" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Dep" lemma="osculor">osculantem</w>
-                <w  rend="line" n="534" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:11-12">
+        <w  rend="line" n="11" pos="ADV" msd="Deg=Pos" lemma="tum">tum</w>
+                <w  rend="line" n="11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="bellator">bellatorem</w>
+                <w  rend="line" n="11" pos="PUNC" msd="MORPH=empty" lemma="&#x2014;">—</w>
+                <w  rend="line" n="11" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Mars">Mars</w>
+                <w  rend="line" n="11" pos="ADVneg" msd="MORPH=empty" lemma="haud">haud</w>
+                <w  rend="line" n="11" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=SemDep|Person=3" lemma="audeo">ausit</w>
+                <w  rend="line" n="11" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="dico2">dicere</w>
+                <w  rend="line" n="12" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="line" n="12" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="aequoperor">aequiperare</w>
+                <w  rend="line" n="12" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="suus">suas</w>
+                <w  rend="line" n="12" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uirtus">virtutes</w>
+                <w  rend="line" n="12" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="line" n="12" pos="PROpos" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="tuus">tuas</w>
+                <w  rend="line" n="12" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

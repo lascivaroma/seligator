@@ -3,24 +3,19 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0022.stoa029.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0022.stoa029.opp-lat1:23">
-        <w  rend="section" n="23" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
-                <w  rend="section" n="23" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
-                <w  rend="section" n="23" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
+        <w  rend="section" n="23" pos="ADVrel" msd="MORPH=empty" lemma="quomodo1">quomodo</w>
+                <w  rend="section" n="23" pos="PROind" msd="Case=Ind" lemma="nihil">nihil</w>
+                <w  rend="section" n="23" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="inuenio">inuenire</w>
+                <w  rend="section" n="23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="possum1">potuit</w>
                 <w  rend="section" n="23" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="23" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="euangelium">euangelio</w>
-                <w  rend="section" n="23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aio">ait</w>
-                <w  rend="section" n="23" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uenio">uenit</w>
-                <w  rend="section" n="23" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="section" n="23" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="hic1">huius</w>
-                <w  rend="section" n="23" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="mundus1">mundi</w>
-                <w  rend="section" n="23" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="princeps1">princeps</w>
-                <w  rend="section" n="23" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="section" n="23" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="23" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="section" n="23" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="inuenio">inuenit</w>
-                <w  rend="section" n="23" pos="PROind" msd="Case=Ind|Gend=Neut" lemma="nihil">nihil</w>
-                <w  rend="section" n="23" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="soliditas">soliditate</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="uirtus">uirtutis</w>
+                <w  rend="section" n="23" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ubertas">ubertate</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="sapientia">sapientiae</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="intelligentia">intellegentiae</w>
+                <w  rend="section" n="23" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="iustitia">iustitiae</w>
+                <w  rend="section" n="23" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

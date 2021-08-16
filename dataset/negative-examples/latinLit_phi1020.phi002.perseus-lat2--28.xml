@@ -2,20 +2,13 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:3.3.85-3.3.86">
-        <w  rend="line" n="3.3.85" pos="ADV" msd="Deg=Pos" lemma="iam">Iamque</w>
-                <w  rend="line" n="3.3.85" pos="CON" msd="MORPH=empty" lemma="que">{Iamque}</w>
-                <w  rend="line" n="3.3.85" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="pius">piam</w>
-                <w  rend="line" n="3.3.85" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="lux">lux</w>
-                <w  rend="line" n="3.3.85" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="altus">alta</w>
-                <w  rend="line" n="3.3.85" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domus">domum</w>
-                <w  rend="line" n="3.3.85" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="praecelsus">praecelsaque</w>
-                <w  rend="line" n="3.3.85" pos="CON" msd="MORPH=empty" lemma="que">{praecelsaque}</w>
-                <w  rend="line" n="3.3.85" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="totus">toto</w>
-                <w  rend="line" n="3.3.86" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="intro1">intravit</w>
-                <w  rend="line" n="3.3.86" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Fortuna">Fortuna</w>
-                <w  rend="line" n="3.3.86" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="gradus">gradu</w>
-                <w  rend="line" n="3.3.86" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:3.pr">
+        <w  rend="poem" n="3.pr" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="poem" n="3.pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="peto">petisset</w>
+                <w  rend="poem" n="3.pr" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="poem" n="3.pr" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="capillus">capillos</w>
+                <w  rend="poem" n="3.pr" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="suus">suos</w>
+                <w  rend="poem" n="3.pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,14 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa013.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa013.perseus-lat2:pr.20">
-        <w  rend="line" n="pr.20" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="hic1">hoc</w>
-                <w  rend="line" n="pr.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="uideo">video</w>
-                <w  rend="line" n="pr.20" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="coetus">coetu</w>
-                <w  rend="line" n="pr.20" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quisquis1">quidquid</w>
-                <w  rend="line" n="pr.20" pos="ADV" msd="Deg=Pos" lemma="ubique">ubique</w>
-                <w  rend="line" n="pr.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="mico">micat</w>
-                <w  rend="line" n="pr.20" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa013.perseus-lat2:1.241-1.243">
+        <w  rend="line" n="1.241" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=MascNeut" lemma="idem">Idem</w>
+                <w  rend="line" n="1.241" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="praedurus">praedurus</w>
+                <w  rend="line" n="1.241" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="iniquus2">iniquas</w>
+                <w  rend="line" n="1.242" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="accipio">accepisse</w>
+                <w  rend="line" n="1.242" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="prex">preces</w>
+                <w  rend="line" n="1.242" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.242" pos="ADV" msd="Deg=Pos" lemma="rursus">rursus</w>
+                <w  rend="line" n="1.242" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.242" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="line" n="1.242" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="dignus">digna</w>
+                <w  rend="line" n="1.242" pos="VER" msd="Case=Abl|Numb=Sing|Mood=SupUm|Voice=Act" lemma="peto">petitu</w>
+                <w  rend="line" n="1.242" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.243" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp|Mood=Ind|Tense=Pres|Voice=Dep" lemma="largus">largior</w>
+                <w  rend="line" n="1.243" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="1.243" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="facilis">facilis</w>
+                <w  rend="line" n="1.243" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

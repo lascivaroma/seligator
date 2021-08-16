@@ -2,13 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0031.tlg002.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg002.obi-lat1:1.1">
-        <w  rend="verse" n="1.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="initium">initium</w>
-                <w  rend="verse" n="1.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="euangelium">evangelii</w>
-                <w  rend="verse" n="1.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Iesus">Iesu</w>
-                <w  rend="verse" n="1.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Christus">Christi</w>
-                <w  rend="verse" n="1.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="filius">Filii</w>
-                <w  rend="verse" n="1.1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="deus">Dei</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0031.tlg002.obi-lat1:13.30">
+        <w  rend="verse" n="13.30" pos="INJ" msd="MORPH=empty" lemma="amen">amen</w>
+                <w  rend="verse" n="13.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="dico2">dico</w>
+                <w  rend="verse" n="13.30" pos="PROper" msd="Case=Dat|Numb=Plur" lemma="uos">vobis</w>
+                <w  rend="verse" n="13.30" pos="CONsub" msd="MORPH=empty" lemma="quoniam">quoniam</w>
+                <w  rend="verse" n="13.30" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="verse" n="13.30" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="transeo1">transiet</w>
+                <w  rend="verse" n="13.30" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="generatio">generatio</w>
+                <w  rend="verse" n="13.30" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
+                <w  rend="verse" n="13.30" pos="CONsub" msd="MORPH=empty" lemma="donec">donec</w>
+                <w  rend="verse" n="13.30" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
+                <w  rend="verse" n="13.30" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="iste">ista</w>
+                <w  rend="verse" n="13.30" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="fio">fiant</w>
                 
     </quote>
  </div>

@@ -2,13 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:lasc0001.lasc001.musisquedeoque-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:lasc0001.lasc001.musisquedeoque-lat1:74.10">
-        <w  rend="line" n="74.10" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="quisque1">quaeque</w>
-                <w  rend="line" n="74.10" pos="PROpos.ref" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="suus">suis</w>
-                <w  rend="line" n="74.10" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="commodus">commoda</w>
-                <w  rend="line" n="74.10" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uita">uita</w>
-                <w  rend="line" n="74.10" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="bonum">bonis</w>
-                <w  rend="line" n="74.10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:lasc0001.lasc001.musisquedeoque-lat1:25.3-25.4">
+        <w  rend="line" n="25.3" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="anxius">Anxia</w>
+                <w  rend="line" n="25.3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cura">cura</w>
+                <w  rend="line" n="25.3" pos="NOMcom" msd="Case=Loc|Numb=Sing" lemma="domus">domi</w>
+                <w  rend="line" n="25.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="25.3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="labor1">labor</w>
+                <w  rend="line" n="25.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="25.3" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="immensus">immensus</w>
+                <w  rend="line" n="25.3" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="25.3" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ager">agris</w>
+                <w  rend="line" n="25.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="25.4" pos="ADV" msd="Deg=Pos" lemma="tum">Tum</w>
+                <w  rend="line" n="25.4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pauor">pauor</w>
+                <w  rend="line" n="25.4" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Dep" lemma="ingredior">ingressis</w>
+                <w  rend="line" n="25.4" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="nauifragus">nauifragum</w>
+                <w  rend="line" n="25.4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pelagus">pelagus</w>
+                <w  rend="line" n="25.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

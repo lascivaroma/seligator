@@ -2,35 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa0071.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa0071.digilibLT-lat1:18">
-        <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma="&#x2019;">’</w>
-                <w  rend="chapter" n="18" pos="CONcoo" msd="MORPH=empty" lemma="nam">Nam</w>
-                <w  rend="chapter" n="18" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="persona">persona</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="peto">petentis</w>
-                <w  rend="chapter" n="18" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="inhonestus">inhonesta</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="18" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="chapter" n="18" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
-                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="reus">reus</w>
-                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="impudicitia">inpudicitiae</w>
-                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="18" pos="CONsub" msd="MORPH=empty" lemma="tametsi2">tametsi</w>
-                <w  rend="chapter" n="18" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="aliquis">aliquid</w>
-                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="turpitudo">turpitudini</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="derogo">derogaverit</w>
-                <w  rend="chapter" n="18" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
-                <w  rend="chapter" n="18" pos="ADV" msd="Deg=Pos" lemma="fortiter">fortiter</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
-                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="18" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="res">res</w>
-                <w  rend="chapter" n="18" pos="ADVint" msd="Case=Acc|Numb=Sing" lemma="quam2">quam</w>
-                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="peto">petit</w>
-                <w  rend="chapter" n="18" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="improbus">improba</w>
-                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa0071.digilibLT-lat1:10">
+        <w  rend="chapter" n="10" pos="PROpos" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="nostri">Nostrorum</w>
+                <w  rend="chapter" n="10" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="paucus">pauci</w>
+                <w  rend="chapter" n="10" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="reprehensio">reprehensionem</w>
+                <w  rend="chapter" n="10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="10" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="plerique">plerique</w>
+                <w  rend="chapter" n="10" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="translatio">translationem</w>
+                <w  rend="chapter" n="10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="uoco">vocaverunt</w>
+                <w  rend="chapter" n="10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="10" pos="PROind" msd="Case=Dat|Numb=Plur|Gend=Masc" lemma="uterque">utrique</w>
+                <w  rend="chapter" n="10" pos="ADV" msd="Deg=Pos" lemma="sane">sane</w>
+                <w  rend="chapter" n="10" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ratio">rationem</w>
+                <w  rend="chapter" n="10" pos="VER" msd="Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="sequor">secuti</w>
+                <w  rend="chapter" n="10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,15 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215c.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215c.stoa003.opp-lat1:1">
-        <w  rend="section" n="1" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="nos">Nos</w>
-                <w  rend="section" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="confiteor">confitemur</w>
-                <w  rend="section" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="offensa">offensam</w>
-                <w  rend="section" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="1" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
-                <w  rend="section" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="peruideo">peruides</w>
-                <w  rend="section" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="plaga3">plagam</w>
-                <w  rend="section" n="1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215c.stoa003.opp-lat1:3">
+        <w  rend="section" n="3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="Uictorinus">Uictorinum</w>
+                <w  rend="section" n="3" pos="ADV" msd="Deg=Pos" lemma="parum2">parum</w>
+                <w  rend="section" n="3" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="nosco">nouimus</w>
+                <w  rend="section" n="3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="3" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="section" n="3" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
+                <w  rend="section" n="3" pos="ADV" msd="Deg=Pos" lemma="paene">paene</w>
+                <w  rend="section" n="3" pos="PRE" msd="MORPH=empty" lemma="ante2">ante</w>
+                <w  rend="section" n="3" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="editio">editiones</w>
+                <w  rend="section" n="3" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="suus">suas</w>
+                <w  rend="section" n="3" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Uictorini">Uictorini</w>
+                <w  rend="section" n="3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sectator">sectator</w>
+                <w  rend="section" n="3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="cedo1">cessit</w>
+                <w  rend="section" n="3" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Origenes">Origeni</w>
+                <w  rend="section" n="3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

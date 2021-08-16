@@ -3,12 +3,18 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa021.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa021.opp-lat1:7">
-        <w  rend="chapter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="offendo">Offendisti</w>
+        <w  rend="chapter" n="7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="gratus">Gratus</w>
+                <w  rend="chapter" n="7" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">dominum</w>
+                <w  rend="chapter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=2" lemma="exsisto">exstiteris</w>
                 <w  rend="chapter" n="7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="7" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
-                <w  rend="chapter" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="reconcilio">reconciliari</w>
-                <w  rend="chapter" n="7" pos="ADV" msd="Deg=Pos" lemma="adhuc">adhuc</w>
-                <w  rend="chapter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="possum1">potes</w>
+                <w  rend="chapter" n="7" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
+                <w  rend="chapter" n="7" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="chapter" n="7" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="chapter" n="7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dominus">dominus</w>
+                <w  rend="chapter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="offero">offert</w>
+                <w  rend="chapter" n="7" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=2" lemma="recuso">recusaveris</w>
                 <w  rend="chapter" n="7" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

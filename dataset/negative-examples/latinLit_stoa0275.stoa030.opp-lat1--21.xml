@@ -3,13 +3,14 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa030.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa030.opp-lat1:5">
-        <w  rend="chapter" n="5" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
-                <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="saeuitia">saevitiam</w>
-                <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="existimo">existimas</w>
+        <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="peruersitas">Perversitas</w>
                 <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="gratia">gratia</w>
+                <w  rend="chapter" n="5" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="qui1">quam</w>
+                <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="puto">putas</w>
+                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ratio">ratio</w>
                 <w  rend="chapter" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+                <w  rend="chapter" n="5" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

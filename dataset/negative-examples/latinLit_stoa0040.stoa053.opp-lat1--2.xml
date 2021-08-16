@@ -2,12 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa053.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa053.opp-lat1:1">
-        <w  rend="chapter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
-                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="1" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="mutabilis">mutabilia</w>
-                <w  rend="chapter" n="1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
-                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa053.opp-lat1:46">
+        <w  rend="chapter" n="46" pos="CONcoo" msd="MORPH=empty" lemma="nam">nam</w>
+                <w  rend="chapter" n="46" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="chapter" n="46" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="chapter" n="46" pos="PROind" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="omnis">omnibus</w>
+                <w  rend="chapter" n="46" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="diuinus2">diuinis</w>
+                <w  rend="chapter" n="46" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="scriptura">scripturis</w>
+                <w  rend="chapter" n="46" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="arcanum">arcanisque</w>
+                <w  rend="chapter" n="46" pos="CON" msd="MORPH=empty" lemma="que">{arcanisque}</w>
+                <w  rend="chapter" n="46" pos="ADJqua" msd="Case=Dat|Numb=Plur|Gend=Com|Deg=Pos" lemma="caelestis">caelestibus</w>
+                <w  rend="chapter" n="46" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos|Mood=Par|Tense=Perf|Voice=Pass" lemma="aspergo2">aspersum</w>
+                <w  rend="chapter" n="46" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="46" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

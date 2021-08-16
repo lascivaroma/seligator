@@ -2,23 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0297.stoa001.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:252-253">
-        <w  rend="unknown" n="252" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
-                <w  rend="unknown" n="252" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="prior">prior</w>
-                <w  rend="unknown" n="252" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
-                <w  rend="unknown" n="252" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="homo">hominis</w>
-                <w  rend="unknown" n="252" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cura">cura</w>
-                <w  rend="unknown" n="252" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="unknown" n="252" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="cognosco">cognoscere</w>
-                <w  rend="unknown" n="252" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="terra">terram</w>
-                <w  rend="unknown" n="253" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="unknown" n="253" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quae</w>
-                <w  rend="unknown" n="253" pos="PROdem" msd="Case=Ind" lemma="tot">tot</w>
-                <w  rend="unknown" n="253" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="mirandus">miranda</w>
-                <w  rend="unknown" n="253" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="fero">tulit</w>
-                <w  rend="unknown" n="253" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="natura">natura</w>
-                <w  rend="unknown" n="253" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="noto">notare</w>
-                <w  rend="unknown" n="253" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0297.stoa001.thayer-lat1:169-170">
+        <w  rend="unknown" n="169" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ferueo">fervet</w>
+                <w  rend="unknown" n="169" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opus1">opus</w>
+                <w  rend="unknown" n="169" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="densus">densaque</w>
+                <w  rend="unknown" n="169" pos="CON" msd="MORPH=empty" lemma="que">{densaque}</w>
+                <w  rend="unknown" n="169" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="premo">premit</w>
+                <w  rend="unknown" n="169" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="premo">premiturque</w>
+                <w  rend="unknown" n="169" pos="CON" msd="MORPH=empty" lemma="que">{premiturque}</w>
+                <w  rend="unknown" n="169" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ruina">ruina</w>
+                <w  rend="unknown" n="170" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="unknown" n="170" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Eurus">Euri</w>
+                <w  rend="unknown" n="170" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Boreas">Boreaeque</w>
+                <w  rend="unknown" n="170" pos="CON" msd="MORPH=empty" lemma="que">{Boreaeque}</w>
+                <w  rend="unknown" n="170" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Notus">Notus</w>
+                <w  rend="unknown" n="170" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="170" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="unknown" n="170" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="hic1">huius</w>
+                <w  rend="unknown" n="170" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="uterque">uterque</w>
+                <w  rend="unknown" n="170" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,13 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa021.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa021.opp-lat1:63">
-        <w  rend="section" n="63" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
-                <w  rend="section" n="63" pos="ADV" msd="Deg=Pos" lemma="nimium2">nimium</w>
-                <w  rend="section" n="63" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sapio">sapere</w>
-                <w  rend="section" n="63" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="stultus">stultum</w>
-                <w  rend="section" n="63" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="facio">facit</w>
-                <w  rend="section" n="63" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa021.opp-lat1:74-75">
+        <w  rend="section" n="74" pos="CONcoo" msd="MORPH=empty" lemma="sed">Sed</w>
+                <w  rend="section" n="74" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="section" n="74" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="corrigo">correctum</w>
+                <w  rend="section" n="74" pos="ADV" msd="Deg=Pos" lemma="forsan">forsan</w>
+                <w  rend="section" n="74" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="maturus">matura</w>
+                <w  rend="section" n="74" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="senectus1">senectus</w>
+                <w  rend="section" n="75" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="75" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Comp" lemma="bonus">melius</w>
+                <w  rend="section" n="75" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="reuoco">reuocat</w>
+                <w  rend="section" n="75" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="satio2">satiatum</w>
+                <w  rend="section" n="75" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="error">erroribus</w>
+                <w  rend="section" n="75" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="iste">istis</w>
+                <w  rend="section" n="75" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -2,27 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0119a.stoa001f.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001f.digilibLT-lat1:1051">
-        <w  rend="comment" n="1051" pos="VER" msd="Numb=Sing" lemma="uolo">VIN</w>
-                <w  rend="comment" n="1051" pos="ADV" msd="MORPH=empty" lemma="ne2">{VIN}</w>
-                <w  rend="comment" n="1051" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Primus">PRIMO</w>
-                <w  rend="comment" n="1051" pos="VER" msd="Case=Voc|Numb=Sing|Mood=Inf|Tense=Pres|Voice=Act" lemma="Falus">FACERE</w>
-                <w  rend="comment" n="1051" pos="PROrel" msd="Numb=Sing" lemma="quod2">QVOD</w>
-                <w  rend="comment" n="1051" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="ego">EGO</w>
-                <w  rend="comment" n="1051" pos="VER" msd="Case=Acc|Numb=Sing|Mood=Sub|Tense=Pres|Voice=SemDep" lemma="Gaudea">GAVDEAM</w>
-                <w  rend="comment" n="1051" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
-                <w  rend="comment" n="1051" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="oportet">oportuit</w>
-                <w  rend="comment" n="1051" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="1051" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Phormion">Phormio</w>
-                <w  rend="comment" n="1051" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="officium">officii</w>
-                <w  rend="comment" n="1051" pos="PROpos.ref" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="suus">sui</w>
-                <w  rend="comment" n="1051" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="res">rem</w>
-                <w  rend="comment" n="1051" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="quaero">quaerit</w>
-                <w  rend="comment" n="1051" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="1051" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
-                <w  rend="comment" n="1051" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="edax">edax</w>
-                <w  rend="comment" n="1051" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
-                <w  rend="comment" n="1051" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001f.digilibLT-lat1:pr1b">
+        <w  rend="comment" n="pr1b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="obicio">obicit</w>
+                <w  rend="comment" n="pr1b" pos="ADV" msd="Deg=Pos" lemma="praeterea">praeterea</w>
+                <w  rend="comment" n="pr1b" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primam</w>
+                <w  rend="comment" n="pr1b" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="quaestiuncula">quaestiunculam</w>
+                <w  rend="comment" n="pr1b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="pr1b" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
+                <w  rend="comment" n="pr1b" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="leuis1">leues</w>
+                <w  rend="comment" n="pr1b" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="comoedia">comoedias</w>
+                <w  rend="comment" n="pr1b" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Terentius">Terentius</w>
+                <w  rend="comment" n="pr1b" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecerit</w>
+                <w  rend="comment" n="pr1b" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="comment" n="pr1b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="criminor">criminatur</w>
+                <w  rend="comment" n="pr1b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="pr1b" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="comment" n="pr1b" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="comment" n="pr1b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
+                <w  rend="comment" n="pr1b" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="pr1b" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="comment" n="pr1b" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Luscius">Luscius</w>
+                <w  rend="comment" n="pr1b" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Lanuinus">Lanuinus</w>
+                <w  rend="comment" n="pr1b" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="comment" n="pr1b" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="comoedia">comoediis</w>
+                <w  rend="comment" n="pr1b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
+                <w  rend="comment" n="pr1b" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

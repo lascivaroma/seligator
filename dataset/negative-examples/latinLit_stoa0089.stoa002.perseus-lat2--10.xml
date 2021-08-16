@@ -2,24 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:329-331">
-        <w  rend="line" n="329" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="line" n="329" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
-                <w  rend="line" n="329" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="line" n="329" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="somnium">somnia</w>
-                <w  rend="line" n="329" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="for">fatur</w>
-                <w  rend="line" n="329" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="330" pos="PUNC" msd="MORPH=empty" lemma="&#x201C;">“</w>
-                <w  rend="line" n="330" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="tantus">Tantane</w>
-                <w  rend="line" n="330" pos="ADV" msd="MORPH=empty" lemma="ne2">{Tantane}</w>
-                <w  rend="line" n="330" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="deuinco">devictos</w>
-                <w  rend="line" n="330" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="teneo">tenuit</w>
-                <w  rend="line" n="330" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fiducia">fiducia</w>
-                <w  rend="line" n="330" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Mauri">Mauros</w>
-                <w  rend="line" n="330" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="331" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="carus">care</w>
-                <w  rend="line" n="331" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="nepos1">nepos</w>
-                <w  rend="line" n="331" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:121-123">
+        <w  rend="line" n="121" pos="CONsub" msd="MORPH=empty" lemma="sin">sin</w>
+                <w  rend="line" n="121" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="prohibeo">prohibent</w>
+                <w  rend="line" n="121" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Parca">Parcae</w>
+                <w  rend="line" n="121" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="falsus">falsisque</w>
+                <w  rend="line" n="121" pos="CON" msd="MORPH=empty" lemma="que">{falsisque}</w>
+                <w  rend="line" n="121" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="eludo">elusa</w>
+                <w  rend="line" n="121" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uetustas">vetustas</w>
+                <w  rend="line" n="122" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="auspicium">auspiciis</w>
+                <w  rend="line" n="122" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="122" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="alius">alio</w>
+                <w  rend="line" n="122" pos="ADV" msd="Deg=Pos" lemma="saltem">saltem</w>
+                <w  rend="line" n="122" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="prosterno">prosternite</w>
+                <w  rend="line" n="122" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="casus">casu</w>
+                <w  rend="line" n="123" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="123" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="poena">poenae</w>
+                <w  rend="line" n="123" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="muto2">mutate</w>
+                <w  rend="line" n="123" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="genus1">genus</w>
+                <w  rend="line" n="123" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

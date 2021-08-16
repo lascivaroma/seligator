@@ -2,14 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0121.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121.stoa001.digilibLT-lat1:VIII.5">
-        <w  rend="chapter" n="VIII.5" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="solus">Solus</w>
-                <w  rend="chapter" n="VIII.5" pos="PROind" msd="Case=Gen|Numb=Plur|Gend=Com" lemma="omnis">omnium</w>
-                <w  rend="chapter" n="VIII.5" pos="PRE" msd="MORPH=empty" lemma="intra2">intra</w>
-                <w  rend="chapter" n="VIII.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="urbs">Vrbem</w>
-                <w  rend="chapter" n="VIII.5" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="sepelio">sepultus</w>
-                <w  rend="chapter" n="VIII.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="VIII.5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121.stoa001.digilibLT-lat1:X.11">
+        <w  rend="chapter" n="X.11" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="caput">Caput</w>
+                <w  rend="chapter" n="X.11" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="chapter" n="X.11" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pilum">pilo</w>
+                <w  rend="chapter" n="X.11" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="chapter" n="X.11" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="urbs">Vrbem</w>
+                <w  rend="chapter" n="X.11" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="circumfero">circumlatum</w>
+                <w  rend="chapter" n="X.11" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="X.11" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="X.11" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Sup" lemma="grauis">gravissimaeque</w>
+                <w  rend="chapter" n="X.11" pos="CON" msd="MORPH=empty" lemma="que">{gravissimaeque}</w>
+                <w  rend="chapter" n="X.11" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="proscriptio">proscriptiones</w>
+                <w  rend="chapter" n="X.11" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="X.11" pos="ADJqua" msd="Case=Gen|Numb=Plur" lemma="nobilis2">nobilium</w>
+                <w  rend="chapter" n="X.11" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="caedes">caedes</w>
+                <w  rend="chapter" n="X.11" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuerunt</w>
+                <w  rend="chapter" n="X.11" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

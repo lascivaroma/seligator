@@ -2,15 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0472.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0472.phi001.perseus-lat2:62.26">
-        <w  rend="line" n="62.26" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Hesperus">Hespere</w>
-                <w  rend="line" n="62.26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="62.26" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="line" n="62.26" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="caelum1">caelo</w>
-                <w  rend="line" n="62.26" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="luceo">lucet</w>
-                <w  rend="line" n="62.26" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="iucundus">iucundior</w>
-                <w  rend="line" n="62.26" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ignis">ignis</w>
-                <w  rend="line" n="62.26" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0472.phi001.perseus-lat2:42.1-42.2">
+        <w  rend="line" n="42.1" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="assum1">Adeste</w>
+                <w  rend="line" n="42.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="42.1" pos="NOMcom" msd="Case=Voc|Numb=Plur" lemma="hendecasyllabus">hendecasyllabi</w>
+                <w  rend="line" n="42.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="42.1" pos="PROrel" msd="Case=Ind" lemma="quot1">quot</w>
+                <w  rend="line" n="42.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">estis</w>
+                <w  rend="line" n="42.2" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
+                <w  rend="line" n="42.2" pos="ADV" msd="Deg=Pos" lemma="undique">undique</w>
+                <w  rend="line" n="42.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="42.2" pos="PROrel" msd="Case=Ind" lemma="quotquot1">quotquot</w>
+                <w  rend="line" n="42.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="sum1">estis</w>
+                <w  rend="line" n="42.2" pos="PROind" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
+                <w  rend="line" n="42.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

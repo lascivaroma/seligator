@@ -2,12 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0255.stoa008.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0255.stoa008.perseus-lat2:7.3">
-        <w  rend="section" n="7.3" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="totus">totum</w>
-                <w  rend="section" n="7.3" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="section" n="7.3" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Caesar">Caesari</w>
-                <w  rend="section" n="7.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="debeo">debes</w>
-                <w  rend="section" n="7.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0255.stoa008.perseus-lat2:2.7">
+        <w  rend="section" n="2.7" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="hic1">Hoc</w>
+                <w  rend="section" n="2.7" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
+                <w  rend="section" n="2.7" pos="ADJcar" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="unus">unum</w>
+                <w  rend="section" n="2.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="excogito">excogitasti</w>
+                <w  rend="section" n="2.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.7" pos="ADVint" msd="MORPH=empty" lemma="quomodo2">quomodo</w>
+                <w  rend="section" n="2.7" pos="ADV" msd="Deg=Sup" lemma="magis2">maxime</w>
+                <w  rend="section" n="2.7" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="ille">illi</w>
+                <w  rend="section" n="2.7" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=2" lemma="possum1">posses</w>
+                <w  rend="section" n="2.7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="noceo">nocere</w>
+                <w  rend="section" n="2.7" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -2,58 +2,38 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:III.5">
-        <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uinum">Vinum</w>
-                <w  rend="part" n="III.5" pos="ADV" msd="Deg=Pos" lemma="praeterea">praeterea</w>
-                <w  rend="part" n="III.5" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="tenuis">tenue</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="probo">probamus</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="perseuero">perseuerante</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="passio">passione</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="helleborum">helleboro</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="decoquo">decocto</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="corpus">corpus</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="agito">agitandum</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=3" lemma="oportet">oportuerit</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Adj|Voice=Pass" lemma="bibo2">bibendum</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="do">damus</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="medicamen">medicamen</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="ex">ex</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="eruum">eruo</w>
-                <w  rend="part" n="III.5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="ceruinus">ceruino</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cornu">cornu</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="cotyla">cotylae</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="quantitas">quantitatem</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="part" n="III.5" pos="ADJcar" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="tres">tribus</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="cyathus">cyathis</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Gen|Numb=Plur|Gend=Fem" lemma="mulsus">mulsae</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="part" n="III.5" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="adiungo">adiuncta</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl" lemma="febris">febre</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="uexo">uexantur</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="condo">conditi</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="part" n="III.5" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="hic1">his</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="III.5" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="part" n="III.5" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
-                <w  rend="part" n="III.5" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="febris">febre</w>
-                <w  rend="part" n="III.5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="afficio">afficiuntur</w>
-                <w  rend="part" n="III.5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa002.digilibLT-lat1:IV.2">
+        <w  rend="part" n="IV.2" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="iugia">iugia</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut|Mood=Adj|Voice=Pass" lemma="adhibeo">adhibenda</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="smegma">smegmata</w>
+                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="IV.2" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="part" n="IV.2" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="nos">nos</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="lacesso">lacessentes</w>
+                <w  rend="part" n="IV.2" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="part" n="IV.2" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="purgatiuus">purgatiuos</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="puluis">pulueres</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="nuncupo">nuncupamus</w>
+                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="IV.2" pos="ADV" msd="Deg=Pos" lemma="item">item</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="unctio">unctiones</w>
+                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="IV.2" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
+                <w  rend="part" n="IV.2" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="part" n="IV.2" pos="ADV" msd="Deg=Pos" lemma="mox">mox</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=3" lemma="sum1">fuerit</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Fut|Voice=Act" lemma="capillatura">capillatura</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Case=Nom|Numb=Sing|Mood=Par|Tense=Perf|Voice=Pass" lemma="derado">derasa</w>
+                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="IV.2" pos="VER" msd="Case=Dat|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="praefos">praefotis</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pars">partibus</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aqua">aqua</w>
+                <w  rend="part" n="IV.2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="marinus">marina</w>
+                <w  rend="part" n="IV.2" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
+                <w  rend="part" n="IV.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="acetum">aceto</w>
+                <w  rend="part" n="IV.2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="salsus">salso</w>
+                <w  rend="part" n="IV.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

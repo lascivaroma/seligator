@@ -2,12 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:283">
-        <w  rend="line" n="283" pos="ADJqua" msd="Case=Gen|Numb=Sing" lemma="Maurus">Mauri</w>
-                <w  rend="line" n="283" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
-                <w  rend="line" n="283" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Africa">Africa</w>
-                <w  rend="line" n="283" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="munus">munus</w>
-                <w  rend="line" n="283" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa002.perseus-lat2:236-237">
+        <w  rend="line" n="236" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="236" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="frater">fratres</w>
+                <w  rend="line" n="236" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="medius">medio</w>
+                <w  rend="line" n="236" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="discordia">discordia</w>
+                <w  rend="line" n="236" pos="ADJqua" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="Maurus">Mauro</w>
+                <w  rend="line" n="237" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="nascor">nascitur</w>
+                <w  rend="line" n="237" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="237" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mundus1">mundus</w>
+                <w  rend="line" n="237" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="germana">germanaque</w>
+                <w  rend="line" n="237" pos="CON" msd="MORPH=empty" lemma="que">{germanaque}</w>
+                <w  rend="line" n="237" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dissideo">dissidet</w>
+                <w  rend="line" n="237" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="aula1">aula</w>
+                <w  rend="line" n="237" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

@@ -2,21 +2,36 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0448.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0448.phi002.perseus-lat2:1.74.4">
-        <w  rend="Section" n="1.74.4" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="complures">compluresque</w>
-                <w  rend="Section" n="1.74.4" pos="CON" msd="MORPH=empty" lemma="que">{compluresque}</w>
-                <w  rend="Section" n="1.74.4" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="tribunus">tribuni</w>
-                <w  rend="Section" n="1.74.4" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="miles">militum</w>
-                <w  rend="Section" n="1.74.4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="Section" n="1.74.4" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="centurio1">centuriones</w>
-                <w  rend="Section" n="1.74.4" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="Section" n="1.74.4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Caesar">Caesarem</w>
-                <w  rend="Section" n="1.74.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uenio">veniunt</w>
-                <w  rend="Section" n="1.74.4" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui">seque</w>
-                <w  rend="Section" n="1.74.4" pos="CON" msd="MORPH=empty" lemma="que">{seque}</w>
-                <w  rend="Section" n="1.74.4" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="is">ei</w>
-                <w  rend="Section" n="1.74.4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="commendo">commendant</w>
-                <w  rend="Section" n="1.74.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0448.phi002.perseus-lat2:1.35.4">
+        <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="princeps1">principes</w>
+                <w  rend="Section" n="1.35.4" pos="CONcoo" msd="MORPH=empty" lemma="uero4">vero</w>
+                <w  rend="Section" n="1.35.4" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="Section" n="1.35.4" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Fem" lemma="is">earum</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="pars">partium</w>
+                <w  rend="Section" n="1.35.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="patronus">patronos</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ciuitas">civitatis</w>
+                <w  rend="Section" n="1.35.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="Section" n="1.35.4" pos="PROrel" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="qui1">quorum</w>
+                <w  rend="Section" n="1.35.4" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="alter">alter</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ager">agros</w>
+                <w  rend="Section" n="1.35.4" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Uolcae">Volcarum</w>
+                <w  rend="Section" n="1.35.4" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Arecomici">Arecomicorum</w>
+                <w  rend="Section" n="1.35.4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="Section" n="1.35.4" pos="NOMpro" msd="Case=Gen|Numb=Plur" lemma="Heluii">Helviorum</w>
+                <w  rend="Section" n="1.35.4" pos="ADV" msd="Deg=Pos" lemma="publice">publice</w>
+                <w  rend="Section" n="1.35.4" pos="PROdem" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="is">iis</w>
+                <w  rend="Section" n="1.35.4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="concedo1">concesserit</w>
+                <w  rend="Section" n="1.35.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="Section" n="1.35.4" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="alter">alter</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="bellum">bello</w>
+                <w  rend="Section" n="1.35.4" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="uinco">victos</w>
+                <w  rend="Section" n="1.35.4" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Sallus">Sallyas</w>
+                <w  rend="Section" n="1.35.4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="attribuo">adtribuerit</w>
+                <w  rend="Section" n="1.35.4" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="uectigal">vectigaliaque</w>
+                <w  rend="Section" n="1.35.4" pos="CON" msd="MORPH=empty" lemma="que">{vectigaliaque}</w>
+                <w  rend="Section" n="1.35.4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="augeo">auxerit</w>
+                <w  rend="Section" n="1.35.4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

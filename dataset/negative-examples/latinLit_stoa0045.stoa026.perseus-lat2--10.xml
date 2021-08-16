@@ -2,16 +2,26 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa026.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa026.perseus-lat2:1.27-1.28">
-        <w  rend="line" n="1.27" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="1.27" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Cynthia">Cynthia</w>
-                <w  rend="line" n="1.27" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.27" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="1.27" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="celer">celer</w>
-                <w  rend="line" n="1.27" pos="ADJqua" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="Arcas">Arcas</w>
-                <w  rend="line" n="1.28" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="finio">finitimus</w>
-                <w  rend="line" n="1.28" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="terra">terris</w>
-                <w  rend="line" n="1.28" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa026.perseus-lat2:1.6-1.8">
+        <w  rend="line" n="1.6" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Roma">Roma</w>
+                <w  rend="line" n="1.6" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="ille">illa</w>
+                <w  rend="line" n="1.6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="domus">domusque</w>
+                <w  rend="line" n="1.6" pos="CON" msd="MORPH=empty" lemma="que">{domusque}</w>
+                <w  rend="line" n="1.6" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Quirinus">Quirini</w>
+                <w  rend="line" n="1.7" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="1.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="toga">toga</w>
+                <w  rend="line" n="1.7" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="purpureus">purpurei</w>
+                <w  rend="line" n="1.7" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos|Mood=Par|Tense=Pres|Voice=Act" lemma="rutilo">rutilans</w>
+                <w  rend="line" n="1.7" pos="ADJqua" msd="Case=Nom|Numb=Sing" lemma="praetexta">praetexta</w>
+                <w  rend="line" n="1.7" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="senatus">senati</w>
+                <w  rend="line" n="1.8" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="line" n="1.8" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="apex">apice</w>
+                <w  rend="line" n="1.8" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="aeternus">aeternis</w>
+                <w  rend="line" n="1.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="signo">signat</w>
+                <w  rend="line" n="1.8" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="suus">sua</w>
+                <w  rend="line" n="1.8" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="tempus1">tempora</w>
+                <w  rend="line" n="1.8" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="fasti">fastis</w>
+                <w  rend="line" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

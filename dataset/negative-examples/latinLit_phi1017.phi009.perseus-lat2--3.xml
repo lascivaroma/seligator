@@ -2,34 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi009.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi009.perseus-lat2:550-553">
-        <w  rend="line" n="550" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="line" n="550" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="550" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="line" n="550" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sagitta">sagittam</w>
-                <w  rend="line" n="550" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="promo">prome</w>
-                <w  rend="line" n="550" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=Fem" lemma="qua1">qua</w>
-                <w  rend="line" n="550" pos="ADV" msd="Deg=Pos" lemma="quondam">quondam</w>
-                <w  rend="line" n="550" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="horridus">horridum</w>
-                <w  rend="line" n="551" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Iuppiter">Iovem</w>
-                <w  rend="line" n="551" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="peto">petisti</w>
-                <w  rend="line" n="551" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="551" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="fulmen">fulmine</w>
-                <w  rend="line" n="551" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="abicio">abiecto</w>
-                <w  rend="line" n="551" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
-                <w  rend="line" n="552" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
-                <w  rend="line" n="552" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="frons1">fronte</w>
-                <w  rend="line" n="552" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="subitus">subita</w>
-                <w  rend="line" n="552" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="tumeo">tumuit</w>
-                <w  rend="line" n="552" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="552" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="rabidus">rabidum</w>
-                <w  rend="line" n="552" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mare">mare</w>
-                <w  rend="line" n="553" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="taurus">taurus</w>
-                <w  rend="line" n="553" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="puella">puellae</w>
-                <w  rend="line" n="553" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uector1">vector</w>
-                <w  rend="line" n="553" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Assyrius">Assyriae</w>
-                <w  rend="line" n="553" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="scindo">scidit</w>
-                <w  rend="line" n="553" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi009.perseus-lat2:943-944">
+        <w  rend="line" n="943" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="943" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Tagus">Tagus</w>
+                <w  rend="line" n="943" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="fugio">fugiat</w>
+                <w  rend="line" n="943" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="latex">latex</w>
+                <w  rend="line" n="944" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="meus">meamque</w>
+                <w  rend="line" n="944" pos="CON" msd="MORPH=empty" lemma="que">{meamque}</w>
+                <w  rend="line" n="944" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="fallax">fallax</w>
+                <w  rend="line" n="944" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="unda">unda</w>
+                <w  rend="line" n="944" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="deludo">deludat</w>
+                <w  rend="line" n="944" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sitis">sitim</w>
+                <w  rend="line" n="944" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

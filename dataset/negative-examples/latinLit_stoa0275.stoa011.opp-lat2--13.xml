@@ -3,11 +3,14 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa011.opp-lat2</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa011.opp-lat2:18">
-        <w  rend="chapter" n="18" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
-                <w  rend="chapter" n="18" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
-                <w  rend="chapter" n="18" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Paulus">Paulus</w>
-                <w  rend="chapter" n="18" pos="ADV" msd="Deg=Pos" lemma="reuera">reuera</w>
-                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+        <w  rend="chapter" n="18" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
+                <w  rend="chapter" n="18" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="festino">festinat</w>
+                <w  rend="chapter" n="18" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="innocens">innocens</w>
+                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aetas">aetas</w>
+                <w  rend="chapter" n="18" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="remissio">remissionem</w>
+                <w  rend="chapter" n="18" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="peccator">peccatorum</w>
+                <w  rend="chapter" n="18" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

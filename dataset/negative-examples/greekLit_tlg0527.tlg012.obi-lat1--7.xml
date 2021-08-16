@@ -2,25 +2,33 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:greekLit:tlg0527.tlg012.obi-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg012.obi-lat1:3.3">
-        <w  rend="verse" n="3.3" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="verse" n="3.3" pos="PRE" msd="MORPH=empty" lemma="post2">post</w>
-                <w  rend="verse" n="3.3" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Ind|Numb=Sing" lemma="Chelab">Chelaab</w>
-                <w  rend="verse" n="3.3" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Ind" lemma="Abigail">Abigail</w>
-                <w  rend="verse" n="3.3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uxor">uxore</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Nabal">Nabal</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Carmelus">Carmeli</w>
-                <w  rend="verse" n="3.3" pos="ADV" msd="Deg=Pos" lemma="porro">porro</w>
-                <w  rend="verse" n="3.3" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="tertius">tertius</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Ind|Numb=Sing" lemma="Absalus">Absalom</w>
-                <w  rend="verse" n="3.3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="filius">filius</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Ind|Numb=Sing" lemma="Maacha">Maacha</w>
-                <w  rend="verse" n="3.3" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="filia">filiae</w>
-                <w  rend="verse" n="3.3" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Tholomai">Tholomai</w>
-                <w  rend="verse" n="3.3" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="rex">regis</w>
-                <w  rend="verse" n="3.3" pos="VER" msd="Case=Nom|Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass" lemma="Gessus">Gessur</w>
+    <quote xml:lang="lat" source="urn:cts:greekLit:tlg0527.tlg012.obi-lat1:6.3">
+        <w  rend="verse" n="6.3" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="6.3" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="impono">inposuerunt</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="arca">arcam</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="dominus">Domini</w>
+                <w  rend="verse" n="6.3" pos="PRE" msd="MORPH=empty" lemma="super2">super</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="plaustrum">plaustrum</w>
+                <w  rend="verse" n="6.3" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="nouus">novum</w>
+                <w  rend="verse" n="6.3" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="fero">tuleruntque</w>
+                <w  rend="verse" n="6.3" pos="CON" msd="MORPH=empty" lemma="que">{tuleruntque}</w>
+                <w  rend="verse" n="6.3" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="is">eam</w>
+                <w  rend="verse" n="6.3" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="domus">domo</w>
+                <w  rend="verse" n="6.3" pos="NOMpro" msd="Case=Ind" lemma="Abinadab">Abinadab</w>
+                <w  rend="verse" n="6.3" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="verse" n="6.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erat</w>
+                <w  rend="verse" n="6.3" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="verse" n="6.3" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Gabaa">Gabaa</w>
+                <w  rend="verse" n="6.3" pos="NOMpro" msd="Case=Abl" lemma="Oza">Oza</w>
+                <w  rend="verse" n="6.3" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="verse" n="6.3" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="verse" n="6.3" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Haius">Haio</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="filius">filii</w>
+                <w  rend="verse" n="6.3" pos="NOMpro" msd="Case=Ind" lemma="Abinadab">Abinadab</w>
+                <w  rend="verse" n="6.3" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="minor">minabant</w>
+                <w  rend="verse" n="6.3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="plaustrum">plaustrum</w>
+                <w  rend="verse" n="6.3" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="nouus">novum</w>
                 
     </quote>
  </div>

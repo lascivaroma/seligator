@@ -2,17 +2,34 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:961">
-        <w  rend="line" n="961" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="ingenuus">ingenuan</w>
-                <w  rend="line" n="961" pos="ADV" msd="MORPH=empty" lemma="ne2">{ingenuan}</w>
-                <w  rend="line" n="961" pos="ADVint" msd="MORPH=empty" lemma="an">an</w>
-                <w  rend="line" n="961" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="festuca">festuca</w>
-                <w  rend="line" n="961" pos="VER" msd="Numb=Sing|Gend=Fem" lemma="facio">facta</w>
-                <w  rend="line" n="961" pos="PRE" msd="MORPH=empty" lemma="ex">e</w>
-                <w  rend="line" n="961" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="seruus1">serva</w>
-                <w  rend="line" n="961" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="liber">liberast</w>
-                <w  rend="line" n="961" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{liberast}</w>
-                <w  rend="line" n="961" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:150-152">
+        <w  rend="line" n="150" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="150" pos="ADV" msd="Deg=Pos" lemma="mox">mox</w>
+                <w  rend="line" n="150" pos="CONsub" msd="MORPH=empty" lemma="ne4">ne</w>
+                <w  rend="line" n="150" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="erro2">erretis</w>
+                <w  rend="line" n="150" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="150" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
+                <w  rend="line" n="150" pos="ADJcar" msd="Case=Gen|Numb=Plur|Gend=Fem" lemma="duo">duarum</w>
+                <w  rend="line" n="150" pos="ADV" msd="Deg=Pos" lemma="hodie">hodie</w>
+                <w  rend="line" n="150" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uicis">vicem</w>
+                <w  rend="line" n="151" pos="PROpos.ref" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="suus">suam</w>
+                <w  rend="line" n="151" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="151" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
+                <w  rend="line" n="151" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="151" pos="ADV" msd="Deg=Pos" lemma="illinc">illinc</w>
+                <w  rend="line" n="151" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mulier">mulier</w>
+                <w  rend="line" n="151" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="fero">feret</w>
+                <w  rend="line" n="151" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="imago">imaginem</w>
+                <w  rend="line" n="151" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="152" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="line" n="152" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="idem">eadem</w>
+                <w  rend="line" n="152" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erit</w>
+                <w  rend="line" n="152" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="152" pos="NOMcom" msd="MORPH=empty" lemma="uerum4">verum</w>
+                <w  rend="line" n="152" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="alius">alia</w>
+                <w  rend="line" n="152" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="152" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Pass|Person=3" lemma="assimulo">adsimulabitur</w>
+                <w  rend="line" n="152" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

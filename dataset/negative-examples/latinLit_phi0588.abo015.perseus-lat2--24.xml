@@ -2,22 +2,46 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0588.abo015.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0588.abo015.perseus-lat2:10.3">
-        <w  rend="section" n="10.3" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=MascNeut" lemma="idem">idem</w>
-                <w  rend="section" n="10.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="10.3" pos="CONsub" msd="MORPH=empty" lemma="postquam">postquam</w>
-                <w  rend="section" n="10.3" pos="PRE" msd="MORPH=empty" lemma="apud">apud</w>
-                <w  rend="section" n="10.3" pos="NOMpro" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="Cadmea">Cadmeam</w>
-                <w  rend="section" n="10.3" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="section" n="10.3" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Lacedaemonii">Lacedaemoniis</w>
-                <w  rend="section" n="10.3" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="pugno">pugnari</w>
-                <w  rend="section" n="10.3" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="coepio">coeptum</w>
-                <w  rend="section" n="10.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="section" n="10.3" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="10.3" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="10.3" pos="ADJord" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Sup" lemma="primus">primis</w>
-                <w  rend="section" n="10.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sto">stetit</w>
-                <w  rend="section" n="10.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0588.abo015.perseus-lat2:2.1">
+        <w  rend="section" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="nam">nam</w>
+                <w  rend="section" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="citharizo">citharizare</w>
+                <w  rend="section" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="canto">cantare</w>
+                <w  rend="section" n="2.1" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="chorda">chordarum</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sonus">sonum</w>
+                <w  rend="section" n="2.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="doctus">doctus</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="2.1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="2.1" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Dionysius">Dionysio</w>
+                <w  rend="section" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="2.1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="section" n="2.1" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Comp" lemma="paruus2">minore</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="section" n="2.1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="musicus1">musicis</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="gloria">gloria</w>
+                <w  rend="section" n="2.1" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="section" n="2.1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Damon">Damon</w>
+                <w  rend="section" n="2.1" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="section" n="2.1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Lamprus">Lamprus</w>
+                <w  rend="section" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1" pos="PROrel" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="qui1">quorum</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="peruulgo1">pervulgata</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="nomen">nomina</w>
+                <w  rend="section" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="canto">cantare</w>
+                <w  rend="section" n="2.1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="tibia">tibiis</w>
+                <w  rend="section" n="2.1" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
+                <w  rend="section" n="2.1" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Olympiodorus">Olympiodoro</w>
+                <w  rend="section" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="salto">saltare</w>
+                <w  rend="section" n="2.1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="2.1" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Calliphron">Calliphrone</w>
+                <w  rend="section" n="2.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

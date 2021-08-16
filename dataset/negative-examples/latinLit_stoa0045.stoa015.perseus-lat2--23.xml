@@ -2,29 +2,43 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa015.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa015.perseus-lat2:1.63-1.65">
-        <w  rend="line" n="1.63" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="interdictum">interdictorum</w>
-                <w  rend="line" n="1.63" pos="ADJdis" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="trinus">trinum</w>
-                <w  rend="line" n="1.63" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="genus1">genus</w>
-                <w  rend="line" n="1.63" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="1.63" pos="ADVrel" msd="MORPH=empty" lemma="unde1">unde</w>
-                <w  rend="line" n="1.63" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="repello">repulsus</w>
-                <w  rend="line" n="1.64" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uis">vi</w>
-                <w  rend="line" n="1.64" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=1" lemma="sum1">fuero</w>
-                <w  rend="line" n="1.64" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="line" n="1.64" pos="ADV" msd="Deg=Pos" lemma="utrobi">utrubi</w>
-                <w  rend="line" n="1.64" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuerit</w>
-                <w  rend="line" n="1.64" pos="PROrel" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="qui">quorumve</w>
-                <w  rend="line" n="1.64" pos="CON" msd="MORPH=empty" lemma="ue">{quorumve}</w>
-                <w  rend="line" n="1.64" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="bonum">bonorum</w>
-                <w  rend="line" n="1.64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.65" pos="ADJmul" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="triplex">triplex</w>
-                <w  rend="line" n="1.65" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="libertas">libertas</w>
-                <w  rend="line" n="1.65" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="caput">capitisque</w>
-                <w  rend="line" n="1.65" pos="CON" msd="MORPH=empty" lemma="que">{capitisque}</w>
-                <w  rend="line" n="1.65" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="minutio">minutio</w>
-                <w  rend="line" n="1.65" pos="ADJmul" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="triplex">triplex</w>
-                <w  rend="line" n="1.65" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa015.perseus-lat2:1.5-1.8">
+        <w  rend="line" n="1.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="forma">forma</w>
+                <w  rend="line" n="1.5" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="homo">hominis</w>
+                <w  rend="line" n="1.5" pos="VER" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="coepio">coepti</w>
+                <w  rend="line" n="1.5" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="plenus">plenique</w>
+                <w  rend="line" n="1.5" pos="CON" msd="MORPH=empty" lemma="que">{plenique}</w>
+                <w  rend="line" n="1.5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="exactio">exactio</w>
+                <w  rend="line" n="1.5" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="partus1">partus</w>
+                <w  rend="line" n="1.6" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui">quique</w>
+                <w  rend="line" n="1.6" pos="CON" msd="MORPH=empty" lemma="que">{quique}</w>
+                <w  rend="line" n="1.6" pos="ADJcar" msd="Case=Ind" lemma="nouem">novem</w>
+                <w  rend="line" n="1.6" pos="ADJadv.mul" msd="MORPH=empty" lemma="nouiens">novies</w>
+                <w  rend="line" n="1.6" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="fatum">fati</w>
+                <w  rend="line" n="1.6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="teneo">tenet</w>
+                <w  rend="line" n="1.6" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="ultimus">ultima</w>
+                <w  rend="line" n="1.6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="finis">finis</w>
+                <w  rend="line" n="1.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.7" pos="ADJcar" msd="Case=Nom|Numb=Plur|Gend=MascFem" lemma="tres">tris</w>
+                <w  rend="line" n="1.7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ops">Ope</w>
+                <w  rend="line" n="1.7" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="progenitus">progeniti</w>
+                <w  rend="line" n="1.7" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="frater">fratres</w>
+                <w  rend="line" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.7" pos="ADJcar" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="tres">tris</w>
+                <w  rend="line" n="1.7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ordo">ordine</w>
+                <w  rend="line" n="1.7" pos="VER" msd="Case=Gen|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="pario2">partae</w>
+                <w  rend="line" n="1.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Uesta">Vesta</w>
+                <w  rend="line" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Ceres">Ceres</w>
+                <w  rend="line" n="1.8" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="1.8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Iuno">Iuno</w>
+                <w  rend="line" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.8" pos="PRE" msd="MORPH=empty" lemma="secus2">secus</w>
+                <w  rend="line" n="1.8" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="muliebris">muliebre</w>
+                <w  rend="line" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.8" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="soror">sorores</w>
+                <w  rend="line" n="1.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

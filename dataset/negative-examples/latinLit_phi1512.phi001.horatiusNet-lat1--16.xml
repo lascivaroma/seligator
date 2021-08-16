@@ -3,19 +3,22 @@
         <idno type="CTS_URN">urn:cts:latinLit:phi1512.phi001.horatiusNet-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:phi1512.phi001.horatiusNet-lat1:2.15.10">
-        <w  rend="comment" n="2.15.10" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="comment" n="2.15.10" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
-                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="romulus">romvli</w>
-                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma="/">/</w>
-                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma="/">/</w>
-                <w  rend="comment" n="2.15.10" pos="VER" msd="Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="praescribo">praescriptvm</w>
-                <w  rend="comment" n="2.15.10" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="comment" n="2.15.10" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="intonsus">intonsi</w>
-                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cato">catonis</w>
-                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma="/">/</w>
-                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma="/">/</w>
-                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="auspicium">avspiciis</w>
-                <w  rend="comment" n="2.15.10" pos="VER" msd="Numb=Sing" lemma="ualeo">v</w>
+        <w  rend="comment" n="2.15.10" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="praescriptum">Praescriptum</w>
+                <w  rend="comment" n="2.15.10" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
+                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="praeceptum">praecepto</w>
+                <w  rend="comment" n="2.15.10" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="dico2">dicitur</w>
+                <w  rend="comment" n="2.15.10" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="magister">magistris</w>
+                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ludus">ludis</w>
+                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="2.15.10" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="comment" n="2.15.10" pos="VER" msd="Case=Acc|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass" lemma="praescriptum">praescripta</w>
+                <w  rend="comment" n="2.15.10" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="puer">pueris</w>
+                <w  rend="comment" n="2.15.10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="do">dant</w>
+                <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="2.15.10" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="praecipio">praecipiuntque</w>
+                <w  rend="comment" n="2.15.10" pos="CON" msd="MORPH=empty" lemma="que">{praecipiuntque}</w>
+                <w  rend="comment" n="2.15.10" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="imitor">imitari</w>
                 <w  rend="comment" n="2.15.10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

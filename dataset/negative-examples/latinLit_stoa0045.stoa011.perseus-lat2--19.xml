@@ -2,15 +2,28 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa011.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.perseus-lat2:31.201-31.202">
-        <w  rend="line" n="31.201" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="line" n="31.201" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="31.201" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="line" n="31.201" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="iste">istis</w>
-                <w  rend="line" n="31.202" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="improbitas">improbitas</w>
-                <w  rend="line" n="31.202" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="alienus2">aliena</w>
-                <w  rend="line" n="31.202" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="noceo">nocet</w>
-                <w  rend="line" n="31.202" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa011.perseus-lat2:10.25-10.28">
+        <w  rend="line" n="10.25" pos="PROper" msd="Case=Abl|Numb=Plur" lemma="nos">nobiscum</w>
+                <w  rend="line" n="10.25" pos="CON" msd="MORPH=empty" lemma="cum3">{nobiscum}</w>
+                <w  rend="line" n="10.25" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="inuenio">invenies</w>
+                <w  rend="line" n="10.25" pos="FOR" msd="MORPH=empty" lemma="[Greek]">ἐπέων</w>
+                <w  rend="line" n="10.25" pos="FOR" msd="MORPH=empty" lemma="[Greek]">πολυμορφέα</w>
+                <w  rend="line" n="10.25" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="10.26" pos="FOR" msd="MORPH=empty" lemma="[Greek]">γραμματικῶν</w>
+                <w  rend="line" n="10.26" pos="FOR" msd="MORPH=empty" lemma="[Greek]">τε</w>
+                <w  rend="line" n="10.26" pos="FOR" msd="MORPH=empty" lemma="[Greek]">πλοκὰσ</w>
+                <w  rend="line" n="10.26" pos="FOR" msd="MORPH=empty" lemma="[Greek]">καὶ</w>
+                <w  rend="line" n="10.26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="10.27" pos="FOR" msd="MORPH=empty" lemma="[Greek]">δάκτυλον</w>
+                <w  rend="line" n="10.27" pos="FOR" msd="MORPH=empty" lemma="[Greek]">ἡρῷον</w>
+                <w  rend="line" n="10.27" pos="FOR" msd="MORPH=empty" lemma="[Greek]">καὶ</w>
+                <w  rend="line" n="10.27" pos="FOR" msd="MORPH=empty" lemma="[Greek]">ἀοιδοπόλων</w>
+                <w  rend="line" n="10.27" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="10.28" pos="FOR" msd="MORPH=empty" lemma="[Greek]">σὺν</w>
+                <w  rend="line" n="10.28" pos="FOR" msd="MORPH=empty" lemma="[Greek]">Θαλίησ</w>
+                <w  rend="line" n="10.28" pos="FOR" msd="MORPH=empty" lemma="[Greek]">κώμῳ</w>
+                <w  rend="line" n="10.28" pos="FOR" msd="MORPH=empty" lemma="[Greek]">σύρματα</w>
+                <w  rend="line" n="10.28" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

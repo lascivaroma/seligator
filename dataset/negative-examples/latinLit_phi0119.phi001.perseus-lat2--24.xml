@@ -2,12 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi001.perseus-lat2:552b">
-        <w  rend="line" n="552b" pos="CONcoo" msd="MORPH=empty" lemma="nam">Nam</w>
-                <w  rend="line" n="552b" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="quis1">quam</w>
-                <w  rend="line" n="552b" pos="PRE" msd="MORPH=empty" lemma="ob">ob</w>
-                <w  rend="line" n="552b" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="res">rem</w>
-                <w  rend="line" n="552b" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi001.perseus-lat2:500">
+        <w  rend="line" n="500" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="line" n="500" pos="ADV" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="imperco">inperce</w>
+                <w  rend="line" n="500" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="quaeso">quaeso</w>
+                <w  rend="line" n="500" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="500" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mensis">menses</w>
+                <w  rend="line" n="500" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
+                <w  rend="line" n="500" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="500" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="500" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="ago">actos</w>
+                <w  rend="line" n="500" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="uideo">vides</w>
+                <w  rend="line" n="500" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,29 +2,55 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0208a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0208a.stoa001.digilibLT-lat1:32">
-        <w  rend="unknown" n="32" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
-                <w  rend="unknown" n="32" pos="ADVneg" msd="MORPH=empty" lemma="nondum">nondum</w>
-                <w  rend="unknown" n="32" pos="ADV" msd="Deg=Pos" lemma="satis2">satis</w>
-                <w  rend="unknown" n="32" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="tempestiuus">tempestivo</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="mare">mari</w>
-                <w  rend="unknown" n="32" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="assum1">adfuerunt</w>
-                <w  rend="unknown" n="32" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Dat|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="nauigans">navigantibus</w>
-                <w  rend="unknown" n="32" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="felix">felices</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="aura">aurae</w>
-                <w  rend="unknown" n="32" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="fluctus">fluctus</w>
-                <w  rend="unknown" n="32" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc|Deg=Pos" lemma="secundus1">secundi</w>
-                <w  rend="unknown" n="32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="32" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Sup" lemma="beatus">beatissimamque</w>
-                <w  rend="unknown" n="32" pos="CON" msd="MORPH=empty" lemma="que">{beatissimamque}</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uictoria">victoriam</w>
-                <w  rend="unknown" n="32" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="ipse">ipsa</w>
-                <w  rend="unknown" n="32" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
-                <w  rend="unknown" n="32" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="elementum">elementa</w>
-                <w  rend="unknown" n="32" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="iuuo">iuverunt</w>
-                <w  rend="unknown" n="32" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0208a.stoa001.digilibLT-lat1:26">
+        <w  rend="unknown" n="26" pos="PROind" msd="Case=Ind" lemma="nihil">Nihil</w>
+                <w  rend="unknown" n="26" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="unknown" n="26" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="permoueo">permovent</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="tuba">tubarum</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="frango">fractae</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uox">voces</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="horrendus">horrendus</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="miles">militum</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="clamor">clamor</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="permitto">permissa</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="casus">casibus</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uulnus">vulnera</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Nom|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="illido">inlisi</w>
+                <w  rend="unknown" n="26" pos="ADV" msd="Deg=Pos" lemma="cominus">cominus</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="gladius">gladii</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Gen|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="cado">cadentium</w>
+                <w  rend="unknown" n="26" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="grauis">graves</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="gemitus">gemitus</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="arma">arma</w>
+                <w  rend="unknown" n="26" pos="ADV" msd="Deg=Pos" lemma="late">late</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="strepo">strepentia</w>
+                <w  rend="unknown" n="26" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="unknown" n="26" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="unknown" n="26" pos="ADJcar" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="unum">unum</w>
+                <w  rend="unknown" n="26" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="quidam">quendam</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sonitus">sonitum</w>
+                <w  rend="unknown" n="26" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="diuersus">diversi</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="fragor">fragoris</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="ago">acta</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="confusio">confusio</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="26" pos="PROrel" msd="MORPH=empty" lemma="quod2">quod</w>
+                <w  rend="unknown" n="26" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">haec</w>
+                <w  rend="unknown" n="26" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
+                <w  rend="unknown" n="26" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uirtus">virtus</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="negligo">neglegit</w>
+                <w  rend="unknown" n="26" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
+                <w  rend="unknown" n="26" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="ira">ira</w>
+                <w  rend="unknown" n="26" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="unknown" n="26" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sentio">sentit</w>
+                <w  rend="unknown" n="26" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

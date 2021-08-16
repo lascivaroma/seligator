@@ -2,18 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0134.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi003.perseus-lat2:123">
-        <w  rend="line" n="123" pos="CONcoo" msd="MORPH=empty" lemma="nam">Nam</w>
-                <w  rend="line" n="123" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="hic1">hic</w>
-                <w  rend="line" n="123" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
-                <w  rend="line" n="123" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="bonus">bonam</w>
-                <w  rend="line" n="123" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="magnus">magnamque</w>
-                <w  rend="line" n="123" pos="CON" msd="MORPH=empty" lemma="que">{magnamque}</w>
-                <w  rend="line" n="123" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pars">partem</w>
-                <w  rend="line" n="123" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
-                <w  rend="line" n="123" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="line" n="123" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="affero">attulit</w>
-                <w  rend="line" n="123" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi003.perseus-lat2:64-65">
+        <w  rend="line" n="64" pos="CONcoo" msd="MORPH=empty" lemma="et2">Et</w>
+                <w  rend="line" n="64" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quod1">quod</w>
+                <w  rend="line" n="64" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="line" n="64" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tute</w>
+                <w  rend="line" n="64" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">tecum</w>
+                <w  rend="line" n="64" pos="CON" msd="MORPH=empty" lemma="cum3">{tecum}</w>
+                <w  rend="line" n="64" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="iratus">iratus</w>
+                <w  rend="line" n="64" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="cogito">cogitas</w>
+                <w  rend="line" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="65" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="line" n="65" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">Egone</w>
+                <w  rend="line" n="65" pos="ADV" msd="MORPH=empty" lemma="ne2">{Egone}</w>
+                <w  rend="line" n="65" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="ille">illam</w>
+                <w  rend="line" n="65" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="65" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illum</w>
+                <w  rend="line" n="65" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

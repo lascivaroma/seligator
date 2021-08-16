@@ -2,13 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0072.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0072.stoa001.digilibLT-lat1:XXXIV">
-        <w  rend="declamatio" n="XXXIV" pos="INJ" msd="MORPH=empty" lemma="pro2">Pro</w>
-                <w  rend="declamatio" n="XXXIV" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="deus">deum</w>
-                <w  rend="declamatio" n="XXXIV" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="declamatio" n="XXXIV" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="homo">hominum</w>
-                <w  rend="declamatio" n="XXXIV" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fides2">fidem</w>
-                <w  rend="declamatio" n="XXXIV" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0072.stoa001.digilibLT-lat1:XIV">
+        <w  rend="declamatio" n="XIV" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">Tu</w>
+                <w  rend="declamatio" n="XIV" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="ille">illud</w>
+                <w  rend="declamatio" n="XIV" pos="ADJadv.ord" msd="Deg=Comp" lemma="prius">prius</w>
+                <w  rend="declamatio" n="XIV" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="consumo">consumpsisti</w>
+                <w  rend="declamatio" n="XIV" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="patrimonium">patrimonium</w>
+                <w  rend="declamatio" n="XIV" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="declamatio" n="XIV" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="ille">illud</w>
+                <w  rend="declamatio" n="XIV" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="amplus">amplum</w>
+                <w  rend="declamatio" n="XIV" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="declamatio" n="XIV" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="ille">illud</w>
+                <w  rend="declamatio" n="XIV" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quod1">quod</w>
+                <w  rend="declamatio" n="XIV" pos="ADJcar" msd="Case=Dat|Numb=Plur|Gend=MascNeut" lemma="duo">duobus</w>
+                <w  rend="declamatio" n="XIV" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Pass|Person=3" lemma="paro2">parabatur</w>
+                <w  rend="declamatio" n="XIV" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="heres">heredibus</w>
+                <w  rend="declamatio" n="XIV" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

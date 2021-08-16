@@ -2,18 +2,69 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0180a.stoa002.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa002.opp-lat1:25">
-        <w  rend="chapter" n="25" pos="VER" msd="Case=Nom|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="dico2">dicens</w>
-                <w  rend="chapter" n="25" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="chapter" n="25" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="quicumque1">quemcumque</w>
-                <w  rend="chapter" n="25" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="osculor">osculatus</w>
-                <w  rend="chapter" n="25" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=1" lemma="sum1">fuero</w>
-                <w  rend="chapter" n="25" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ipse">ipse</w>
-                <w  rend="chapter" n="25" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="25" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="25" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="teneo">tenete</w>
-                <w  rend="chapter" n="25" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
-                <w  rend="chapter" n="25" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa002.opp-lat1:14">
+        <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="ADJqua" msd="Case=Nom|Numb=Plur|Deg=Pos" lemma="ceterus">ceteri</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="fugio">fugerunt</w>
+                <w  rend="chapter" n="14" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="natio1">nationes</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="PROdem" msd="Case=Nom|Numb=Plur" lemma="is">i</w>
+                <w  rend="chapter" n="14" pos="PROref" msd="Case=Acc|Numb=Plur" lemma="sui1">se</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="libero">liberarent</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="circumeo1">circumiuit</w>
+                <w  rend="chapter" n="14" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Matathias">Matathias</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="amicus1">amici</w>
+                <w  rend="chapter" n="14" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Masc" lemma="is">eius</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="destruo">destruxerunt</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="ara">aras</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="circumcido2">circumciderunt</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="puer">pueros</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="incircumcisus">incircumcisos</w>
+                <w  rend="chapter" n="14" pos="PROrel" msd="Case=Ind" lemma="quot1">quot</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma="-">-</w>
+                <w  rend="chapter" n="14" pos="PROrel" msd="Case=Ind" lemma="quot1">quot</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="inuenio">inuenerunt</w>
+                <w  rend="chapter" n="14" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="finis">finibus</w>
+                <w  rend="chapter" n="14" pos="NOMpro" msd="Case=Ind" lemma="Israel">Israel</w>
+                <w  rend="chapter" n="14" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="fortitudo">fortitudine</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="persequor">persecuti</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="filius">filios</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="superbia">superbiae</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="prospero">prosperauit</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="opus1">opus</w>
+                <w  rend="chapter" n="14" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="manus1">manu</w>
+                <w  rend="chapter" n="14" pos="PROdem" msd="Case=Gen|Numb=Plur|Gend=Masc" lemma="is">eorum</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="NOMpro" msd="Case=Gen" lemma="dies">d</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="obtineo">obtinuerunt</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="lex">legem</w>
+                <w  rend="chapter" n="14" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="manus1">manibus</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="gens">gentium</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="rex">regum</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="14" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="14" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="chapter" n="14" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="desum1">derunt</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cornum1">cornum</w>
+                <w  rend="chapter" n="14" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="peccator">peccatori</w>
+                <w  rend="chapter" n="14" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

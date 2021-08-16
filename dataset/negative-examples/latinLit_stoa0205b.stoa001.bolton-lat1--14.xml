@@ -3,11 +3,17 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0205b.stoa001.bolton-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0205b.stoa001.bolton-lat1:15">
-        <w  rend="unknown" n="15" pos="PROind" msd="Case=Abl|Numb=Plur" lemma="aliquis">aliquabus</w>
-                <w  rend="unknown" n="15" pos="ADV" msd="Deg=Comp" lemma="cito2">citius</w>
-                <w  rend="unknown" n="15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="15" pos="PROind" msd="Case=Abl|Numb=Plur" lemma="aliquas">aliquabus</w>
-                <w  rend="unknown" n="15" pos="ADV" msd="Deg=Comp" lemma="tarde">tardius</w>
+        <w  rend="unknown" n="15" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="plerique">plerisque</w>
+                <w  rend="unknown" n="15" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="unknown" n="15" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="unknown" n="15" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="unknown" n="15" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="quadragesimus">quadragesimum</w>
+                <w  rend="unknown" n="15" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="annus">annum</w>
+                <w  rend="unknown" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="cesso">cessat</w>
+                <w  rend="unknown" n="15" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="unknown" n="15" pos="PRE" msd="MORPH=empty" lemma="post2">post</w>
+                <w  rend="unknown" n="15" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="quinquagesimus">quinquagesimum</w>
+                <w  rend="unknown" n="15" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="perseuero">perseverat</w>
                 <w  rend="unknown" n="15" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

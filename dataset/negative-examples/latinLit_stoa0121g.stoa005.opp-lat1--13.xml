@@ -2,16 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0121g.stoa005.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121g.stoa005.opp-lat1:1">
-        <w  rend="letter" n="1" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="dico2">dico</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="1" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Christus">Christo</w>
-                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ecclesia">ecclesia</w>
-                <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121g.stoa005.opp-lat1:2">
+        <w  rend="letter" n="2" pos="INJ" msd="MORPH=empty" lemma="ecce">ecce</w>
+                <w  rend="letter" n="2" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="deus">deo</w>
+                <w  rend="letter" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uotum">uotum</w>
+                <w  rend="letter" n="2" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="promitto">promisisse</w>
+                <w  rend="letter" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="memoro">memoratur</w>
+                <w  rend="letter" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="2" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="spiritus">spiritui</w>
+                <w  rend="letter" n="2" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="sanctus">sancto</w>
+                <w  rend="letter" n="2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="mentior">mentitus</w>
+                <w  rend="letter" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="arguo">arguitur</w>
+                <w  rend="letter" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

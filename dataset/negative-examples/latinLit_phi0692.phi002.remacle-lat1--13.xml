@@ -2,12 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0692.phi002.remacle-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0692.phi002.remacle-lat1:177">
-        <w  rend="line" n="177" pos="ADVint" msd="MORPH=empty" lemma="numquid">numquid</w>
-                <w  rend="line" n="177" pos="ADV" msd="Deg=Comp" lemma="parum2">minus</w>
-                <w  rend="line" n="177" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="aureus2">aurea</w>
-                <w  rend="line" n="177" pos="NOMcom" msd="Case=Nom|Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="proles">proles</w>
-                <w  rend="line" n="177" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0692.phi002.remacle-lat1:152-153">
+        <w  rend="line" n="152" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="hic1">Haec</w>
+                <w  rend="line" n="152" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="line" n="152" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="praetereo1">praetereo</w>
+                <w  rend="line" n="152" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="152" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="notus2">notum</w>
+                <w  rend="line" n="152" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Minois">Minoidos</w>
+                <w  rend="line" n="152" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="astrum">astrum</w>
+                <w  rend="line" n="153" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="qui">quaeque</w>
+                <w  rend="line" n="153" pos="CON" msd="MORPH=empty" lemma="que">{quaeque}</w>
+                <w  rend="line" n="153" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uir">virum</w>
+                <w  rend="line" n="153" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uirgo">virgo</w>
+                <w  rend="line" n="153" pos="ADVrel" msd="MORPH=empty" lemma="sicut1">sicut</w>
+                <w  rend="line" n="153" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="captiuus2">captiva</w>
+                <w  rend="line" n="153" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="sequor">secuta</w>
+                <w  rend="line" n="153" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="153" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

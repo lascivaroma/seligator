@@ -3,29 +3,26 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa007.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa007.opp-lat1:22">
-        <w  rend="chapter" n="22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="chapter" n="22" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="chapter" n="22" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="chapter" n="22" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="glorifico">glorificet</w>
+        <w  rend="chapter" n="22" pos="ADV" msd="Deg=Pos" lemma="item">Item</w>
+                <w  rend="chapter" n="22" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="interrogo">interrogatus</w>
                 <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="22" pos="CONsub" msd="MORPH=empty" lemma="ubi3">ubi</w>
+                <w  rend="chapter" n="22" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="sum1">esset</w>
                 <w  rend="chapter" n="22" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pater">pater</w>
                 <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="22" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
-                <w  rend="chapter" n="22" pos="PROper" msd="Case=Nom|Numb=Plur" lemma="uos">vos</w>
-                <w  rend="chapter" n="22" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="dico2">dicitis</w>
-                <w  rend="chapter" n="22" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="deus">deum</w>
+                <w  rend="chapter" n="22" pos="CONcoo" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="chapter" n="22" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="chapter" n="22" pos="ADVneg" msd="MORPH=empty" lemma="neque">neque</w>
+                <w  rend="chapter" n="22" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pater">patrem</w>
+                <w  rend="chapter" n="22" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="notus2">notum</w>
                 <w  rend="chapter" n="22" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="chapter" n="22" pos="PROpos" msd="Case=Acc|Numb=Sing" lemma="uos">vestrum</w>
+                <w  rend="chapter" n="22" pos="PROdem" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="ille">illis</w>
+                <w  rend="chapter" n="22" pos="VER" msd="Case=Nom|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="respondeo">respondens</w>
                 <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="22" pos="CONcoo" msd="MORPH=empty" lemma="neque">nec</w>
-                <w  rend="chapter" n="22" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="nosco">nostis</w>
-                <w  rend="chapter" n="22" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="ille">illum</w>
-                <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="22" pos="CONcoo" msd="MORPH=empty" lemma="at2">at</w>
-                <w  rend="chapter" n="22" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="chapter" n="22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="nosco">novi</w>
-                <w  rend="chapter" n="22" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
-                <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+                <w  rend="chapter" n="22" pos="ADJcar" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="duo">duos</w>
+                <w  rend="chapter" n="22" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">dixit</w>
+                <w  rend="chapter" n="22" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="ignotus">ignotos</w>
+                <w  rend="chapter" n="22" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

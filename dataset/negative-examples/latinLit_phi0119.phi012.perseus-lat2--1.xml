@@ -2,12 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:899a">
-        <w  rend="line" n="899a" pos="INJ" msd="Case=Nom" lemma="eu">eu</w>
-                <w  rend="line" n="899a" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="899a" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="noster">noster</w>
-                <w  rend="line" n="899a" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=2" lemma="sum1">esto</w>
-                <w  rend="line" n="899a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi012.perseus-lat2:292a">
+        <w  rend="line" n="292a" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="medicus1">Medicum</w>
+                <w  rend="line" n="292a" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="istic1">istuc</w>
+                <w  rend="line" n="292a" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="292a" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Comp" lemma="bene">meliust</w>
+                <w  rend="line" n="292a" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{meliust}</w>
+                <w  rend="line" n="292a" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="percunctor">percontarier</w>
+                <w  rend="line" n="292a" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

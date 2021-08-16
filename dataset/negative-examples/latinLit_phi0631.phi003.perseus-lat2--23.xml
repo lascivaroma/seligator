@@ -2,14 +2,34 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0631.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Phil.14">
-        <w  rend="section" n="Phil.14" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ciuitas">civitatem</w>
-                <w  rend="section" n="Phil.14" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="confirmo">confirmari</w>
-                <w  rend="section" n="Phil.14" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="Phil.14" pos="PROrel" msd="Case=Dat|Numb=Plur|Gend=Com" lemma="qui1">quibus</w>
-                <w  rend="section" n="Phil.14" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="adimo">ademptam</w>
-                <w  rend="section" n="Phil.14" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="nego">negat</w>
-                <w  rend="section" n="Phil.14" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi003.perseus-lat2:Macr.8">
+        <w  rend="section" n="Macr.8" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="Macr.8" pos="CONsub" msd="MORPH=empty" lemma="quamquam2">quamquam</w>
+                <w  rend="section" n="Macr.8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Lucius">L.</w>
+                <w  rend="section" n="Macr.8" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Sicinius">Sicinius</w>
+                <w  rend="section" n="Macr.8" pos="ADJord" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Sup" lemma="primus">primus</w>
+                <w  rend="section" n="Macr.8" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="section" n="Macr.8" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="potestas">potestate</w>
+                <w  rend="section" n="Macr.8" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tribunicius2">tribunicia</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Dep" lemma="loquor">loqui</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=SemDep" lemma="audeo">ausus</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="musso">mussantibus</w>
+                <w  rend="section" n="Macr.8" pos="PROper" msd="Case=Abl|Numb=Plur" lemma="uos">vobis</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="circumuenio">circumventus</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erat</w>
+                <w  rend="section" n="Macr.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Macr.8" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="section" n="Macr.8" pos="ADJadv.ord" msd="Deg=Comp" lemma="prius">prius</w>
+                <w  rend="section" n="Macr.8" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="ille">illi</w>
+                <w  rend="section" n="Macr.8" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="inuidia">invidiam</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="metuo">metuere</w>
+                <w  rend="section" n="Macr.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="Macr.8" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="section" n="Macr.8" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="uos">vos</w>
+                <w  rend="section" n="Macr.8" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="iniuria">iniuriae</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="pertaedet">pertaesum</w>
+                <w  rend="section" n="Macr.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="Macr.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

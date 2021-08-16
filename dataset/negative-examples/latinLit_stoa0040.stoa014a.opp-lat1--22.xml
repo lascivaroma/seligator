@@ -3,19 +3,25 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa014a.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa014a.opp-lat1:3.15">
-        <w  rend="section" n="3.15" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="donatista">Donatistae</w>
-                <w  rend="section" n="3.15" pos="VER" msd="Case=Nom|Numb=Plur|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="interrumpo">interrumpentes</w>
-                <w  rend="section" n="3.15" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">dixerunt</w>
+        <w  rend="section" n="3.15" pos="CONsub" msd="MORPH=empty" lemma="cum">cumque</w>
+                <w  rend="section" n="3.15" pos="CON" msd="MORPH=empty" lemma="que">{cumque}</w>
+                <w  rend="section" n="3.15" pos="ADV" msd="Deg=Comp" lemma="expressus2">expressius</w>
+                <w  rend="section" n="3.15" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="3.15" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="catholicus">catholicis</w>
+                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="locus">locus</w>
+                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="euangelium">euangelii</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="commemoro">commemoraretur</w>
                 <w  rend="section" n="3.15" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="3.15" pos="CONsub" msd="Case=Nom" lemma="quod2">quod</w>
-                <w  rend="section" n="3.15" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="area">area</w>
-                <w  rend="section" n="3.15" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="section" n="3.15" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Pass|Person=3" lemma="lego2">legeretur</w>
-                <w  rend="section" n="3.15" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="euangelium">euangelio</w>
-                <w  rend="section" n="3.15" pos="VER" msd="Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="scribo">scriptum</w>
+                <w  rend="section" n="3.15" pos="ADV" msd="Deg=Pos" lemma="rursus">rursus</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="interrumpo">interrumpendo</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico2">dixerunt</w>
+                <w  rend="section" n="3.15" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="occultus">occultos</w>
+                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="malus3">malos</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="dictum">dictos</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="section" n="3.15" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="palea">paleam</w>
+                <w  rend="section" n="3.15" pos="ADV" msd="Deg=Pos" lemma="postea">postea</w>
+                <w  rend="section" n="3.15" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Pass" lemma="uentilo">uentilandam</w>
                 <w  rend="section" n="3.15" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

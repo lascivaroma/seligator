@@ -3,11 +3,30 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0121.stoa001.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121.stoa001.digilibLT-lat1:IV.20">
-        <w  rend="chapter" n="IV.20" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="hic1">Hic</w>
-                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Eumenes">Eumenes</w>
-                <w  rend="chapter" n="IV.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="frater">frater</w>
-                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Attalus">Attali</w>
-                <w  rend="chapter" n="IV.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pqp|Voice=Act|Person=3" lemma="sum1">fuerat</w>
+        <w  rend="chapter" n="IV.20" pos="CONcoo" msd="MORPH=empty" lemma="nam">Nam</w>
+                <w  rend="chapter" n="IV.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Bithynia">Bithyniae</w>
+                <w  rend="chapter" n="IV.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="rex">rex</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Nicomedes">Nicomedes</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="Romani">Romanos</w>
+                <w  rend="chapter" n="IV.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="iuuo">iuvit</w>
+                <w  rend="chapter" n="IV.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Mithridates">Mithridates</w>
+                <w  rend="chapter" n="IV.20" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Ponticus">Ponticus</w>
+                <w  rend="chapter" n="IV.20" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="IV.20" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
+                <w  rend="chapter" n="IV.20" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="chapter" n="IV.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="bellum">bellum</w>
+                <w  rend="chapter" n="IV.20" pos="ADV" msd="Deg=Pos" lemma="postea">postea</w>
+                <w  rend="chapter" n="IV.20" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Sup" lemma="grauis">gravissimum</w>
+                <w  rend="chapter" n="IV.20" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="chapter" n="IV.20" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="IV.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Ariarathes">Ariarathes</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="Cappadox">Cappadox</w>
+                <w  rend="chapter" n="IV.20" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Pylaemenes">Pylaemenes</w>
+                <w  rend="chapter" n="IV.20" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Paphlagon">Paphlagon</w>
                 <w  rend="chapter" n="IV.20" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

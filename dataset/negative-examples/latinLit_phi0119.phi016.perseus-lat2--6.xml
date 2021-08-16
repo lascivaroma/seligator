@@ -2,13 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi016.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:1147">
-        <w  rend="line" n="1147" pos="ADVint.neg" msd="MORPH=empty" lemma="quin3">Quin</w>
-                <w  rend="line" n="1147" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
-                <w  rend="line" n="1147" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">mecum</w>
-                <w  rend="line" n="1147" pos="CON" msd="MORPH=empty" lemma="cum3">{mecum}</w>
-                <w  rend="line" n="1147" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=2" lemma="fabulor">fabulare</w>
-                <w  rend="line" n="1147" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi016.perseus-lat2:986-987">
+        <w  rend="line" n="986" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="nosco">Nosce</w>
+                <w  rend="line" n="986" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="imago">imaginem</w>
+                <w  rend="line" n="986" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="986" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tute</w>
+                <w  rend="line" n="986" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="line" n="986" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="nomen">nomen</w>
+                <w  rend="line" n="986" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Fut|Voice=Act|Person=2" lemma="memoro">memorato</w>
+                <w  rend="line" n="986" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
+                <w  rend="line" n="986" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="987" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="line" n="987" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="scio">sciam</w>
+                <w  rend="line" n="987" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="987" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Ballio">Ballionem</w>
+                <w  rend="line" n="987" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="line" n="987" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="ipse">ipsum</w>
+                <w  rend="line" n="987" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,12 +2,35 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0190a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0190a.stoa001.digilibLT-lat1:pr.pr4">
-        <w  rend="section" n="pr.pr4" pos="FOR" msd="MORPH=empty" lemma="[Greek]">ὁ</w>
-                <w  rend="section" n="pr.pr4" pos="FOR" msd="MORPH=empty" lemma="[Greek]">κύαθος</w>
-                <w  rend="section" n="pr.pr4" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="section" n="pr.pr4" pos="FOR" msd="MORPH=empty" lemma="[Greek]">οὐνκίας</w>
-                <w  rend="section" n="pr.pr4" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0190a.stoa001.digilibLT-lat1:epistulae.5.1">
+        <w  rend="part" n="epistulae.5.1" pos="PRE" msd="MORPH=empty" lemma="inter">Inter</w>
+                <w  rend="part" n="epistulae.5.1" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Sup" lemma="magnus">maximos</w>
+                <w  rend="part" n="epistulae.5.1" pos="ADV" msd="Deg=Pos" lemma="quondam">quondam</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="habitus1">habitus</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="medicus1">medicos</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Herophilus">Herophilus</w>
+                <w  rend="part" n="epistulae.5.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Gaius">C.</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Iulius">Iuli</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Calliste">Calliste</w>
+                <w  rend="part" n="epistulae.5.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="epistulae.5.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="fero">fertur</w>
+                <w  rend="part" n="epistulae.5.1" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="dico2">dixisse</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="medicamentum">medicamenta</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="deus">deorum</w>
+                <w  rend="part" n="epistulae.5.1" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Com|Deg=Pos" lemma="immortalis">inmortalium</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="manus1">manus</w>
+                <w  rend="part" n="epistulae.5.1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
+                <w  rend="part" n="epistulae.5.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="epistulae.5.1" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="part" n="epistulae.5.1" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ratio">ratione</w>
+                <w  rend="part" n="epistulae.5.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="epistulae.5.1" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="part" n="epistulae.5.1" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="meus">mea</w>
+                <w  rend="part" n="epistulae.5.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="fero">fert</w>
+                <w  rend="part" n="epistulae.5.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="opinio">opinio</w>
+                <w  rend="part" n="epistulae.5.1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

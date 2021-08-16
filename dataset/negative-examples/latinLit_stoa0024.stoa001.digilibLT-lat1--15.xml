@@ -2,16 +2,47 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0024.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0024.stoa001.digilibLT-lat1:28">
-        <w  rend="unknown" n="28" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">Qui</w>
-                <w  rend="unknown" n="28" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="rex">reges</w>
-                <w  rend="unknown" n="28" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="unknown" n="28" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="dux">duces</w>
-                <w  rend="unknown" n="28" pos="PRE" msd="MORPH=empty" lemma="cum2">cum</w>
-                <w  rend="unknown" n="28" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Romani">Romanis</w>
-                <w  rend="unknown" n="28" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="bellum">bella</w>
-                <w  rend="unknown" n="28" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="gero">gesserunt</w>
-                <w  rend="unknown" n="28" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0024.stoa001.digilibLT-lat1:47">
+        <w  rend="unknown" n="47" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Caesar">Caesarem</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Augustus">Augustum</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Dalmatae">Dalmatas</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Pannonii">Pannonios</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="Illyricus">Illyricos</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="ADJqua" msd="Case=Acc|Numb=Plur" lemma="Aegyptii">Aegyptios</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="Germani">Germanos</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Cantabri">Cantabros</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="totus">totumque</w>
+                <w  rend="unknown" n="47" pos="CON" msd="MORPH=empty" lemma="que">{totumque}</w>
+                <w  rend="unknown" n="47" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="orbis">orbem</w>
+                <w  rend="unknown" n="47" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="perpaco">perpacauit</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Perf|Voice=Pass" lemma="excipio">exceptis</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Indi">Indis</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="Parthi">Parthis</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Abl|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass" lemma="Sarmatae">Sarmatis</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Scythae">Scythis</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Daci">Dacis</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="47" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
+                <w  rend="unknown" n="47" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="is">eos</w>
+                <w  rend="unknown" n="47" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fortuna">fortuna</w>
+                <w  rend="unknown" n="47" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Traianus">Traiani</w>
+                <w  rend="unknown" n="47" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="princeps1">principis</w>
+                <w  rend="unknown" n="47" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="triumphus">triumphis</w>
+                <w  rend="unknown" n="47" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="reseruo">reseruauit</w>
+                <w  rend="unknown" n="47" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

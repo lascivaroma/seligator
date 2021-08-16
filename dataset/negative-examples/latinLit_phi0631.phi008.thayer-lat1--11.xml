@@ -3,13 +3,14 @@
         <idno type="CTS_URN">urn:cts:latinLit:phi0631.phi008.thayer-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:phi0631.phi008.thayer-lat1:4">
-        <w  rend="paragraph" n="4" pos="PROint" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="quis1">Quae</w>
-                <w  rend="paragraph" n="4" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="paragraph" n="4" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="pars">partes</w>
-                <w  rend="paragraph" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="res">rei</w>
-                <w  rend="paragraph" n="4" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem|Deg=Pos" lemma="publicus2">publicae</w>
-                <w  rend="paragraph" n="4" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="placeo">placent</w>
-                <w  rend="paragraph" n="4" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+        <w  rend="paragraph" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Bibulus">Bibulum</w>
+                <w  rend="paragraph" n="4" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Sup" lemma="petulans">petulantissimis</w>
+                <w  rend="paragraph" n="4" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="uerbum">verbis</w>
+                <w  rend="paragraph" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="laedo">laedis</w>
+                <w  rend="paragraph" n="4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="laudo">laudas</w>
+                <w  rend="paragraph" n="4" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Caesar">Caesarem</w>
+                <w  rend="paragraph" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,39 +2,13 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0209.stoa002.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0209.stoa002.thayer-lat1:53-58">
-        <w  rend="line" n="53" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="nos">nos</w>
-                <w  rend="line" n="53" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="flumineus">flumineas</w>
-                <w  rend="line" n="53" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="erro2">errare</w>
-                <w  rend="line" n="53" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="line" n="53" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="umbra">umbras</w>
-                <w  rend="line" n="54" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="malo">malumus</w>
-                <w  rend="line" n="54" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="54" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="placidus">placidis</w>
-                <w  rend="line" n="54" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="ichneumon">ichneumona</w>
-                <w  rend="line" n="54" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="quaero">quaerere</w>
-                <w  rend="line" n="54" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="ripa">ripis</w>
-                <w  rend="line" n="55" pos="PRE" msd="MORPH=empty" lemma="inter">inter</w>
-                <w  rend="line" n="55" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="arundineus">harundineas</w>
-                <w  rend="line" n="55" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="seges">segetes</w>
-                <w  rend="line" n="55" pos="ADJqua" msd="Case=Acc|Numb=Sing" lemma="faelis">faelemque</w>
-                <w  rend="line" n="55" pos="CON" msd="MORPH=empty" lemma="que">{faelemque}</w>
-                <w  rend="line" n="55" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="minax">minacem</w>
-                <w  rend="line" n="56" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="arbor">arboris</w>
-                <w  rend="line" n="56" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="line" n="56" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="truncus1">trunco</w>
-                <w  rend="line" n="56" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="longus">longis</w>
-                <w  rend="line" n="56" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="praefigo">praefigere</w>
-                <w  rend="line" n="56" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="telum">telis</w>
-                <w  rend="line" n="57" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="implico">implicitumque</w>
-                <w  rend="line" n="57" pos="CON" msd="MORPH=empty" lemma="que">{implicitumque}</w>
-                <w  rend="line" n="57" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="sinus">sinu</w>
-                <w  rend="line" n="57" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="spinosus">spinosi</w>
-                <w  rend="line" n="57" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="corpus">corporis</w>
-                <w  rend="line" n="57" pos="VER" msd="Case=Acc|Numb=Sing|Person=1" lemma="sum1">erem</w>
-                <w  rend="line" n="58" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="fero">ferre</w>
-                <w  rend="line" n="58" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="domus">domum</w>
-                <w  rend="line" n="58" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0209.stoa002.thayer-lat1:128">
+        <w  rend="line" n="128" pos="ADV" msd="Deg=Pos" lemma="mox">mox</w>
+                <w  rend="line" n="128" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="128" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=MascFem" lemma="omnis">omnes</w>
+                <w  rend="line" n="128" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="nutrio">nutrire</w>
+                <w  rend="line" n="128" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=MascFem|Deg=Comp" lemma="paruus2">minores</w>
+                <w  rend="line" n="128" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -53,7 +53,7 @@ class SiameseClassifier(BaseModel):
 
         if isinstance(mixed_encoder, MixedEmbeddingEncoder):
             self.left_encoder = mixed_encoder
-            self.right_encoder = mixed_encoder.copy_for_siamese()
+            self.right_encoder = self.left_encoder
         elif isinstance(mixed_encoder, tuple) and \
                 isinstance(mixed_encoder[0], MixedEmbeddingEncoder) and\
                 isinstance(mixed_encoder[1], MixedEmbeddingEncoder):

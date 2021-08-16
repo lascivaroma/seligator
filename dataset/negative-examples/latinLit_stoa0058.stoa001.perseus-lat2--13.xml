@@ -2,28 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0058.stoa001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0058.stoa001.perseus-lat2:4.P5">
-        <w  rend="section" n="4.P5" pos="ADV" msd="Deg=Pos" lemma="hic2">Hic</w>
-                <w  rend="section" n="4.P5" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="section" n="4.P5" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="section" n="4.P5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="uideo">Video</w>
-                <w  rend="section" n="4.P5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="4.P5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="inquio">inquam</w>
-                <w  rend="section" n="4.P5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="4.P5" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="quis1">quae</w>
-                <w  rend="section" n="4.P5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
-                <w  rend="section" n="4.P5" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="section" n="4.P5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="felicitas">felicitas</w>
-                <w  rend="section" n="4.P5" pos="CONcoo" msd="MORPH=empty" lemma="uel2">uel</w>
-                <w  rend="section" n="4.P5" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="miseria">miseria</w>
-                <w  rend="section" n="4.P5" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="section" n="4.P5" pos="PROdem" msd="Case=Abl|Numb=Plur|Gend=Com" lemma="ipse">ipsis</w>
-                <w  rend="section" n="4.P5" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=MascNeut|Deg=Pos" lemma="probus">proborum</w>
-                <w  rend="section" n="4.P5" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
-                <w  rend="section" n="4.P5" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=MascNeut|Deg=Pos" lemma="improbus">improborum</w>
-                <w  rend="section" n="4.P5" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="meritum">meritis</w>
-                <w  rend="section" n="4.P5" pos="VER" msd="Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="constituo">constituta</w>
-                <w  rend="section" n="4.P5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0058.stoa001.perseus-lat2:2.P2">
+        <w  rend="section" n="2.P2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="licet1">Licet</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="annus">anno</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="terra">terrae</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uultus">uultum</w>
+                <w  rend="section" n="2.P2" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="flos">floribus</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="frux">frugibusque</w>
+                <w  rend="section" n="2.P2" pos="CON" msd="MORPH=empty" lemma="que">{frugibusque}</w>
+                <w  rend="section" n="2.P2" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="redimio">redimire</w>
+                <w  rend="section" n="2.P2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="2.P2" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="nimbus">nimbis</w>
+                <w  rend="section" n="2.P2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="frigus">frigoribusque</w>
+                <w  rend="section" n="2.P2" pos="CON" msd="MORPH=empty" lemma="que">{frigoribusque}</w>
+                <w  rend="section" n="2.P2" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="confundo2">confundere</w>
+                <w  rend="section" n="2.P2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

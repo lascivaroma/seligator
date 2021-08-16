@@ -3,30 +3,21 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0121g.stoa005.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0121g.stoa005.opp-lat1:1">
-        <w  rend="letter" n="1" pos="CONsub" msd="MORPH=empty" lemma="quasi2">quasi</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="homo">homo</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="crux">cruce</w>
-                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pendeo">pendet</w>
+        <w  rend="letter" n="1" pos="PROrel" msd="Case=Nom|Numb=Sing" lemma="quis1">quod</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="paruus2">minor</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pater">patre</w>
+                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="secundum2">secundum</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caro1">carnem</w>
+                <w  rend="letter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="secundum2">secundum</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="homo">hominem</w>
+                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="nuncupo">nuncupetur</w>
                 <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="1" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="1" pos="VER" msd="Case=Acc|Numb=Sing" lemma="paradisus">paradisum</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="crux">cruce</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="latro1">latronem</w>
-                <w  rend="letter" n="1" pos="VER" msd="Case=Abl|Numb=Plur|Mood=Par|Tense=Perf|Voice=Pass" lemma="gero">gestis</w>
-                <w  rend="letter" n="1" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
-                <w  rend="letter" n="1" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="omnis">omnem</w>
-                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mundus1">mundum</w>
-                <w  rend="letter" n="1" pos="VER" msd="Case=Abl|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Dep" lemma="loquor">loquentibus</w>
-                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="introduco">introducit</w>
-                <w  rend="letter" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="dico2">dicens</w>
-                <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="letter" n="1" pos="INJ" msd="MORPH=empty" lemma="amen">amen</w>
-                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="dico2">dico</w>
-                <w  rend="letter" n="1" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="letter" n="1" pos="ADJqua" msd="Case=Abl|Numb=Plur|Gend=Com|Deg=Pos" lemma="innumerus">innumeris</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="scriptura">scripturarum</w>
+                <w  rend="letter" n="1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="testimonium">testimoniis</w>
+                <w  rend="letter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="declaro">declaratur</w>
                 <w  rend="letter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

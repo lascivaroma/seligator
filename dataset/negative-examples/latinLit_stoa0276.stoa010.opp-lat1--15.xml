@@ -2,12 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0276.stoa010.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa010.opp-lat1:120">
-        <w  rend="line" n="120" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="forma">formam</w>
-                <w  rend="line" n="120" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
-                <w  rend="line" n="120" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="corpus">corpore</w>
-                <w  rend="line" n="120" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="seruo">seruans</w>
-                <w  rend="line" n="120" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0276.stoa010.opp-lat1:79-80">
+        <w  rend="line" n="79" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="line" n="79" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="durus">dura</w>
+                <w  rend="line" n="79" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="homo">hominum</w>
+                <w  rend="line" n="79" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mens</w>
+                <w  rend="line" n="80" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="credo">credere</w>
+                <w  rend="line" n="80" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="despicio">despexit</w>
+                <w  rend="line" n="80" pos="VER" msd="Case=Acc|Numb=Sing" lemma="moneo">monitum</w>
+                <w  rend="line" n="80" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="rideo">risitque</w>
+                <w  rend="line" n="80" pos="CON" msd="MORPH=empty" lemma="que">{risitque}</w>
+                <w  rend="line" n="80" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="timor">timorem</w>
+                <w  rend="line" n="80" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

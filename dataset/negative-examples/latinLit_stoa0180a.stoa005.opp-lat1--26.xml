@@ -2,26 +2,38 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0180a.stoa005.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa005.opp-lat1:7">
-        <w  rend="letter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="hora">horam</w>
-                <w  rend="letter" n="7" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Ind" lemma="fas">fas</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="sententia">sententiis</w>
-                <w  rend="letter" n="7" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qualis2">quale</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
-                <w  rend="letter" n="7" pos="CONcoo" msd="MORPH=empty" lemma="aut">aut</w>
-                <w  rend="letter" n="7" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="habeo">habeat</w>
-                <w  rend="letter" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="commodo1">commodare</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="consensus">consensum</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aequitas">aequitas</w>
-                <w  rend="letter" n="7" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="clementia">clementia</w>
-                <w  rend="letter" n="7" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="tuus">tua</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="possum1">poterit</w>
-                <w  rend="letter" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="aestimo">aestimare</w>
-                <w  rend="letter" n="7" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa005.opp-lat1:6">
+        <w  rend="letter" n="6" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="letter" n="6" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="tantum1">tantum</w>
+                <w  rend="letter" n="6" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="rabies">rabiem</w>
+                <w  rend="letter" n="6" pos="PROpos.ref" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="suus">suam</w>
+                <w  rend="letter" n="6" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="miles">milites</w>
+                <w  rend="letter" n="6" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="extendo">extendere</w>
+                <w  rend="letter" n="6" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=SemDep" lemma="audeo">ausi</w>
+                <w  rend="letter" n="6" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="letter" n="6" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="letter" n="6" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="letter" n="6" pos="ADV" msd="Deg=Pos" lemma="solum2">solum</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ciuitas">ciuitatis</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="clericus">clericos</w>
+                <w  rend="letter" n="6" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="effugo">effugarent</w>
+                <w  rend="letter" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="letter" n="6" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="letter" n="6" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="letter" n="6" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Deg=Pos" lemma="heri">here</w>
+                <w  rend="letter" n="6" pos="PROpos" msd="Case=Acc|Numb=Plur" lemma="mius">mias</w>
+                <w  rend="letter" n="6" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="exeo1">exirent</w>
+                <w  rend="letter" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="6" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="funestus">funestas</w>
+                <w  rend="letter" n="6" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="suus">suas</w>
+                <w  rend="letter" n="6" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="manus1">manus</w>
+                <w  rend="letter" n="6" pos="PRE" msd="MORPH=empty" lemma="aduersus3">aduersus</w>
+                <w  rend="letter" n="6" pos="FOR" msd="MORPH=empty" lemma="[Greek]">μονάξοντας</w>
+                <w  rend="letter" n="6" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="immitto">inmitterent</w>
+                <w  rend="letter" n="6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

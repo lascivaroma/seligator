@@ -2,12 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi003.perseus-lat2:46">
-        <w  rend="line" n="46" pos="ADV" msd="Deg=Pos" lemma="illuc">illuc</w>
-                <w  rend="line" n="46" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Dep|Person=2" lemma="regredior">regredere</w>
-                <w  rend="line" n="46" pos="PRE" msd="MORPH=empty" lemma="ab">ab</w>
-                <w  rend="line" n="46" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ostium">ostio</w>
-                <w  rend="line" n="46" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi003.perseus-lat2:18-19">
+        <w  rend="line" n="18" pos="CONcoo" msd="MORPH=empty" lemma="atque1">atque</w>
+                <w  rend="line" n="18" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="line" n="18" pos="ADV" msd="Deg=Pos" lemma="uero3">vero</w>
+                <w  rend="line" n="18" pos="ADV" msd="Deg=Comp" lemma="parum2">minus</w>
+                <w  rend="line" n="18" pos="ADV" msd="Deg=Comp" lemma="parum">minusque</w>
+                <w  rend="line" n="18" pos="CON" msd="MORPH=empty" lemma="que">{minusque}</w>
+                <w  rend="line" n="18" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="impendium">impendio</w>
+                <w  rend="line" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="curo">curare</w>
+                <w  rend="line" n="19" pos="ADV" msd="Deg=Comp" lemma="parum">mínusque</w>
+                <w  rend="line" n="19" pos="CON" msd="MORPH=empty" lemma="que">{mínusque}</w>
+                <w  rend="line" n="19" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="19" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="impertio">impertire</w>
+                <w  rend="line" n="19" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="honor">honoribus</w>
+                <w  rend="line" n="19" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

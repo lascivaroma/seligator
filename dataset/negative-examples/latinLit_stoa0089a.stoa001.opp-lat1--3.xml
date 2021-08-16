@@ -2,13 +2,24 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089a.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089a.stoa001.opp-lat1:3.8">
-        <w  rend="chapter" n="3.8" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
-                <w  rend="chapter" n="3.8" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
-                <w  rend="chapter" n="3.8" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
-                <w  rend="chapter" n="3.8" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sint</w>
-                <w  rend="chapter" n="3.8" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="chapter" n="3.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089a.stoa001.opp-lat1:ep">
+        <w  rend="book" n="ep" pos="CONcoo" msd="MORPH=empty" lemma="igitur">Igitur</w>
+                <w  rend="book" n="ep" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="omnis">omne</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="corpus">corpus</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="quantitas">quantitati</w>
+                <w  rend="book" n="ep" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Dat|Numb=Sing|Deg=Pos" lemma="qualitas">qualitati</w>
+                <w  rend="book" n="ep" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="subicio">subiectum</w>
+                <w  rend="book" n="ep" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="book" n="ep" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="ep" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="subicio">subiecto</w>
+                <w  rend="book" n="ep" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="corpus">corpore</w>
+                <w  rend="book" n="ep" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="corpus">corpus</w>
+                <w  rend="book" n="ep" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="book" n="ep" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="book" n="ep" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

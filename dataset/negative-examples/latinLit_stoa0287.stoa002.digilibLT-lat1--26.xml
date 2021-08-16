@@ -2,12 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0287.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0287.stoa002.digilibLT-lat1:index">
-        <w  rend="book" n="index" pos="ADJcar" msd="MORPH=empty" lemma="3">67</w>
-                <w  rend="book" n="index" pos="PRE" msd="MORPH=empty" lemma="de">De</w>
-                <w  rend="book" n="index" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cura">cura</w>
-                <w  rend="book" n="index" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="lumbus">lumborum</w>
-                <w  rend="book" n="index" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0287.stoa002.digilibLT-lat1:1.20.1">
+        <w  rend="paragraph" n="1.20.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">Est</w>
+                <w  rend="paragraph" n="1.20.1" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
+                <w  rend="paragraph" n="1.20.1" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="alius">alia</w>
+                <w  rend="paragraph" n="1.20.1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="compositio">compositio</w>
+                <w  rend="paragraph" n="1.20.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="suffimentum">suffimentorum</w>
+                <w  rend="paragraph" n="1.20.1" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="paragraph" n="1.20.1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="morbus">morbos</w>
+                <w  rend="paragraph" n="1.20.1" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Adj|Voice=Pass" lemma="prohibeo">prohibendos</w>
+                <w  rend="paragraph" n="1.20.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="1.20.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="sumptuosus">sumptuosior</w>
+                <w  rend="paragraph" n="1.20.1" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="paragraph" n="1.20.1" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="paragraph" n="1.20.1" pos="ADVrel" msd="MORPH=empty" lemma="ut1">ut</w>
+                <w  rend="paragraph" n="1.20.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="puto">putatur</w>
+                <w  rend="paragraph" n="1.20.1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="utilis">utilior</w>
+                <w  rend="paragraph" n="1.20.1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

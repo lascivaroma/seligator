@@ -2,13 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215b.stoa002.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa002.opp-lat1:4.113">
-        <w  rend="line" n="4.113" pos="PROrel" msd="Numb=Sing" lemma="quod1">quod</w>
-                <w  rend="line" n="4.113" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="regnum">regna</w>
-                <w  rend="line" n="4.113" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sero3">serat</w>
-                <w  rend="line" n="4.113" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="felix">felicia</w>
-                <w  rend="line" n="4.113" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uerbum">uerbo</w>
-                <w  rend="line" n="4.113" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa002.opp-lat1:3.1-3.2">
+        <w  rend="line" n="3.1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">Quod</w>
+                <w  rend="line" n="3.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="line" n="3.1" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="line" n="3.1" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="secla">seclis</w>
+                <w  rend="line" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui">quodque</w>
+                <w  rend="line" n="3.1" pos="CON" msd="MORPH=empty" lemma="que">{quodque}</w>
+                <w  rend="line" n="3.1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="3.1" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="3.1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="seculus">secla</w>
+                <w  rend="line" n="3.1" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="seculus">seclorum</w>
+                <w  rend="line" n="3.1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.2" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
+                <w  rend="line" n="3.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erit</w>
+                <w  rend="line" n="3.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.2" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
+                <w  rend="line" n="3.2" pos="ADV" msd="Deg=Pos" lemma="semper">semper</w>
+                <w  rend="line" n="3.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="sum1">erat</w>
+                <w  rend="line" n="3.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.2" pos="PRE" msd="MORPH=empty" lemma="sine">sine</w>
+                <w  rend="line" n="3.2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="finis">fine</w>
+                <w  rend="line" n="3.2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="maneo">manens</w>
+                <w  rend="line" n="3.2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="3.2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

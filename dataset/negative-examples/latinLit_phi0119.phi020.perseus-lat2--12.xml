@@ -2,12 +2,17 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi020.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi020.perseus-lat2:740b">
-        <w  rend="line" n="740b" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="idem">Idem</w>
-                <w  rend="line" n="740b" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="istic1">istuc</w>
-                <w  rend="line" n="740b" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="defero">delatum</w>
-                <w  rend="line" n="740b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="scio">scio</w>
-                <w  rend="line" n="740b" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi020.perseus-lat2:413b-414">
+        <w  rend="line" n="413b" pos="ADV" msd="Deg=Pos" lemma="nunc">Nunc</w>
+                <w  rend="line" n="413b" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
+                <w  rend="line" n="413b" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="413b" pos="ADV" msd="Deg=Pos" lemma="interim">interim</w>
+                <w  rend="line" n="414" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
+                <w  rend="line" n="414" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
+                <w  rend="line" n="414" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="puerpera">puerpera</w>
+                <w  rend="line" n="414" pos="ADV" msd="Deg=Pos" lemma="hic2">hic</w>
+                <w  rend="line" n="414" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="procuro">procuras</w>
+                <w  rend="line" n="414" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

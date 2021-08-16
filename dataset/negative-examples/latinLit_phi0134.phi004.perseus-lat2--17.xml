@@ -2,14 +2,22 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0134.phi004.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi004.perseus-lat2:235">
-        <w  rend="line" n="235" pos="CONcoo" msd="MORPH=empty" lemma="atqui">Atqui</w>
-                <w  rend="line" n="235" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="reperio">repperi</w>
-                <w  rend="line" n="235" pos="ADV" msd="Deg=Pos" lemma="iam">iam</w>
-                <w  rend="line" n="235" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="line" n="235" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="alius">aliud</w>
-                <w  rend="line" n="235" pos="NOMcom" msd="Numb=Sing" lemma="curo">cura</w>
-                <w  rend="line" n="235" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0134.phi004.perseus-lat2:375-377">
+        <w  rend="line" n="375" pos="VER" msd="Case=Dat|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="absum1">Absenti</w>
+                <w  rend="line" n="375" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="line" n="376" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">Te</w>
+                <w  rend="line" n="376" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="indignus">indignas</w>
+                <w  rend="line" n="376" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="376" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui">seque</w>
+                <w  rend="line" n="376" pos="CON" msd="MORPH=empty" lemma="que">{seque}</w>
+                <w  rend="line" n="376" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Fem|Deg=Pos" lemma="dignus">dignas</w>
+                <w  rend="line" n="376" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="376" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="contumelia">contumelias</w>
+                <w  rend="line" n="377" pos="ADVneg" msd="MORPH=empty" lemma="numquam">Nunquam</w>
+                <w  rend="line" n="377" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="cesso">cessavit</w>
+                <w  rend="line" n="377" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="dico2">dicere</w>
+                <w  rend="line" n="377" pos="ADV" msd="Deg=Pos" lemma="hodie">hodie</w>
+                <w  rend="line" n="377" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

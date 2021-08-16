@@ -2,22 +2,43 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0353.stoa002.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0353.stoa002.digilibLT-lat1:7">
-        <w  rend="unknown" n="7" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
-                <w  rend="unknown" n="7" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="unknown" n="7" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="alius">aliud</w>
-                <w  rend="unknown" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="spero">sperare</w>
-                <w  rend="unknown" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="possum1">potuisti</w>
-                <w  rend="unknown" n="7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="7" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="miles">miles</w>
-                <w  rend="unknown" n="7" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Com|Deg=Pos" lemma="infelix">infelix</w>
-                <w  rend="unknown" n="7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="7" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Sup" lemma="turpis">turpissimo</w>
-                <w  rend="unknown" n="7" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="ille">illi</w>
-                <w  rend="unknown" n="7" pos="ADV" msd="Deg=Pos" lemma="tunc">tunc</w>
-                <w  rend="unknown" n="7" pos="VER" msd="Numb=Plur" lemma="deuoueo">devote</w>
-                <w  rend="unknown" n="7" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="prodigium">prodigio</w>
-                <w  rend="unknown" n="7" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0353.stoa002.digilibLT-lat1:5">
+        <w  rend="unknown" n="5" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="magnus">Magnus</w>
+                <w  rend="unknown" n="5" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Alexander">Alexander</w>
+                <w  rend="unknown" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="5" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="unknown" n="5" pos="PRE" msd="MORPH=empty" lemma="praeter2">praeter</w>
+                <w  rend="unknown" n="5" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Macedones">Macedonas</w>
+                <w  rend="unknown" n="5" pos="PROpos.ref" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="suus">suos</w>
+                <w  rend="unknown" n="5" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=Fem|Deg=Pos" lemma="cunctus">cunctae</w>
+                <w  rend="unknown" n="5" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Graecia">Graeciae</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uniuersus">universo</w>
+                <w  rend="unknown" n="5" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Illyricum">Illyrico</w>
+                <w  rend="unknown" n="5" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="innumerabilis">innumerabilem</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing|Mood=Par|Tense=Perf|Voice=Pass" lemma="dilectus1">dilectum</w>
+                <w  rend="unknown" n="5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="possum1">posset</w>
+                <w  rend="unknown" n="5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="indico2">indicere</w>
+                <w  rend="unknown" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="5" pos="ADVneg" msd="MORPH=empty" lemma="numquam">numquam</w>
+                <w  rend="unknown" n="5" pos="ADV" msd="Deg=Pos" lemma="tamen">tamen</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Acc|Numb=Plur|Deg=Comp" lemma="magnus">maiores</w>
+                <w  rend="unknown" n="5" pos="ADJcar" msd="Case=Ind" lemma="quadraginta">quadraginta</w>
+                <w  rend="unknown" n="5" pos="ADJcar" msd="Case=Gen|Numb=Plur|Gend=Com" lemma="mille">milium</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="copia">copias</w>
+                <w  rend="unknown" n="5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="duco">duxit</w>
+                <w  rend="unknown" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="5" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="inhabilis">inhabile</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Dat|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="rego">regenti</w>
+                <w  rend="unknown" n="5" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="reor">ratus</w>
+                <w  rend="unknown" n="5" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quisquis1">quidquid</w>
+                <w  rend="unknown" n="5" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="excedo1">excederet</w>
+                <w  rend="unknown" n="5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="turba">turbam</w>
+                <w  rend="unknown" n="5" pos="ADV" msd="Deg=Comp" lemma="potius">potius</w>
+                <w  rend="unknown" n="5" pos="ADVrel" msd="MORPH=empty" lemma="quam1">quam</w>
+                <w  rend="unknown" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="exercitus1">exercitum</w>
+                <w  rend="unknown" n="5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

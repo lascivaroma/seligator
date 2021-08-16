@@ -2,12 +2,23 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0357c.stoa004.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0357c.stoa004.digilibLT-lat1:6.453b">
-        <w  rend="scholia" n="6.453b" pos="VER" msd="Case=Nom|Numb=Plur" lemma="Flammis">FLAMMISQVE</w>
-                <w  rend="scholia" n="6.453b" pos="CON" msd="MORPH=empty" lemma="que">{FLAMMISQVE}</w>
-                <w  rend="scholia" n="6.453b" pos="NOMpro" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="Seuerus">SEVERI</w>
-                <w  rend="scholia" n="6.453b" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="philosophus1">philosophi</w>
-                <w  rend="scholia" n="6.453b" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0357c.stoa004.digilibLT-lat1:1.34">
+        <w  rend="scholia" n="1.34" pos="VER" msd="Case=Abl|Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="inuenio">INVENERE</w>
+                <w  rend="scholia" n="1.34" pos="VER" msd="Case=Acc|Numb=Sing" lemma="Uia">VIAM</w>
+                <w  rend="scholia" n="1.34" pos="NOMcom" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="Magnus">MAGNOQVE</w>
+                <w  rend="scholia" n="1.34" pos="CON" msd="MORPH=empty" lemma="que">{MAGNOQVE}</w>
+                <w  rend="scholia" n="1.34" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Aeternus">AETERNA</w>
+                <w  rend="scholia" n="1.34" pos="VER" msd="Case=Nom|Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="Parantur">PARANTVR</w>
+                <w  rend="scholia" n="1.34" pos="PUNC" msd="MORPH=empty" lemma="&#x2018;">‘</w>
+                <w  rend="scholia" n="1.34" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="magnus">magno</w>
+                <w  rend="scholia" n="1.34" pos="PUNC" msd="MORPH=empty" lemma="&#x2019;">’</w>
+                <w  rend="scholia" n="1.34" pos="ADV" msd="Deg=Pos|Mood=Par|Tense=Perf|Voice=Pass" lemma="absolute">absolute</w>
+                <w  rend="scholia" n="1.34" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="scholia" n="1.34" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="scholia" n="1.34" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="scholia" n="1.34" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="magnus">magno</w>
+                <w  rend="scholia" n="1.34" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pretium">pretio</w>
+                <w  rend="scholia" n="1.34" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

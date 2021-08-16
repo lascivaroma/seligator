@@ -2,15 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0209.stoa001.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0209.stoa001.thayer-lat1:2.35">
-        <w  rend="line" n="2.35" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="2.35" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="line" n="2.35" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="2.35" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
-                <w  rend="line" n="2.35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=2" lemma="nosco">nosti</w>
-                <w  rend="line" n="2.35" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="2.35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="refero">referam</w>
-                <w  rend="line" n="2.35" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0209.stoa001.thayer-lat1:3.35-3.36">
+        <w  rend="line" n="3.35" pos="ADV" msd="Deg=Pos" lemma="interea">interea</w>
+                <w  rend="line" n="3.35" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="puer">pueri</w>
+                <w  rend="line" n="3.35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="floresco">florescit</w>
+                <w  rend="line" n="3.35" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="pubes1">pube</w>
+                <w  rend="line" n="3.35" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="iuuentus">iuventus</w>
+                <w  rend="line" n="3.36" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut|Deg=Pos" lemma="flauus">flavaque</w>
+                <w  rend="line" n="3.36" pos="CON" msd="MORPH=empty" lemma="que">{flavaque}</w>
+                <w  rend="line" n="3.36" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="maturus">maturo</w>
+                <w  rend="line" n="3.36" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="tumeo">tumuerunt</w>
+                <w  rend="line" n="3.36" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="tempus2">tempora</w>
+                <w  rend="line" n="3.36" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cornu">cornu</w>
+                <w  rend="line" n="3.36" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

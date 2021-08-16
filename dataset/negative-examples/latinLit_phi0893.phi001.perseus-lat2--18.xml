@@ -2,13 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0893.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0893.phi001.perseus-lat2:4.2.47-4.2.48">
-        <w  rend="line" n="4.2.47" pos="PUNC" msd="MORPH=empty" lemma="&#x201D;">”</w>
-                <w  rend="line" n="4.2.47" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="cano">canam</w>
-                <w  rend="line" n="4.2.47" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="recipio">recepto</w>
-                <w  rend="line" n="4.2.48" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Caesar">Caesare</w>
-                <w  rend="line" n="4.2.48" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="felix">felix</w>
-                <w  rend="line" n="4.2.48" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0893.phi001.perseus-lat2:1.18.6">
+        <w  rend="line" n="1.18.6" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">quis</w>
+                <w  rend="line" n="1.18.6" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="1.18.6" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="1.18.6" pos="ADV" msd="Deg=Comp" lemma="potius">potius</w>
+                <w  rend="line" n="1.18.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.18.6" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Bacchus">Bacche</w>
+                <w  rend="line" n="1.18.6" pos="NOMcom" msd="Case=Voc|Numb=Sing" lemma="pater">pater</w>
+                <w  rend="line" n="1.18.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.18.6" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">teque</w>
+                <w  rend="line" n="1.18.6" pos="CON" msd="MORPH=empty" lemma="que">{teque}</w>
+                <w  rend="line" n="1.18.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.18.6" pos="ADJqua" msd="Case=Voc|Numb=Sing|Gend=Com|Deg=Pos" lemma="decens">decens</w>
+                <w  rend="line" n="1.18.6" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Uenus">Venus</w>
+                <w  rend="line" n="1.18.6" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
                 
     </quote>
  </div>

@@ -2,18 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1020.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:5.1.208-5.1.210">
-        <w  rend="line" n="5.1.208" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">Quis</w>
-                <w  rend="line" n="5.1.208" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="carmen1">carmine</w>
-                <w  rend="line" n="5.1.208" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="dignus">digno</w>
-                <w  rend="line" n="5.1.209" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="exsequiae">exsequias</w>
-                <w  rend="line" n="5.1.209" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="5.1.209" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="donum">dona</w>
-                <w  rend="line" n="5.1.209" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="mala">malae</w>
-                <w  rend="line" n="5.1.209" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="feralia">feralia</w>
-                <w  rend="line" n="5.1.209" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="pompa">pompae</w>
-                <w  rend="line" n="5.1.210" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="perlego2">perlegat</w>
-                <w  rend="line" n="5.1.210" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1020.phi002.perseus-lat2:1.4.61-1.4.62">
+        <w  rend="line" n="1.4.61" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="praecido">praecidensque</w>
+                <w  rend="line" n="1.4.61" pos="CON" msd="MORPH=empty" lemma="que">{praecidensque}</w>
+                <w  rend="line" n="1.4.61" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mora">moras</w>
+                <w  rend="line" n="1.4.61" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="1.4.61" pos="PUNC" msd="MORPH=empty" lemma="&#x2018;">‘</w>
+                <w  rend="line" n="1.4.61" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="line" n="1.4.61" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">mecum</w>
+                <w  rend="line" n="1.4.61" pos="CON" msd="MORPH=empty" lemma="cum3">{mecum}</w>
+                <w  rend="line" n="1.4.61" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.4.61" pos="NOMpro" msd="Case=Voc|Numb=Sing|Gend=Fem" lemma="Epidauria">Epidauria</w>
+                <w  rend="line" n="1.4.61" pos="NOMcom" msd="Case=Voc|Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="proles">proles</w>
+                <w  rend="line" n="1.4.61" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.4.62" pos="ADV" msd="Deg=Pos" lemma="hinc">hinc</w>
+                <w  rend="line" n="1.4.62" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="line" n="1.4.62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="aio">ait</w>
+                <w  rend="line" n="1.4.62" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="line" n="1.4.62" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="eo1">i</w>
+                <w  rend="line" n="1.4.62" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com" lemma="gaudeo">gaudens</w>
+                <w  rend="line" n="1.4.62" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="1.4.62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="do">datur</w>
+                <w  rend="line" n="1.4.62" pos="PUNC" msd="MORPH=empty" lemma="&#x2014;">—</w>
+                <w  rend="line" n="1.4.62" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Adj|Voice=Dep" lemma="aggredior">aggredienda</w>
+                <w  rend="line" n="1.4.62" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="facultas">facultas</w>
+                <w  rend="line" n="1.4.62" pos="PUNC" msd="MORPH=empty" lemma="!">!</w>
                 
     </quote>
  </div>

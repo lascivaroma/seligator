@@ -2,32 +2,34 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0119a.stoa001e.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001e.digilibLT-lat1:pr1">
-        <w  rend="comment" n="pr1" pos="PROrel" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="qui1">cuius</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="induco">inducitur</w>
-                <w  rend="comment" n="pr1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="prologus">prologus</w>
-                <w  rend="comment" n="pr1" pos="ADJmul" msd="Case=Nom|Numb=Sing|Gend=Com|Deg=Pos" lemma="duplex">duplex</w>
-                <w  rend="comment" n="pr1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="pr1" pos="ADV" msd="Deg=Pos" lemma="propterea">propterea</w>
-                <w  rend="comment" n="pr1" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
-                <w  rend="comment" n="pr1" pos="ADV" msd="Deg=Pos" lemma="frequenter">frequenter</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="excludo">exclusa</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="comment" n="pr1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="pr1" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="intelligo">intelligi</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="do">detur</w>
-                <w  rend="comment" n="pr1" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primam</w>
-                <w  rend="comment" n="pr1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="prologus">prologi</w>
-                <w  rend="comment" n="pr1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="pars">partem</w>
-                <w  rend="comment" n="pr1" pos="ADV" msd="Deg=Pos" lemma="antea">antea</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="dico2">dictam</w>
-                <w  rend="comment" n="pr1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="comment" n="pr1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="posterus">posteriorem</w>
-                <w  rend="comment" n="pr1" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="comment" n="pr1" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="socio">sociatam</w>
-                <w  rend="comment" n="pr1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0119a.stoa001e.digilibLT-lat1:336">
+        <w  rend="comment" n="336" pos="NOMpro" msd="Case=Dat|Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="Nescio">NESCIO</w>
+                <w  rend="comment" n="336" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">QVID</w>
+                <w  rend="comment" n="336" pos="NOMpro" msd="Deg=Pos" lemma="iam">IAM</w>
+                <w  rend="comment" n="336" pos="VER" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="dudum">DVDVM</w>
+                <w  rend="comment" n="336" pos="NOMpro" msd="Numb=Sing|Person=3" lemma="Audion">AVDIO</w>
+                <w  rend="comment" n="336" pos="PROdem" msd="Case=Voc|Numb=Plur|Gend=Masc" lemma="hic1">HIC</w>
+                <w  rend="comment" n="336" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Tumultus">TVMVLTVARI</w>
+                <w  rend="comment" n="336" pos="ADJqua" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="Misera">MISERA</w>
+                <w  rend="comment" n="336" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
+                <w  rend="comment" n="336" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="scena">scaena</w>
+                <w  rend="comment" n="336" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
+                <w  rend="comment" n="336" pos="PROind" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="quidam">quandam</w>
+                <w  rend="comment" n="336" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="deliberatio">deliberationem</w>
+                <w  rend="comment" n="336" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="teneo">tenet</w>
+                <w  rend="comment" n="336" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="comment" n="336" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="aegrotus">aegrotam</w>
+                <w  rend="comment" n="336" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="nurus">nurum</w>
+                <w  rend="comment" n="336" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="336" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="comment" n="336" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="rumor">rumor</w>
+                <w  rend="comment" n="336" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
+                <w  rend="comment" n="336" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="comment" n="336" pos="PROrel" msd="Numb=Sing" lemma="qui1">quod</w>
+                <w  rend="comment" n="336" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="grauis">grauis</w>
+                <w  rend="comment" n="336" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="morbus">morbus</w>
+                <w  rend="comment" n="336" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="ingrauesco">ingrauescat</w>
+                <w  rend="comment" n="336" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

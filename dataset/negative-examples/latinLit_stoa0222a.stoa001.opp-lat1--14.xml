@@ -2,21 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0222a.stoa001.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:1.69-1.70">
-        <w  rend="line" n="1.69" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="1.69" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ago">agunt</w>
-                <w  rend="line" n="1.69" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="line" n="1.69" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="corpus">corpore</w>
-                <w  rend="line" n="1.69" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="castus2">casto</w>
-                <w  rend="line" n="1.70" pos="ADJcar" msd="MORPH=empty" lemma="3">70</w>
-                <w  rend="line" n="1.70" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="cerussa">cerussa</w>
-                <w  rend="line" n="1.70" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="1.70" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="minium">minium</w>
-                <w  rend="line" n="1.70" pos="ADJcar" msd="Case=Ind" lemma="centum">centumque</w>
-                <w  rend="line" n="1.70" pos="CON" msd="MORPH=empty" lemma="que">{centumque}</w>
-                <w  rend="line" n="1.70" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="uenenum">uenena</w>
-                <w  rend="line" n="1.70" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="color">colorum</w>
-                <w  rend="line" n="1.70" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0222a.stoa001.opp-lat1:pr">
+        <w  rend="poem" n="pr" pos="ADV" msd="Deg=Pos" lemma="ita">ita</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sermo">sermo</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="abrumpo">abruptus</w>
+                <w  rend="poem" n="pr" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="poem" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="crastinum">crastinum</w>
+                <w  rend="poem" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dies">diem</w>
+                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma="&#xAB;">«</w>
+                <w  rend="poem" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="differo">differtur</w>
+                <w  rend="poem" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

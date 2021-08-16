@@ -2,14 +2,48 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0244d.stoa005.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0244d.stoa005.opp-lat1:7.20">
-        <w  rend="paragraph" n="7.20" pos="ADJcar" msd="MORPH=empty" lemma="5">V</w>
-                <w  rend="paragraph" n="7.20" pos="PUNC" msd="MORPH=empty" lemma="=">=</w>
-                <w  rend="paragraph" n="7.20" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="caudex">codex</w>
-                <w  rend="paragraph" n="7.20" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="Uindobonenses">Vindobonensis</w>
-                <w  rend="paragraph" n="7.20" pos="ADJcar" msd="MORPH=empty" lemma="3">759</w>
-                <w  rend="paragraph" n="7.20" pos="ADV" msd="MORPH=empty" lemma="saec">saec</w>
-                <w  rend="paragraph" n="7.20" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0244d.stoa005.opp-lat1:pr">
+        <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=2" lemma="peto">petebas</w>
+                <w  rend="book" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="ergo2">ergo</w>
+                <w  rend="book" n="pr" pos="NOMpro" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="Gregorius">Gregorium</w>
+                <w  rend="book" n="pr" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
+                <w  rend="book" n="pr" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="book" n="pr" pos="NOMpro" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="Latinus">Latinum</w>
+                <w  rend="book" n="pr" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="uerto">uerti</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uir">uirum</w>
+                <w  rend="book" n="pr" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="book" n="pr" pos="PROind" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="omnis">omnia</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="incomparabilis">inconparabilem</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uerbum">uerbo</w>
+                <w  rend="book" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="opus1">operibus</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="clarus">clarus</w>
+                <w  rend="book" n="pr" pos="VER" msd="Case=Gen|Numb=Sing|Mood=Ger|Voice=Act" lemma="splendium">splendi</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma="&#xAD;">­</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Deg=Sup" lemma="dissimus">dissimum</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="lumen">lumen</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="scientia">scientiae</w>
+                <w  rend="book" n="pr" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Christus">Christi</w>
+                <w  rend="book" n="pr" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="ecclesia">ecclesiis</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="praebeo">praebuit</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="pr" pos="CONsub" msd="MORPH=empty" lemma="dum2">dum</w>
+                <w  rend="book" n="pr" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="is">ea</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="doceo">docuit</w>
+                <w  rend="book" n="pr" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="facio">fecit</w>
+                <w  rend="book" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
+                <w  rend="book" n="pr" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
+                <w  rend="book" n="pr" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="ipse">ipsum</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="condemno">condemnauit</w>
+                <w  rend="book" n="pr" pos="VER" msd="Case=Abl|Numb=Sing|Mood=Ger|Voice=Act" lemma="ago">agendo</w>
+                <w  rend="book" n="pr" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Pos" lemma="contrarius">contraria</w>
+                <w  rend="book" n="pr" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="qui1">quam</w>
+                <w  rend="book" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Impa|Voice=Act|Person=3" lemma="doceo">docebat</w>
+                <w  rend="book" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

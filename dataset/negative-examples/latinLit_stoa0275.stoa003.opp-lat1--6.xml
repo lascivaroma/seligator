@@ -2,12 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0275.stoa003.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa003.opp-lat1:4">
-        <w  rend="chapter" n="4" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
-                <w  rend="chapter" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="chapter" n="4" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="antus">Anto</w>
-                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma="(">(</w>
-                <w  rend="chapter" n="4" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0275.stoa003.opp-lat1:1">
+        <w  rend="chapter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="amicus1">Amicos</w>
+                <w  rend="chapter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="chapter" n="1" pos="VER" msd="Numb=Plur|Mood=Inf|Tense=Pres|Voice=Act" lemma="diligo3">diligere</w>
+                <w  rend="chapter" n="1" pos="PROind" msd="Case=Gen|Numb=Plur|Gend=Com" lemma="omnis">omnium</w>
+                <w  rend="chapter" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="chapter" n="1" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="inimicus1">inimicos</w>
+                <w  rend="chapter" n="1" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
+                <w  rend="chapter" n="1" pos="PROind" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="solus">solorum</w>
+                <w  rend="chapter" n="1" pos="ADJqua" msd="Case=Gen|Numb=Plur|Deg=Pos" lemma="Christianus">Christianorum</w>
+                <w  rend="chapter" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

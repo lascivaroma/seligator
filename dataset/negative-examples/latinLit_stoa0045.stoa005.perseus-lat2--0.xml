@@ -3,14 +3,43 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa005.perseus-lat2</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa005.perseus-lat2:pr">
-        <w  rend="line" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="uerum4">verum</w>
-                <w  rend="line" n="pr" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="line" n="pr" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="line" n="pr" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Com" lemma="hic1">huic</w>
-                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Dat|Numb=Sing|Deg=Pos" lemma="ecloga">eclogae</w>
-                <w  rend="line" n="pr" pos="ADV" msd="Deg=Pos" lemma="studiose">studiose</w>
-                <w  rend="line" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=1" lemma="patrocinor">patrocinor</w>
-                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+        <w  rend="line" n="pr" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Treuiri">Treveris</w>
+                <w  rend="line" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="quippe2">quippe</w>
+                <w  rend="line" n="pr" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="triclinium">triclinio</w>
+                <w  rend="line" n="pr" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Zoilium">Zoili</w>
+                <w  rend="line" n="pr" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="fucatus">fucata</w>
+                <w  rend="line" n="pr" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pictura">pictura</w>
+                <w  rend="line" n="pr" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="hic1">haec</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="pr" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Cupido">Cupidinem</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="crux">cruci</w>
+                <w  rend="line" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="affigo">adfigunt</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="mulier">mulieres</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="amatrices">amatrices</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="pr" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="pr" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="iste">istae</w>
+                <w  rend="line" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="line" n="pr" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="noster">nostro</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="saeculum">saeculo</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="pr" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="pr" pos="ADV" msd="Deg=Pos" lemma="spons">sponte</w>
+                <w  rend="line" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pecco">peccant</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="line" n="pr" pos="PROdem" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="ille">illae</w>
+                <w  rend="line" n="pr" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="heroicus">heroicae</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="pr" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Fem" lemma="qui1">quae</w>
+                <w  rend="line" n="pr" pos="PROref" msd="Case=Dat|Numb=Plur" lemma="sui1">sibi</w>
+                <w  rend="line" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="ignosco">ignoscunt</w>
+                <w  rend="line" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="pr" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="plecto2">plectunt</w>
+                <w  rend="line" n="pr" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="deus">deum</w>
+                <w  rend="line" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -26,7 +26,7 @@ from seligator.modules.seq2vec import \
 
 import logging
 
-logging.getLogger().setLevel(logging.INFO)
+logging.getLogger().setLevel(logging.WARNING)
 
 
 class Seligator:

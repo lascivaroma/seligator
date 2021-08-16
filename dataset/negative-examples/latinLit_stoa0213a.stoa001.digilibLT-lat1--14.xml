@@ -2,15 +2,12 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:II.p.64">
-        <w  rend="section" n="II.p.64" pos="VER" msd="Case=Nom|Numb=Sing" lemma="Pauciens">PAVCIENS</w>
-                <w  rend="section" n="II.p.64" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
-                <w  rend="section" n="II.p.64" pos="ADV" msd="Case=Abl|Numb=Sing|Deg=Pos" lemma="raro">raro</w>
-                <w  rend="section" n="II.p.64" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="dico2">dici</w>
-                <w  rend="section" n="II.p.64" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="uetus">veterum</w>
-                <w  rend="section" n="II.p.64" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="auctoritas">auctoritas</w>
-                <w  rend="section" n="II.p.64" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="doceo">docet</w>
-                <w  rend="section" n="II.p.64" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0213a.stoa001.digilibLT-lat1:VIII">
+        <w  rend="book" n="VIII" pos="NOMpro" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="Gelon">GELO</w>
+                <w  rend="book" n="VIII" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="VIII" pos="PRE" msd="MORPH=empty" lemma="pro1">pro</w>
+                <w  rend="book" n="VIII" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="gelu">gelu</w>
+                <w  rend="book" n="VIII" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,19 +2,14 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0089.stoa013.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa013.perseus-lat2:1.245-1.246">
-        <w  rend="line" n="1.245" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="frons1">frons</w>
-                <w  rend="line" n="1.245" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="priuatus">privata</w>
-                <w  rend="line" n="1.245" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="maneo">manet</w>
-                <w  rend="line" n="1.245" pos="CONcoo" msd="MORPH=empty" lemma="nec2">nec</w>
-                <w  rend="line" n="1.245" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
-                <w  rend="line" n="1.245" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="mereo">meruisse</w>
-                <w  rend="line" n="1.245" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="fateor">fatetur</w>
-                <w  rend="line" n="1.245" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="1.246" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="qui1">quae</w>
-                <w  rend="line" n="1.246" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="cresco">crevisse</w>
-                <w  rend="line" n="1.246" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="puto">putat</w>
-                <w  rend="line" n="1.246" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0089.stoa013.perseus-lat2:pr.17">
+        <w  rend="line" n="pr.17" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="princeps1">Princeps</w>
+                <w  rend="line" n="pr.17" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="pr.17" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="aquila">aquilis</w>
+                <w  rend="line" n="pr.17" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="terra">terras</w>
+                <w  rend="line" n="pr.17" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="cognosco">cognoscere</w>
+                <w  rend="line" n="pr.17" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="curo">curat</w>
+                <w  rend="line" n="pr.17" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

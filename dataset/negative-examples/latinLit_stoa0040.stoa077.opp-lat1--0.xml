@@ -2,14 +2,16 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040.stoa077.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa077.opp-lat1:auto-fill-sid">
-        <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADV" msd="MORPH=empty" lemma="contra1">Contra</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="VER" msd="Case=Acc|Numb=Sing" lemma="Adimantus">Adimantum</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Manichei">Manichei</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="discipulus">discipulum</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="liber1">liber</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="ADJcar" msd="MORPH=empty" lemma="1">I</w>
-                <w  rend="auto-fill-type" n="auto-fill-sid" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040.stoa077.opp-lat1:1.20.3">
+        <w  rend="section" n="1.20.3" pos="PROind" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="alius">Alio</w>
+                <w  rend="section" n="1.20.3" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="locus">loco</w>
+                <w  rend="section" n="1.20.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="dico2">dixi</w>
+                <w  rend="section" n="1.20.3" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="1.20.3" pos="PROind" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="nullus">nullius</w>
+                <w  rend="section" n="1.20.3" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mors">mortem</w>
+                <w  rend="section" n="1.20.3" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="section" n="1.20.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="quaero">quaerit</w>
+                <w  rend="section" n="1.20.3" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

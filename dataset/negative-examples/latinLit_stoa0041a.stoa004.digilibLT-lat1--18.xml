@@ -2,20 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1:40">
-        <w  rend="part" n="40" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="part" n="40" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
-                <w  rend="part" n="40" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="solutio">solutio</w>
-                <w  rend="part" n="40" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="part" n="40" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="part" n="40" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sudor">sudor</w>
-                <w  rend="part" n="40" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
-                <w  rend="part" n="40" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="inutilis">inutilis</w>
-                <w  rend="part" n="40" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
-                <w  rend="part" n="40" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="diaphoreticus">diaphoreticus</w>
-                <w  rend="part" n="40" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="part" n="40" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="monstro">monstratur</w>
-                <w  rend="part" n="40" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0041a.stoa004.digilibLT-lat1:pr">
+        <w  rend="part" n="pr" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
+                <w  rend="part" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="part" n="pr" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="specialis">speciali</w>
+                <w  rend="part" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="significatio">significatione</w>
+                <w  rend="part" n="pr" pos="ADJqua" msd="Case=Gen|Numb=Plur|Gend=Fem|Deg=Pos" lemma="diaetica">diaeticarum</w>
+                <w  rend="part" n="pr" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="passio">passionum</w>
+                <w  rend="part" n="pr" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="part" n="pr" pos="PRE" msd="MORPH=empty" lemma="de">de</w>
+                <w  rend="part" n="pr" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="generalis">generali</w>
+                <w  rend="part" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="curatio">curatione</w>
+                <w  rend="part" n="pr" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="respondeo">respondeamus</w>
+                <w  rend="part" n="pr" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="part" n="pr" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="part" n="pr" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="iste">isto</w>
+                <w  rend="part" n="pr" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uolumen">volumine</w>
+                <w  rend="part" n="pr" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="omnis">omnis</w>
+                <w  rend="part" n="pr" pos="ADJqua" msd="Case=Gen|Numb=Plur" lemma="diaetica">diaeticarum</w>
+                <w  rend="part" n="pr" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="cura">cura</w>
+                <w  rend="part" n="pr" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Dep|Person=3" lemma="compleo">compleatur</w>
+                <w  rend="part" n="pr" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

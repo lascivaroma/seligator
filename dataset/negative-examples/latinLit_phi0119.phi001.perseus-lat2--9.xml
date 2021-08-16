@@ -2,14 +2,19 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi001.perseus-lat2:518">
-        <w  rend="line" n="518" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Carnifex">Carnufex</w>
-                <w  rend="line" n="518" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="518" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="518" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="ego">ego</w>
-                <w  rend="line" n="518" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="line" n="518" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="nosco">novi</w>
-                <w  rend="line" n="518" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi001.perseus-lat2:1004">
+        <w  rend="line" n="1004" pos="PROpos" msd="Case=Dat|Numb=Sing|Gend=MascNeut" lemma="meus">meo</w>
+                <w  rend="line" n="1004" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
+                <w  rend="line" n="1004" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut|Deg=Pos" lemma="aequus">aéquomst</w>
+                <w  rend="line" n="1004" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">{aéquomst}</w>
+                <w  rend="line" n="1004" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="morigerus">morigerum</w>
+                <w  rend="line" n="1004" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="pater">patri</w>
+                <w  rend="line" n="1004" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1004" pos="PROdem" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="is">eius</w>
+                <w  rend="line" n="1004" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="studium">studio</w>
+                <w  rend="line" n="1004" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="seruio">servire</w>
+                <w  rend="line" n="1004" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="addecet">addecet</w>
+                <w  rend="line" n="1004" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

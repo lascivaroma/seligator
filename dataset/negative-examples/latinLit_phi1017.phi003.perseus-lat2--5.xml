@@ -2,15 +2,13 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:410-411">
-        <w  rend="line" n="410" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="line" n="410" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="410" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="410" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="pius">pius</w>
-                <w  rend="line" n="411" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="incipio">incipiat</w>
-                <w  rend="line" n="411" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="line" n="411" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">me</w>
-                <w  rend="line" n="411" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:661">
+        <w  rend="line" n="661" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="praeceptum">Praecepta</w>
+                <w  rend="line" n="661" pos="ADV" msd="Deg=Comp" lemma="bene">melius</w>
+                <w  rend="line" n="661" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="imperium">imperi</w>
+                <w  rend="line" n="661" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="rex">reges</w>
+                <w  rend="line" n="661" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="do">dabunt</w>
+                <w  rend="line" n="661" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

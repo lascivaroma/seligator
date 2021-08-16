@@ -3,12 +3,11 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0293i.stoa001.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0293i.stoa001.digilibLT-lat1:6">
-        <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="porcellum">porcellum</w>
+        <w  rend="unknown" n="6" pos="CONsub" msd="MORPH=empty" lemma="cum3">Cum</w>
+                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=2" lemma="coquo">coxeris</w>
                 <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="6" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="is">eo</w>
-                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="ius1">iure</w>
-                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="percus">percoque</w>
-                <w  rend="unknown" n="6" pos="CON" msd="MORPH=empty" lemma="que">{percoque}</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="amulus">amulo</w>
+                <w  rend="unknown" n="6" pos="ADJqua" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="obligo2">obligauis</w>
                 <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

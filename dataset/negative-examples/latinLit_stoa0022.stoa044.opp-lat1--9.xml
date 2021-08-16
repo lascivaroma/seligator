@@ -2,12 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0022.stoa044.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0022.stoa044.opp-lat1:10">
-        <w  rend="section" n="10" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
-                <w  rend="section" n="10" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=2" lemma="reddo">reddideris</w>
-                <w  rend="section" n="10" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="section" n="10" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=1" lemma="reficio">reficiam</w>
-                <w  rend="section" n="10" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0022.stoa044.opp-lat1:64">
+        <w  rend="section" n="64" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="section" n="64" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
+                <w  rend="section" n="64" pos="PROdem" msd="Case=Acc|Numb=Sing" lemma="isus">esum</w>
+                <w  rend="section" n="64" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">dominum</w>
+                <w  rend="section" n="64" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="credo">crediderunt</w>
+                <w  rend="section" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="section" n="64" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="interpretatio">interpretationem</w>
+                <w  rend="section" n="64" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="scriptura">scripturarum</w>
+                <w  rend="section" n="64" pos="PROdem" msd="Case=Dat|Numb=Sing|Gend=Masc" lemma="ille">illi</w>
+                <w  rend="section" n="64" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="uetustus">uetusto</w>
+                <w  rend="section" n="64" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="populus1">populo</w>
+                <w  rend="section" n="64" pos="VER" msd="Mood=Ind|Tense=Fut|Voice=Dep" lemma="feneror">faenerare</w>
+                <w  rend="section" n="64" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

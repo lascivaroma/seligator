@@ -3,13 +3,17 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0128b.stoa003.digilibLT-lat1:1">
-        <w  rend="0" n="1" pos="ADV" msd="Deg=Pos" lemma="ideo">Ideo</w>
-                <w  rend="0" n="1" pos="ADV" msd="Deg=Pos" lemma="et1">et</w>
-                <w  rend="0" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Triton">Tritona</w>
-                <w  rend="0" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="dico2">dicta</w>
+        <w  rend="0" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Turnus">Turnus</w>
+                <w  rend="0" n="1" pos="CONcoo" msd="MORPH=empty" lemma="enim2">enim</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="grex">Grece</w>
+                <w  rend="0" n="1" pos="ADVrel" msd="MORPH=empty" lemma="quasi1">quasi</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="turosnus">turosnus</w>
+                <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="dico2">dicitur</w>
+                <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="0" n="1" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="is">id</w>
                 <w  rend="0" n="1" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="dea">dea</w>
-                <w  rend="0" n="1" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="sapientia">sapientiae</w>
+                <w  rend="0" n="1" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="furibundus">furibundus</w>
+                <w  rend="0" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="sensus">sensus</w>
                 <w  rend="0" n="1" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>

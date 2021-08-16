@@ -2,17 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0096.stoa003.opp-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa003.opp-lat2:2.20.19-2.20.20">
-        <w  rend="line" n="2.20.19" pos="VER" msd="Numb=Sing|Deg=Pos" lemma="lautus">Laute</w>
-                <w  rend="line" n="2.20.19" pos="NOMcom" msd="Case=Acc|Numb=Sing|Mood=Par|Tense=Perf|Voice=Pass" lemma="cibatus">cibatum</w>
-                <w  rend="line" n="2.20.19" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="distendo">distenso</w>
-                <w  rend="line" n="2.20.19" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uenter">uentre</w>
-                <w  rend="line" n="2.20.19" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="declamo">declamas</w>
-                <w  rend="line" n="2.20.19" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="2.20.20" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="opprimo">Oppressus</w>
-                <w  rend="line" n="2.20.20" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="inopia">inopia</w>
-                <w  rend="line" n="2.20.20" pos="PRE" msd="Numb=Sing" lemma="cui">cu</w>
-                <w  rend="line" n="2.20.20" pos="PUNC" msd="MORPH=empty" lemma=")">)</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0096.stoa003.opp-lat2:1.11.6-1.11.8">
+        <w  rend="line" n="1.11.6" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="os2">Ossibus</w>
+                <w  rend="line" n="1.11.6" pos="PROrel" msd="Case=Gen|Numb=Sing|Gend=Com" lemma="qui1">cuius</w>
+                <w  rend="line" n="1.11.6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="amor">amor</w>
+                <w  rend="line" n="1.11.6" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Cassandra">Cassandrae</w>
+                <w  rend="line" n="1.11.6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="flagro">flagrauit</w>
+                <w  rend="line" n="1.11.6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.11.7" pos="NOMpro" msd="Deg=Pos" lemma="subdole">Subdole</w>
+                <w  rend="line" n="1.11.7" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
+                <w  rend="line" n="1.11.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="ludo">lusit</w>
+                <w  rend="line" n="1.11.7" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uirgo">uirgo</w>
+                <w  rend="line" n="1.11.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.11.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="fallo">falliturque</w>
+                <w  rend="line" n="1.11.7" pos="CON" msd="MORPH=empty" lemma="que">{falliturque}</w>
+                <w  rend="line" n="1.11.7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="diuinus2">diuinus</w>
+                <w  rend="line" n="1.11.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="1.11.8" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="officium">Officio</w>
+                <w  rend="line" n="1.11.8" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="uerbena">uerbenis</w>
+                <w  rend="line" n="1.11.8" pos="PUNC" msd="MORPH=empty" lemma="&#x2329;">〈</w>
+                <w  rend="line" n="1.11.8" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="1.11.8" pos="PUNC" msd="MORPH=empty" lemma="&#x232A;">〉</w>
+                <w  rend="line" n="1.11.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="possum1">potuit</w>
+                <w  rend="line" n="1.11.8" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="scio">scire</w>
+                <w  rend="line" n="1.11.8" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="bicor">bicordem</w>
+                <w  rend="line" n="1.11.8" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -2,30 +2,35 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0180a.stoa005.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa005.opp-lat1:7">
-        <w  rend="letter" n="7" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
-                <w  rend="letter" n="7" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="7" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="is">eo</w>
-                <w  rend="letter" n="7" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="ego">me</w>
-                <w  rend="letter" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="laboro">laborare</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="intelligo">intellego</w>
-                <w  rend="letter" n="7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="letter" n="7" pos="CONsub" msd="MORPH=empty" lemma="quia">quia</w>
-                <w  rend="letter" n="7" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Pass" lemma="repeto">repetita</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="satisfactio">satisfactione</w>
-                <w  rend="letter" n="7" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascFem|Deg=Pos" lemma="placabilis">placabilem</w>
-                <w  rend="letter" n="7" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
-                <w  rend="letter" n="7" pos="PRE" msd="MORPH=empty" lemma="circa2">circa</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="reus">reos</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="animus">animum</w>
-                <w  rend="letter" n="7" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="tuus">tuam</w>
-                <w  rend="letter" n="7" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="letter" n="7" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="gratia">gratiam</w>
-                <w  rend="letter" n="7" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="meus">meam</w>
-                <w  rend="letter" n="7" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="reuoco">reuocare</w>
-                <w  rend="letter" n="7" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="letter" n="7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="possum1">possum</w>
-                <w  rend="letter" n="7" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0180a.stoa005.opp-lat1:5">
+        <w  rend="letter" n="5" pos="PROper" msd="Case=Abl|Numb=Plur" lemma="uos">uobis</w>
+                <w  rend="letter" n="5" pos="CONcoo" msd="MORPH=empty" lemma="namque">namque</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="confessor">confessoribus</w>
+                <w  rend="letter" n="5" pos="CONcoo" msd="MORPH=empty" lemma="ac1">ac</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="semis1">semis</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="deus">dei</w>
+                <w  rend="letter" n="5" pos="VER" msd="Case=Dat|Numb=Plur|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="uiuo">uiuentibus</w>
+                <w  rend="letter" n="5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="credo">credimus</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="status1">statum</w>
+                <w  rend="letter" n="5" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="catholicus">catholicae</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="ecclesia">ecclesiae</w>
+                <w  rend="letter" n="5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="renouo">renouari</w>
+                <w  rend="letter" n="5" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="letter" n="5" pos="PROrel" msd="Numb=Sing|Gend=Neut" lemma="quod2">quod</w>
+                <w  rend="letter" n="5" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="haereticus">haeretici</w>
+                <w  rend="letter" n="5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="conscindo">conscindere</w>
+                <w  rend="letter" n="5" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="tento">temptauerunt</w>
+                <w  rend="letter" n="5" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="hic1">hoc</w>
+                <w  rend="letter" n="5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">dominum</w>
+                <w  rend="letter" n="5" pos="PROpos" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="noster">nostrum</w>
+                <w  rend="letter" n="5" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Iesus">Iesum</w>
+                <w  rend="letter" n="5" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Christus">Christum</w>
+                <w  rend="letter" n="5" pos="PRE" msd="MORPH=empty" lemma="per">per</w>
+                <w  rend="letter" n="5" pos="PROper" msd="Case=Acc|Numb=Plur" lemma="uos">uos</w>
+                <w  rend="letter" n="5" pos="ADV" msd="MORPH=empty" lemma="ad1">ad</w>
+                <w  rend="letter" n="5" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="integer">integrum</w>
+                <w  rend="letter" n="5" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="restituo">restituere</w>
+                <w  rend="letter" n="5" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

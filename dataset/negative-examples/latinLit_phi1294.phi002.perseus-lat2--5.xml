@@ -2,24 +2,31 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1294.phi002.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1294.phi002.perseus-lat2:8.45.7-8.45.8">
-        <w  rend="line" n="8.45.7" pos="CONsub" msd="MORPH=empty" lemma="cum3">Cum</w>
-                <w  rend="line" n="8.45.7" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
-                <w  rend="line" n="8.45.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="8.45.7" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Flaccus">Flacce</w>
-                <w  rend="line" n="8.45.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="8.45.7" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="ego">mihi</w>
-                <w  rend="line" n="8.45.7" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="reddo">reddet</w>
-                <w  rend="line" n="8.45.7" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Cythereius">Cythereia</w>
-                <w  rend="line" n="8.45.7" pos="NOMpro" msd="Case=Nom|Numb=Plur" lemma="Cyprus">Cypros</w>
-                <w  rend="line" n="8.45.7" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="8.45.8" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="luxuria">Luxuriae</w>
-                <w  rend="line" n="8.45.8" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="fio">fiet</w>
-                <w  rend="line" n="8.45.8" pos="ADV" msd="Deg=Pos" lemma="tam">tam</w>
-                <w  rend="line" n="8.45.8" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="bonus">bona</w>
-                <w  rend="line" n="8.45.8" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="causa">causa</w>
-                <w  rend="line" n="8.45.8" pos="PROpos" msd="Case=Gen|Numb=Sing|Gend=Fem" lemma="meus">meae</w>
-                <w  rend="line" n="8.45.8" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1294.phi002.perseus-lat2:7.5.3-7.5.6">
+        <w  rend="line" n="7.5.3" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="inuideo">Invidet</w>
+                <w  rend="line" n="7.5.3" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="hostis">hosti</w>
+                <w  rend="line" n="7.5.4" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Roma">Roma</w>
+                <w  rend="line" n="7.5.4" pos="PROpos.ref" msd="Case=Dat|Numb=Sing|Gend=MascNeut" lemma="suus">suo</w>
+                <w  rend="line" n="7.5.4" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="7.5.4" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="uenio">veniat</w>
+                <w  rend="line" n="7.5.4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="laurea">laurea</w>
+                <w  rend="line" n="7.5.4" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="multus">multa</w>
+                <w  rend="line" n="7.5.4" pos="CONsub" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act" lemma="licet3">licet</w>
+                <w  rend="line" n="7.5.4" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="7.5.5" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="terra">Terrarum</w>
+                <w  rend="line" n="7.5.5" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="dominus">dominum</w>
+                <w  rend="line" n="7.5.5" pos="ADV" msd="Deg=Comp" lemma="prope1">propius</w>
+                <w  rend="line" n="7.5.5" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="uideo">videt</w>
+                <w  rend="line" n="7.5.5" pos="PROdem" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="ille">ille</w>
+                <w  rend="line" n="7.5.5" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="7.5.5" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="tuus">tuoque</w>
+                <w  rend="line" n="7.5.5" pos="CON" msd="MORPH=empty" lemma="que">{tuoque}</w>
+                <w  rend="line" n="7.5.6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="terreo">Terretur</w>
+                <w  rend="line" n="7.5.6" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="uultus">vultu</w>
+                <w  rend="line" n="7.5.6" pos="NOMcom" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="barbarus1">barbarus</w>
+                <w  rend="line" n="7.5.6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="line" n="7.5.6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="fruor">fruitur</w>
+                <w  rend="line" n="7.5.6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

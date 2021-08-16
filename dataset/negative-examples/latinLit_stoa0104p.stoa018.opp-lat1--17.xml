@@ -2,13 +2,18 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104p.stoa018.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa018.opp-lat1:2">
-        <w  rend="section" n="2" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
-                <w  rend="section" n="2" pos="NOMcom" msd="Case=Abl|Numb=Plur" lemma="pecus1">pecoribus</w>
-                <w  rend="section" n="2" pos="PROref" msd="Case=Acc|Numb=Sing" lemma="sui1">se</w>
-                <w  rend="section" n="2" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="sum1">esse</w>
-                <w  rend="section" n="2" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="uexo">uexatos</w>
-                <w  rend="section" n="2" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104p.stoa018.opp-lat1:4">
+        <w  rend="section" n="4" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="apostolus">apostolus</w>
+                <w  rend="section" n="4" pos="ADV" msd="Deg=Pos" lemma="iterum">iterum</w>
+                <w  rend="section" n="4" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="dico2">dicit</w>
+                <w  rend="section" n="4" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="4" pos="VER" msd="Numb=Plur|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="eximo">eximite</w>
+                <w  rend="section" n="4" pos="NOMcom" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="malus3">malos</w>
+                <w  rend="section" n="4" pos="PRE" msd="MORPH=empty" lemma="ex">e</w>
+                <w  rend="section" n="4" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Neut|Deg=Pos" lemma="medius">medio</w>
+                <w  rend="section" n="4" pos="PROpos" msd="Case=Abl|Numb=Sing|Gend=Neut" lemma="uester">uestro</w>
+                <w  rend="section" n="4" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

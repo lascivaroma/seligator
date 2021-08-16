@@ -3,23 +3,41 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0215b.stoa001.opp-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0215b.stoa001.opp-lat1:2">
-        <w  rend="book" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="2" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quod1">quod</w>
-                <w  rend="book" n="2" pos="ADV" msd="Deg=Pos" lemma="paulatim">paulatim</w>
-                <w  rend="book" n="2" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="succedo1">succedens</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="nescio">nesciet</w>
-                <w  rend="book" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="aetas">aetas</w>
+        <w  rend="book" n="2" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="caput">caput</w>
+                <w  rend="book" n="2" pos="ADV" msd="Deg=Pos" lemma="huc">huc</w>
+                <w  rend="book" n="2" pos="ADV" msd="Deg=Pos" lemma="illuc">illuc</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="uergo">uergat</w>
                 <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="2" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="2" pos="PROrel" msd="Numb=Sing" lemma="qui1">quod</w>
-                <w  rend="book" n="2" pos="CONsub" msd="MORPH=empty" lemma="si2">si</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=FutAnt|Voice=Act|Person=3" lemma="scio">scierit</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="gressus">gressusque</w>
+                <w  rend="book" n="2" pos="CON" msd="MORPH=empty" lemma="que">{gressusque}</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="uacillo">uacillet</w>
                 <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="2" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
-                <w  rend="book" n="2" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="book" n="2" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="merx">mercis</w>
-                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="sum1">erit</w>
-                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mens">mensque</w>
+                <w  rend="book" n="2" pos="CON" msd="MORPH=empty" lemma="que">{mensque}</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="nego">neget</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sensus">sensum</w>
+                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="lingua">lingua</w>
+                <w  rend="book" n="2" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="teneo">tenere</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="sonus">sonum</w>
+                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="2" pos="ADJcar" msd="MORPH=empty" lemma="3">65</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Pass|Person=3" lemma="claudo1">claudantur</w>
+                <w  rend="book" n="2" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="grauidus">grauido</w>
+                <w  rend="book" n="2" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Pres|Voice=Act" lemma="uergo">uergentia</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="lumen">lumina</w>
+                <w  rend="book" n="2" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="somnus">somno</w>
+                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="2" pos="PROint" msd="Case=Acc|Numb=Sing|Gend=Neut" lemma="quis1">quid</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="facio">facis</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="ignoro">ignores</w>
+                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="book" n="2" pos="PROper" msd="Case=Nom|Numb=Sing" lemma="tu">tu</w>
+                <w  rend="book" n="2" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="book" n="2" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="book" n="2" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=2" lemma="facio">facias</w>
+                <w  rend="book" n="2" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

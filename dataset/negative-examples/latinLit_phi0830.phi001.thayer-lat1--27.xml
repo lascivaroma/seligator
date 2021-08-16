@@ -2,23 +2,27 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0830.phi001.thayer-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0830.phi001.thayer-lat1:6.35-6.36">
-        <w  rend="line" n="6.35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="scio">scit</w>
-                <w  rend="line" n="6.35" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="frenum">frenos</w>
-                <w  rend="line" n="6.35" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="6.35" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="fero">ferre</w>
-                <w  rend="line" n="6.35" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="iugum">iugum</w>
-                <w  rend="line" n="6.35" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Dep|Person=3" lemma="sequor">sequiturque</w>
-                <w  rend="line" n="6.35" pos="CON" msd="MORPH=empty" lemma="que">{sequiturque}</w>
-                <w  rend="line" n="6.35" pos="VER" msd="Case=Acc|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="uoco">vocantem</w>
-                <w  rend="line" n="6.36" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="credulus">credulus</w>
-                <w  rend="line" n="6.36" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="line" n="6.36" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="mensa">mensae</w>
-                <w  rend="line" n="6.36" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
-                <w  rend="line" n="6.36" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Neut|Deg=Pos" lemma="improbus">improba</w>
-                <w  rend="line" n="6.36" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="porrigo2">porrigit</w>
-                <w  rend="line" n="6.36" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="os1">ora</w>
-                <w  rend="line" n="6.36" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0830.phi001.thayer-lat1:3.31-3.32">
+        <w  rend="line" n="3.31" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Alcippe">Alcippen</w>
+                <w  rend="line" n="3.31" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="iratus">irata</w>
+                <w  rend="line" n="3.31" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="peto">petit</w>
+                <w  rend="line" n="3.31" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="dico">dixitque</w>
+                <w  rend="line" n="3.31" pos="CON" msd="MORPH=empty" lemma="que">{dixitque}</w>
+                <w  rend="line" n="3.31" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="3.31" pos="PUNC" msd="MORPH=empty" lemma="&quot;">"</w>
+                <w  rend="line" n="3.31" pos="VER" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="relinquo">relicto</w>
+                <w  rend="line" n="3.31" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.32" pos="ADV" msd="Numb=Sing|Deg=Pos" lemma="improbe">improbe</w>
+                <w  rend="line" n="3.32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.32" pos="PROper" msd="Case=Acc|Numb=Sing" lemma="tu">te</w>
+                <w  rend="line" n="3.32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.32" pos="NOMpro" msd="Case=Voc|Numb=Sing" lemma="Lycidas">Lycida</w>
+                <w  rend="line" n="3.32" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="3.32" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Mopsus">Mopsum</w>
+                <w  rend="line" n="3.32" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="tuus">tua</w>
+                <w  rend="line" n="3.32" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Phyllis">Phyllis</w>
+                <w  rend="line" n="3.32" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="amo">amabit</w>
+                <w  rend="line" n="3.32" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

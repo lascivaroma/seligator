@@ -2,28 +2,44 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0040a.stoa004.digilibLT-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040a.stoa004.digilibLT-lat1:75">
-        <w  rend="paragraph" n="75" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="idem">eodem</w>
-                <w  rend="paragraph" n="75" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="modus">modo</w>
-                <w  rend="paragraph" n="75" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="idem">eodem</w>
-                <w  rend="paragraph" n="75" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tempus1">tempore</w>
-                <w  rend="paragraph" n="75" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="species">specie</w>
-                <w  rend="paragraph" n="75" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem" lemma="plusquamperfectus">plusquamperfecta</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
-                <w  rend="paragraph" n="75" pos="ADV" msd="Deg=Pos" lemma="utinam">utinam</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=1" lemma="sum1">fuissem</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=2" lemma="sum1">fuisses</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="sum1">fuisset</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="75" pos="ADV" msd="Deg=Pos" lemma="utinam">utinam</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pqp|Voice=Act|Person=1" lemma="sum1">fuissemus</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pqp|Voice=Act|Person=2" lemma="sum1">fuissetis</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="paragraph" n="75" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="sum1">fuissent</w>
-                <w  rend="paragraph" n="75" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0040a.stoa004.digilibLT-lat1:62">
+        <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uerbum">Verbum</w>
+                <w  rend="paragraph" n="62" pos="ADJqua" msd="Case=Nom|Numb=Sing" lemma="passiuus">passivum</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="declino">declinatur</w>
+                <w  rend="paragraph" n="62" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="hic1">hoc</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="modus">modo</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing|Person=1" lemma="scribo">scribor</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uerbum">verbum</w>
+                <w  rend="paragraph" n="62" pos="ADJqua" msd="Case=Nom|Numb=Sing" lemma="passiuus">passivum</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="tempus1">temporis</w>
+                <w  rend="paragraph" n="62" pos="ADJqua" msd="Case=Gen|Numb=Sing|Gend=Com|Deg=Pos" lemma="praesens">praesentis</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="persona">personae</w>
+                <w  rend="paragraph" n="62" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primae</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Gen|Numb=Sing" lemma="coniugatio">coniugationis</w>
+                <w  rend="paragraph" n="62" pos="ADJord" msd="Case=Gen|Numb=Sing|Gend=Fem|Deg=Pos" lemma="tertius">tertiae</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quod</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Pass|Person=3" lemma="declino">declinabitur</w>
+                <w  rend="paragraph" n="62" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="paragraph" n="62" pos="ADV" msd="Deg=Pos" lemma="modo1">modo</w>
+                <w  rend="paragraph" n="62" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="indicatiuus">indicativo</w>
+                <w  rend="paragraph" n="62" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="tempus1">tempore</w>
+                <w  rend="paragraph" n="62" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="praesens">praesenti</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing" lemma="scribo">scribor</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=2" lemma="scribo">scriberis</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="scribo">scribitur</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=1" lemma="scribo">scribimur</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Plur" lemma="scribo">scribimini</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="paragraph" n="62" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Pass|Person=3" lemma="scribo">scribuntur</w>
+                <w  rend="paragraph" n="62" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

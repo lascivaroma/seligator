@@ -2,13 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi007.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi007.perseus-lat2:229">
-        <w  rend="line" n="229" pos="PROind" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="alius">Aliorum</w>
-                <w  rend="line" n="229" pos="ADV" msd="Deg=Pos" lemma="affatim">affatim</w>
-                <w  rend="line" n="229" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="229" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="line" n="229" pos="VER" msd="Numb=Plur|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="facio">faciant</w>
-                <w  rend="line" n="229" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi007.perseus-lat2:680-681">
+        <w  rend="line" n="680" pos="ADVneg" msd="MORPH=empty" lemma="non">non</w>
+                <w  rend="line" n="680" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=1" lemma="sum1">súm</w>
+                <w  rend="line" n="680" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="scitus2">scitiór</w>
+                <w  rend="line" n="680" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="680" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="line" n="680" pos="PROdem" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="hic1">hos</w>
+                <w  rend="line" n="680" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="rogo">rogem</w>
+                <w  rend="line" n="680" pos="CONcoo" msd="MORPH=empty" lemma="aut">aút</w>
+                <w  rend="line" n="680" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="qui1">quae</w>
+                <w  rend="line" n="680" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=1" lemma="fatigo">fatígem</w>
+                <w  rend="line" n="680" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="681" pos="PROrel" msd="Case=Nom|Numb=Plur|Gend=Masc" lemma="qui1">qui</w>
+                <w  rend="line" n="681" pos="ADV" msd="Deg=Pos" lemma="semper">sémper</w>
+                <w  rend="line" n="681" pos="NOMcom" msd="Case=Dat|Numb=Sing|Deg=Pos|Person=1" lemma="malum3">maló</w>
+                <w  rend="line" n="681" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Com|Deg=Pos" lemma="muliebris">muliebrí</w>
+                <w  rend="line" n="681" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="line" n="681" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=MascFem|Deg=Pos" lemma="libens">lubéntes</w>
+                <w  rend="line" n="681" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

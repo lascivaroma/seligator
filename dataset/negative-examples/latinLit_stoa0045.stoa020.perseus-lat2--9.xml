@@ -2,13 +2,25 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa020.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa020.perseus-lat2:27">
-        <w  rend="line" n="27" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">Quis</w>
-                <w  rend="line" n="27" pos="ADV" msd="Deg=Pos" lemma="digne">digne</w>
-                <w  rend="line" n="27" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="dominus">domino</w>
-                <w  rend="line" n="27" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="praeconium">praeconia</w>
-                <w  rend="line" n="27" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=3" lemma="continuo1">continuabit</w>
-                <w  rend="line" n="27" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa020.perseus-lat2:16-18">
+        <w  rend="line" n="16" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="fons">Fons</w>
+                <w  rend="line" n="16" pos="PROpos" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="tuus">tuus</w>
+                <w  rend="line" n="16" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="emundo">emundat</w>
+                <w  rend="line" n="16" pos="NOMcom" msd="Numb=Sing" lemma="recreatus">recreatu</w>
+                <w  rend="line" n="16" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc" lemma="iustifico">iustificatos</w>
+                <w  rend="line" n="16" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="17" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="do">dans</w>
+                <w  rend="line" n="17" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mens">mentem</w>
+                <w  rend="line" n="17" pos="VER" msd="Case=Acc|Numb=Sing|Gend=Fem|Mood=Par|Tense=Perf|Voice=Dep" lemma="obliuiscor">oblitam</w>
+                <w  rend="line" n="17" pos="NOMcom" msd="Case=Gen|Numb=Plur|Gend=MascNeut|Mood=Par|Tense=Perf|Voice=Pass" lemma="pono">positorum</w>
+                <w  rend="line" n="17" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="flagitium">flagitiorum</w>
+                <w  rend="line" n="17" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="18" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="do">dans</w>
+                <w  rend="line" n="18" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="agnus">agnos</w>
+                <w  rend="line" n="18" pos="ADJqua" msd="Case=Acc|Numb=Plur|Gend=Masc|Deg=Pos" lemma="niueus">niveos</w>
+                <w  rend="line" n="18" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="splendesco">splendescere</w>
+                <w  rend="line" n="18" pos="VER" msd="Case=Acc|Numb=Plur|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="purifico">purificatos</w>
+                <w  rend="line" n="18" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

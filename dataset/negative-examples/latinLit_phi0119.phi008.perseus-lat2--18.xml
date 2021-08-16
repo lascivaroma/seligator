@@ -2,13 +2,13 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi0119.phi008.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi008.perseus-lat2:688b">
-        <w  rend="line" n="688b" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=Neut" lemma="quis1">Quid</w>
-                <w  rend="line" n="688b" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="ego">mecum</w>
-                <w  rend="line" n="688b" pos="CON" msd="MORPH=empty" lemma="cum3">{mecum}</w>
-                <w  rend="line" n="688b" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="688b" pos="PROper" msd="Case=Dat|Numb=Sing" lemma="tu">tibi</w>
-                <w  rend="line" n="688b" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi0119.phi008.perseus-lat2:350">
+        <w  rend="line" n="350" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="religio">religio</w>
+                <w  rend="line" n="350" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="sum1">fuit</w>
+                <w  rend="line" n="350" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="350" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="denego">denegare</w>
+                <w  rend="line" n="350" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="nolo">nolui</w>
+                <w  rend="line" n="350" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

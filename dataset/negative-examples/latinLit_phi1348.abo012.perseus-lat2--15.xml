@@ -2,25 +2,36 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1348.abo012.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo012.perseus-lat2:100">
-        <w  rend="unknown" n="100" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="obeo1">obiit</w>
-                <w  rend="unknown" n="100" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="unknown" n="100" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="cubiculum">cubiculo</w>
-                <w  rend="unknown" n="100" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="idem">eodem</w>
-                <w  rend="unknown" n="100" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="100" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
-                <w  rend="unknown" n="100" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pater">pater</w>
-                <w  rend="unknown" n="100" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Octauius">Octauius</w>
-                <w  rend="unknown" n="100" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="100" pos="ADJcar" msd="Case=Dat|Numb=Plur|Gend=MascNeut" lemma="duo">duobus</w>
-                <w  rend="unknown" n="100" pos="NOMpro" msd="Case=Abl|Numb=Plur" lemma="Sextis">Sextis</w>
-                <w  rend="unknown" n="100" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="100" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Pompeius">Pompeio</w>
-                <w  rend="unknown" n="100" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="unknown" n="100" pos="NOMpro" msd="Case=Abl|Numb=Sing" lemma="Appuleius">Appuleio</w>
-                <w  rend="unknown" n="100" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="100" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="consul">cons</w>
-                <w  rend="unknown" n="100" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1348.abo012.perseus-lat2:64">
+        <w  rend="unknown" n="64" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="extraneus">extraneorum</w>
+                <w  rend="unknown" n="64" pos="ADV" msd="Deg=Pos" lemma="quidem">quidem</w>
+                <w  rend="unknown" n="64" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="coetus">coetu</w>
+                <w  rend="unknown" n="64" pos="ADV" msd="Deg=Pos" lemma="adeo2">adeo</w>
+                <w  rend="unknown" n="64" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="prohibeo">prohibuit</w>
+                <w  rend="unknown" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="64" pos="CONsub" msd="MORPH=empty" lemma="ut4">ut</w>
+                <w  rend="unknown" n="64" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Lucius">L.</w>
+                <w  rend="unknown" n="64" pos="NOMpro" msd="Case=Dat|Numb=Sing" lemma="Uinicius">Vinicio</w>
+                <w  rend="unknown" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="64" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="clarus">claro</w>
+                <w  rend="unknown" n="64" pos="ADJqua" msd="Case=Dat|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="decorus">decoroque</w>
+                <w  rend="unknown" n="64" pos="CON" msd="MORPH=empty" lemma="que">{decoroque}</w>
+                <w  rend="unknown" n="64" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="iuuenis1">iuueni</w>
+                <w  rend="unknown" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="64" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Perf|Voice=Act|Person=3" lemma="scribo">scripserit</w>
+                <w  rend="unknown" n="64" pos="ADV" msd="Deg=Pos" lemma="quondam">quondam</w>
+                <w  rend="unknown" n="64" pos="ADV" msd="Deg=Pos" lemma="parum2">parum</w>
+                <w  rend="unknown" n="64" pos="ADV" msd="Deg=Pos" lemma="modeste">modeste</w>
+                <w  rend="unknown" n="64" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="facio">fecisse</w>
+                <w  rend="unknown" n="64" pos="PROdem" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="is">eum</w>
+                <w  rend="unknown" n="64" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="64" pos="CONsub" msd="MORPH=empty" lemma="quod2">quod</w>
+                <w  rend="unknown" n="64" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="filia">filiam</w>
+                <w  rend="unknown" n="64" pos="PROpos.ref" msd="Case=Acc|Numb=Sing|Gend=Fem" lemma="suus">suam</w>
+                <w  rend="unknown" n="64" pos="NOMpro" msd="Case=Acc|Numb=Plur" lemma="Baiae">Baias</w>
+                <w  rend="unknown" n="64" pos="VER" msd="Mood=SupU|Voice=Act" lemma="saluto">salutatum</w>
+                <w  rend="unknown" n="64" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pqp|Voice=Act|Person=3" lemma="uenio">uenisset</w>
+                <w  rend="unknown" n="64" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

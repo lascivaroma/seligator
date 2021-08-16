@@ -2,27 +2,32 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0104a.stoa014.opp-lat1</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104a.stoa014.opp-lat1:1">
-        <w  rend="book" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing|Deg=Pos" lemma="Zeiius">XVIII.</w>
-                <w  rend="book" n="1" pos="CONsub" msd="MORPH=empty" lemma="quod2">Quod</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="propheta">propheta</w>
-                <w  rend="book" n="1" pos="PROind" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="alius">alius</w>
-                <w  rend="book" n="1" pos="ADVrel" msd="MORPH=empty" lemma="sicut1">sicut</w>
-                <w  rend="book" n="1" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Moyses">Moyses</w>
-                <w  rend="book" n="1" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="promitto">promissus</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sit</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="book" n="1" pos="ADV" msd="Deg=Pos" lemma="scilicet">scilicet</w>
-                <w  rend="book" n="1" pos="PROrel" msd="Case=Nom|Numb=Sing|Gend=Masc" lemma="qui1">qui</w>
-                <w  rend="book" n="1" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="testamentum">testamentum</w>
-                <w  rend="book" n="1" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="nouus">nouum</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="do">daret</w>
-                <w  rend="book" n="1" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="book" n="1" pos="PROrel" msd="Case=Nom|Numb=Sing" lemma="qui1">qui</w>
-                <w  rend="book" n="1" pos="ADV" msd="Deg=Comp" lemma="magis2">magis</w>
-                <w  rend="book" n="1" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Pass" lemma="audio">audiri</w>
-                <w  rend="book" n="1" pos="VER" msd="Numb=Sing|Mood=Sub|Tense=Impa|Voice=Act|Person=3" lemma="debeo">deberet</w>
-                <w  rend="book" n="1" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0104a.stoa014.opp-lat1:3.78">
+        <w  rend="section" n="3.78" pos="NOMpro" msd="Case=Nom|Numb=Sing" lemma="Paulus">Paulus</w>
+                <w  rend="section" n="3.78" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="apostolus">apostolus</w>
+                <w  rend="section" n="3.78" pos="PRE" msd="MORPH=empty" lemma="ad2">ad</w>
+                <w  rend="section" n="3.78" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Titus">Titum</w>
+                <w  rend="section" n="3.78" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="section" n="3.78" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Masc|Deg=Pos" lemma="Haereticus">Haereticum</w>
+                <w  rend="section" n="3.78" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="homo">hominem</w>
+                <w  rend="section" n="3.78" pos="PRE" msd="MORPH=empty" lemma="post2">post</w>
+                <w  rend="section" n="3.78" pos="ADJord" msd="Case=Acc|Numb=Sing|Gend=Fem|Deg=Sup" lemma="primus">primam</w>
+                <w  rend="section" n="3.78" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="correptio">correptionem</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Case=Acc|Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="deuito">deuita</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Case=Nom|Numb=Sing|Gend=MascFem|Mood=Par|Tense=Pres|Voice=Act" lemma="scio">sciens</w>
+                <w  rend="section" n="3.78" pos="CONsub" msd="MORPH=empty" lemma="quoniam">quoniam</w>
+                <w  rend="section" n="3.78" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Masc|Deg=Pos" lemma="peruersus">peruersus</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="3.78" pos="ADV" msd="Deg=Pos" lemma="huiusmodi">huiusmodi</w>
+                <w  rend="section" n="3.78" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="pecco">peccat</w>
+                <w  rend="section" n="3.78" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
+                <w  rend="section" n="3.78" pos="PRE" msd="MORPH=empty" lemma="ab">a</w>
+                <w  rend="section" n="3.78" pos="PROref" msd="Case=Abl|Numb=Sing" lemma="sui1">semet</w>
+                <w  rend="section" n="3.78" pos="PROdem" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="ipse">ipso</w>
+                <w  rend="section" n="3.78" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Pass" lemma="damno">damnatus</w>
+                <w  rend="section" n="3.78" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,12 +2,30 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1017.phi003.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:557">
-        <w  rend="line" n="557" pos="PROint" msd="Case=Nom|Numb=Sing|Gend=MascFem" lemma="quis1">quis</w>
-                <w  rend="line" n="557" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="teneo">tenet</w>
-                <w  rend="line" n="557" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mens">mentem</w>
-                <w  rend="line" n="557" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="furor1">furor</w>
-                <w  rend="line" n="557" pos="PUNC" msd="MORPH=empty" lemma="?">?</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1017.phi003.perseus-lat2:257-260">
+        <w  rend="line" n="257" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="258" pos="CONcoo" msd="MORPH=empty" lemma="sed">sed</w>
+                <w  rend="line" n="258" pos="PROrel" msd="Case=Acc|Numb=Sing|Gend=Masc" lemma="qui1">quem</w>
+                <w  rend="line" n="258" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="deus">deus</w>
+                <w  rend="line" n="258" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="damno">damnavit</w>
+                <w  rend="line" n="258" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="258" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="abicio">abiecit</w>
+                <w  rend="line" n="258" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="pater">pater</w>
+                <w  rend="line" n="258" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="259" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mors">mors</w>
+                <w  rend="line" n="259" pos="ADV" msd="Deg=Pos" lemma="quoque">quoque</w>
+                <w  rend="line" n="259" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=3" lemma="refugio">refugit</w>
+                <w  rend="line" n="259" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="259" pos="VER" msd="Numb=Sing|Gend=MascNeut|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="praesto1">praestiti</w>
+                <w  rend="line" n="259" pos="NOMpro" msd="Case=Dat|Numb=Plur" lemma="Delphi">Delphis</w>
+                <w  rend="line" n="259" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="fides2">fidem</w>
+                <w  rend="line" n="259" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="260" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="genitor">genitorem</w>
+                <w  rend="line" n="260" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Masc|Mood=Par|Tense=Perf|Voice=Dep" lemma="adorior">adortus</w>
+                <w  rend="line" n="260" pos="ADJqua" msd="Case=Abl|Numb=Sing|Gend=Fem|Deg=Pos" lemma="impius">impia</w>
+                <w  rend="line" n="260" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Perf|Voice=Act|Person=1" lemma="sterno">stravi</w>
+                <w  rend="line" n="260" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="nex">nece</w>
+                <w  rend="line" n="260" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>
  </div>

@@ -2,13 +2,20 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:phi1035.phi001.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:phi1035.phi001.perseus-lat2:6.476">
-        <w  rend="line" n="6.476" pos="PROrel" msd="Case=Acc|Numb=Plur|Gend=Fem" lemma="quicumque1">quascumque</w>
-                <w  rend="line" n="6.476" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="libet">libet</w>
-                <w  rend="line" n="6.476" pos="ADV" msd="Deg=Pos" lemma="nunc">nunc</w>
-                <w  rend="line" n="6.476" pos="VER" msd="Numb=Sing|Mood=Imp|Tense=Pres|Voice=Act|Person=2" lemma="concutio">concute</w>
-                <w  rend="line" n="6.476" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="mens">mentes</w>
-                <w  rend="line" n="6.476" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:phi1035.phi001.perseus-lat2:6.231-6.233">
+        <w  rend="line" n="6.231" pos="CONsub" msd="MORPH=empty" lemma="cum3">cum</w>
+                <w  rend="line" n="6.231" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascFem|Deg=Comp" lemma="saeuus">saevior</w>
+                <w  rend="line" n="6.231" pos="INJ" msd="MORPH=empty" lemma="ecce">ecce</w>
+                <w  rend="line" n="6.231" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="iuuentus">iuventus</w>
+                <w  rend="line" n="6.232" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=Fem|Deg=Pos" lemma="Sarmaticus">Sarmaticaeque</w>
+                <w  rend="line" n="6.232" pos="CON" msd="MORPH=empty" lemma="que">{Sarmaticaeque}</w>
+                <w  rend="line" n="6.232" pos="VER" msd="Mood=Inf|Tense=Pres|Voice=Act" lemma="coeo1">coire</w>
+                <w  rend="line" n="6.232" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="manus1">manus</w>
+                <w  rend="line" n="6.232" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="fremitus">fremitusque</w>
+                <w  rend="line" n="6.232" pos="CON" msd="MORPH=empty" lemma="que">{fremitusque}</w>
+                <w  rend="line" n="6.232" pos="NOMcom" msd="Case=Gen|Numb=Plur" lemma="uir">virorum</w>
+                <w  rend="line" n="6.233" pos="ADJqua" msd="Case=Nom|Numb=Sing|Gend=MascNeut|Deg=Pos" lemma="semifer">semiferi</w>
+                <w  rend="line" n="6.233" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>

@@ -3,19 +3,38 @@
         <idno type="CTS_URN">urn:cts:latinLit:stoa0293i.stoa001.digilibLT-lat1</idno>
     </bibl>
     <quote xml:lang="lat" source="urn:cts:latinLit:stoa0293i.stoa001.digilibLT-lat1:6">
-        <w  rend="unknown" n="6" pos="CONsub" msd="MORPH=empty" lemma="cum3">Cum</w>
-                <w  rend="unknown" n="6" pos="CONcoo" msd="MORPH=empty" lemma="autem">autem</w>
-                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=2" lemma="leuo2">leuas</w>
+        <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing|Deg=Pos" lemma="assus">Assas</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing|Gend=MascNeut" lemma="porcellum">porcellum</w>
+                <w  rend="unknown" n="6" pos="ADV" msd="Deg=Pos" lemma="diligenter">diligenter</w>
                 <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="obligo2">obligabis</w>
-                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Dat|Numb=Sing" lemma="amalus">amalo</w>
-                <w  rend="unknown" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
+                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="facio">facies</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="mortarium">mortarium</w>
                 <w  rend="unknown" n="6" pos="ADV" msd="Deg=Pos" lemma="sic">sic</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
                 <w  rend="unknown" n="6" pos="PRE" msd="MORPH=empty" lemma="in">in</w>
-                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="uas2">uas</w>
-                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="transfero">transferes</w>
-                <w  rend="unknown" n="6" pos="CONcoo" msd="MORPH=empty" lemma="et2">et</w>
-                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="infero">inferes</w>
+                <w  rend="unknown" n="6" pos="PROrel" msd="Case=Abl|Numb=Sing|Gend=MascNeut" lemma="qui1">quo</w>
+                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Gend=Com" lemma="teres">teres</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="piper">piper</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="anetus">anetu</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Gen|Numb=Sing|Gend=MascNeut" lemma="origanus">origanum</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="coriandrum">coriandrum</w>
+                <w  rend="unknown" n="6" pos="ADJqua" msd="Case=Acc|Numb=Sing|Gend=Neut|Deg=Pos" lemma="uiridis">uiride</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Fut|Voice=Act|Person=2" lemma="admitto">admisces</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="mel">mel</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="uinum">uinum</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="liquamen">liquamen</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Acc|Numb=Sing" lemma="oleum">oleum</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="NOMcom" msd="Case=Abl|Numb=Sing" lemma="acetus">acetu</w>
+                <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="unknown" n="6" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Masc" lemma="defritus">defritu</w>
                 <w  rend="unknown" n="6" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
                 
     </quote>

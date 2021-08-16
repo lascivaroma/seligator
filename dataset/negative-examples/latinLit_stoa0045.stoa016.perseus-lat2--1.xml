@@ -2,23 +2,21 @@
     <bibl type="source">
         <idno type="CTS_URN">urn:cts:latinLit:stoa0045.stoa016.perseus-lat2</idno>
     </bibl>
-    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa016.perseus-lat2:po.56-po.57">
-        <w  rend="line" n="po.56" pos="PROper" msd="Case=Abl|Numb=Sing" lemma="tu">te</w>
-                <w  rend="line" n="po.56" pos="VER" msd="Case=Abl|Numb=Sing|Gend=Com|Mood=Par|Tense=Pres|Voice=Act" lemma="praeeo1">praeeunte</w>
-                <w  rend="line" n="po.56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="po.56" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="nepos1">nepos</w>
-                <w  rend="line" n="po.56" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
-                <w  rend="line" n="po.56" pos="VER" msd="Case=Nom|Numb=Sing|Gend=Neut|Mood=Par|Tense=Perf|Voice=Dep" lemma="modulor">modulata</w>
-                <w  rend="line" n="po.56" pos="NOMcom" msd="Case=Acc|Numb=Plur" lemma="poema">poemata</w>
-                <w  rend="line" n="po.56" pos="NOMpro" msd="Case=Gen|Numb=Sing" lemma="Flaccus">Flacci</w>
-                <w  rend="line" n="po.57" pos="NOMcom" msd="Case=Gen|Numb=Plur|Gend=MascNeut" lemma="altisonus">altisonumque</w>
-                <w  rend="line" n="po.57" pos="CON" msd="MORPH=empty" lemma="que">{altisonumque}</w>
-                <w  rend="line" n="po.57" pos="ADV" msd="Deg=Pos" lemma="iterum">iterum</w>
-                <w  rend="line" n="po.57" pos="NOMcom" msd="Case=Ind" lemma="fas">fas</w>
-                <w  rend="line" n="po.57" pos="VER" msd="Numb=Sing|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">est</w>
-                <w  rend="line" n="po.57" pos="VER" msd="Mood=Inf|Tense=Perf|Voice=Act" lemma="disco">didicisse</w>
-                <w  rend="line" n="po.57" pos="NOMpro" msd="Case=Acc|Numb=Sing" lemma="Maro">Maronem</w>
-                <w  rend="line" n="po.57" pos="PUNC" msd="MORPH=empty" lemma=".">.</w>
+    <quote xml:lang="lat" source="urn:cts:latinLit:stoa0045.stoa016.perseus-lat2:po.1-po.2">
+        <w  rend="line" n="po.1" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">Sunt</w>
+                <w  rend="line" n="po.1" pos="ADV" msd="Deg=Pos" lemma="etiam">etiam</w>
+                <w  rend="line" n="po.1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="musa">musis</w>
+                <w  rend="line" n="po.1" pos="PROpos.ref" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="suus">sua</w>
+                <w  rend="line" n="po.1" pos="ADJqua" msd="Case=Nom|Numb=Plur|Gend=Neut" lemma="ludicer">ludicra</w>
+                <w  rend="line" n="po.1" pos="PUNC" msd="MORPH=empty" lemma=":">:</w>
+                <w  rend="line" n="po.1" pos="VER" msd="Case=Nom|Numb=Plur|Gend=Neut|Mood=Par|Tense=Perf|Voice=Pass" lemma="misceo">mixta</w>
+                <w  rend="line" n="po.1" pos="NOMcom" msd="Case=Dat|Numb=Plur" lemma="camena">camenis</w>
+                <w  rend="line" n="po.2" pos="NOMcom" msd="Case=Nom|Numb=Plur" lemma="otium">otia</w>
+                <w  rend="line" n="po.2" pos="VER" msd="Numb=Plur|Mood=Ind|Tense=Pres|Voice=Act|Person=3" lemma="sum1">sunt</w>
+                <w  rend="line" n="po.2" pos="PUNC" msd="MORPH=empty" lemma=",">,</w>
+                <w  rend="line" n="po.2" pos="ADJqua" msd="Numb=Plur|Gend=Masc|Deg=Pos" lemma="melliter">mellite</w>
+                <w  rend="line" n="po.2" pos="NOMcom" msd="Case=Nom|Numb=Sing" lemma="nepos1">nepos</w>
+                <w  rend="line" n="po.2" pos="PUNC" msd="MORPH=empty" lemma=";">;</w>
                 
     </quote>
  </div>
