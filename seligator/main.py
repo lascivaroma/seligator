@@ -160,6 +160,10 @@ class Seligator:
             {k: v for k, v in EMBEDDING_DIMENSIONS.items()}
         )
 
+        if model_class.INSTANCE_TYPE != "default":
+            if additional_model_kwargs.get("reader_mode") == "miner":
+                model_class.INSTANCE_TYPE = "default"
+
         if training:
             train, dev, vocab, reader = generate_all_data(
                 token_features=token_features,

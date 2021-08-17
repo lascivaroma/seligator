@@ -9,7 +9,7 @@ from allennlp.data import (
     Instance,
     Vocabulary,
 )
-from allennlp.data.data_loaders import SimpleDataLoader
+from allennlp.data.data_loaders import SimpleDataLoader, MultiProcessDataLoader
 from allennlp.models import Model
 from allennlp.training.trainer import Trainer
 from allennlp.training.gradient_descent_trainer import GradientDescentTrainer
@@ -18,6 +18,7 @@ from allennlp.training.optimizers import AdamOptimizer, AdamWOptimizer, Adadelta
 
 from seligator.common.params import MetadataEncoding, get_metadata_namespace
 from seligator.dataset.readers import ClassificationTsvReader, get_siamese_samples
+from seligator.dataset.dataloader import SimpleSampledDataLoader, AtLeastOneSampler
 from seligator.models.base import BaseModel
 from seligator.common.bert_utils import GetMeBert
 
@@ -57,13 +58,18 @@ def build_data_loaders(
     batches_per_epoch: Optional[int] = None
 ) -> Tuple[DataLoader, DataLoader]:
 
-    train_loader = SimpleDataLoader(
+    # ToDo: Reverse or "temporarize" hack
+    train_loader = SimpleSampledDataLoader(
         train_data, batch_size, shuffle=True,
-        batches_per_epoch=batches_per_epoch
+        batches_per_epoch=batches_per_epoch,
+        sampler=AtLeastOneSampler(batch_size=batch_size, label_field="label", drop_last=True)
     )
-    dev_loader = SimpleDataLoader(
+
+    # ToDo: Reverse or "temporarize" hack
+    dev_loader = SimpleSampledDataLoader(
         dev_data, dev_batch_size,
         shuffle=False,
+        sampler=AtLeastOneSampler(batch_size=dev_batch_size, label_field="label", drop_last=True)
         #batches_per_epoch=batches_per_epoch
     )
     return train_loader, dev_loader

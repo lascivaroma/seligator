@@ -2,13 +2,15 @@
 
 import torch.nn.functional as F
 from torch import Tensor, cat, tensor
-from torch.nn import TripletMarginLoss
+from torch.nn import TripletMarginLoss as TorchTripletMarginLoss
+from pytorch_metric_learning.losses import TripletMarginLoss as PTLTripletMarginLoss
+from pytorch_metric_learning.miners import BatchEasyHardMiner, BatchHardMiner
 
 from typing import Dict, Optional, Tuple, List, Callable, Union
 import logging
 from overrides import overrides
 
-from seligator.models.siamese import SiameseClassifier
+from seligator.models.siamese import SiameseClassifier, get_tensor_dict_subset
 
 logger = logging.getLogger(__name__)
 
@@ -21,38 +23,109 @@ class TripletClassifier(SiameseClassifier):
 
     def __init__(self, *args, **kwargs):
         super(TripletClassifier, self).__init__(*args, **kwargs)
-        #self._loss = TripletLoss(kwargs.get("loss_margin", 1.0))
-        self._loss = TripletMarginLoss(
-            margin=kwargs.get("loss_margin", 1.0),
-            p=kwargs.get("loss_p", 2)
-            #triplets_per_anchor="all",
-        )
 
-    @overrides
-    def _to_categorical_probs(self, example, negative, positive, neg_dist, pos_dist) -> Tensor:
+        #self._loss = TripletLoss(kwargs.get("loss_margin", 1.0))
+        if self._reader_mode == "default":
+            self._loss = TorchTripletMarginLoss(
+                margin=kwargs.get("loss_margin", 1.0),
+                p=kwargs.get("loss_p", 2),
+                #triplets_per_anchor="all",
+            )
+        elif self._reader_mode == "miner":
+            self._loss = PTLTripletMarginLoss(margin=kwargs.get("loss_margin", 1.0))
+            self._miner = BatchHardMiner()
+            self._all_miner = BatchEasyHardMiner(
+                pos_strategy=BatchEasyHardMiner.ALL,
+                neg_strategy=BatchEasyHardMiner.ALL
+            )
+
+    def _to_categorical_probs(self, negative: Dict, positive: Dict, neg_dist: Tensor, pos_dist: Tensor) -> Tensor:
         # Compute output class
         correct = []
-        for anch, neg, dist1, pos, dist2 in zip(
-                example["label"].tolist(),
-                negative["label"].tolist(),
-                neg_dist.tolist(),
-                positive["label"].tolist(),
-                pos_dist.tolist()
+        for neg, dist_neg, pos, dist_pos in zip(
+            negative["label"],
+            neg_dist.tolist(),
+            positive["label"],
+            pos_dist.tolist()
         ):
-            dist_total = abs(dist1) + abs(dist2)
+            dist_total = abs(dist_neg) + abs(dist_pos)
             row = [.0, .0]
             # To make it more like "Fake probabilities", probability to be of positive is
             # is 1-dist/sum(all dist). We remove it from one because the lowest distance
             # is supposed to be the closest result (hence lower distance = higher probability)
-            row[neg] = 1 - abs(dist1) / dist_total
-            row[pos] = 1 - abs(dist2) / dist_total
+            row[neg] = 1 - abs(dist_neg) / dist_total
+            row[pos] = 1 - abs(dist_pos) / dist_total
             correct.append(row)
-        return tensor(correct, device=example["label"].device)
+        return tensor(correct, device=neg_dist.device)
+
+    def _miner_forward(self, **inputs) -> Dict[str, Tensor]:
+        encoded, additional_output = self.left_encoder(inputs)
+        # MinedTriplets = 3 tensor of indexes
+        if self.training:
+            anc, pos, neg = self._miner(encoded, inputs["label"])
+            if anc.shape[0] == 0:
+                anc, pos, _, neg = self._all_miner(encoded, inputs["label"])
+        else:
+            anc, pos, anc2, neg = self._all_miner(encoded, inputs["label"]) # This if fucked up
+        loss = self._loss(encoded, inputs["label"], (anc, pos, neg))
+
+        # Get content
+        anc_content = encoded[anc]
+        pos_content = encoded[pos]
+        neg_content = encoded[neg]
+
+        anc_raw = get_tensor_dict_subset(inputs, anc)
+        pos_raw = get_tensor_dict_subset(inputs, pos)
+        neg_raw = get_tensor_dict_subset(inputs, neg)
+
+        out = {
+            "loss": loss,
+            **self._shared_output_with_probs(
+                anc=anc_content, pos=pos_content, neg=neg_content,
+                positive_raw=pos_raw, negative_raw=neg_raw
+            )
+        }
+
+        self._shared_compute_metrics(out=out, anc_raw_input=anc_raw, pos_raw_input=pos_raw)
+        return out
+
+    def _shared_output_with_probs(
+            self,
+            anc, pos, neg,
+            negative_raw, positive_raw
+    ) -> Dict[str, Tensor]:
+        out = {
+            "pos_distance": F.pairwise_distance(anc, pos),  # Euclidian
+            "neg_distance": F.pairwise_distance(anc, neg),  # Euclidian
+            "doc-vectors": anc.tolist()
+        }
+        out["pos-closer"] = out["pos_distance"] < out["neg_distance"]
+        out["probs"] = self._to_categorical_probs(
+            negative=negative_raw, positive=positive_raw,
+            pos_dist=out["pos_distance"],
+            neg_dist=out["neg_distance"]
+        )
+
+        return out
 
     @overrides
-    def forward(
-            self,
-            **inputs
+    def _shared_compute_metrics(
+        self,
+        out,
+        anc_raw_input,
+        pos_raw_input
+    ) -> None:
+
+        self._compute_metrics(
+            categorical_predictions=out["probs"],
+            categorical_label=anc_raw_input["label"].long(),
+            similarity_boolean=out["pos-closer"],
+            similarity_labels=pos_raw_input["label"].long()
+        )
+
+    def _classic_forward(
+        self,
+        **inputs
     ) -> Dict[str, Tensor]:
 
         example = self.filter_input_dict(inputs, "left_")
@@ -61,38 +134,18 @@ class TripletClassifier(SiameseClassifier):
         positiv = self.filter_input_dict(inputs, "positive_")
         negativ = self.filter_input_dict(inputs, "negative_")
 
-        label = None
-        if example.get("label", None) is not None:
-            label = (example["label"] == positiv["label"]).long()
-
         # Need to take care of label ?
         exm, example_additional_output = self.left_encoder(example)
         pos, positiv_additional_output = self.right_encoder(positiv)
         neg, negativ_additional_output = self.right_encoder(negativ)
 
-        out = {
-            "pos_distance": F.pairwise_distance(exm, pos),  # Euclidian
-            "neg_distance": F.pairwise_distance(exm, neg),  # Euclidian
-            "doc-vectors": exm.tolist()
-        }
-        positiv_sim_bool = out["pos_distance"] < out["neg_distance"]
-        out["probs"] = self._to_categorical_probs(
-            example,
-            negative=negativ, positive=positiv,
-            pos_dist=out["pos_distance"],
-            neg_dist=out["neg_distance"]
+        out = self._shared_output_with_probs(
+            anc=exm, pos=pos, neg=neg,
+            negative_raw=negativ, positive_raw=positiv
         )
+        out["loss"] = self._loss(exm, pos, neg)
 
-        if label is not None:
-            sim_bool = positiv_sim_bool.long()
-            out["loss"] = self._loss(exm, pos, neg)
-
-            self._compute_metrics(
-                categorical_predictions=out["probs"],
-                categorical_label=example["label"].long(),
-                similarity_boolean=sim_bool,
-                similarity_labels=label
-            )
+        self._shared_compute_metrics(out=out, anc_raw_input=example, pos_raw_input=positiv)
 
         return out
 

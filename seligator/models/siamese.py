@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 import random
 
-from typing import Dict, Optional, Tuple, List, Union
+from typing import Dict, Optional, Tuple, List, Union, Any
 from overrides import overrides
 import logging
 
@@ -15,14 +15,32 @@ from allennlp.training.metrics import CategoricalAccuracy, BooleanAccuracy
 
 from seligator.models.base import BaseModel
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
-#from seligator.modules.loss_functions.constrastiveLoss import ContrastiveLoss
-from pytorch_metric_learning.losses.contrastive_loss import ContrastiveLoss
+from pytorch_metric_learning.losses import ContrastiveLoss
+from pytorch_metric_learning.miners import BatchEasyHardMiner
 from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 logger = logging.getLogger(__name__)
 
 
 _Fields = Dict[str, torch.LongTensor]
+
+
+def get_tensor_dict_subset(tensor_dict: Dict[str, Any], indices: torch.Tensor):
+    def map_value(value):
+        if isinstance(value, dict):
+            return get_tensor_dict_subset(value, indices)
+        elif isinstance(value, list):
+            return [value[index] for index in indices.tolist()]
+        elif isinstance(value, torch.Tensor):
+            return value[indices]
+        else:
+            print(type(value))
+            return value
+
+    return dict(**{
+        key: map_value(array)
+        for key, array in tensor_dict.items()
+    })
 
 
 class SiameseClassifier(BaseModel):
@@ -36,7 +54,7 @@ class SiameseClassifier(BaseModel):
                  mixed_encoder: Union[MixedEmbeddingEncoder, Tuple[MixedEmbeddingEncoder, MixedEmbeddingEncoder]],
 
                  loss_margin: float = 0.3,
-                 prediction_threshold: float = 0.7,
+                 prediction_threshold: float = 0.3,
                  initializer: InitializerApplicator = InitializerApplicator(),
                  regularizer: Optional[RegularizerApplicator] = None,
                  basis_vector_configuration: BasisVectorConfiguration = None,
@@ -44,6 +62,16 @@ class SiameseClassifier(BaseModel):
                  **kwargs):
         super().__init__(vocab, input_features=input_features)
 
+        self._reader_mode = kwargs.get("reader_mode", "default")
+        self._miner = None
+        if self._reader_mode not in {"default", "miner"}:
+            raise ValueError("ReaderMode can only be `default` or `miner`")
+        elif self._reader_mode == "miner":
+            self._miner = BatchEasyHardMiner()
+            self._all_miner = BatchEasyHardMiner(
+                neg_strategy=BatchEasyHardMiner.ALL,
+                pos_strategy=BatchEasyHardMiner.ALL
+            )
         self.prediction_threshold = prediction_threshold
         self.regularizer: Optional[RegularizerApplicator] = regularizer
 
@@ -75,8 +103,6 @@ class SiameseClassifier(BaseModel):
     def _to_categorical(self, example, compared_with, sim_bool) -> torch.Tensor:
         # Compute output class
         correct = []
-        #example = example["label"].tolist()
-        #compared_with = compared_with["label"]
         nb_classes = 2
         for lt, rt, pred in zip(
                 example["label"].tolist(),
@@ -91,22 +117,99 @@ class SiameseClassifier(BaseModel):
             correct.append(row)
         return torch.tensor(correct, device=example["label"].device)
 
-    def _to_categorical_probs(self, example, compared_with, sim) -> torch.Tensor:
-        # Compute output class
-        correct = []
-        #example = example["label"].tolist()
-        #compared_with = compared_with["label"]
-        nb_classes = 2
-        for lt, rt, pred in zip(
-                example["label"].tolist(),
-                compared_with["label"].tolist(),
-                sim.tolist()
-        ):
-            row = [.0, .0]
-            row[int(not rt)] = abs(1 - pred)
-            row[rt] = pred
-            correct.append(row)
-        return torch.tensor(correct, device=example["label"].device)
+    def _pop_metadata(self, inputs: Dict):
+        metadata_vector = {}
+        if self.left_encoder.use_metadata_vector:
+            metadata_vector = {
+                cat: inputs.pop(get_metadata_field_name(cat))
+                for cat in self.metadata_categories
+            }
+        return metadata_vector
+
+    def _miner_forward(self, **inputs) -> Dict[str, torch.Tensor]:
+        if "label" not in inputs:
+            raise ValueError("Miner mode on siamese networks is only available at training and developement time")
+
+        metadata_vector = self._pop_metadata(inputs)
+        encoded, additional_output = self.left_encoder(inputs, metadata_vector=metadata_vector)
+
+        mined_pairs: Tuple[torch.Tensor, ...] = self._miner(encoded, inputs["label"])  # Creates pairs
+        # Tensor if indices
+        anchors_pos, positives, anchors_neg, negatives = mined_pairs
+        # There are case where a batch would simply not return anything with specific miners.
+        if anchors_pos.shape[0] == 0:
+            mined_pairs: Tuple[torch.Tensor, ...] = self._all_miner(encoded, inputs["label"])
+            anchors_pos, positives, anchors_neg, negatives = mined_pairs
+
+        loss = self._loss(encoded, inputs["label"], mined_pairs)
+
+        # Tensor of indices
+        anchors: torch.Tensor = torch.cat([anchors_pos, anchors_neg], dim=0)
+        compars: torch.Tensor = torch.cat([positives, negatives], dim=0)
+
+        # Tensor of content
+        cont_anchors = encoded[anchors]
+        cont_compars = encoded[compars]
+
+        return {
+            "loss": loss,
+            **self._shared_compute_metrics(
+                left_encoded=cont_anchors, right_encoded=cont_compars,
+                left_raw_input=get_tensor_dict_subset(inputs, anchors),
+                right_raw_input=get_tensor_dict_subset(inputs, compars),
+                equality_label=torch.cat([
+                    torch.ones(*anchors_pos.shape, device=encoded.device),
+                    torch.zeros(*anchors_neg.shape, device=encoded.device)
+                ])
+            ),
+            **get_tensor_dict_subset(additional_output, anchors)  # Needs to be reshaped to match
+        }
+
+    def _shared_compute_metrics(
+            self,
+            left_encoded, right_encoded,
+            left_raw_input, right_raw_input,
+            equality_label: Optional[torch.Tensor]
+    ) -> Dict[str, torch.Tensor]:
+        dist: torch.Tensor = F.pairwise_distance(left_encoded, right_encoded)
+        sim_bool: torch.Tensor = (dist < self.prediction_threshold).long()
+
+        preds: torch.Tensor = self._to_categorical(left_raw_input, right_raw_input, sim_bool)
+        self._compute_metrics(
+            categorical_predictions=preds,
+            categorical_label=left_raw_input["label"].long(),
+            similarity_boolean=sim_bool,
+            similarity_labels=equality_label
+        )
+
+        return {
+            "distances": dist,
+            "probs": preds
+        }
+
+    def _classic_forward(self, **inputs) -> Dict[str, torch.Tensor]:
+        left = {key.replace("left_", ""): value for key, value in inputs.items() if key.startswith("left_")}
+        right = {key.replace("right_", ""): value for key, value in inputs.items() if key.startswith("right_")}
+        label: torch.Tensor = left["label"] == right["label"]
+
+        left_metadata_vector = self._pop_metadata(left)
+        right_metadata_vector = self._pop_metadata(right)
+
+        v_l, left_additional_output = self.left_encoder(left, metadata_vector=left_metadata_vector)
+        v_r, right_additional_output = self.right_encoder(right, metadata_vector=right_metadata_vector)
+
+        # With pytorch_metric_learning, we need to split positive and negative pairs
+        loss = self._loss(v_l, v_r, label)
+
+        return {
+            'loss': loss,
+            **self._shared_compute_metrics(
+                left_encoded=v_l, right_encoded=v_r,
+                left_raw_input=left, right_raw_input=right,
+                equality_label=label
+            ),
+            **left_additional_output
+        }
 
     @overrides
     def forward(self,
@@ -124,48 +227,10 @@ class SiameseClassifier(BaseModel):
         loss : torch.FloatTensor, optional
             A scalar loss to be optimised.
         """
-        left = {key.replace("left_", ""): value for key, value in inputs.items() if key.startswith("left_")}
-        right = {key.replace("right_", ""): value for key, value in inputs.items() if key.startswith("right_")}
-        label = left["label"] == right["label"]
-
-        metadata_vector = {}
-        if self.left_encoder.use_metadata_vector:
-            metadata_vector = {
-                cat: inputs.pop("left_"+get_metadata_field_name(cat))
-                for cat in self.metadata_categories
-            }
-
-        v_l, left_additional_output = self.left_encoder(left, metadata_vector=metadata_vector)
-        v_r, right_additional_output = self.right_encoder(right, metadata_vector=metadata_vector)
-
-        # With pytorch_metric_learning, we need to split positive and negative pairs
-        pairs = torch.cat([v_l], dim=-1)
-        print(pairs.shape)
-        pos = pairs[[label == True]]
-        neg = pairs[[label == False]]
-        print(pos, neg)
-        loss = self._loss(v_l, v_r, label)
-        sim = F.cosine_similarity(v_l, v_r)
-        sim_bool = sim > self.prediction_threshold
-
-        output_dict = {
-            'loss': loss,
-            "sim": sim,
-            "probs": self._to_categorical_probs(left, right, sim),
-            **left_additional_output
-        }
-
-        sim_bool = sim_bool.long()
-        label = label.long()
-
-        self._compute_metrics(
-            categorical_predictions=self._to_categorical(left, right, sim_bool),
-            categorical_label=left["label"].long(),
-            similarity_boolean=sim,
-            similarity_labels=label
-        )
-
-        return output_dict
+        if self._reader_mode == "default":
+            return self._classic_forward(**inputs)
+        else:
+            return self._miner_forward(**inputs)
 
     @overrides
     def _compute_metrics(
@@ -201,101 +266,5 @@ class SiameseClassifier(BaseModel):
         return out
 
 
-# Check Attention Pooling at https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
-
-if __name__ == "__main__":
-    import logging
-    logging.getLogger().setLevel(logging.INFO)
-    from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
-    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, CnnEncoder
-    from seligator.training.trainer import generate_all_data, train_model
-    from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler, CnnHighwayEncoder
-    from seligator.common.constants import EMBEDDING_DIMENSIONS
-    from seligator.common.bert_utils import what_type_of_bert
-    from seligator.modules.seq2vec.bert_poolers import PoolerHighway
-
-    # For test, just change the input feature here
-    #INPUT_FEATURES = ("token", "lemma", "token_char",)
-    INPUT_FEATURES = ("token_subword", )
-    USE_BERT = "token_subword" in INPUT_FEATURES
-    BERT_DIR = "./bert/latin_bert"
-    HUGGIN = False
-
-    if USE_BERT:
-        if HUGGIN:
-            get_me_bert = what_type_of_bert("ponteineptique/latin-classical-small", trainable=False, hugginface=True)
-            print("Using hugginface !")
-        else:
-            get_me_bert = what_type_of_bert(BERT_DIR, trainable=False, hugginface=False)
-    else:
-        get_me_bert = what_type_of_bert()
-
-    train, dev, vocab, reader = generate_all_data(
-        input_features=INPUT_FEATURES, get_me_bert=get_me_bert,
-        instance_type="siamese", batches_per_epoch=20, batch_size=64
-    )
-    bert, bert_pooler = None, None
-    if USE_BERT:
-        bert = get_me_bert.embedder
-        #bert = PretrainedTransformerEmbedder("ponteineptique/latin-classical-small")
-        #bert_pooler = BertPooler(BERT_DIR)
-        #bert_pooler = PoolerHighway(CnnEncoder(
-        #    embedding_dim=bert.get_output_dim(),
-        #    num_filters=374,
-        #), 128)
-        bert_pooler = PoolerHighway(BertPooler(BERT_DIR), 128)
-
-        # Max Pooler
-        #bert_pooler = CnnEncoder(
-        #    embedding_dim=bert.get_output_dim(),
-        #    num_filters=128,
-        #)
-        #bert_pooler = CnnHighwayEncoder(
-        #    embedding_dim=bert.get_output_dim(),
-        #    num_filters=128,
-        #)
-
-    embedding_encoders = {
-        cat: LstmSeq2VecEncoder(
-            input_size=EMBEDDING_DIMENSIONS[cat],
-            hidden_size=EMBEDDING_DIMENSIONS[f"{cat}_encoded"],
-            num_layers=2,
-            bidirectional=True,
-            dropout=.3
-        )
-        for cat in {"token_char", "lemma_char"}
-    }
-
-    model = SiameseClassifier(
-        vocab=vocab,
-        input_features=INPUT_FEATURES,
-        mixed_encoder=MixedEmbeddingEncoder.build(
-            vocabulary=vocab,
-            emb_dims=EMBEDDING_DIMENSIONS,
-            input_features=INPUT_FEATURES,
-
-            features_encoder=lambda input_dim: LstmSeq2VecEncoder(
-                input_size=input_dim,
-                hidden_size=128,
-                dropout=0.3,
-                bidirectional=True,
-                num_layers=2
-            ),
-            char_encoders=embedding_encoders,
-
-            use_bert=USE_BERT,
-            bert_embedder=bert,
-            bert_pooler=bert_pooler
-        )
-    )
-
-    model.cuda()
-    print(model)
-    train_model(
-        model=model,
-        train_loader=train,
-        dev_loader=dev,
-        cuda_device=0,
-        num_epochs=200,
-        lr=3e-5
-    )
+# ToDo: Check Attention Pooling at
+#   https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
