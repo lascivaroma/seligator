@@ -14,12 +14,14 @@ class GetMeBert:
     embedder: PretrainedTransformerEmbedder = None
     indexer: TokenIndexer = None
     tokenizer: PretrainedTransformerTokenizer = None
+    layer: int = -1
 
 
 def what_type_of_bert(
         directory: Optional[str] = None,
         hugginface: bool = False,
-        trainable: bool = False
+        trainable: bool = False,
+        layer: int = -1
 ) -> GetMeBert:
     if not directory:
         return GetMeBert(False)
@@ -27,7 +29,7 @@ def what_type_of_bert(
     if hugginface:
         bert = PretrainedTransformerEmbedder(directory, train_parameters=trainable)
         tokenizer = PretrainedTransformerTokenizer(directory)
-        return GetMeBert(True, bert, PretrainedTransformerIndexer(directory), tokenizer)
+        return GetMeBert(True, bert, PretrainedTransformerIndexer(directory), tokenizer, layer)
 
     from seligator.modules.embedders.latinBert import LatinPretrainedTransformer
     from seligator.dataset.indexer import LatinSubwordTokenIndexer
@@ -36,7 +38,8 @@ def what_type_of_bert(
 
     return GetMeBert(
         True,
-        LatinPretrainedTransformer(directory, train_parameters=trainable, tokenizer=tokenizer),
+        LatinPretrainedTransformer(directory, train_parameters=trainable, tokenizer=tokenizer, use_layer=layer),
         indexer,
-        tokenizer
+        tokenizer,
+        layer
     )

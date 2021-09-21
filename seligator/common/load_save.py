@@ -1,4 +1,4 @@
-from .params import MetadataEncoding, Seq2VecEncoderType, BasisVectorConfiguration
+from .params import MetadataEncoding, Seq2VecEncoderType, BasisVectorConfiguration, BertPoolerClass
 from ..models import *
 import json
 
@@ -27,6 +27,7 @@ class CustomEncoder(json.JSONEncoder):
     _PUBLIC_ENUMS = {
         "MetadataEncoding": MetadataEncoding,
         "Seq2VecEncoderType": Seq2VecEncoderType,
+        "BertPoolerClass": BertPoolerClass
         # "BasisVectorConfiguration": BasisVectorConfiguration
     }
     _PUBLIC_CLASSES = {

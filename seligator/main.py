@@ -7,11 +7,11 @@ import torch
 import torch.nn as nn
 
 from allennlp.data import DataLoader, DatasetReader, Vocabulary, Instance
-from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler
+from allennlp.modules.seq2vec_encoders import LstmSeq2VecEncoder, BertPooler, CnnEncoder, GruSeq2VecEncoder
 
 from seligator.common.load_save import load, merge, CustomEncoder
 from seligator.common.constants import EMBEDDING_DIMENSIONS
-from seligator.common.params import Seq2VecEncoderType, BasisVectorConfiguration, MetadataEncoding
+from seligator.common.params import Seq2VecEncoderType, BasisVectorConfiguration, MetadataEncoding, BertPoolerClass
 from seligator.common.bert_utils import what_type_of_bert, GetMeBert
 
 from seligator.dataset.utils import get_fields
@@ -22,7 +22,7 @@ from seligator.models.classifier import FeatureEmbeddingClassifier
 from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
 from seligator.training.trainer import generate_all_data, train_model
 from seligator.modules.seq2vec import \
-    HierarchicalAttentionalEncoder, PoolerHighway, SumAndLinear, MetadataEnrichedAttentionalLSTM
+    HierarchicalAttentionalEncoder, MetadataEnrichedAttentionalLSTM, PassThroughModel, CustomBertPooler
 
 import logging
 
@@ -52,6 +52,10 @@ class Seligator:
                     input_dim=input_dim,
                     hidden_size=encoder_hidden_size
                 )
+        elif seq2vec_encoder_type == Seq2VecEncoderType.CONV:
+            def features_encoder(input_dim):
+                # https://hal.archives-ouvertes.fr/hal-01804310/document
+                return CnnEncoder(embedding_dim=input_dim, num_filters=5)
         elif seq2vec_encoder_type in {
             Seq2VecEncoderType.AttentionPooling,
             Seq2VecEncoderType.MetadataAttentionPooling,
@@ -65,6 +69,18 @@ class Seligator:
                     use_metadata_lstm=seq2vec_encoder_type == Seq2VecEncoderType.MetadataLSTM,
                     basis_vector_configuration=basis_vector_configuration
                 )
+        elif seq2vec_encoder_type == Seq2VecEncoderType.GRU:
+            def features_encoder(input_dim):
+                return GruSeq2VecEncoder(
+                    input_size=input_dim,
+                    hidden_size=encoder_hidden_size,
+                    dropout=0.3,
+                    bidirectional=True,
+                    num_layers=2
+                )
+        elif seq2vec_encoder_type == Seq2VecEncoderType.BERT_ONLY:
+            def features_encoder(input_dim):
+                return PassThroughModel(input_dim)
         else:
             def features_encoder(input_dim):
                 return LstmSeq2VecEncoder(
@@ -77,15 +93,13 @@ class Seligator:
         return features_encoder
 
     @staticmethod
-    def _get_me_bert(use: bool, highway: bool, bert_dir: str = None) -> Tuple[GetMeBert, nn.Module, nn.Module]:
+    def _get_me_bert(use: bool, mode: BertPoolerClass, bert_dir: str = None,
+                     layer: int = -1, trainable: bool = False) -> Tuple[GetMeBert, nn.Module, nn.Module]:
         bert, bert_pooler = None, None
         if use:
-            get_me_bert = what_type_of_bert(directory=bert_dir, trainable=False, hugginface=False)
+            get_me_bert = what_type_of_bert(directory=bert_dir, trainable=trainable, hugginface=False, layer=layer)
             bert = get_me_bert.embedder
-            if highway:
-                bert_pooler = PoolerHighway(BertPooler(bert_dir), 256)
-            else:
-                bert_pooler = BertPooler(bert_dir)
+            bert_pooler = CustomBertPooler(bert.get_output_dim(), mode=mode, reduce_dim=256)
             return get_me_bert, bert, bert_pooler
         return what_type_of_bert(), bert, bert_pooler
 
@@ -109,6 +123,9 @@ class Seligator:
         token_features: Tuple[str, ...] = ("token_subword",),
         msd_features: Tuple[str, ...] = (),
         bert_dir: str = "./bert/latin_bert",
+        bert_layer: int = -1,
+        bert_mode: BertPoolerClass = BertPoolerClass.CLS,
+        bert_trainable: bool = False,
         seq2vec_encoder_type: Seq2VecEncoderType = Seq2VecEncoderType.LSTM,
         model_class=FeatureEmbeddingClassifier,
         additional_model_kwargs: Dict[str, Any] = None,
@@ -116,18 +133,20 @@ class Seligator:
         reader_kwargs: Dict[str, Any] = None,
         encoder_hidden_size: int = 25,
         agglomerate_msd: bool = False,
-        use_bert_highway: bool = False,
         model_embedding_kwargs: Optional[Dict[str, Any]] = None,
         basis_vector_configuration: BasisVectorConfiguration = None,
         training: bool = True,  # If set to true, return reader ands loader
         vocabulary_path: str = None,  # When training is False, requires vocabulary path
-        folder: str = "dataset/main"
-
+        folder: str = "dataset/main",
+        **kwargs
     ) -> Union["Seligator", Tuple["Seligator", DatasetReader, DataLoader, DataLoader]]:
         init_params = copy.deepcopy({
             "token_features": token_features,
             "msd_features": msd_features,
             "bert_dir": bert_dir,
+            "bert_layer": bert_layer,
+            "bert_mode": bert_mode,
+            "bert_trainable": bert_trainable,
             "seq2vec_encoder_type": seq2vec_encoder_type,
             "model_class": model_class,
             "additional_model_kwargs": additional_model_kwargs,
@@ -135,7 +154,6 @@ class Seligator:
             "reader_kwargs": reader_kwargs,
             "encoder_hidden_size": encoder_hidden_size,
             "agglomerate_msd": agglomerate_msd,
-            "use_bert_highway": use_bert_highway,
             "model_embedding_kwargs": model_embedding_kwargs,
             "basis_vector_configuration": basis_vector_configuration
          })
@@ -151,8 +169,10 @@ class Seligator:
         use_bert = "token_subword" in token_features
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
             use=use_bert,
-            highway=use_bert_highway,
-            bert_dir=bert_dir
+            mode=bert_mode,
+            bert_dir=bert_dir,
+            layer=bert_layer,
+            trainable=bert_trainable
         )
         model_embedding_kwargs = model_embedding_kwargs or {}
         embeddings = merge(
@@ -221,7 +241,7 @@ class Seligator:
     def get_reader(self, cls=ClassificationTsvReader) -> Union[XMLDatasetReader, ClassificationTsvReader]:
         get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
             use="token_subword" in self._init_params.get("token_features", []),
-            highway=self._init_params.get("use_bert_highway"),
+            mode=self._init_params.get("bert_mode"),
             bert_dir=self._init_params.get("bert_dir")
         )
         reader = cls(

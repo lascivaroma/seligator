@@ -201,7 +201,8 @@ class SiameseClassifier(BaseModel):
         return out
 
 
-# Check Attention Pooling at https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
+#  Check Attention Pooling at
+#    https://hanxiao.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/#pooling-block
 
 if __name__ == "__main__":
     import logging

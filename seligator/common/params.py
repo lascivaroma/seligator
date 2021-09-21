@@ -18,12 +18,26 @@ def get_metadata_namespace(metadata_name: str) -> str:
 
 
 @enum.unique
+class BertPoolerClass(enum.Enum):
+    CLS = 0
+    CLS_Highway = 1
+    MEAN = 2
+    MAX = 3
+    MEANMAX = 4
+    GRU = 5
+
+
+@enum.unique
 class Seq2VecEncoderType(enum.Enum):
     LSTM = 0
     HAN = 1
     AttentionPooling = 2
     MetadataAttentionPooling = 3
     MetadataLSTM = 4
+    CONV = 5
+    TDS = 6  # ToImplement
+    GRU = 7
+    BERT_ONLY = 8
 
 
 class MetaParamManager:

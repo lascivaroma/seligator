@@ -30,7 +30,7 @@ def element_wise_mul(input1: torch.Tensor, input2: torch.Tensor) -> torch.Tensor
 class HierarchicalAttentionalEncoder(Seq2VecEncoder):
     with_attention: bool = True
 
-    def __init__(self, input_dim: int, hidden_size: int, **kwargs):
+    def __init__(self, input_dim: int, hidden_size: int, num_layers: int = 1, **kwargs):
         super(HierarchicalAttentionalEncoder, self).__init__(**kwargs)
 
         self._input_dim: int = input_dim
@@ -38,7 +38,7 @@ class HierarchicalAttentionalEncoder(Seq2VecEncoder):
         # From https://github.com/uvipen/Hierarchical-attention-networks-pytorch/blob/master/src/word_att_model.py
 
         self.gru = ModifiedPytorchSeq2VecWrapper(
-            module=GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True)
+            module=GRU(input_dim, hidden_size, bidirectional=True, dropout=0.3, batch_first=True, num_layers=num_layers)
         )
         self.context = Parameter(torch.Tensor(2 * hidden_size, 1), requires_grad=True)
         self.dense = Linear(2*hidden_size, 2*hidden_size)

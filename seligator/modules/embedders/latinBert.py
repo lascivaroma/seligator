@@ -1,10 +1,14 @@
 import logging
+from overrides import overrides
 from typing import Optional
 
 from transformers import BertModel
+from transformers.modeling_outputs import BaseModelOutputWithPoolingAndCrossAttentions
 from allennlp.modules.scalar_mix import ScalarMix
 from allennlp.modules.token_embedders import TokenEmbedder
 from allennlp.modules.token_embedders.pretrained_transformer_embedder import PretrainedTransformerEmbedder
+
+import torch
 
 from seligator.dataset.tokenizer import LatinSubwordTextEncoderTokenizer
 
@@ -88,6 +92,7 @@ class LatinPretrainedTransformer(PretrainedTransformerEmbedder):
 
     authorized_missing_keys = [r"position_ids$"]
 
+    @overrides
     def __init__(
             self,
             model_name: str,
@@ -97,7 +102,8 @@ class LatinPretrainedTransformer(PretrainedTransformerEmbedder):
             sub_module: str = None,
             train_parameters: bool = True,
             eval_mode: bool = False,
-            last_layer_only: bool = True,
+            use_layer: int = -1,
+            merge_all_layers: bool = False,  # last_layer_only equivalent
             gradient_checkpointing: Optional[bool] = None,
             **kwargs
     ) -> None:
@@ -119,9 +125,15 @@ class LatinPretrainedTransformer(PretrainedTransformerEmbedder):
         self.output_dim = self.config.hidden_size
 
         self._scalar_mix: Optional[ScalarMix] = None
-        if not last_layer_only:
+        if merge_all_layers:
+            print("last_layer_only", merge_all_layers)
             self._scalar_mix = ScalarMix(self.config.num_hidden_layers)
             self.config.output_hidden_states = True
+
+        self._layer_output: int = use_layer
+        if self._layer_output > self.config.num_hidden_layers:
+            raise ValueError(f"Asked for output {use_layer} but bigger "
+                             f"than number of hidden layer {self.config.num_hidden_layers}")
 
         try:
             if self.transformer_model.get_input_embeddings().num_embeddings != tokenizer.vocab_size:
@@ -146,6 +158,84 @@ class LatinPretrainedTransformer(PretrainedTransformerEmbedder):
         if eval_mode:
             self.transformer_model.eval()
 
+    @overrides
+    def forward(
+        self,
+        token_ids: torch.LongTensor,
+        mask: torch.BoolTensor,
+        type_ids: Optional[torch.LongTensor] = None,
+        segment_concat_mask: Optional[torch.BoolTensor] = None,
+    ) -> torch.Tensor:  # type: ignore
+        """
+        # Parameters
+
+        token_ids: `torch.LongTensor`
+            Shape: `[batch_size, num_wordpieces if max_length is None else num_segment_concat_wordpieces]`.
+            num_segment_concat_wordpieces is num_wordpieces plus special tokens inserted in the
+            middle, e.g. the length of: "[CLS] A B C [SEP] [CLS] D E F [SEP]" (see indexer logic).
+        mask: `torch.BoolTensor`
+            Shape: [batch_size, num_wordpieces].
+        type_ids: `Optional[torch.LongTensor]`
+            Shape: `[batch_size, num_wordpieces if max_length is None else num_segment_concat_wordpieces]`.
+        segment_concat_mask: `Optional[torch.BoolTensor]`
+            Shape: `[batch_size, num_segment_concat_wordpieces]`.
+
+        # Returns
+
+        `torch.Tensor`
+            Shape: `[batch_size, num_wordpieces, embedding_size]`.
+
+        """
+        # Some of the huggingface transformers don't support type ids at all and crash when you supply
+        # them. For others, you can supply a tensor of zeros, and if you don't, they act as if you did.
+        # There is no practical difference to the caller, so here we pretend that one case is the same
+        # as another case.
+        if type_ids is not None:
+            max_type_id = type_ids.max()
+            if max_type_id == 0:
+                type_ids = None
+            else:
+                if max_type_id >= self._number_of_token_type_embeddings():
+                    raise ValueError("Found type ids too large for the chosen transformer model.")
+                assert token_ids.shape == type_ids.shape
+
+        fold_long_sequences = self._max_length is not None and token_ids.size(1) > self._max_length
+        if fold_long_sequences:
+            batch_size, num_segment_concat_wordpieces = token_ids.size()
+            token_ids, segment_concat_mask, type_ids = self._fold_long_sequences(
+                token_ids, segment_concat_mask, type_ids
+            )
+
+        transformer_mask = segment_concat_mask if self._max_length is not None else mask
+        assert transformer_mask is not None
+        # Shape: [batch_size, num_wordpieces, embedding_size],
+        # or if self._max_length is not None:
+        # [batch_size * num_segments, self._max_length, embedding_size]
+
+        # We call this with kwargs because some of the huggingface models don't have the
+        # token_type_ids parameter and fail even when it's given as None.
+        # Also, as of transformers v2.5.1, they are taking FloatTensor masks.
+        parameters = {
+            "input_ids": token_ids,
+            "attention_mask": transformer_mask.float(),
+            "output_hidden_states": True
+        }
+        if type_ids is not None:
+            parameters["token_type_ids"] = type_ids
+
+        transformer_output: BaseModelOutputWithPoolingAndCrossAttentions = self.transformer_model(**parameters)
+        if self._scalar_mix is not None:
+            # The hidden states will also include the embedding layer, which we don't
+            # include in the scalar mix. Hence the `[1:]` slicing.
+            hidden_states = transformer_output.hidden_states[1:]
+            embeddings = self._scalar_mix(hidden_states)
+        elif self._layer_output != -1:
+            # logger.warning(f"Outputing at layer {self._layer_output}")
+            embeddings = transformer_output.hidden_states[self._layer_output]
+        else:
+            embeddings = transformer_output.last_hidden_state
+
+        return embeddings
 
 if __name__ == "__main__":
     get("bert/latin_bert/", False)

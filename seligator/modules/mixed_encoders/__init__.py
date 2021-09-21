@@ -109,6 +109,7 @@ class MixedEmbeddingEncoder(nn.Module):
         if self._emb_dropout is not None:
             # Shape: (batch_size, num_tokens, embedding_dim)
             embedded_text = self._emb_dropout(embedded_text)
+
         # Shape: (batch_size, num_tokens)
         mask = util.get_text_field_mask({
             tok_cat: token[tok_cat]
