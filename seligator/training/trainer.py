@@ -181,11 +181,12 @@ def train_model(
     lr: float = 1e-4,
     optimizer: str = "AdamW",
     optimizer_params: Dict[str, Any] = None
-) :
+):
     # You obviously won't want to create a temporary file for your training
     # results, but for execution in binder for this guide, we need to do this.
     print(f"---> Epochs:   {num_epochs}")
     print(f"---> Patience: {patience}")
+    out = {}
     with tempfile.TemporaryDirectory() as serialization_dir:
         trainer = build_trainer(
             model,
@@ -199,6 +200,6 @@ def train_model(
             optimizer_params=optimizer_params
         )
         logging.info("Starting training")
-        trainer.train()
+        out = trainer.train()
         logging.info("Finished training")
-    return
+    return out

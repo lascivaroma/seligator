@@ -93,13 +93,21 @@ class Seligator:
         return features_encoder
 
     @staticmethod
-    def _get_me_bert(use: bool, mode: BertPoolerClass, bert_dir: str = None,
-                     layer: int = -1, trainable: bool = False) -> Tuple[GetMeBert, nn.Module, nn.Module]:
+    def _get_me_bert(
+            use: bool,
+            mode: BertPoolerClass,
+            bert_dir: str = None,
+            layer: int = -1,
+            trainable: bool = False
+    ) -> Tuple[GetMeBert, Optional[nn.Module], Optional[nn.Module]]:
         bert, bert_pooler = None, None
         if use:
             get_me_bert = what_type_of_bert(directory=bert_dir, trainable=trainable, hugginface=False, layer=layer)
             bert = get_me_bert.embedder
-            bert_pooler = CustomBertPooler(bert.get_output_dim(), mode=mode, reduce_dim=256)
+            if mode == BertPoolerClass.TOKEN_MERGE:
+                bert_pooler = None
+            else:
+                bert_pooler = CustomBertPooler(bert.get_output_dim(), mode=mode, reduce_dim=256)
             return get_me_bert, bert, bert_pooler
         return what_type_of_bert(), bert, bert_pooler
 
@@ -212,7 +220,8 @@ class Seligator:
                 use_bert=use_bert,
                 bert_embedder=bert_embedder,
                 bert_pooler=bert_pooler,
-                model_embedding_kwargs=model_embedding_kwargs
+                model_embedding_kwargs=model_embedding_kwargs,
+                mixer="token-level" if bert_mode == BertPoolerClass.TOKEN_MERGE else "concat"
             ),
             basis_vector_configuration=basis_vector_configuration,
             **(additional_model_kwargs or {})
@@ -284,11 +293,12 @@ class Seligator:
 
 
 def train_and_get(model, train, dev, lr: float = 1e-4, use_cpu: bool = False,
+                  return_metrics=False,
                   **train_kwargs) -> FeatureEmbeddingClassifier:
     if not use_cpu:
         model.cuda()
 
-    train_model(
+    metrics = train_model(
         model=model,
         train_loader=train,
         dev_loader=dev,
@@ -296,4 +306,6 @@ def train_and_get(model, train, dev, lr: float = 1e-4, use_cpu: bool = False,
         lr=lr,
         **train_kwargs
     )
+    if return_metrics:
+        return model, metrics
     return model

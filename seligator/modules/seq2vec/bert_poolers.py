@@ -6,6 +6,7 @@ from allennlp.modules.seq2vec_encoders import GruSeq2VecEncoder
 from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
 
 from seligator.common.params import BertPoolerClass
+from .han import HierarchicalAttentionalEncoder
 
 
 class SumAndLinear(Seq2VecEncoder):  # Does not improve the output
@@ -81,6 +82,12 @@ class CustomBertPooler(Seq2VecEncoder):
                 bidirectional=True
             )
             self._output_dim = self.encoder.get_output_dim()
+        elif mode == BertPoolerClass.HAN:
+            self.encoder = HierarchicalAttentionalEncoder(
+                input_dim,
+                hidden_size=reduce_dim//2
+            )
+            self._output_dim = self.encoder.get_output_dim()
         self.mode = mode
         self.dropout = nn.Dropout(.3)
 
@@ -95,8 +102,14 @@ class CustomBertPooler(Seq2VecEncoder):
 
         tokens: batch * seq len * emb len
         """
-        if self.mode in {BertPoolerClass.GRU}:
-            return self.dropout(self.encoder(tokens, mask))
+        if self.mode in {BertPoolerClass.GRU, BertPoolerClass.HAN}:
+            attention = None
+            encoded = self.encoder(tokens, mask)
+            if isinstance(encoded, tuple):
+                encoded, attention = encoded
+                encoded = self.dropout(encoded)
+                return encoded, attention
+            return encoded
 
         max_over_time, avgs = None, None
         if self.mode == BertPoolerClass.CLS or self.mode == BertPoolerClass.CLS_Highway:

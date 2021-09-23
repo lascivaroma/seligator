@@ -146,10 +146,14 @@ class ClassificationTsvReader(DatasetReader):
 
         """
         fields: Dict[str, List[Union[Token, MultiLabelField]]] = {cat: [] for cat in self.categories}
+        # 
+        # content = [tok for tok in content if tok["pos"] != "PUNC"]
         if "token_subword" in fields:
             normalized = " ".join([
                 tok["token"]
-                for tok in content if tok["token"][0] != "{"
+                for tok in content
+                if tok["token"][0] != "{"  # The clitic is already in the original text...
+                                           # This is where the issue is for bert mergin
             ])
             try:
                 fields["token_subword"].extend(self.bert_tokenizer.tokenize(normalized))

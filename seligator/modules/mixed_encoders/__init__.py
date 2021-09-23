@@ -17,6 +17,12 @@ from seligator.common.constants import EMBEDDING_DIMENSIONS, MSD_CAT_NAME
 from seligator.dataset.dataloader import get_vocabulary_from_pretrained_embedding
 
 
+class RaiseDebug(Exception):
+    def __init__(self, message, tokens):
+        self.msg = message
+        self.tokens = tokens
+
+
 class MixedEmbeddingEncoder(nn.Module):
     """ Embbeds and encodes mixed input with multi-layer information (token, lemma, pos, etc.)
 
@@ -63,7 +69,11 @@ class MixedEmbeddingEncoder(nn.Module):
         out_dim = 0
         self.mixer = None
         if use_features and use_bert:
-            if mixer and not isinstance(mixer, str):
+            # mixer can be "token-level"
+            if mixer == "token-level":
+                self.mixer = "token-level"
+                out_dim = self.features_encoder.get_output_dim()
+            elif mixer and not isinstance(mixer, str):
                 self.mixer = mixer
             elif mixer == "concat":
                 self.mixer = lambda inp1, inp2: torch.cat([inp1, inp2], -1)
@@ -96,9 +106,76 @@ class MixedEmbeddingEncoder(nn.Module):
 
     def _forward_bert(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         embedded = self.bert_embedder(token["token_ids"], mask=token["mask"])
+        pooled = self.bert_pooler(embedded, mask=token["mask"])
+
+        if isinstance(pooled, tuple):
+            return pooled[0], {
+                "attention": pooled[1],
+                # "bert_projection": embedded.tolist()
+            }
         if self.return_bert:
-            return self.bert_pooler(embedded, mask=token["mask"]), embedded.tolist()
-        return self.bert_pooler(embedded, mask=token["mask"]), None
+            return pooled, embedded.tolist()
+        return pooled, None
+
+    def _align_bert(self, bert_tokens: Dict[str, torch.Tensor]) -> torch.Tensor:
+        embedded = self.bert_embedder(bert_tokens["token_ids"], mask=bert_tokens["mask"])
+        out = torch.zeros(
+            (embedded.shape[0], bert_tokens["orig_token_ids"][bert_tokens["mask"] == True].max()+1, embedded.shape[-1]),
+            device=embedded.device
+        )
+        # We should probably actually set out to padding values but whatever
+        # print(bert_tokens["orig_token_ids"][bert_tokens["mask"] == True].max(), max(list(range(bert_tokens["orig_token_ids"][bert_tokens["mask"] == True].max()))))
+        # We avoid the CLS token
+        for batch_idx, (emb, orig, mask) in enumerate(zip(
+                embedded[:, 1:, :], bert_tokens["orig_token_ids"][:, 1:], bert_tokens["mask"][:, 1:]
+        )):
+            # Here we have a batch
+            orig, emb = orig[mask == True], emb[mask == True]
+            # print(orig.max()+1, orig.shape)
+            for word_id in range(orig.max()+1):
+                out[batch_idx, word_id] = torch.mean(emb[orig == word_id])
+        # There might be a fast way to do this but I don't know how
+        return out
+
+    def _forward_merged_features_and_bert(
+            self,
+            tokens,
+            metadata_vector: Dict[str, torch.Tensor]
+    ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
+
+        bert_text = self._align_bert(tokens["token_subword"]["token_subword"])
+
+        token = self._rebuild_input(tokens)
+
+        # Shape: (batch_size, num_tokens, embedding_dim)
+        embedded_text = self.features_embedder(token)
+
+        if self._emb_dropout is not None:
+            # Shape: (batch_size, num_tokens, embedding_dim)
+            embedded_text = self._emb_dropout(embedded_text)
+
+        # Shape: (batch_size, num_tokens)
+        mask = util.get_text_field_mask({
+            tok_cat: token[tok_cat]
+            for tok_cat in token
+            if tok_cat != MSD_CAT_NAME
+        })
+        if embedded_text.shape[:-1] != bert_text.shape[:-1]:
+            with open("runtime_error.json", "w") as f:
+                f.write(str(tokens))
+            raise RaiseDebug(
+                "Bert and the original text are not the same",
+                tokens=tokens["lemma"]["lemma"]["tokens"].tolist()
+            )
+        embed = torch.cat([embedded_text, bert_text], dim=-1)
+
+        if hasattr(self.features_encoder, "use_metadata_vector"):
+            out = self.features_encoder(embed, mask=mask, metadata_vector=metadata_vector)
+        else:
+            out = self.features_encoder(embed, mask)
+        if isinstance(out, tuple):
+            return out
+        return out, None
 
     def _forward_features(self, token, metadata_vector: Dict[str, torch.Tensor]
                           ) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
@@ -135,7 +212,13 @@ class MixedEmbeddingEncoder(nn.Module):
         # Deal with Bert (key: token_subword)
         attention = None
         additional_output = {}
-        if self.use_bert and self.use_features:
+        if self.use_bert and self.use_features and self.mixer == "token-level":
+            raise ValueError("Because of CLTK used as tokenizer")
+            v, attention = self._forward_merged_features_and_bert(
+                data,
+                metadata_vector=metadata_vector
+            )
+        elif self.use_bert and self.use_features:
             _bert, embedded = self._forward_bert(data["token_subword"]["token_subword"])
             if embedded is not None:
                 additional_output["bert_projection"] = embedded
@@ -144,7 +227,13 @@ class MixedEmbeddingEncoder(nn.Module):
         elif self.use_bert:
             v, embedded = self._forward_bert(data["token_subword"]["token_subword"])
             if embedded is not None:
-                additional_output["bert_projection"] = embedded
+                if isinstance(embedded, dict):
+                    additional_output.update({
+                        key: val.tolist() if isinstance(val, torch.Tensor) else val
+                        for key, val in embedded.items()
+                    })
+                else:
+                    additional_output["bert_projection"] = embedded
         elif self.use_features:
             v, attention = self._forward_features(data, metadata_vector=metadata_vector)
         else:
@@ -248,12 +337,16 @@ class MixedEmbeddingEncoder(nn.Module):
             char_encoders=char_encoders,
             **(model_embedding_kwargs or {})
         )
+
+        features_encoder_dim = emb.get_output_dim()
+        if bert_embedder is not None and bert_pooler is None and mixer == "token-level":
+            features_encoder_dim = emb.get_output_dim() + bert_embedder.get_output_dim()
         return cls(
             input_features=input_features,
 
             use_features=len([x for x in input_features if not x.endswith("subword")]) >= 1,
             features_embedder=emb,
-            features_encoder=features_encoder(emb.get_output_dim()),
+            features_encoder=features_encoder(features_encoder_dim),
 
             use_bert=use_bert,
             bert_embedder=bert_embedder,

@@ -25,10 +25,14 @@ def represent(
     if "left_label" in instance.fields:
         prefix = "left_"
 
-    metadata = {
+    metadata = {}
+    if prefix+"token_subword" in instance.fields:
+        metadata["token_subword"] = " ".join([tok.text for tok in instance.fields[prefix+"token_subword"].tokens])
+
+    metadata.update({
       "sentence": " ".join(instance.fields[prefix+"metadata"]["sentence"]),
         **{k: val for k, val in instance.fields[prefix+"metadata"].items() if k != "sentence"}
-    }
+    })
 
     out = {
         **metadata,

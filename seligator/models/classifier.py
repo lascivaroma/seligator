@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from allennlp.data import Vocabulary
 
 from seligator.models.base import BaseModel
-from seligator.modules.mixed_encoders import MixedEmbeddingEncoder
+from seligator.modules.mixed_encoders import MixedEmbeddingEncoder, RaiseDebug
 from seligator.modules.linear import MetadataEnrichedLinear
 from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
@@ -47,7 +47,13 @@ class FeatureEmbeddingClassifier(BaseModel):
                 cat: mixed_features.pop(get_metadata_field_name(cat))
                 for cat in self.metadata_categories
             }
-        encoded_text, additional_out = self.mixed_encoder(mixed_features, metadata_vector)
+        try:
+            encoded_text, additional_out = self.mixed_encoder(mixed_features, metadata_vector)
+        except RaiseDebug as e:
+            lemmas = self.vocab.get_index_to_token_vocabulary("lemma")
+            for sent in e.tokens:
+                print([lemmas[tok] for tok in sent])
+            raise
 
         # Shape: (batch_size, num_labels)
         if self.metadata_linear:

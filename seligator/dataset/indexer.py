@@ -110,6 +110,7 @@ class LatinSubwordTokenIndexer(TokenIndexer):
             "token_ids": indices,
             "mask": [True] * len(indices),
             "type_ids": type_ids or [0] * len(indices),
+            "orig_token_ids": [tok.orig_token_id for tok in tokens]
         }
 
         return self._postprocess_output(output)

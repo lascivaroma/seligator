@@ -25,6 +25,8 @@ class BertPoolerClass(enum.Enum):
     MAX = 3
     MEANMAX = 4
     GRU = 5
+    TOKEN_MERGE = 6
+    HAN = 7
 
 
 @enum.unique

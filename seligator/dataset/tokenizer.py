@@ -31,6 +31,12 @@ class ReworkedSTE(SubwordTextEncoder):
         return super(ReworkedSTE, self)._token_to_subtoken_ids(token.strip())
 
 
+class BertToken(Token):
+    def __init__(self, orig_token_id: int = None, **kwargs):
+        super(BertToken, self).__init__(**kwargs)
+        self.orig_token_id = orig_token_id
+
+
 class LatinSubwordTextEncoderTokenizer(Tokenizer):
     # https://github.com/tensorflow/tensor2tensor/blob/78ba8019847426e988294fd58f8953d7990a8db7/tensor2tensor/data_generators/text_encoder.py#L448
     def __init__(self,
@@ -109,21 +115,24 @@ class LatinSubwordTextEncoderTokenizer(Tokenizer):
         special_tokens_mask = [1 if tok in self._special_tokens and tok != "[CLS]" else 0 for tok in token_texts]
 
         tokens = []
+        _orig_token = 0
         for token_id, token_text, special_token_mask in zip(
                 token_ids, token_texts, special_tokens_mask
         ):
             if not self._add_special_tokens and special_token_mask == 1:
                 continue
-
             tokens.append(
-                Token(
+                BertToken(
                     text=token_text,
                     text_id=token_id,
                     type_id=0,
                     idx=token_id,
                     idx_end=None,
+                    orig_token_id=_orig_token if special_token_mask == 0 and token_text != "[CLS]" else -1
                 )
             )
+            if special_token_mask == 0 and token_text != "[CLS]" and token_text.endswith("_"):
+                _orig_token += 1
         # logger.info(str(tokens))
         return tokens
 
@@ -177,15 +186,49 @@ class MultiTagFeatureTokenizer(CharacterTokenizer):
 
 
 if __name__ == "__main__":
-    TEST_BERT = False
-    TEST_Feature = True
+    TEST_BERT = True
+    TEST_Feature = False
     logger.setLevel(logging.DEBUG)
-
+    """
+    Non	non	ADVneg	-	-	-	-	-	-	-	-
+tempore	tempus1	NOMcom	Abl	Sing	-	-	-	-	-	-
+prisco	priscus	ADJqua	Abl	Sing	MascNeut	-	-	-	-	Pos
+dicendum	dico2	VER	Nom	Sing	Neut	Adj	-	Pass	-	-
+fuit	sum1	VER	-	Sing	-	Ind	Perf	Act	3	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+sed	sed	CONcoo	-	-	-	-	-	-	-	-
+:	:	PUNC	-	-	-	-	-	-	-	-
+tempore	tempus1	NOMcom	Abl	Sing	-	-	-	-	-	-
+,	,	PUNC	-	-	-	-	-	-	-	-
+quod	quod1	PROrel	Nom	Sing	Neut	-	-	-	-	-
+prisca	priscus	ADJqua	Abl	Sing	Fem	-	-	-	-	Pos
+imitatur	imitor	VER	-	Sing	-	Ind	Pres	Dep	3	-
+.	.	PUNC	-	-	-	-	-	-	-	-"""
+    sentences = [[    2,  4235, 28847,    24,  7216,   116,    31,  1099, 23008,    24,
+            15, 21314,    37,  4138,    10,  9911,    27, 18095,   311,    12,
+          6190,  3099,   264, 17730,     3,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0],
+        [    2,    15,  6854,  4153,     9,   180,  9451,  4096,  4299,     9,
+          4134,  6195,   180,  1858,  5552,    24, 14163,   390,  9712,    14,
+         12593, 26414,    83,     3,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0],
+        [    2,    86,   107,   115, 22547,    34,    36, 23645, 12984,   874,
+         10831,   116,   463, 11117, 12533, 21886,    85,  5194,  8107,    11,
+            35,   823,    41, 20417,    19,  4411, 26237, 12434,   496,   406,
+          4434,  7268,    31,   155,  4275, 22046,    77,     3],
+        [    2,    20, 13638,  8721,    59, 25765, 26077, 21374,    19, 16684,
+             9,   704,     3,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+             0,     0,     0,     0,     0,     0,     0,     0]]
     if TEST_BERT:
         tokenizer = LatinSubwordTextEncoderTokenizer(f"{BERT_DIR}/vocab.txt")
-        z = tokenizer.tokenize("Nunc denique intellegimus quae desideranda in prioribus fuerint, postquam ea quae operta in ceteris veriti sumus in te reserata veneramur.")
-        print(z)
-        print(tokenizer.convert_tokens_to_ids(tokenizer.tokenize("lascivumque")))
+        z = tokenizer.tokenize("non tempore prisco dicendum fuit , sed : tempore , quod prisca imitatur .")
+        #print(z)
+        print([tok.text_id for tok in z])
+        print([tok.orig_token_id for tok in z])
+        #print(tokenizer.convert_tokens_to_ids(tokenizer.tokenize("lascivumque")))
+        for sent in sentences:
+            print(tokenizer._tokenizer.decode_list(sent))
 
     if TEST_Feature:
         tokenizer = MultiTagFeatureTokenizer(["pos", "tense", "gend"])
