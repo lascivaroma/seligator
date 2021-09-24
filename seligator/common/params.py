@@ -27,6 +27,8 @@ class BertPoolerClass(enum.Enum):
     GRU = 5
     TOKEN_MERGE = 6
     HAN = 7
+    EnrichedLSTM = 8
+    EnrichedAttention = 9
 
 
 @enum.unique

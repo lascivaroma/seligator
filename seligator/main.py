@@ -98,7 +98,8 @@ class Seligator:
             mode: BertPoolerClass,
             bert_dir: str = None,
             layer: int = -1,
-            trainable: bool = False
+            trainable: bool = False,
+            basis_vector_configuration: BasisVectorConfiguration = None
     ) -> Tuple[GetMeBert, Optional[nn.Module], Optional[nn.Module]]:
         bert, bert_pooler = None, None
         if use:
@@ -107,7 +108,8 @@ class Seligator:
             if mode == BertPoolerClass.TOKEN_MERGE:
                 bert_pooler = None
             else:
-                bert_pooler = CustomBertPooler(bert.get_output_dim(), mode=mode, reduce_dim=256)
+                bert_pooler = CustomBertPooler(bert.get_output_dim(), mode=mode, reduce_dim=256,
+                                               basis_vector_configuration=basis_vector_configuration)
             return get_me_bert, bert, bert_pooler
         return what_type_of_bert(), bert, bert_pooler
 
@@ -180,7 +182,8 @@ class Seligator:
             mode=bert_mode,
             bert_dir=bert_dir,
             layer=bert_layer,
-            trainable=bert_trainable
+            trainable=bert_trainable,
+            basis_vector_configuration=basis_vector_configuration
         )
         model_embedding_kwargs = model_embedding_kwargs or {}
         embeddings = merge(
@@ -248,7 +251,7 @@ class Seligator:
         return sel
 
     def get_reader(self, cls=ClassificationTsvReader) -> Union[XMLDatasetReader, ClassificationTsvReader]:
-        get_me_bert, bert_embedder, bert_pooler = Seligator._get_me_bert(
+        get_me_bert, *_ = Seligator._get_me_bert(
             use="token_subword" in self._init_params.get("token_features", []),
             mode=self._init_params.get("bert_mode"),
             bert_dir=self._init_params.get("bert_dir")

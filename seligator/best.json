@@ -21,9 +21,7 @@
     "__basis_vector_configuration__": {
       "categories": [
         "Century",
-        "Textgroup",
-        "WrittenType",
-        "CitationTypes"
+        "WrittenType"
       ],
       "categories_dim": null,
       "emb_dim": 64,
@@ -39,13 +37,12 @@
     },
     "metadata_tokens_categories": [
       "Century",
-      "Textgroup",
-      "WrittenType",
-      "CitationTypes"
+      "WrittenType"
     ]
   },
   "model_embedding_kwargs": {
     "keep_all_vocab": true,
+    "metadata_linear": true,
     "pretrained_embeddings": {
       "lemma": "~/dev/these/notebooks/4 - Detection/data/embs_models/model.lemma.word2vec.kv.header"
     },

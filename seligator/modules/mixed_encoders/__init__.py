@@ -104,9 +104,9 @@ class MixedEmbeddingEncoder(nn.Module):
                 if not cat.endswith("_subword")
         }
 
-    def _forward_bert(self, token) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
+    def _forward_bert(self, token, metadata_vector=None) -> Tuple[torch.Tensor, Optional[torch.Tensor]]:
         embedded = self.bert_embedder(token["token_ids"], mask=token["mask"])
-        pooled = self.bert_pooler(embedded, mask=token["mask"])
+        pooled = self.bert_pooler(embedded, mask=token["mask"], metadata_vector=metadata_vector)
 
         if isinstance(pooled, tuple):
             return pooled[0], {
@@ -225,7 +225,7 @@ class MixedEmbeddingEncoder(nn.Module):
             _features, attention = self._forward_features(data, metadata_vector=metadata_vector)
             v = self.mixer(_bert, _features)
         elif self.use_bert:
-            v, embedded = self._forward_bert(data["token_subword"]["token_subword"])
+            v, embedded = self._forward_bert(data["token_subword"]["token_subword"], metadata_vector=metadata_vector)
             if embedded is not None:
                 if isinstance(embedded, dict):
                     additional_output.update({

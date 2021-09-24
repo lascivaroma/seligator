@@ -7,6 +7,7 @@ from allennlp.modules.seq2vec_encoders import BagOfEmbeddingsEncoder
 
 from seligator.common.params import BertPoolerClass
 from .han import HierarchicalAttentionalEncoder
+from .metadata_enriched import MetadataEnrichedAttentionalLSTM
 
 
 class SumAndLinear(Seq2VecEncoder):  # Does not improve the output
@@ -62,7 +63,8 @@ class CustomBertPooler(Seq2VecEncoder):
             self,
             input_dim: int = 768,
             mode: BertPoolerClass = None,
-            reduce_dim: int = 256
+            reduce_dim: int = 256,
+            basis_vector_configuration = None
         ):
         super(CustomBertPooler, self).__init__()
 
@@ -88,6 +90,14 @@ class CustomBertPooler(Seq2VecEncoder):
                 hidden_size=reduce_dim//2
             )
             self._output_dim = self.encoder.get_output_dim()
+        elif mode in {BertPoolerClass.EnrichedAttention, BertPoolerClass.EnrichedLSTM}:
+            self.encoder = MetadataEnrichedAttentionalLSTM(
+                input_dim=input_dim,
+                hidden_size=reduce_dim // 2,
+                use_metadata_attention=mode == BertPoolerClass.EnrichedAttention,
+                use_metadata_lstm=mode == BertPoolerClass.EnrichedLSTM,
+                basis_vector_configuration=basis_vector_configuration
+            )
         self.mode = mode
         self.dropout = nn.Dropout(.3)
 
@@ -97,7 +107,7 @@ class CustomBertPooler(Seq2VecEncoder):
     def __repr__(self):
         return f"<CustomBertPooling mode={self.mode} />"
 
-    def forward(self, tokens: torch.Tensor, mask: torch.BoolTensor = None):
+    def forward(self, tokens: torch.Tensor, mask: torch.BoolTensor = None, metadata_vector=None):
         """
 
         tokens: batch * seq len * emb len
@@ -110,6 +120,15 @@ class CustomBertPooler(Seq2VecEncoder):
                 encoded = self.dropout(encoded)
                 return encoded, attention
             return encoded
+        if self.mode in {BertPoolerClass.EnrichedLSTM, BertPoolerClass.EnrichedAttention}:
+            raise ValueError("Using Metadata in enriched encoder for Bert is currently not supported.")
+            encoded = self.encoder(tokens, mask, metadata_vector=metadata_vector)
+            if isinstance(encoded, tuple):
+                encoded, attention = encoded
+                encoded = self.dropout(encoded)
+                return encoded, attention
+            return encoded
+
 
         max_over_time, avgs = None, None
         if self.mode == BertPoolerClass.CLS or self.mode == BertPoolerClass.CLS_Highway:
