@@ -9,6 +9,7 @@ import logging
 from overrides import overrides
 
 from seligator.models.siamese import SiameseClassifier
+from seligator.common.params import get_metadata_field_name, BasisVectorConfiguration
 
 logger = logging.getLogger(__name__)
 
@@ -65,10 +66,30 @@ class TripletClassifier(SiameseClassifier):
         if example.get("label", None) is not None:
             label = (example["label"] == positiv["label"]).long()
 
+        metadata_vector = {
+            "example": {},
+            "positive": {},
+            "negative": {}
+        }
+        if self.left_encoder.use_metadata_vector:
+            metadata_vector = {
+                "example": {
+                    cat: example.pop(get_metadata_field_name(cat))
+                    for cat in self.metadata_categories
+                },
+                "positive": {
+                    cat: positiv.pop(get_metadata_field_name(cat))
+                    for cat in self.metadata_categories
+                },
+                "negative": {
+                    cat: negativ.pop(get_metadata_field_name(cat))
+                    for cat in self.metadata_categories
+                },
+            }
         # Need to take care of label ?
-        exm, example_additional_output = self.left_encoder(example)
-        pos, positiv_additional_output = self.right_encoder(positiv)
-        neg, negativ_additional_output = self.right_encoder(negativ)
+        exm, example_additional_output = self.left_encoder(example, metadata_vector=metadata_vector["example"])
+        pos, positiv_additional_output = self.right_encoder(positiv, metadata_vector=metadata_vector["positive"])
+        neg, negativ_additional_output = self.right_encoder(negativ, metadata_vector=metadata_vector["negative"])
 
         out = {
             "pos_distance": F.pairwise_distance(exm, pos),  # Euclidian

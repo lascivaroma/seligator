@@ -128,15 +128,24 @@ class SiameseClassifier(BaseModel):
         right = {key.replace("right_", ""): value for key, value in inputs.items() if key.startswith("right_")}
         label = left["label"] == right["label"]
 
-        metadata_vector = {}
+        metadata_vector = {
+            "left": {},
+            "right": {}
+        }
         if self.left_encoder.use_metadata_vector:
             metadata_vector = {
-                cat: inputs.pop("left_"+get_metadata_field_name(cat))
-                for cat in self.metadata_categories
+                "left": {
+                    cat: left.pop(get_metadata_field_name(cat))
+                    for cat in self.metadata_categories
+                },
+                "right": {
+                    cat: right.pop(get_metadata_field_name(cat))
+                    for cat in self.metadata_categories
+                }
             }
 
-        v_l, left_additional_output = self.left_encoder(left, metadata_vector=metadata_vector)
-        v_r, right_additional_output = self.right_encoder(right, metadata_vector=metadata_vector)
+        v_l, left_additional_output = self.left_encoder(left, metadata_vector=metadata_vector["left"])
+        v_r, right_additional_output = self.right_encoder(right, metadata_vector=metadata_vector["right"])
 
         # With pytorch_metric_learning, we need to split positive and negative pairs
         pairs = torch.cat([v_l], dim=-1)

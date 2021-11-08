@@ -1,11 +1,21 @@
 dataset/split
 models/
+*saved_model*
 old-models/
 *.json
 *.csv
 /*.html
 bert/
 saved_model
+dumped-results.zip
+embs/
+models.tar
+requirements.raw.txt
+run.py
+run2.py
+run4.py
+test_dumps/
+untitled
 # IDE and Noise
 .~*
 .idea/
